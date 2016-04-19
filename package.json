@@ -1,0 +1,9 @@
+{
+  "name": "fsa-design-system",
+  "description": "Open Source UI components and visual style guide for USDA-FSA web sites and apps",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {},
+  "scripts": {}
+}

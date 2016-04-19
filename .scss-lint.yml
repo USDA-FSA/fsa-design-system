@@ -1,0 +1,14 @@
+linters:
+  StringQuotes:
+    enabled: false
+  Shorthand:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  IdSelector:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  ImportantRule:
+    enabled: false
+exclude: path/to/exclude_file.scss
