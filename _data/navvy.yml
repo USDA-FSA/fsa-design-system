@@ -30,6 +30,37 @@
     - subtitle: "Typography"
       subhref: "visual-style/typography"
 
+    - subtitle: "Grid"
+      subhref: "visual-style/typography"
+
+- title: "Elements"
+  href: "elements"
+  subcategories:
+
+    - subtitle: "Buttons"
+      subhref: "elements/buttons"
+
+    - subtitle: "Input"
+      subhref: "elements/input"
+
+    - subtitle: "Textarea"
+      subhref: "elements/textarea"
+
+    - subtitle: "Checkbox"
+      subhref: "elements/checkbox"
+
+    - subtitle: "Radio"
+      subhref: "elements/radio"
+
+    - subtitle: "Select"
+      subhref: "elements/select"
+
+    - subtitle: "Tables"
+      subhref: "elements/tables"
+
+    - subtitle: "Utilities"
+      subhref: "elements/utilities"
+
 - title: "Components"
   href: "components"
   subcategories:
