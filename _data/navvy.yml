@@ -5,9 +5,6 @@
   href: "getting-started"
   subcategories:
 
-    - subtitle: "About"
-      subhref: "getting-started/about"
-
     - subtitle: "Using Assets"
       subhref: "getting-started/using-assets"
 
