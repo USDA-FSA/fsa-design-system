@@ -1,0 +1,36 @@
+.pb-home {}
+
+.pb-header {
+  background-color: $color-fsa-tertiary-100;
+}
+
+.pb-body {
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ($site-max-width + 24px);
+  padding: $size-default;
+
+  @include breakpoint(ML) {
+    margin-top: $size-large;
+  }
+
+}
+
+.pb-footer {
+
+  background-color: $color-fsa-tertiary-100;
+
+  &__bd {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: ($site-max-width + 24px);
+    padding: $size-default;
+  }
+
+}
+
+
+.pb-page-title {
+  margin-top: 0;
+}

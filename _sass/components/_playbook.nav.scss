@@ -1,0 +1,51 @@
+
+.pb-nav {
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ($site-max-width + 24px);
+  padding: $size-default;
+  text-align: left;
+
+  &__list {
+    @include reset-ul();
+  }
+
+  &__list-item {
+
+    @include reset-li();
+    display: inline-block;
+    margin-right: $size-default;
+
+    &--active {
+      font-weight: bold;
+    }
+
+    &--first {
+      .pb-home & {
+        font-weight: bold; // TODO: this is a massive hack. Ask me sometime why
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link {
+
+    @include font-size(1);
+    color: $color-fsa-link;
+
+    @include breakpoint(MML) {
+      @include font-size(3);
+    }
+
+    &:visited {
+      color: $color-fsa-link;
+    }
+
+  }
+
+}

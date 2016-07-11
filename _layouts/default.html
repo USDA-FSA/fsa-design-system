@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{% if page.url == '/' %}pb-home{% endif %}">
+
+    {% include header.html %}
+
+    <main id="main-content">
+      <div class="pb-body">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

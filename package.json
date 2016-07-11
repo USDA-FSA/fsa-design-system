@@ -3,7 +3,34 @@
   "description": "Open Source UI components and visual style guide for USDA-FSA web sites and apps",
   "version": "0.0.0",
   "private": true,
-  "devDependencies": {},
-  "dependencies": {},
-  "scripts": {}
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.5.2",
+    "grunt-browser-sync": "^2.0.0",
+    "grunt": "^0.4.2",
+    "grunt-browserify": "^5.0.0",
+    "grunt-build-control": "^0.7.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-prettify": "^0.4.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-scss-lint": "^0.3.8",
+    "load-grunt-tasks": "^3.4.1",
+    "node-sass": "^3.4.2",
+    "pixrem": "^3.0.0",
+    "postcss-quantity-queries": "^0.4.0",
+    "time-grunt": "^1.3.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#73979ef"
+  },
+  "scripts": {
+    "install-dep": "bundle install && npm install",
+    "start": "grunt && bundle exec jekyll serve"
+  }
 }

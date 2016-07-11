@@ -1,0 +1,32 @@
+- title: "Page 1"
+  href: "getting-started/"
+  subcategories:
+
+    - subtitle: "subpage 1"
+      subhref: "link-1/"
+
+    - subtitle: "subpage 2"
+      subhref: "link-2/"
+
+- title: "Page 2"
+  href: "components/"
+
+  subcategories:
+    - subtitle: "subpage 1"
+      subhref: "link-1/"
+
+    - subtitle: "subpage 2"
+      subhref: "link-2/"
+
+- title: "Page 3"
+  href: "contributing/"
+  subcategories:
+
+    - subtitle: "subpage 1"
+      subhref: "link-1/"
+
+    - subtitle: "subpage 2"
+      subhref: "link-2/"
+
+- title: "Page 4"
+  href: "about/"

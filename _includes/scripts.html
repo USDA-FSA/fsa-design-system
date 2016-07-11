@@ -1,0 +1,6 @@
+<script src="{{ site.baseurl }}js/{{ site.name }}.js"></script>
+{% if page.custom_js %}
+  {% for js_file in page.custom_js %}
+  <script src="{{ site.baseurl }}js/{{ js_file }}"></script>
+  {% endfor %}
+{% endif %}

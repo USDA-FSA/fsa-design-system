@@ -1,0 +1,41 @@
+.pb-nav-local {
+
+  &__list {
+
+    @include reset-ul();
+    margin-bottom: $size-large;
+
+    @include breakpoint(MML) {
+      border-top: 1px solid $color-fsa-tertiary-200;
+      margin-top: $size-small;
+    }
+
+  }
+
+  &__list-item {
+
+    @include reset-li();
+
+    &--active {
+      font-weight: bold;
+    }
+
+  }
+
+  &__link {
+
+    color: $color-fsa-link;
+    display: block;
+
+    @include breakpoint(MML) {
+      border-bottom: 1px solid $color-fsa-tertiary-200;
+      padding: $size-small 0;
+    }
+
+    &:visited {
+      color: $color-fsa-link;
+    }
+
+  }
+
+}
