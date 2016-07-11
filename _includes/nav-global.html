@@ -1,16 +1,16 @@
 <nav>
   <div class="pb-nav">
     <ul class="pb-nav__list">
-      {% for link in site.navigation %}
+      {% for link in site.data.navvy %}
 
         {% assign activeClassName = nil %}
 
-        {% if page.url contains link.url %}
+        {% if page.href contains link.href %}
           {% assign activeClassName = 'pb-nav__list-item--active' %}
         {% endif %}
 
         <li class="pb-nav__list-item {{ activeClassName }} {% if forloop.first %}pb-nav__list-item--first{% endif %} {% if forloop.last %}pb-nav__list-item--last{% endif %}">
-          <a class="pb-nav__link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+          <a class="pb-nav__link" href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
         </li>
 
       {% endfor %}

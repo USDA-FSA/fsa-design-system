@@ -25,20 +25,6 @@ permalink: none
 github_repository_url: https://github.com/USDA-FSA/fsa-design-system
 
 ################################################################################
-# Navigation: effectively the top-level navigation
-
-navigation:
-
- - title: Front Page
-   url: index.html
-
- - title: Foo
-   url: foo
-
- - title: Bar
-   url: bar
-
-################################################################################
 # Ignore specific items from building
 
 exclude:

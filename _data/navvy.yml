@@ -1,32 +1,53 @@
-- title: "Page 1"
-  href: "getting-started/"
+- title: "Home"
+  href: ""
+
+- title: "Getting Started"
+  href: "getting-started"
   subcategories:
 
-    - subtitle: "subpage 1"
-      subhref: "link-1/"
+    - subtitle: "About"
+      subhref: "getting-started/about"
 
-    - subtitle: "subpage 2"
-      subhref: "link-2/"
+    - subtitle: "Using Assets"
+      subhref: "getting-started/using-assets"
 
-- title: "Page 2"
-  href: "components/"
+    - subtitle: "Contributing"
+      subhref: "getting-started/contributing"
 
-  subcategories:
-    - subtitle: "subpage 1"
-      subhref: "link-1/"
+    - subtitle: "License"
+      subhref: "getting-started/license"
 
-    - subtitle: "subpage 2"
-      subhref: "link-2/"
-
-- title: "Page 3"
-  href: "contributing/"
+- title: "Visual Style"
+  href: "visual-style"
   subcategories:
 
-    - subtitle: "subpage 1"
-      subhref: "link-1/"
+    - subtitle: "Logo"
+      subhref: "visual-style/logo"
 
-    - subtitle: "subpage 2"
-      subhref: "link-2/"
+    - subtitle: "Color"
+      subhref: "visual-style/color"
 
-- title: "Page 4"
-  href: "about/"
+    - subtitle: "Size and Space"
+      subhref: "visual-style/size-and-space"
+
+    - subtitle: "Typography"
+      subhref: "visual-style/typography"
+
+- title: "Components"
+  href: "components"
+  subcategories:
+
+    - subtitle: "Lorem"
+      subhref: "components/lorem"
+
+    - subtitle: "Ipsum"
+      subhref: "components/ipsum"
+
+    - subtitle: "Dolor"
+      subhref: "components/dolor"
+
+    - subtitle: "Sit"
+      subhref: "components/it"
+
+    - subtitle: "Amet"
+      subhref: "components/amet"

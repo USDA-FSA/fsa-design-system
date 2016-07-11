@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Bar
-permalink: /bar/
-intro: "Introduction to <strong>Bar</strong> section. Lorem ipsum dolor sit amet"
-section: bar
+title: "Visual Style"
+intro: "Introduction lorem ipsum dolor sit amet"
 ---
 
 ## Sub-title

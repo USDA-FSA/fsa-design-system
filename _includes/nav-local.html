@@ -1,21 +1,17 @@
-{% assign section = page.section %}
-
-{% if page.section %}
-<nav>
-  <div class="pb-nav-local">
-    <ul class="pb-nav-local__list">
-      {% for post in site.categories.[section] %}
-
-        {% assign localActiveClassName = nil %}
-
-        {% if page.url contains post.url %}
-          {% assign localActiveClassName = 'pb-nav-local__list-item--active' %}
-        {% endif %}
-
-        <li class="pb-nav-local__list-item {{ localActiveClassName }}"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-
-      {% endfor %}
-    </ul>
-  </div>
-</nav>
-{% endif %}
+{% for link in site.data.navvy %}
+  {% if link.title == page.title or link.title == page.parent %}
+    <nav>
+      <div class="pb-nav-local">
+        <ul class="pb-nav-local__list">
+          {% for subpage in link.subcategories %}
+          <li class="pb-nav-local__list-item">
+            <a class="pb-nav-local__link {% if subpage.subtitle == page.title %}pb-nav-local__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
+              {{ subpage.subtitle }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  {% endif %}
+{% endfor %}
