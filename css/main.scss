@@ -7,8 +7,11 @@
 @import "fsa-style.scss";
 // -----------------------------------------------------------------------------
 @import "core/playbook.layout" ;
+@import "elements/playbook.preview" ;
+@import "elements/playbook.typography" ;
 @import "components/playbook.nav" ;
 @import "components/playbook.nav.local" ;
+@import "components/playbook.jump" ;
 @import "syntax-highlighting" ;
 
 .docs__disclaimer {

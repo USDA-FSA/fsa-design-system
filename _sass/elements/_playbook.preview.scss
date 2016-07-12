@@ -1,0 +1,11 @@
+.pb-preview {
+
+  margin: 2em 0;
+
+  @include breakpoint(MML) {
+    border: 1px solid $color-fsa-tertiary-100;
+    padding: $size-medium;
+    background-color: $color-fsa-white;
+  }
+
+}

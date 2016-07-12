@@ -5,14 +5,21 @@ title: "Buttons"
 intro: "Introduction to <strong>Buttons</strong> lorem ipsum dolor sit amet"
 ---
 
-* [Variations](#variations)
-* [States](#states)
-* [Usage](#usage)
+<div class="pb-jump">
+  <h2 class="pb-jump__title">On this page</h2>
+  <ul class="pb-jump__list">
+    <li class="pb-jump__item"><a class="pb-jump__link" href="#variations">Variations</a></li>
+    <li class="pb-jump__item"><a class="pb-jump__link" href="#states">States</a></li>
+    <li class="pb-jump__item"><a class="pb-jump__link" href="#usage">Usage</a></li>
+  </ul>
+</div>
 
-<button class="fsa-btn fsa-btn--primary">Label</button>
-<button class="fsa-btn fsa-btn--secondary">Label</button>
-<button class="fsa-btn fsa-btn--tertiary">Label</button>
-<button class="fsa-btn fsa-btn--alt">Label</button>
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--primary">Label</button>
+  <button class="fsa-btn fsa-btn--secondary">Label</button>
+  <button class="fsa-btn fsa-btn--tertiary">Label</button>
+  <button class="fsa-btn fsa-btn--alt">Label</button>
+</div>
 
 ## Variations
 

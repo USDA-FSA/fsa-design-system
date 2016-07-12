@@ -1,0 +1,51 @@
+.pb-jump {
+
+  &__title {
+
+    @include font-size(1);
+    margin: 0 0 1em;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+
+    @include breakpoint(M) {
+      display: inline-block;
+      margin-right: $size-default;
+      margin-bottom: 0;
+      &:after {
+        content: ':'
+      }
+    }
+
+  }
+
+  &__list {
+
+    @include breakpoint(M) {
+      @include reset-ul();
+      display: inline-block;
+    }
+
+  }
+
+  &__item {
+
+    @include breakpoint(M) {
+      @include reset-li();
+      display: inline-block;
+      margin-right: $size-small;
+    }
+
+  }
+
+  &__link {
+
+    color: $color-fsa-link;
+
+    &:hover,
+    &:visited {
+      color: $color-fsa-link;
+    }
+
+  }
+
+}
