@@ -20,12 +20,26 @@
     &--prototype {
       @include font-size(0);
       background-color: $color-gold-light;
-      color: black;
+      color: $color-fsa-black;
       padding: 0 $size-base;
       position: relative;
       top: 1px;
     }
 
+  }
+
+  &__us-tog {
+
+    display: none;
+
+    @include breakpoint(SM) {
+      display: inline;
+    }
+
+  }
+
+  .usa-flag_icon {
+    margin-right: $size-small;
   }
 
 }

@@ -12,9 +12,12 @@
 @import "elements/playbook.preview" ;
 
 @import "components/playbook.disclaimer";
+@import "components/playbook.header" ;
 @import "components/playbook.nav" ;
 @import "components/playbook.nav-local" ;
 @import "components/playbook.jump" ;
+
+@import "playbook.shame" ;
 
 @import "syntax-highlighting" ;
 
