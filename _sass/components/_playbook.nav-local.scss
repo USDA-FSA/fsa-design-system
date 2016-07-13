@@ -3,11 +3,11 @@
   &__list {
 
     @include reset-ul();
-    margin-bottom: $size-large;
+    margin-top: $size-small;
+    margin-bottom: $size-medium;
 
     @include breakpoint(MML) {
       border-top: 1px solid $color-fsa-tertiary-200;
-      margin-top: $size-small;
     }
 
   }

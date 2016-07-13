@@ -1,5 +1,7 @@
 .pb-jump {
 
+  margin-top: $size-medium;
+
   &__title {
 
     @include font-size(1);
