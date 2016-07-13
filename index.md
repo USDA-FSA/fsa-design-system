@@ -4,7 +4,7 @@ title: Front Page
 
 ---
 
-Home
+<div style="border: 1px solid #ccc; padding: 20vh 1em; background-color: white; font-size: 36px; text-align: center; margin: 0 0 1em;">Home</div>
 
 <!-- <ul>
 {% for post in site.posts %}

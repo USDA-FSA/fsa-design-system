@@ -27,9 +27,16 @@
 }
 
 .pb-article {
-  // max-width: $text-max-width
+
+  > ul,
+  > ol,
+  > p {
+    max-width: $text-max-width;
+    max-width: 68ch;
+  }
+
 }
 
 .pb-page-title {
-  margin-top: 0;
+  margin: 0;
 }

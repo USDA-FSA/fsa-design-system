@@ -1,5 +1,15 @@
 h2[id] {
   .pb-article & {
+
     border-bottom: 2px solid $color-fsa-secondary-200;
+
+    &:before {
+      $fudge-amount: $size-extra-large;
+      content: '';
+      display: block;
+      height: $fudge-amount;
+      margin: (-$fudge-amount) 0 0;
+    }
+
   }
 }
