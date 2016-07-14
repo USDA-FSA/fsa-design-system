@@ -76,7 +76,7 @@ Buttons may be presented in several ways:
 
 ### Full-width
 
-<button class="fsa-btn fsa-btn--primary fsa-btn--block">Label</button>
+<div><button class="fsa-btn fsa-btn--primary fsa-btn--block">Label</button></div>
 
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--block">Label</button>
