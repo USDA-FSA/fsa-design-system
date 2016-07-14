@@ -5,7 +5,7 @@
 
         {% assign activeClassName = nil %}
 
-        {% if page.href contains link.href %}
+        {% if page.url contains link.href %}
           {% assign activeClassName = 'pb-nav__list-item--active' %}
         {% endif %}
 
