@@ -17,7 +17,7 @@
   $button-download-hover  : shade($button-download, 25%);
   $button-download-active : shade($button-download, 45%);
 
-  &--download {
+  &--start {
 
     background-color: $button-download;
     color: $button-download-text;
