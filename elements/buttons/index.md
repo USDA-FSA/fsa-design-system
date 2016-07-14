@@ -6,8 +6,9 @@ intro: "Use buttons to signal actions."
 ---
 
 <div class="pb-jump">
-  <h2 class="pb-jump__title">On this page</h2>
+  <h2 class="pb-jump__title">Buttons</h2>
   <ul class="pb-jump__list">
+    <li class="pb-jump__item"><a class="pb-jump__link" href="#article-title">Overview</a></li>
     <li class="pb-jump__item"><a class="pb-jump__link" href="#variations">Variations</a></li>
     <li class="pb-jump__item"><a class="pb-jump__link" href="#states">States</a></li>
     <li class="pb-jump__item"><a class="pb-jump__link" href="#usage">Usage</a></li>

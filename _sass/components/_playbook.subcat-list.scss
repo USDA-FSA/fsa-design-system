@@ -1,6 +1,7 @@
 .pb-subcat-list {
 
   &__list {
+
     @include reset-ul();
 
     @include breakpoint(S) {
@@ -10,6 +11,7 @@
   }
 
   &__list-item {
+
     @include reset-li();
     margin-bottom: 1em;
 
