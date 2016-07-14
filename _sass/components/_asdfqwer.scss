@@ -1,0 +1,59 @@
+/*! ------------------------------------------------------------------------- */
+/*! Asdfqwer */
+
+$outline-asdfqwer-color: $color-primary-alt;
+
+.asdfqwer {
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include breakpoint(M) {
+    display: flex;
+  }
+
+  &__item {
+
+    $item-bgc: rgba(0, 0, 0, .2);
+
+    border: 10px solid $outline-asdfqwer-color;
+    transition: all ease-in-out .1s;
+    background-color: $item-bgc;
+    list-style-type: none;
+    padding: 10px;
+
+    @include breakpoint(SM) {
+
+      flex: 1;
+      border-width: 5px;
+      border-color: shade($outline-asdfqwer-color, 20%);
+      margin: 0 20px 0 0;
+
+      &:exactly(4) {
+        background-color: shade($outline-asdfqwer-color, 20%);
+      }
+
+      &:at-least(4) {
+        background-color: shade($outline-asdfqwer-color, 10%);
+      }
+
+      &:at-most(3) {
+        background-color: tint($outline-asdfqwer-color, 40%);
+      }
+
+    }
+
+    &:first-child {
+      font-weight: bold;
+    }
+
+    &:last-child {
+      @include breakpoint(SM) {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+}

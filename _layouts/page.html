@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/4@ml">
+
+    {% include nav-local.html %}
+
+  </div>
+  <div class="fsa-grid__1 fsa-grid__3/4@ml">
+
+    <article class="pb-article">
+
+      <h1 class="pb-page-title">{{ page.title }}</h1>
+
+      {% if page.intro %}
+      <p class="fsa-text--lead">{{ page.intro }}</p>
+      {% endif %}
+
+      {{ content }}
+
+    </article>
+
+  </div>
+</div>

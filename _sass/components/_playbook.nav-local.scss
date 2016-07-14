@@ -1,0 +1,45 @@
+.pb-nav-local {
+
+  &__list {
+
+    @include reset-ul();
+    margin-top: $size-small;
+    margin-bottom: $size-medium;
+
+    @include breakpoint(MML) {
+      border-top: 1px solid $color-fsa-tertiary-200;
+    }
+
+  }
+
+  &__list-item {
+
+    @include reset-li();
+
+    &--active {
+      box-shadow: 2px 0 0 0 $color-fsa-primary inset;
+    }
+
+  }
+
+  &__link {
+
+    color: $color-base;
+    display: block;
+    padding-left: $size-default;
+    padding-right: $size-default;
+
+    @include breakpoint(MML) {
+      border-bottom: 1px solid $color-fsa-tertiary-200;
+      padding-top: $size-small;
+      padding-bottom: $size-small;
+    }
+
+    &:hover,
+    &:visited {
+      color: $color-base;
+    }
+
+  }
+
+}

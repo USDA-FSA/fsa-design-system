@@ -1,0 +1,97 @@
+////////////////////////////////////////////////////////////////////////
+// Text Fields
+
+.fsa-input,
+.fsa-textarea {
+
+  @include fsa-shared-form-properties();
+
+  // scss-lint:disable TrailingSemicolon SpaceAfterPropertyColon
+  padding:
+    ($form-padding - .1rem) // to achieve vertical alignment
+    ($form-padding)
+    ($form-padding)
+  ;
+
+  @include placeholder {
+    color: $form-placeholder-color;
+  }
+
+  &:focus {
+    border-color: $form-focus-color;
+    box-shadow: 0 0 0 1px $form-focus-color inset;
+  }
+
+  &[disabled] {
+    opacity: .5;
+    background-color: $form-disabled-bg-color;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &[readonly] {
+    background-color: $color-fsa-site-bg;
+    cursor: default;
+  }
+
+  &--error {
+
+    border-color: $form-error-color;
+    box-shadow: 0 0 0 1px $form-error-color inset;
+    background-color: $form-error-color-bg;
+
+    @include placeholder {
+      color: shade($form-placeholder-color, 20%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 .2rem $form-error-color-focus inset;
+      border-color: transparent;
+    }
+
+  }
+
+  &--positive {
+
+    border-color: $form-positive-color;
+    box-shadow: 0 0 0 1px $form-positive-color inset;
+    background-color: $form-positive-color-bg;
+
+    @include placeholder {
+      color: shade($form-placeholder-color, 20%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 .2rem $form-positive-color-focus inset;
+      border-color: transparent;
+    }
+
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &--small {
+    height: $button-height--sm;
+    font-size: $form-text-size--sm;
+  }
+
+  &--large {
+    height: $button-height--lg;
+    font-size: $form-text-size--lg;
+    padding-left: $form-padding + $size-base;
+  }
+
+}
+
+.fsa-textarea {
+  min-height: 15rem;
+  display: block;
+  max-width: none;
+  width: 100%;
+  line-height: $base-line-height;
+  padding: $form-padding;
+  resize: vertical;
+}

@@ -1,0 +1,87 @@
+/* FSA-specific overrides/additions */
+
+body {
+  background-color: $color-fsa-site-bg;
+  line-height: $base-line-height;
+  color: $color-fsa-base;
+}
+
+pre,
+code,
+kbd,
+samp,
+var,
+tt {
+
+  @include font-size(0);
+  color: $color-fsa-red-900;
+  font-family: $font-mono;
+  border-radius: 2px;
+  background-color: $color-fsa-site-bg;
+  padding: ($size-base / 2);
+  // border: 1px solid $color-fsa-tertiary-200;
+
+  code {
+    border: 0;
+    display: block;
+  }
+
+  p {
+    // margin-top: 0;
+  }
+
+}
+
+pre {
+  padding: $size-base;
+}
+
+// scss-lint:disable QualifyingElement
+abbr[title] {
+  cursor: default;
+}
+
+// scss-lint:disable QualifyingElement PlaceholderInExtend
+acronym[title],
+dfn[title] {
+  @extend abbr;
+}
+
+ins {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+mark {
+  background-color: $color-gold-lightest;
+}
+
+blockquote {
+  @include font-size(2);
+  font-style: italic;
+  margin: 0;
+  font-family: $font-serif;
+  padding-left: $size-default;
+  border-left: $size-base solid $color-fsa-tertiary-200;
+  max-width: $text-max-width;
+
+  @include breakpoint(ML) {
+    @include font-size(5);
+    padding-left: $size-medium;
+  }
+
+
+}
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 0;
+  height: 1px;
+  background: $color-fsa-tertiary-200;
+}

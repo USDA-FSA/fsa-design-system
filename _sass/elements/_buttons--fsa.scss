@@ -1,0 +1,268 @@
+/* ---------------------------------------------------------------------------*/
+/* BASE: BUTTONS                                                              */
+
+$button-height            : 3.9rem; // 39px
+$button-height--sm        : 3rem; // 30px
+$button-height--lg        : 6.2rem;
+$button-padding           : $size-default;
+$button-text              : $color-fsa-white;
+$button-line-height       : 1;
+$button-border-radius     : .4rem;
+$button-font-family       : $font-sans;
+$button-font-weight       : $font-normal;
+$button-font-size         : $font-size-3;
+
+$button-default           : $color-fsa-secondary;
+$button-default-text      : $button-text;
+$button-default-hover     : shade($button-default, 25%);
+$button-default-active    : shade($button-default, 55%);
+
+$button-primary           : $color-fsa-secondary;
+$button-primary-text      : $button-text;
+$button-primary-hover     : shade($button-primary, 25%);
+$button-primary-active    : shade($button-primary, 45%);
+
+$button-secondary        : $color-fsa-tertiary;
+$button-secondary-text   : $button-text;
+$button-secondary-hover  : shade($button-secondary, 25%);
+$button-secondary-active : shade($button-secondary, 45%);
+
+$button-tertiary        : $color-fsa-red;
+$button-tertiary-text   : $button-text;
+$button-tertiary-hover  : shade($button-secondary, 25%);
+$button-tertiary-active : shade($button-secondary, 45%);
+
+$button-alt              : $color-fsa-white;
+$button-alt-text         : $color-fsa-secondary;
+$button-alt-hover        : shade($button-alt, 5%);
+$button-alt-active       : $color-fsa-secondary;
+$button-alt-border       : $color-fsa-secondary;
+$button-alt-border-width : .2rem;
+
+.fsa-btn {
+
+  @include fsa-space-between();
+
+  // -------------------------------------------------------------------------
+  // reset
+  @include font-smoothing(on);
+  height: $button-height;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  line-height: $button-line-height;
+  position: relative;
+  top: .1rem;
+  // scss-lint:disable all ImportantRule
+  text-decoration: none !important; // yep, intentional
+
+  @supports (-webkit-appearance:none) {
+    // Webkit only.
+    // yes, a single pixel. sorry, not sorry
+    top: 0;
+  }
+
+  // -------------------------------------------------------------------------
+  // normalize
+  font-size: $button-font-size;
+  font-family: $button-font-family;
+  font-weight: $button-font-weight;
+  display: inline-block;
+  border-radius: $button-border-radius;
+
+  // scss-lint:disable Shorthand
+  padding: ($button-padding - .1rem) ($button-padding * 2) ($button-padding - .1rem);
+
+  // -------------------------------------------------------------------------
+  // default
+
+  background-color: $button-default;
+  color: $button-default-text;
+
+  &:visited {
+    color: $button-default-text;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $button-default-text;
+  }
+
+  &:hover:not([disabled]) {
+    color: $button-text;
+    background-color: $button-default-hover;
+  }
+
+  &:focus:not([disabled]),
+  &:active:not([disabled]) {
+    color: $button-text;
+    background-color: $button-default-active;
+    box-shadow: none;
+  }
+
+  // -------------------------------------------------------------------------
+  // variations, modifiers
+
+  &[disabled] {
+
+    $color-transparentized: transparentize($button-default-text, .35);
+
+    opacity: .4;
+    color: $color-transparentized;
+    cursor: not-allowed;
+    pointer-events: none;
+
+    color: $color-transparentized;
+
+    &:visited {
+      color: $color-transparentized;
+    }
+
+    &:focus,
+    &:active {
+      // outline: 0;
+    }
+
+    &:hover {
+      cursor: not-allowed;
+      color: $color-transparentized;
+    }
+
+  }
+
+  &--primary {
+
+    background-color: $button-primary;
+    color: $button-primary-text;
+
+    &:visited {
+      color: $button-primary-text;
+    }
+
+    &:hover {
+      color: $button-primary-text;
+    }
+
+    &:hover:not([disabled]) {
+      background-color: $button-primary-hover;
+    }
+
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $button-primary-text;
+      background-color: $button-primary-active;
+    }
+
+  }
+
+  &--secondary {
+
+    color: $button-secondary-text;
+    background-color: $button-secondary;
+
+    &:hover:not([disabled]) {
+      color: $button-secondary-text;
+      background-color: $button-secondary-hover;
+    }
+
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $button-secondary-text;
+      background-color: $button-secondary-active;
+    }
+
+  }
+
+  &--tertiary {
+
+    color: $button-tertiary-text;
+    background-color: $button-tertiary;
+
+    &:hover:not([disabled]) {
+      color: $button-tertiary-text;
+      background-color: $button-tertiary-hover;
+    }
+
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $button-tertiary-text;
+      background-color: $button-tertiary-active;
+    }
+
+  }
+
+  &--alt {
+
+    color: $button-alt-text;
+    background-color: $button-alt;
+    box-shadow: 0 0 0 $button-alt-border-width $button-alt-border inset;
+
+    &:visited {
+      color: $button-alt-text;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+
+    &:hover:not([disabled]) {
+      color: $button-alt-text;
+      background-color: $button-alt-hover;
+    }
+
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $button-alt-hover;
+      background-color: $button-alt-active;
+      box-shadow: none;
+    }
+
+    // scss-lint:disable SelectorFormat
+    &[disabled] {
+      color: $button-alt-text;
+      &:hover {
+        color: $button-alt-text;
+      }
+    }
+
+  }
+
+  &--block {
+    width: 100%;
+    display: block;
+  }
+
+  &--small {
+
+    height: $button-height--sm;
+    // scss-lint:disable SpaceAfterPropertyColon TrailingSemicolon Shorthand
+    padding:
+      ($size-small)
+      ($size-default)
+      ($size-small)
+    ;
+    font-size: $font-size-1; // no we're not using mixin cuz we don't want its line-height
+    border-radius: ($button-border-radius / 2);
+
+  }
+
+  &--large {
+
+    height: $button-height--lg;
+
+    // scss-lint:disable SpaceAfterPropertyColon TrailingSemicolon
+    padding:
+      (($button-padding * 2) - .3rem)
+      ($size-large)
+      (($button-padding * 2) - .3rem)
+    ;
+    font-size: $font-size-6; // no we're not using mixin cuz we don't want its line-height
+    font-weight: $font-light;
+    border-radius: ($button-border-radius * 2);
+
+  }
+
+}

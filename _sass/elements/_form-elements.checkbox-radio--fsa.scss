@@ -1,0 +1,164 @@
+////////////////////////////////////////////////////////////////////////
+// Text Fields
+
+// Mostly a straight copy of USWDS checkbox and radio elements,
+// with a few adjustments
+
+.fsa-checkbox,
+.fsa-radio {
+
+  // @include sr-only();
+  position: absolute;
+  opacity: 0;
+
+  .lt-ie9 & {
+    border: 0;
+    float: left;
+    margin: .4em .4em 0 0;
+    position: static;
+    width: auto;
+    opacity: 1;
+  }
+
+}
+
+.fsa-checkbox + label,
+.fsa-radio + label {
+  $indent-amount: 1.7em;
+  cursor: pointer;
+  font-weight: $font-normal;
+  text-indent: -$indent-amount;
+  margin-left: $indent-amount;
+  display: inline-block;
+}
+
+.fsa-checkbox + :not(label),
+.fsa-radio + :not(label) {
+  &:before {
+    display: block;
+    background-color: $color-fsa-tertiary-200;
+    padding: $size-default;
+    margin-bottom: 1em;
+    content: 'CSS ERROR: checkbox or radio requires a <label> element immediately following it. Refer to FSA Design System for guidance. ';
+    color: orangered;
+    border: 4px solid orangered;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.fsa-radio + label {
+  $indent-amount: 1.6em;
+  text-indent: -$indent-amount;
+  margin-left: $indent-amount + .1em;
+}
+
+.fsa-checkbox + label::before,
+.fsa-radio + label::before {
+  background: white;
+  border-radius: $border-radius;
+  box-shadow: 0 0 0 1px $form-checkbox-radio-outline-color;
+  content: '\a0';
+  display: inline-block;
+  height: 1.8rem;
+  line-height: .8;
+  margin-right: .6em;
+  text-indent: .15em;
+  vertical-align: .2em;
+  width: 1.8rem;
+  margin-left: .1rem;
+
+  .lt-ie9 & {
+    outline: 1px solid red;
+    display: none;
+  }
+
+}
+
+.fsa-radio + label::before {
+  box-shadow: 0 0 0 2px $color-white, 0 0 0 3px $form-checkbox-radio-outline-color;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 100%;
+}
+
+.fsa-checkbox:indeterminate + label::before,
+.fsa-checkbox:checked + label::before,
+.fsa-radio:checked + label::before {
+  background-color: $form-checkbox-radio-fill;
+  box-shadow: 0 0 0 1px $form-checkbox-radio-fill;
+}
+
+.fsa-radio:checked + label::before {
+  // scss-lint:disable all
+  box-shadow:
+    0 0 0 2px $color-white,
+    0 0 0 4px $form-checkbox-radio-fill
+  ;
+}
+
+.fsa-radio:focus + label::before {
+  // scss-lint:disable all
+  box-shadow:
+    0 0 0 .2rem $color-white,
+    0 0 0 .4rem $form-checkbox-radio-fill,
+    0 0 .3rem .4rem $color-focus,
+    0 0 .7rem .4rem $color-focus
+  ;
+}
+
+.fsa-checkbox:checked + label::before {
+  background-image: url('../img/correct8.png');
+  background-image: url('../img/correct8.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.fsa-checkbox:indeterminate + label::before {
+  background-image: url('../img/dash.png');
+  background-image: url('../img/dash.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.fsa-checkbox:focus + label::before {
+  box-shadow: 0 0 0 1px $color-white, 0 0 0 3px $form-checkbox-radio-fill;
+}
+
+.fsa-checkbox:disabled + label,
+.fsa-radio:disabled + label {
+  // color: $color-gray;
+  cursor: text;
+}
+
+.fsa-checkbox:disabled + label::before,
+.fsa-radio:disabled + label::before {
+  background-color: $white;
+  // box-shadow: 0 0 0 1px $color-gray;
+  cursor: not-allowed;
+  opacity: .3;
+}
+
+.fsa-radio:disabled + label::before {
+  // scss-lint:disable all
+  box-shadow:
+    0 0 0 2px $white,
+    0 0 0 3px $form-checkbox-radio-outline-color
+  ;
+}
+
+.fsa-radio:disabled:checked + label::before {
+  background-color: $form-checkbox-radio-fill;
+  // scss-lint:disable all
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px $form-checkbox-radio-fill
+  ;
+  opacity: .3;
+}
+
+.fsa-checkbox:disabled:checked + label::before {
+  background-color: $form-checkbox-radio-fill;
+  box-shadow: 0 0 0 1px $form-checkbox-radio-fill;
+  opacity: .3;
+}

@@ -1,0 +1,94 @@
+- title: "Home"
+  href: ""
+
+- title: "Getting Started"
+  href: "getting-started"
+  subcategories:
+
+    - subtitle: "Using Assets"
+      subhref: "getting-started/using-assets"
+
+    - subtitle: "Contributing"
+      subhref: "getting-started/contributing"
+
+    - subtitle: "License"
+      subhref: "getting-started/license"
+
+- title: "Visual Style"
+  href: "visual-style"
+  subcategories:
+
+    - subtitle: "Logo"
+      subhref: "visual-style/logo"
+
+    - subtitle: "Color"
+      subhref: "visual-style/color"
+
+    - subtitle: "Size and Space"
+      subhref: "visual-style/size-and-space"
+
+    - subtitle: "Typography"
+      subhref: "visual-style/typography"
+
+    - subtitle: "Grid"
+      subhref: "visual-style/grid"
+
+- title: "Elements"
+  href: "elements"
+  subcategories:
+
+    - subtitle: "Buttons"
+      subhref: "elements/buttons"
+
+    - subtitle: "Input"
+      subhref: "elements/input"
+
+    - subtitle: "Textarea"
+      subhref: "elements/textarea"
+
+    - subtitle: "Checkbox"
+      subhref: "elements/checkbox"
+
+    - subtitle: "Radio"
+      subhref: "elements/radio"
+
+    - subtitle: "Select"
+      subhref: "elements/select"
+
+    - subtitle: "Tables"
+      subhref: "elements/tables"
+
+    - subtitle: "Utilities"
+      subhref: "elements/utilities"
+
+- title: "Components"
+  href: "components"
+  subcategories:
+
+    - subtitle: "Lorem"
+      subhref: "components/lorem"
+
+    - subtitle: "Ipsum"
+      subhref: "components/ipsum"
+
+    - subtitle: "Dolor"
+      subhref: "components/dolor"
+
+    - subtitle: "Sit"
+      subhref: "components/it"
+
+    - subtitle: "Amet"
+      subhref: "components/amet"
+
+- title: "Guides"
+  href: "guides"
+  subcategories:
+
+    - subtitle: "Front-end"
+      subhref: "guides/front-end"
+
+    - subtitle: "Accessibility"
+      subhref: "guides/accessibility"
+
+    - subtitle: "Content"
+      subhref: "guides/content"

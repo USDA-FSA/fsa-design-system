@@ -1,0 +1,144 @@
+////////////////////////////////////////////////////////////////////////
+// Select
+
+.fsa-select {
+
+  @include fsa-shared-form-properties();
+
+  background-image: url('../img/arrow-down.png');
+  background-image: url('../img/arrow-down.svg');
+  background-position: right 1.3rem center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+
+  // scss-lint:disable TrailingSemicolon SpaceAfterPropertyColon
+  padding:
+    ($form-padding - .2rem) // to achieve vertical alignment
+    ($form-padding * 4) // to prevent text beneath arrow
+    ($form-padding - .1rem) // to achieve vertical alignment
+    ($form-padding)
+  ;
+
+  text-overflow: ellipsis;
+
+  vertical-align: middle;
+  position: relative;
+  top: -.1rem;
+
+  @supports (-webkit-appearance: none) {
+    /* Webkit only */
+    // yep, a SINGLE pixel bugged me enough to do this
+    padding-top: $form-padding - .1rem;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    // IE doesn't like the extra padding on right.
+    padding-right: $form-padding / 2;
+  }
+
+  &:focus {
+    border-color: $form-focus-color;
+    box-shadow: 0 0 0 1px $form-focus-color inset;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &[disabled] {
+    opacity: .5;
+    background-color: $form-disabled-bg-color;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &[multiple] {
+
+    // we actually don't want this to be used, but this style supports
+    // it just in case. designers and developers should be
+    // encouraged to use alternate solution, e.g. multiple checkboxes
+    height: auto;
+    background-image: none;
+    padding: 0;
+
+    option {
+      padding: ($form-padding / 2) $form-padding;
+      &:hover {
+        cursor: pointer;
+        background-color: $color-fsa-tertiary-100;
+      }
+    }
+
+  }
+
+  &--error {
+
+    border-color: $form-error-color;
+    box-shadow: 0 0 0 1px $form-error-color inset;
+    background-color: $form-error-color-bg;
+
+    @include placeholder {
+      color: shade($form-placeholder-color, 20%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 .2rem $form-error-color-focus inset;
+      border-color: transparent;
+    }
+
+  }
+
+  &--positive {
+
+    border-color: $form-positive-color;
+    box-shadow: 0 0 0 1px $form-positive-color inset;
+    background-color: $form-positive-color-bg;
+
+    // @include placeholder {
+    //   color: shade($form-placeholder-color, 20%);
+    // }
+
+    // &:focus {
+    //   box-shadow: 0 0 0 .2rem $form-error-color-focus inset;
+    //   border-color: transparent;
+    // }
+
+  }
+
+  &--small {
+
+    height: $button-height--sm;
+    padding-top: $size-small - .4rem;
+    padding-bottom: $size-small + .1rem;
+    font-size: $font-size-1; // no we're not using mixin cuz we don't want its line-height
+
+    @supports (-webkit-appearance: none) {
+      padding-top: $form-padding - .1rem;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      padding-top: $form-padding - .1rem;
+    }
+
+  }
+
+  &--large {
+
+    height: $button-height--lg;
+    padding-top: ($button-padding * 2) - .9rem;
+    padding-bottom: ($button-padding * 2) - .3rem;
+    font-size: $font-size-6; // no we're not using mixin cuz we don't want its line-height
+    top: -.3rem;
+
+    @supports (-webkit-appearance: none) {
+      padding-top: ($button-padding * 2) - .4rem;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      padding-top: ($button-padding * 2) - .4rem;
+    }
+
+  }
+
+}
