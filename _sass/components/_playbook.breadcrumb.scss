@@ -1,0 +1,45 @@
+.pb-breadcrumb {
+
+  &__list {
+    margin: 0 0 $size-small;
+  }
+
+  &__item {
+
+    margin: 0;
+    display: inline-block;
+
+    &:before,
+    &:after {
+      content: '';
+      display: none;
+      margin: 0;
+    }
+
+    &:after {
+      content: '/';
+      display: inline-block;
+      margin-right: $size-small;
+      margin-left: $size-base;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;;
+      }
+    }
+
+  }
+
+  &__link {
+
+    color: $color-fsa-link;
+
+    &:visited,
+    &:hover {
+      color: $color-fsa-link;
+    }
+
+  }
+
+}

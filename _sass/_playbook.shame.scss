@@ -1,0 +1,45 @@
+.pb-icn {
+  &__github {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: $size-small;
+    width: $size-medium;
+    height: $size-medium;
+    margin-top: -2px;
+
+  }
+}
+
+.pb-btn {
+
+  $button-download        : $color-fsa-primary-900;
+  $button-download-text   : $button-text;
+  $button-download-hover  : shade($button-download, 25%);
+  $button-download-active : shade($button-download, 45%);
+
+  &--download {
+
+    background-color: $button-download;
+    color: $button-download-text;
+
+    &:visited {
+      color: $button-download-text;
+    }
+
+    &:hover {
+      color: $button-download-text;
+    }
+
+    &:hover:not([disabled]) {
+      background-color: $button-download-hover;
+    }
+
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $button-download-text;
+      background-color: $button-download-active;
+    }
+
+  }
+
+}
