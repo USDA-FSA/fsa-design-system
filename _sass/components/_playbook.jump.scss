@@ -1,41 +1,42 @@
 .pb-jump {
 
-  margin-top: $size-medium;
+  @include breakpoint(MML) {
+
+    width: 175px;
+    position: absolute;
+    top: 5px;
+    left: 104%;
+    left: calc(100% + 24px);
+
+  }
 
   &__title {
 
-    @include font-size(1);
-    margin: 0 0 1em;
-    font-weight: $font-bold;
-    text-transform: uppercase;
+    display: none;
 
-    @include breakpoint(M) {
-      display: inline-block;
-      margin-right: $size-default;
-      margin-bottom: 0;
-      &:after {
-        content: ':'
-      }
+    @include breakpoint(MML) {
+
+      @include font-size(3);
+      font-family: $font-sans;
+      margin: 0 0 .5em;
+      display: block;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+
     }
 
   }
 
   &__list {
 
-    @include breakpoint(M) {
-      @include reset-ul();
-      display: inline-block;
-    }
+    @include reset-ul();
 
   }
 
   &__item {
 
-    @include breakpoint(M) {
-      @include reset-li();
-      display: inline-block;
-      margin-right: $size-small;
-    }
+    @include reset-li();
+    margin-bottom: $size-small;
 
   }
 

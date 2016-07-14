@@ -1,0 +1,55 @@
+.pb-subcat-list {
+
+  &__list {
+
+    @include reset-ul();
+
+    @include breakpoint(S) {
+      @include fsa-grid-row();
+    }
+
+  }
+
+  &__list-item {
+
+    @include reset-li();
+    margin-bottom: 1em;
+
+    @include breakpoint(S) {
+      @include fsa-grid-column();
+      @include fsa-grid-column-width(6);
+    }
+
+    @include breakpoint(M) {
+      @include fsa-grid-column-width(4);
+    }
+
+  }
+
+  &__link {
+
+    display: block;
+
+    &:visited {
+      color: $color-fsa-link;
+    }
+
+  }
+
+  &__text {
+
+    font-weight: $font-bold;
+
+    @include breakpoint(MML) {
+      @include font-size(5);
+    }
+
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    margin-bottom: $size-base;
+  }
+
+}

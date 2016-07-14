@@ -26,7 +26,13 @@
 
 }
 
+.pb-overview {
+  // margin-top: 0;
+}
+
 .pb-article {
+
+  position: relative;
 
   > ul,
   > ol,
@@ -38,5 +44,11 @@
 }
 
 .pb-page-title {
+
   margin: 0;
+
+  @include breakpoint(MML) {
+    border-bottom: 1px solid $color-fsa-tertiary-200;
+  }
+
 }

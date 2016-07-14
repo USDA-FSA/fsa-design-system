@@ -4,10 +4,9 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<h1 class="pb-page-title" id="article-title">{{ page.title }}</h1>
+<h1 class="pb-page-title">{{ page.title }}</h1>
 
 <div class="fsa-grid">
-
   <div class="fsa-grid__1 fsa-grid__3/4@ml">
 
     <article class="pb-article">
@@ -18,10 +17,11 @@ layout: default
 
       {{ content }}
 
+      {% include sub-categories.html %}
+
     </article>
 
   </div>
-
   <div class="fsa-grid__1 fsa-grid__1/4@ml">
 
 
