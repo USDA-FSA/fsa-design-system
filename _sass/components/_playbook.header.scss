@@ -77,6 +77,20 @@
   &__link {
 
     color: $color-fsa-white;
+    text-decoration: none;
+
+    &:hover, {
+      box-shadow:
+        0 -1px 0 0 $color-fsa-primary inset,
+        0 -2px 0 0 $color-fsa-primary inset,
+        0 -3px 0 0 $color-fsa-primary inset,
+        0 -4px 0 0 $color-fsa-primary inset,
+        0 -5px 0 0 $color-fsa-primary inset,
+        0 -6px 0 0 $color-fsa-primary inset,
+        0 -7px 0 0 $color-fsa-white inset
+      ;
+    	text-decoration: none;
+    }
 
     &:visited,
     &:active,
