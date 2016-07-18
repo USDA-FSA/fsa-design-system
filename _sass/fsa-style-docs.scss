@@ -33,6 +33,9 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
   &__disclaimer {
 
     background-color: $color-fsa-primary-900;
+    height: auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 
     &__bd {
       max-width: ($site-max-width + 24px);
@@ -55,7 +58,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
         color: black;
         padding: 0 $size-base;
         position: relative;
-        top: 1px;
+        top: -2px;
       }
 
     }
@@ -177,7 +180,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
       display: inline-block;
       margin-right: $size-small;
-      // text-decoration: underline;
+      text-decoration: none;
       color: $color-fsa-white;
 
       @include breakpoint(ML) {
@@ -196,6 +199,10 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
       // }
 
       // scss-lint:disable NestingDepth
+      &:hover {
+        text-decoration: underline;
+      }
+
       &:hover,
       &:visited {
 
