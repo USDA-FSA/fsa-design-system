@@ -71,11 +71,20 @@ select {
   textarea,
   select {
     border: 3px solid $color-secondary-dark;
-    width: calc(100% + 1.5rem);
+    width: calc(100% + 1.9rem); // 1.5rem left padding + 4px border from input error spacing
   }
 
   label {
     margin-top: 0;
+  }
+
+  .usa-input-inline {
+    border: $input-border-width solid $color-gray;
+    width: inherit;
+  }
+
+  .usa-input-inline-error {
+    border: 3px solid $color-secondary-dark;
   }
 }
 
@@ -170,6 +179,7 @@ input[type="radio"] + label::before {
   line-height: 1.8rem;
   margin-right: 0.6em;
   text-indent: 0.15em;
+  vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
   width: 1.8rem;
 }
 

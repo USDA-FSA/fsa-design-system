@@ -27,10 +27,10 @@
   },
   "dependencies": {
     "jquery": "^2.2.2",
-    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#73979ef"
+    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#f60afae"
   },
   "scripts": {
     "install-dep": "bundle install && npm install",
-    "start": "grunt && bundle exec jekyll serve"
+    "start": "npm run install-dep && grunt && bundle exec jekyll serve"
   }
 }
