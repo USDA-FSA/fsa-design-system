@@ -1,5 +1,9 @@
 .pb-jump {
 
+  &--fixed {
+    // outline: 1px solid red;
+  }
+
   @include breakpoint(MML) {
 
     width: 175px;
