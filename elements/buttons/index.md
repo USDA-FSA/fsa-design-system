@@ -3,23 +3,10 @@ layout: page
 parent: "Elements"
 title: "Buttons"
 intro: "Use buttons to signal actions."
+jump_menu: true
 ---
 
 Numquam sequi, error natus hic vitae nostrum, ex voluptas, molestias aperiam explicabo at non. Alias quia nesciunt et rerum expedita ea ab?
-
-<div class="pb-jump">
-  <h2 class="pb-jump__title">Buttons</h2>
-  <ul class="pb-jump__list">
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#article-title">Overview</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#variations">Variations</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#states">States</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#html-guidance">HTML Guidance</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#usage">Usage</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#accessibility">Accessibility</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#general-guidance">General Guidance</a></li>
-    <li class="pb-jump__item"><a class="pb-jump__link" href="#related">Related</a></li>
-  </ul>
-</div>
 
 <div class="pb-preview">
   <button class="fsa-btn fsa-btn--primary">Label</button>
