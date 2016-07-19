@@ -7,21 +7,21 @@
 @import "fsa-style.scss";
 // -----------------------------------------------------------------------------
 
-@import "core/playbook.layout" ;
-@import "elements/playbook.typography" ;
-@import "elements/playbook.preview" ;
+@import "core/playbook.layout";
+@import "elements/playbook.typography";
+@import "elements/playbook.preview";
 
 @import "components/playbook.disclaimer";
-@import "components/playbook.header" ;
-@import "components/playbook.breadcrumb" ;
-@import "components/playbook.subcat-list" ;
-@import "components/playbook.nav" ;
-@import "components/playbook.nav-local" ;
-@import "components/playbook.jump" ;
+@import "components/playbook.header";
+@import "components/playbook.breadcrumb";
+@import "components/playbook.subcat-list";
+@import "components/playbook.nav";
+@import "components/playbook.nav-local";
+@import "components/playbook.jump";
 
-@import "playbook.shame" ;
+@import "playbook.shame";
 
-@import "syntax-highlighting" ;
+@import "syntax-highlighting";
 
 html:hover body::before {
   display: none; // hide breakpoint bar
