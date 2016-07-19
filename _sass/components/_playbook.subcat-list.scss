@@ -38,11 +38,7 @@
 
   &__text {
 
-    font-weight: $font-bold;
-
-    @include breakpoint(MML) {
-      @include font-size(5);
-    }
+    font-family: $font-serif;
 
   }
 

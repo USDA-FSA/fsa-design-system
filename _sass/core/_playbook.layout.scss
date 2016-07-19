@@ -52,3 +52,32 @@
   }
 
 }
+
+.pb-l-page {
+
+  @include clearfix;
+
+  &__body {
+
+    @include breakpoint(MML) {
+
+      float: left;
+      width: 80%;
+      padding-right: $fsa-grid-gutter;
+
+    }
+
+  }
+
+  &__adjacent {
+
+    @include breakpoint(MML) {
+
+      float: right;
+      width: 20%;
+
+    }
+
+  }
+
+}
