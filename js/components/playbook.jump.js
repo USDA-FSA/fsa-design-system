@@ -4,10 +4,22 @@ var Sticky = require('../vendor/jquery.sticky');
 function JumpBuild() {
 
   var $articleBody = $('.pb-article');
-  var $articleTitles = $articleBody.find('h2[id]')
+  var $articleTitles = $articleBody.find('h2[id]');
+  var $jumpTarget = $('#jump-target');
+
+  $jumpTarget.html('\
+    <div class="pb-jump">\
+      <h2 class="pb-jump__title">Buttons</h2>\
+      <ul class="pb-jump__list">\
+        <li class="pb-jump__item"><a class="pb-jump__link" href="#article-title">Overview</a></li>\
+      </ul>\
+    </div>\
+  ');
+
+  var $jumpAppendTarget = $jumpTarget.find('.pb-jump__list');
 
   $articleTitles.each(function(index) {
-    console.log(index + ": " + $(this).text() + ' #' + $(this).attr('id'));
+    $jumpAppendTarget.append('<li class="pb-jump__item"><a class="pb-jump__link" href="#' + $(this).attr('id') +'">' + $(this).text() + '</a></li>')
   });
 
 }
@@ -37,8 +49,5 @@ jQuery(document).ready(function($){
   }
 
 });
-
-
-
 
 module.exports = Jump;

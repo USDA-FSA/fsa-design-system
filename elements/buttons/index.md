@@ -3,6 +3,7 @@ layout: page
 parent: "Elements"
 title: "Buttons"
 intro: "Use buttons to signal actions."
+jump_menu: true
 ---
 
 Numquam sequi, error natus hic vitae nostrum, ex voluptas, molestias aperiam explicabo at non. Alias quia nesciunt et rerum expedita ea ab?
