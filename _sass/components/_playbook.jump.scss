@@ -1,27 +1,19 @@
 
 .pb-jump-wrapper {
-  outline: 1px solid blue;
+  outline: 1px solid yellow;
 }
 
 .pb-jump {
 
-  @include breakpoint(MML) {
+  margin-top: 1.5em;
 
-    width: 175px;
-    position: absolute;
-    top: 5px;
-    left: 104%;
-    left: calc(100% + 24px);
+  .pb-jump--stuck & {
 
-  }
-
-  &--stuck {
     @include breakpoint(MML) {
-      position: fixed;
-      top: 70px;
+      margin-top: 0;
     }
-  }
 
+  }
 
   &__title {
 
