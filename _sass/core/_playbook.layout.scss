@@ -62,7 +62,7 @@
     @include breakpoint(MML) {
 
       float: left;
-      width: 75%;
+      width: 80%;
       padding-right: $fsa-grid-gutter;
 
     }
@@ -71,11 +71,10 @@
 
   &__adjacent {
 
-
     @include breakpoint(MML) {
 
       float: right;
-      width: 25%;
+      width: 20%;
 
     }
 

@@ -1,6 +1,5 @@
 
 .pb-jump-wrapper {
-  outline: 1px solid yellow;
 }
 
 .pb-jump {
@@ -20,14 +19,23 @@
     display: none;
 
     @include breakpoint(MML) {
-
-      @include font-size(3);
-      font-family: $font-sans;
-      margin: 0 0 .5em;
+      @include font-size(4);
       display: block;
+      height: 0;
+      overflow: hidden;
+      // font-family: $font-sans;
+      margin: 0;
       font-weight: $font-bold;
       text-transform: uppercase;
+      transition: all ease-in-out .23s;
+    }
 
+    .pb-jump--stuck & {
+      @include breakpoint(MML) {
+        height: auto;
+        margin-bottom: 1em;
+        border-bottom: 1px solid $color-fsa-secondary-200;
+      }
     }
 
   }
@@ -43,11 +51,18 @@
     @include reset-li();
     margin-bottom: $size-small;
 
+    &--active {
+      @include breakpoint(MML) {
+        font-weight: $font-bold;
+      }
+    }
+
   }
 
   &__link {
 
     color: $color-fsa-link;
+    text-decoration: none;
 
     &:hover,
     &:visited {

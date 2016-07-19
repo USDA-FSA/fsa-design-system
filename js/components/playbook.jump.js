@@ -1,5 +1,6 @@
 var $ = require('jquery');
 var Sticky = require('../vendor/jquery.sticky');
+var OnePageNav = require('../vendor/jquery.OnePageNav.js').OnePageNav;
 
 function JumpBuild() {
 
@@ -11,7 +12,7 @@ function JumpBuild() {
     <div class="pb-jump">\
       <h2 class="pb-jump__title">Buttons</h2>\
       <ul class="pb-jump__list">\
-        <li class="pb-jump__item"><a class="pb-jump__link" href="#article-title">Overview</a></li>\
+        <li class="pb-jump__item pb-jump__item--active"><a class="pb-jump__link" href="#main-content">Overview</a></li>\
       </ul>\
     </div>\
   ');
@@ -24,9 +25,7 @@ function JumpBuild() {
 
 }
 
-jQuery(document).ready(function($){
-
-  JumpBuild();
+function JumpStick() {
 
   if (window.matchMedia("(min-width: 672px)").matches) {
 
@@ -47,6 +46,23 @@ jQuery(document).ready(function($){
     });
 
   }
+
+}
+
+function JumpFollow() {
+  $('.pb-jump__list').onePageNav({
+    currentClass: 'pb-jump__item--active',
+    changeHash: false,
+    scrollThreshold: 0.1,
+    scrollSpeed: 550
+  });
+}
+
+jQuery(document).ready(function($){
+
+  JumpBuild();
+  JumpStick();
+  JumpFollow();
 
 });
 

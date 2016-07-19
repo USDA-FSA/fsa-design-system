@@ -1,6 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require('jquery');
 var Sticky = require('../vendor/jquery.sticky');
+var OnePageNav = require('../vendor/jquery.OnePageNav.js').OnePageNav;
 
 function JumpBuild() {
 
@@ -12,7 +13,7 @@ function JumpBuild() {
     <div class="pb-jump">\
       <h2 class="pb-jump__title">Buttons</h2>\
       <ul class="pb-jump__list">\
-        <li class="pb-jump__item"><a class="pb-jump__link" href="#article-title">Overview</a></li>\
+        <li class="pb-jump__item pb-jump__item--active"><a class="pb-jump__link" href="#main-content">Overview</a></li>\
       </ul>\
     </div>\
   ');
@@ -25,9 +26,7 @@ function JumpBuild() {
 
 }
 
-jQuery(document).ready(function($){
-
-  JumpBuild();
+function JumpStick() {
 
   if (window.matchMedia("(min-width: 672px)").matches) {
 
@@ -49,14 +48,28 @@ jQuery(document).ready(function($){
 
   }
 
+}
+
+function JumpFollow() {
+  $('.pb-jump__list').onePageNav({
+    currentClass: 'pb-jump__item--active',
+    changeHash: false,
+    scrollThreshold: 0.1,
+    scrollSpeed: 550
+  });
+}
+
+jQuery(document).ready(function($){
+
+  JumpBuild();
+  JumpStick();
+  JumpFollow();
+
 });
-
-
-
 
 module.exports = Jump;
 
-},{"../vendor/jquery.sticky":3,"jquery":4}],2:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":3,"../vendor/jquery.sticky":4,"jquery":5}],2:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -67,7 +80,232 @@ window.$ = $;
 var Jump = require('./components/playbook.jump');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/playbook.jump":1,"jquery":4}],3:[function(require,module,exports){
+},{"./components/playbook.jump":1,"jquery":5}],3:[function(require,module,exports){
+/*
+ * jQuery One Page Nav Plugin
+ * http://github.com/davist11/jQuery-One-Page-Nav
+ *
+ * Copyright (c) 2010 Trevor Davis (http://trevordavis.net)
+ * Dual licensed under the MIT and GPL licenses.
+ * Uses the same license as jQuery, see:
+ * http://jquery.org/license
+ *
+ * @version 3.0.0
+ *
+ * Example usage:
+ * $('#nav').onePageNav({
+ *   currentClass: 'current',
+ *   changeHash: false,
+ *   scrollSpeed: 750
+ * });
+ */
+
+;(function($, window, document, undefined){
+
+	// our plugin constructor
+	var OnePageNav = function(elem, options){
+		this.elem = elem;
+		this.$elem = $(elem);
+		this.options = options;
+		this.metadata = this.$elem.data('plugin-options');
+		this.$win = $(window);
+		this.sections = {};
+		this.didScroll = false;
+		this.$doc = $(document);
+		this.docHeight = this.$doc.height();
+	};
+
+	// the plugin prototype
+	OnePageNav.prototype = {
+		defaults: {
+			navItems: 'a',
+			currentClass: 'current',
+			changeHash: false,
+			easing: 'swing',
+			filter: '',
+			scrollSpeed: 750,
+			scrollThreshold: 0.5,
+			begin: false,
+			end: false,
+			scrollChange: false
+		},
+
+		init: function() {
+			// Introduce defaults that can be extended either
+			// globally or using an object literal.
+			this.config = $.extend({}, this.defaults, this.options, this.metadata);
+
+			this.$nav = this.$elem.find(this.config.navItems);
+
+			//Filter any links out of the nav
+			if(this.config.filter !== '') {
+				this.$nav = this.$nav.filter(this.config.filter);
+			}
+
+			//Handle clicks on the nav
+			this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
+
+			//Get the section positions
+			this.getPositions();
+
+			//Handle scroll changes
+			this.bindInterval();
+
+			//Update the positions on resize too
+			this.$win.on('resize.onePageNav', $.proxy(this.getPositions, this));
+
+			return this;
+		},
+
+		adjustNav: function(self, $parent) {
+			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
+			$parent.addClass(self.config.currentClass);
+		},
+
+		bindInterval: function() {
+			var self = this;
+			var docHeight;
+
+			self.$win.on('scroll.onePageNav', function() {
+				self.didScroll = true;
+			});
+
+			self.t = setInterval(function() {
+				docHeight = self.$doc.height();
+
+				//If it was scrolled
+				if(self.didScroll) {
+					self.didScroll = false;
+					self.scrollChange();
+				}
+
+				//If the document height changes
+				if(docHeight !== self.docHeight) {
+					self.docHeight = docHeight;
+					self.getPositions();
+				}
+			}, 250);
+		},
+
+		getHash: function($link) {
+			return $link.attr('href').split('#')[1];
+		},
+
+		getPositions: function() {
+			var self = this;
+			var linkHref;
+			var topPos;
+			var $target;
+
+			self.$nav.each(function() {
+				linkHref = self.getHash($(this));
+				$target = $('#' + linkHref);
+
+				if($target.length) {
+					topPos = $target.offset().top;
+					self.sections[linkHref] = Math.round(topPos);
+				}
+			});
+		},
+
+		getSection: function(windowPos) {
+			var returnValue = null;
+			var windowHeight = Math.round(this.$win.height() * this.config.scrollThreshold);
+
+			for(var section in this.sections) {
+				if((this.sections[section] - windowHeight) < windowPos) {
+					returnValue = section;
+				}
+			}
+
+			return returnValue;
+		},
+
+		handleClick: function(e) {
+			var self = this;
+			var $link = $(e.currentTarget);
+			var $parent = $link.parent();
+			var newLoc = '#' + self.getHash($link);
+
+			if(!$parent.hasClass(self.config.currentClass)) {
+				//Start callback
+				if(self.config.begin) {
+					self.config.begin();
+				}
+
+				//Change the highlighted nav item
+				self.adjustNav(self, $parent);
+
+				//Removing the auto-adjust on scroll
+				self.unbindInterval();
+
+				//Scroll to the correct position
+				self.scrollTo(newLoc, function() {
+					//Do we need to change the hash?
+					if(self.config.changeHash) {
+						window.location.hash = newLoc;
+					}
+
+					//Add the auto-adjust on scroll back in
+					self.bindInterval();
+
+					//End callback
+					if(self.config.end) {
+						self.config.end();
+					}
+				});
+			}
+
+			e.preventDefault();
+		},
+
+		scrollChange: function() {
+			var windowTop = this.$win.scrollTop();
+			var position = this.getSection(windowTop);
+			var $parent;
+
+			//If the position is set
+			if(position !== null) {
+				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
+
+				//If it's not already the current section
+				if(!$parent.hasClass(this.config.currentClass)) {
+					//Change the highlighted nav item
+					this.adjustNav(this, $parent);
+
+					//If there is a scrollChange callback
+					if(this.config.scrollChange) {
+						this.config.scrollChange($parent);
+					}
+				}
+			}
+		},
+
+		scrollTo: function(target, callback) {
+			var offset = $(target).offset().top;
+
+			$('html, body').animate({
+				scrollTop: offset
+			}, this.config.scrollSpeed, this.config.easing, callback);
+		},
+
+		unbindInterval: function() {
+			clearInterval(this.t);
+			this.$win.unbind('scroll.onePageNav');
+		}
+	};
+
+	OnePageNav.defaults = OnePageNav.prototype.defaults;
+
+	$.fn.onePageNav = function(options) {
+		return this.each(function() {
+			new OnePageNav(this, options).init();
+		});
+	};
+
+})( jQuery, window , document );
+
+},{}],4:[function(require,module,exports){
 // Sticky Plugin v1.0.4 for jQuery
 // =============
 // Author: Anthony Garand
@@ -347,7 +585,7 @@ var Jump = require('./components/playbook.jump');
   });
 }));
 
-},{"jquery":4}],4:[function(require,module,exports){
+},{"jquery":5}],5:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
