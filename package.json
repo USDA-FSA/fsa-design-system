@@ -31,6 +31,6 @@
   },
   "scripts": {
     "install-dep": "bundle install && npm install",
-    "start": "npm run install-dep && grunt && bundle exec jekyll serve"
+    "start": "grunt && bundle exec jekyll serve"
   }
 }
