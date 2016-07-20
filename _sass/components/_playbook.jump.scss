@@ -64,6 +64,10 @@
     color: $color-fsa-link;
     text-decoration: none;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &:hover,
     &:visited {
       color: $color-fsa-link;
