@@ -2,28 +2,30 @@
 layout: page
 parent: "Visual Style"
 title: "Color"
-intro: "Introduction to <strong>color</strong> lorem ipsum dolor sit amet"
+intro: "A flexible, yet distinctly American palette designed to communicate warmth and trustworthiness while meeting the highest standards of 508 color contrast requirements."
+jump_menu: true
+
 ---
 
-## Sub-title
+
+
+## Core Palette
 
 Lorem ipsum dolor sit amet, cons enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Bullet list
 
-* sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-* quis nostrud exercitation ulla Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-* Lorem ipsum dolor sit amet, consectetur adipisicing elitin culpa qui officia deserunt mollit anim id est laborum.
+### Tints and Shades
 
-### Numbered list
+oluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-1. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-1. Lorem ipsum dolor sit amet, consectetur adipisicing elit
-1. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-1. sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Accent
 
-## Second sub-title
+Lorem ipsum dolor sit amet, cons enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Base
 
-Polor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+Lorem ipsum dolor sit amet, cons enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Accessibility
+
+Is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
