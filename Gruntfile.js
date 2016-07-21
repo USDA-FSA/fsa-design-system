@@ -11,6 +11,16 @@ module.exports = function (grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    // shell commands for use in Grunt tasks
+    shell: {
+      jekyllBuild: {
+        command: "bundle exec jekyll build"
+      },
+      jekyllServe: {
+        command: "bundle exec jekyll serve"
+      }
+    },
+
     // Copies templates and assets from dependencies and/or src
     copy: {
 
@@ -51,6 +61,44 @@ module.exports = function (grunt) {
 
     },
 
+    // Watches files for changes and run relevant tasks
+    watch: {
+      css: {
+        files: [
+          '_site/css/*.css',
+          '_site/css/**/*scss'
+        ],
+        tasks: ['postcss'],
+        options: { nospawn: true }
+      },
+      js: {
+        files: [
+          'js/*.js',
+          'js/**/*.js',
+        ],
+        tasks: ['browserify']
+      },
+    },
+
+    // PostCSS, primarily to autoprefix
+    postcss: {
+      options: {
+        map: {
+          inline: false, // save all sourcemaps as separate files...
+          annotation: '_site/css' // ...to the specified directory
+        },
+        processors: [
+          require('pixrem')(), // add fallbacks for rem units
+          require('postcss-quantity-queries')(), // do things like .asdf:at-least(4) {} ; https://github.com/pascalduez/postcss-quantity-queries
+          require('autoprefixer')({ browsers: 'last 3 versions' }), // add vendor prefixes
+          // require('cssnano')() // minify the result
+        ]
+      },
+      dist: {
+        src: '_site/css/*.css'
+      }
+    },
+
     // Browserify them JSs
     browserify: {
       main: {
@@ -62,13 +110,26 @@ module.exports = function (grunt) {
       }
     },
 
+    // run tasks in parallel
+    concurrent: {
+      serve: [
+        'build',
+        'watch'
+      ],
+      options: {
+        logConcurrentOutput: true
+      }
+    }
+
   });
 
   // Register Tasks
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', [
     'copy',
+    'postcss',
     'browserify',
+    'shell:jekyllServe',
   ]);
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});
 
