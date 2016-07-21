@@ -110,6 +110,17 @@ module.exports = function (grunt) {
       }
     },
 
+    // run tasks in parallel
+    concurrent: {
+      serve: [
+        'build',
+        'watch'
+      ],
+      options: {
+        logConcurrentOutput: true
+      }
+    }
+
   });
 
   // Register Tasks
