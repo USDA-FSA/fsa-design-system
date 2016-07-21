@@ -11,6 +11,16 @@ module.exports = function (grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    // shell commands for use in Grunt tasks
+    shell: {
+      jekyllBuild: {
+        command: "bundle exec jekyll build"
+      },
+      jekyllServe: {
+        command: "bundle exec jekyll serve"
+      }
+    },
+
     // Copies templates and assets from dependencies and/or src
     copy: {
 
@@ -108,6 +118,7 @@ module.exports = function (grunt) {
     'copy',
     'postcss',
     'browserify',
+    'shell:jekyllServe',
   ]);
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});
 
