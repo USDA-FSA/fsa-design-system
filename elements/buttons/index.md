@@ -25,35 +25,43 @@ Buttons have 4 distinct styles available. Refer to [Usage](#usage) for guidance 
 
 ### Default
 
-<button class="fsa-btn fsa-btn--primary">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--primary">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--primary">Label</button>
+</div>
 
 ### Secondary
 
-<button class="fsa-btn fsa-btn--secondary">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--secondary">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--secondary">Label</button>
+</div>
 
 ### Tertiary
 
-<button class="fsa-btn fsa-btn--tertiary">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--tertiary">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--tertiary">Label</button>
+</div>
 
 ### Alt
 
-<button class="fsa-btn fsa-btn--alt">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--alt">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--alt">Label</button>
+</div>
 
 ## States
 
@@ -65,35 +73,41 @@ Buttons may be presented in several ways:
 
 ### Full-width
 
-<div><button class="fsa-btn fsa-btn--primary fsa-btn--block">Label</button></div>
 
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--block">Label</button>
 ```
+<div class="pb-preview"><button class="fsa-btn fsa-btn--primary fsa-btn--block">Label</button></div>
 
 ### Disabled
 
-<button class="fsa-btn fsa-btn--primary" disabled="">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--[variation]" disabled="">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--primary" disabled="">Label</button>
+</div>
 
 ### Small
 
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--small">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--small">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--[variation] fsa-btn--small">Label</button>
+</div>
 
 ### Large
 
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--large">Label</button>
 
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--large">Label</button>
 ```
+<div class="pb-preview">
+  <button class="fsa-btn fsa-btn--[variation] fsa-btn--large">Label</button>
+</div>
 
 ## HTML Guidance
 
@@ -101,18 +115,22 @@ Button styles can be applied to nearly any **HTML** element, e.g. `<foo class="f
 
 #### Button Element
 
-<button type="button" class="fsa-btn fsa-btn--primary">label</button>
 
 ```html
 <button type="button" class="fsa-btn fsa-btn--primary">label</button>
 ```
+<div class="pb-preview">
+  <button type="button" class="fsa-btn fsa-btn--primary">label</button>
+</div>
 
-<a class="fsa-btn fsa-btn--primary" href="//fsa.usda.gov">label</a>
 
 ### Anchor Element
 ```html
 <a class="fsa-btn fsa-btn--primary" href="//fsa.usda.gov">label</a>
 ```
+<div class="pb-preview">
+  <a class="fsa-btn fsa-btn--primary" href="//fsa.usda.gov">label</a>
+</div>
 
 ## Usage
 

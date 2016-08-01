@@ -28,12 +28,12 @@
       subhref: "visual-style/color"
       img: "img/subcategories/subcat-placeholder.png"
 
-    - subtitle: "Size and Space"
-      subhref: "visual-style/size-and-space"
-      img: "img/subcategories/subcat-placeholder.png"
-
     - subtitle: "Typography"
       subhref: "visual-style/typography"
+      img: "img/subcategories/subcat-placeholder.png"
+
+    - subtitle: "Size and Space"
+      subhref: "visual-style/size-and-space"
       img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Grid"
@@ -46,6 +46,10 @@
 
     - subtitle: "Buttons"
       subhref: "elements/buttons"
+      img: "img/subcategories/subcat-placeholder.png"
+
+    - subtitle: "Lists"
+      subhref: "elements/lists"
       img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Input"

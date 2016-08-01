@@ -8,10 +8,11 @@ function JumpBuild() {
   var $articleBody = $('.pb-article');
   var $articleTitles = $articleBody.find('h2[id]');
   var $jumpTarget = $('#jump-target');
+  var $jumpTitle = $('#article-title').text();
 
   $jumpTarget.html('\
     <div class="pb-jump">\
-      <h2 class="pb-jump__title">Buttons</h2>\
+      <h2 class="pb-jump__title">'+$jumpTitle+'</h2>\
       <ul class="pb-jump__list">\
         <li class="pb-jump__item pb-jump__item--active"><a class="pb-jump__link" href="#main-content">Overview</a></li>\
       </ul>\

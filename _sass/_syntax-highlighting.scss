@@ -1,6 +1,10 @@
 /**
  * Syntax highlighting styles
  */
+ .highlighter-rouge + .highlighter-rouge {
+   margin-top: -2em;
+ }
+
 .highlight {
 
     padding: 0;
