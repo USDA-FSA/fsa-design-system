@@ -3,7 +3,7 @@
   &__list {
 
     @include reset-ul();
-    margin-top: $size-medium;
+    margin-top: $size-small;
     margin-bottom: $size-medium;
 
     @include breakpoint(MML) {
@@ -28,6 +28,7 @@
     display: block;
     padding-left: $size-default;
     padding-right: $size-default;
+    text-decoration: none;
 
     @include breakpoint(MML) {
       border-bottom: 1px solid $color-fsa-tertiary-200;

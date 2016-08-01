@@ -6,6 +6,8 @@ intro: "Introduction to <strong>Accessibility</strong> lorem ipsum dolor sit ame
 intro: "This site is currently in <strong>Draft</strong> as it is still being built. It will eventually contain resources for all things accessibility - including but not limited to - development best practices, testing guides, and tools."
 ---
 
+[Forms](forms)
+
 ## Our Challenge
 
 The American people expect to interact with government through technology such as websites, mobile applications, kiosks, and other electronic channels. To ensure equal access to government policies and programs, government technology must be accessible to people with disabilities and conform to Section 508 standards. Today, too many of our digital services and technology solutions are not accessible to disabled members of the public or the disabled employees who support them.
