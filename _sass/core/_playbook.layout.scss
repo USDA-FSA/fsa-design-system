@@ -34,8 +34,8 @@
 
   position: relative;
 
-  > ul,
-  > ol,
+  > ul:not([class]),
+  > ol:not([class]),
   > p {
     max-width: $text-max-width;
     max-width: 68ch;

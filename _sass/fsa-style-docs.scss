@@ -311,8 +311,22 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     }
 
     &__item {
+
       @include reset-li();
       flex: 1;
+
+      @include breakpoint(ML) {
+        margin-right: $fsa-grid-gutter;
+      }
+
+      &:last-child {
+
+        @include breakpoint(ML) {
+          margin-right: 0;
+        }
+
+      }
+
     }
 
     &__swatch {
@@ -347,6 +361,14 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     @include reset-ul;
     margin-bottom: 1em;
 
+    border: $size-default solid;
+
+    &--primary { border-color: $color-fsa-primary; }
+    &--secondary { border-color: $color-fsa-secondary; }
+    &--tertiary { border-color: $color-fsa-tertiary; }
+    &--aqua { border-color: $color-fsa-aqua; }
+    &--red { border-color: $color-fsa-red; }
+
     &__item {
 
       @include reset-li;
@@ -357,6 +379,14 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
       &--main {
         padding-top: $size-extra-large * 2;
       }
+
+      code {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        color: white;
+      }
+
 
     }
 
@@ -635,4 +665,9 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 }
 .color-fsa-link-visited {
   background-color: $color-fsa-link-visited;
+}
+
+[class*="lighter"] code,
+[class*="lightest"] code {
+  color: $color-base
 }
