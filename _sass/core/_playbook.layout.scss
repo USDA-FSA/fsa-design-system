@@ -81,3 +81,32 @@
   }
 
 }
+
+.pb-l-guide {
+
+  @include clearfix;
+
+  &__body {
+
+    @include breakpoint(MML) {
+
+      float: right;
+      width: 80%;
+      padding-left: $fsa-grid-gutter;
+
+    }
+
+  }
+
+  &__adjacent {
+
+    @include breakpoint(MML) {
+
+      float: left;
+      width: 20%;
+
+    }
+
+  }
+
+}

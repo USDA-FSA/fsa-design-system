@@ -3,7 +3,7 @@
   &__list {
 
     @include reset-ul();
-    margin-top: $size-small;
+    margin-top: $size-medium;
     margin-bottom: $size-medium;
 
     @include breakpoint(MML) {
