@@ -23,75 +23,126 @@ To make forms accessible, each form element should be associated with its instru
 
 ### Passes
 
+```html
 <fieldset>
-<legend>Name</legend>
-<label for="firstname">First&nbsp;</label><input type='text' id='firstname'><br>
-<label for="lastname">Last&nbsp;</label><input type='text' id='lastname'>
+  <legend>Name</legend>
+  <p>
+    <label for="firstname">First</label>
+    <input type='text' id='firstname'>
+  </p>
+  <p>
+    <label for="lastname">Last</label>
+    <input type='text' id='lastname'>
+  </p>
 </fieldset>
+```
+<div class="pb-preview">
+  <fieldset>
+    <legend>Name</legend>
+    <p>
+      <label for="firstname">First</label>
+      <input type='text' id='firstname'>
+    </p>
+    <p>
+      <label for="lastname">Last</label>
+      <input type='text' id='lastname'>
+    </p>
+  </fieldset>
+</div>
 
-<fieldset>
-<legend>Favorite Soup?</legend>
-<input type='radio' name='soup' value='pea' id='peasoup' title='Pea Soup'>&nbsp;Pea Soup<br>
-<input type='radio' name='soup' value='chicken' id='chicken' title='Chicken Noodle'>&nbsp;Chicken Noodle<br>
-<input type='radio' name='soup' value='tomato' id='tomato' title='Tomato'>&nbsp;Tomato
-</fieldset>
-<br>
 
 ```html
 <fieldset>
-<legend>Name</legend>
-<label for="firstname">First&nbsp;</label><input type='text' id='firstname'><br>
-<label for="lastname">Last&nbsp;</label><input type='text' id='lastname'>
-</fieldset>
-
-<fieldset>
-<legend>Favorite Soup?</legend>
-<input type='radio' name='soup' value='pea' id='peasoup' title='Pea Soup'>&nbsp;Pea Soup<br>
-<input type='radio' name='soup' value='chicken' id='chicken' title='Chicken Noodle'>&nbsp;Chicken Noodle<br>
-<input type='radio' name='soup' value='tomato' id='tomato' title='Tomato'>&nbsp;Tomato
+  <legend>Favorite Soup?</legend>
+  <p><input type='radio' name='soup' value='pea' id='peasoup-3247696' title='Pea Soup'> <label for="peasoup-3247696">Pea Soup</label></p>
+  <p><input type='radio' name='soup' value='chicken' id='chicken-3247696' title='Chicken Noodle'> <label for="chicken-3247696">Chicken Noodle</label></p>
+  <p><input type='radio' name='soup' value='tomato' id='tomato-3247696' title='Tomato'> <label for="tomato-3247696">Tomato</label></p>
 </fieldset>
 ```
+<div class="pb-preview">
+  <fieldset>
+    <legend>Favorite Soup?</legend>
+    <p><input type='radio' name='soup' value='pea' id='peasoup-3247696' title='Pea Soup'> <label for="peasoup-3247696">Pea Soup</label></p>
+    <p><input type='radio' name='soup' value='chicken' id='chicken-3247696' title='Chicken Noodle'> <label for="chicken-3247696">Chicken Noodle</label></p>
+    <p><input type='radio' name='soup' value='tomato' id='tomato-3247696' title='Tomato'> <label for="tomato-3247696">Tomato</label></p>
+  </fieldset>
+</div>
+
 > ___Name:___ Each form element has a ```label```, and its associated with the ```for``` tag. The ```for``` tag refers to the ```id``` of the ```input```. When looking at this form, 'First' and 'Last' wouldn't make since without 'Name.' This is associated with the ```fieldset``` and ```legend```. All elements are wrapped in a ```fieldset```. There can only be one ```legend``` tag per ```fieldset```. Anything in the ```legend``` tag will be associated.
 
 > ___Favorite Soup:___ ```Fieldset``` and ```legend``` is often used for radio buttons as its the easiest way to associate the radio buttons with the question. Notice there are no ```label```s for the radio buttons, but each button has a ```title``` tag for assistive technology to read.
 
 ### Fails
 
-<fieldset>
-<legend>Name</legend>
-<label for="first_name">First&nbsp;</label><input type='text' id='firstname'><br>
-<label for="1lastname">Last&nbsp;</label><input type='text' id='1lastname'>
-</fieldset>
-
-<fieldset>
-<legend>Favorite Soup?</legend>
-<p><span style='color:red;'>This Question Is Required.</span></p>
-<input type='radio' name='soup' value='pea' id='peasoup' title='Chick Pea Soup'>&nbsp;Pea Soup<br>
-<input type='radio' name='soup' value='chicken' id='chicken' title='Chicken Noodle'>&nbsp;Chicken Noodle<br>
-<input type='radio' name='soup' value='tomato' id='tomato' title='Tomato'>&nbsp;Tomato
-</fieldset>
-<br>
-
 ```html
 <fieldset>
-<legend>Name</legend>
-<label for="first_name">First&nbsp;</label><input type='text' id='firstname'><br>
-<label for="1lastname">Last&nbsp;</label><input type='text' id='1lastname'>
+  <legend>Name</legend>
+  <p>
+    <label for="first_name">First</label>
+    <input type='text' id='firstname'>
+  </p>
+  <p>
+    <label for="1lastname">Last</label>
+    <input type='text' id='1lastname'>
+  </p>
 </fieldset>
-
-<fieldset>
-<legend>Favorite Soup?</legend>
-<p><span style='color:red;'>This Question Is Required</span></p>
-<input type='radio' name='soup' value='pea' id='peasoup' title='Chick Pea Soup'>&nbsp;Pea Soup<br>
-<input type='radio' name='soup' value='chicken' id='chicken' title='Chicken Noodle'>&nbsp;Chicken Noodle<br>
-<input type='radio' name='soup' value='tomato' id='tomato' title='Tomato'>&nbsp;Tomato
-</fieldset>
-<br>
 ```
+
+<div class="pb-preview">
+  <fieldset>
+    <legend>Name</legend>
+    <p>
+      <label for="first_name">First</label>
+      <input type='text' id='firstname'>
+    </p>
+    <p>
+      <label for="1lastname">Last</label>
+      <input type='text' id='1lastname'>
+    </p>
+  </fieldset>
+</div>
 
 > ___Failure:___ First name label ```for``` and ```id``` don't match.
 
 > ___Failure:___ Last name has an invalid ```id```.
+
+```html
+<fieldset>
+  <legend>Favorite Soup?</legend>
+  <p><span style='color:red;'>This Question Is Required</span></p>
+  <p>
+    <input type='radio' name='soup' value='pea' id='peasoup' title='Chick Pea Soup'>
+    Pea Soup
+  </p>
+  <p>
+    <input type='radio' name='soup' value='chicken' id='chicken' title='Chicken Noodle'>
+    Chicken Noodle
+  </p>
+  <p>
+    <input type='radio' name='soup' value='tomato' id='tomato' title='Tomato'>
+    Tomato
+  </p>
+</fieldset>
+```
+
+<div class="pb-preview">
+  <fieldset>
+    <legend>Favorite Soup?</legend>
+    <p><span style='color:red;'>This Question Is Required</span></p>
+    <p>
+      <input type='radio' name='soup' value='pea' id='peasoup' title='Chick Pea Soup'>
+      Pea Soup
+    </p>
+    <p>
+      <input type='radio' name='soup' value='chicken' id='chicken' title='Chicken Noodle'>
+      Chicken Noodle
+    </p>
+    <p>
+      <input type='radio' name='soup' value='tomato' id='tomato' title='Tomato'>
+      Tomato
+    </p>
+  </fieldset>
+</div>
 
 > ___Failure:___ "This Question Is Required" is not associated with the form fields
 
@@ -108,85 +159,88 @@ You can test these (and other) scenarios with your own screen reader. If you hav
 
 #### No ARIA
 
-Reads just the `label` and not the description.
-
-<label for="car_1">Car</label>
-<input type="text" id="car_1"/><br/>
-<span id='carmakedescription'><i>Please enter Make and Model</i></span>
 
 ```html
 <label for="car_1">Car</label>
 <input type="text" id="car_1"/><br/>
 <span id="carmakedescription_1"><i>Please enter Make and Model.</i></span>
 ```
+<div class="pb-preview">
+  <label for="car_1">Car</label>
+  <input type="text" id="car_1"/><br/>
+  <span id='carmakedescription'><i>Please enter Make and Model</i></span>
+</div>
 
-**Screen Reader reads input as:** `Car Edit text`
-<hr>
+> Reads just the `label` and not the description.
+
+> Screen Reader reads input as: "Car Edit text"
 
 #### With aria-label
-
-Reads the `aria-label` and doesn't read the normal `label`.
-
-<label for="car_2">Car</label>
-<input type="text" id="car_2" aria-label="Car, please enter make and model" /><br/>
-<span id='carmakedescription_2'><i>Please enter Make and Model</i></span>
 
 ```html
 <label for="car_2">Car</label>
 <input type="text" id="car_2" aria-label="Car, please enter make and model" /><br/>
 <span id="carmakedescription_2"><i>Please enter Make and Model.</i></span>
 ```
+<div class="pb-preview">
+  <label for="car_2">Car</label>
+  <input type="text" id="car_2" aria-label="Car, please enter make and model" /><br/>
+  <span id='carmakedescription_2'><i>Please enter Make and Model</i></span>
+</div>
 
-**Screen Reader reads input as:** `Car, please enter make and model Edit text`
-<hr>
+> Reads the `aria-label` and doesn't read the normal `label`.
+
+> Screen Reader reads input as: "Car, please enter make and model Edit text"
 
 #### With aria-labeledby pointing at `carmakedescription`
-
-Reads only the `aria-labeledby` attribute and not the default label
-
-<label for="car_3">Car</label>
-<input type="text" id="car_3" aria-labeledby="carmakedescription_3" /><br/>
-<span id='carmakedescription_3'><i>Please enter Make and Model</i></span>
 
 ```html
 <label for="car_3">Car</label>
 <input type="text" id="car_3" aria-labeledby="carmakedescription_3" /><br/>
 <span id='carmakedescription_3'><i>Please enter Make and Model.</i></span>
 ```
+<div class="pb-preview">
+  <label for="car_3">Car</label>
+  <input type="text" id="car_3" aria-labeledby="carmakedescription_3" /><br/>
+  <span id='carmakedescription_3'><i>Please enter Make and Model</i></span>
+</div>
 
-**Screen Reader reads input as:** `Please enter Make and Model Edit text`
-<hr>
+> Reads only the `aria-labeledby` attribute and not the default label
+
+> Screen Reader reads input as: "Please enter Make and Model Edit text"
 
 #### With aria-labeledby pointing at `car carmakedescription`
 
-Reads both labels indicated by the `aria-labeledby` attribute
-
-<label for="car_4">Car</label>
-<input type="text" id="car_4" aria-labeledby="car_4 carmakedescription_4" /><br/>
-<span id='carmakedescription_4'><i>Please enter Make and Model.</i></span>
 
 ```html
 <label for="car_4">Car</label>
 <input type="text" id="car_4" aria-labeledby="car_4 carmakedescription_4" /><br/>
 <span id='carmakedescription_4'><i>Please enter Make and Model.</i></span>
 ```
+<div class="pb-preview">
+  <label for="car_4">Car</label>
+  <input type="text" id="car_4" aria-labeledby="car_4 carmakedescription_4" /><br/>
+  <span id='carmakedescription_4'><i>Please enter Make and Model.</i></span>
+</div>
 
-**Screen Reader reads input as:** `Car Please enter Make and Model Edit text`
-<hr>
+
+> Reads both labels indicated by the `aria-labeledby` attribute
+
+> Screen Reader reads input as: "Car Please enter Make and Model Edit text"
 
 #### With aria-describedby pointing at `carmakedescription`
 
 VoiceOver only reads the label. Jaws (if you're testing in a Windows environment) should read the description as well.
 
-<label for="car_5">Car</label>
-<input type="text" id="car_5" aria-describedby="carmakedescription_5" /><br/>
-<span id='carmakedescription_5'><i>Please enter Make and Model.</i></span>
-
 ```html
 <label for="car_5">Car</label>
 <input type="text" id="car_5" aria-describedby="carmakedescription_5" /><br/>
 <span id='carmakedescription_5'><i>Please enter Make and Model.</i></span>
 ```
+<div class="pb-preview">
+  <label for="car_5">Car</label>
+  <input type="text" id="car_5" aria-describedby="carmakedescription_5" /><br/>
+  <span id='carmakedescription_5'><i>Please enter Make and Model.</i></span>
+</div>
 
-**Screen Reader reads input as:** `Car Edit text`
-<hr>
+> Screen Reader reads input as: "Car Edit text"

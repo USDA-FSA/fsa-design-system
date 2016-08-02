@@ -15,23 +15,3 @@
     </nav>
   {% endif %}
 {% endfor %}
-
-<nav>
-  <div class="pb-nav-local">
-    <ul class="pb-nav-local__list">
-
-      {% for item in site.pages %}
-
-        {% assign parent = page.parent | slugify: 'pretty' %}
-
-        {% if item.url contains parent %}
-          <li class="pb-nav-local__list-item">
-            <a class="pb-nav-local__link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
-          </li>
-        {% endif %}
-
-      {% endfor %}
-
-    </ul>
-  </DIV>
-</nav>
