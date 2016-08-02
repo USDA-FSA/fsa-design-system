@@ -1,0 +1,22 @@
+{% assign guide = page.parent | prepend: "guide_" | downcase %}
+
+{% if page.parent == "Guides" %}
+<strong style="font-size: 48px;">yep</strong>
+{% else %}
+nope
+{% endif %}
+
+
+<nav>
+  <div class="pb-nav-local">
+    <ul class="pb-nav-local__list">
+      {% for article in site.data.[guide] %}
+      <li class="pb-nav-local__list-item">
+        <a class="pb-nav-local__link {% if article.title == page.title %}pb-nav-local__list-item--active{% endif %}" href="{{ article.href | prepend: site.baseurl }}">
+          {{ article.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
