@@ -115,7 +115,6 @@
     - subtitle: "Accessibility"
       subhref: "guides/accessibility"
       img: "img/subcategories/subcat-placeholder.png"
-
       articles:
 
         - title: "Overview"
