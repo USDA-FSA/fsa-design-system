@@ -99,7 +99,7 @@ Should the Web Fonts, Source Sans Pro or Merriweather, fail to load for any reas
 Font size can be implemented one of two ways
 
 1. via the `fsa-text-size--*` selector - where `*` is one `1-9`
-1. via a SASS mixing via `@include font-size(*);` - where `*` is one `1-9`
+1. via a SASS mixin, `@include font-size(*);` - where `*` is one `1-9`
 
 <div class="pb-preview">
   <div class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
