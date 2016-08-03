@@ -24,9 +24,11 @@
     }
 
     &:last-child {
+
       &:after {
-        display: none;;
+        display: none;
       }
+
     }
 
   }
@@ -34,6 +36,7 @@
   &__link {
 
     color: $color-fsa-link;
+    text-decoration: none;
 
     &:visited,
     &:hover {

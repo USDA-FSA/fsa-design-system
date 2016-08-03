@@ -3,12 +3,7 @@ layout: guide
 parent: "Guides"
 title: "Accessibility"
 intro: "Introduction to <strong>Accessibility</strong> lorem ipsum dolor sit amet"
-intro: "This site is currently in <strong>Draft</strong> as it is still being built. It will eventually contain resources for all things accessibility - including but not limited to - development best practices, testing guides, and tools."
 ---
-
-* [Color and Contrast](color-and-contrast)
-* [Forms](forms)
-* [Page Titles](page-titles)
 
 ## Our Challenge
 

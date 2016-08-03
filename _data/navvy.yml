@@ -115,19 +115,6 @@
     - subtitle: "Accessibility"
       subhref: "guides/accessibility"
       img: "img/subcategories/subcat-placeholder.png"
-      articles:
-
-        - title: "Overview"
-          href: "guides/accessibility/"
-
-        - title: "Forms"
-          href: "guides/accessibility/forms"
-
-        - title: "Color and Contrast"
-          href: "guides/accessibility/color-and-contrast"
-
-        - title: "Page Titles"
-          href: "guides/accessibility/color-and-contrast"
 
     - subtitle: "Content"
       subhref: "guides/content"
