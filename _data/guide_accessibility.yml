@@ -1,11 +1,14 @@
 - title: "Overview"
   href: "guides/accessibility/"
 
-- title: "Forms"
-  href: "guides/accessibility/forms"
+- title: "Resources"
+  href: "guides/accessibility/resources"
 
 - title: "Color and Contrast"
   href: "guides/accessibility/color-and-contrast"
+
+- title: "Forms"
+  href: "guides/accessibility/forms"
 
 - title: "Page Titles"
   href: "guides/accessibility/page-titles"
