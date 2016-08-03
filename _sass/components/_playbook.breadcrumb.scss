@@ -31,6 +31,10 @@
 
     }
 
+    &:only-child {
+      display: none;
+    }
+
   }
 
   &__link {
