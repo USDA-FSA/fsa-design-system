@@ -6,8 +6,13 @@
 
   &__item {
 
+    @include font-size(1);
     margin: 0;
     display: inline-block;
+
+    @include breakpoint(ML) {
+      @include font-size(3);
+    }
 
     &:before,
     &:after {
