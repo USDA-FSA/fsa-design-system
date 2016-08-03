@@ -17,7 +17,8 @@
     @include reset-li();
 
     &--active {
-      box-shadow: 2px 0 0 0 $color-fsa-primary inset;
+      // box-shadow: 2px 0 0 0 $color-fsa-primary inset;
+      font-weight: $font-bold;
     }
 
   }

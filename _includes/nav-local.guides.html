@@ -1,11 +1,8 @@
-{% assign guide = page.parent | prepend: "guide_" | downcase %}
-
 {% if page.parent == "Guides" %}
-<strong style="font-size: 48px;">yep</strong>
+  {% assign guide = page.title | prepend: "guide_" | downcase %}
 {% else %}
-nope
+  {% assign guide = page.parent | prepend: "guide_" | downcase %}
 {% endif %}
-
 
 <nav>
   <div class="pb-nav-local">
