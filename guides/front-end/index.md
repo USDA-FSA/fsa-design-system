@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guide
 parent: "Guides"
 title: "Front-end"
 intro: "Introduction to <strong>Front-end</strong> lorem ipsum dolor sit amet"

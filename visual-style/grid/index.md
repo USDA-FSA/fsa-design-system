@@ -134,7 +134,7 @@ At least one grid column is required, each described by its proportional width v
 
 ## Grid Column Sizes
 
-Available columns that can be appended to the `fsa-grid__*` selector, where `*` is one of the unit fractions listed below. For example the selector for 50% width would be `class="fsa-grid__1/2"`.
+Available column proportions are identified via the `fsa-grid__*` selector, where `*` is one of the unit fractions below. For example the selector for 50% width would be `class="fsa-grid__1/2"`.
 
 <div class="docs__grid-inventory">
   <div class="fsa-grid docs__grid-inventory-item">

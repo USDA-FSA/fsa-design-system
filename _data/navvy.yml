@@ -108,12 +108,12 @@
   href: "guides"
   subcategories:
 
-    - subtitle: "Front-end"
-      subhref: "guides/front-end"
-      img: "img/subcategories/subcat-placeholder.png"
-
     - subtitle: "Accessibility"
       subhref: "guides/accessibility"
+      img: "img/subcategories/subcat-placeholder.png"
+
+    - subtitle: "Front-end"
+      subhref: "guides/front-end"
       img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Content"

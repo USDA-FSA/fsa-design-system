@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guide
 parent: "Guides"
 title: "Content"
 intro: "This guide helps writers create content that’s easy to understand and meets people where they’re at. Government websites often talk at readers rather than to them: As with other facets of its online presence, .gov writing tends to describe the government’s concerns in “governmentese,” leaving users frustrated by information that is neither actionable nor understandable."

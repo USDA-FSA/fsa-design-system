@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include breadcrumb.html %}
+
+<div class="pb-l-guide">
+
+  <div class="pb-l-guide__adjacent">
+
+    {% include nav-local.guides.html %}
+
+  </div>
+
+  <div class="pb-l-guide__body">
+
+    <article class="pb-article">
+      <h1 class="pb-page-title" id="article-title">{{ page.title }}</h1>
+
+      {% if page.intro %}
+      <p class="fsa-text--lead">{{ page.intro }}</p>
+      {% endif %}
+
+      {{ content }}
+
+    </article>
+
+  </div>
+
+</div>

@@ -17,27 +17,32 @@
     @include reset-li();
 
     &--active {
-      box-shadow: 2px 0 0 0 $color-fsa-primary inset;
+      // box-shadow: 2px 0 0 0 $color-fsa-primary inset;
+      font-weight: $font-bold;
     }
 
   }
 
   &__link {
 
-    color: $color-base;
     display: block;
-    padding-left: $size-default;
-    padding-right: $size-default;
 
     @include breakpoint(MML) {
+      color: $color-base;
+      text-decoration: none;
       border-bottom: 1px solid $color-fsa-tertiary-200;
-      padding-top: $size-small;
-      padding-bottom: $size-small;
+      padding: $size-small 0 $size-small;
     }
 
     &:hover,
     &:visited {
-      color: $color-base;
+
+      color: $color-fsa-link;
+
+      @include breakpoint(MML) {
+        color: $color-base;
+      }
+
     }
 
   }
