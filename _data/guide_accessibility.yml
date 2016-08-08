@@ -2,14 +2,29 @@
   alt_title: "Accessibility"
   href: "guides/accessibility/"
 
+- title: "Checklist"
+  href: "guides/accessibility/checklist"
+
 - title: "Resources"
   href: "guides/accessibility/resources"
 
 - title: "Color and Contrast"
   href: "guides/accessibility/color-and-contrast"
 
+- title: "Keyboard"
+  href: "guides/accessibility/keyboard"
+
 - title: "Forms"
   href: "guides/accessibility/forms"
 
+- title: "Tables"
+  href: "guides/accessibility/tables"
+
 - title: "Page Titles"
   href: "guides/accessibility/page-titles"
+
+- title: "Headings"
+  href: "guides/accessibility/headings"
+
+- title: "Flashing"
+  href: "guides/accessibility/flashing"
