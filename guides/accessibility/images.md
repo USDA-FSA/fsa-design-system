@@ -96,6 +96,6 @@ intro: "When using images on a page, for Assistive Technology (AT) ti be able to
 <img src="{{site.baseurl}}/img/sign.jpg" alt="Image of sign that says WARNING DO NOT READ THIS SIGN">
 ```
 
-> **Fails:** Avoid using "Image of" or "Picture of" as the AT will notify the user that it is an image.
+> **Fails:** Avoid using "Image of" or "Picture of" as the <abbr title="Assistive Technology">AT</abbr> will notify the user that it is an image.
 
 > **Fails:** Avoid using all caps as some screen readers will read each letter (i.e., "W-A-R-N-I-N-G").

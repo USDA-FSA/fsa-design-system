@@ -1,3 +1,25 @@
+# - [x] Checklist
+# - [x] Tools
+# - [x] Keyboard Access
+# - [x] Images
+# - [x] Color and Contrast
+# - [x] Forms
+# - [x] Flashing
+# - [x] Page Titles
+# - [x] Headings
+# - [x] Landmarks
+# - [x] Multimedia
+# - [x] Time Outs
+# - [x] Web Text Language (renamed from "Web Text Properties")
+# - [x] Tables
+# - [ ] CSS Dependence
+# - [ ] Frames
+# - [ ] Links and Repetitive Content
+# - [ ] Plug-ins
+# - [ ] Alternative Versions
+# - [ ] Writing Guide
+# - [ ] Trainings/Videos
+
 - title: "Overview"
   alt_title: "Accessibility"
   href: "guides/accessibility/"
@@ -34,3 +56,15 @@
 
 - title: "Keyboard"
   href: "guides/accessibility/keyboard"
+
+- title: "Landmarks"
+  href: "guides/accessibility/landmarks"
+
+- title: "Multimedia"
+  href: "guides/accessibility/multimedia"
+
+- title: "Timeouts"
+  href: "guides/accessibility/timeouts"
+
+- title: "Web Text Language"
+  href: "guides/accessibility/web-text-language"
