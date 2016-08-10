@@ -36,27 +36,20 @@ custom_js: "keyboard-trap.js"
 
 
 ```html
-<a href="#">Link to nowhere 1</a>
-<a href="#">Link to nowhere 2</a>
-<a href='javascript:$("#hiddenContent").show().focus();'>
-  Reveal Hidden Content
-</a>
-<div id="hiddenContent" style="display:none;" tabindex='-1'>
-  This div was hidden, now it's not!
-</div>
+<p><a href="#">Link to nowhere 1</a></p>
+<p><a href="#">Link to nowhere 2</a></p>
+<p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
+<div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 ```
 <div class="pb-preview">
-  <a href="#">Link to nowhere 1</a>
-
-  <a href="#">Link to nowhere 2</a>
-
-  <a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a>
-
+  <p><a href="#">Link to nowhere 1</a></p>
+  <p><a href="#">Link to nowhere 2</a></p>
+  <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
   <div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 </div>
 
 
-> Avoid using tabindex of >= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when autofocusing an element not normally interactive.
+> Avoid using `tabindex` of >= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when autofocusing an element not normally interactive.
 
 ### Keyboard Trap
 

@@ -5,12 +5,19 @@
   @include breakpoint(MML) {
     border: 1px solid $color-fsa-tertiary-100;
     padding: $size-medium;
-    // background-color: $color-fsa-white;
+    background-color: $color-fsa-white;
   }
 
   .highlighter-rouge + & {
     @include breakpoint(MML) {
       margin-top: -1.6em;
+    }
+
+  }
+
+  & + .highlighter-rouge {
+    @include breakpoint(MML) {
+      margin-top: -2em;
     }
 
   }

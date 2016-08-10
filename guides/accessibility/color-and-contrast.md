@@ -5,22 +5,23 @@ title: "Color and Contrast"
 intro: "There are two aspects to address when it comes to color, contrast, and color dependence."
 ---
 
-<strong>Color contrast</strong> is the ratio of the foreground color (for most websites, this is often text) and background color. <strong>Color dependence</strong> is the need to see color to understand the information. Unless specific agency requirements dictate otherwise or where excepted, color contrast should meet the [WCAG 2.0 AA](https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast) minimum color contrast ratio of **4.5:1**.
+1. <strong>Color contrast</strong> is the ratio of the foreground color (for most websites, this is often text) and background color.
+1. <strong>Color dependence</strong> is the need to see color to understand the information. Unless specific agency requirements dictate otherwise or where excepted, color contrast should meet the [WCAG 2.0 AA](https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast) minimum color contrast ratio of **4.5:1**.
 
 ## Testing
 
 ### Color Contrast
 
 1. Using a [color contrast checker](http://www.paciellogroup.com/resources/contrastanalyser/), select the darkest / lightest section of the text.
-2. Select the darkest / lightest section of the background.
-3. Check the ratio and ensure its greater than [4.5:1][WCAG 2.0 AA] (e.g., 5.3:1 would pass).
+1. Select the darkest / lightest section of the background.
+1. Check the ratio and ensure its greater than [4.5:1][WCAG 2.0 AA] (e.g., 5.3:1 would pass).
 
 <strong>Note:</strong> Run this test for all states of the text (e.g., `:hover`, `:visited`, `:focus`). This test should also be performed on images of text unless the image is a logo, which is exempt.
 
 ### Color Dependence
 
 1. Identify sections which use color to convey information.
-2. Check to see if the information is conveyed in another way visually and programmatically.
+1. Check to see if the information is conveyed in another way visually and programmatically.
 
 ## Exceptions
 

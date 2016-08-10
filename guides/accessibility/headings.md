@@ -5,19 +5,24 @@ title: "Headings"
 intro: "When laying out a page, headings provide a semantic way to layout sections of content. Heading elements are used by users of AT to navigate a page quickly and to understand the structure of a page. "
 ---
 
-When using headings, it is best practice to reserve `<h1>` for the name of the site, `<h2>` for the page title, and the rest for sections on the page. Heading attributes should be used in order, and "lower" elements should never be nested in higher attributes, i.e.
+When using headings, it is best practice to reserve `<h1>` for the most important header text on the page, with subsequent headings, `h1-h6` identifying a clear hierarchy. For example:
 
 ```html
-<h3>Section</h3>
-<p>lorum ipsum</p>
-<h2>Sub Section</h2>
-<p>lorum ipsum</p>
+<h1>Page Title</h1>
+
+<h2>Section 1</h2>
+<h3>Section 1a</h3>
+<h3>Section 1b</h3>
+
+<h2>Section 2</h2>
+<h3>Section 2a</h3>
+<h3>Section 2b</h3>
 ```
 
 ## Testing
 
 1. Identify visual 'heading' elements
-2. Check that all visual 'heading' elements use an `<h>` tag
+2. Check that all visual 'heading' elements use an `<h1>` - `<h6>` tag
 3. Verify that all sub heading elements have a higher number
 
 ## Examples
@@ -41,8 +46,7 @@ When using headings, it is best practice to reserve `<h1>` for the name of the s
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
 </div>
 
-
-> This section has a main category and two sub categories. The sub categories are on the same level and as such use the the same heading element.
+> **Passes:** This section has a main category and two sub categories. The sub categories are on the same level and as such use the the same heading element.
 
 ### Fails
 
@@ -63,4 +67,4 @@ When using headings, it is best practice to reserve `<h1>` for the name of the s
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
 </div>
 
-> This section has several issues. The first sub category has a lower value than the main category. The second sub category has skipped a heading level which while is better, this can cause confusion as its not clear if this category is the sub category of `Category` or `Sub category 1`
+> **Fails:** This section has several issues. The first sub category has a lower value than the main category. The second sub category has skipped a heading level which while is better, this can cause confusion as its not clear if this category is the sub category of `Category` or `Sub category 1`

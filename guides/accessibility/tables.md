@@ -87,10 +87,49 @@ If a table has text associated with it, ensure the text is programatically linke
 </div>
 
 
-> <strong>Passes:</strong> Looking at this table, the column headers all relate to the cells below. This is done programatically with ```scope="col"```. Each height and age value is related to the person and this is done programatically with ```scope="row"```.
+> **Passes:** Looking at this table, the column headers all relate to the cells below. This is done programatically with ```scope="col"```. Each height and age value is related to the person and this is done programatically with ```scope="row"```.
 
 #### Complex table
 
+```html
+<table class="fsa-table">
+  <caption>User's Height and Weight</caption>
+  <tr>
+    <th rowspan="2" id="name">
+      Name
+    </th>
+    <th colspan="2" id="height">
+      Height
+    </th>
+    <th rowspan="2" id="age">
+      Age
+    </th>
+  </tr>
+  <tr>
+    <th id="feet" headers="height">
+      Feet
+    </th>
+    <th id="inches" headers="height">
+      Inches
+    </th>
+  <tr>
+    <th headers="name" id="walter">
+      Walter
+    </th>
+    <td headers="height feet walter">6</td>
+    <td headers="height inches walter">4</td>
+    <td headers="age walter">34</td>
+  </tr>
+  <tr>
+    <th headers="name" id="steve">
+      Steve
+    </th>
+    <td headers="height feet steve">5</td>
+    <td headers="height inches steve">4</td>
+    <td headers="age steve">30</td>
+  </tr>
+</table>
+```
 <div class="pb-preview">
   <table class="fsa-table">
     <caption>User's Height and Weight</caption>
@@ -131,47 +170,8 @@ If a table has text associated with it, ensure the text is programatically linke
     </tr>
   </table>
 </div>
-```html
-<table class="fsa-table">
-  <caption>User's Height and Weight</caption>
-  <tr>
-    <th rowspan="2" id="name">
-      Name
-    </th>
-    <th colspan="2" id="height">
-      Height
-    </th>
-    <th rowspan="2" id="age">
-      Age
-    </th>
-  </tr>
-  <tr>
-    <th id="feet" headers="height">
-      Feet
-    </th>
-    <th id="inches" headers="height">
-      Inches
-    </th>
-  <tr>
-    <th headers="name" id="walter">
-      Walter
-    </th>
-    <td headers="height feet walter">6</td>
-    <td headers="height inches walter">4</td>
-    <td headers="age walter">34</td>
-  </tr>
-  <tr>
-    <th headers="name" id="steve">
-      Steve
-    </th>
-    <td headers="height feet steve">5</td>
-    <td headers="height inches steve">4</td>
-    <td headers="age steve">30</td>
-  </tr>
-</table>
-```
 
-> <strong>Passes:</strong> This is an example of a complex table, all the cells are associated to their respective headers with the ```headers``` attribute. Most tables don't require this level of complexity.
+> **Passes:** This is an example of a complex table, all the cells are associated to their respective headers with the ```headers``` attribute. Most tables don't require this level of complexity.
 
 ### Fails
 

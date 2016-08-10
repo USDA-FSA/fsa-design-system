@@ -8,14 +8,17 @@
 - title: "Resources"
   href: "guides/accessibility/resources"
 
+- title: "Tools"
+  href: "guides/accessibility/tools"
+
 - title: "Color and Contrast"
   href: "guides/accessibility/color-and-contrast"
 
-- title: "Keyboard"
-  href: "guides/accessibility/keyboard"
-
 - title: "Forms"
   href: "guides/accessibility/forms"
+
+- title: "Images"
+  href: "guides/accessibility/images"
 
 - title: "Tables"
   href: "guides/accessibility/tables"
@@ -28,3 +31,6 @@
 
 - title: "Flashing"
   href: "guides/accessibility/flashing"
+
+- title: "Keyboard"
+  href: "guides/accessibility/keyboard"
