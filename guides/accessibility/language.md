@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Web Text Language"
-intro: "Properly identifying the language of your website's content ensures assistive technology correctly interacts with your site. Assistive Technology has great support for a wide variety of foreign languages, but they will need to know when the language differs from the page's default."
+intro: "Properly identifying the language of your website's content ensures Assistive Technology (AT) correctly interacts with your site. AT has great support for a wide variety of foreign languages, but they will need to know when the language differs from the page's default."
 ---
 
 ## Testing

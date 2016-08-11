@@ -34,11 +34,11 @@ Failure at any step constitutes a 508 compliance issue:
 ### Fails
 
 ```html
-<button type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing</button>
+<button class="fsa-btn fsa-btn--primary" type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing</button>
 <span class="blink" style="display:none;">This text is blinking</span>
 ```
 <div class="pb-preview">
-  <button type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing</button>
+  <button class="fsa-btn fsa-btn--primary" type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing</button>
   <span class="blink" style="display:none;">This text is blinking</span>
 </div>
 

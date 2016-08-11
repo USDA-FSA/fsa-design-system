@@ -1,3 +1,10 @@
+main {
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
 .pb-home {}
 
 .pb-body {

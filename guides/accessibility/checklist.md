@@ -25,7 +25,7 @@ It is important to note, while B and C are noted as less critical, they are stil
 5. [All images have `alt` attributes](images)
 6. [Multimedia is tagged](multimedia)
  * All multimedia has appropriate captioning and audio description
-7. [Text has sufficient color contrast](color)
+7. [Text has sufficient color contrast](color-and-contrast)
  * All text has a contrast ratio of 4.5:1 with the background
 
 ## B - Less Critical
@@ -46,7 +46,7 @@ It is important to note, while B and C are noted as less critical, they are stil
  * All frames have a name element
 2. [Flashing elements are compliant](flashing)
  * Elements that flash on screen do so at a rate of less than 3hz
-3. [Language is set](properties)
+3. [Language is set](language)
  * The language for the page is set
  * The language for sections on the page that differ from the site language are set
 4. [CSS is not required to use the page](css)

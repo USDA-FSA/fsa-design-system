@@ -5,6 +5,7 @@
 # - [x] Color and Contrast
 # - [x] Forms
 # - [x] Flashing
+# - [x] Writing Guide
 # - [x] Page Titles
 # - [x] Headings
 # - [x] Landmarks
@@ -12,13 +13,12 @@
 # - [x] Time Outs
 # - [x] Web Text Language (renamed from "Web Text Properties")
 # - [x] Tables
-# - [ ] CSS Dependence
-# - [ ] Frames
-# - [ ] Links and Repetitive Content
-# - [ ] Plug-ins
-# - [ ] Alternative Versions
-# - [ ] Writing Guide
-# - [ ] Trainings/Videos
+# - [x] CSS Dependence
+# - [x] Frames
+# - [x] Links and Repetitive Content
+# - [x] Plug-ins
+# - [-] Alternative Versions
+# - [-] Trainings/Videos
 
 - title: "Overview"
   alt_title: "Accessibility"
@@ -45,6 +45,9 @@
 - title: "Tables"
   href: "guides/accessibility/tables"
 
+- title: "Writing Guide"
+  href: "guides/accessibility/writing-guide"
+
 - title: "Page Titles"
   href: "guides/accessibility/page-titles"
 
@@ -67,4 +70,19 @@
   href: "guides/accessibility/timeouts"
 
 - title: "Web Text Language"
-  href: "guides/accessibility/web-text-language"
+  href: "guides/accessibility/language"
+
+- title: "CSS Dependence"
+  href: "guides/accessibility/css"
+
+- title: "Frames"
+  href: "guides/accessibility/frames"
+
+- title: "Links and Repetitive Content"
+  href: "guides/accessibility/links"
+
+- title: "Plugins"
+  href: "guides/accessibility/plugins"
+
+# - title: "Alternative Versions"
+#   href: "guides/accessibility/alternative-versions"
