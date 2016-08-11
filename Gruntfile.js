@@ -61,16 +61,47 @@ module.exports = function (grunt) {
 
     },
 
+    // Sass all the style things
+    sass: {
+      default: {
+        files: {
+          'css/<%= pkg.name %>.css': '_sass/<%= pkg.name %>.scss',
+          //'css/file.css': '_sass/file.scss'
+        },
+        options: {
+          sourceMap: true,
+          outputStyle: 'expanded'
+        },
+      },
+      minify: {
+        files: {
+          'css/<%= pkg.name %>.min.css': '_sass/<%= pkg.name %>.scss',
+          //'css/file.min.css': '_sass/file.scss'
+        },
+        options: {
+          sourceMap: true,
+          outputStyle: 'compressed'
+        },
+      },
+    },
+
     // Watches files for changes and run relevant tasks
     watch: {
-      css: {
+      sass: {
         files: [
-          '_site/css/*.css',
-          '_site/css/**/*scss'
+          '_sass/*.scss',
+          '_sass/**/*.scss'
         ],
-        tasks: ['postcss'],
+        tasks: ['sass','postcss'],
         options: { nospawn: true }
       },
+      // css: {
+      //   files: [
+      //     'css/*.css'
+      //   ],
+      //   tasks: ['postcss'],
+      //   options: { nospawn: true }
+      // },
       js: {
         files: [
           'js/*.js',
@@ -95,7 +126,7 @@ module.exports = function (grunt) {
         ]
       },
       dist: {
-        src: '_site/css/*.css'
+        src: 'css/*.css'
       }
     },
 
@@ -127,6 +158,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', [
     'copy',
+    'sass',
     'postcss',
     'browserify',
     'shell:jekyllServe',
