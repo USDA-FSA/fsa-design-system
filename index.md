@@ -1,7 +1,6 @@
 ---
 layout: home
 title: Front Page
-
 ---
 
 <div style="border: 1px solid #ccc; padding: 20vh 1em; background-color: white; font-size: 36px; text-align: center; margin: 0 0 1em;">Home</div>

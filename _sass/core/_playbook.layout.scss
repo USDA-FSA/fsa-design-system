@@ -1,4 +1,13 @@
-.pb-home {}
+main {
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.pb-home {
+  display: none;
+}
 
 .pb-body {
 
