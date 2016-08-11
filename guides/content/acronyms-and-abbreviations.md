@@ -1,7 +1,7 @@
 ---
 layout: guide
 parent: "Content"
-title: "Voice and Tone"
+title: "Acronyms and Abbreviations"
 intro:
 ---
 
