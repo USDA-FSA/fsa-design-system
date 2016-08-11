@@ -1,0 +1,53 @@
+
+.pb-nav {
+
+  text-align: left;
+
+  &__list {
+    @include reset-ul();
+  }
+
+  &__list-item {
+
+    @include reset-li();
+    display: inline-block;
+    margin-right: $size-default;
+
+    &--active {
+      font-weight: bold;
+    }
+
+    &--first {
+      .pb-home & {
+        font-weight: bold; // TODO: this is a massive hack. Ask me sometime why
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link {
+
+    @include font-size(1);
+    text-decoration: none;
+    color: $color-fsa-white;
+
+    @include breakpoint(MML) {
+      @include font-size(3);
+    }
+
+    &:hover {
+      text-decoration: underline;;
+    }
+
+    &:hover,
+    &:visited {
+      color: $color-fsa-white;
+    }
+
+  }
+
+}

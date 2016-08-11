@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="{% if page.url == '/' %}pb-home{% endif %}">
+
+    {% include header.html %}
+
+    <main id="main-content" tabindex="-1">
+      <div class="pb-body">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+    <script>
+      function HomeShow() {
+        $('body').toggleClass('pb-home');
+      }
+      $('body').keydown(function(event) {
+        if(event.which == 112) { //F2
+          HomeShow();
+          return false;
+        }
+      });
+    </script>
+  </body>
+
+</html>

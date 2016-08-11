@@ -1,0 +1,88 @@
+// This overrides a lot of USWDS' _typography.scss, with other additions
+
+p {
+  // margin-top: 0;
+  line-height: inherit;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+// [class *= "fsa-g"]
+  font-family: $font-sans;
+}
+
+h1,
+.h1 {
+  @include h1();
+}
+
+h2,
+.h2 {
+  @include h2();
+}
+
+h3,
+.h3 {
+  @include h3();
+}
+
+h4,
+.h4 {
+  @include h4();
+}
+
+h5,
+.h5 {
+  @include h5();
+}
+
+h6,
+.h6 {
+  @include h6();
+  font-weight: $font-bold;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $color-title;
+  font-weight: $font-light;
+  // margin-top: 0;
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+  font-weight: $font-bold;
+}
+
+// scss-lint:disable SelectorFormat
+.fsa-text--lead,
+.fsa-font-lead,
+.usa-font-lead {
+
+  font-weight: $font-light;
+  font-size: $lead-font-size;
+
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+}

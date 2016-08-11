@@ -1,0 +1,14 @@
+/*! ------------------------------------------------------------------------- */
+/*! Foo Element */
+
+.c-foo {
+
+  display: flex;
+  background-color: $color-primary-darker;
+
+  &__unit {
+    flex: 1;
+    outline: 1px solid $color-gray-light;
+  }
+
+}

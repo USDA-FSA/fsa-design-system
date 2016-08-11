@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include breadcrumb.html %}
+
+<h1 class="pb-page-title">{{ page.title }}</h1>
+
+<article class="pb-article">
+
+  {% if page.intro %}
+  <p class="fsa-text--lead">{{ page.intro }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% include sub-categories.html %}
+
+</article>

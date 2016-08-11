@@ -1,0 +1,103 @@
+.pb-header {
+
+  background-color: $color-fsa-primary;
+  color: $color-fsa-white;
+
+  &__title {
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: ($site-max-width + 24px);
+    padding-right: $size-default;
+    padding-left: $size-default;
+
+    @include font-size(6);
+    font-size: 2.6rem;
+    font-weight: $font-light;
+    font-family: $font-serif;
+    padding-top: 1.5em;
+
+    @include breakpoint(ML) {
+      @include font-size(8);
+      padding-top: 1.5em;
+    }
+
+  }
+
+  &__bd {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: ($site-max-width + 24px);
+    padding: $size-default;
+
+    @include breakpoint(MML) {
+      width: 100%;
+      display: table;
+    }
+
+  }
+
+  &__nav {
+    margin-bottom: $size-default;
+    @include breakpoint(MML) {
+      display: table-cell;
+    }
+  }
+
+  &__options {
+
+    @include breakpoint(MML) {
+      display: table-cell;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    &-item {
+
+      display: inline-block;
+
+      &--start {
+
+        margin-right: $size-medium;
+
+      }
+
+      &--github {
+
+        @include breakpoint(MML, down) {
+          @include font-size(1);
+        }
+
+      }
+
+    }
+
+  }
+
+  &__link {
+
+    color: $color-fsa-white;
+    text-decoration: none;
+
+    &:hover, {
+      box-shadow:
+        0 -1px 0 0 $color-fsa-primary inset,
+        0 -2px 0 0 $color-fsa-primary inset,
+        0 -3px 0 0 $color-fsa-primary inset,
+        0 -4px 0 0 $color-fsa-primary inset,
+        0 -5px 0 0 $color-fsa-primary inset,
+        0 -6px 0 0 $color-fsa-primary inset,
+        0 -7px 0 0 $color-fsa-white inset
+      ;
+    	text-decoration: none;
+    }
+
+    &:visited,
+    &:active,
+    &:hover, {
+      color: $color-fsa-white;
+    }
+
+  }
+
+}

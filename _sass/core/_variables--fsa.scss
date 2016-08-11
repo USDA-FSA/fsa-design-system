@@ -1,0 +1,132 @@
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// NEW variables specific to FSA
+// or OVERRIDES those set in USWDS-provided `_defaults.scss`
+
+// ---------------------------------------------------------------------------
+// Sizing Units
+
+$size-base          : .4rem;            // 4px
+$size-small         : $size-base * 2;   // 8px
+$size-default       : $size-base * 3;   // 12px
+$size-medium        : $size-base * 6;   // 24px
+$size-large         : $size-base * 9;   // 36px
+$size-extra-large   : $size-medium * 2; // 48px
+
+
+// ---------------------------------------------------------------------------
+// Colors
+
+// Core Colors
+$color-fsa-primary: shade($color-green, 25%);
+$color-fsa-primary-300: tint($color-fsa-primary, 25%);
+$color-fsa-primary-200: tint($color-fsa-primary, 50%);
+$color-fsa-primary-100: tint($color-fsa-primary, 75%);
+$color-fsa-primary-900: shade($color-fsa-primary, 25%);
+
+$color-fsa-secondary: $color-primary-darker;
+$color-fsa-secondary-300: tint($color-fsa-secondary, 25%);
+$color-fsa-secondary-200: tint($color-fsa-secondary, 50%);
+$color-fsa-secondary-100: tint($color-fsa-secondary, 75%);
+$color-fsa-secondary-900: shade($color-fsa-secondary, 25%);
+
+$color-fsa-tertiary: $color-gray-warm-dark;
+$color-fsa-tertiary-300: tint($color-fsa-tertiary, 40%);
+$color-fsa-tertiary-200: tint($color-fsa-tertiary, 70%);
+$color-fsa-tertiary-100: tint($color-fsa-tertiary, 90%);
+$color-fsa-tertiary-900: shade($color-fsa-tertiary, 35%);
+
+// Accent Colors
+$color-fsa-aqua: $color-primary-alt-dark;
+$color-fsa-aqua-300: $color-primary-alt;
+$color-fsa-aqua-200: $color-primary-alt-light;
+$color-fsa-aqua-100: $color-primary-alt-lightest;
+$color-fsa-aqua-900: $color-primary-alt-darkest;
+
+$color-fsa-red: $color-secondary-dark;
+$color-fsa-red-300: tint($color-secondary-dark, 35%);
+$color-fsa-red-200: tint($color-secondary-dark, 70%);
+$color-fsa-red-100: tint($color-secondary-dark, 90%);
+$color-fsa-red-900: $color-secondary-darkest;
+
+// Base
+$color-base:  $color-fsa-tertiary-900;
+$color-white: #fff;
+$white: $color-white;
+$color-black: #000;
+$color-fsa-white: $color-white; // Just in case
+$color-fsa-black: $color-black; // Just in case
+$color-fsa-base: $color-base;
+
+$color-fsa-link: $color-primary;
+$color-fsa-link-hover: $color-cool-blue;
+$color-fsa-link-visited: $color-visited;
+
+// Semantic
+$color-title: $color-fsa-secondary;
+$color-fsa-site-bg: tint($color-fsa-secondary, 97%); // Super light gray bg, but with a slight tint of blue
+
+// ---------------------------------------------------------------------------
+// Typography
+
+// Font Size Scale
+$font-size-0 : $h6-font-size;    // 13
+$font-size-1 : $small-font-size; // 14
+$font-size-2 : $h5-font-size;    // 15
+$font-size-3 : $base-font-size;  // 17
+$font-size-4 : $h4-font-size;    // 17 REMOVE THIS ONE
+$font-size-5 : $h3-font-size;    // 20
+$font-size-6 : $lead-font-size;  // 20 REMOVE THIS ONE
+$font-size-7 : $h2-font-size;    // 30
+$font-size-8 : $h1-font-size;    // 40
+$font-size-9 : $title-font-size; // 52
+
+$lead-font-size: $font-size-5;
+$lead-line-height: 1.7;
+
+$font-sans:  'Source Sans Pro', $helvetica;
+$font-serif: 'Merriweather', $georgia;
+$font-mono:  $monospace;
+$font-base:  $font-sans;
+
+$font-light:  300;
+$font-normal: 400;
+$font-bold:   700;
+
+// ---------------------------------------------------------------------------
+// Forms
+
+$form-font                     : $font-sans;
+$form-text-size                : $font-size-3;
+$form-text-size--sm            : $font-size-2;
+$form-text-size--lg            : $font-size-6;
+$form-text-color               : $color-fsa-base;
+$form-placeholder-color        : $color-fsa-tertiary-200;
+$form-outline-color            : $color-fsa-tertiary-200;
+$form-focus-color              : $color-fsa-secondary-300;
+
+$form-error-color              : $color-fsa-red;
+$form-error-color-focus        : $color-fsa-base;
+$form-error-color-bg           : $color-fsa-red-100;
+
+$form-positive-color           : $color-green; // Note this isn't $color-fsa-primary
+$form-positive-color-focus     : $form-focus-color;
+$form-positive-color-bg        : $color-white;
+
+$form-disabled-bg-color        : $color-fsa-tertiary-100;
+$form-border-radius            : 0; // currently zero, but play with this if you want
+
+$form-checkbox-radio-outline-color : shade($form-outline-color, 30%);
+$form-checkbox-radio-fill      : $color-fsa-secondary;
+$form-checkbox-fill            : $color-fsa-secondary;
+$form-radiocheckbox-size       : 1.8rem;
+$form-padding                  : $size-small;
+$form-select-bgc               : orangered;
+$form-between-space            : $size-base - .2rem;
+
+// ---------------------------------------------------------------------------
+// FSA Grid Settings
+
+$fsa-grid-gutter: $size-medium; // rem or px unit only
+$fsa-grid-columns: 12;

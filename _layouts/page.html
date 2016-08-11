@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include breadcrumb.html %}
+
+<h1 class="pb-page-title" id="article-title">{{ page.title }}</h1>
+
+<div class="pb-l-page">
+
+  <div class="pb-l-page__adjacent">
+
+    {% if page.jump_menu %}
+      <div id="jump-target"></div>
+    {% endif %}
+
+  </div>
+
+  <div class="pb-l-page__body">
+
+    <article class="pb-article">
+
+      {% if page.intro %}
+      <p class="fsa-text--lead">{{ page.intro }}</p>
+      {% endif %}
+
+      {{ content }}
+
+    </article>
+
+  </div>
+
+</div>

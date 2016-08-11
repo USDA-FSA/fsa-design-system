@@ -1,0 +1,88 @@
+# - [x] Checklist
+# - [x] Tools
+# - [x] Keyboard Access
+# - [x] Images
+# - [x] Color and Contrast
+# - [x] Forms
+# - [x] Flashing
+# - [x] Writing Guide
+# - [x] Page Titles
+# - [x] Headings
+# - [x] Landmarks
+# - [x] Multimedia
+# - [x] Time Outs
+# - [x] Web Text Language (renamed from "Web Text Properties")
+# - [x] Tables
+# - [x] CSS Dependence
+# - [x] Frames
+# - [x] Links and Repetitive Content
+# - [x] Plug-ins
+# - [-] Alternative Versions
+# - [-] Trainings/Videos
+
+- title: "Overview"
+  alt_title: "Accessibility"
+  href: "guides/accessibility/"
+
+- title: "Checklist"
+  href: "guides/accessibility/checklist"
+
+- title: "Resources"
+  href: "guides/accessibility/resources"
+
+- title: "Tools"
+  href: "guides/accessibility/tools"
+
+- title: "Color and Contrast"
+  href: "guides/accessibility/color-and-contrast"
+
+- title: "Forms"
+  href: "guides/accessibility/forms"
+
+- title: "Images"
+  href: "guides/accessibility/images"
+
+- title: "Tables"
+  href: "guides/accessibility/tables"
+
+- title: "Writing Guide"
+  href: "guides/accessibility/writing-guide"
+
+- title: "Page Titles"
+  href: "guides/accessibility/page-titles"
+
+- title: "Headings"
+  href: "guides/accessibility/headings"
+
+- title: "Flashing"
+  href: "guides/accessibility/flashing"
+
+- title: "Keyboard"
+  href: "guides/accessibility/keyboard"
+
+- title: "Landmarks"
+  href: "guides/accessibility/landmarks"
+
+- title: "Multimedia"
+  href: "guides/accessibility/multimedia"
+
+- title: "Timeouts"
+  href: "guides/accessibility/timeouts"
+
+- title: "Web Text Language"
+  href: "guides/accessibility/language"
+
+- title: "CSS Dependence"
+  href: "guides/accessibility/css"
+
+- title: "Frames"
+  href: "guides/accessibility/frames"
+
+- title: "Links and Repetitive Content"
+  href: "guides/accessibility/links"
+
+- title: "Plugins"
+  href: "guides/accessibility/plugins"
+
+# - title: "Alternative Versions"
+#   href: "guides/accessibility/alternative-versions"
