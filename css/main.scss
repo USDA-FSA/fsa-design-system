@@ -25,5 +25,5 @@
 @import "syntax-highlighting";
 
 html:hover body::before {
-  display: none; // hide breakpoint bar
+  display: none !important; // hide breakpoint bar
 }

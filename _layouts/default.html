@@ -16,7 +16,17 @@
     {% include footer.html %}
 
     {% include scripts.html %}
-
+    <script>
+      function HomeShow() {
+        $('body').toggleClass('pb-home');
+      }
+      $('body').keydown(function(event) {
+        if(event.which == 112) { //F2
+          HomeShow();
+          return false;
+        }
+      });
+    </script>
   </body>
 
 </html>
