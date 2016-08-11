@@ -61,6 +61,30 @@ module.exports = function (grunt) {
 
     },
 
+    // Sass all the style things
+    // sass: {
+    //   default: {
+    //     files: {
+    //       'dist/css/<%= pkg.name %>.css': 'src/stylesheets/<%= pkg.name %>.scss',
+    //       'dist/css/<%= pkg.name %>-docs.css': 'src/stylesheets/<%= pkg.name %>-docs.scss'
+    //     },
+    //     options: {
+    //       sourceMap: true,
+    //       outputStyle: 'expanded'
+    //     },
+    //   },
+    //   minify: {
+    //     files: {
+    //       'dist/css/<%= pkg.name %>.min.css': 'src/stylesheets/<%= pkg.name %>.scss',
+    //       'dist/css/<%= pkg.name %>-docs.min.css': 'src/stylesheets/<%= pkg.name %>-docs.scss'
+    //     },
+    //     options: {
+    //       sourceMap: true,
+    //       outputStyle: 'compressed'
+    //     },
+    //   },
+    // },
+
     // Watches files for changes and run relevant tasks
     watch: {
       css: {
