@@ -3879,6 +3879,12 @@ main:active, main:focus {
   }
 }
 
+@media (min-width: 61.25em) {
+  .pb-subcat-list__list-item {
+    width: 25%;
+  }
+}
+
 .pb-subcat-list__link {
   display: block;
 }
