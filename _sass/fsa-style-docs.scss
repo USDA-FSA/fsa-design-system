@@ -535,7 +535,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
   @include checkerboard();
 
-  margin: 0;
+  margin: 0 $size-medium 0 0;
 
   &__blotch {
 

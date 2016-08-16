@@ -1,0 +1,389 @@
+// -----------------------------------------------------------------------------
+// Grid Functions
+
+// scss-lint:disable PropertySpelling
+
+@mixin fsa-grid-row() {
+  letter-spacing: -.31em;
+  *letter-spacing: normal;
+  *word-spacing: -.43em;
+  text-rendering: optimizespeed;
+  font-family: $font-base;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  margin-left: -$fsa-grid-gutter;
+}
+
+@mixin fsa-grid-column() {
+
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  padding-left: $fsa-grid-gutter;
+
+  // scss-lint:disable SelectorFormat
+  .fsa-grid--no-gutter & {
+    padding-left: 0;
+  }
+
+}
+
+@mixin fsa-grid-column-width($numerator, $denominator: $fsa-grid-columns) {
+  width: ($numerator / $denominator) * 100%;
+}
+
+@mixin fsa-grid($namespace: '') {
+
+  .fsa-grid__auto#{$namespace} {
+    @include fsa-grid-column();
+    flex: 1;
+  }
+
+  .fsa-grid__1#{$namespace},
+  .fsa-grid__1\/1#{$namespace},
+  .fsa-grid__1\/12#{$namespace},
+  .fsa-grid__1\/2#{$namespace},
+  .fsa-grid__1\/3#{$namespace},
+  .fsa-grid__1\/4#{$namespace},
+  .fsa-grid__1\/6#{$namespace},
+  .fsa-grid__10\/12#{$namespace},
+  .fsa-grid__11\/12#{$namespace},
+  .fsa-grid__12\/12#{$namespace},
+  .fsa-grid__2\/12#{$namespace},
+  .fsa-grid__2\/3#{$namespace},
+  .fsa-grid__3\/12#{$namespace},
+  .fsa-grid__3\/4#{$namespace},
+  .fsa-grid__4\/12#{$namespace},
+  .fsa-grid__5\/12#{$namespace},
+  .fsa-grid__5\/6#{$namespace},
+  .fsa-grid__6\/12#{$namespace},
+  .fsa-grid__7\/12#{$namespace},
+  .fsa-grid__8\/12#{$namespace},
+  .fsa-grid__9\/12#{$namespace} {
+    @include fsa-grid-column();
+  }
+
+  .fsa-grid__1\/12#{$namespace} {
+    @include fsa-grid-column-width(1);
+  }
+
+  .fsa-grid__1\/6#{$namespace},
+  .fsa-grid__2\/12#{$namespace} {
+    @include fsa-grid-column-width(2);
+  }
+
+  .fsa-grid__1\/4#{$namespace},
+  .fsa-grid__3\/12#{$namespace} {
+    @include fsa-grid-column-width(3);
+  }
+
+  .fsa-grid__1\/3#{$namespace},
+  .fsa-grid__4\/12#{$namespace} {
+    @include fsa-grid-column-width(4);
+  }
+
+  .fsa-grid__5\/12#{$namespace} {
+    @include fsa-grid-column-width(5);
+  }
+
+  .fsa-grid__1\/2#{$namespace},
+  .fsa-grid__6\/12#{$namespace} {
+    @include fsa-grid-column-width(6);
+  }
+
+  .fsa-grid__7\/12#{$namespace} {
+    @include fsa-grid-column-width(7);
+  }
+
+  .fsa-grid__2\/3#{$namespace},
+  .fsa-grid__8\/12#{$namespace} {
+    @include fsa-grid-column-width(8);
+  }
+
+  .fsa-grid__3\/4#{$namespace},
+  .fsa-grid__9\/12#{$namespace} {
+    @include fsa-grid-column-width(9);
+  }
+
+  .fsa-grid__10\/12#{$namespace},
+  .fsa-grid__5\/6#{$namespace} {
+    @include fsa-grid-column-width(10);
+  }
+  .fsa-grid__11\/12#{$namespace} {
+    @include fsa-grid-column-width(11);
+  }
+
+  .fsa-grid__1#{$namespace},
+  .fsa-grid__1\/1#{$namespace},
+  .fsa-grid__12\/12#{$namespace} {
+    @include fsa-grid-column-width(12);
+  }
+
+}
+
+
+// -----------------------------------------------------------------------------
+// Breakpoints
+// scss-lint:disable SpaceAfterComma
+$breakpoints: (
+  '(min-width: 15em)' 'XS',       //  240px at 16px base font
+  '(min-width: 20em)' 'S',        //  320px at 16px base font
+  '(min-width: 30em)' 'SM',       //  480px at 16px base font
+  '(min-width: 35em)' 'M',        //  560px at 16px base font
+  '(min-width: 42em)' 'MML',      //  672px at 16px base font
+  '(min-width: 48em)' 'ML',       //  768px at 16px base font
+  '(min-width: 54em)' 'MLL',      //  864px at 16px base font
+  '(min-width: 61.25em)' 'L',     //  980px at 16px base font
+  '(min-width: 64em)' 'XL',       // 1024px at 16px base font
+  '(min-width: 78.75em)' 'XXL'    // 1260px at 16px base font
+);
+
+//  From HugoG: http://hugogiraudel.com/2014/01/13/sass-string-replacement-function/
+// http://sassmeister.com/gist/1b4f2da5527830088e4d
+// Replace `$search` with `$replace` in `$string`
+// @param {String} $string - Initial string
+// @param {String} $search - Substring to replace
+// @param {String} $replace ('') - New value
+// @return {String} - Updated string
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// -----------------------------------------------------------------------------
+// Breakpoints: Primary collection of available media query breakpoints
+@mixin breakpoint($point, $direction: 'up') {
+  @each $breakpoint in $breakpoints {
+    $query: nth($breakpoint, 1);
+    $name: nth($breakpoint, 2);
+
+    @if $direction == up {
+      @if ($name == $point) {
+        @media #{$query} { @content }
+      }
+    } @else {
+      @if ($name == $point) {
+        @media #{str-replace($query, "min", "max")} {
+          @content
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Typography: Progressive font-size scale
+//
+// Example usage: @include font-size(0); is SMALLEST available size
+// Example usage: @include font-size(9); is LARGEST available size
+@mixin font-size($scale: 3) {
+  @if $scale == 0 { font-size: $font-size-0; }
+  @if $scale == 1 { font-size: $font-size-1; }
+  @if $scale == 2 { font-size: $font-size-2; }
+  @if $scale == 3 { font-size: $font-size-3; }
+  @if $scale == 4 { font-size: $font-size-4; line-height: $heading-line-height; }
+  @if $scale == 5 { font-size: $font-size-5; line-height: $heading-line-height; }
+  @if $scale == 6 { font-size: $font-size-6; line-height: $heading-line-height; }
+  @if $scale == 7 { font-size: $font-size-7; line-height: $heading-line-height; }
+  @if $scale == 8 { font-size: $font-size-8; line-height: $heading-line-height; }
+  @if $scale == 9 { font-size: $font-size-9; line-height: $heading-line-height; }
+}
+
+// -----------------------------------------------------------------------------
+// CSS Triangles
+// We use this to create equilateral triangles
+// $triangle-size - Used to set border-size. No default, set a px or em size.
+// $triangle-color - Used to set border-color which makes up triangle. No default
+// $triangle-direction - Used to determine which direction triangle points. Options: top, bottom, left, right
+// Sourced from foundation.zurb.com
+//
+// Example usage:
+// @include css-triangle(10px, #fff, top);
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+
+  @if ($triangle-direction == top) {
+    border-color: $triangle-color transparent transparent;
+    border-top-style: solid;
+  }
+
+  @if ($triangle-direction == bottom) {
+    border-color: transparent transparent $triangle-color;
+    border-bottom-style: solid;
+  }
+
+  @if ($triangle-direction == left) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+
+  @if ($triangle-direction == right) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Positioning
+// If one of "$coordinates" is unitless, it omits the prop/val pair,
+// e.g. '0' instead of '0px'
+//
+// Example usage:
+// @include position(absolute, 0px 0px 0px 0); (note last 0 has no
+// unit, e.g. 'px')
+@mixin position($position: relative, $coordinates: 0 0 0 0) {
+
+  @if type-of($position) == list {
+    $coordinates: $position;
+    $position: relative;
+  }
+
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  position: $position;
+
+  @if $top == auto {
+    top: $top;
+  }
+  @else if not(unitless($top)) {
+    top: $top;
+  }
+
+  @if $right == auto {
+    right: $right;
+  }
+  @else if not(unitless($right)) {
+    right: $right;
+  }
+
+  @if $bottom == auto {
+    bottom: $bottom;
+  }
+  @else if not(unitless($bottom)) {
+    bottom: $bottom;
+  }
+
+  @if $left == auto {
+    left: $left;
+  }
+  @else if not(unitless($left)) {
+    left: $left;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Reset <ul> (note, you'll likely want to reset-li() too
+@mixin reset-ul() {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// -----------------------------------------------------------------------------
+// Reset <li>
+@mixin reset-li() {
+
+  display: list-item;
+  margin: 0;
+
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    display: none;
+  }
+
+}
+
+// -----------------------------------------------------------------------------
+// Font Smoothing
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Space between form elements
+@mixin fsa-space-between() {
+  // scss-lint:disable UnnecessaryParentReference
+  & + .fsa-select,
+  & + .form-text,
+  & + .fsa-btn {
+    margin-left: $form-between-space;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Shared properties between select and input text elements
+@mixin fsa-shared-form-properties() {
+
+  @include fsa-space-between();
+
+  appearance: none;
+  display: inline-block;
+  height: $button-height;
+  border: 1px solid $form-outline-color;
+  max-width: 100%;
+  margin: 0;
+  border-radius: $form-border-radius;
+  box-shadow: none;
+  font-family: $form-font;
+  font-size: $form-text-size;
+  color: $form-text-color;
+  line-height: 1;
+  background-color: $color-white;
+
+}
+
+// -----------------------------------------------------------------------------
+// Background pattern to denote "transparent"; think Photoshop
+
+@mixin checkerboard($color: rgba(0, 0, 0, .10)) {
+
+  background-color: $color;
+  overflow: auto;
+
+  // scss-lint:disable TrailingSemicolon SpaceAfterPropertyColon
+  background-image:
+    linear-gradient(45deg, $color 25%, transparent 25%, transparent 75%, $color 75%, $color),
+    linear-gradient(45deg, $color 25%, transparent 25%, transparent 75%, $color 75%, $color)
+  ;
+  background-size: 2rem 2rem;
+  background-position: 0 0, 5rem 5rem;
+
+}
+
+// -----------------------------------------------------------------------------
+// Dot dot dot por favor
+@mixin fsa-ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}

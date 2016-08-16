@@ -1,0 +1,411 @@
+////////////////////////////////////////////////////////////////////////
+// Styling Utilities
+
+.fsa {
+
+  // scss-lint:disable ImportantRule SpaceBeforeBrace
+
+  // Margins -------------------------------------------------------------------
+
+  &-m {
+
+    &--none {
+      margin: 0 !important;
+    }
+
+    &--xxs {
+      margin: $size-base !important;
+    }
+
+    &--xs {
+      margin: $size-small !important;
+    }
+
+    &--s {
+      margin: $size-default !important;
+    }
+
+    &--m {
+      margin: $size-medium !important;
+    }
+
+    &--l {
+      margin: $size-large !important;
+    }
+
+    &--xl {
+      margin: $size-extra-large !important;
+    }
+
+    &-t {
+
+      &--none {
+        margin-top: 0 !important;
+      }
+
+      &--xxs {
+        margin-top: $size-base !important;
+      }
+
+      &--xs {
+        margin-top: $size-small !important;
+      }
+
+      &--s {
+        margin-top: $size-default !important;
+      }
+
+      &--m {
+        margin-top: $size-medium !important;
+      }
+
+      &--l {
+        margin-top: $size-large !important;
+      }
+
+      &--xl {
+        margin-top: $size-extra-large !important;
+      }
+
+    }
+
+    &-r {
+
+      &--none {
+        margin-right: 0 !important;
+      }
+
+      &--xxs {
+        margin-right: $size-base !important;
+      }
+
+      &--xs {
+        margin-right: $size-small !important;
+      }
+
+      &--s {
+        margin-right: $size-default !important;
+      }
+
+      &--m {
+        margin-right: $size-medium !important;
+      }
+
+      &--l {
+        margin-right: $size-large !important;
+      }
+
+      &--xl {
+        margin-right: $size-extra-large !important;
+      }
+
+    }
+
+    &-b {
+
+      &--none {
+        margin-bottom: 0 !important;
+      }
+
+      &--xxs {
+        margin-bottom: $size-base !important;
+      }
+
+      &--xs {
+        margin-bottom: $size-small !important;
+      }
+
+      &--s {
+        margin-bottom: $size-default !important;
+      }
+
+      &--m {
+        margin-bottom: $size-medium !important;
+      }
+
+      &--l {
+        margin-bottom: $size-large !important;
+      }
+
+      &--xl {
+        margin-bottom: $size-extra-large !important;
+      }
+
+    }
+
+    &-l {
+
+      &--none {
+        margin-left: 0 !important;
+      }
+
+      &--xxs {
+        margin-left: $size-base !important;
+      }
+
+      &--xs {
+        margin-left: $size-small !important;
+      }
+
+      &--s {
+        margin-left: $size-default !important;
+      }
+
+      &--m {
+        margin-left: $size-medium !important;
+      }
+
+      &--l {
+        margin-left: $size-large !important;
+      }
+
+      &--xl {
+        margin-left: $size-extra-large !important;
+      }
+
+    }
+
+  }
+
+  // Padding -------------------------------------------------------------------
+
+  &-p {
+
+    &--none {
+      padding: 0 !important;
+    }
+
+    &--xxs {
+      padding: $size-base !important;
+    }
+
+    &--xs {
+      padding: $size-small !important;
+    }
+
+    &--s {
+      padding: $size-default !important;
+    }
+
+    &--m {
+      padding: $size-medium !important;
+    }
+
+    &--l {
+      padding: $size-large !important;
+    }
+
+    &--xl {
+      padding: $size-extra-large !important;
+    }
+
+    &-t {
+
+      &--none {
+        padding-top: 0 !important;
+      }
+
+      &--xxs {
+        padding-top: $size-base !important;
+      }
+
+      &--xs {
+        padding-top: $size-small !important;
+      }
+
+      &--s {
+        padding-top: $size-default !important;
+      }
+
+      &--m {
+        padding-top: $size-medium !important;
+      }
+
+      &--l {
+        padding-top: $size-large !important;
+      }
+
+      &--xl {
+        padding-top: $size-extra-large !important;
+      }
+
+    }
+
+    &-r {
+
+      &--none {
+        padding-right: 0 !important;
+      }
+
+      &--xxs {
+        padding-right: $size-base !important;
+      }
+
+      &--xs {
+        padding-right: $size-small !important;
+      }
+
+      &--s {
+        padding-right: $size-default !important;
+      }
+
+      &--m {
+        padding-right: $size-medium !important;
+      }
+
+      &--l {
+        padding-right: $size-large !important;
+      }
+
+      &--xl {
+        padding-right: $size-extra-large !important;
+      }
+
+    }
+
+    &-b {
+
+      &--none {
+        padding-bottom: 0 !important;
+      }
+
+      &--xxs {
+        padding-bottom: $size-base !important;
+      }
+
+      &--xs {
+        padding-bottom: $size-small !important;
+      }
+
+      &--s {
+        padding-bottom: $size-default !important;
+      }
+
+      &--m {
+        padding-bottom: $size-medium !important;
+      }
+
+      &--l {
+        padding-bottom: $size-large !important;
+      }
+
+      &--xl {
+        padding-bottom: $size-extra-large !important;
+      }
+
+    }
+
+    &-l {
+
+      &--none {
+        padding-left: 0 !important;
+      }
+
+      &--xxs {
+        padding-left: $size-base !important;
+      }
+
+      &--xs {
+        padding-left: $size-small !important;
+      }
+
+      &--s {
+        padding-left: $size-default !important;
+      }
+
+      &--m {
+        padding-left: $size-medium !important;
+      }
+
+      &--l {
+        padding-left: $size-large !important;
+      }
+
+      &--xl {
+        padding-left: $size-extra-large !important;
+      }
+
+    }
+
+  }
+
+  // Floats --------------------------------------------------------------------
+
+  &-clear {
+    clear: both;
+  }
+
+  &-clearfix {
+    @include clearfix;
+  }
+
+  &-float {
+
+    &--left {
+      float: left;
+    }
+
+    &--right {
+      float: right;
+    }
+
+  }
+
+  // Font ----------------------------------------------------------------------
+
+  &-font {
+
+    &--sans {
+      font-family: $font-sans;
+    }
+
+    &--serif {
+      font-family: $font-serif;
+    }
+
+  }
+
+
+  // Text ----------------------------------------------------------------------
+
+  &-ellipsis {
+    @include fsa-ellipsis();
+  }
+
+  &-text {
+
+    // scss-lint:disable PlaceholderInExtend
+
+    &--h1 { @extend .h1; }
+    &--h2 { @extend .h2; }
+    &--h3 { @extend .h3; }
+    &--h4 { @extend .h4; }
+    &--h5 { @extend .h5; }
+    &--h6 { @extend .h6; }
+
+    &-size {
+
+      &--0 { @include font-size(0); }
+      &--1 { @include font-size(1); }
+      &--2 { @include font-size(2); }
+      &--3 { @include font-size(3); }
+      &--4 { @include font-size(4); }
+      &--5 { @include font-size(5); }
+      &--6 { @include font-size(6); }
+      &--7 { @include font-size(7); }
+      &--8 { @include font-size(8); }
+      &--9 { @include font-size(9); }
+
+    }
+
+    &-align {
+      &--right  { text-align: right; }
+      &--center { text-align: center; }
+      &--left   { text-align: left; }
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,96 @@
+/*////////////////////////////////////////////////////////*/
+/*//                                                    //*/
+/*//    BREAKPOINT BAR                                  //*/
+/*//                                                    //*/
+/*////////////////////////////////////////////////////////*/
+
+///
+//
+//_breakpoint-debug.scss: Shows the current breakpoint as on overlay at the bottom of the page.
+//
+//
+
+body::before {
+
+  display: none;
+  // font-weight: bold;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  content: '0px - 239px'; // scss-lint:disable ZeroUnit
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 1);
+  padding: 2px 2px 3px;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1;
+
+  @include breakpoint(XS) {
+    content: 'XS: 240px - 319px';
+    background: rgba(51, 153, 102, .8);
+  }
+
+  @include breakpoint(S) {
+    content: 'S: 320px - 479px';
+    background: rgba(204, 204, 0, .8);
+  }
+
+  @include breakpoint(SM) {
+    content: 'SM: 480px - 559px';
+    background: rgba(51, 153, 204, .8);
+  }
+
+  @include breakpoint(M) {
+    content: 'M: 560px - 671px';
+    background: rgba(255, 204, 0, .8);
+  }
+
+  @include breakpoint(MML) {
+    content: 'MML: 672px - 767px';
+    background: rgba(255, 2, 0, .8);
+    padding: 5px;
+  }
+
+  @include breakpoint(ML) {
+    content: 'ML: 768px - 863px';
+    background: rgba(51, 102, 0, .8);
+  }
+
+  @include breakpoint(MLL) {
+    content: 'MLL: 864px - 979px';
+    background: rgba(5, 204, 0, .8);
+  }
+
+  @include breakpoint(L) {
+    content: 'L: 980px - 1023px';
+    background: rgba(204, 102, 0, .8);
+  }
+
+  @include breakpoint(XL) {
+    content: 'XL: 1024px - 1259px';
+    background: rgba(153, 102, 51, .8);
+  }
+
+  @include breakpoint(XXL) {
+    content: 'XXL: 1260px +';
+    background: rgba(0, 153, 204, .8);
+  }
+
+  @include breakpoint(XXXL) {
+    content: 'XXXL: 1440px +';
+    background: #e76822;
+  }
+
+  html:hover & {
+    display: block;
+  }
+
+  .is-showing-breakpoints & {
+    display: block;
+  }
+
+}
