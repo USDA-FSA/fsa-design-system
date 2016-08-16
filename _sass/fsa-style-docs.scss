@@ -1,12 +1,12 @@
 // Vendor USWDS -------------- //
 
-@import 'src/stylesheets/lib/uswds/lib/bourbon';
-@import 'src/stylesheets/lib/uswds/lib/neat';
+@import 'lib/uswds/lib/bourbon';
+@import 'lib/uswds/lib/neat';
 
 // Core USWDS -------------- //
-@import 'src/stylesheets/lib/uswds/core/defaults';
-@import 'src/stylesheets/lib/uswds/core/grid-settings';
-@import 'src/stylesheets/lib/uswds/core/utilities';
+@import 'lib/uswds/core/defaults';
+@import 'lib/uswds/core/grid-settings';
+@import 'lib/uswds/core/utilities';
 
 // Core FSA -------------- //
 @import 'core/fsa.variables';
