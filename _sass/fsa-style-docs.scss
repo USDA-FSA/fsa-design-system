@@ -1,16 +1,17 @@
-// Vendor -------------- //
+// Vendor USWDS -------------- //
 
-@import 'lib/bourbon';
-@import 'lib/neat';
+@import 'src/stylesheets/lib/uswds/lib/bourbon';
+@import 'src/stylesheets/lib/uswds/lib/neat';
 
-// Core -------------- //
+// Core USWDS -------------- //
+@import 'src/stylesheets/lib/uswds/core/defaults';
+@import 'src/stylesheets/lib/uswds/core/grid-settings';
+@import 'src/stylesheets/lib/uswds/core/utilities';
 
-@import 'core/defaults';
-@import 'core/variables--fsa';
-@import 'core/grid-settings';
-@import 'core/utilities';
-@import 'core/utilities--fsa';
-@import 'core/grid-breakpointbar';
+// Core FSA -------------- //
+@import 'core/fsa.variables';
+@import 'core/fsa.utilities';
+@import 'core/fsa.grid-breakpointbar';
 
 $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
@@ -535,7 +536,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
   @include checkerboard();
 
-  margin: 0 $size-medium 0 0;
+  margin: 0;
 
   &__blotch {
 

@@ -2,41 +2,41 @@
 // USWDS -------------- ////////////////////////////////////////////////////////
 
 // This is effectively a pared down version of _all.scss, located at
-// https://github.com/18F/web-design-standards/blob/master/src/stylesheets/all.scss
+// https://github.com/18F/web-design-standards/blob/master/all.scss
 
 // Vendor -------------- //
 
-@import 'src/stylesheets/lib/uswds/lib/bourbon';
-@import 'src/stylesheets/lib/uswds/lib/neat';
-@import 'src/stylesheets/lib/uswds/lib/normalize';
+@import 'lib/uswds/lib/bourbon';
+@import 'lib/uswds/lib/neat';
+@import 'lib/uswds/lib/normalize';
 
 // Core -------------- //
 
-@import 'src/stylesheets/lib/uswds/core/defaults';
-@import 'src/stylesheets/lib/uswds/core/fonts';
-@import 'src/stylesheets/lib/uswds/core/base';
-@import 'src/stylesheets/lib/uswds/core/grid-settings';
-// @import 'src/stylesheets/lib/uswds/core/grid';
-@import 'src/stylesheets/lib/uswds/core/utilities';
+@import 'lib/uswds/core/defaults';
+@import 'lib/uswds/core/fonts';
+@import 'lib/uswds/core/base';
+@import 'lib/uswds/core/grid-settings';
+// @import 'lib/uswds/core/grid';
+@import 'lib/uswds/core/utilities';
 
 // Elements -------------- //
 // Styles basic HTML elements
 
-// @import 'src/stylesheets/lib/uswds/elements/buttons';
-// @import 'src/stylesheets/lib/uswds/elements/figure';
-// @import 'src/stylesheets/lib/uswds/elements/inputs';
-// @import 'src/stylesheets/lib/uswds/elements/labels';
-// @import 'src/stylesheets/lib/uswds/elements/list';
-// @import 'src/stylesheets/lib/uswds/elements/table';
-@import 'src/stylesheets/lib/uswds/elements/typography';
+// @import 'lib/uswds/elements/buttons';
+// @import 'lib/uswds/elements/figure';
+// @import 'lib/uswds/elements/inputs';
+// @import 'lib/uswds/elements/labels';
+// @import 'lib/uswds/elements/list';
+// @import 'lib/uswds/elements/table';
+@import 'lib/uswds/elements/typography';
 
 // Components -------------- //
 
-// @import 'src/stylesheets/lib/uswds/components/accordions';
-// @import 'src/stylesheets/lib/uswds/components/alerts';
-@import 'src/stylesheets/lib/uswds/components/disclaimer';
-// @import 'src/stylesheets/lib/uswds/components/footer';
-// // @import 'src/stylesheets/lib/uswds/components/forms';
-// @import 'src/stylesheets/lib/uswds/components/search';
-// @import 'src/stylesheets/lib/uswds/components/sidenav';
-@import 'src/stylesheets/lib/uswds/components/skipnav';
+// @import 'lib/uswds/components/accordions';
+// @import 'lib/uswds/components/alerts';
+@import 'lib/uswds/components/disclaimer';
+// @import 'lib/uswds/components/footer';
+// // @import 'lib/uswds/components/forms';
+// @import 'lib/uswds/components/search';
+// @import 'lib/uswds/components/sidenav';
+@import 'lib/uswds/components/skipnav';
