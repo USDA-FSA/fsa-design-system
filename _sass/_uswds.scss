@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+// USWDS -------------- ////////////////////////////////////////////////////////
+
+// This is effectively a pared down version of _all.scss, located at
+// https://github.com/18F/web-design-standards/blob/master/all.scss
+
+// Vendor -------------- //
+
+@import 'lib/uswds/lib/bourbon';
+@import 'lib/uswds/lib/neat';
+@import 'lib/uswds/lib/normalize';
+
+// Core -------------- //
+
+@import 'lib/uswds/core/defaults';
+@import 'lib/uswds/core/fonts';
+@import 'lib/uswds/core/base';
+@import 'lib/uswds/core/grid-settings';
+// @import 'lib/uswds/core/grid';
+@import 'lib/uswds/core/utilities';
+
+// Elements -------------- //
+// Styles basic HTML elements
+
+// @import 'lib/uswds/elements/buttons';
+// @import 'lib/uswds/elements/figure';
+// @import 'lib/uswds/elements/inputs';
+// @import 'lib/uswds/elements/labels';
+// @import 'lib/uswds/elements/list';
+// @import 'lib/uswds/elements/table';
+@import 'lib/uswds/elements/typography';
+
+// Components -------------- //
+
+// @import 'lib/uswds/components/accordions';
+// @import 'lib/uswds/components/alerts';
+@import 'lib/uswds/components/disclaimer';
+// @import 'lib/uswds/components/footer';
+// // @import 'lib/uswds/components/forms';
+// @import 'lib/uswds/components/search';
+// @import 'lib/uswds/components/sidenav';
+@import 'lib/uswds/components/skipnav';
