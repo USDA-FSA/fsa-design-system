@@ -1,72 +1,36 @@
-// Vendor -------------- //
+////////////////////////////////////////////////////////////////////////////////
+// USWDS - Start off with a select set of imports from USWDS ///////////////////
+@import 'uswds';
 
-@import 'lib/bourbon'; // USWDS
-@import 'lib/neat'; // USWDS
-@import 'lib/normalize'; // USWDS
+////////////////////////////////////////////////////////////////////////////////
+// FSA - Custom ////////////////////////////////////////////////////////////////
 
-// Core (non-rendering) -------------- //
-@import 'core/defaults'; // USWDS
-@import 'core/variables--fsa';
-@import 'core/fonts'; // USWDS
-// @import 'core/grid-settings'; // USWDS
+// Core -------------- /////////////////////////////////////////////////////////
 
-// Core (rendering) -------------- //
-@import 'core/utilities'; // USWDS
-@import 'core/utilities--fsa';
-@import 'core/base'; // USWDS
-@import 'core/base--fsa';
-// @import 'core/grid'; // USWDS
-@import 'core/grid--fsa';
+@import 'core/fsa.variables';
+@import 'core/fsa.utilities';
+@import 'core/fsa.base';
+@import 'core/fsa.grid';
 
-// Elements -------------- //
-// Styles basic HTML elements
+// Elements -------------- /////////////////////////////////////////////////////
 
-// @import 'elements/buttons'; // USWDS
-@import 'elements/buttons--fsa';
-// @import 'elements/figure'; // USWDS
-@import 'elements/figure--fsa';
-// @import 'elements/inputs'; // USWDS
-@import 'elements/form-elements.textfields--fsa';
-@import 'elements/form-elements.checkbox-radio--fsa';
-@import 'elements/form-elements.select--fsa';
-// @import 'elements/labels'; // USWDS
-// @import 'elements/list'; // USWDS
-@import 'elements/list--uswds-fix';
-@import 'elements/list--fsa';
-// @import 'elements/table'; // USWDS
-@import 'elements/table--fsa'; // USWDS
-@import 'elements/typography'; // USWDS
-@import 'elements/typography--fsa';
+@import 'elements/fsa.buttons';
+@import 'elements/fsa.figure';
+@import 'elements/fsa.form-elements.textfields';
+@import 'elements/fsa.form-elements.checkbox-radio';
+@import 'elements/fsa.form-elements.select';
+@import 'elements/fsa.list';
 
+@import 'elements/fsa.table';
+@import 'elements/fsa.typography';
 
-// Components -------------- //
+// Components -------------- ///////////////////////////////////////////////////
 
-// @import 'components/accordions'; // USWDS
-// @import 'components/alerts'; // USWDS
-@import 'components/disclaimer'; // USWDS
-// @import 'components/footer'; // USWDS
-// // @import 'components/forms'; // USWDS
-@import 'components/forms--fsa';
-// @import 'components/form-structure--fsa';
-// @import 'components/search'; // USWDS
-// @import 'components/sidenav'; // USWDS
-@import 'components/skipnav'; // USWDS
+@import 'components/fsa.forms';
 
-// Styling Utilities -------------- //
-@import 'elements/css-utilities--fsa';
+// Other -------------- ////////////////////////////////////////////////////////
 
-// Shame -------------- //
+@import 'elements/fsa.css-utilities';
 
-.asdfqwerkjhiut {
-
-  display: flex;
-
-  &__thing {
-    flex: 1;
-  }
-
-}
-
-///////////////////////////////////////////////////////////////////////////////
-// EXPERIMENTAL AREA
-// @import 'components/asdfqwer';
+// fin /////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////

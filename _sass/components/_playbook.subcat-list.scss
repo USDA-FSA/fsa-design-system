@@ -24,6 +24,10 @@
       @include fsa-grid-column-width(4);
     }
 
+    @include breakpoint(L) {
+      @include fsa-grid-column-width(3);
+    }
+
   }
 
   &__link {
