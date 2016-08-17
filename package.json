@@ -2,7 +2,11 @@
   "name": "fsa-design-system",
   "description": "Open Source UI components and visual style guide for USDA-FSA web sites and apps",
   "version": "0.0.0",
-  "private": true,
+  "license": "SEE LICENSE in LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usda-fsa/fsa-design-system.git"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "cssnano": "^3.5.2",
@@ -29,6 +33,14 @@
   "dependencies": {
     "jquery": "^2.2.2",
     "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#a46aca4"
+  },
+  "author": "USDA FSA Enterprise Architecture",
+  "contributors": [
+    "Francis Rupert <France.Rupert@gmail.com> (https://github.com/francisrupert)",
+    "Brian Mills (https://www.linkedin.com/in/brianmills)"
+  ],
+  "bugs": {
+    "url": "https://github.com/USDA-FSA/fsa-design-system/issues"
   },
   "scripts": {
     "install-dep": "bundle install && npm install",
