@@ -52,6 +52,6 @@ It is important to note, while B and C are noted as less critical, they are stil
 4. [CSS is not required to use the page](css)
  * The page makes sense with or without CSS
 5. [Links are unique and contextual](links)
- * All links can be understood taken alone, i.e 'Read more - about 508'
+ * All links can be understood taken alone; i.e., 'Read more - about 508'
 6. [Page titles are descriptive](page-titles)
 7. [Required plugins are linked on the page](plugins)
