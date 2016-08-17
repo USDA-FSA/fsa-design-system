@@ -13,13 +13,13 @@ The other issue that pops up with CSS dependence is content order. Sometimes, co
 ## Testing
 
 1. Disable CSS
-2. Check for missing information (images, text, etc)
+2. Check for missing information (images, text, etc.)
 3. Check for code or other items the developer doesn't want you to see
   * Confusing elements shouldn't be present such as CSS, JavaScript, or other code, etc.
 4. Check for overlapping text
 
 ## Demo
 
-Click the below button to remove styles from this page. Note how all content is accessible by being clearly structured and understandable without styles.
+Click the button below to remove styles from this page. Note how all content is accessible by being clearly structured and understandable without styles.
 
 <button class="fsa-btn fsa-btn--primary" type="button" data-behavior="strip-styles">Remove this page's CSS</button>
