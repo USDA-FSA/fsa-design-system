@@ -18,8 +18,8 @@
     padding-top: 1.5em;
 
     @include breakpoint(ML) {
-      @include font-size(8);
-      padding-top: 1.5em;
+      @include font-size(6);
+      // padding-top: 1.5em;
     }
 
   }
