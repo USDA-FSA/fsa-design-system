@@ -857,7 +857,7 @@ blockquote {
 
 @media (min-width: 48em) {
   blockquote {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.3;
     padding-left: 2.4rem;
   }
@@ -2164,7 +2164,6 @@ hr {
   padding: 2.1rem 3.6rem 2.1rem;
   font-size: 20px;
   font-size: 2rem;
-  font-weight: 300;
   border-radius: 0.8rem;
 }
 
@@ -3426,36 +3425,24 @@ figure {
 }
 
 .fsa-text-size--4 {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.3;
 }
 
 .fsa-text-size--5 {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 1.3;
-}
-
-.fsa-text-size--6 {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 1.3;
-}
-
-.fsa-text-size--7 {
   font-size: 30px;
   font-size: 3rem;
   line-height: 1.3;
 }
 
-.fsa-text-size--8 {
+.fsa-text-size--6 {
   font-size: 40px;
   font-size: 4rem;
   line-height: 1.3;
 }
 
-.fsa-text-size--9 {
+.fsa-text-size--7 {
   font-size: 52px;
   font-size: 5.2rem;
   line-height: 1.3;
@@ -3672,8 +3659,8 @@ main:active, main:focus {
   padding-right: 1.2rem;
   padding-left: 12px;
   padding-left: 1.2rem;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 40px;
+  font-size: 4rem;
   line-height: 1.3;
   font-size: 26px;
   font-size: 2.6rem;
@@ -3686,7 +3673,6 @@ main:active, main:focus {
   .pb-header__title {
     font-size: 4rem;
     line-height: 1.3;
-    padding-top: 1.5em;
   }
 }
 
@@ -4026,7 +4012,6 @@ main:active, main:focus {
 @media (min-width: 42em) {
   .pb-jump__title {
     font-size: 1.7rem;
-    line-height: 1.3;
     display: block;
     height: 0;
     overflow: hidden;
