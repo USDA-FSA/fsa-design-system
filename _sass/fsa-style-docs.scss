@@ -75,7 +75,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     color: $color-fsa-white;
 
     @include breakpoint(ML) {
-      @include font-size(9);
+      @include font-size(7);
     }
 
   }
@@ -448,7 +448,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
     &__preview {
 
-      @include font-size(9);
+      @include font-size(7);
       flex: 1;
       line-height: 1;
       margin: 0;

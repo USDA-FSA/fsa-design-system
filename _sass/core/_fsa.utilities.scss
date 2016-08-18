@@ -187,16 +187,16 @@ $breakpoints: (
 // Example usage: @include font-size(0); is SMALLEST available size
 // Example usage: @include font-size(9); is LARGEST available size
 @mixin font-size($scale: 3) {
-  @if $scale == 0 { font-size: $font-size-0; }
-  @if $scale == 1 { font-size: $font-size-1; }
-  @if $scale == 2 { font-size: $font-size-2; }
-  @if $scale == 3 { font-size: $font-size-3; }
-  @if $scale == 4 { font-size: $font-size-4; line-height: $heading-line-height; }
-  @if $scale == 5 { font-size: $font-size-5; line-height: $heading-line-height; }
-  @if $scale == 6 { font-size: $font-size-6; line-height: $heading-line-height; }
-  @if $scale == 7 { font-size: $font-size-7; line-height: $heading-line-height; }
-  @if $scale == 8 { font-size: $font-size-8; line-height: $heading-line-height; }
-  @if $scale == 9 { font-size: $font-size-9; line-height: $heading-line-height; }
+  @if $scale == 0 { font-size: $font-size-0; }                                    // 13
+  @if $scale == 1 { font-size: $font-size-1; }                                    // 14
+  @if $scale == 2 { font-size: $font-size-2; }                                    // 15
+  @if $scale == 3 { font-size: $font-size-3; }                                    // 17
+  @if $scale == 4 { font-size: $font-size-4; line-height: $heading-line-height; } // 17 REMOVE THIS ONE
+  @if $scale == 5 { font-size: $font-size-5; line-height: $heading-line-height; } // 20
+  @if $scale == 6 { font-size: $font-size-6; line-height: $heading-line-height; } // 20 REMOVE THIS ONE
+  @if $scale == 7 { font-size: $font-size-7; line-height: $heading-line-height; } // 30
+  @if $scale == 8 { font-size: $font-size-8; outline: 3px solid red; } // 40
+  @if $scale == 9 { font-size: $font-size-9; outline: 3px solid purple; } // 52
 }
 
 // -----------------------------------------------------------------------------
