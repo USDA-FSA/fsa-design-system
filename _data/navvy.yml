@@ -52,8 +52,8 @@
       subhref: "elements/lists"
       img: "img/subcategories/subcat-placeholder.png"
 
-    - subtitle: "Input"
-      subhref: "elements/input"
+    - subtitle: "Text Input"
+      subhref: "elements/text-input"
       img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Textarea"

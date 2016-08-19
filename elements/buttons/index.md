@@ -148,6 +148,6 @@ Use buttons for the most important actions you want users to take on your site, 
 * Make the first word of the button’s label a verb. For example, instead of “Complaint Filing” label the button “File a complaint.”
 * At times, consider adding an icon to signal specific actions (“download”, “open in a new window”, etc).
 
-## Related
+## Related Resources
 
 * [Color]({{ site.baseurl }}visual-style/color/)
