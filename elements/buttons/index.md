@@ -6,7 +6,7 @@ intro: "Use buttons to signal actions."
 jump_menu: true
 ---
 
-Numquam sequi, error natus hic vitae nostrum, ex voluptas, molestias aperiam explicabo at non. Alias quia nesciunt et rerum expedita ea ab?
+There are 4 distinct styles available, each are modifiable with several states, e.g. `--large`, `--disabled`, etc.
 
 <div class="pb-preview">
   <button class="fsa-btn fsa-btn--primary">Label</button>
@@ -17,14 +17,11 @@ Numquam sequi, error natus hic vitae nostrum, ex voluptas, molestias aperiam exp
 
 ## Variations
 
-Buttons have 4 distinct styles available. Refer to [Usage](#usage) for guidance on which variation fits your needs:
-
 ```html
 <button class="fsa-btn fsa-btn--[variation]">Label</button>
 ```
 
 ### Default
-
 
 ```html
 <button class="fsa-btn fsa-btn--primary">Label</button>
@@ -35,7 +32,6 @@ Buttons have 4 distinct styles available. Refer to [Usage](#usage) for guidance 
 
 ### Secondary
 
-
 ```html
 <button class="fsa-btn fsa-btn--secondary">Label</button>
 ```
@@ -45,7 +41,6 @@ Buttons have 4 distinct styles available. Refer to [Usage](#usage) for guidance 
 
 ### Tertiary
 
-
 ```html
 <button class="fsa-btn fsa-btn--tertiary">Label</button>
 ```
@@ -54,7 +49,6 @@ Buttons have 4 distinct styles available. Refer to [Usage](#usage) for guidance 
 </div>
 
 ### Alt
-
 
 ```html
 <button class="fsa-btn fsa-btn--alt">Label</button>
@@ -73,14 +67,12 @@ Buttons may be presented in several ways:
 
 ### Full-width
 
-
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--block">Label</button>
 ```
 <div class="pb-preview"><button class="fsa-btn fsa-btn--primary fsa-btn--block">Label</button></div>
 
 ### Disabled
-
 
 ```html
 <button class="fsa-btn fsa-btn--[variation]" disabled="">Label</button>
@@ -91,7 +83,6 @@ Buttons may be presented in several ways:
 
 ### Small
 
-
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--small">Label</button>
 ```
@@ -100,7 +91,6 @@ Buttons may be presented in several ways:
 </div>
 
 ### Large
-
 
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--large">Label</button>
@@ -115,14 +105,12 @@ Button styles can be applied to nearly any **HTML** element, e.g. `<foo class="f
 
 #### Button Element
 
-
 ```html
 <button type="button" class="fsa-btn fsa-btn--primary">label</button>
 ```
 <div class="pb-preview">
   <button type="button" class="fsa-btn fsa-btn--primary">label</button>
 </div>
-
 
 ### Anchor Element
 ```html
