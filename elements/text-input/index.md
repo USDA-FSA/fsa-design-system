@@ -125,38 +125,6 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 * Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
 * Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
 
-## HTML Guidance
-
-There are multiple types of `<input>` text elements. Each style variation can be used for them.
-
-### Type Examples
-
-```html
-<p><input class="fsa-input fsa-input--block" type="text"></p>
-<p><input class="fsa-input fsa-input--block" type="search" value=""></p>
-<p><input class="fsa-input fsa-input--block" type="password" value="123456789"></p>
-<p><input class="fsa-input fsa-input--block" type="number" value="456321789"></p>
-<p><input class="fsa-input fsa-input--block" type="email"></p>
-<p><input class="fsa-input fsa-input--block" type="date"></p>
-<p><input class="fsa-input fsa-input--block" type="datetime-local"></p>
-<p><input class="fsa-input fsa-input--block" type="month"></p>
-<p><input class="fsa-input fsa-input--block" type="week"></p>
-<p><input class="fsa-input fsa-input--block" type="url"></p>
-```
-
-<div class="pb-preview">
-  <p><input class="fsa-input fsa-input--block" type="text"></p>
-  <p><input class="fsa-input fsa-input--block" type="search" value=""></p>
-  <p><input class="fsa-input fsa-input--block" type="password" value="123456789"></p>
-  <p><input class="fsa-input fsa-input--block" type="number" value="456321789"></p>
-  <p><input class="fsa-input fsa-input--block" type="email"></p>
-  <p><input class="fsa-input fsa-input--block" type="date"></p>
-  <p><input class="fsa-input fsa-input--block" type="datetime-local"></p>
-  <p><input class="fsa-input fsa-input--block" type="month"></p>
-  <p><input class="fsa-input fsa-input--block" type="week"></p>
-  <p><input class="fsa-input fsa-input--block" type="url"></p>
-</div>
-
 ## Related Resources
 
 * [Lorem](lorem)
