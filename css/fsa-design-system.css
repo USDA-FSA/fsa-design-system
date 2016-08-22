@@ -3575,15 +3575,27 @@ main:active, main:focus {
   margin: 2em 0;
 }
 
-@media (min-width: 42em) {
+@media (min-width: 20em) {
   .pb-preview {
     border: 1px solid #edecec;
-    padding: 2.4rem;
+    border-width: 1px 0 1px;
+    padding: 1.2rem;
     background-color: #fff;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
   }
 }
 
 @media (min-width: 42em) {
+  .pb-preview {
+    padding: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-width: 1px;
+  }
+}
+
+@media (min-width: 20em) {
   .highlighter-rouge + .pb-preview {
     margin-top: -1.6em;
   }
@@ -4167,6 +4179,27 @@ blockquote code {
   padding: 1.2rem;
   margin: 0;
   background-color: #edecec;
+}
+
+@media (min-width: 42em) {
+  .highlight pre,
+  .highlight code {
+    padding: 2.4rem;
+  }
+}
+
+.highlighter-rouge .highlight {
+  margin-left: -12px;
+  margin-left: -1.2rem;
+  margin-right: -12px;
+  margin-right: -1.2rem;
+}
+
+@media (min-width: 42em) {
+  .highlighter-rouge .highlight {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .highlight .c {

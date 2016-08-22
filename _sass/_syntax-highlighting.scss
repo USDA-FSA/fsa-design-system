@@ -1,8 +1,13 @@
+// scss-lint:disable all
 /**
  * Syntax highlighting styles
  */
- .highlighter-rouge + .highlighter-rouge {
-   margin-top: -2em;
+ .highlighter-rouge {
+
+  & + & {
+    margin-top: -2em;
+  }
+
  }
 
 .highlight {
@@ -12,14 +17,28 @@
 
     pre,
     code {
+
       color: #000;
       padding: $size-default;
       margin: 0;
       background-color: $color-fsa-tertiary-100;
+
+      @include breakpoint(MML) {
+        padding: $size-medium;
+      }
+
     }
 
     .highlighter-rouge & {
-      // background: #eef;
+      
+      margin-left:  (-$size-default);
+      margin-right: (-$size-default);
+
+      @include breakpoint(MML) {
+        margin-left:  0;
+        margin-right: 0;
+      }
+
     }
 
     .c     { color: #998; font-style: italic } // Comment
