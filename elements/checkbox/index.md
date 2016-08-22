@@ -117,13 +117,14 @@ checkbox.indeterminate = true;
 
 ### Use When
 
-* asdf
-* asdf
+* When a user can select any number of choices from a set list.
+* When a user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.
+* When users need to see all the available options at a glance.
 
 ### Don't Use
 
-* asdf
-* asdf
+* If there are too many options to display on a mobile screen.
+* If a user can only select one option from a list (use [radio buttons]({{ site.baseurl }}elements/radio/) instead).
 
 ## Accessibility
 
@@ -131,13 +132,8 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 If you customize the select element, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
-* Make sure your dropdown has an accessible label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).
-* Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
-
-## General Guidance
-
-* fdasklrewq
-* qwerlksadf
+* Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Do not use `fieldset` and `legend` for a single check.
+* Each input should have a semantic `id` attribute, and its corresponding `<label>` should have the same value in its `for` attribute.
 
 ## Related Resources
 
