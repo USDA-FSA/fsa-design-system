@@ -3,6 +3,7 @@ layout: page
 parent: "Elements"
 title: "Checkbox"
 intro: "Checkboxes allow users to select one or more options from a visible list."
+custom_js: "checkbox.js"
 jump_menu: true
 ---
 
@@ -25,16 +26,9 @@ jump_menu: true
   </p>
 </div>
 
-## Variations
+## States
 
-Checkbox elements are styled via `class="fsa-checkbox"`, modifiable with one or multiple `fsa-checkbox--[variation]`.
-
-```html
-<p>
-  <input class="fsa-checkbox fsa-checkbox--[variation]" id="lorem9752" type="checkbox" name="lorem9752" value="lorem9752" checked="">
-  <label for="lorem9752">Label</label>
-</p>
-```
+Checkbox elements are styled via `class="fsa-checkbox"`. Variations don't exist, though they are uniquely styled depending on their state and may be combinable, e.g. disabled and checked.
 
 ### Default
 
@@ -51,170 +45,80 @@ Checkbox elements are styled via `class="fsa-checkbox"`, modifiable with one or 
   </p>
 </div>
 
-### Full-width
+### Checked
 
 ```html
 <p>
-  <select class="fsa-select fsa-select--block" name="Options ipsum">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
+  <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
+  <label for="lorem-857">Label</label>
 </p>
 ```
 <div class="pb-preview">
   <p>
-    <select class="fsa-select fsa-select--block" name="Options ipsum">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-
-### Small
-
-```html
-<p>
-  <select class="fsa-select fsa-select--small" name="Options dolor">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
-<div class="pb-preview">
-  <p>
-    <select class="fsa-select fsa-select--small" name="Options dolor">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-
-### Large
-
-```html
-<p>
-  <select class="fsa-select fsa-select--large" name="Options sit">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
-<div class="pb-preview">
-  <p>
-    <select class="fsa-select fsa-select--large" name="Options sit">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-
-### Response: Error
-
-```html
-<p>
-  <select class="fsa-select fsa-select--error" name="Options amet">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
-<div class="pb-preview">
-  <p>
-    <select class="fsa-select fsa-select--error" name="Options amet">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-
-### Response: Positive
-
-```html
-<p>
-  <select class="fsa-select fsa-select--positive" name="Options gemino">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
-<div class="pb-preview">
-  <p>
-    <select class="fsa-select fsa-select--positive" name="Options gemino">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
+    <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
+    <label for="lorem-857">Label</label>
   </p>
 </div>
 
 ### Disabled
 
-Disabled select elements do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
-
 ```html
 <p>
-  <select class="fsa-select" disabled="disabled" name="Options quis">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
+  <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
+  <label for="lorem-978">Label</label>
 </p>
 ```
 <div class="pb-preview">
   <p>
-    <select class="fsa-select" disabled="disabled" name="Options quis">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
+    <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
+    <label for="lorem-978">Label</label>
   </p>
 </div>
+
+### Disabled and Checked
+
+```html
+<p>
+  <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
+  <label for="lorem-935200">Label</label>
+</p>
+```
+<div class="pb-preview">
+  <p>
+    <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
+    <label for="lorem-935200">Label</label>
+  </p>
+</div>
+
+### Indeterminate
+
+You can't make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript, as has been done in this example.
+
+```html
+<p>
+  <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
+  <label for="checkbox-indeterminate-example">Label</label>
+</p>
+```
+<div class="pb-preview">
+  <p>
+    <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
+    <label for="checkbox-indeterminate-example">Label</label>
+  </p>
+</div>
+
 
 ## Usage
 
 ### Use When
 
-* Use sparingly — only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.
+* asdf
+* asdf
 
 ### Don't Use
 
-* If the list of options is very short. Use [radio buttons]({{ site.baseurl }}elements/radio/) instead.
-* If the list of options is very long. Let users type the same information into a [text input]({{ site.baseurl }}elements/text-input/) that suggests possible options instead.
-* If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from the select element. Use [checkboxes]({{ site.baseurl }}elements/checkbox/) instead.
-* For site navigation.
+* asdf
+* asdf
 
 ## Accessibility
 
@@ -227,10 +131,8 @@ If you customize the select element, ensure they continue to meet the the access
 
 ## General Guidance
 
-* Test dropdowns thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.
-* Avoid making options in one dropdown menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.
-* When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
-* Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times, particularly if interacting with a form solely with keyboard. Auto-submission is also less accessible.
+* fdasklrewq
+* qwerlksadf
 
 ## Related Resources
 
