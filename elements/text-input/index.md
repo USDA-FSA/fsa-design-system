@@ -2,7 +2,7 @@
 layout: page
 parent: "Elements"
 title: "Text Input"
-intro: "Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted). Textarea boxes can span single or multiple lines."
+intro: "Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted)."
 jump_menu: true
 ---
 
@@ -74,7 +74,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 
 ### Disabled
 
-Disabled fields do have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
 
 ```html
 <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
@@ -85,7 +85,7 @@ Disabled fields do have a `class="fsa-input--[variation]"`, instead using the `d
 
 ### Readonly
 
-Readonly fields do have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
 
 ```html
 <p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
@@ -115,7 +115,7 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 If you customize the text inputs, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
-* Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form elements elements must have an associated `<label>` with matching `for` attribute. Additioanlly, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
+* Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form elements elements must have an associated `<label>` with matching `for` attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
 * Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 
 ## General Guidance
