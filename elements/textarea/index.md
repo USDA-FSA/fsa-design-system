@@ -14,7 +14,7 @@ jump_menu: true
 
 ## Variations
 
-The style for `<textarea>` elements always start with `class="fsa-textarea"`, modifiable with an additional `fsa-textarea--[variation]`.
+The style for `<textarea>` elements always start with `class="fsa-textarea"`, modifiable with one or multiple `fsa-textarea--[variation]`.
 
 ```html
 <textarea class="fsa-textarea fsa-textarea--[variation]" name="Name" placeholder="Placeholder"></textarea>
@@ -96,7 +96,7 @@ Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using
 * When users want to be able to paste in a response, particularly longform text.
 * When a [text input]({{ site.baseurl }}elements/text-input/) field may not satisfy the amount of text a user could enter; for example, long prose values that may amount to a sentence.
 
-### Don't Use When
+### Don't Use
 
 * When users need only enter short form content. Consider the [textarea]({{ site.baseurl }}elements/text-input/) element.
 * When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}elements/select/), [radio]({{ site.baseurl }}elements/radio/), or [checkbox]({{ site.baseurl }}elements/checkbox/).

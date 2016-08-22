@@ -12,7 +12,7 @@ jump_menu: true
 
 ## Variations
 
-The style for `<input>` text elements always start with `class="fsa-input"`, modifiable with an additional `fsa-input--[variation]`.
+The style for `<input>` text elements always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variation]`.
 
 ```html
 <input class="fsa-input fsa-input--[variation]" type="text" name="some_name" value="">
@@ -103,7 +103,7 @@ Readonly fields do not have a `class="fsa-input--[variation]"`, instead using th
 * When users want to be able to paste in a response.
 * When users need only a single line of entry.
 
-### Don't Use When
+### Don't Use
 
 * When the value user enter are limited in amount
 * When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}elements/select/), [radio]({{ site.baseurl }}elements/radio/), or [checkbox]({{ site.baseurl }}elements/checkbox/).

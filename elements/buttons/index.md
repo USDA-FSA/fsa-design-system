@@ -126,7 +126,7 @@ Button styles can be applied to nearly any **HTML** element, e.g. `<foo class="f
 
 Use buttons for the most important actions you want users to take on your site, such as "download," "sign up," or "log out."
 
-### Don't Use When
+### Don't Use
 
 * If you want to lead users between pages of a website. Use links instead.
 * Less popular or less important actions may be visually styled as links.
