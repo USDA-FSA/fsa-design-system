@@ -95,10 +95,16 @@ Checkbox elements are styled via `class="fsa-checkbox"`. Variations don't exist,
 You can't make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript, as has been done in this example.
 
 ```html
+<!-- HTML  -->
 <p>
   <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
   <label for="checkbox-indeterminate-example">Label</label>
 </p>
+```
+```javascript
+// JavaScript
+var checkbox = document.getElementById("checkbox-indeterminate-example");
+checkbox.indeterminate = true;
 ```
 <div class="pb-preview">
   <p>
@@ -106,7 +112,6 @@ You can't make a checkbox indeterminate through HTML. There is no indeterminate 
     <label for="checkbox-indeterminate-example">Label</label>
   </p>
 </div>
-
 
 ## Usage
 
