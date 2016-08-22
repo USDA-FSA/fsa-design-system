@@ -91,33 +91,28 @@ Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using
 
 ### Use When
 
-* asdf
-* asdf
-* asdf
+* If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
+* When using another type of input will make answering more difficult.
+* When users want to be able to paste in a response, particularly longform text.
+* When a [text input]({{ site.baseurl }}elements/text-input/) field may not satisfy the amount of text a user could enter; for example, long prose values that may amount to a sentence.
 
 ### Don't Use When
 
-* asdf
-* asdf
-* asdf
+* When users need only enter short form content. Consider the [textarea]({{ site.baseurl }}elements/text-input/) element.
+* When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}elements/select/), [radio]({{ site.baseurl }}elements/radio/), or [checkbox]({{ site.baseurl }}elements/checkbox/).
+
 
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-If you customize the text inputs, ensure they continue to meet the the accessibility requirements that apply to all form controls.
-
-* Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form elements elements must have an associated `<label>` with matching `for` attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
-* asdf
-* asdf
-* asdf
+If you customize the textarea, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
 ## General Guidance
 
-* asdf
-* asdf
-* asdf
-
+* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
+* Only show error validation messages or stylings after a user has interacted with a particular field.
+* Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
 
 ## Related Resources
 
