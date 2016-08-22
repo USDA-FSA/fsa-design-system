@@ -117,8 +117,8 @@ checkbox.indeterminate = true;
 
 ### Use When
 
-* When a user can select any number of choices from a set list.
-* When a user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.
+* A user can select any number of choices from a set list.
+* A user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.
 * When users need to see all the available options at a glance.
 
 ### Don't Use
@@ -130,10 +130,16 @@ checkbox.indeterminate = true;
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-If you customize the select element, ensure they continue to meet the the accessibility requirements that apply to all form controls.
+If you customize a checkbox element, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
 * Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Do not use `fieldset` and `legend` for a single check.
 * Each input should have a semantic `id` attribute, and its corresponding `<label>` should have the same value in its `for` attribute.
+
+## General guidance
+
+* Users should be able to tap on or click on either the text `<label>` or the checkbox element itself to toggle an option. Aids accessibility.
+* Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which checkbox.
+* Make sure selections are adequately spaced for touch screens.
 
 ## Related Resources
 

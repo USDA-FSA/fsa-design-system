@@ -27,112 +27,97 @@ jump_menu: true
 
 ## States
 
-Checkbox elements are styled via `class="fsa-checkbox"`. Variations don't exist, though they are uniquely styled depending on their state and may be combinable, e.g. disabled and checked.
+Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though they are uniquely styled depending on their state and may be combinable, e.g. disabled and checked.
 
 ### Default
 
 ```html
 <p>
-  <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
-  <label for="lorem-9683783">Label</label>
+  <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
+  <label for="lorem-ipsum-9">Label</label>
 </p>
 ```
 <div class="pb-preview">
   <p>
-    <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
-    <label for="lorem-9683783">Label</label>
-  </p>
+    <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
+    <label for="lorem-ipsum-9">Label</label>
+  </p>  
 </div>
 
 ### Checked
 
 ```html
 <p>
-  <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
-  <label for="lorem-857">Label</label>
+  <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
+  <label for="lorem-ipsum-6">Label</label>
 </p>
 ```
 <div class="pb-preview">
   <p>
-    <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
-    <label for="lorem-857">Label</label>
-  </p>
+    <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
+    <label for="lorem-ipsum-6">Label</label>
+  </p>  
 </div>
 
 ### Disabled
 
 ```html
 <p>
-  <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
-  <label for="lorem-978">Label</label>
+  <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
+  <label for="lorem-ipsum-8">Label</label>
 </p>
 ```
 <div class="pb-preview">
   <p>
-    <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
-    <label for="lorem-978">Label</label>
-  </p>
+    <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
+    <label for="lorem-ipsum-8">Label</label>
+  </p>  
 </div>
 
 ### Disabled and Checked
 
 ```html
 <p>
-  <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
-  <label for="lorem-935200">Label</label>
+  <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
+  <label for="lorem-ipsum-3">Label</label>
 </p>
 ```
 <div class="pb-preview">
   <p>
-    <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
-    <label for="lorem-935200">Label</label>
-  </p>
-</div>
-
-### Indeterminate
-
-You can't make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript, as has been done in this example.
-
-```html
-<!-- HTML  -->
-<p>
-  <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
-  <label for="checkbox-indeterminate-example">Label</label>
-</p>
-```
-```javascript
-// JavaScript
-var checkbox = document.getElementById("checkbox-indeterminate-example");
-checkbox.indeterminate = true;
-```
-<div class="pb-preview">
-  <p>
-    <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
-    <label for="checkbox-indeterminate-example">Label</label>
-  </p>
+    <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
+    <label for="lorem-ipsum-3">Label</label>
+  </p>  
 </div>
 
 ## Usage
 
 ### Use When
 
-* When a user can select any number of choices from a set list.
-* When a user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.
-* When users need to see all the available options at a glance.
+* Users need to select only one option out of a set of mutually exclusive choices.
+* The number of available options can fit onto a mobile screen.
+* In place of [select]({{ site.baseurl }}elements/select/) element if there are few enough options (e.g. <=7) and the design can support it.
 
 ### Don't Use
 
-* If there are too many options to display on a mobile screen.
-* If a user can only select one option from a list (use [radio buttons]({{ site.baseurl }}elements/radio/) instead).
+* Consider [checkbox]({{ site.baseurl }}elements/checkbox/) if users may have the option to select more than one.
+* Consider a [select]({{ site.baseurl }}elements/select/) if you don’t have enough space to list out all available options.
+* If users should be able to select zero of the options; radio elements are not "uncheckable." A [checkbox]({{ site.baseurl }}elements/checkbox/) may be warranted.
 
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-If you customize the select element, ensure they continue to meet the the accessibility requirements that apply to all form controls.
+If you customize a radio button, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
-* Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Do not use `fieldset` and `legend` for a single check.
-* Each input should have a semantic `id` attribute, and its corresponding `<label>` should have the same value in its `for` attribute.
+* Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
+* Each radio button should have a `<label>`. Associate the two by matching the `<label>`’s `for` attribute to the `<input>`’s `id` attribute.
+
+## General guidance
+
+* Users should be able to tap on or click on either the text `<label>` or the radio element itself to selectan option.
+* Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which radio button.
+* Make sure selections are adequately spaced for touch screens.
+* Use caution if you decide to set a default value as they cannot be unchecked. Setting a default value can discourage users from making conscious decisions, seem pushy, or alienate users who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.
 
 ## Related Resources
 
