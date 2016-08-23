@@ -40,20 +40,24 @@
       subhref: "visual-style/grid"
       img: "img/subcategories/subcat-placeholder.png"
 
+    - subtitle: "Utilities"
+      subhref: "visual-style/utilities"
+      img: "img/subcategories/subcat-placeholder.png"
+
 - title: "Elements"
   href: "elements"
   subcategories:
+
+    - subtitle: "Text Links"
+      subhref: "elements/links"
+      img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Buttons"
       subhref: "elements/buttons"
       img: "img/subcategories/subcat-placeholder.png"
 
-    - subtitle: "Lists"
-      subhref: "elements/lists"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Input"
-      subhref: "elements/input"
+    - subtitle: "Text Input"
+      subhref: "elements/text-input"
       img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Textarea"
@@ -74,10 +78,6 @@
 
     - subtitle: "Tables"
       subhref: "elements/tables"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Utilities"
-      subhref: "elements/utilities"
       img: "img/subcategories/subcat-placeholder.png"
 
 - title: "Components"
