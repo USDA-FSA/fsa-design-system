@@ -4,9 +4,7 @@ parent: "Visual Style"
 title: "Typography"
 intro: "Clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. "
 jump_menu: true
-
 ---
-
 
 ## Typefaces
 
@@ -42,6 +40,34 @@ We use two open-source font families: **Source Sans Pro** and **Merriweather**, 
     <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
   </div>
 </div>
+
+<!--
+### Weights
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1/3">
+    <p class="docs__font__preview docs__font--source-sans-pro">Aa</p>
+  </div>
+  <div class="fsa-grid__1/3">
+    <p class="docs__font__preview docs__font--source-sans-pro docs__font--source-sans-pro-light">Aa</p>
+  </div>
+  <div class="fsa-grid__1/3">
+    <p class="docs__font__preview docs__font--source-sans-pro docs__font--source-sans-pro-bold">Aa</p>
+  </div>
+</div>
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1/3">
+    <p class="docs__font__preview docs__font--merriweather">Aa</p>
+  </div>
+  <div class="fsa-grid__1/3">
+    <p class="docs__font__preview docs__font--merriweather docs__font--merriweather-light">Aa</p>
+  </div>
+  <div class="fsa-grid__1/3">
+    <p class="docs__font__preview docs__font--merriweather docs__font--merriweather-bold">Aa</p>
+  </div>
+</div>
+-->
 
 ### Fallbacks
 
@@ -137,7 +163,7 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
 
 ## Lists
 
-### Bullet
+### Unordered list (bullet)
 
 ```html
 <ul>
@@ -154,7 +180,7 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
   </ul>
 </div>
 
-### Numbered
+### Unordered list (numbered)
 
 ```html
 <ol>
@@ -225,6 +251,8 @@ Resets `<ul>` or `<ol>` elements by stripping all style properties, e.g. bullets
 
 If SASS is not an option, these CSS Utilities will reset list styles.
 
+##### Unordered list
+
 ```html
 <ul class="fsa-list--unstyled">
   <li>List item one</li>
@@ -240,12 +268,9 @@ If SASS is not an option, these CSS Utilities will reset list styles.
   </ul>
 </div>
 
+##### Ordered list
+
 ```html
-<ul class="fsa-list--unstyled">
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ul>
 <ol class="fsa-list--unstyled">
   <li>List item one</li>
   <li>List item two</li>
@@ -253,11 +278,6 @@ If SASS is not an option, these CSS Utilities will reset list styles.
 </ol>
 ```
 <div class="pb-preview">
-  <ul class="fsa-list--unstyled">
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-  </ul>
   <ol class="fsa-list--unstyled">
     <li>List item one</li>
     <li>List item two</li>
@@ -288,7 +308,7 @@ With a `fsa-text-size--*` selector - where `*` is one of `0-7`.
   <div class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
 </div>
 
-### CSS ( via SASS)
+### CSS (via SASS)
 
 With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size(*);` - where `*` is one of `0-7`.
 
@@ -296,14 +316,6 @@ With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size(*);` 
 .your-custom-selector { @include font-size(*); }
 ```
 
-## HTML Guidance
-
-(Content TBD)
-
-## Accessibility
-
-(Content TBD)
-
-## Related
+## Related Resources
 
 (Content TBD)
