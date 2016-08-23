@@ -125,8 +125,8 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## General Guidance
 
-* Button styles can be applied to nearly any HTML element, e.g. <foo class="fsa-btn fsa-btn--[variant]">Label</foo>; though 99% of the time it will be a `<button>` or `<a>`.
-* For `<button>` elements, `type` attribute is required, and will most likely be `type="button"`. Use `type="submit"` to submit a `<form>`.
+* Button styles can be applied to nearly any HTML element, e.g. `<foo class="fsa-btn fsa-btn--[variant]">Label</foo>`. 99% of the time it will be a `<button>` or `<a>`.
+* For `<button>` elements, `type` attribute is required, and will most likely be `type="button"`. Use `type="submit"` to submit a `<form>`. Omitting `type` attribute will default to `type="submit"`.
 * Generally, use primary buttons for actions that go to the next step and use secondary buttons for actions that happen on the current page.
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.
 * Make sure buttons look clickable — use color variations to distinguish static, hover and active states.
