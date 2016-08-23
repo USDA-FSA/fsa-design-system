@@ -137,13 +137,133 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
 
 ## Lists
 
-### Unordered
+### Bullet
 
-### Ordered
+```html
+<ul>
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ul>
+```
+<div class="pb-preview">
+  <ul>
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ul>
+</div>
+
+### Numbered
+
+```html
+<ol>
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ol>
+```
+<div class="pb-preview">
+  <ol>
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ol>
+</div>
 
 ### Inline
 
+```html
+<ul class="fsa-list--inline">
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ul>
+```
+<ul class="fsa-list--inline">
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ul>
+
 ### Unstyled
+
+#### SASS Mixin
+
+Resets `<ul>` or `<ol>` elements by stripping all style properties, e.g. bullets, numbers, margins, etc.
+
+```scss
+// SASS
+.your-custom-list {
+
+  @include reset-ul();
+
+  &__item {
+    @include reset-li();
+  }
+
+}
+```
+```html
+<!-- HTML -->
+<ul class="your-custom-list">
+  <li class="your-custom-list__item">List item one</li>
+  <li class="your-custom-list__item">List item two</li>
+  <li class="your-custom-list__item">List item three</li>
+</ul>
+```
+<div class="pb-preview">
+  <ul class="your-custom-list">
+    <li class="your-custom-list__item">List item one</li>
+    <li class="your-custom-list__item">List item two</li>
+    <li class="your-custom-list__item">List item three</li>
+  </ul>
+</div>
+
+
+#### HTML
+
+If SASS is not an option, these CSS Utilities will reset list styles.
+
+```html
+<ul class="fsa-list--unstyled">
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ul>
+```
+<div class="pb-preview">
+  <ul class="fsa-list--unstyled">
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ul>
+</div>
+
+```html
+<ul class="fsa-list--unstyled">
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ul>
+<ol class="fsa-list--unstyled">
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ol>
+```
+<div class="pb-preview">
+  <ul class="fsa-list--unstyled">
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ul>
+  <ol class="fsa-list--unstyled">
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ol>
+</div>
 
 ## Typographical Scale
 

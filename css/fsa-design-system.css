@@ -4088,6 +4088,26 @@ main:active, main:focus {
   outline: 1px solid red;
 }
 
+.your-custom-list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.your-custom-list__item {
+  display: list-item;
+  margin: 0;
+}
+
+.your-custom-list__item:before {
+  display: none;
+}
+
+.your-custom-list__item:after {
+  display: none;
+}
+
 .pb-icn__github {
   display: inline-block;
   vertical-align: middle;
