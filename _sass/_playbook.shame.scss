@@ -2,6 +2,16 @@
   outline: 1px solid red;
 }
 
+.your-custom-list {
+
+  @include reset-ul();
+
+  &__item {
+    @include reset-li();
+  }
+
+}
+
 .pb-icn {
   &__github {
     display: inline-block;

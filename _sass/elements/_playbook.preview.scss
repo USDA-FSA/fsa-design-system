@@ -2,14 +2,24 @@
 
   margin: 2em 0;
 
-  @include breakpoint(MML) {
+  @include breakpoint(S) {
     border: 1px solid $color-fsa-tertiary-100;
-    padding: $size-medium;
+    border-width: 1px 0 1px;
+    padding: $size-default;
     background-color: $color-fsa-white;
+    margin-left: (-$size-default);
+    margin-right: (-$size-default);
+  }
+
+  @include breakpoint(MML) {
+    padding: $size-medium;
+    margin-left: 0;
+    margin-right: 0;
+    border-width: 1px;
   }
 
   .highlighter-rouge + & {
-    @include breakpoint(MML) {
+    @include breakpoint(S) {
       margin-top: -1.6em;
     }
 
