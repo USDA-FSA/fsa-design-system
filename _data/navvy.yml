@@ -48,10 +48,6 @@
       subhref: "elements/buttons"
       img: "img/subcategories/subcat-placeholder.png"
 
-    - subtitle: "Lists"
-      subhref: "elements/lists"
-      img: "img/subcategories/subcat-placeholder.png"
-
     - subtitle: "Text Input"
       subhref: "elements/text-input"
       img: "img/subcategories/subcat-placeholder.png"

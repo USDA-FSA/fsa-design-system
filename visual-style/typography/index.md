@@ -84,7 +84,6 @@ Should the Web Fonts, Source Sans Pro or Merriweather, fail to load for any reas
 <h5>h5 header</h5>
 <h6>h6 header</h6>
 ```
-
 <div class="pb-preview">
   <h1>h1 header</h1>
   <h2>h2 header</h2>
@@ -94,13 +93,70 @@ Should the Web Fonts, Source Sans Pro or Merriweather, fail to load for any reas
   <h6>h6 header</h6>
 </div>
 
+While `<h1>` – `<h6>` elements have an inherent style, their semantic level can vary depending on its context. These CSS Utilities will enable you to maintain the visual hierarchy independent from the structural HTML heading level.
+
+```html
+<h2 class="fsa-text--h1">h2 that looks like an h1</h2>
+<h2 class="fsa-text--h2">h2 that looks like an h2</h2>
+<h2 class="fsa-text--h3">h2 that looks like an h3</h2>
+<h2 class="fsa-text--h4">h2 that looks like an h4</h2>
+<h2 class="fsa-text--h5">h2 that looks like an h5</h2>
+<h2 class="fsa-text--h6">h2 that looks like an h6</h2>
+```
+<div class="pb-preview">
+  <h2 class="fsa-text--h1">h2 that looks like an h1</h2>
+  <h2 class="fsa-text--h2">h2 that looks like an h2</h2>
+  <h2 class="fsa-text--h3">h2 that looks like an h3</h2>
+  <h2 class="fsa-text--h4">h2 that looks like an h4</h2>
+  <h2 class="fsa-text--h5">h2 that looks like an h5</h2>
+  <h2 class="fsa-text--h6">h2 that looks like an h6</h2>
+</div>
+
+## Paragraphs
+
+### Default
+
+```html
+<p><a href="https://www.nps.gov/yose/index.htm">Yosemite National Park</a> is set within California’s <a href="https://en.wikipedia.org/wiki/Sierra_Nevada_(U.S.)">Sierra Nevada</a> mountains. </p>
+<p>It’s famed for its <em>giant</em>, <em>ancient sequoias</em>, and for <strong>Tunnel View</strong>, the iconic vista of towering <strong>Bridalveil Fall</strong> and the granite cliffs of <strong>El Capitan</strong> and <strong>Half Dome</strong>.</p>
+```
+
+<div class="pb-preview">
+  <p><a href="https://www.nps.gov/yose/index.htm">Yosemite National Park</a> is set within California’s <a href="https://en.wikipedia.org/wiki/Sierra_Nevada_(U.S.)">Sierra Nevada</a> mountains. </p>
+  <p>It’s famed for its <em>giant</em>, <em>ancient sequoias</em>, and for <strong>Tunnel View</strong>, the iconic vista of towering <strong>Bridalveil Fall</strong> and the granite cliffs of <strong>El Capitan</strong> and <strong>Half Dome</strong>.</p>
+</div>
+
+### Lead
+
+```html
+<p class="fsa-text--lead">Clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+```
+<div class="pb-preview">
+  <p class="fsa-text--lead">Clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+</div>
+
+## Lists
+
+### Unordered
+
+### Ordered
+
+### Inline
+
+### Unstyled
+
 ## Typographical Scale
 
-Font size can be implemented one of two ways
+Beyond the default styling for each HTML element, font properties can be customized via HTML or CSS (via SASS).
 
-1. via the `fsa-text-size--*` selector - where `*` is one `1-9`
-1. via a SASS mixin, `@include font-size(*);` - where `*` is one `1-9`
+### HTML
 
+With a `fsa-text-size--*` selector - where `*` is one of `0-7`.
+
+```html
+<!-- HTML -->
+<element class="fsa-text-size--*">Yosemite National Park is set...</element>
+```
 <div class="pb-preview">
   <div class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
   <div class="fsa-ellipsis fsa-text-size--1">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
@@ -112,107 +168,12 @@ Font size can be implemented one of two ways
   <div class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
 </div>
 
----
+### CSS ( via SASS)
 
-```html
-<!-- HTML -->
-<element class="fsa-text-size--0">Yosemite National Park is set...</element>
-```
+With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size(*);` - where `*` is one of `0-7`.
+
 ```scss
-// SCSS
-.your-custom-selector { @include font-size(0); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--0">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(1); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--1">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--1">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(2); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--2">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--2">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(3); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--3">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--3">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(4); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--4">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(5); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--5">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--5">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(6); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--6">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--6">Yosemite National Park is set...</element>
-```
-```scss
-// SCSS
-.your-custom-selector { @include font-size(7); }
-```
-<div class="pb-preview"><p class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p></div>
-
----
-
-```html
-<!-- HTML -->
-<element class="fsa-text-size--7">Yosemite National Park is set...</element>
+.your-custom-selector { @include font-size(*); }
 ```
 
 ## HTML Guidance
