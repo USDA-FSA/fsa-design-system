@@ -36,7 +36,7 @@
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/subcat-placeholder.png"
 
-    - subtitle: "Grid"
+    - subtitle: "Grid and Responsive Breakpoints"
       subhref: "visual-style/grid"
       img: "img/subcategories/subcat-placeholder.png"
 
