@@ -112,7 +112,7 @@ Use buttons for the most important actions you want users to take on your site, 
 
 ### Don't Use
 
-* If you want to lead users between pages of a website. Use text links instead.
+* If you want to lead users between pages of a website. Use [text links]({{ site.baseurl }}elements/links/) instead.
 * Less popular or less important actions may be visually styled as links.
 
 ## Accessibility
