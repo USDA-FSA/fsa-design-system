@@ -40,9 +40,17 @@
       subhref: "visual-style/grid"
       img: "img/subcategories/subcat-placeholder.png"
 
+    - subtitle: "Utilities"
+      subhref: "visual-style/utilities"
+      img: "img/subcategories/subcat-placeholder.png"
+
 - title: "Elements"
   href: "elements"
   subcategories:
+
+    - subtitle: "Text Links"
+      subhref: "elements/links"
+      img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Buttons"
       subhref: "elements/buttons"
@@ -70,10 +78,6 @@
 
     - subtitle: "Tables"
       subhref: "elements/tables"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Utilities"
-      subhref: "elements/utilities"
       img: "img/subcategories/subcat-placeholder.png"
 
 - title: "Components"
