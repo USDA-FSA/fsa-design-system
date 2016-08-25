@@ -3,12 +3,12 @@
 {% for link in site.data.navvy %}
   {% if link.title == page.title or link.title == page.parent %}
     <nav>
-      <div class="pb-nav-local">
-        <ul class="pb-nav-local__list">
+      <div class="ds-nav-local">
+        <ul class="ds-nav-local__list">
           {% for subpage in link.subcategories %}
             {% for article in subpage.articles %}
-            <li class="pb-nav-local__list-item">
-              <a class="pb-nav-local__link {% if article.title == page.title %}pb-nav-local__list-item--active{% endif %}" href="{{ article.href | prepend: site.baseurl }}">
+            <li class="ds-nav-local__list-item">
+              <a class="ds-nav-local__link {% if article.title == page.title %}ds-nav-local__list-item--active{% endif %}" href="{{ article.href | prepend: site.baseurl }}">
                 {{ article.title }}
               </a>
             </li>
@@ -26,16 +26,16 @@
 {% assign base_url = page.url | replace: rm %}
 
 <nav>
-  <div class="pb-nav-local">
-    <ul class="pb-nav-local__list">
+  <div class="ds-nav-local">
+    <ul class="ds-nav-local__list">
       {% for node in site.pages %}
         {% if node.url contains base_url %}
           {% assign node_url_parts = node.url | split: '/' %}
           {% assign node_url_parts_size = node_url_parts | size %}
           {% assign filename = node_url_parts | last %}
           {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
-            <li class="pb-nav-local__list-item">
-              <a href="{{ node.url | prepend: site.baseurl }}" class="pb-nav-local__link {% if node.title == page.title %}pb-nav-local__list-item--active{% endif %}">
+            <li class="ds-nav-local__list-item">
+              <a href="{{ node.url | prepend: site.baseurl }}" class="ds-nav-local__link {% if node.title == page.title %}ds-nav-local__list-item--active{% endif %}">
                 {{ node.title }}
               </a>
             </li>

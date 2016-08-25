@@ -1,0 +1,134 @@
+main {
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.ds-home {
+  display: none;
+}
+
+.ds-body {
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ($site-max-width + 24px);
+  padding: $size-default;
+
+  @include breakpoint(ML) {
+    margin-top: $size-large;
+  }
+
+}
+
+.ds-footer {
+
+  background-color: $color-fsa-tertiary-100;
+
+  &__bd {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: ($site-max-width + 24px);
+    padding: $size-default;
+  }
+
+}
+
+.ds-overview {
+  // margin-top: 0;
+}
+
+.ds-article {
+
+  position: relative;
+
+  > ul:not([class]),
+  > ol:not([class]),
+  > p {
+    max-width: $text-max-width;
+    max-width: 68ch;
+  }
+
+  > blockquote {
+    @include breakpoint(MML) {
+      @include font-size(4);
+      margin-bottom: 1.5em;
+    }
+  }
+
+  > blockquote + blockquote {
+    @include breakpoint(MML) {
+      margin-top: -1em;
+    }
+  }
+
+}
+
+.ds-page-title {
+
+  margin: 0;
+
+  @include breakpoint(MML) {
+    border-bottom: 1px solid $color-fsa-tertiary-200;
+  }
+
+}
+
+.ds-l-page {
+
+  @include clearfix;
+
+  &__body {
+
+    @include breakpoint(MML) {
+
+      float: left;
+      width: 80%;
+      padding-right: $fsa-grid-gutter;
+
+    }
+
+  }
+
+  &__adjacent {
+
+    @include breakpoint(MML) {
+
+      float: right;
+      width: 20%;
+
+    }
+
+  }
+
+}
+
+.ds-l-guide {
+
+  @include clearfix;
+
+  &__body {
+
+    @include breakpoint(MML) {
+
+      float: right;
+      width: 80%;
+      padding-left: $fsa-grid-gutter;
+
+    }
+
+  }
+
+  &__adjacent {
+
+    @include breakpoint(MML) {
+
+      float: left;
+      width: 20%;
+
+    }
+
+  }
+
+}

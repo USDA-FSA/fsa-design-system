@@ -3,12 +3,12 @@
 
   {% include head.html %}
 
-  <body class="{% if page.url == '/' %}pb-home{% endif %}">
+  <body class="{% if page.url == '/' %}ds-home{% endif %}">
 
     {% include header.html %}
 
     <main id="main-content" tabindex="-1">
-      <div class="pb-body">
+      <div class="ds-body">
         {{ content }}
       </div>
     </main>
@@ -18,7 +18,7 @@
     {% include scripts.html %}
     <script>
       function HomeShow() {
-        $('body').toggleClass('pb-home');
+        $('body').toggleClass('ds-home');
       }
       $('body').keydown(function(event) {
         if(event.which == 112) { //F2

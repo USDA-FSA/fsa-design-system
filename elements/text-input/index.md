@@ -6,7 +6,7 @@ intro: "Text input fields allow people to enter any combination of letters, numb
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text"></p>
 </div>
 
@@ -23,7 +23,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 ```html
 <p><input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder"></p>
 </div>
 
@@ -32,7 +32,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 ```html
 <p><input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder"></p>
 </div>
 
@@ -41,7 +41,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 ```html
 <p><input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder"></p>
 </div>
 
@@ -50,7 +50,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 ```html
 <p><input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder"></p>
 </div>
 
@@ -59,7 +59,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 ```html
 <p><input class="fsa-input fsa-input--error" type="text" name="7id" value="Text"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input fsa-input--error" type="text" name="7id" value="Text"></p>
 </div>
 
@@ -68,7 +68,7 @@ The style for `<input>` text elements always start with `class="fsa-input"`, mod
 ```html
 <p><input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text"></p>
 </div>
 
@@ -79,7 +79,7 @@ Disabled fields do not have a `class="fsa-input--[variation]"`, instead using th
 ```html
 <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
 </div>
 
@@ -90,7 +90,7 @@ Readonly fields do not have a `class="fsa-input--[variation]"`, instead using th
 ```html
 <p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
 </div>
 
