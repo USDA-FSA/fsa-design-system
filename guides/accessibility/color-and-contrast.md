@@ -33,19 +33,19 @@ intro: "There are two aspects to address when it comes to color, contrast, and c
 
 ### Failures
 
-<div class="pb-preview">
+<div class="ds-preview">
   <span style = "color:#58AA02">This text fails. </span>
 </div>
 
 > This text fails because it is too light. The contrast ratio is (2.93 : 1).
 
-<div class="pb-preview">
+<div class="ds-preview">
   <span style = "color:#FFFFFF; background:#8D8E90">This text fails.</span>
 </div>
 
 > This text fails because the background isn't dark enough. The contrast ratio is (3.28 : 1).
 
-<div class="pb-preview">
+<div class="ds-preview">
   <p style="color:#cd2026;">Red text indicates a required field</p>
   <p>
     <label for="name">First Name&nbsp;</label>
@@ -61,19 +61,19 @@ intro: "There are two aspects to address when it comes to color, contrast, and c
 
 ### Passes
 
-<div class="pb-preview">
+<div class="ds-preview">
   <span style="color:#458503">This text passes. </span>
 </div>
 
 > This text passes. The contrast ratio is (4.56 : 1).
 
-<div class="pb-preview">
+<div class="ds-preview">
   <span style="color:#FFFFFF; background:#757679">This text passes.</span>
 </div>
 
 > This text passes. The contrast ratio is (4.54 : 1).
 
-<div class="pb-preview">
+<div class="ds-preview">
   <p style="color:#cd2026;">* indicates a required field</p>
   <p>
     <label for="name-8674f67">First Name</label>

@@ -6,7 +6,7 @@ intro: "More specifically known as <strong>anchor</strong> elements, text links 
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <p>This is <a href="http://www.fsa.usda.gov/">text link</a></p>
   <p>This is a link that goes to an <a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">external website</a>.</p>
 </div>

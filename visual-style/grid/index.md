@@ -6,7 +6,7 @@ intro: "A 12-column, responsive grid provides structure for website content."
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1">
       <p class="fsa-grid__demo fsa-text-align--center"><code>1/1</code></p>
@@ -121,7 +121,7 @@ At least one grid column is required, each described by its proportional width v
   <div class="fsa-grid__1/2">...</div>
 </div>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/2">
       <div class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -246,7 +246,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/1 fsa-grid__1/2@ml">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -270,7 +270,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
   <div class="fsa-grid__1/3">...</div>
 </div>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid fsa-grid--no-gutter">
     <div class="fsa-grid__1/3">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -296,7 +296,7 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/6">
       <p class="fsa-grid__demo">Lorem ipsum dolor sit ametcing elit sed do gna aliqua.</p>
@@ -319,7 +319,7 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__auto">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -338,7 +338,7 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__auto">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -388,7 +388,7 @@ Homeroll your own semantic grids.
 }
 
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="foo">
     <div class="foo__item foo__item--fu">
       <p><strong>`foo__item--fu`, I'm 25% wide.</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -445,7 +445,7 @@ Let's use Media Queries to make a responsive layout.
 }
 
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="lorem">
     <div class="lorem__item lorem__item--fu">
       <p>I'm <strong>50%</strong> by default, <strong>33%</strong> at tablet and above.</p>

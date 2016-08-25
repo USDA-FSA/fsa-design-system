@@ -55,7 +55,7 @@ If a table has text associated with it, ensure the text is programatically linke
   </tr>
 </table>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <table class="fsa-table">
     <caption>User's Height and Weight</caption>
     <tr>
@@ -130,7 +130,7 @@ If a table has text associated with it, ensure the text is programatically linke
   </tr>
 </table>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <table class="fsa-table">
     <caption>User's Height and Weight</caption>
     <tr>
