@@ -50,6 +50,19 @@ main {
     max-width: 68ch;
   }
 
+  > blockquote {
+    @include breakpoint(MML) {
+      @include font-size(4);
+      margin-bottom: 1.5em;
+    }
+  }
+
+  > blockquote + blockquote {
+    @include breakpoint(MML) {
+      margin-top: -1em;
+    }
+  }
+
 }
 
 .pb-page-title {
