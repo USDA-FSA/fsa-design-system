@@ -1,0 +1,29 @@
+.pb-preview {
+
+  margin: 2em 0;
+
+  @include breakpoint(S) {
+    border: 1px solid $color-fsa-tertiary-100;
+    border-width: 1px 0 1px;
+    padding: $size-default;
+    background-color: $color-fsa-white;
+    margin-left: (-$size-default);
+    margin-right: (-$size-default);
+  }
+
+  @include breakpoint(MML) {
+    padding: $size-medium;
+    margin-left: 0;
+    margin-right: 0;
+    border-width: 1px;
+  }
+
+  .highlighter-rouge + & {
+    margin-top: -32px; // yeah, magic number, wheee!
+  }
+
+  & + .highlighter-rouge {
+    margin-top: -34px; // even more randomly magical
+  }
+
+}
