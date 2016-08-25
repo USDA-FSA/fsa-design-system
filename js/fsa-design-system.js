@@ -78,10 +78,10 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
-var Jump = require('./components/playbook.jump');
+var Jump = require('./components/ds.jump');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/playbook.jump":1,"jquery":5}],3:[function(require,module,exports){
+},{"./components/ds.jump":1,"jquery":5}],3:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
