@@ -3823,6 +3823,20 @@ main:active, main:focus {
   max-width: 68ch;
 }
 
+@media (min-width: 42em) {
+  .pb-article > blockquote {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 42em) {
+  .pb-article > blockquote + blockquote {
+    margin-top: -1em;
+  }
+}
+
 .pb-page-title {
   margin: 0;
 }
