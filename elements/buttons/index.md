@@ -6,7 +6,7 @@ intro: "Use buttons to signal actions."
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
   <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
@@ -27,7 +27,7 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 ```html
 <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
 </div>
 
@@ -36,7 +36,7 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 ```html
 <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
 </div>
 
@@ -45,7 +45,7 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 ```html
 <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
 </div>
 
@@ -54,7 +54,7 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 ```html
 <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
 </div>
 
@@ -71,7 +71,7 @@ Each button variation can be modified with one or multiple states:
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--block" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
 </div>
 
@@ -82,7 +82,7 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 ```html
 <button class="fsa-btn fsa-btn--[variation]" disabled="disabled" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Label</button>
 </div>
 
@@ -91,7 +91,7 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--small" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Label</button>
 </div>
 
@@ -100,7 +100,7 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 ```html
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--large" type="button">Label</button>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Label</button>
 </div>
 

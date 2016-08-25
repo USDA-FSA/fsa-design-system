@@ -1,5 +1,5 @@
 
-.pb-nav {
+.ds-nav {
 
   text-align: left;
 
@@ -18,7 +18,7 @@
     }
 
     &--first {
-      .pb-home & {
+      .ds-home & {
         font-weight: bold; // TODO: this is a massive hack. Ask me sometime why
       }
     }

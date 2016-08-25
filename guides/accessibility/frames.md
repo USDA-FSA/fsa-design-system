@@ -18,7 +18,7 @@ intro: "When using frames, its important that all content contained in them is a
 ```html
 <iframe src="iframeform"></iframe>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <iframe src="iframeform" width="280" height="130"></iframe>
 </div>
 
@@ -27,7 +27,7 @@ intro: "When using frames, its important that all content contained in them is a
 ```html
 <iframe src="iframeform" name='Provide an address form'></iframe>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <iframe src="iframeform" name='Provide an address form' width="280" height="130"></iframe>
 </div>
 
@@ -38,7 +38,7 @@ intro: "When using frames, its important that all content contained in them is a
 ```html
 <iframe src="iframeform" title='Provide Name Form'></iframe>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <iframe src="iframeform" title='Provide Name Form' width="280" height="130"></iframe>
 </div>
 

@@ -6,7 +6,7 @@ intro: "Radio buttons allow users to see all available choices at once and selec
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <input class="fsa-radio" id="chicken-noodle" type="radio" name="soup" value="chicken-noodle" checked="">
     <label for="chicken-noodle">Chicken Noodle</label>
@@ -37,7 +37,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <label for="lorem-ipsum-9">Label</label>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
     <label for="lorem-ipsum-9">Label</label>
@@ -52,7 +52,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <label for="lorem-ipsum-6">Label</label>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
     <label for="lorem-ipsum-6">Label</label>
@@ -67,7 +67,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <label for="lorem-ipsum-8">Label</label>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
     <label for="lorem-ipsum-8">Label</label>
@@ -82,7 +82,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <label for="lorem-ipsum-3">Label</label>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
     <label for="lorem-ipsum-3">Label</label>

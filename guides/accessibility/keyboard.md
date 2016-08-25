@@ -41,7 +41,7 @@ custom_js: "keyboard-trap.js"
 <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
 <div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p><a href="#">Link to nowhere 1</a></p>
   <p><a href="#">Link to nowhere 2</a></p>
   <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
