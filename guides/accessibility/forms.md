@@ -48,6 +48,7 @@ intro: "To make forms accessible, each form element should be associated with it
   </fieldset>
 </div>
 
+> ___Passes:___ Each form element has a ```label```, and its associated with the ```for``` tag. The ```for``` tag refers to the ```id``` of the ```input```. When looking at this form, 'First' and 'Last' wouldn't make sence without 'Name.' This is associated with the ```fieldset``` and ```legend```. All elements are wrapped in a ```fieldset```. There can only be one ```legend``` tag per ```fieldset```. Anything in the ```legend``` tag will be associated.
 
 ```html
 <fieldset>
@@ -65,10 +66,7 @@ intro: "To make forms accessible, each form element should be associated with it
     <p><input type='radio' name='soup' value='tomato' id='tomato-3247696' title='Tomato'> <label for="tomato-3247696">Tomato</label></p>
   </fieldset>
 </div>
-
-> ___Name:___ Each form element has a ```label```, and its associated with the ```for``` tag. The ```for``` tag refers to the ```id``` of the ```input```. When looking at this form, 'First' and 'Last' wouldn't make since without 'Name.' This is associated with the ```fieldset``` and ```legend```. All elements are wrapped in a ```fieldset```. There can only be one ```legend``` tag per ```fieldset```. Anything in the ```legend``` tag will be associated.
-
-> ___Favorite Soup:___ ```Fieldset``` and ```legend``` is often used for radio buttons as its the easiest way to associate the radio buttons with the question. Notice there are no ```label```s for the radio buttons, but each button has a ```title``` tag for assistive technology to read.
+> ___Passes:___ ```Fieldset``` and ```legend``` is often used for radio buttons as its the easiest way to associate the radio buttons with the question.
 
 ### Fails
 
@@ -100,9 +98,9 @@ intro: "To make forms accessible, each form element should be associated with it
   </fieldset>
 </div>
 
-> ___Failure:___ First name label ```for``` and ```id``` don't match.
+> ___Fails:___ First name label ```for``` and ```id``` don't match.
 
-> ___Failure:___ Last name has an invalid ```id```.
+> ___Fails:___ Last name has an invalid ```id```.
 
 ```html
 <fieldset>
@@ -142,10 +140,9 @@ intro: "To make forms accessible, each form element should be associated with it
   </fieldset>
 </div>
 
-> ___Failure:___ "This Question Is Required" is not associated with the form fields
+> ___Fails:___ "This Question Is Required" is not associated with the form fields
 
-> ___Failure:___ The ```title``` tag for Pea Soup indicates it's 'Chick Pea Soup.' This information is not available to keyboard, sighted users.
-
+> ___Fails:___ The ```title``` tag for Pea Soup indicates it's 'Chick Pea Soup.' This information is not available to keyboard, sighted users.
 
 ### How ARIA affects form inputs
 
@@ -156,7 +153,6 @@ You can test these (and other) scenarios with your own screen reader. If you hav
 **<abbr title="Too long, didn't read">TL;DR</abbr>** Using `aria-label` or `aria-labeledby` will cause a screen reader to only read them and not the default label. If you want an input to read from multiple things like an error message, use `aria-labeledby` and pass it the `for` attribute of the label and any aditional `id`s you want read. ex. `aria-labeledby='car1 car_description car-error-message'`
 
 #### No ARIA
-
 
 ```html
 <label for="car_1">Car</label>
@@ -169,9 +165,7 @@ You can test these (and other) scenarios with your own screen reader. If you hav
   <span id='carmakedescription'><em>Please enter Make and Model</em></span>
 </div>
 
-> Reads just the `label` and not the description.
-
-> Screen Reader reads input as: "Car Edit text"
+> Reads just the `label` and not the description. Screen Reader reads input as: "Car Edit text"
 
 #### With aria-label
 
@@ -186,9 +180,7 @@ You can test these (and other) scenarios with your own screen reader. If you hav
   <span id='carmakedescription_2'><em>Please enter Make and Model</em></span>
 </div>
 
-> Reads the `aria-label` and doesn't read the normal `label`.
-
-> Screen Reader reads input as: "Car, please enter make and model Edit text"
+> Reads the `aria-label` and <strong>does not</strong> read the normal `label`. Screen Reader reads form as: "Car, please enter make and model Edit text"
 
 #### With aria-labeledby pointing at `carmakedescription`
 
@@ -207,27 +199,24 @@ You can test these (and other) scenarios with your own screen reader. If you hav
 
 > Screen Reader reads input as: "Please enter Make and Model Edit text"
 
-#### With aria-labeledby pointing at `car carmakedescription`
+#### With aria-labeledby pointing at `carmakedescription`
 
 ```html
 <label for="car_4">Car</label>
-<input type="text" id="car_4" aria-labeledby="car_4 carmakedescription_4" /><br/>
+<input type="text" id="car_4" aria-labeledby="carmakedescription_4" /><br/>
 <span id='carmakedescription_4'><em>Please enter Make and Model.</em></span>
 ```
 <div class="pb-preview">
   <label for="car_4">Car</label>
-  <input type="text" id="car_4" aria-labeledby="car_4 carmakedescription_4" /><br/>
+  <input type="text" id="car_4" aria-labeledby="carmakedescription_4" /><br/>
   <span id='carmakedescription_4'><em>Please enter Make and Model.</em></span>
 </div>
-
 
 > Reads both labels indicated by the `aria-labeledby` attribute
 
 > Screen Reader reads input as: "Car Please enter Make and Model Edit text"
 
 #### With aria-describedby pointing at `carmakedescription`
-
-VoiceOver only reads the label. Jaws (if you're testing in a Windows environment) should read the description as well.
 
 ```html
 <label for="car_5">Car</label>
@@ -241,3 +230,7 @@ VoiceOver only reads the label. Jaws (if you're testing in a Windows environment
 </div>
 
 > Screen Reader reads input as: "Car Edit text"
+
+> [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/) only reads the `label`.
+
+> [Jaws](http://www.freedomscientific.com/Products/Blindness/JAWS) (if you're testing in a Windows environment) should read the description as well.
