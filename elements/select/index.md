@@ -6,7 +6,7 @@ intro: "Sometimes referred to as a “drop down,” the select element allows us
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select" name="Options">
       <option value="Option A" selected="selected">Option A</option>
@@ -41,7 +41,7 @@ The style for `<select>` elements always start with `class="fsa-select"`, modifi
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select" name="Options lorem">
       <option value="Option A" selected="selected">Option A</option>
@@ -66,7 +66,7 @@ The style for `<select>` elements always start with `class="fsa-select"`, modifi
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--block" name="Options ipsum">
       <option value="Option A" selected="selected">Option A</option>
@@ -91,7 +91,7 @@ The style for `<select>` elements always start with `class="fsa-select"`, modifi
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--small" name="Options dolor">
       <option value="Option A" selected="selected">Option A</option>
@@ -116,7 +116,7 @@ The style for `<select>` elements always start with `class="fsa-select"`, modifi
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--large" name="Options sit">
       <option value="Option A" selected="selected">Option A</option>
@@ -141,7 +141,7 @@ The style for `<select>` elements always start with `class="fsa-select"`, modifi
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--error" name="Options amet">
       <option value="Option A" selected="selected">Option A</option>
@@ -166,7 +166,7 @@ The style for `<select>` elements always start with `class="fsa-select"`, modifi
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--positive" name="Options gemino">
       <option value="Option A" selected="selected">Option A</option>
@@ -193,7 +193,7 @@ Disabled select elements do not have a `class="fsa-select--[variation]"`, instea
   </select>
 </p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <p>
     <select class="fsa-select" disabled="disabled" name="Options quis">
       <option value="Option A" selected="selected">Option A</option>

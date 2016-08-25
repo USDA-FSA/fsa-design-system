@@ -1,17 +1,17 @@
 <nav>
-  <div class="pb-nav">
-    <ul class="pb-nav__list">
+  <div class="ds-nav">
+    <ul class="ds-nav__list">
       {% for link in site.data.navvy %}
 
         {% assign activeClassName = nil %}
 
         {% if page.url contains link.href %}
-          {% assign activeClassName = 'pb-nav__list-item--active' %}
+          {% assign activeClassName = 'ds-nav__list-item--active' %}
         {% endif %}
 
         {% unless link.exclude_from_nav %}
-          <li class="pb-nav__list-item {{ activeClassName }} {% if forloop.first %}pb-nav__list-item--first{% endif %} {% if forloop.last %}pb-nav__list-item--last{% endif %}">
-            <a class="pb-nav__link" href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+          <li class="ds-nav__list-item {{ activeClassName }} {% if forloop.first %}ds-nav__list-item--first{% endif %} {% if forloop.last %}ds-nav__list-item--last{% endif %}">
+            <a class="ds-nav__link" href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
           </li>
         {% endunless %}
 

@@ -5,18 +5,18 @@
 {% endif %}
 
 <nav>
-  <div class="pb-nav-local">
-    <ul class="pb-nav-local__list">
+  <div class="ds-nav-local">
+    <ul class="ds-nav-local__list">
       {% for article in site.data.[guide] %}
 
         {% assign activeClassName = nil %}
 
         {% if article.title == page.title or article.alt_title == page.title %}
-          {% assign activeClassName = 'pb-nav-local__list-item--active' %}
+          {% assign activeClassName = 'ds-nav-local__list-item--active' %}
         {% endif %}
 
-        <li class="pb-nav-local__list-item">
-          <a class="pb-nav-local__link {{activeClassName}}" href="{{ article.href | prepend: site.baseurl }}">
+        <li class="ds-nav-local__list-item">
+          <a class="ds-nav-local__link {{activeClassName}}" href="{{ article.href | prepend: site.baseurl }}">
             {{ article.title }}
           </a>
         </li>

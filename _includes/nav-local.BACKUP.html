@@ -3,18 +3,18 @@
 
 {% if page.section %}
 <nav>
-  <div class="pb-nav-local">
-    <ul class="pb-nav-local__list">
+  <div class="ds-nav-local">
+    <ul class="ds-nav-local__list">
 
       {% for subpage in site.data.navvy.[section] %}
 
         {% assign localActiveClassName = nil %}
 
         {% if page.url contains subpage.url %}
-          {% assign localActiveClassName = 'pb-nav-local__list-item--active' %}
+          {% assign localActiveClassName = 'ds-nav-local__list-item--active' %}
         {% endif %}
 
-        <li class="pb-nav-local__list-item {{ localActiveClassName }}"><a class="pb-nav-local__link" href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a></li>
+        <li class="ds-nav-local__list-item {{ localActiveClassName }}"><a class="ds-nav-local__link" href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a></li>
 
       {% endfor %}
 

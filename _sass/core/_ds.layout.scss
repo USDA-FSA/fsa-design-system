@@ -5,11 +5,11 @@ main {
   }
 }
 
-.pb-home {
+.ds-home {
   display: none;
 }
 
-.pb-body {
+.ds-body {
 
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +22,7 @@ main {
 
 }
 
-.pb-footer {
+.ds-footer {
 
   background-color: $color-fsa-tertiary-100;
 
@@ -35,11 +35,11 @@ main {
 
 }
 
-.pb-overview {
+.ds-overview {
   // margin-top: 0;
 }
 
-.pb-article {
+.ds-article {
 
   position: relative;
 
@@ -65,7 +65,7 @@ main {
 
 }
 
-.pb-page-title {
+.ds-page-title {
 
   margin: 0;
 
@@ -75,7 +75,7 @@ main {
 
 }
 
-.pb-l-page {
+.ds-l-page {
 
   @include clearfix;
 
@@ -104,7 +104,7 @@ main {
 
 }
 
-.pb-l-guide {
+.ds-l-guide {
 
   @include clearfix;
 
