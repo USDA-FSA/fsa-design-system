@@ -15,7 +15,7 @@ jump_menu: true
 
 ## Variations
 
-Buttons are styled with `class="fsa-btn", modifiable with one or multiple `fsa-btn--[variation]`.
+Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[variation]`.
 
 ```html
 <button class="fsa-btn fsa-btn--[variation]" type="button">Label</button>

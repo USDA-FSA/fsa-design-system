@@ -10,6 +10,7 @@
   // @include sr-only();
   position: absolute;
   opacity: 0;
+  cursor: pointer;
 
   .lt-ie9 & {
     border: 0;
@@ -69,7 +70,6 @@
   margin-left: .1rem;
 
   .lt-ie9 & {
-    outline: 1px solid red;
     display: none;
   }
 
@@ -127,14 +127,14 @@
 
 .fsa-checkbox:disabled + label,
 .fsa-radio:disabled + label {
-  // color: $color-gray;
+  color: $color-fsa-tertiary-300;
   cursor: text;
 }
 
 .fsa-checkbox:disabled + label::before,
 .fsa-radio:disabled + label::before {
   background-color: $white;
-  // box-shadow: 0 0 0 1px $color-gray;
+  cursor: text;
   cursor: not-allowed;
   opacity: .3;
 }
