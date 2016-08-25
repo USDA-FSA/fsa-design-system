@@ -19,17 +19,11 @@
   }
 
   .highlighter-rouge + & {
-    @include breakpoint(S) {
-      margin-top: -1.6em;
-    }
-
+    margin-top: -32px; // yeah, magic number, wheee!
   }
 
   & + .highlighter-rouge {
-    @include breakpoint(MML) {
-      margin-top: -2em;
-    }
-
+    margin-top: -34px; // even more randomly magical
   }
 
 }
