@@ -18,18 +18,24 @@ ol {
 .fsa-list {
 
   &--unstyled {
-    // scss-lint:disable PlaceholderInExtend
-    @extend .usa-unstyled-list;
+
+    @include reset-ul();
+
+    > li {
+      @include reset-li();
+    }
+
   }
 
   &--inline {
-    // scss-lint:disable PlaceholderInExtend
-    @extend .usa-unstyled-list;
+
+    @include reset-ul();
 
     > li {
 
+      @include reset-li();
       display: inline-block;
-      margin-right: $size-default;
+      margin-right: $size-small;
 
       &:last-child {
         margin-right: 0;

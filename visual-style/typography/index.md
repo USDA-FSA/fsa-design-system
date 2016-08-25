@@ -13,7 +13,7 @@ We use two open-source font families: **Source Sans Pro** and **Merriweather**, 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@l">
     <h3>Source Sans Pro</h3>
-    <div class="docs__font docs__font--source-sans-pro">
+    <div class="docs__font fsa-font--sans">
       <p class="docs__font__preview">Aa</p>
       <div class="docs__font__details">
         <p class="docs__font__item">abcdefghijklmnopqrstuvwxyz</p>
@@ -27,7 +27,7 @@ We use two open-source font families: **Source Sans Pro** and **Merriweather**, 
   </div>
   <div class="fsa-grid__1 fsa-grid__1/2@l">
     <h3>Merriweather</h3>
-    <div class="docs__font docs__font--merriweather">
+    <div class="docs__font fsa-font--serif">
       <p class="docs__font__preview">Aa</p>
       <div class="docs__font__details">
         <p class="docs__font__item">abcdefghijklmnopqrstuvwxyz</p>
@@ -206,11 +206,13 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
   <li>List item three</li>
 </ul>
 ```
-<ul class="fsa-list--inline">
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ul>
+<div class="pb-preview">
+  <ul class="fsa-list--inline">
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ul>
+</div>
 
 ### Unstyled
 
@@ -291,7 +293,7 @@ Beyond the default styling for each HTML element, font properties can be customi
 
 ### HTML
 
-With a `fsa-text-size--*` selector - where `*` is one of `0-7`.
+With a `fsa-text-size--[size]` selector - where `[size]` is one of `0-7`.
 
 ```html
 <!-- HTML -->
@@ -310,10 +312,10 @@ With a `fsa-text-size--*` selector - where `*` is one of `0-7`.
 
 ### CSS (via SASS)
 
-With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size(*);` - where `*` is one of `0-7`.
+With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
 
 ```scss
-.your-custom-selector { @include font-size(*); }
+.your-custom-selector { @include font-size([size]); }
 ```
 
 ## Related Resources
