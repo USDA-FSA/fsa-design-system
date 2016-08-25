@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Images"
-intro: "When using images on a page, for Assistive Technology (AT) ti be able to recognize and read it, you must provide an alternate method for that content. This can be provided via a caption, alt tag, title tag, or aria label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank."
+intro: "When using images on a page, for Assistive Technology (AT) to be able to recognize and read it, you must provide an alternate method for that content. This can be provided via a caption, alt tag, title tag, or aria label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank."
 ---
 
 
