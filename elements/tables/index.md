@@ -51,44 +51,6 @@ Styled `<table>` elements use `class="fsa-table"`, with several modifications av
 
 ### Default
 
-```html
-<table class="fsa-table">
-  <thead>
-    <tr>
-      <th scope="col">Commodity</th>
-      <th scope="col">Loan Rate</th>
-      <th scope="col">30-Day Period PCP</th>
-      <th scope="col">Effective LDP Rate ($)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Barley $/Bushel</td>
-      <td>1.75</td>
-      <td>3.30</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <td>Canola $/Cwt.</td>
-      <td>8.94</td>
-      <td>15.99</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <td>Flaxseed $/Cwt.</td>
-      <td>10.13</td>
-      <td>15.90</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <td>Oats $/Bushel</td>
-      <td>1.43</td>
-      <td>2.97</td>
-      <td>0.00</td>
-    </tr>
-  </tbody>
-</table>
-```
 <div class="ds-preview">
   <table class="fsa-table">
     <thead>
@@ -127,11 +89,8 @@ Styled `<table>` elements use `class="fsa-table"`, with several modifications av
     </tbody>
   </table>  
 </div>
-
-### Borderless
-
 ```html
-<table class="fsa-table fsa-table--borderless">
+<table class="fsa-table">
   <thead>
     <tr>
       <th scope="col">Commodity</th>
@@ -168,6 +127,9 @@ Styled `<table>` elements use `class="fsa-table"`, with several modifications av
   </tbody>
 </table>
 ```
+
+### Borderless
+
 <div class="ds-preview">
   <table class="fsa-table fsa-table--borderless">
     <thead>
@@ -206,13 +168,8 @@ Styled `<table>` elements use `class="fsa-table"`, with several modifications av
     </tbody>
   </table>  
 </div>
-
-### Plain
-
-Omitting the default `class="fsa-table"` outright will render in a non-styled table, effectively a "reset" table.
-
 ```html
-<table>
+<table class="fsa-table fsa-table--borderless">
   <thead>
     <tr>
       <th scope="col">Commodity</th>
@@ -249,6 +206,11 @@ Omitting the default `class="fsa-table"` outright will render in a non-styled ta
   </tbody>
 </table>
 ```
+
+### Plain
+
+Omitting the default `class="fsa-table"` outright renders a non-styled table, effectively "resetting" it.
+
 <div class="ds-preview">
   <table>
     <thead>
@@ -287,11 +249,120 @@ Omitting the default `class="fsa-table"` outright will render in a non-styled ta
     </tbody>
   </table>  
 </div>
-
+```html
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Commodity</th>
+      <th scope="col">Loan Rate</th>
+      <th scope="col">30-Day Period PCP</th>
+      <th scope="col">Effective LDP Rate ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Barley $/Bushel</td>
+      <td>1.75</td>
+      <td>3.30</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Canola $/Cwt.</td>
+      <td>8.94</td>
+      <td>15.99</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Flaxseed $/Cwt.</td>
+      <td>10.13</td>
+      <td>15.90</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Oats $/Bushel</td>
+      <td>1.43</td>
+      <td>2.97</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 ## Responsive Tables
 
-(TBD)
+Each styled variation can be made to fit on smaller viewports (i.e. mobile phones) via `fsa-table--responsive`.
+
+### Structure
+
+* Responsive table styles are identical at the smaller breakpoints regardless of initial variation used.
+* The key to Responsive Tables is the use of the `data-label` attribute on each data data cell, e.g. `<td data-label="Description">...</td>`.
+
+<div class="ds-preview">
+  <table class="fsa-table fsa-table--responsive">
+    <thead>
+      <tr>
+        <th scope="col">Document title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th data-label="Document title" scope="row">Declaration of Independence</th>
+        <td data-label="Description">Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+        <td data-label="Year">1776</td>
+      </tr>
+      <tr>
+        <th data-label="Document title" scope="row">Bill of Rights</th>
+        <td data-label="Description">The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+        <td data-label="Year">1791</td>
+      </tr>
+      <tr>
+        <th data-label="Document title" scope="row">Declaration of Sentiments</th>
+        <td data-label="Description">A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+        <td data-label="Year">1848</td>
+      </tr>
+      <tr>
+        <th data-label="Document title" scope="row">Emancipation Proclamation</th>
+        <td data-label="Description">An executive order granting freedom to slaves in designated southern states.</td>
+        <td data-label="Year">1863</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```html
+<table class="fsa-table fsa-table--responsive">
+  <thead>
+    <tr>
+      <th scope="col">Document title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th data-label="Document title" scope="row">Declaration of Independence</th>
+      <td data-label="Description">Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+      <td data-label="Year">1776</td>
+    </tr>
+    <tr>
+      <th data-label="Document title" scope="row">Bill of Rights</th>
+      <td data-label="Description">The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+      <td data-label="Year">1791</td>
+    </tr>
+    <tr>
+      <th data-label="Document title" scope="row">Declaration of Sentiments</th>
+      <td data-label="Description">A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+      <td data-label="Year">1848</td>
+    </tr>
+    <tr>
+      <th data-label="Document title" scope="row">Emancipation Proclamation</th>
+      <td data-label="Description">An executive order granting freedom to slaves in designated southern states.</td>
+      <td data-label="Year">1863</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 ## Usage
 
