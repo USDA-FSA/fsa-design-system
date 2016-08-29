@@ -381,17 +381,3 @@ Each styled variation can be made to fit on smaller viewports (i.e. mobile phone
 
 * Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
 * Complex tables are tables with more than two levels of headers. Each header should be given a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
-
-## General Guidance
-
-* asdf
-* asdf
-* asdf
-
-## Related Resources
-
-* [Lorem](lorem)
-* [Ipsum](ipsum)
-* [Dolor](dolor)
-* [Sit](sit)
-* [Amet](amet)
