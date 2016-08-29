@@ -6,6 +6,8 @@ intro: "Tables show tabular data in columns and rows."
 jump_menu: true
 ---
 
+Tables are great for displaying tabular data. Minimal visual styling helps surface this information more easily.
+
 <div class="ds-preview">
   <table class="fsa-table">
     <thead>
@@ -368,21 +370,17 @@ Each styled variation can be made to fit on smaller viewports (i.e. mobile phone
 
 ### Use When
 
-* asdf
-* asdf
-* asdf
+* When you need to display tabular information, such as statistical data.
 
 ### Don't Use
 
-* asdf
-* asdf
-* asdf
+* For layout, use [Grids]({{ site.baseurl }}visual-style/grid/).
+* If the amount of content is simply or brief enough, and depending on its context, consider structuring as an [unordered list]({{ site.baseurl }}visual-style/typography/#unordered-list-bullet), [ordered list]({{ site.baseurl }}visual-style/typography/#ordered-list-numbered), or [definition list]({{ site.baseurl }}visual-style/typography/#definition-list).
 
 ## Accessibility
 
-* asdf
-* asdf
-* asdf
+* Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
+* Complex tables are tables with more than two levels of headers. Each header should be given a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
 
 ## General Guidance
 
