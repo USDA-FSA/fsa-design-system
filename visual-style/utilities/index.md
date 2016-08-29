@@ -15,8 +15,8 @@ Spacing values for margins and padding pointedly subscribe to the Design System'
 ```html
 <element class="fsa-m-[side]--[size]">...</element>
 ```
-* `side` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
-* `size` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
+* `[side]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
+* `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
@@ -149,8 +149,8 @@ Spacing values for margins and padding pointedly subscribe to the Design System'
 ```html
 <element class="fsa-p-[side]--[size]">...</element>
 ```
-* `side` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
-* `size` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
+* `[side]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
+* `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
@@ -277,22 +277,113 @@ Spacing values for margins and padding pointedly subscribe to the Design System'
 
 ### Responsive
 
+(TBD)
+
+## Font Face
+
+* `[option]` is one of `sans`, `sans-light`, `sans-bold`, `serif`, `serif-light`, `serif-bold`.
+
+```html
+<element class="fsa-font--[option]">...</element>
+```
+
+<div class="ds-preview">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__1/2@m">
+      <p class="docs__code-sample"><code>class="fsa-font--sans"</code></p>
+      <p class="fsa-font--sans">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+
+      <p class="docs__code-sample"><code>class="fsa-font--sans-light"</code></p>
+      <p class="fsa-font--sans-light">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+
+      <p class="docs__code-sample"><code>class="fsa-font--sans-bold"</code></p>
+      <p class="fsa-font--sans-bold">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+
+    </div>
+    <div class="fsa-grid__1 fsa-grid__1/2@m">
+      <p class="docs__code-sample"><code>class="fsa-font--serif"</code></p>
+      <p class="fsa-font--serif">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+
+      <p class="docs__code-sample"><code>class="fsa-font--serif-light"</code></p>
+      <p class="fsa-font--serif-light">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+
+      <p class="docs__code-sample"><code>class="fsa-font--serif-bold"</code></p>
+      <p class="fsa-font--serif-bold">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+    </div>
+  </div>
+</div>
+
+
+### Responsive
+
+(TBD)
+
+## Text Size
+
+`[size]` is one of `0` - `7`
+
+```html
+<element class="fsa-text-size--[size]">...</element>
+```
+<div class="ds-preview">
+  <p class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--1">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--2">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--3">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--5">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--6">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+
+### Responsive
+
+(TBD)
+
+## Text Alignment
+
+`[direction]` is one of `right`, `center`, `left`.
+
+```html
+<element class="fsa-text-align--[direction]">...</element>
+```
+<div class="ds-preview">
+  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+### Responsive
+
+(TBD)
+
+## Text Headers
+
+While `h1` – `h6` elements have a hierarchical style assigned, sometimes the heading level may vary depending on its context. These Text Header Utilities enable you to maintain the visual hierarchy independent from the structural HTML heading level.
+
+* [header] is one of `h1`, `h2`, `h3`, `h4`, `h5`, `h6`.
+* This example uses an `<h2>` for demo purposes, but can be applied to any `<hN>` element
+
+```html
+<hN class="fsa-text--[header]">...</hN>
+```
+<div class="ds-preview">
+  <h2 class="fsa-text--h1">h2 that looks like an h1</h2>
+  <h2 class="fsa-text--h2">h2 that looks like an h2</h2>
+  <h2 class="fsa-text--h3">h2 that looks like an h3</h2>
+  <h2 class="fsa-text--h4">h2 that looks like an h4</h2>
+  <h2 class="fsa-text--h5">h2 that looks like an h5</h2>
+  <h2 class="fsa-text--h6">h2 that looks like an h6</h2>
+</div>
+
+
+### Responsive
+
+(TBD)
+
 ## Floats
 
 ### Responsive
 
-## Font Face
-
-### Responsive
-
-## Text Size
-
-### Responsive
-
-## Text Alignment
-
-### Responsive
-
-## Text Headers
-
-### Responsive
+(TBD)
