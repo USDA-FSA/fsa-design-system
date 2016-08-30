@@ -22,7 +22,7 @@ The other issue screen reader and keyboard users come across is lengthy nav bars
 ### Links that open in a New Window
 1. Identify links that open in new windows
 2. Check that ```target='_blank'```
-3. Verify that some indication is given programatically, for example:
+3. Verify that some indication is given programmatically, for example:
   *  ```<a href='link/to/page.html' target='_blank' aria-label='Opens in new window'>```
   *  ```<a href='link/to/page.html' target='_blank' title='Opens in new window'>```
   *  ```<a href='link/to/page.html' target='_blank'>Link <span class='sr-only'>Opens in new window</span></a>```
