@@ -40,7 +40,7 @@
       subhref: "visual-style/grid"
       img: "img/subcategories/subcat-placeholder.png"
 
-    - subtitle: "Utilities"
+    - subtitle: "CSS Utilities"
       subhref: "visual-style/utilities"
       img: "img/subcategories/subcat-placeholder.png"
 

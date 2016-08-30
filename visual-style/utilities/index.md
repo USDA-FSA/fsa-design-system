@@ -1,16 +1,30 @@
 ---
 layout: page
 parent: "Visual Style"
-title: "Utilities"
-intro: "Utilities are single-purpose immutable styles that can be appended to elements."
+title: "CSS Utilities"
+intro: "CSS Utilities are single-purpose styles that can be appended to elements."
 jump_menu: true
 ---
 
-[TODO]: more documentation explaining the role of these
+## Guidelines
 
-Spacing values for margins and padding pointedly subscribe to the Design System's [Sizes and Spaces]({{ site.baseurl }}visual-style/size-and-space/).
+[TODO]: more documentation explaining the role of these, in particular how they are "Last Resort"
+
+## Usage
+
+### Use When
+
+* asdf
+* asdf
+
+### Don't Use
+
+* asdf
+* asdf
 
 ## Margins
+
+Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ site.baseurl }}visual-style/size-and-space/).
 
 ```html
 <element class="fsa-m-[side]--[size]">...</element>
@@ -145,6 +159,8 @@ Spacing values for margins and padding pointedly subscribe to the Design System'
 (TBD)
 
 ## Padding
+
+Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ site.baseurl }}visual-style/size-and-space/).
 
 ```html
 <element class="fsa-p-[side]--[size]">...</element>
@@ -384,6 +400,49 @@ While `h1` – `h6` elements have a hierarchical style assigned, sometimes the h
 
 ## Floats
 
+`[direction]` is one of `left`, `right`, `none`.
+
+```html
+<element class="fsa-float--[direction]">...</element>
+```
+<div class="ds-preview">
+  <p class="fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <hr>
+  <p class="fsa-float--right"><strong>I'm floating to right</strong></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <hr>
+  <p class="fsa-float--none"><strong>I'm not floating at all</strong></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
 ### Responsive
 
 (TBD)
+
+### Clearing Floats
+
+```html
+<p class="fsa-float--left"><strong>I'm floating to left</strong></p>
+<p class="fsa-clear">I've been cleared</p>
+```
+<div class="ds-preview">
+  <p class="fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p class="fsa-clear">I've been cleared</p>
+</div>
+
+
+### Containing Floats
+
+```html
+<div class="fsa-clearfix">
+  <p class="fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p class="fsa-float--right"><strong>I'm floating to right</strong></p>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-clearfix">
+    <p class="fsa-float--left"><strong>I'm floating to left</strong></p>
+    <p class="fsa-float--right"><strong>I'm floating to right</strong></p>
+  </div>
+</div>
