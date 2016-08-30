@@ -2,10 +2,14 @@
 layout: guide
 parent: "Accessibility"
 title: "Headings"
-intro: "When laying out a page, headings provide a semantic way to layout sections of content. Heading elements are used by users of Assistive Technology (AT) to navigate a page quickly and to understand the structure of a page. "
+intro: "When laying out a page, headings provide a semantic way to layout sections of content."
 ---
 
-When using headings, it is best practice to reserve `<h1>` for the most important header text on the page, with subsequent headings, `h1-h6`, identifying a clear hierarchy. For example:
+Heading elements are used by users of Assistive Technology (AT) to navigate a page quickly and to understand the structure of a page. Also see [Landmarks]({{ site.baseurl }}accessibility/landmarks).
+
+When using headings, it is best practice to reserve `<h1>` for the most important header text on the page, with subsequent headings, `h1-h6`, identifying a clear hierarchy. Use the `<h1>` element once per page — some assistive technology may be unable to read multiple `<h1>`s on a single page correctly. Other heading levels may be used more than once following document outline order and you may reset headings up to <h2> with the <section> element.
+
+## Typical Example
 
 ```html
 <h1>Page Title</h1>
