@@ -1,8 +1,8 @@
 ---
 layout: guide
 parent: "Content"
-title: "Guidelines for how FSA uses acronyms and abbreviations."
-intro:
+title: "Acronyms and Abbreviations"
+intro: "Guidelines for how FSA uses acronyms and abbreviations."
 ---
 
 **Abbreviations** are any shortened or contracted word or phrase. For example, writing "St." instead of "Street", or "Rx" for "prescription", or "D.C." for "District of Columbia."
