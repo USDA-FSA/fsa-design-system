@@ -2,14 +2,14 @@
 layout: guide
 parent: "Accessibility"
 title: "Frames"
-intro: "When using frames, its important that all content contained in them is accessible."
+intro: "When using frames, it's important that all content contained in them is accessible."
 ---
 
 ## Testing
 
-1. Identify all `frame`s / `iframe`s on a page
-2. Using the keyboard, navigate to each frame to ensure content is accessible
-3. Check the `title` or `name` attribute of each frame for a description of the content
+1. Identify all `frame`s / `iframe`s on a page.
+2. Using the keyboard, navigate to each frame to ensure content is accessible.
+3. Check the `title` or `name` attribute of each frame for a description of the content.
 
 ## Examples
 
@@ -31,7 +31,7 @@ intro: "When using frames, its important that all content contained in them is a
   <iframe src="iframeform" name='Provide an address form' width="280" height="130"></iframe>
 </div>
 
-> This `name` isn't correct
+> This `name` isn't correct.
 
 ### Passes
 

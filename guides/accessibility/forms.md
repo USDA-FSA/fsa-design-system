@@ -142,18 +142,18 @@ intro: "To make forms accessible, each form element should be associated with it
   </fieldset>
 </div>
 
-> ___Failure:___ "This Question Is Required" is not associated with the form fields
+> ___Failure:___ "This Question Is Required" is not associated with the form fields.
 
 > ___Failure:___ The ```title``` tag for Pea Soup indicates it's 'Chick Pea Soup.' This information is not available to keyboard, sighted users.
 
 
 ### How ARIA affects form inputs
 
-Screen readers vary on what they read and the additional information they provide by default. What follows is a broad summary of what is read based on VoiceOver for Mac OS X (a similar process is applicable via Google's TalkBack service for Android).
+Screen readers vary on what they read and the additional information they provide by default. What follows is a broad summary of what is read, based on VoiceOver for Mac [OS X](http://www.apple.com/accessibility/osx/voiceover/) as well as [iOS](http://www.apple.com/accessibility/ios/voiceover/) (a similar process is applicable via the Google [TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en) service for Android).
 
-You can test these (and other) scenarios with your own screen reader. If you have OS X, you can turn VoiceOver on a Mac laptop / desktop by hitting Command+F5 or on an iPhone by accessing it in the Settings menu under General.
+You can test these and other scenarios with your own screen reader. If you have OS X, you can turn VoiceOver on a Mac laptop / desktop by hitting Command+F5 or on an iPhone by accessing it in the Settings menu under General.
 
-**<abbr title="Too long, didn't read">TL;DR</abbr>** Using `aria-label` or `aria-labeledby` will cause a screen reader to only read them and not the default label. If you want an input to read from multiple things like an error message, use `aria-labeledby` and pass it the `for` attribute of the label and any aditional `id`s you want read. ex. `aria-labeledby='car1 car_description car-error-message'`
+**<abbr title="Too long, didn't read">TL;DR</abbr>**: Using `aria-label` or `aria-labeledby` will cause a screen reader to only read them and not the default label. If you want an input to read from multiple things like an error message, use `aria-labeledby` and pass it the `for` attribute of the label and any aditional `id`s you want read. For example: `aria-labeledby='car1 car_description car-error-message'`.
 
 #### No ARIA
 
@@ -166,46 +166,46 @@ You can test these (and other) scenarios with your own screen reader. If you hav
 <div class="pb-preview">
   <label for="car_1">Car</label>
   <input type="text" id="car_1"/><br/>
-  <span id='carmakedescription'><em>Please enter Make and Model</em></span>
+  <span id='carmakedescription'><em>Please enter Make and Model.</em></span>
 </div>
 
 > Reads just the `label` and not the description.
 
-> Screen Reader reads input as: "Car Edit text"
+> Screen Reader reads input as: "Car. Edit text."
 
 #### With aria-label
 
 ```html
 <label for="car_2">Car</label>
-<input type="text" id="car_2" aria-label="Car, please enter make and model" /><br/>
+<input type="text" id="car_2" aria-label="Car, please enter make and model."/><br/>
 <span id="carmakedescription_2"><em>Please enter Make and Model.</em></span>
 ```
 <div class="pb-preview">
   <label for="car_2">Car</label>
-  <input type="text" id="car_2" aria-label="Car, please enter make and model" /><br/>
-  <span id='carmakedescription_2'><em>Please enter Make and Model</em></span>
+  <input type="text" id="car_2" aria-label="Car, please enter make and model." /><br/>
+  <span id='carmakedescription_2'><em>Please enter Make and Model.</em></span>
 </div>
 
 > Reads the `aria-label` and doesn't read the normal `label`.
 
-> Screen Reader reads input as: "Car, please enter make and model Edit text"
+> Screen Reader reads input as: "Car, please enter Make and Model. Edit text."
 
 #### With aria-labeledby pointing at `carmakedescription`
 
 ```html
 <label for="car_3">Car</label>
-<input type="text" id="car_3" aria-labeledby="carmakedescription_3" /><br/>
+<input type="text" id="car_3" aria-labeledby="carmakedescription_3"/><br/>
 <span id='carmakedescription_3'><em>Please enter Make and Model.</em></span>
 ```
 <div class="pb-preview">
   <label for="car_3">Car</label>
   <input type="text" id="car_3" aria-labeledby="carmakedescription_3" /><br/>
-  <span id='carmakedescription_3'><em>Please enter Make and Model</em></span>
+  <span id='carmakedescription_3'><em>Please enter Make and Model.</em></span>
 </div>
 
-> Reads only the `aria-labeledby` attribute and not the default label
+> Reads only the `aria-labeledby` attribute and not the default label.
 
-> Screen Reader reads input as: "Please enter Make and Model Edit text"
+> Screen Reader reads input as: "Please enter Make and Model. Edit text."
 
 #### With aria-labeledby pointing at `car carmakedescription`
 
@@ -221,9 +221,9 @@ You can test these (and other) scenarios with your own screen reader. If you hav
 </div>
 
 
-> Reads both labels indicated by the `aria-labeledby` attribute
+> Reads both labels indicated by the `aria-labeledby` attribute.
 
-> Screen Reader reads input as: "Car Please enter Make and Model Edit text"
+> Screen Reader reads input as: "Car Please enter Make and Model. Edit text."
 
 #### With aria-describedby pointing at `carmakedescription`
 
@@ -240,4 +240,4 @@ VoiceOver only reads the label. Jaws (if you're testing in a Windows environment
   <span id='carmakedescription_5'><em>Please enter Make and Model.</em></span>
 </div>
 
-> Screen Reader reads input as: "Car Edit text"
+> Screen Reader reads input as: "Car. Edit text."
