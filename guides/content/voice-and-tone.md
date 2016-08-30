@@ -2,7 +2,7 @@
 layout: guide
 parent: "Content"
 title: "Voice and Tone"
-intro: "If you’re like many folks, you might not be sure of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. Not to fret! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing."
+intro: "If you’re like many folks, you might not be aware of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. No problem! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing."
 ---
 
 ## What’s the difference between voice and tone?
@@ -25,9 +25,9 @@ We like to communicate in a friendly, straightforward way. We consider our voice
 
 We believe that government communication can — and should — be fun and easy to read, and our voice represents this.
 
-Here are a few sentences, taken from the [18F Content Guide](https://pages.18f.gov/content-guide/), that exemplify tone of voice:
+Here are a few sentences, that exemplify tone of voice:
 
-We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone.
+> We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone.
 
 ## Use contractions  
 
@@ -35,13 +35,13 @@ In all of the communication we produce, we want to create a strong connection wi
 
 For this reason, we use contractions in the writing we create for our site. We also encourage clients to consider using contractions, too, though we recognize this may not be the right choice for all contexts.  
 
-The government is run by people for the benefit of people, and we never want users to forget that FSA is a group of enthusiastic, dedicated, hardworking (and friendly) folks. This desire informs how we craft our voice.
+The government is run by people for the benefit of people, and we never want users to forget that FSA is a group of enthusiastic, dedicated, hardworking, and friendly folks. This desire informs how we craft our voice.
 
 ## Establishing your own voice
 
 Whether you realize it or not, you already have a unique voice; the tricky part can be classifying it and pinning it down.
 
-To describe your voice — which, in turn, will allow you to diagram it, create guidelines around it, and make it reproducible — you’ll need to do some investigation and self reflection. Ask yourself these questions:
+To describe your voice — which, in turn, will allow you to diagram it, create guidelines around it, and make it reproducible — you’ll need to do some investigation and self-reflection. Ask yourself these questions:
 
 **What are my core values?** Your voice is a reflection of your core values. Before you craft a voice, consider the values your organization represents and how you can translate these into stylistic patterns. If you’re part of a young organization that hasn’t yet codified its values, you might use this opportunity to start that conversation. Crafting a voice before you’ve determined your organization’s values can be dangerous — your voice might not reflect what you eventually decide on. Along the same lines, if your organization is undergoing a large-scale values overhaul, you’ll want to make sure your organizational voice reflects your new values.
 
@@ -55,7 +55,7 @@ As we mentioned earlier, your voice is a constant, but your tone is a variable. 
 
 To avoid going the way of the associate, think about your users’ needs in different situations. Use these needs to determine your tone.
 
-Let’s consider three examples that target three different reader groups. Obituaries, technical blog posts, and marketing emails targeted at newly engaged couples have vastly different tones. Why? The three types of writing correspond to audiences in three highly different emotional states.
+Let’s consider three examples that target three different reader groups. Obituaries, technical blog posts, and marketing emails targeted at newly engaged couples have vastly different tones. Why? The three types of writing correspond to audiences in three radically different emotional states.
 
 <table class="fsa-table fsa-table--responsive">
   <thead>
@@ -68,21 +68,21 @@ Let’s consider three examples that target three different reader groups. Obitu
   </thead>
   <tbody>
     <tr>
-      <td data-label="Type of writing">Obituary of a prominent community member</td>
-      <td data-label="Intended readership">People who knew (or knew of) the deceased</td>
-      <td data-label="Tone">Respectful, reverent, somber</td>
+      <td data-label="Type of writing">Obituary of a prominent community member.</td>
+      <td data-label="Intended readership">People who knew (or knew of) the deceased.</td>
+      <td data-label="Tone">Respectful, reverent, somber.</td>
       <td data-label="Example">“Professor Pelham was respected by his colleagues and revered by students, many of whom would wake before dawn on registration day to ensure gaining entry to his classes. His wit, gentle humor, and compassion left their mark on everyone he talked to.”</td>
     </tr>
     <tr>
-      <td data-label="Type of writing">Blog post announcing open source documentation guide</td>
-      <td data-label="Intended readership">Developers and other readers with a strong tech background</td>
-      <td data-label="Tone">Direct, impartial</td>
+      <td data-label="Type of writing">Blog post announcing open source documentation guide.</td>
+      <td data-label="Intended readership">Developers and other readers with a strong tech background.</td>
+      <td data-label="Tone">Direct, impartial.</td>
       <td data-label="Example">“The <a href="https://18f.gsa.gov/2015/07/29/style-guide-for-open-source-documentation/">Open Source Style Guide</a> is a comprehensive handbook for writing clear, accessible, and user-friendly documentation so that your open source code repositories are accessible both internally and externally.</td>
     </tr>
     <tr>
-      <td data-label="Type of writing">Marketing email from the boutique bridal department of a well-known clothing company </td>
-      <td data-label="Intended readership">Newly engaged women (ages 28 through 33)</td>
-      <td data-label="Tone">Enthusiastic, earnest, bubbly</td>
+      <td data-label="Type of writing">Marketing email from the boutique bridal department of a well-known clothing company.</td>
+      <td data-label="Intended readership">Newly engaged women (ages 28 through 33).</td>
+      <td data-label="Tone">Enthusiastic, earnest, bubbly.</td>
       <td data-label="Example">“Say ‘I do!’ to 25% off. Now through July 3rd, take an additional 25% off all bridal wear and accessories. Celebrate your big day in style (and get a jumpstart on your honeymoon fund!).”</td>
     </tr>
   </tbody>

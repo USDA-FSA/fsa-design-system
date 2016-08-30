@@ -1,5 +1,4 @@
 # - [x] Checklist
-# - [x] Tools
 # - [x] Keyboard Access
 # - [x] Images
 # - [x] Color and Contrast
@@ -29,9 +28,6 @@
 
 - title: "Resources"
   href: "guides/accessibility/resources"
-
-- title: "Tools"
-  href: "guides/accessibility/tools"
 
 - title: "Color and Contrast"
   href: "guides/accessibility/color-and-contrast"
