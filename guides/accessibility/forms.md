@@ -171,7 +171,7 @@ You can test these and other scenarios with your own screen reader. If you have 
 
 > Reads just the `label` and not the description.
 
-> Screen Reader reads input as: "Car. Edit text."
+> Screen Reader reads input as: "Car edit text."
 
 #### With aria-label
 
@@ -188,7 +188,7 @@ You can test these and other scenarios with your own screen reader. If you have 
 
 > Reads the `aria-label` and doesn't read the normal `label`.
 
-> Screen Reader reads input as: "Car, please enter Make and Model. Edit text."
+> Screen Reader reads input as: "Car, please enter Make and Model edit text."
 
 #### With aria-labeledby pointing at `carmakedescription`
 
@@ -205,7 +205,7 @@ You can test these and other scenarios with your own screen reader. If you have 
 
 > Reads only the `aria-labeledby` attribute and not the default label.
 
-> Screen Reader reads input as: "Please enter Make and Model. Edit text."
+> Screen Reader reads input as: "Please enter Make and Model edit text."
 
 #### With aria-labeledby pointing at `car carmakedescription`
 
@@ -223,7 +223,7 @@ You can test these and other scenarios with your own screen reader. If you have 
 
 > Reads both labels indicated by the `aria-labeledby` attribute.
 
-> Screen Reader reads input as: "Car Please enter Make and Model. Edit text."
+> Screen Reader reads input as: "Car please enter Make and Model edit text."
 
 #### With aria-describedby pointing at `carmakedescription`
 
@@ -240,4 +240,4 @@ VoiceOver only reads the label. Jaws (if you're testing in a Windows environment
   <span id='carmakedescription_5'><em>Please enter Make and Model.</em></span>
 </div>
 
-> Screen Reader reads input as: "Car. Edit text."
+> Screen Reader reads input as: "Car edit text."
