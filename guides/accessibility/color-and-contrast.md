@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Color and Contrast"
-intro: "There are two aspects to address when it comes to color, contrast, and color dependence."
+intro: "There are two aspects to address when it comes to color: contrast and color dependence."
 ---
 
 1. <strong>Color contrast</strong> is the ratio of the foreground color (for most websites, this is often text) and background color.
@@ -86,5 +86,3 @@ intro: "There are two aspects to address when it comes to color, contrast, and c
 </div>
 
 > This example passes because the * and the red text indicates the required field.
-
-[WCAG 2.0 AA]: https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast
