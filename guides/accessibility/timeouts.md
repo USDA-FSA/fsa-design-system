@@ -8,10 +8,10 @@ custom_js: "time-outs.js"
 
 ## Testing
 
-1. Identify any timeouts on the page
-  * Contact the developer to find these
-1. Trigger the time out
-  * __If you are not able to request more time or the request lasts less than 20 seconds, its a failure__
+1. Identify any timeouts on the page.
+  * Contact the developer to find these.
+1. Trigger the time out.
+  * __If you are unable to request more time or the request lasts less than 20 seconds, it's a failure.__
 
 ## Examples
 
@@ -52,4 +52,4 @@ Fill out this form. The form will reset after 20 seconds if user doesn't request
 
 </form>
 
-> This passes because a timeout does occur, but you are given more than 20 seconds to request more time.
+> While this passes because a timeout does occur, the user is given more than 20 seconds to request more time.
