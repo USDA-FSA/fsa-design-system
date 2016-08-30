@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Keyboard"
-intro: "Keyboard access to a website is key to the usability of your site. All interactions and information that can be accessed with a mouse <strong>must</strong> be accessible with just a keyboard. This doesn't mean everyone who can't use a mouse will use a keyboard, but Assistive Technology (AT) often uses keyboard-like inputs to navigate the web."
+intro: "Keyboard access to a website is critical for the usability of your site. All interactions and information that can be accessed with a mouse <strong>must</strong> be accessible with just a keyboard. This doesn't mean everyone who can't use a mouse will use a keyboard, but Assistive Technology (AT) often uses keyboard-like inputs to navigate the web."
 custom_js: "keyboard-trap.js"
 ---
 
@@ -24,7 +24,7 @@ custom_js: "keyboard-trap.js"
   * The keyboard user needs to be able to access all controls in the dialog box, especially the controls to dismiss the dialog.
   * __If the keyboard user cannot do all of these things, this is a failure__.
   * Ideally, the keyboard user should also be able to dismiss the modal dialog box with the Escape key.
-7. If an interaction reveals hidden content.
+7. If an interaction reveals hidden content...
   * Ensure the focus is moved to the revealed content.
     * If this does not happen, check for a programmatic description of the change.
 8. Check for title tags providing information not on the screen.
@@ -36,15 +36,15 @@ custom_js: "keyboard-trap.js"
 
 
 ```html
-<p><a href="#">Link to nowhere 1</a></p>
-<p><a href="#">Link to nowhere 2</a></p>
-<p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
+<p><a href="#">Link to nowhere 1.</a></p>
+<p><a href="#">Link to nowhere 2.</a></p>
+<p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content.</a></p>
 <div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 ```
 <div class="pb-preview">
-  <p><a href="#">Link to nowhere 1</a></p>
-  <p><a href="#">Link to nowhere 2</a></p>
-  <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
+  <p><a href="#">Link to nowhere 1.</a></p>
+  <p><a href="#">Link to nowhere 2.</a></p>
+  <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content.</a></p>
   <div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 </div>
 
@@ -53,16 +53,16 @@ custom_js: "keyboard-trap.js"
 
 ### Keyboard Trap
 
-<a class="sr-only moveFocus" href="#">hidden</a>
+<a class="sr-only moveFocus" href="#">Hidden.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap</a>
+<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap</a>
+<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap</a>
+<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap</a>
+<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
 
-<a class="sr-only moveFocus" href="#">hidden</a>
+<a class="sr-only moveFocus" href="#">Hidden.</a>
 
 > This is an example of a keyboard trap. Focus moves in a loop making the rest of the page inaccessible. A quick test is to tab through the page quickly and ensure you can get focus back to the address bar.
