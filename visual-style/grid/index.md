@@ -6,7 +6,7 @@ intro: "A 12-column, responsive grid provides structure for website content."
 jump_menu: true
 ---
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1">
       <p class="fsa-grid__demo fsa-text-align--center"><code>1/1</code></p>
@@ -121,7 +121,7 @@ At least one grid column is required, each described by its proportional width v
   <div class="fsa-grid__1/2">...</div>
 </div>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/2">
       <div class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -246,7 +246,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/1 fsa-grid__1/2@ml">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -270,7 +270,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
   <div class="fsa-grid__1/3">...</div>
 </div>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid fsa-grid--no-gutter">
     <div class="fsa-grid__1/3">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -296,7 +296,7 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/6">
       <p class="fsa-grid__demo">Lorem ipsum dolor sit ametcing elit sed do gna aliqua.</p>
@@ -319,7 +319,7 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__auto">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -338,7 +338,7 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 </div>
 ```
 
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__auto">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -354,9 +354,9 @@ A grid column can be automatically proportioned via `class="fsa-grid__auto"`. Fo
 
 ## SASS Mixins
 
-(CONTENT TBD)
-
 Homeroll your own semantic grids.
+
+### Demo
 
 ```html
 <!-- HTML  -------------------------------------------------------------------->
@@ -365,7 +365,6 @@ Homeroll your own semantic grids.
   <div class="foo__item foo__item--bar">...</div>
 </div>
 ```
-
 ```scss
 ////////////////////////////////////////////////////////////////////////////////
 // SCSS
@@ -389,10 +388,70 @@ Homeroll your own semantic grids.
 }
 
 ```
-
-<div class="pb-preview">
+<div class="ds-preview">
   <div class="foo">
-    <div class="foo__item foo__item--fu">Lorem ipsum dolor sit amet, consectetur adipisicing elitnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <div class="foo__item foo__item--bar">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="foo__item foo__item--fu">
+      <p><strong>`foo__item--fu`, I'm 25% wide.</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="foo__item foo__item--bar">
+      <p><strong>`foo__item--bar`, I'm 75% wide.</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+### Demo: Responsive
+
+Let's use Media Queries to make a responsive layout.
+
+```html
+<!-- HTML  -------------------------------------------------------------------->
+<div class="lorem">
+  <div class="lorem__item lorem__item--fu">...</div>
+  <div class="lorem__item lorem__item--bar">...</div>
+</div>
+```
+```scss
+////////////////////////////////////////////////////////////////////////////////
+// SCSS
+// 1. Start a grid...
+.lorem {
+  @include fsa-grid-row();
+}
+
+// 2. Create your columns
+.lorem__item {
+  @include fsa-grid-column();
+}
+
+// 3. Give each column a proportion (out of 12 columns)
+.lorem__item--fu {
+
+  @include fsa-grid-column-width(6); // 50%
+
+  @include breakpoint(ML) {
+    @include fsa-grid-column-width(4); // 33%
+  }
+
+}
+
+.lorem__item--bar {
+
+  @include fsa-grid-column-width(6); // 50%
+
+  @include breakpoint(ML) {
+    @include fsa-grid-column-width(8); // 66%
+  }
+
+}
+
+```
+<div class="ds-preview">
+  <div class="lorem">
+    <div class="lorem__item lorem__item--fu">
+      <p>I'm <strong>50%</strong> by default, <strong>33%</strong> at tablet and above.</p>
+    </div>
+    <div class="lorem__item lorem__item--bar">
+      <p>I'm <strong>50%</strong> by default, <strong>66%</strong> at tablet and above.</p>
+    </div>
   </div>
 </div>

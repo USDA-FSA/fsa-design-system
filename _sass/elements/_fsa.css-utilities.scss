@@ -1,6 +1,8 @@
 ////////////////////////////////////////////////////////////////////////
 // Styling Utilities
 
+// TODO: so much of this is repeatable, convert to mixin sometime!
+
 .fsa {
 
   // scss-lint:disable ImportantRule SpaceBeforeBrace
@@ -356,11 +358,35 @@
   &-font {
 
     &--sans {
+
       font-family: $font-sans;
+
+      &-light {
+        font-family: $font-sans;
+        font-weight: $font-light;
+      }
+
+      &-bold {
+        font-family: $font-sans;
+        font-weight: $font-bold;
+      }
+
     }
 
     &--serif {
+
       font-family: $font-serif;
+
+      &-light {
+        font-family: $font-serif;
+        font-weight: $font-light;
+      }
+
+      &-bold {
+        font-family: $font-serif;
+        font-weight: $font-bold;
+      }
+
     }
 
   }
@@ -393,8 +419,87 @@
       &--5 { @include font-size(5); }
       &--6 { @include font-size(6); }
       &--7 { @include font-size(7); }
-      &--8 { @include font-size(8); }
-      &--9 { @include font-size(9); }
+
+      @include breakpoint(SM) {
+        &--0\@sm { @include font-size(0); }
+        &--1\@sm { @include font-size(1); }
+        &--2\@sm { @include font-size(2); }
+        &--3\@sm { @include font-size(3); }
+        &--4\@sm { @include font-size(4); }
+        &--5\@sm { @include font-size(5); }
+        &--6\@sm { @include font-size(6); }
+        &--7\@sm { @include font-size(7); }
+      }
+      @include breakpoint(M) {
+        &--0\@m { @include font-size(0); }
+        &--1\@m { @include font-size(1); }
+        &--2\@m { @include font-size(2); }
+        &--3\@m { @include font-size(3); }
+        &--4\@m { @include font-size(4); }
+        &--5\@m { @include font-size(5); }
+        &--6\@m { @include font-size(6); }
+        &--7\@m { @include font-size(7); }
+      }
+      @include breakpoint(MML) {
+        &--0\@mml { @include font-size(0); }
+        &--1\@mml { @include font-size(1); }
+        &--2\@mml { @include font-size(2); }
+        &--3\@mml { @include font-size(3); }
+        &--4\@mml { @include font-size(4); }
+        &--5\@mml { @include font-size(5); }
+        &--6\@mml { @include font-size(6); }
+        &--7\@mml { @include font-size(7); }
+      }
+      @include breakpoint(ML) {
+        &--0\@ml { @include font-size(0); }
+        &--1\@ml { @include font-size(1); }
+        &--2\@ml { @include font-size(2); }
+        &--3\@ml { @include font-size(3); }
+        &--4\@ml { @include font-size(4); }
+        &--5\@ml { @include font-size(5); }
+        &--6\@ml { @include font-size(6); }
+        &--7\@ml { @include font-size(7); }
+      }
+      @include breakpoint(MLL) {
+        &--0\@mll { @include font-size(0); }
+        &--1\@mll { @include font-size(1); }
+        &--2\@mll { @include font-size(2); }
+        &--3\@mll { @include font-size(3); }
+        &--4\@mll { @include font-size(4); }
+        &--5\@mll { @include font-size(5); }
+        &--6\@mll { @include font-size(6); }
+        &--7\@mll { @include font-size(7); }
+      }
+      @include breakpoint(L) {
+        &--0\@l { @include font-size(0); }
+        &--1\@l { @include font-size(1); }
+        &--2\@l { @include font-size(2); }
+        &--3\@l { @include font-size(3); }
+        &--4\@l { @include font-size(4); }
+        &--5\@l { @include font-size(5); }
+        &--6\@l { @include font-size(6); }
+        &--7\@l { @include font-size(7); }
+      }
+      @include breakpoint(XL) {
+        &--0\@xl { @include font-size(0); }
+        &--1\@xl { @include font-size(1); }
+        &--2\@xl { @include font-size(2); }
+        &--3\@xl { @include font-size(3); }
+        &--4\@xl { @include font-size(4); }
+        &--5\@xl { @include font-size(5); }
+        &--6\@xl { @include font-size(6); }
+        &--7\@xl { @include font-size(7); }
+      }
+      @include breakpoint(XXL) {
+        &--0\@xxl { @include font-size(0); }
+        &--1\@xxl { @include font-size(1); }
+        &--2\@xxl { @include font-size(2); }
+        &--3\@xxl { @include font-size(3); }
+        &--4\@xxl { @include font-size(4); }
+        &--5\@xxl { @include font-size(5); }
+        &--6\@xxl { @include font-size(6); }
+        &--7\@xxl { @include font-size(7); }
+      }
 
     }
 

@@ -23,7 +23,7 @@ Failure at any step constitutes a 508 compliance issue:
   Here is a marquee, I bet you haven't seen this in a while, anyway, the scroll delay is set to 400.
 </marquee>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <marquee scrolldelay="400" style="border: 1px solid; padding: 8px">
     Here is a marquee, I bet you haven't seen this in a while; anyway, the scroll delay is set to 400.
   </marquee>
@@ -37,8 +37,8 @@ Failure at any step constitutes a 508 compliance issue:
 <button class="fsa-btn fsa-btn--primary" type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing</button>:
 <span class="blink" style="display:none;">This text is blinking.</span>
 ```
-<div class="pb-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing:</button>
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--primary" type="button" id="blinkbutton">Click to see <strong>non-compliant</strong> flashing</button>
   <span class="blink" style="display:none;">This text is blinking.</span>
 </div>
 

@@ -1,12 +1,12 @@
 
-.pb-jump-wrapper {
+.ds-jump-wrapper {
 }
 
-.pb-jump {
+.ds-jump {
 
   margin-top: 1.5em;
 
-  .pb-jump--stuck & {
+  .ds-jump--stuck & {
 
     @include breakpoint(MML) {
       margin-top: 0;
@@ -19,7 +19,7 @@
     display: none;
 
     @include breakpoint(MML) {
-      @include font-size(4);
+      @include font-size(3);
       display: block;
       height: 0;
       overflow: hidden;
@@ -30,7 +30,7 @@
       transition: all ease-in-out .23s;
     }
 
-    .pb-jump--stuck & {
+    .ds-jump--stuck & {
       @include breakpoint(MML) {
         height: auto;
         margin-bottom: 1em;

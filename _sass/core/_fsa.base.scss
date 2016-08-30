@@ -1,5 +1,12 @@
 /* FSA-specific overrides/additions */
 
+.fsa-browser-upgrade {
+  background-color: $color-fsa-red-100;
+  margin: 0;
+  padding: $size-small $size-default;
+  border-bottom: 1px solid $color-fsa-red-300;
+}
+
 body {
   background-color: $color-fsa-site-bg;
   line-height: $base-line-height;
@@ -13,7 +20,7 @@ samp,
 var,
 tt {
 
-  @include font-size(0);
+  font-size: 90%;
   color: $color-fsa-red-900;
   font-family: $font-mono;
   border-radius: 2px;

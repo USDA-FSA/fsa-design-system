@@ -1,25 +1,23 @@
-.pb-header {
+.ds-header {
 
   background-color: $color-fsa-primary;
   color: $color-fsa-white;
 
   &__title {
 
+    @include font-size(6);
+    font-size: 2.6rem;
     margin-left: auto;
     margin-right: auto;
     max-width: ($site-max-width + 24px);
     padding-right: $size-default;
     padding-left: $size-default;
-
-    @include font-size(6);
-    font-size: 2.6rem;
     font-weight: $font-light;
     font-family: $font-serif;
     padding-top: 1.5em;
 
     @include breakpoint(ML) {
-      @include font-size(8);
-      padding-top: 1.5em;
+      @include font-size(6);
     }
 
   }
@@ -38,10 +36,13 @@
   }
 
   &__nav {
+
     margin-bottom: $size-default;
+
     @include breakpoint(MML) {
       display: table-cell;
     }
+
   }
 
   &__options {
@@ -94,10 +95,19 @@
 
     &:visited,
     &:active,
+    &:hover:visited,
     &:hover, {
       color: $color-fsa-white;
     }
 
+    &--github {
+
+      &:hover {
+        box-shadow: none;
+        text-decoration: underline;
+      }
+
+    }
   }
 
 }

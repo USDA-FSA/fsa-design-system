@@ -75,7 +75,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     color: $color-fsa-white;
 
     @include breakpoint(ML) {
-      @include font-size(9);
+      @include font-size(7);
     }
 
   }
@@ -146,16 +146,6 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     margin-right: auto;
     margin-bottom: 1em;
 
-    // TODO: Fixed Nav: Issue #66
-    // @include breakpoint(ML) {
-    //   margin-bottom: 0;
-    // }
-
-    // TODO: Fixed Nav: Issue #66
-    // @include breakpoint(XL) {
-    //   max-width: ($site-max-width + 24px);
-    // }
-
     &-item {
 
       @include reset-li();
@@ -186,42 +176,21 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
       @include breakpoint(ML) {
         margin-right: $size-small;
-        // TODO: Fixed Nav: Issue #66
-        // @include font-size (1);
-        // margin-right: 0;
-        // padding: $size-small;
-        // color: $color-white;
-        // text-decoration: none;
       }
-
-      // TODO: Fixed Nav: Issue #66
-      // @include breakpoint(L) {
-      //   padding: $size-default;
-      // }
 
       // scss-lint:disable NestingDepth
       &:hover {
         text-decoration: underline;
       }
 
+      &:active,
       &:hover,
+      &:hover:visited,
       &:visited {
 
         color: $color-fsa-white;
 
-        // TODO: Fixed Nav: Issue #66
-        // @include breakpoint(ML) {
-        //   color: $color-fsa-white;
-        // }
-
       }
-
-      // TODO: Fixed Nav: Issue #66
-      // &:hover {
-      //   @include breakpoint(ML) {
-      //     background: rgba(0, 0, 0, .2);
-      //   }
-      // }
 
     }
 
@@ -344,13 +313,11 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     &__attr {
 
       @include reset-ul;
-      @include font-size(1);
       margin: $size-small 0 1em;
 
       // scss-lint:disable NestingDepth
       &-item {
         @include reset-li;
-        margin-bottom: $size-base;
       }
 
     }
@@ -373,7 +340,6 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     &__item {
 
       @include reset-li;
-      @include font-size(1);
       padding: $size-extra-large $size-default $size-default;
 
       // scss-lint:disable NestingDepth
@@ -406,14 +372,17 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
       font-family: $font-sans;
       font-weight: $font-normal;
+      outline: 1px solid blue;
 
       // scss-lint:disable NestingDepth
       &-light {
         font-weight: $font-light;
+        outline: 1px solid green;
       }
 
       &-bold {
         font-weight: $font-bold;
+        outline: 1px solid red;
       }
 
     }
@@ -422,14 +391,17 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
       font-family: $font-serif;
       font-weight: $font-normal;
+      outline: 1px solid purple;
 
       // scss-lint:disable NestingDepth
       &-light {
         font-weight: $font-light;
+        outline: 1px solid black;
       }
 
       &-bold {
         font-weight: $font-bold;
+        outline: 1px solid pink;
       }
 
     }
@@ -448,7 +420,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
     &__preview {
 
-      @include font-size(9);
+      @include font-size(7);
       flex: 1;
       line-height: 1;
       margin: 0;

@@ -95,3 +95,7 @@
   padding: $form-padding;
   resize: vertical;
 }
+
+input[type="search"] {
+  box-sizing: border-box; // yeah, this is lame
+}

@@ -5,9 +5,24 @@ p {
 }
 
 a {
+
+  &:hover,
+  &:active {
+
+    $text-color: $color-fsa-link-hover;
+
+    color: $text-color;
+
+    &:visited {
+      color: $text-color;
+    }
+
+  }
+
   &:visited {
     color: $color-fsa-link;
   }
+
 }
 
 html,
@@ -76,14 +91,7 @@ h6,
 .fsa-text--lead,
 .fsa-font-lead,
 .usa-font-lead {
-
   font-weight: $font-light;
   font-size: $lead-font-size;
   font-family: $font-serif;
-
-  b,
-  strong {
-    font-weight: bolder;
-  }
-
 }

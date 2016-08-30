@@ -1,19 +1,20 @@
+{% include browser-upgrade.html %}
 <a class="skipnav" href="#main-content">Skip to main content</a>
 <header>
   {% include disclaimer.html %}
-  <div class="pb-header">
-    <div class="pb-header__title"><a href="{{ site.baseurl }}" class="pb-header__link">FSA Design System</a></div>
-    <div class="pb-header__bd">
-      <div class="pb-header__nav">
+  <div class="ds-header">
+    <div class="ds-header__title"><a href="{{ site.baseurl }}" class="ds-header__link">FSA Design System</a></div>
+    <div class="ds-header__bd">
+      <div class="ds-header__nav">
         {% include nav-global.html %}
       </div>
-      <div class="pb-header__options">
-        <div class="pb-header__options-item pb-header__options-item--start">
-          <a class="fsa-btn pb-btn--start{% if page.get_started %} is-active{% endif %}" href="{{ site.baseurl }}getting-started/">Get Started</a>
+      <div class="ds-header__options">
+        <div class="ds-header__options-item ds-header__options-item--start">
+          <a class="fsa-btn ds-btn--start{% if page.get_started %} is-active{% endif %}" href="{{ site.baseurl }}getting-started/">Get Started</a>
         </div>
-        <div class="pb-header__options-item pb-header__options-item--github">
-          <a class="pb-header__link" href="{{ site.github_repository_url }}">
-            <img class="pb-icn__github" src="{{ site.baseurl }}img/GitHub-Mark-Light-32px.png" alt="">
+        <div class="ds-header__options-item ds-header__options-item--github">
+          <a class="ds-header__link ds-header__link--github" href="{{ site.github_repository_url }}">
+            <img class="ds-icn__github" src="{{ site.baseurl }}img/GitHub-Mark-Light-32px.png" alt="">
             View on GitHub
           </a>
         </div>

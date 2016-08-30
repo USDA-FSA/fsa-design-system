@@ -37,7 +37,7 @@ When using headings, it is best practice to reserve `<h1>` for the most importan
 <h4>Sub Category 2</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <h3>Category</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
   <h4>Sub Category 1</h4>
@@ -58,7 +58,7 @@ When using headings, it is best practice to reserve `<h1>` for the most importan
 <h5>Sub Category 2</h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <h3>Category</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
   <h2>Sub Category 1</h2>

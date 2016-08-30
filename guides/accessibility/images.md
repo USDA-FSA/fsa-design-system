@@ -25,7 +25,7 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 
 ### Passes
 
-<div class="pb-preview">
+<div class="ds-preview">
   <img src="https://pages.18f.gov/accessibility/images/sign.jpg" alt="Sign that reads: Warning do not read this sign">
 </div>
 
@@ -37,7 +37,7 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 
 > **Passes:** Clear `alt` tag with all text included.
 
-<div class="pb-preview">
+<div class="ds-preview">
   <img src="https://pages.18f.gov/accessibility/images/sign.jpg" title="Sign that reads: Warning do not read this sign">
 </div>
 
@@ -49,8 +49,8 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 
 > **Passes:** Acceptable, but less compatible with certain AT, defer to `alt` attribute over `title` attribute.
 
-<div class="pb-preview">
-  <img src="https://pages.18f.gov/accessibility/images/sign.jpg" alt="">
+<div class="ds-preview">
+  <img src="{{site.baseurl}}/img/sign.jpg" alt="">
   <span>Sign that reads: Warning do not read this sign</span>
 </div>
 
@@ -68,8 +68,8 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 
 ### Incorrect
 
-<div class="pb-preview">
-  <img src="https://pages.18f.gov/accessibility/images/sign.jpg" >
+<div class="ds-preview">
+  <img src="{{site.baseurl}}/img/sign.jpg" >
 </div>
 
 ```html
@@ -78,8 +78,8 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 
 > **Fails:** Image is missing an `alt` attribute and alternative content.
 
-<div class="pb-preview">
-  <img src="https://pages.18f.gov/accessibility/images/sign.jpg" alt="">
+<div class="ds-preview">
+  <img src="{{site.baseurl}}/img/sign.jpg" alt="">
 </div>
 
 ```html
@@ -88,7 +88,7 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 
 > **Fails:** `Alt` attribute is missing text from image.
 
-<div class="pb-preview">
+<div class="ds-preview">
   <img src="https://pages.18f.gov/accessibility/images/sign.jpg" alt="Image of sign that says: WARNING DO NOT READ THIS SIGN">
 </div>
 

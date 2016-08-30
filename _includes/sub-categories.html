@@ -1,14 +1,14 @@
 {% for link in site.data.navvy %}
   {% if link.title == page.title or link.title == page.parent %}
-    <div class="pb-subcat-list">
-      <ul class="pb-subcat-list__list">
+    <div class="ds-subcat-list">
+      <ul class="ds-subcat-list__list">
         {% for subpage in link.subcategories %}
-        <li class="pb-subcat-list__list-item">
-          <a class="pb-subcat-list__link {% if subpage.subtitle == page.title %}pb-subcat-list__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
+        <li class="ds-subcat-list__list-item">
+          <a class="ds-subcat-list__link {% if subpage.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
             {% if subpage.img %}
-              <img class="pb-subcat-list__img" src="{{ site.baseurl }}{{ subpage.img }}" alt="">
+              <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subpage.img }}" alt="">
             {% endif %}
-            <span class="pb-subcat-list__text">{{ subpage.subtitle }}</span>
+            <span class="ds-subcat-list__text">{{ subpage.subtitle }}</span>
           </a>
         </li>
         {% endfor %}

@@ -128,7 +128,7 @@
     height: $button-height--lg;
     padding-top: ($button-padding * 2) - .9rem;
     padding-bottom: ($button-padding * 2) - .3rem;
-    font-size: $font-size-6; // no we're not using mixin cuz we don't want its line-height
+    font-size: $form-text-size--lg; // no we're not using mixin cuz we don't want its line-height
     top: -.3rem;
 
     @supports (-webkit-appearance: none) {
