@@ -26,7 +26,7 @@ If a table has text associated with it, ensure the text is programmatically link
 #### Simple Table
 
 ```html
-<table class="FSA-table">
+<table class="fsa-table">
   <caption>User's Height and Age</caption>
   <tr>
     <th scope="col">
@@ -56,7 +56,7 @@ If a table has text associated with it, ensure the text is programmatically link
 </table>
 ```
 <div class="ds-preview">
-  <table class="FSA-table">
+  <table class="fsa-table">
     <caption>User's Height and Age</caption>
     <tr>
       <th scope="col">
