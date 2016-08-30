@@ -27,7 +27,7 @@ We believe that government communication can — and should — be fun and easy 
 
 Here are a few sentences, that exemplify tone of voice:
 
-"We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone."
+> We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone.
 
 ## Use contractions  
 
