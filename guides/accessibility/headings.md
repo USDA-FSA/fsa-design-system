@@ -18,6 +18,17 @@ When using headings, it is best practice to reserve `<h1>` for the most importan
 <h3>Section 2a</h3>
 <h3>Section 2b</h3>
 ```
+<div class="ds-preview">
+  <h1>Page Title</h1>
+
+  <h2>Section 1</h2>
+  <h3>Section 1a</h3>
+  <h3>Section 1b</h3>
+
+  <h2>Section 2</h2>
+  <h3>Section 2a</h3>
+  <h3>Section 2b</h3>
+</div>
 
 ## Testing
 
