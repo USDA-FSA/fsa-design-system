@@ -49,7 +49,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
 <a href='/fsa-design-system'>Link</a>,
 <a href='keyboard'>Link</a>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <a href='/fsa-design-system'>Link</a>,
   <a href='keyboard'>Link</a>
 </div>
@@ -62,7 +62,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
 <a href='/fsa-design-system'>Home</a>,
 <a href='keyboard'>Keyboard Access</a>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <a href='/fsa-design-system'>Home</a>,
   <a href='keyboard'>Keyboard Access</a>
 </div>
@@ -73,7 +73,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
 <a href='/fsa-design-system' title='home'>Link</a>,
 <a href='keyboard' aria-label="Keyboard Access">Link</a>
 ```
-<div class="pb-preview">
+<div class="ds-preview">
   <a href='/fsa-design-system' title='home'>Link</a>,
   <a href='keyboard' aria-label="Keyboard Access">Link</a>
 </div>
