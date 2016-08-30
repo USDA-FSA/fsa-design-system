@@ -2,19 +2,19 @@
 layout: guide
 parent: "Accessibility"
 title: "Landmarks"
-intro: "Proper page layout using Landmarks"
+intro: "Proper page layout using landmark elements."
 ---
 
-All elements on a page should be contained in a <a href="https://www.w3.org/TR/wai-aria/roles#landmark_roles">landmark element</a>. This helps users of <abbr title="Assistive Technology">AT</abbr> quickly navigate a page.
+All elements on a page should be contained in a <a href="https://www.w3.org/TR/wai-aria/roles#landmark_roles">landmark element</a>. This helps users of Assistive Technology (<abbr title="Assistive Technology">AT</abbr>) quickly navigate a page.
 
-HTML5 provides built in landmark elements such as `main`, `nav`, `aside`, `header`, `footer`. When using HTML5 elements, do not define role.
+HTML5 provides built in landmark elements such as `main`, `nav`, `aside`, `header`, and `footer`. When using HTML5 elements, do not define role.
 
-When using HTML4 assign a role via the `role` attribute on elements such as a `<div>` to define landmark elements, such as `role="banner"`.
+When using HTML4, assign a role via the `role` attribute on elements such as a `<div>` to define landmark elements, such as `role="banner"`.
 
 ## Testing
 
-1. Identify content in the source code
-2. Check that all rendered content is contained by a landmark element
+1. Identify content in the source code.
+2. Check that all rendered content is contained by a landmark element.
 
 ## Examples
 
@@ -48,7 +48,7 @@ When using HTML4 assign a role via the `role` attribute on elements such as a `<
 </html>
 ```
 
-> This page has clearly structured out key regions using HTML5 elements, `<header>`, `<nav>`, `<main>`, `<article>`, and `<footer>`.
+> This page has clearly structured out key regions using the HTML5 elements `<header>`, `<nav>`, `<main>`, `<article>`, and `<footer>`.
 
 ### HTML4
 
@@ -79,4 +79,4 @@ When using HTML4 assign a role via the `role` attribute on elements such as a `<
 </html>
 ```
 
-> This page has clearly structured out key regions using the `role` attribute, `role='banner'`, `role='navigation'`, `role='contentinfo'`
+> This page has clearly structured out key regions using the `role` attribute, `role='banner'`, `role='navigation'`, and `role='contentinfo'`.

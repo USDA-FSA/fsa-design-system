@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Images"
-intro: "When using images on a page, for Assistive Technology (AT) to be able to recognize and read it, you must provide an alternate method for that content. This can be provided via a caption, alt tag, title tag, or aria label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank."
+intro: "When using images on a page, for Assistive Technology (AT) to be able to recognize and read it, you must provide an alternate method for that content. This can be provided via a caption, alt tag, title tag, or ARIA label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank."
 ---
 
 
@@ -26,11 +26,11 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 ### Passes
 
 <div class="ds-preview">
-  <img src="{{site.baseurl}}/img/sign.jpg" alt="Sign that reads Warning do not read this sign">
+  <img src="https://pages.18f.gov/accessibility/images/sign.jpg" alt="Sign that reads: Warning do not read this sign">
 </div>
 
 ```html
-<img src="{{site.baseurl}}/img/sign.jpg" alt="Sign that reads Warning do not read this sign">
+<img src="/accessibility/images/sign.jpg" alt="Sign that reads: Warning do not read this sign">
 ```
 
 > **Passes:** Preferred method for providing alternate content.
@@ -38,25 +38,25 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 > **Passes:** Clear `alt` tag with all text included.
 
 <div class="ds-preview">
-  <img src="{{site.baseurl}}/img/sign.jpg" title="Sign that reads Warning do not read this sign">
+  <img src="https://pages.18f.gov/accessibility/images/sign.jpg" title="Sign that reads: Warning do not read this sign">
 </div>
 
 ```html
-<img src="{{site.baseurl}}/img/sign.jpg" title="Sign that reads Warning do not read this sign">
+<img src="/accessibility/images/sign.jpg" title="Sign that reads: Warning do not read this sign">
 ```
 
 > **Passes:** Clear `title` attribute with all text included.
 
-> **Passes:** Acceptable, but less compatible with certain AT, defer to `alt` attribute over `title` attribute
+> **Passes:** Acceptable, but less compatible with certain AT, defer to `alt` attribute over `title` attribute.
 
 <div class="ds-preview">
   <img src="{{site.baseurl}}/img/sign.jpg" alt="">
-  <span>Sign that reads Warning do not read this sign</span>
+  <span>Sign that reads: Warning do not read this sign</span>
 </div>
 
 ```html
-<img src="{{site.baseurl}}/img/sign.jpg" alt="">
-<span>Sign that reads Warning do not read this sign</span>
+<img src="/accessibility/images/sign.jpg" alt="">
+<span>Sign that reads: Warning do not read this sign</span>
 ```
 
 > **Passes:** Information contained in the image is provided on the page.
@@ -73,7 +73,7 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 </div>
 
 ```html
-<img src="{{site.baseurl}}/img/sign.jpg" >
+<img src="/accessibility/images/sign.jpg" >
 ```
 
 > **Fails:** Image is missing an `alt` attribute and alternative content.
@@ -83,17 +83,17 @@ intro: "When using images on a page, for Assistive Technology (AT) to be able to
 </div>
 
 ```html
-<img src="{{site.baseurl}}/img/sign.jpg" alt="">
+<img src="/accessibility/images/sign.jpg" alt="">
 ```
 
 > **Fails:** `Alt` attribute is missing text from image.
 
 <div class="ds-preview">
-  <img src="{{site.baseurl}}/img/sign.jpg" alt="Image of sign that says WARNING DO NOT READ THIS SIGN">
+  <img src="https://pages.18f.gov/accessibility/images/sign.jpg" alt="Image of sign that says: WARNING DO NOT READ THIS SIGN">
 </div>
 
 ```html
-<img src="{{site.baseurl}}/img/sign.jpg" alt="Image of sign that says WARNING DO NOT READ THIS SIGN">
+<img src="/accessibility/images/sign.jpg" alt="Image of sign that says: WARNING DO NOT READ THIS SIGN">
 ```
 
 > **Fails:** Avoid using "Image of" or "Picture of" as the <abbr title="Assistive Technology">AT</abbr> will notify the user that it is an image.

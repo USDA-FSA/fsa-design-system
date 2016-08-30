@@ -163,7 +163,7 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
 
 ## Lists
 
-### Unordered list (bullet)
+### Unordered List (bullet)
 
 ```html
 <ul>
@@ -180,7 +180,7 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
   </ul>
 </div>
 
-### Unordered list (numbered)
+### Ordered List (numbered)
 
 ```html
 <ol>
@@ -212,6 +212,57 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
     <li>List item two</li>
     <li>List item three</li>
   </ul>
+</div>
+
+### Definition List
+
+```html
+<dl>
+
+  <dt>ACA</dt>
+  <dd>Accredited Certifying Agent</dd>
+  <dd>Authorized to issue an organic certificate to operations that comply with the USDA organic regulations.</dd>
+
+  <dt>ACEP</dt>
+  <dd>Agricultural Conservation Easement Program</dd>
+  <dd>Provides financial and technical assistance to help conserve agricultural lands and wetlands and their related benefits</dd>
+
+  <dt>ACRE</dt>
+  <dd>Average Crop Revenue Election</dd>
+  <dd>Offers producers an alternative to the Direct and Counter-Cyclical Program</dd>
+
+  <dt>ADA</dt>
+  <dd>Americans with Disabilities Act</dd>
+  <dd>Prohibits discrimination against people with disabilities in employment, transportation, public accommodation, communications, and governmental activities</dd>
+
+  <dt>ADAAA</dt>
+  <dd>Americans with Disabilities Act Amendments Act</dd>
+
+</dl>
+```
+<div class="ds-preview">
+  <dl>
+
+    <dt>ACA</dt>
+    <dd>Accredited Certifying Agent</dd>
+    <dd>Authorized to issue an organic certificate to operations that comply with the USDA organic regulations.</dd>
+
+    <dt>ACEP</dt>
+    <dd>Agricultural Conservation Easement Program</dd>
+    <dd>Provides financial and technical assistance to help conserve agricultural lands and wetlands and their related benefits</dd>
+
+    <dt>ACRE</dt>
+    <dd>Average Crop Revenue Election</dd>
+    <dd>Offers producers an alternative to the Direct and Counter-Cyclical Program</dd>
+
+    <dt>ADA</dt>
+    <dd>Americans with Disabilities Act</dd>
+    <dd>Prohibits discrimination against people with disabilities in employment, transportation, public accommodation, communications, and governmental activities</dd>
+
+    <dt>ADAAA</dt>
+    <dd>Americans with Disabilities Act Amendments Act</dd>
+
+  </dl>
 </div>
 
 ### Unstyled

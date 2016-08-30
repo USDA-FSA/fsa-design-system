@@ -25,7 +25,7 @@ intro: "There are two aspects to address when it comes to color, contrast, and c
 
 ## Exceptions
 
-* <strong>Large Text:</strong> Large-scale text and images of large-scale text have a contrast ratio of at least <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">3:1</a>;
+* <strong>Large Text:</strong> Large-scale text and images of large-scale text have a contrast ratio of at least <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">3:1</a>.
 * <strong>Incidental:</strong> Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
 * <strong>Logotypes:</strong> Text that is part of a logo or brand name has no minimum contrast requirement.
 
@@ -46,7 +46,7 @@ intro: "There are two aspects to address when it comes to color, contrast, and c
 > This text fails because the background isn't dark enough. The contrast ratio is (3.28 : 1).
 
 <div class="ds-preview">
-  <p style="color:#cd2026;">Red text indicates a required field</p>
+  <p style="color:#cd2026;">Red text indicates a required field.</p>
   <p>
     <label for="name">First Name&nbsp;</label>
     <input type="text" id="name">
