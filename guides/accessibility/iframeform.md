@@ -2,7 +2,7 @@
 layout: plain
 parent: "Accessibility"
 title: "Frames"
-intro: "When using frames, its important that all content contained in them is accessible."
+intro: "When using frames, it's important that all content contained in them is accessible."
 ---
 
 <div style="margin: 12px;">
