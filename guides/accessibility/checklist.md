@@ -12,7 +12,7 @@ For more detail on accessibility standards, please see [WCAG2.0 AA](https://www.
  * **B** - Less critical issues that may cause problems or increased frustration for certain users.
  * **C** - Minor issues that will cause problems or frustration for a small number of users.
 
-It is important to note, while B and C are noted as less critical, they are still required to be truly Section 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a Section 508 coordinator.
+It is important to note, while B and C are noted as less critical, they are still required to be truly Section 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a Section 508 coordinator. If warranted, additional testing information can occasionally be found within specific technical sections of this guide.
 
 ##  A - Critical
 
