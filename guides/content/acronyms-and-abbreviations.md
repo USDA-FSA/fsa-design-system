@@ -11,7 +11,7 @@ intro: "Guidelines for how FSA uses acronyms and abbreviations."
 
 In the most technical sense, there is a difference between acronyms (abbreviations pronounced as words, like <abbr title="National Aeronautics and Space Administration">NASA</abbr>) and initialisms (abbreviations pronounced as letters, like <abbr title="Federal Bureau of Investigation">FBI</abbr>). For simplicity, our content guide refers to both as acronyms. The readability issues that acronyms and initialisms create tend to be similar, and “acronym” is the more common term.
 
-**As acronyms often confuse readers, avoid them whenever possible.**
+**Acronyms often confuse readers so avoid them whenever possible.**
 
 If an acronym is necessary for future reference, spell the full word and follow with the acronym in parentheses on the first reference. For example, "General Services Administration (GSA)".
 
