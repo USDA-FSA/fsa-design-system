@@ -15,7 +15,7 @@ Our **voice** is our unique personality. It can be helpful to think of voice as 
 
 ## Our voice
 
-We like to communicate in a friendly, straightforward way. We consider our voice to be:
+At FSA, we like to communicate in a friendly, straightforward way. We consider our voice to be:
 
 * Authoritative
 * Conversational
@@ -25,7 +25,7 @@ We like to communicate in a friendly, straightforward way. We consider our voice
 
 We believe that government communication can — and should — be fun and easy to read, and our voice represents this.
 
-Here are a few sentences, that exemplify tone of voice:
+Here are a few sample sentences that exemplify our tone of voice:
 
 > We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone.
 
@@ -35,7 +35,7 @@ In all of the communication we produce, we want to create a strong connection wi
 
 For this reason, we use contractions in the writing we create for our site. We also encourage clients to consider using contractions, too, though we recognize this may not be the right choice for all contexts.  
 
-The government is run by people for the benefit of people, and we never want users to forget that FSA is a group of enthusiastic, dedicated, hardworking, and friendly folks. This desire informs how we craft our voice.
+The government is run by people for the benefit of people, and we never want users to forget that FSA is a group of enthusiastic, dedicated, hardworking, (and friendly) folks. This desire informs how we craft our voice.
 
 ## Establishing your own voice
 
@@ -86,7 +86,6 @@ Let’s consider three examples that target three different reader groups. Obitu
       <td data-label="Example">“Say ‘I do!’ to 25% off. Now through July 3rd, take an additional 25% off all bridal wear and accessories. Celebrate your big day in style (and get a jumpstart on your honeymoon fund!).”</td>
     </tr>
   </tbody>
-
 </table>
 
 If you’re having trouble finding an appropriate tone, try reframing the situation: How would you talk to a friend who’s in the same situation as your target user? Remembering that written communication is a conversation can help you settle on the best tone for your purpose.
