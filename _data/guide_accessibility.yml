@@ -1,24 +1,3 @@
-# - [x] Checklist
-# - [x] Keyboard Access
-# - [x] Images
-# - [x] Color and Contrast
-# - [x] Forms
-# - [x] Flashing
-# - [x] Writing Guide
-# - [x] Page Titles
-# - [x] Headings
-# - [x] Landmarks
-# - [x] Multimedia
-# - [x] Time Outs
-# - [x] Web Text Language (renamed from "Web Text Properties")
-# - [x] Tables
-# - [x] CSS Dependence
-# - [x] Frames
-# - [x] Links and Repetitive Content
-# - [x] Plug-ins
-# - [-] Alternative Versions
-# - [-] Trainings/Videos
-
 - title: "Overview"
   alt_title: "Accessibility"
   href: "guides/accessibility/"
@@ -29,32 +8,26 @@
 - title: "Resources"
   href: "guides/accessibility/resources"
 
+- title: "Keyboard Access"
+  href: "guides/accessibility/keyboard"
+
+- title: "Images"
+  href: "guides/accessibility/images"
+
 - title: "Color and Contrast"
   href: "guides/accessibility/color-and-contrast"
 
 - title: "Forms"
   href: "guides/accessibility/forms"
 
-- title: "Images"
-  href: "guides/accessibility/images"
-
-- title: "Tables"
-  href: "guides/accessibility/tables"
-
-- title: "Writing Guide"
-  href: "guides/accessibility/writing-guide"
+- title: "Flashing"
+  href: "guides/accessibility/flashing"
 
 - title: "Page Titles"
   href: "guides/accessibility/page-titles"
 
 - title: "Headings"
   href: "guides/accessibility/headings"
-
-- title: "Flashing"
-  href: "guides/accessibility/flashing"
-
-- title: "Keyboard"
-  href: "guides/accessibility/keyboard"
 
 - title: "Landmarks"
   href: "guides/accessibility/landmarks"
@@ -65,8 +38,11 @@
 - title: "Timeouts"
   href: "guides/accessibility/timeouts"
 
-- title: "Web Text Language"
+- title: "Text Properties"
   href: "guides/accessibility/language"
+
+- title: "Tables"
+  href: "guides/accessibility/tables"
 
 - title: "CSS Dependence"
   href: "guides/accessibility/css"
@@ -80,5 +56,11 @@
 - title: "Plugins"
   href: "guides/accessibility/plugins"
 
-# - title: "Alternative Versions"
-#   href: "guides/accessibility/alternative-versions"
+- title: "Alternative Versions"
+  href: "guides/accessibility/alternative-versions"
+
+- title: "Writing Guide"
+  href: "guides/accessibility/writing-guide"
+
+- title: "Training Videos"
+  href: "guides/accessibility/videos"

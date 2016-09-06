@@ -5,13 +5,6 @@ title: "Content Principles"
 intro: "Our five core principles for authoring content at FSA."
 ---
 
-1. Start with user needs.
-1. Do the hard work to make it simple.
-1. Write for everyone.
-1. Build trust.
-1. Start small and iterate.
-
-
 ## 1. Start with user needs.
 
 * Write in a way that suits the situation. Ask yourself: who is going to read this? What do they need to know? How might they be feeling?
