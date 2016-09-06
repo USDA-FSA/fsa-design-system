@@ -25,12 +25,12 @@ intro: "To make forms accessible, each form element should be associated with it
 <fieldset>
   <legend>Name</legend>
   <p>
-    <label for="firstname">First</label>
-    <input type='text' id='firstname'>
+    <label for="firstname2345">First</label>
+    <input type='text' id='firstname2345'>
   </p>
   <p>
-    <label for="lastname">Last</label>
-    <input type='text' id='lastname'>
+    <label for="2345">Last</label>
+    <input type='text' id='2345'>
   </p>
 </fieldset>
 ```
@@ -38,12 +38,12 @@ intro: "To make forms accessible, each form element should be associated with it
   <fieldset>
     <legend>Name</legend>
     <p>
-      <label for="firstname">First</label>
-      <input type='text' id='firstname'>
+      <label for="firstname2345">First</label>
+      <input type='text' id='firstname2345'>
     </p>
     <p>
-      <label for="lastname">Last</label>
-      <input type='text' id='lastname'>
+      <label for="2345">Last</label>
+      <input type='text' id='2345'>
     </p>
   </fieldset>
 </div>
