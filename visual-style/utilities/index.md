@@ -6,6 +6,28 @@ intro: "CSS Utilities are single-purpose styles that can be appended to elements
 jump_menu: true
 ---
 
+Also known as "trumps," "helper classes," or "alterations," they are high-specificity selectors used to make very targeted alterations to existing elements or components, and shouldn't be overwritten. As such, they often use `!important` in the CSS to ensure the desired alteration is achieved. 
+
+### Example use case
+
+The `h1` element has a top margin we may want to zero out, which we may do with the `fsa-m-t--none` class.
+
+```html
+<!-- Before  -->
+<h1>Page Title</h1>
+```
+<div class="ds-preview">
+  <h1>Page Title</h1>
+</div>
+
+```html
+<!-- Altered  -->
+<h1 class="fsa-m-t--none">Page Title</h1>
+```
+<div class="ds-preview">
+  <h1 class="fsa-m-t--none">Page Title</h1>
+</div>
+
 ## Guidelines
 
 [TODO]: more documentation explaining the role of these, in particular how they are "Last Resort"
