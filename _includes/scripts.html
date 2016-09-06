@@ -1,6 +1,23 @@
 <script src="{{ site.baseurl }}js/{{ site.name }}.js"></script>
+
 {% if page.custom_js %}
   {% for js_file in page.custom_js %}
   <script src="{{ site.baseurl }}js/{{ js_file }}"></script>
   {% endfor %}
 {% endif %}
+
+{% if jekyll.environment == "development" %}
+<script src="{{ site.baseurl }}js/vendor/accesslint.js"></script>
+{% endif %}
+
+<script>
+  function HomeShow() {
+    $('body').toggleClass('ds-home');
+  }
+  $('body').keydown(function(event) {
+    if(event.which == 112) { // F1
+      HomeShow();
+      return false;
+    }
+  });
+</script>
