@@ -20,9 +20,9 @@
   href: "visual-style"
   subcategories:
 
-    - subtitle: "Logo"
-      subhref: "visual-style/logo"
-      img: "img/subcategories/subcat-placeholder.png"
+    # - subtitle: "Logo"
+    #   subhref: "visual-style/logo"
+    #   img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Color"
       subhref: "visual-style/color"
