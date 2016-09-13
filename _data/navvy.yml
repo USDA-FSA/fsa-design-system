@@ -1,6 +1,6 @@
 - title: "Home"
-  href: ""
-  exclude_from_nav: true
+  href: "index.html"
+  # exclude_from_nav: true
 
 - title: "Getting Started"
   href: "getting-started"
@@ -20,9 +20,9 @@
   href: "visual-style"
   subcategories:
 
-    - subtitle: "Logo"
-      subhref: "visual-style/logo"
-      img: "img/subcategories/subcat-placeholder.png"
+    # - subtitle: "Logo"
+    #   subhref: "visual-style/logo"
+    #   img: "img/subcategories/subcat-placeholder.png"
 
     - subtitle: "Color"
       subhref: "visual-style/color"
@@ -80,29 +80,29 @@
       subhref: "elements/tables"
       img: "img/subcategories/subcat-placeholder.png"
 
-- title: "Components"
-  href: "components"
-  subcategories:
-
-    - subtitle: "Lorem"
-      subhref: "components/lorem"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Ipsum"
-      subhref: "components/ipsum"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Dolor"
-      subhref: "components/dolor"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Sit"
-      subhref: "components/it"
-      img: "img/subcategories/subcat-placeholder.png"
-
-    - subtitle: "Amet"
-      subhref: "components/amet"
-      img: "img/subcategories/subcat-placeholder.png"
+# - title: "Components"
+#   href: "components"
+#   subcategories:
+#
+#     - subtitle: "Lorem"
+#       subhref: "components/lorem"
+#       img: "img/subcategories/subcat-placeholder.png"
+#
+#     - subtitle: "Ipsum"
+#       subhref: "components/ipsum"
+#       img: "img/subcategories/subcat-placeholder.png"
+#
+#     - subtitle: "Dolor"
+#       subhref: "components/dolor"
+#       img: "img/subcategories/subcat-placeholder.png"
+#
+#     - subtitle: "Sit"
+#       subhref: "components/it"
+#       img: "img/subcategories/subcat-placeholder.png"
+#
+#     - subtitle: "Amet"
+#       subhref: "components/amet"
+#       img: "img/subcategories/subcat-placeholder.png"
 
 - title: "Guides"
   href: "guides"
