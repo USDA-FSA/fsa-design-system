@@ -304,14 +304,7 @@ $breakpoints: (
 
   display: list-item;
   margin: 0;
-
-  &:before {
-    display: none;
-  }
-
-  &:after {
-    display: none;
-  }
+  padding: 0;
 
 }
 
