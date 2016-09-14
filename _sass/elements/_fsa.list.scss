@@ -3,16 +3,15 @@
 
 ul,
 ol {
-  & & {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
+
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1.4em; // Approximately 24px left padding at default font size. Must be in **em** units to avoid 2-digit <ol> rendered numbers receding too far on left for bigger text. For example, here's what happens when using px or rem unit: https://cloud.githubusercontent.com/assets/1165933/18491589/b149cec6-79cc-11e6-9280-936838977b64.png
+
 }
 
-ol {
-  ol {
-    counter-reset: table-ol;
-  }
+li {
+  margin-bottom: .5em;
 }
 
 .fsa-list {
@@ -42,8 +41,13 @@ ol {
       }
 
     }
+
   }
 
+}
+
+.usa-unstyled-list {
+  @extend .fsa-list--unstyled;
 }
 
 dl,
@@ -58,32 +62,14 @@ dl {
 }
 
 dt {
+
   font-weight: $font-bold;
   margin-bottom: 0;
+
   dd + & {
     margin-top: .75em;
   }
-}
 
-ul,
-ol {
-  margin-bottom: 2em;
-  margin-top: 2em;
-  list-style: none;
-  padding-left: 0;
-  display: table;
-
-  li {
-    line-height: $base-line-height;
-    margin-bottom: .75em;
-    margin-top: .75em;
-
-    &::after {
-      content: '';
-      display: block;
-      margin-bottom: .5em;
-    }
-  }
 }
 
 h1,
@@ -96,53 +82,5 @@ p {
   + ul,
   + ol {
     margin-top: 0;
-  }
-}
-
-ul > li {
-  display: table-row;
-
-  &::before {
-    content: '\2022';
-    display: table-cell;
-    padding-right: .4em;
-  }
-
-}
-
-ol > li {
-  counter-increment: table-ol;
-  display: table-row;
-
-  &::before {
-    content: counter(table-ol) '.';
-    display: table-cell;
-    padding-right: .4em;
-    text-align: right;
-  }
-}
-
-li {
-  margin-bottom: .5em;
-}
-
-// Unstyled lists
-
-.usa-unstyled-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    display: list-item;
-    margin: 0;
-
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      display: none;
-    }
   }
 }
