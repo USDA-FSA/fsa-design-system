@@ -49,7 +49,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
     &__stage {
 
-      @include breakpoint(MML) {
+      @include breakpoint(M) {
         display: block;
       }
 
@@ -74,7 +74,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
     margin-top: 20vh;
     color: $color-fsa-white;
 
-    @include breakpoint(ML) {
+    @include breakpoint(M) {
       @include font-size(7);
     }
 
@@ -124,7 +124,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
     &--fixed {
 
-      @include breakpoint(MML) {
+      @include breakpoint(L) {
         @include position(fixed, 0px 0px 0 0px); // scss-lint:disable ZeroUnit
         margin: 0;
         background-color: $color-fsa-primary-900;
@@ -158,7 +158,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
         margin-top: 1em;
         margin-right: 0;
 
-        @include breakpoint(ML) {
+        @include breakpoint(L) {
           float: right;
           margin-top: 0;
         }
@@ -174,7 +174,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
       text-decoration: none;
       color: $color-fsa-white;
 
-      @include breakpoint(ML) {
+      @include breakpoint(M) {
         margin-right: $size-small;
       }
 
@@ -249,11 +249,11 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
     padding: $size-small;
 
-    @include breakpoint(SM) {
+    @include breakpoint(S) {
       padding: $size-medium;
     }
 
-    @include breakpoint(ML) {
+    @include breakpoint(M) {
       padding: $size-medium $size-extra-large;
     }
 
@@ -272,7 +272,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
 
     margin-bottom: $size-medium;
 
-    @include breakpoint(ML) {
+    @include breakpoint(M) {
       display: flex;
     }
 
@@ -285,13 +285,13 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
       @include reset-li();
       flex: 1;
 
-      @include breakpoint(ML) {
+      @include breakpoint(M) {
         margin-right: $fsa-grid-gutter;
       }
 
       &:last-child {
 
-        @include breakpoint(ML) {
+        @include breakpoint(M) {
           margin-right: 0;
         }
 
@@ -426,13 +426,9 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
       margin: 0;
       margin-right: $size-default;
 
-      @include breakpoint(SM) {
+      @include breakpoint(S) {
         font-size: 8.4rem;
         text-align: center;
-      }
-
-      @include breakpoint(ML) {
-        // font-size: 104px;
       }
 
     }
