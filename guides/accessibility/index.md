@@ -5,11 +5,11 @@ title: "Accessibility"
 intro: "Why we build accessible digital artifacts at FSA. "
 ---
 
-## Our Challenge
+## Our challenge
 
 The American people expect to interact with government through technology such as websites, mobile applications, kiosks, and other electronic channels. To ensure equal access to government policies and programs, government technology must be accessible to people with disabilities and conform to Section 508 standards. Today, too many of our digital services and technology solutions are not accessible to disabled members of the public or the disabled employees who support them.
 
-## What is Accessibility?
+## What is accessibility?
 
 Accessibility is one of the most important aspects of modern web development. Accessibility means the greatest number of users can view your content. It means search engines will be able to read your site more completely. Users of all types will have a better experience if you take accessibility concerns into account. And least of all, it is a required by law for all federal EIT products to be accessible (with a few minor exceptions).
 

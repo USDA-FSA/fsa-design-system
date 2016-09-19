@@ -10,7 +10,7 @@ intro: "There are two aspects to address when it comes to color: contrast and co
 
 ## Testing
 
-### Color Contrast
+### Color contrast
 
 1. Using a [color contrast checker](http://www.paciellogroup.com/resources/contrastanalyser/), select the darkest / lightest section of the text.
 1. Select the darkest / lightest section of the background.
@@ -18,7 +18,7 @@ intro: "There are two aspects to address when it comes to color: contrast and co
 
 <strong>Note:</strong> Run this test for all states of the text (e.g., `:hover`, `:visited`, `:focus`). This test should also be performed on images of text unless the image is a logo, which is exempt.
 
-### Color Dependence
+### Color dependence
 
 1. Identify sections which use color to convey information.
 1. Check to see if the information is conveyed in another way visually and programmatically.

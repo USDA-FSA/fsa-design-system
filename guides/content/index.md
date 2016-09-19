@@ -11,13 +11,13 @@ This editorial content guide helps writers create content that’s easy to under
 
 This  guide takes that frustration into account, as well as several commonly supported guidelines about writing for the web. Using this guide can help content designers benefit from FSA experience to date, incorporate user feedback into the editorial process, and build trust by communicating in a consistent manner
 
-## How to Use this Guide
+## How to use this guide
 
 We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone.
 
 To this end, we structured the guide into descriptively named sections. Find the topic you need in the table of contents, or search by keyword. We aren’t opposed if you’d like to read this guide start to finish, of course.
 
-## Related Resources
+## Related resources
 
 Unless noted, we generally follow [AP style](https://www.apstylebook.com/). As this guide was created, we also referenced these resources:
 
