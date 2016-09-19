@@ -23,18 +23,18 @@
       margin: 0;
       background-color: $color-fsa-tertiary-100;
 
-      @include breakpoint(MML) {
+      @include breakpoint(M) {
         padding: $size-medium;
       }
 
     }
 
     .highlighter-rouge & {
-      
+
       margin-left:  (-$size-default);
       margin-right: (-$size-default);
 
-      @include breakpoint(MML) {
+      @include breakpoint(M) {
         margin-left:  0;
         margin-right: 0;
       }

@@ -126,23 +126,6 @@
 
 }
 
-
-// -----------------------------------------------------------------------------
-// Breakpoints
-// scss-lint:disable SpaceAfterComma
-$breakpoints: (
-  '(min-width: 15em)' 'XS',       //  240px at 16px base font
-  '(min-width: 20em)' 'S',        //  320px at 16px base font
-  '(min-width: 30em)' 'SM',       //  480px at 16px base font
-  '(min-width: 35em)' 'M',        //  560px at 16px base font
-  '(min-width: 42em)' 'MML',      //  672px at 16px base font
-  '(min-width: 48em)' 'ML',       //  768px at 16px base font
-  '(min-width: 54em)' 'MLL',      //  864px at 16px base font
-  '(min-width: 61.25em)' 'L',     //  980px at 16px base font
-  '(min-width: 64em)' 'XL',       // 1024px at 16px base font
-  '(min-width: 78.75em)' 'XXL'    // 1260px at 16px base font
-);
-
 //  From HugoG: http://hugogiraudel.com/2014/01/13/sass-string-replacement-function/
 // http://sassmeister.com/gist/1b4f2da5527830088e4d
 // Replace `$search` with `$replace` in `$string`
@@ -159,6 +142,16 @@ $breakpoints: (
 
   @return $string;
 }
+
+// -----------------------------------------------------------------------------
+// Breakpoints
+// scss-lint:disable SpaceAfterComma
+$breakpoints: (
+  '(min-width: 20em)' 'S',        //  320px at 16px base font
+  '(min-width: 35em)' 'M',        //  560px at 16px base font
+  '(min-width: 54em)' 'L',        //  864px at 16px base font
+  '(min-width: 78.75em)' 'XL'     // 1260px at 16px base font
+);
 
 // -----------------------------------------------------------------------------
 // Breakpoints: Primary collection of available media query breakpoints

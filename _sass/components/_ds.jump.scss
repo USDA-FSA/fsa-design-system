@@ -8,7 +8,7 @@
 
   .ds-jump--stuck & {
 
-    @include breakpoint(MML) {
+    @include breakpoint(L) {
       margin-top: 0;
     }
 
@@ -18,7 +18,7 @@
 
     display: none;
 
-    @include breakpoint(MML) {
+    @include breakpoint(L) {
       @include font-size(3);
       display: block;
       height: 0;
@@ -31,7 +31,7 @@
     }
 
     .ds-jump--stuck & {
-      @include breakpoint(MML) {
+      @include breakpoint(L) {
         height: auto;
         margin-bottom: 1em;
         border-bottom: 1px solid $color-fsa-secondary-200;
@@ -52,7 +52,7 @@
     margin-bottom: $size-small;
 
     &--active {
-      @include breakpoint(MML) {
+      @include breakpoint(L) {
         font-weight: $font-bold;
       }
     }

@@ -69,6 +69,7 @@ mark {
 }
 
 blockquote {
+  
   @include font-size(2);
   font-style: italic;
   margin: 0;
@@ -77,7 +78,7 @@ blockquote {
   border-left: $size-base solid $color-fsa-tertiary-200;
   max-width: $text-max-width;
 
-  @include breakpoint(ML) {
+  @include breakpoint(L) {
     @include font-size(5);
     padding-left: $size-medium;
   }

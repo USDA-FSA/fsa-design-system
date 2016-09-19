@@ -11,7 +11,7 @@
     margin-right: (-$size-default);
   }
 
-  @include breakpoint(MML) {
+  @include breakpoint(M) {
     padding: $size-medium;
     margin-left: 0;
     margin-right: 0;
