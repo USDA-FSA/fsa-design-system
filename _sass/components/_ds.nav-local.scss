@@ -6,7 +6,7 @@
     margin-top: $size-small;
     margin-bottom: $size-medium;
 
-    @include breakpoint(MML) {
+    @include breakpoint(L) {
       border-top: 1px solid $color-fsa-tertiary-200;
     }
 
@@ -27,7 +27,7 @@
 
     display: block;
 
-    @include breakpoint(MML) {
+    @include breakpoint(L) {
       color: $color-base;
       text-decoration: none;
       border-bottom: 1px solid $color-fsa-tertiary-200;
@@ -39,7 +39,7 @@
 
       color: $color-fsa-link;
 
-      @include breakpoint(MML) {
+      @include breakpoint(L) {
         color: $color-base;
       }
 
