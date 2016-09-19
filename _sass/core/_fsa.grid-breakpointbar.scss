@@ -41,12 +41,12 @@ body::before {
 
   @include breakpoint(L) {
     content: 'L: 865px +';
-    background: rgba(0, 102, 255, .8);
+    background: rgba(50, 20, 50, .8);
   }
 
   @include breakpoint(XL) {
-    content: 'L: 1260px +';
-    background: rgba(10, 255, 50, .8);
+    content: 'XL: 1260px +';
+    background: rgba(0, 70, 0, .8);
   }
 
   html:hover & {

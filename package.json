@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "jquery": "^2.2.2",
-    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#0cc1996"
+    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#0.2.4"
   },
   "author": "USDA FSA Enterprise Architecture",
   "contributors": [

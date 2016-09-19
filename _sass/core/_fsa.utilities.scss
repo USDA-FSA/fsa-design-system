@@ -188,8 +188,6 @@ $breakpoints: (
   @if $scale == 5 { font-size: $font-size-5; line-height: $heading-line-height; } // 20
   @if $scale == 6 { font-size: $font-size-6; line-height: $heading-line-height; } // 20 REMOVE THIS ONE
   @if $scale == 7 { font-size: $font-size-7; line-height: $heading-line-height; } // 30
-  @if $scale == 8 { font-size: $font-size-8; outline: 3px solid red; } // 40
-  @if $scale == 9 { font-size: $font-size-9; outline: 3px solid purple; } // 52
 }
 
 // -----------------------------------------------------------------------------
