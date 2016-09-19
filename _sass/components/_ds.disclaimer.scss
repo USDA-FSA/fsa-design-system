@@ -16,7 +16,7 @@
 
   &__stage {
 
-    @include breakpoint(MML) {
+    @include breakpoint(M) {
       display: block;
     }
 
@@ -35,7 +35,7 @@
 
     display: none;
 
-    @include breakpoint(SM) {
+    @include breakpoint(S) {
       display: inline;
     }
 
