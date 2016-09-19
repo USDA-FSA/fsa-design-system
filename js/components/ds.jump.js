@@ -28,7 +28,7 @@ function JumpBuild() {
 
 function JumpStick() {
 
-  if (window.matchMedia("(min-width: 672px)").matches) {
+  if (window.matchMedia("(min-width: 54em)").matches) {
 
     // If browser doesn't support matchMedia(), we don't care if menu is sticky
 

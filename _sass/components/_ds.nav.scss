@@ -35,12 +35,12 @@
     text-decoration: none;
     color: $color-fsa-white;
 
-    @include breakpoint(MML) {
+    @include breakpoint(M) {
       @include font-size(3);
     }
 
     &:hover {
-      text-decoration: underline;;
+      text-decoration: underline;
     }
 
     &:active,

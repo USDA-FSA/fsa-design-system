@@ -16,7 +16,11 @@
     font-family: $font-serif;
     padding-top: 1.5em;
 
-    @include breakpoint(ML) {
+    @include breakpoint(M) {
+      @include font-size(6);
+    }
+
+    @include breakpoint(L) {
       @include font-size(6);
     }
 
@@ -28,7 +32,7 @@
     max-width: ($site-max-width + 24px);
     padding: $size-default;
 
-    @include breakpoint(MML) {
+    @include breakpoint(M) {
       width: 100%;
       display: table;
     }
@@ -39,7 +43,7 @@
 
     margin-bottom: $size-default;
 
-    @include breakpoint(MML) {
+    @include breakpoint(M) {
       display: table-cell;
     }
 
@@ -47,7 +51,7 @@
 
   &__options {
 
-    @include breakpoint(MML) {
+    @include breakpoint(M) {
       display: table-cell;
       text-align: right;
       white-space: nowrap;
@@ -65,7 +69,7 @@
 
       &--github {
 
-        @include breakpoint(MML, down) {
+        @include breakpoint(L, down) {
           @include font-size(1);
         }
 
