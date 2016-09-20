@@ -19,7 +19,7 @@ To this end, we structured the guide into descriptively named sections. Find the
 
 ## Related resources
 
-Unless noted, we generally follow [AP style](https://www.apstylebook.com/). As this guide was created, we also referenced these resources:
+Unless noted, FSA generally follows [AP style](https://www.apstylebook.com/). As this guide was created, we also referenced these resources:
 
 * [The U.S. Government Publishing Office](https://www.gpo.gov/)
 * [Conscious Style Guide](http://consciousstyleguide.com/)
