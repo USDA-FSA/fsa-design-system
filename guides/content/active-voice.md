@@ -2,10 +2,10 @@
 layout: guide
 parent: "Content"
 title: "Active Voice"
-intro: "Our writing should be concise and direct. We prefer the active voice because it supports brevity and makes written content more engaging."
+intro: "As our writing should be concise and direct, FSA prefers the active voice as it supports brevity and makes written content more engaging."
 ---
 
-The active voice helps the reader identify the subject of the sentence. In the following example, the person who submits the form is essential information. Omitting that leads to a confusing and impersonal sentence.
+The active voice helps the reader identify the subject of the sentence. In the following example, the person who submits the form is essential information. Omitting that context leads to a confusing and impersonal sentence.
 
 **Passive**: _The request form must be submitted to the approving official._  
 **Active**: _You must submit the request form to the approving official._
