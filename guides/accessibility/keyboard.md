@@ -51,7 +51,7 @@ custom_js: "keyboard-trap.js"
 
 > Avoid using `tabindex` of >= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when autofocusing an element not normally interactive.
 
-### Keyboard Trap
+### Keyboard trap
 
 <a class="sr-only moveFocus" href="#">Hidden.</a>
 

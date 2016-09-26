@@ -5,7 +5,7 @@ title: "Voice and Tone"
 intro: "If you’re like many folks, you might not be aware of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. No problem! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing."
 ---
 
-## What’s the difference between voice and tone?
+## The difference between voice and tone
 
 It’s a common question and one that young writers find themselves asking often: What’s the difference between voice and tone?
 
