@@ -19,7 +19,7 @@
 # https://pages.18f.gov/content-guide/urls-and-filenames
 
 - title: "Overview"
-  alt_title: "Editorial"
+  alt_title: "Content"
   href: "guides/content"
 
 - title: "Content Principles"
@@ -37,7 +37,7 @@
 - title: "Plain Language"
   href: "guides/content/plain-language"
 
-- title: "Structure the Content"
+- title: "Structure the content"
   href: "guides/content/structure-the-content"
 
 - title: "Abbreviations and Acronyms"
@@ -73,8 +73,8 @@
 - title: "Technical and Interface Writing"
   href: "guides/content/technical-and-interface-writing"
 
-- title: "Brands and Trademarks"
-  href: "guides/content/brands-and-trademarks"
+- title: "Trademarks and Brands"
+  href: "guides/content/trademarks-and-brands"
 
-- title: "Urls and Filenames"
+- title: "URLs and Filenames"
   href: "guides/content/urls-and-filenames"

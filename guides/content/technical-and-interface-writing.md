@@ -29,15 +29,15 @@ Start your sentences with active verbs or clear objectives.
 
 Instead of:
 
-> Help us understand what kind of help you need by [creating an issue in GitHub](https://github.com/18F/FEC/issues/new).
+> Help us understand what kind of help you need by [creating an issue in GitHub](https://github.com/USDA-FSA/fsa-design-system/issues/new).
 
 Use:
 
-> [Create an issue](https://github.com/18F/FEC/issues/new) with details about your request.
+> [Create an issue](https://github.com/USDA-FSA/fsa-design-system/issues/new) with details about your request.
 
 Or:
 
-> To get started, [create an issue](https://github.com/18F/FEC/issues/new) in GitHub with details about your request.
+> To get started, [create an issue](https://github.com/USDA-FSA/fsa-design-system/issues/new) in GitHub with details about your request.
 
 Focus on what the reader can do rather than what they can’t (also  known as using positive language).
 
@@ -58,7 +58,7 @@ Be consistent with how you phrase titles. If your guide or tutorial has several 
 * Nouns: _Policies_, _Teams_, _Offices_, etc.
 * Verbs: _Create an account_, _File a report_, _Download our data_, etc.
 
-[Use sentence case](guides/content/capitalization) for headings.
+[Use sentence case](../content/capitalization) for headings.
 
 ### Introduction
 
@@ -124,6 +124,6 @@ It’s rare that a document lives on its own. Tell people where to go for help i
 
 For documentation and guides, you might say:
 
-> For more information, see the [FSA Editorial Guide](guides/content).
+> For more information, see the [FSA Editorial Guide](../content).
 
 If your work relates to several other documents, pick the most important ones or gather the links in a section at the bottom of your content.

@@ -9,16 +9,17 @@ intro: "Understanding punctuation guidelines that promote readability online."
 
 Capitalize the first word of every bullet. Don't use semicolons after points in a bulleted list. Include a period at the end of the bullet only if that point is a complete sentence. For example:
 
-*When you go to the store, please buy:*
+> *When you go to the store, please buy:*
+>
+> -   *Apples*
+> -   *Bananas*
+> -   *Pita chips*
 
--   *Apples*
--   *Bananas*
--   *Pita chips*
 
-*When you leave the house:*
-
--   *Please buy apples, bananas, and pita chips.*
--   *Fill the car with gas.*
+>  *When you leave the house:*
+>
+>  -   *Please buy apples, bananas, and pita chips.*
+>  -   *Fill the car with gas.*
 
 ## Colons
 
@@ -55,7 +56,7 @@ These quotations are correctly punctuated:
 
 ## Spaces
 
-Sentences should always be separated by a single space. AP Style agrees: [Never use two spaces](https://owl.english.purdue.edu/owl/resource/735/02/).
+Sentences should always be separated by a single space. AP Style agrees: [Never use two spaces](https://owl.english.purdue.edu/owl/resource/735/02/). Note that browsers collapse multiple spaces into one.
 
 ## Ampersands or plus signs
 

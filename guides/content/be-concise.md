@@ -1,7 +1,7 @@
 ---
 layout: guide
 parent: "Content"
-title: "Avoid Duplication"
+title: "Be Concise"
 intro: "Enhance user engagement and retention through better readability by keeping your content short and specific."
 ---
 

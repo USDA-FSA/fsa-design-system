@@ -2,7 +2,7 @@
 layout: guide
 parent: "Content"
 title: "Numbers and Percentages"
-intro: "Generally speaking, FSA follows the guidelines outlined in the [AP Stylebook](https://www.apstylebook.com)."
+intro: Generally speaking, FSA follows the guidelines outlined in the <a href="https://www.apstylebook.com">AP Stylebook</a>.
 ---
 
 ## Numbers
