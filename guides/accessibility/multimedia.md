@@ -5,14 +5,14 @@ title: "Multimedia"
 intro: "When using multimedia, we must provide means for everyone to consume the media. Multimedia is any content that utilizes audio and video."
 ---
 
-## Closed Captioning
+## Closed captioning
 
 Videos with audio require synchronized closed captioning. Anything said in the video must be included in the closed captioning, and anything in the closed captioning must be said in the video.
 
-## Audio Description
+## Audio description
 
 Audio description ensures any information displayed visually is conveyed via audio. The most basic example of this is text on screen. All the text on screen should be available by audio. This can be done a couple of ways. Either the script for the video can be written in a way that all visual information is read by the narrator or a separate audio track that describes the visual content can be added with a special player or a separate version of the video with the audio baked in.
 
-## Keyboard Access
+## Keyboard access
 
 Just a quick note about keyboard access. All video controls should be accessible via the keyboard, but it's also worth noting that time stamp information should be available to screen readers as well.

@@ -29,7 +29,7 @@ intro: "Our five core principles for authoring content at FSA."
 ## 5. Start small and iterate.
 
 * Make sure your content works for users; don’t be afraid to scrap what’s there and start over.
-* Write a draft, test it with real users, gather feedback, and keep refining.
+* Iterate: write a draft, test it with real users, gather feedback, and keep refining.
 
 ---
 

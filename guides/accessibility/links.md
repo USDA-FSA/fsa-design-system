@@ -11,7 +11,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
 
 ## Testing
 
-### Unique Links
+### Unique links
 
 1. Identify all links on the page.
 2. Identify links with the same text.
@@ -19,7 +19,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
 3. Identify links with generic text ('Click here', 'Read more', etc.).
   * Check for the ```title``` or ```ARIA``` attributes to provide context or additional off-screen text.
 
-### Links that Open a New Window
+### Links that open a new window
 1. Identify links that open in new windows.
 2. Check that ```target='_blank'```.
 3. Verify that some indication is given programmatically, for example:
@@ -27,7 +27,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
   *  ```<a href='link/to/page.html' target='_blank' title='Opens in new window.'>```
   *  ```<a href='link/to/page.html' target='_blank'>Link <span class='sr-only'>Opens in new window.</span></a>```
 
-### Skip Navigation
+### Skip navigation
 
 1. First compare the pages on the site for links that are repeated at the beginning of the tab order.
   * `Skip Navigation` is not needed if repetitive nav links are not used.
@@ -80,7 +80,7 @@ The other issue that screen reader and keyboard users frequently encounter is le
 
 > **Passes:** While each link's content is not unique, the ```title``` and ```aria-label``` attributes provide context.
 
-### Skip Navigation
+### Skip navigation
 
 ```html
 <!-- HTML ---------------------------------------------
