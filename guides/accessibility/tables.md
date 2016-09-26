@@ -23,7 +23,7 @@ If a table has text associated with it, ensure the text is programmatically link
 
 ### Passes
 
-#### Simple Table
+#### Simple table
 
 ```html
 <table class="fsa-table">
@@ -89,7 +89,7 @@ If a table has text associated with it, ensure the text is programmatically link
 
 > **Passes:** Looking at this table, the column headers all relate to the cells below. This is done programmatically with ```scope="col"```. Each height and age value is related to the person and this is done programmatically with ```scope="row"```.
 
-#### Complex Table
+#### Complex table
 
 ```html
 <table class="fsa-table">

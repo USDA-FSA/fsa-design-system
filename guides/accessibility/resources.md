@@ -5,7 +5,7 @@ title: "Resources"
 intro: "The most common tools and tutorials FSA uses to improve and test accessibility."
 ---
 
-## Code Compliance
+## Code compliance
 
 * [achecker](http://achecker.ca/) is an accessibility reporter for HTML only.
 * [HTML CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/) - provides a quick audit of any URL.
@@ -16,7 +16,7 @@ intro: "The most common tools and tutorials FSA uses to improve and test accessi
 * The [W3C](http://www.w3.org/) maintains a comprehensive [list of web accessibility evaluation tools](http://www.w3.org/WAI/ER/tools/).
 * [Inspector (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521%28v=vs.85%29.aspx) - tool used by DHS for its Trusted Tester Program.
 
-## Color Checkers
+## Color checkers
 
 * [WebAIM color contrast checker](http://webaim.org/resources/contrastchecker/) compares two hex colors and tells you whether they meet WCAG AA and AAA contrast thresholds.
 * [Snook's color contrast analyzer](http://snook.ca/technical/colour_contrast/colour.html) lets you adjust RGB and HSV values and reports contrast compliance interactively.
@@ -24,21 +24,21 @@ intro: "The most common tools and tutorials FSA uses to improve and test accessi
 * [Color Safe](http://colorsafe.co/) is a guide for choosing colors that meet WCAG contrast thresholds.
 * [Color Contrast Analyzer](http://www.paciellogroup.com/resources/contrastanalyser/) is a desktop application for contrast checking that also simulates different forms of color impairment.
 
-### Color Impairment
+### Color impairment
 
 * [Color Oracle](http://colororacle.org/) is another desktop application for simulating color impairment on your entire screen.
 * [Daltonize](http://daltonize.appspot.com/) is a collection of bookmarklets that simulate the three most common forms of color impairment (protanopia, deuteranopia, and tritanopia) on any web page.
 * [colourblind](https://github.com/Altreus/colourblind) is another simulation tool similar to Daltonize, but with more options (protanopia, protanomaly, deuteranopia, deuteranomaly, tritanopia, tritanomaly, achromatopsia, and achromatomaly) in a single bookmarklet.
 * [postcss-colorblind](https://github.com/btholt/postcss-colorblind) is a CSS build tool that modifies colors in your CSS to simulate [four common impairment groups](https://github.com/skratchdot/color-blind#color-blindness-table).
 
-## Autocomplete HTML with ARIA Tags
+## Autocomplete HTML with ARIA tags
 
 * [Awesomplete](http://leaverou.github.io/awesomplete/) is dependency-free.
 * [jQuery UI autocomplete](http://jqueryui.com/autocomplete/) requires jQuery.
 * [Select2](https://select2.github.io/) also requires jQuery.
 * [ARIA autocomplete](http://www.w3.org/TR/wai-aria/states_and_properties#aria-autocomplete)
 
-## Automated Testing
+## Automated testing
 
 * [a11y](https://github.com/addyosmani/a11y) is a Node-based accessibility auditing with both command-line and JavaScript APIs.
 * [pa11y](http://pa11y.org/) is like a11y, but consists of a larger suite of tools, including command-line and JavaScript APIs, a [web service](https://github.com/nature/pa11y-webservice), and a [dashboard](https://github.com/nature/pa11y-dashboard) for monitoring accessibility reports across multiple sites.
@@ -46,7 +46,7 @@ intro: "The most common tools and tutorials FSA uses to improve and test accessi
 * [webalin](http://webalin.readthedocs.org/en/latest/) is a Python-based 508 compliance linter for HTML.
 * There are many other [npm](https://www.npmjs.com/) packages tagged [wcag](https://www.npmjs.com/search?q=wcag) and [a11y](https://www.npmjs.com/search?q=a11y).
 
-## Accessibility Tutorials
+## Accessibility tutorials
 
 * [WAI Tutorials](http://www.w3.org/WAI/tutorials)
 * [Simply Accessible](http://simplyaccessible.com/archives) - great blog and resource with articles about modern accessibility.
