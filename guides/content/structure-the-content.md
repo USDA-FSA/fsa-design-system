@@ -25,7 +25,7 @@ Use:
 
 If you’re wrangling a lot of data, tables can help you visualize that content. Long paragraphs cluttered with numbers or dates are more difficult to scan than, for example:
 
-<table>
+<table class="fsa-table">
     <thead>
         <tr>
             <th>Report type</th>

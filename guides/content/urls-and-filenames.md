@@ -2,14 +2,13 @@
 layout: guide
 parent: "Content"
 title: "URLs and Filenames"
-intro: "TBD."
+intro: ""
 ---
 
 ## Creating URLs
 
 URLs should be short, memorable, easy to type, and well-structured.
-Your control over your URL may be limited, but you should do what you can
-with the pieces you can control.
+Your control over your URL may be limited, but you should do what you can with the pieces you can control.
 
 In the vast majority of cases, everything a user can reach on your site
 should have a distinct URL that a user can bookmark and use later to
