@@ -25,4 +25,4 @@ Once you know the most popular keywords, you can incorporate them judiciously in
 * Chapter and section titles; and
 * Metadata descriptions.
 
-Also, check out information on [heading capitalization](../capitalization).
+Also, check out information on [heading capitalization](../content/capitalization).

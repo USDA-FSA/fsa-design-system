@@ -17,7 +17,7 @@ When you're deciding whether to capitalize noun phrases, keep in mind that in En
 - It makes sense to capitalize the phrase "Form 1040, U.S. Individual Income Tax Return" because you want users to know the exact, official title of that specific form.
 - It could confuse users to capitalize _income taxes_ or _income tax forms_ because those phrases could refer to any number of possible forms.
 
-See additional capitalization rules in the [specific words and phrases](guides/content/specific-words-and-phrases) section.
+See additional capitalization rules in the [specific words and phrases](../content/specific-words-and-phrases) section.
 
 ## Personal titles
 
@@ -33,4 +33,4 @@ Headlines, page titles, subheads, and similar content should follow sentence cas
 
 > _Privileges and responsibilities_
 
-See also: information about [optimizing headings](../headings-and-titles/).
+See also: information about [optimizing headings](../content/headings-and-titles/).

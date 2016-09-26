@@ -2,7 +2,7 @@
 layout: guide
 parent: "Content"
 title: "Conscious Style"
-intro: "We follow the [Conscious Style Guide](http://consciousstyleguide.com/) because we are inclusive of all users."
+intro: We follow the <a href="http://consciousstyleguide.com/">Conscious Style Guide</a> because we are inclusive of all users.
 ---
 
 ## Age

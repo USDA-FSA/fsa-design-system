@@ -2,12 +2,21 @@
 layout: guide
 parent: "Content"
 title: "URLs and Filenames"
+<<<<<<< HEAD
 intro: "So users can easily search and find your content, here's how you can provide context when naming digital structures."
+=======
+intro: ""
+>>>>>>> origin/feature/brianedits
 ---
 
 ## Creating URLs
 
+<<<<<<< HEAD
 URLs should be short, memorable, easy to type, and well-structured. Your control over your URL may be limited, but you should do what you can with the pieces you can control.
+=======
+URLs should be short, memorable, easy to type, and well-structured.
+Your control over your URL may be limited, but you should do what you can with the pieces you can control.
+>>>>>>> origin/feature/brianedits
 
 In the vast majority of cases, everything a user can reach on your site should have a distinct URL that a user can bookmark and use later to reach that same location.
 
