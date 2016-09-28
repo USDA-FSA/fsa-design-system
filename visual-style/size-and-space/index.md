@@ -2,11 +2,9 @@
 layout: page
 parent: "Visual Style"
 title: "Size and Space"
-intro: "Introduction to <strong>logo</strong> lorem ipsum dolor sit amet"
-jump_menu: true
+intro: ""
+jump_menu: false
 ---
-
-## Sub-title
 
 <ul class="docs__attr-list docs__attr-list--open">
   <li class="docs__attr-list__item">
@@ -59,7 +57,7 @@ jump_menu: true
   </li>
 </ul>
 
-## Sub-title 2
+<!-- ## Sub-title 2
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -69,4 +67,4 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 ## Sub-title 4
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  -->
