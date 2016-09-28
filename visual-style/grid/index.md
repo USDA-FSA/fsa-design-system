@@ -237,21 +237,21 @@ Available column proportions are identified via the `fsa-grid__*` selector, wher
 
 ## Responsive
 
-Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via `fsa-grid__[width]@[breakpoint]`. For example, `class="fsa-grid__1/1 fsa-grid__1/2@sm"` will render as full-width by default (`1/1`), and then 50% proportion at the `ml` breakpoint.
+Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via `fsa-grid__[width]@[breakpoint]`. For example, `class="fsa-grid__1/1 fsa-grid__1/2@sm"` will render as full-width by default (`1/1`), and then 50% proportion at the `m` breakpoint.
 
 ```html
 <div class="fsa-grid">
-  <div class="fsa-grid__1/1 fsa-grid__1/2@ml">...</div>
-  <div class="fsa-grid__1/1 fsa-grid__1/2@ml">...</div>
+  <div class="fsa-grid__1/1 fsa-grid__1/2@m">...</div>
+  <div class="fsa-grid__1/1 fsa-grid__1/2@m">...</div>
 </div>
 ```
 
 <div class="ds-preview">
   <div class="fsa-grid">
-    <div class="fsa-grid__1/1 fsa-grid__1/2@ml">
+    <div class="fsa-grid__1/1 fsa-grid__1/2@m">
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <div class="fsa-grid__1/1 fsa-grid__1/2@ml">
+    <div class="fsa-grid__1/1 fsa-grid__1/2@m">
       <p class="fsa-grid__demo">Lorem ipsum dolor sit ametcing elit sed do gna aliqua. <</p>
     </div>
   </div>
@@ -428,7 +428,7 @@ Let's use Media Queries to make a responsive layout.
 
   @include fsa-grid-column-width(6); // 50%
 
-  @include breakpoint(ML) {
+  @include breakpoint(M) {
     @include fsa-grid-column-width(4); // 33%
   }
 
@@ -438,7 +438,7 @@ Let's use Media Queries to make a responsive layout.
 
   @include fsa-grid-column-width(6); // 50%
 
-  @include breakpoint(ML) {
+  @include breakpoint(M) {
     @include fsa-grid-column-width(8); // 66%
   }
 
@@ -448,10 +448,10 @@ Let's use Media Queries to make a responsive layout.
 <div class="ds-preview">
   <div class="lorem">
     <div class="lorem__item lorem__item--fu">
-      <p>I'm <strong>50%</strong> by default, <strong>33%</strong> at tablet and above.</p>
+      <p>I'm <strong>50%</strong> by default, <strong>33%</strong> at <code>m</code> and above.</p>
     </div>
     <div class="lorem__item lorem__item--bar">
-      <p>I'm <strong>50%</strong> by default, <strong>66%</strong> at tablet and above.</p>
+      <p>I'm <strong>50%</strong> by default, <strong>66%</strong> at <code>m</code> and above.</p>
     </div>
   </div>
 </div>

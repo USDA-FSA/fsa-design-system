@@ -3708,8 +3708,20 @@ main:active, main:focus {
   width: 50%;
 }
 
+@media (min-width: 35em) {
+  .lorem__item--fu {
+    width: 33.3333333333%;
+  }
+}
+
 .lorem__item--bar {
   width: 50%;
+}
+
+@media (min-width: 35em) {
+  .lorem__item--bar {
+    width: 66.6666666667%;
+  }
 }
 
 .ds-icn__github {
