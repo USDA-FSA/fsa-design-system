@@ -51,7 +51,7 @@
 
       @include fsa-grid-column-width(6); // 50%
 
-      @include breakpoint(ML) {
+      @include breakpoint(M) {
         @include fsa-grid-column-width(4); // 33%
       }
 
@@ -61,7 +61,7 @@
 
       @include fsa-grid-column-width(6); // 50%
 
-      @include breakpoint(ML) {
+      @include breakpoint(M) {
         @include fsa-grid-column-width(8); // 66%
       }
 

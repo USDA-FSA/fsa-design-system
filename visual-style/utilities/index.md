@@ -6,7 +6,7 @@ intro: "CSS Utilities are single-purpose styles that can be appended to elements
 jump_menu: true
 ---
 
-Also known as "trumps," "helper classes," or "alterations," they are high-specificity selectors used to make very targeted alterations to existing elements or components, and shouldn't be overwritten. As such, they often use `!important` in the CSS to ensure the desired alteration is achieved. 
+Also known as "trumps," "helper classes," or "alterations," they are high-specificity selectors used to make very targeted alterations to existing elements or components, and shouldn't be overwritten. As such, they often use `!important` in the CSS to ensure the desired alteration is achieved.
 
 ### Example use case
 
@@ -55,7 +55,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 * `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
 <div class="fsa-grid">
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h3>Top</h3>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-m-t--none"><code>fsa-m-t--none</code></div>
@@ -79,7 +79,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <div class="docs__utilities__demo-item fsa-m-t--xl"><code>fsa-m-t--xl</code></div>
     </div>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h3>Right</h3>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-m-r--none"><code>fsa-m-r--none</code></div>
@@ -103,7 +103,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <div class="docs__utilities__demo-item fsa-m-r--xl"><code>fsa-m-r--xl</code></div>
     </div>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h3>Bottom</h3>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-m-b--none"><code>fsa-m-b--none</code></div>
@@ -127,7 +127,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <div class="docs__utilities__demo-item fsa-m-b--xl"><code>fsa-m-b--xl</code></div>
     </div>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h3>Left</h3>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-m-l--none"><code>fsa-m-l--none</code></div>
@@ -191,7 +191,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 * `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
 <div class="fsa-grid">
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h4 class="docs__sub_style">Top</h4>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-p-t--none"><code>fsa-p-t--none</code></div>
@@ -215,7 +215,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <div class="docs__utilities__demo-item fsa-p-t--xl"><code>fsa-p-t--xl</code></div>
     </div>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h4 class="docs__sub_style">Right</h4>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-p-r--none"><code>fsa-p-r--none</code></div>
@@ -239,7 +239,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <div class="docs__utilities__demo-item fsa-p-r--xl"><code>fsa-p-r--xl</code></div>
     </div>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h4 class="docs__sub_style">Bottom</h4>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-p-b--none"><code>fsa-p-b--none</code></div>
@@ -263,7 +263,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <div class="docs__utilities__demo-item fsa-p-b--xl"><code>fsa-p-b--xl</code></div>
     </div>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@sm fsa-grid__1/4@m">
+  <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
     <h4 class="docs__sub_style">Left</h4>
     <div class="docs__utilities__demo">
       <div class="docs__utilities__demo-item fsa-p-l--none"><code>fsa-p-l--none</code></div>
@@ -351,11 +351,6 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
   </div>
 </div>
 
-
-### Responsive
-
-(TBD)
-
 ## Text Size
 
 `[size]` is one of `0` - `7`
@@ -374,10 +369,20 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
   <p class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
 </div>
 
-
 ### Responsive
 
-(TBD)
+Text size can adjusted per media query breakpoint.
+
+`class="fsa-text-size--[size]@[breakpoint]"`, where `size` is one of `0` - `7`, and breakpoint is one of `s`, `m`, `l`, `xl`
+
+```html
+<p class="fsa-text-size--1 fsa-text-size--4@m fsa-text-size--7@l">I am text size <code>1</code> by default, <code title="Four at Medium">4@m</code>, and <code title="Seven at Large">7@l</code>.</p>
+<p class="fsa-text-size--3 fsa-text-size--5@l fsa-text-size--7@xl">I am text size <code>3</code> by default, <code title="Five at Large">5@l</code>, and <code title="Seven at Extra-Large">7@xl</code>.</p>
+```
+<div class="ds-preview">
+  <p class="fsa-text-size--1 fsa-text-size--4@m fsa-text-size--7@l">I am text size <code>1</code> by default, <code title="Four at Medium">4@m</code>, and <code title="Seven at Large">7@l</code>.</p>
+  <p class="fsa-text-size--3 fsa-text-size--5@l fsa-text-size--7@xl">I am text size <code>3</code> by default, <code title="Five at Large">5@l</code>, and <code title="Seven at Extra-Large">7@xl</code>.</p>
+</div>
 
 ## Text Alignment
 

@@ -15,20 +15,6 @@ jump_menu: true
 <a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">FSA Homepage</a>
 ```
 
-## Usage
-
-### Use When
-
-* asdfasdf
-* qwerqwer
-* qwerqwer
-
-### Don't Use
-
-* asdfasdf
-* qwerqwer
-* qwerqwer
-
 ## Accessibility
 
 * Users must be able to tab to navigate between links.

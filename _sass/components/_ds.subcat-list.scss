@@ -3,6 +3,7 @@
   &__list {
 
     @include reset-ul();
+    margin-top: 2em;
 
     @include breakpoint(S) {
       @include fsa-grid-row();
@@ -24,9 +25,9 @@
       @include fsa-grid-column-width(4);
     }
 
-    @include breakpoint(L) {
-      @include fsa-grid-column-width(3);
-    }
+    // @include breakpoint(L) {
+    //   @include fsa-grid-column-width(3);
+    // }
 
   }
 
@@ -50,6 +51,7 @@
     display: block;
     width: 100%;
     margin-bottom: $size-base;
+    border: 1px solid $color-fsa-tertiary-200;
   }
 
 }
