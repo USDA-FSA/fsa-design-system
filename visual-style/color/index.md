@@ -153,10 +153,16 @@ jump_menu: true
 </ul>
 
 
-## Accessibility
+## Text Accessibility
 
-Is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of [at least 4.5:1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). This ensures that viewers who cannot see the full color spectrum are able to read the text.
 
-## Related
+If you choose to customize beyond this palette, [WebAIM Color Contrast Checker](http://webaim.org/resources/contrastchecker/) is a useful resource for testing the compliance of any color combination. Similar tools are listed in our Accessibility Guide under [Resources]({{ site.baseurl }}guides/accessibility/resources).
 
-Is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Further accessibility implications covered in our Accessibility Guide under [Color and Contrast]({{ site.baseurl }}guides/accessibility/color-and-contrast)
+
+
+
+<!-- ## Related
+
+Is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
