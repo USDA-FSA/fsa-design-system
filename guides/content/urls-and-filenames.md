@@ -134,7 +134,7 @@ Some examples:
 
 ### Changing subdomains
 
-If we changed our name from FSA to FSA-123, we would change our domain, so our parent URL would then change from `http://www.fsa.usda.gov` to `http://www.fsa-123.usda.gov`. We would keep the `fsa.usda.gov` domain running, but all it would do would redirect everything to `fsa-123.usda.gov`. Users who entered the old URL would be redirected and might not even notice the URL change.
+If we changed our name from FSA to FSA-123, we would change our domain, so our parent URL would then change from `http://fsa.usda.gov` to `http://fsa-123.usda.gov`. We would keep the `fsa.usda.gov` domain running, but all it would do would redirect everything to `fsa-123.usda.gov`. Users who entered the old URL would be redirected and might not even notice the URL change.
 
 If the FSA subdomain was hypothetically eliminated and we hosted content directly via `usda.gov`, we would do essentially the same thing, keeping the original subdomain and adding a rule to redirect to the new relevant path on `usda.gov`.
 
@@ -193,8 +193,8 @@ Delimiting an awkward URL in email:
     -   Server
 
 3.  Optional: **the port.** A number specifying how to access the content on this particular domain. Not normally used on production sites. Follows the domain, separated by a colon, for example `http://dev.example.com:8080`.
-4.  **The path:** what resource on the domain the URL refers to. If omitted, defaults to `/`, the “root level” of the domain. Always starts with a slash, and different levels of resources are separated by slashes. For example: `/news-room` is the path in `http://www.fsa.usda.gov/news-room`.
+4.  **The path:** what resource on the domain the URL refers to. If omitted, defaults to `/`, the “root level” of the domain. Always starts with a slash, and different levels of resources are separated by slashes. For example: `/news-room` is the path in `http://fsa.usda.gov/news-room`.
 5.  Optional: **the query string.** Normally contains parameters that have been submitted to the site, for example with searches. `?q=FSA+news+room` is the query string in `https://www.google.com/search?q=FSA+news+room`.
-6.  Optional: **the fragment.** Normally this indicates a specific section of a page, but can also be used for other things by web applications. `#main` is the fragment in `http://www.fsa.usda.gov/news-room/public-service-announcements/#main`.
+6.  Optional: **the fragment.** Normally this indicates a specific section of a page, but can also be used for other things by web applications. `#main` is the fragment in `http://fsa.usda.gov/news-room/public-service-announcements/#main`.
 
 The protocol should almost always be `https://` unless you’re forced to use `http://`. Users entering `http://` as the protocol should be redirected to `https://`. If at all possible, your URL should not contain a port. Query strings should also be avoided. Fragments can be used as a helper for the user, but should not be necessary for the user to find the relevant content.
