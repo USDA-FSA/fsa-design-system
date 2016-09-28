@@ -140,7 +140,7 @@ If the FSA subdomain was hypothetically eliminated and we hosted content directl
 
 ### Changing paths
 
-Perhaps we decide to incorporate both FSA newsroom and social media within an overarching media center. If so, it might be sensible to change our path to reflect this, so that the URL would change from `http://www.fsa.usda.gov/news-room` to `http://www.fsa.usda.gov/media-center/newsroom`. In this case, we would add a rule that redirects everything starting with `/news-room` to `/media-center/newsroom`.
+Perhaps we decide to incorporate both FSA newsroom and social media within an overarching media center. If so, it might be sensible to change our path to reflect this, so that the URL would change from `https://fsa.usda.gov/news-room` to `https://fsa.usda.gov/media-center/newsroom`. In this case, we would add a rule that redirects everything starting with `/news-room` to `/media-center/newsroom`.
 
 This also means that URLs, and parts of URLs, should not be re-used. Once we use `/newsroom` to refer to the digital location for the FSA newsroom, we can no longer decide in future to use `/newsroom` as the location for something else, even if we later change the URL for the newsroom.
 
