@@ -22,27 +22,27 @@
 
     # - subtitle: "Logo"
     #   subhref: "visual-style/logo"
-    #   img: "img/subcategories/subcat-placeholder.png"
+    #   img: "img/subcategories/logo.png"
 
     - subtitle: "Color"
       subhref: "visual-style/color"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/color.png"
 
     - subtitle: "Typography"
       subhref: "visual-style/typography"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/typography.png"
 
     - subtitle: "Size and Space"
       subhref: "visual-style/size-and-space"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/size-and-space.png"
 
     - subtitle: "Grid and Responsive Breakpoints"
       subhref: "visual-style/grid"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/grid.png"
 
     - subtitle: "CSS Utilities"
       subhref: "visual-style/utilities"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/utilities.png"
 
 - title: "Elements"
   href: "elements"
@@ -50,35 +50,35 @@
 
     - subtitle: "Text Links"
       subhref: "elements/links"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/links.png"
 
     - subtitle: "Buttons"
       subhref: "elements/buttons"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/buttons.png"
 
     - subtitle: "Text Input"
       subhref: "elements/text-input"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/text-input.png"
 
     - subtitle: "Textarea"
       subhref: "elements/textarea"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/textarea.png"
 
     - subtitle: "Checkbox"
       subhref: "elements/checkbox"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/checkbox.png"
 
     - subtitle: "Radio"
       subhref: "elements/radio"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/radio.png"
 
     - subtitle: "Select"
       subhref: "elements/select"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/select.png"
 
     - subtitle: "Tables"
       subhref: "elements/tables"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/tables.png"
 
 # - title: "Components"
 #   href: "components"
@@ -86,23 +86,7 @@
 #
 #     - subtitle: "Lorem"
 #       subhref: "components/lorem"
-#       img: "img/subcategories/subcat-placeholder.png"
-#
-#     - subtitle: "Ipsum"
-#       subhref: "components/ipsum"
-#       img: "img/subcategories/subcat-placeholder.png"
-#
-#     - subtitle: "Dolor"
-#       subhref: "components/dolor"
-#       img: "img/subcategories/subcat-placeholder.png"
-#
-#     - subtitle: "Sit"
-#       subhref: "components/it"
-#       img: "img/subcategories/subcat-placeholder.png"
-#
-#     - subtitle: "Amet"
-#       subhref: "components/amet"
-#       img: "img/subcategories/subcat-placeholder.png"
+#       img: "img/subcategories/asdfasdfasdfasdf.png"
 
 - title: "Guides"
   href: "guides"
@@ -110,12 +94,12 @@
 
     - subtitle: "Accessibility"
       subhref: "guides/accessibility"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/accessibility.png"
 
     - subtitle: "Front-end"
       subhref: "guides/front-end"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/front-end.png"
 
     - subtitle: "Content"
       subhref: "guides/content"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/content.png"

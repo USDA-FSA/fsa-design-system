@@ -3351,6 +3351,7 @@ main:active, main:focus {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: 2em;
 }
 
 @media (min-width: 20em) {
@@ -3403,12 +3404,6 @@ main:active, main:focus {
   }
 }
 
-@media (min-width: 54em) {
-  .ds-subcat-list__list-item {
-    width: 25%;
-  }
-}
-
 .ds-subcat-list__link {
   display: block;
 }
@@ -3426,6 +3421,7 @@ main:active, main:focus {
   width: 100%;
   margin-bottom: 4px;
   margin-bottom: 0.4rem;
+  border: 1px solid #c8c7c6;
 }
 
 .ds-nav {
@@ -3708,8 +3704,20 @@ main:active, main:focus {
   width: 50%;
 }
 
+@media (min-width: 35em) {
+  .lorem__item--fu {
+    width: 33.3333333333%;
+  }
+}
+
 .lorem__item--bar {
   width: 50%;
+}
+
+@media (min-width: 35em) {
+  .lorem__item--bar {
+    width: 66.6666666667%;
+  }
 }
 
 .ds-icn__github {
