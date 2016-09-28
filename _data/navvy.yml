@@ -26,23 +26,23 @@
 
     - subtitle: "Color"
       subhref: "visual-style/color"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/color.png"
 
     - subtitle: "Typography"
       subhref: "visual-style/typography"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/typography.png"
 
     - subtitle: "Size and Space"
       subhref: "visual-style/size-and-space"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/size-and-space.png"
 
     - subtitle: "Grid and Responsive Breakpoints"
       subhref: "visual-style/grid"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/grid.png"
 
     - subtitle: "CSS Utilities"
       subhref: "visual-style/utilities"
-      img: "img/subcategories/subcat-placeholder.png"
+      img: "img/subcategories/utilities.png"
 
 - title: "Elements"
   href: "elements"
