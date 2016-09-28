@@ -237,7 +237,7 @@ Available column proportions are identified via the `fsa-grid__*` selector, wher
 
 ## Responsive
 
-Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via `fsa-grid__[width]@[breakpoint]`. For example, `class="fsa-grid__1/1 fsa-grid__1/2@sm"` will render as full-width by default (`1/1`), and then 50% proportion at the `m` breakpoint.
+Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via `fsa-grid__[width]@[breakpoint]`. For example, `class="fsa-grid__1/1 fsa-grid__1/2@s"` will render as full-width by default (`1/1`), and then 50% proportion at the `m` breakpoint.
 
 ```html
 <div class="fsa-grid">
