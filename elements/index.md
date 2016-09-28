@@ -1,7 +1,5 @@
 ---
 layout: category
 title: "Elements"
-intro: "Introduction to <strong>Elements</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+intro:
 ---
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

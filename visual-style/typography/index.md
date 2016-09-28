@@ -369,6 +369,6 @@ With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size([size
 .your-custom-selector { @include font-size([size]); }
 ```
 
-## Related Resources
+<!-- ## Related Resources
 
-(Content TBD)
+(Content TBD) -->
