@@ -1,35 +1,124 @@
 ---
 layout: page
 title: "Getting Started"
-intro: "Introduction paragraph for <strong>Getting Started</strong> lorem ipsum dolor sit amet"
+intro: "The Design System's HTML/CSS assets provide the plug-and-play design and code to help you set a new bar for simplicity and consistency across FSA digital products."
 jump_menu: true
 get_started: true
 ---
 
+The components and style guide of the FSA Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FSA product teams who want to create beautiful, easy-to-use, digitial experiences consistent with the FSA Style.
 
-## Before you begin
+It was created and maintained by the USA-FSA Office of Architecture, and is heavily influenced by the [Draft U.S. Web Design Standards](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
 
-[Basic instructions listed here on what to do prior to using FSA Design System's assets.]
+### Release History
 
-1. Consectetur adipisicing elit incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-1. Commodo consequat aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-1. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Details about each release's significant updates and  compatibility changes are available in our [release history](https://github.com/USDA-FSA/fsa-style/releases).
 
+## Installing or Downloading
 
-## Installation
+Two options are available for usage of fsa-style HTML, CSS, Images, and Web Fonts:
 
-[Directions here on installing as a Node Module via NPM]
+* **[NPM Install](#install-using-npm)**
+* **[Download ZIP](#download-zip)**
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Install using NPM
 
+If you have `node` installed on your machine, you can use npm to install the Standards. Add `fsa-style`
+to your project’s `package.json` as a dependency:
 
-## Download
+```shell
+npm install --save fsa-style
+```
 
-[Should installing via NPM is not an option, versioned assets available here as a ZIP download.]
+The package will be installed in `node_modules/fsa-style`. You can either use the un-compiled files
+found in the `src/` or the compiled files in the `dist/` directory. For example, if you're interested in using the SASS files (`.scss`) you would use the `src/` directory; otherwise, `dist/` is what you want.
 
-[Download fsa-style.0.1.0.zip](link/to/fsa-style.0.1.0.zip), Version 0.1.0
+```
+node_modules/fsa-style/
+├── dist/
+│   ├── css/
+│   ├── fonts/
+│   ├── img/
+│   ├── js/
+│   ├── boilerplate.html
+│   └── index.html
+└── src/
+    ├── fonts/
+    ├── img/
+    ├── js/
+    ├── stylesheets/
+    ├── boilerplate.html
+    └── index.html
+```
 
-## Design Resources
+The main Sass (SCSS) source file is here:
+
+```
+node_modules/fsa-style/src/stylesheets/all.scss
+```
+
+The compiled and minified  CSS files' location:
+
+```
+node_modules/fsa-style/dist/css/fsa-style.css
+node_modules/fsa-style/dist/css/fsa-style.min.css
+```
+
+Lastly, refer to [Using the Boilerplate](#using-the-boilerplate) for basic guidance on HTML structure.
+
+### Download ZIP
+
+If you don't have Node or the ability to incorporate source files into a build process (Grunt, Gulp, etc), follow these steps to manually use the FSA Style.
+
+Download the latest assets: **[fsa-style-0.2.6.zip](https://github.com/usda-fsa/fsa-style/releases/download/0.2.6/fsa-style-0.2.6.zip)**
+
+#### 1. Visual Index
+
+`index.html` is a Visual Index of this CSS Framework's Visual Language, including basic HTML elements expressed in that style. Viewable at http://usda-fsa.github.io/fsa-style/index.html.
+
+#### 2. Boilerplate
+
+`boilerplate.html` provides a non-designed starting point. It serves as general guidance for the HTML structure most typically required of an FSA digital product. Viewable at
+[http://usda-fsa.github.io/fsa-style/boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html).
+
+#### 3. Manually adding to your project
+
+Add the downloaded ZIP's assets to a relevant place in your code base — likely a directory where you keep third-party libraries:
+
+```sh
+fsa-style-0.2.6/
+├── css/
+│   ├── fsa-style.css
+│   ├── fsa-style.css.map
+│   ├── fsa-style.min.css
+│   └── fsa-style.min.css.map
+├── fonts/
+├── img/
+└── js/
+    └── vendor/
+```
+
+Note that `fonts` and `img` must be alongside `css` as the CSS files reference them at a specific relative path; e.g., `../img/file.png`
+
+Refer to [Using the Boilerplate](#using-the-boilerplate) for further steps.
+
+## Using the Boilerplate
+
+**[boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html)**
+
+Reference this basic list for the general requirements for your typical HTML structure. Reviewing this list is perhaps best done while viewing its [HTML source](https://github.com/USDA-FSA/fsa-style/blob/master/src/boilerplate.html).
+
+1. HTML5 doctype: `<!DOCTYPE html>`.
+1. Wrap `<html>` start element in IE conditional comment.
+1. Enable Responsive Web Design via `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+1. Reference CSS file(s) via `<link>` tag.
+1. Reference IE conditional commented JS files to polyfill features below IE9.
+1. Include IE conditional commented Browser Upgrade message.
+1. Include "skipnav" anchor link, with `href` attribute pointing to `<main>` element.
+1. Wrap primary contents with `<main id="main-content">...</main>`.
+1. Build your thing!
+
+<!-- ## Design Resources
 
 The site contains HTML mockups of common UI components designed to follow the Draft U.S. Web Design Standards' visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
@@ -40,4 +129,10 @@ All of these designs are also available in various file formats, which are avail
 * [Illustrator](link/to/FSA-Style--Illustrator.zip)
 * [Sketch](link/to/FSA-Style--Sketch.zip)
 * [EPS](link/to/FSA-Style--EPS.zip)
-* [Visio](link/to/FSA-Style--Sketch.zip)
+* [Visio](link/to/FSA-Style--Sketch.zip) -->
+
+## Contributing
+
+For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/USDA-FSA/fsa-design-system/blob/gh-pages/CONTRIBUTING.md).
+
+If you have questions or feedback about our contributing workflow, please  [file a GitHub issue](https://github.com/usda=fsa/fsa-style/issues).
