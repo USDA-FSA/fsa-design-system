@@ -96,9 +96,9 @@
       subhref: "guides/accessibility"
       img: "img/subcategories/accessibility.png"
 
-    - subtitle: "Front-end"
-      subhref: "guides/front-end"
-      img: "img/subcategories/front-end.png"
+    # - subtitle: "Front-end"
+    #   subhref: "guides/front-end"
+    #   img: "img/subcategories/front-end.png"
 
     - subtitle: "Content"
       subhref: "guides/content"
