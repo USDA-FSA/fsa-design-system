@@ -133,7 +133,7 @@ th {
         width: 100%;
 
         &:before {
-          content: attr(data-label);
+          content: attr(aria-label);
           display: block;
           font-weight: $font-bold;
           margin-top: 1em;
@@ -153,79 +153,3 @@ th {
   }
 
 }
-
-/* --------------------------------------------------------------------------*/
-
-//
-// @media screen and (min-width: 600px){
-//   .inq-results_table th:first-child,
-//   .inq-results_table td:first-child {
-//     padding-left: 0;
-//   }
-//
-//   .inq-results_table th:last-child,
-//   .inq-results_table td:last-child {
-//     padding-right: 0;
-//   }
-// }
-//
-// @media screen and (min-width: 768px) {
-//
-//   .inq-results_table th {
-//     font-size: 1.3rem;
-//   }
-//
-//   .inq-results_table td {
-//     font-size: 1.5rem;
-//   }
-//
-// }
-//
-// @media screen and (max-width: 600px) {
-//
-//   .inq-results_table,
-//   .inq-results_bd,
-//   .inq-results_row,
-//   .inq-results_table th,
-//   .inq-results_table td {
-//     display: block;
-//     border: 0;
-//   }
-//
-//   .inq-results_table {
-//     border-top: 2px solid #5b616b;
-//   }
-//
-//   .inq-results_hd {
-//     display: none;
-//   }
-//
-//   .inq-results_row {
-//     border-bottom: 1px solid #5b616b;
-//     padding-bottom: 1.5rem;
-//   }
-//
-//   .inq-results_table th,
-//   .inq-results_table td {
-//     border: 0;
-//     padding: 1.5rem 0 0;
-//   }
-//
-//   .inq-results_table th {
-//   }
-//
-//   .inq-results_table td {
-//     position: relative;
-//     padding-left: 80px;
-//   }
-//
-//   .inq-results_table td:before {
-//     content: attr(data-label);
-//     display: block;
-//     font-weight: bold;
-//     position: absolute;
-//     left: 0;
-//   }
-//
-// }
-//
