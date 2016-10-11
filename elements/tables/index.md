@@ -297,7 +297,7 @@ Each styled variation can be made to fit on smaller viewports (i.e. mobile phone
 ### Structure
 
 * Responsive table styles are identical at the smaller breakpoints regardless of initial variation used.
-* The key to Responsive Tables is the use of the `data-label` attribute on each data data cell, e.g. `<td data-label="Description">...</td>`.
+* The key to Responsive Tables is the use of the `aria-label` attribute on each data data cell, e.g. `<td aria-label="Description">...</td>`.
 
 <div class="ds-preview">
   <table class="fsa-table fsa-table--responsive">
@@ -310,24 +310,24 @@ Each styled variation can be made to fit on smaller viewports (i.e. mobile phone
     </thead>
     <tbody>
       <tr>
-        <th data-label="Document title" scope="row">Declaration of Independence</th>
-        <td data-label="Description">Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
-        <td data-label="Year">1776</td>
+        <th aria-label="Document title" scope="row">Declaration of Independence</th>
+        <td aria-label="Description">Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+        <td aria-label="Year">1776</td>
       </tr>
       <tr>
-        <th data-label="Document title" scope="row">Bill of Rights</th>
-        <td data-label="Description">The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
-        <td data-label="Year">1791</td>
+        <th aria-label="Document title" scope="row">Bill of Rights</th>
+        <td aria-label="Description">The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+        <td aria-label="Year">1791</td>
       </tr>
       <tr>
-        <th data-label="Document title" scope="row">Declaration of Sentiments</th>
-        <td data-label="Description">A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
-        <td data-label="Year">1848</td>
+        <th aria-label="Document title" scope="row">Declaration of Sentiments</th>
+        <td aria-label="Description">A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+        <td aria-label="Year">1848</td>
       </tr>
       <tr>
-        <th data-label="Document title" scope="row">Emancipation Proclamation</th>
-        <td data-label="Description">An executive order granting freedom to slaves in designated southern states.</td>
-        <td data-label="Year">1863</td>
+        <th aria-label="Document title" scope="row">Emancipation Proclamation</th>
+        <td aria-label="Description">An executive order granting freedom to slaves in designated southern states.</td>
+        <td aria-label="Year">1863</td>
       </tr>
     </tbody>
   </table>
@@ -343,24 +343,24 @@ Each styled variation can be made to fit on smaller viewports (i.e. mobile phone
   </thead>
   <tbody>
     <tr>
-      <th data-label="Document title" scope="row">Declaration of Independence</th>
-      <td data-label="Description">Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
-      <td data-label="Year">1776</td>
+      <th aria-label="Document title" scope="row">Declaration of Independence</th>
+      <td aria-label="Description">Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+      <td aria-label="Year">1776</td>
     </tr>
     <tr>
-      <th data-label="Document title" scope="row">Bill of Rights</th>
-      <td data-label="Description">The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
-      <td data-label="Year">1791</td>
+      <th aria-label="Document title" scope="row">Bill of Rights</th>
+      <td aria-label="Description">The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+      <td aria-label="Year">1791</td>
     </tr>
     <tr>
-      <th data-label="Document title" scope="row">Declaration of Sentiments</th>
-      <td data-label="Description">A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
-      <td data-label="Year">1848</td>
+      <th aria-label="Document title" scope="row">Declaration of Sentiments</th>
+      <td aria-label="Description">A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+      <td aria-label="Year">1848</td>
     </tr>
     <tr>
-      <th data-label="Document title" scope="row">Emancipation Proclamation</th>
-      <td data-label="Description">An executive order granting freedom to slaves in designated southern states.</td>
-      <td data-label="Year">1863</td>
+      <th aria-label="Document title" scope="row">Emancipation Proclamation</th>
+      <td aria-label="Description">An executive order granting freedom to slaves in designated southern states.</td>
+      <td aria-label="Year">1863</td>
     </tr>
   </tbody>
 </table>
