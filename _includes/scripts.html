@@ -12,7 +12,7 @@
 
 <script>
   function HomeShow() {
-    $('body').toggleClass('ds-home');
+    $('.ds-home').css({"display":"initial"});
   }
   $('body').keydown(function(event) {
     if(event.which == 112) { // F1
@@ -20,4 +20,9 @@
       return false;
     }
   });
+
+  {% if jekyll.environment == "development" %}
+  HomeShow();
+  {% endif %}
+
 </script>
