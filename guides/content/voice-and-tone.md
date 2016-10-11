@@ -68,22 +68,22 @@ Let’s consider three examples that target three different reader groups. Obitu
   </thead>
   <tbody>
     <tr>
-      <td data-label="Type of writing">Obituary of a prominent community member.</td>
-      <td data-label="Intended readership">People who knew (or knew of) the deceased.</td>
-      <td data-label="Tone">Respectful, reverent, somber.</td>
-      <td data-label="Example">“Professor Pelham was respected by his colleagues and revered by students, many of whom would wake before dawn on registration day to ensure gaining entry to his classes. His wit, gentle humor, and compassion left their mark on everyone he talked to.”</td>
+      <td aria-label="Type of writing">Obituary of a prominent community member.</td>
+      <td aria-label="Intended readership">People who knew (or knew of) the deceased.</td>
+      <td aria-label="Tone">Respectful, reverent, somber.</td>
+      <td aria-label="Example">“Professor Pelham was respected by his colleagues and revered by students, many of whom would wake before dawn on registration day to ensure gaining entry to his classes. His wit, gentle humor, and compassion left their mark on everyone he talked to.”</td>
     </tr>
     <tr>
-      <td data-label="Type of writing">Blog post announcing open source documentation guide.</td>
-      <td data-label="Intended readership">Developers and other readers with a strong tech background.</td>
-      <td data-label="Tone">Direct, impartial.</td>
-      <td data-label="Example">“The <a href="https://18f.gsa.gov/2015/07/29/style-guide-for-open-source-documentation/">Open Source Style Guide</a> is a comprehensive handbook for writing clear, accessible, and user-friendly documentation so that your open source code repositories are accessible both internally and externally.</td>
+      <td aria-label="Type of writing">Blog post announcing open source documentation guide.</td>
+      <td aria-label="Intended readership">Developers and other readers with a strong tech background.</td>
+      <td aria-label="Tone">Direct, impartial.</td>
+      <td aria-label="Example">“The <a href="https://18f.gsa.gov/2015/07/29/style-guide-for-open-source-documentation/">Open Source Style Guide</a> is a comprehensive handbook for writing clear, accessible, and user-friendly documentation so that your open source code repositories are accessible both internally and externally.</td>
     </tr>
     <tr>
-      <td data-label="Type of writing">Marketing email from the boutique bridal department of a well-known clothing company.</td>
-      <td data-label="Intended readership">Newly engaged women (ages 28 through 33).</td>
-      <td data-label="Tone">Enthusiastic, earnest, bubbly.</td>
-      <td data-label="Example">“Say ‘I do!’ to 25% off. Now through July 3rd, take an additional 25% off all bridal wear and accessories. Celebrate your big day in style (and get a jumpstart on your honeymoon fund!).”</td>
+      <td aria-label="Type of writing">Marketing email from the boutique bridal department of a well-known clothing company.</td>
+      <td aria-label="Intended readership">Newly engaged women (ages 28 through 33).</td>
+      <td aria-label="Tone">Enthusiastic, earnest, bubbly.</td>
+      <td aria-label="Example">“Say ‘I do!’ to 25% off. Now through July 3rd, take an additional 25% off all bridal wear and accessories. Celebrate your big day in style (and get a jumpstart on your honeymoon fund!).”</td>
     </tr>
   </tbody>
 </table>
