@@ -15,7 +15,7 @@ The [FSA Design System site](http://usda-fsa.github.io/fsa-design-system) is bui
 You will need to have the following installed on your machine before following the commands below:
 
 1. Ruby v2.2.3+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/). Windows machines additionally require [DevKit](http://rubyinstaller.org/add-ons/devkit/).
-1. Node v0.1.0+, [Installation guides](https://nodejs.org/en/download/)
+1. Node v0.12.0+, [Installation guides](https://nodejs.org/en/download/)
 
 ### Building the documentation with Grunt
 
