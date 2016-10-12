@@ -3124,6 +3124,34 @@ main:active, main:focus {
   }
 }
 
+.ds-home-intro {
+  max-width: 770px;
+  max-width: 77rem;
+}
+
+@media (min-width: 54em) {
+  .ds-home-intro__lead {
+    margin-top: 0;
+  }
+}
+
+.ds-home-features__link {
+  text-decoration: none;
+}
+
+.ds-home-features__link:hover {
+  text-decoration: underline;
+}
+
+.ds-home-features__title {
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.ds-home-features__img {
+  display: block;
+}
+
 .ds-article h2[id] {
   border-bottom: 2px solid #90aac9;
 }
@@ -3436,6 +3464,11 @@ main:active, main:focus {
 
 .ds-subcat-list__link {
   display: block;
+  text-decoration: none;
+}
+
+.ds-subcat-list__link:hover {
+  text-decoration: underline;
 }
 
 .ds-subcat-list__link:visited {
