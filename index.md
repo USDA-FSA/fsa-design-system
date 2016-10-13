@@ -5,7 +5,7 @@ title: Home
 
 <div class="ds-article">
 
-  <p class="fsa-text--lead">Open Source design resource and guidelines defining the next generation of FSA digital products, setting a new bar for simplicity and consistency across USDA Farm Service Agency</p>
+  <p class="fsa-text--lead">Open Source design resource and guidelines defining the next generation of FSA digital products, setting a new bar for simplicity and consistency across the USDA Farm Service Agency</p>
 
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/3@m ds-home-features__item">
