@@ -24,6 +24,7 @@ main {
 
 .ds-footer {
 
+  @include font-size(2);
   background-color: $color-fsa-tertiary-100;
 
   &__bd {

@@ -3035,6 +3035,8 @@ main:active, main:focus {
 }
 
 .ds-footer {
+  font-size: 15px;
+  font-size: 1.5rem;
   background-color: #edecec;
 }
 
