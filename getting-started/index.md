@@ -109,7 +109,7 @@ Refer to [Using the Boilerplate](#using-the-boilerplate) for further steps.
 Reference this basic list for the general requirements for your typical HTML structure. Reviewing this list is perhaps best done while viewing its [HTML source](https://github.com/USDA-FSA/fsa-style/blob/master/src/boilerplate.html).
 
 1. HTML5 doctype: `<!DOCTYPE html>`.
-1. Wrap `<html>` start element in IE conditional comment.
+1. Wrap `<html>` start tag in IE conditional comment.
 1. Enable Responsive Web Design via `<meta name="viewport" content="width=device-width, initial-scale=1">`.
 1. Reference CSS file(s) via `<link>` tag.
 1. Reference IE conditional commented JS files to polyfill features below IE9.

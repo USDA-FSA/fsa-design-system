@@ -26,10 +26,10 @@
   &__link {
 
     display: block;
+    text-decoration: none;
 
     @include breakpoint(L) {
       color: $color-base;
-      text-decoration: none;
       border-bottom: 1px solid $color-fsa-tertiary-200;
       padding: $size-small 0 $size-small;
     }
