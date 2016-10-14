@@ -1,0 +1,40 @@
+.ds-home-intro {
+
+  max-width: $lead-max-width;
+
+  &__lead {
+
+    @include breakpoint(L) {
+      margin-top: 0;
+    }
+
+  }
+
+}
+
+.ds-home-features {
+
+  &__item {  }
+
+  &__link {
+
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 0;
+    color: inherit;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__blurb {  }
+
+}
