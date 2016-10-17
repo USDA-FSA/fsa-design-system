@@ -29,6 +29,7 @@ li {
   &--inline {
 
     @include reset-ul();
+    margin-bottom: 1em;
 
     > li {
 

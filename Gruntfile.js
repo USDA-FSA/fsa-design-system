@@ -45,12 +45,12 @@ module.exports = function (grunt) {
         dest: 'fonts'
       },
 
-      fsaStyleJavascriptComponents: {
-        expand: true,
-        src: '**',
-        cwd: 'node_modules/fsa-style/src/js/components',
-        dest: 'js/components'
-      },
+      // fsaStyleJavascriptComponents: {
+      //   expand: true,
+      //   src: '**',
+      //   cwd: 'node_modules/fsa-style/src/js/components',
+      //   dest: 'js/components'
+      // },
 
       fsaStyleJavascriptVendor: {
         expand: true,
@@ -135,7 +135,7 @@ module.exports = function (grunt) {
       main: {
         files: {
           'js/<%= pkg.name %>.js': [
-            'js/start.js'
+            'js/main.js'
           ],
         }
       }
