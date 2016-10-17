@@ -107,7 +107,7 @@ module.exports = function (grunt) {
           'js/*.js',
           'js/**/*.js',
         ],
-        tasks: ['browserify']
+        tasks: ['browserify', 'uglify']
       },
     },
 
@@ -127,6 +127,17 @@ module.exports = function (grunt) {
       },
       dist: {
         src: 'css/*.css'
+      }
+    },
+
+    // Uglify (minimize) JS
+    uglify: {
+      options: {
+        banner: '/*! FSA Design System - Docs | http://usda-fsa.github.io/fsa-design-system/ */\n\n'
+      },
+      build: {
+        src: 'js/<%= pkg.name %>.js',
+        dest: 'js/<%= pkg.name %>.min.js'
       }
     },
 
@@ -161,6 +172,7 @@ module.exports = function (grunt) {
     'sass',
     'postcss',
     'browserify',
+    'uglify',
     'shell:jekyllServe',
   ]);
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});
