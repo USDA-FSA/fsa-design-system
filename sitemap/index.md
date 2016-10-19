@@ -6,9 +6,9 @@ intro: ""
 
 <nav>
   <div class="ds-sitemap">
-    <div class="ds-sitemap__list ds-sitemap__list--root">
+    <ul class="ds-sitemap__list ds-sitemap__list--root">
       {% for link in site.data.navvy %}
-      <div class="ds-sitemap__list-item ds-sitemap__list-item--root">
+      <li class="ds-sitemap__list-item ds-sitemap__list-item--root">
         <a class="ds-sitemap__link ds-sitemap__link--root" href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>
         {% if link.subcategories %}
         <ul class="ds-sitemap__list">
@@ -31,8 +31,8 @@ intro: ""
           {% endfor %}
         </ul>
         {% endif %}
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
 </nav>

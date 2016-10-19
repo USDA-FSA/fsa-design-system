@@ -1,27 +1,72 @@
 .ds-sitemap {
 
+  $branch-color: $color-fsa-tertiary-300;
+  $branch-width: $size-medium;
+  $branch-height: .8em;
+  $branch-thickness: 1px;
+
   &__list {
 
+    @include reset-ul();
     margin-top: .5em;
 
-    &--root {
-      @include reset-ul();
+    &--root {}
+
+    &:not(.ds-sitemap__list--root) {
+      margin-left: $branch-width / 2;
     }
 
   }
 
   &__list-item {
-    &--root {
-      @include reset-li();
-      margin-bottom: .5em;
+
+    @include reset-li();
+    margin-bottom: .5em;
+
+    &--root {}
+
+    &:not(.ds-sitemap__list-item--root) {
+
+      position: relative;
+      padding-left: $branch-width * 1.5;
+
+      &::before {
+        content: '';
+        width: $branch-width;
+        border-left: $branch-thickness solid $branch-color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: -.6em;
+      }
+
+      &::after {
+        content: '';
+        width: $branch-width;
+        border-bottom: $branch-thickness solid $branch-color;
+        position: absolute;
+        left: 0;
+        top: $branch-height;
+      }
+
+      &:last-child {
+        &::before {
+          bottom: auto;
+          height: $branch-height;
+        }
+      }
+
     }
+
   }
 
   &__link {
 
     &--root {
-      font-weight: bold;
+      font-weight: $font-bold;
+      text-decoration: none;
     }
 
   }
+
 }
