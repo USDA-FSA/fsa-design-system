@@ -108,15 +108,15 @@
 }
 
 .fsa-checkbox:checked + label::before {
-  background-image: url('../img/correct8.png');
-  background-image: url('../img/correct8.svg');
+  background-image: url('#{$image-path}/correct8.png');
+  background-image: url('#{$image-path}/correct8.svg');
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .fsa-checkbox:indeterminate + label::before {
-  background-image: url('../img/dash.png');
-  background-image: url('../img/dash.svg');
+  background-image: url('#{$image-path}/dash.png');
+  background-image: url('#{$image-path}/dash.svg');
   background-position: 50%;
   background-repeat: no-repeat;
 }

@@ -45,12 +45,12 @@ module.exports = function (grunt) {
         dest: 'fonts'
       },
 
-      fsaStyleJavascriptComponents: {
-        expand: true,
-        src: '**',
-        cwd: 'node_modules/fsa-style/src/js/components',
-        dest: 'js/components'
-      },
+      // fsaStyleJavascriptComponents: {
+      //   expand: true,
+      //   src: '**',
+      //   cwd: 'node_modules/fsa-style/src/js/components',
+      //   dest: 'js/components'
+      // },
 
       fsaStyleJavascriptVendor: {
         expand: true,
@@ -107,7 +107,7 @@ module.exports = function (grunt) {
           'js/*.js',
           'js/**/*.js',
         ],
-        tasks: ['browserify']
+        tasks: ['browserify', 'uglify']
       },
     },
 
@@ -130,12 +130,23 @@ module.exports = function (grunt) {
       }
     },
 
+    // Uglify (minimize) JS
+    uglify: {
+      options: {
+        banner: '/*! FSA Design System - Docs | http://usda-fsa.github.io/fsa-design-system/ */\n\n'
+      },
+      build: {
+        src: 'js/<%= pkg.name %>.js',
+        dest: 'js/<%= pkg.name %>.min.js'
+      }
+    },
+
     // Browserify them JSs
     browserify: {
       main: {
         files: {
           'js/<%= pkg.name %>.js': [
-            'js/start.js'
+            'js/main.js'
           ],
         }
       }
@@ -161,6 +172,7 @@ module.exports = function (grunt) {
     'sass',
     'postcss',
     'browserify',
+    'uglify',
     'shell:jekyllServe',
   ]);
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});

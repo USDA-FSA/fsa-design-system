@@ -5,8 +5,8 @@
 
   @include fsa-shared-form-properties();
 
-  background-image: url('../img/arrow-down.png');
-  background-image: url('../img/arrow-down.svg');
+  background-image: url('#{$image-path}/arrow-down.png');
+  background-image: url('#{$image-path}/arrow-down.svg');
   background-position: right 1.3rem center;
   background-repeat: no-repeat;
   background-size: 1.3rem;
