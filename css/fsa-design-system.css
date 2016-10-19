@@ -3700,6 +3700,63 @@ main:active, main:focus {
   color: #0071bc;
 }
 
+.ds-sitemap__list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: .5em;
+}
+
+.ds-sitemap__list:not(.ds-sitemap__list--root) {
+  margin-left: 12px;
+  margin-left: 1.2rem;
+}
+
+.ds-sitemap__list-item {
+  display: list-item;
+  margin: 0;
+  padding: 0;
+  margin-bottom: .5em;
+}
+
+.ds-sitemap__list-item:not(.ds-sitemap__list-item--root) {
+  position: relative;
+  padding-left: 36px;
+  padding-left: 3.6rem;
+}
+
+.ds-sitemap__list-item:not(.ds-sitemap__list-item--root)::before {
+  content: '';
+  width: 24px;
+  width: 2.4rem;
+  border-left: 1px solid #928f8c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: -.6em;
+}
+
+.ds-sitemap__list-item:not(.ds-sitemap__list-item--root)::after {
+  content: '';
+  width: 24px;
+  width: 2.4rem;
+  border-bottom: 1px solid #928f8c;
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+}
+
+.ds-sitemap__list-item:not(.ds-sitemap__list-item--root):last-child::before {
+  bottom: auto;
+  height: 0.8em;
+}
+
+.ds-sitemap__link--root {
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .OUTLINE {
   outline: 1px solid red;
 }
