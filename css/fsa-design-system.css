@@ -873,15 +873,12 @@ hr {
   *word-spacing: -.43em;
   text-rendering: optimizespeed;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin-left: -24px;
   margin-left: -2.4rem;
 }
@@ -912,9 +909,8 @@ hr {
   text-rendering: auto;
   padding-left: 24px;
   padding-left: 2.4rem;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .fsa-grid--no-gutter .fsa-grid__auto {
@@ -1044,9 +1040,8 @@ hr {
     vertical-align: top;
     text-rendering: auto;
     padding-left: 2.4rem;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-grid--no-gutter .fsa-grid__auto\@s {
     padding-left: 0;
@@ -1161,9 +1156,8 @@ hr {
     vertical-align: top;
     text-rendering: auto;
     padding-left: 2.4rem;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-grid--no-gutter .fsa-grid__auto\@m {
     padding-left: 0;
@@ -1278,9 +1272,8 @@ hr {
     vertical-align: top;
     text-rendering: auto;
     padding-left: 2.4rem;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-grid--no-gutter .fsa-grid__auto\@l {
     padding-left: 0;
@@ -3477,15 +3470,12 @@ main:active, main:focus {
     *word-spacing: -.43em;
     text-rendering: optimizespeed;
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-align-content: flex-start;
-        -ms-flex-line-pack: start;
-            align-content: flex-start;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
     margin-left: -2.4rem;
   }
 }
@@ -3733,15 +3723,12 @@ main:active, main:focus {
   *word-spacing: -.43em;
   text-rendering: optimizespeed;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin-left: -24px;
   margin-left: -2.4rem;
 }
@@ -3780,15 +3767,12 @@ main:active, main:focus {
   *word-spacing: -.43em;
   text-rendering: optimizespeed;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin-left: -24px;
   margin-left: -2.4rem;
 }
