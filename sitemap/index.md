@@ -15,20 +15,10 @@ intro: ""
           {% for subpage in link.subcategories %}
             <li class="ds-sitemap__list-item">
               <a class="ds-sitemap__link" href="{{ site.baseurl }}{{ subpage.subhref }}">{{ subpage.subtitle }}</a>
-              {% if subpage.subhref == 'guides/accessibility' %}
+              {% if subpage.subhref contains 'guides/' %}
+                {% assign guide = subpage.subhref | replace:'guides/','guide_' %}
                 <ul class="ds-sitemap__list">
-                {% for article in site.data.guide_accessibility %}
-                  <li class="ds-sitemap__list-item">
-                    <a class="ds-sitemap__link" href="{{ article.href | prepend: site.baseurl }}">
-                      {{ article.title }}
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-              {% endif %}
-              {% if subpage.subhref == 'guides/content' %}
-                <ul class="ds-sitemap__list">
-                {% for article in site.data.guide_content %}
+                {% for article in site.data.[guide] %}
                   <li class="ds-sitemap__list-item">
                     <a class="ds-sitemap__link" href="{{ article.href | prepend: site.baseurl }}">
                       {{ article.title }}
