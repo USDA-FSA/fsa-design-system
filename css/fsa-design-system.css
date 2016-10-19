@@ -3700,6 +3700,10 @@ main:active, main:focus {
   color: #0071bc;
 }
 
+.ds-sitemap__list {
+  margin-top: .5em;
+}
+
 .ds-sitemap__list--root {
   display: block;
   list-style-type: none;

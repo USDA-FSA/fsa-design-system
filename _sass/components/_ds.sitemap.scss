@@ -1,9 +1,13 @@
 .ds-sitemap {
 
   &__list {
+
+    margin-top: .5em;
+
     &--root {
       @include reset-ul();
     }
+
   }
 
   &__list-item {
