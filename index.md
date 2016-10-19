@@ -7,27 +7,6 @@ title: Home
 
   <p class="fsa-text--lead">Open Source design resource and guidelines defining the next generation of FSA digital products, setting a new bar for simplicity and consistency across the USDA Farm Service Agency.</p>
 
-  {% if jekyll.environment == "development" %}
-    <div class="ds-preview">
-      <nav>
-        <ul>
-          {% for link in site.data.navvy %}
-            <li>
-              <a href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>
-              {% if link.subcategories %}
-                <ul>
-                  {% for subpage in link.subcategories %}
-                    <li><a  href="{{ site.baseurl }}{{ subpage.subhref }}">{{ subpage.subtitle }}</a></li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-  {% endif %}
-
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/3@m ds-home-features__item">
       <a class="ds-home-features__link" href="{{ site.baseurl }}visual-style/">

@@ -1,0 +1,34 @@
+.ds-sitemap {
+
+  margin: 2em 0;
+
+  @include breakpoint(M) {
+    background-color: $color-fsa-white;
+    border: 1px solid $color-fsa-tertiary-100;
+    border-width: 1px;
+    padding: $size-medium;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__list {
+    &--root {
+      @include reset-ul();
+    }
+  }
+
+  &__list-item {
+    &--root {
+      @include reset-li();
+      margin-bottom: .5em;
+    }
+  }
+
+  &__link {
+
+    &--root {
+      font-weight: bold;
+    }
+
+  }
+}

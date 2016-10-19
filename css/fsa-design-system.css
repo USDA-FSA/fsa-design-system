@@ -3700,6 +3700,39 @@ main:active, main:focus {
   color: #0071bc;
 }
 
+.ds-sitemap {
+  margin: 2em 0;
+}
+
+@media (min-width: 35em) {
+  .ds-sitemap {
+    background-color: #fff;
+    border: 1px solid #edecec;
+    border-width: 1px;
+    padding: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.ds-sitemap__list--root {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ds-sitemap__list-item--root {
+  display: list-item;
+  margin: 0;
+  padding: 0;
+  margin-bottom: .5em;
+}
+
+.ds-sitemap__link--root {
+  font-weight: bold;
+}
+
 .OUTLINE {
   outline: 1px solid red;
 }
