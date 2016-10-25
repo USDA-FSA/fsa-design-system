@@ -1,0 +1,61 @@
+
+.fsa-disclaimer {
+
+  background-color: $color-fsa-primary-900;
+  height: auto;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: 1.2rem;
+
+  @include media($small-screen) {
+    font-size: $h6-font-size;
+  }
+
+  &__bd {
+    max-width: ($site-max-width + 24px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: $color-fsa-white;
+    padding: 0 $size-default;
+  }
+
+  &__official {
+    display: inline-block;
+  }
+
+  &__flag-icon {
+    float: left;
+    margin-right: .7rem;
+    margin-top: 2px;
+    width: 2rem;
+  }
+
+  &__stage {
+
+    @include breakpoint(M) {
+      display: block;
+    }
+
+    &--prototype {
+      @include font-size(0);
+      background-color: $color-gold-light;
+      color: black;
+      padding: 0 $size-base;
+      position: relative;
+      top: -2px;
+    }
+
+    // This hides the stage note (i.e. alpha, beta, etc) of the disclaimer for
+    // anything smaller than large screen sizes
+    @include margin(2px null);
+    display: none;
+    float: right;
+
+    @include media($large-screen) {
+      display: block;
+    }
+
+  }
+
+}

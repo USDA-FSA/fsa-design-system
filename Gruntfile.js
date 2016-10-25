@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         expand: true,
         src: '**',
         cwd: 'node_modules/fsa-style/src/stylesheets',
-        dest: '_sass'
+        dest: '_sass/lib/fsa-style'
       },
 
       fsaStyleImg: {

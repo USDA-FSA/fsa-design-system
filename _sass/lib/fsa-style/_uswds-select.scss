@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// USWDS -------------- ////////////////////////////////////////////////////////
+
+// This is effectively a pared down version of USWDS'  _all.scss, located at
+// https://github.com/18F/web-design-standards/blob/master/all.scss
+
+// Vendor -------------- //
+
+@import 'lib/uswds/lib/bourbon';
+@import 'lib/uswds/lib/neat';
+@import 'lib/uswds/lib/normalize';
+
+// Core -------------- //
+
+@import 'lib/uswds/core/defaults';
+@import 'lib/uswds/core/fonts';
+@import 'lib/uswds/core/base';
+@import 'lib/uswds/core/grid-settings';
+// @import 'lib/uswds/core/grid';
+@import 'lib/uswds/core/utilities';
+
+// Elements -------------- //
+// Styles basic HTML elements
+
+// @import 'lib/uswds/elements/buttons';
+// @import 'lib/uswds/elements/figure';
+// @import 'lib/uswds/elements/inputs';
+// @import 'lib/uswds/elements/labels';
+// @import 'lib/uswds/elements/list';
+// @import 'lib/uswds/elements/table';
+@import 'lib/uswds/elements/typography';
+
+// Components -------------- //
+
+// @import 'components/accordions';
+// @import 'components/alerts';
+// @import 'components/banner';
+// @import 'components/footer';
+// @import 'components/forms';
+// @import 'components/graphic-list';
+// @import 'components/hero';
+// @import 'components/layout';
+// @import 'components/media-block';
+// @import 'components/section';
+// @import 'components/sidenav';
+// @import 'components/header';
+// @import 'components/search';
+// @import 'components/skipnav';
