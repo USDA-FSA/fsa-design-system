@@ -1,0 +1,87 @@
+////////////////////////////////////////////////////////////////////////
+// Lists
+
+ul,
+ol {
+
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1.4em; // Approximately 24px left padding at default font size. Must be in **em** units to avoid 2-digit <ol> rendered numbers receding too far on left for bigger text. For example, here's what happens when using px or rem unit: https://cloud.githubusercontent.com/assets/1165933/18491589/b149cec6-79cc-11e6-9280-936838977b64.png
+
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+.fsa-list {
+
+  &--unstyled {
+
+    @include reset-ul();
+
+    > li {
+      @include reset-li();
+    }
+
+  }
+
+  &--inline {
+
+    @include reset-ul();
+    margin-bottom: 1em;
+
+    > li {
+
+      @include reset-li();
+      display: inline-block;
+      margin-right: $size-small;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
+}
+
+.usa-unstyled-list {
+  @extend .fsa-list--unstyled;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0 0 1em;
+}
+
+dt {
+
+  font-weight: $font-bold;
+  margin-bottom: 0;
+
+  dd + & {
+    margin-top: .75em;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  + ul,
+  + ol {
+    margin-top: 0;
+  }
+}
