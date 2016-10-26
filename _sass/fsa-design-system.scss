@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-@import "all"; //fsa-style
+@import "lib/fsa-style/fsa-style";
 // -----------------------------------------------------------------------------
 
 @import "core/ds.layout";
@@ -16,7 +16,7 @@
 @import "components/ds.jump";
 @import "components/ds.sitemap";
 
-@import "ds.shame";
+@import "other/ds.shame";
 
 @import "jekyll/syntax-highlighting";
 

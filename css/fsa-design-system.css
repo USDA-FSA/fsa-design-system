@@ -879,8 +879,8 @@ hr {
       flex-flow: row wrap;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  margin-left: -24px;
-  margin-left: -2.4rem;
+  margin-left: -25.5px;
+  margin-left: -2.55rem;
 }
 
 .fsa-grid--no-gutter {
@@ -907,8 +907,8 @@ hr {
   word-spacing: normal;
   vertical-align: top;
   text-rendering: auto;
-  padding-left: 24px;
-  padding-left: 2.4rem;
+  padding-left: 25.5px;
+  padding-left: 2.55rem;
   -ms-flex: 1;
       flex: 1;
 }
@@ -945,8 +945,8 @@ hr {
   word-spacing: normal;
   vertical-align: top;
   text-rendering: auto;
-  padding-left: 24px;
-  padding-left: 2.4rem;
+  padding-left: 25.5px;
+  padding-left: 2.55rem;
 }
 
 .fsa-grid--no-gutter .fsa-grid__1, .fsa-grid--no-gutter
@@ -1039,7 +1039,7 @@ hr {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
     -ms-flex: 1;
         flex: 1;
   }
@@ -1074,7 +1074,7 @@ hr {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
   }
   .fsa-grid--no-gutter .fsa-grid__1\@s, .fsa-grid--no-gutter
   .fsa-grid__1\/1\@s, .fsa-grid--no-gutter
@@ -1155,7 +1155,7 @@ hr {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
     -ms-flex: 1;
         flex: 1;
   }
@@ -1190,7 +1190,7 @@ hr {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
   }
   .fsa-grid--no-gutter .fsa-grid__1\@m, .fsa-grid--no-gutter
   .fsa-grid__1\/1\@m, .fsa-grid--no-gutter
@@ -1271,7 +1271,7 @@ hr {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
     -ms-flex: 1;
         flex: 1;
   }
@@ -1306,7 +1306,7 @@ hr {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
   }
   .fsa-grid--no-gutter .fsa-grid__1\@l, .fsa-grid--no-gutter
   .fsa-grid__1\/1\@l, .fsa-grid--no-gutter
@@ -3146,7 +3146,7 @@ main:active, main:focus {
   .ds-l-page__body {
     float: left;
     width: 80%;
-    padding-right: 2.4rem;
+    padding-right: 2.55rem;
   }
 }
 
@@ -3167,7 +3167,7 @@ main:active, main:focus {
   .ds-l-guide__body {
     float: right;
     width: 80%;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
   }
 }
 
@@ -3476,7 +3476,7 @@ main:active, main:focus {
         flex-flow: row wrap;
     -ms-flex-line-pack: start;
         align-content: flex-start;
-    margin-left: -2.4rem;
+    margin-left: -2.55rem;
   }
 }
 
@@ -3496,7 +3496,7 @@ main:active, main:focus {
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding-left: 2.4rem;
+    padding-left: 2.55rem;
     width: 50%;
   }
   .fsa-grid--no-gutter .ds-subcat-list__list-item {
@@ -3786,8 +3786,8 @@ main:active, main:focus {
       flex-flow: row wrap;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  margin-left: -24px;
-  margin-left: -2.4rem;
+  margin-left: -25.5px;
+  margin-left: -2.55rem;
 }
 
 .foo__item {
@@ -3798,8 +3798,8 @@ main:active, main:focus {
   word-spacing: normal;
   vertical-align: top;
   text-rendering: auto;
-  padding-left: 24px;
-  padding-left: 2.4rem;
+  padding-left: 25.5px;
+  padding-left: 2.55rem;
 }
 
 .fsa-grid--no-gutter .foo__item {
@@ -3830,8 +3830,8 @@ main:active, main:focus {
       flex-flow: row wrap;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  margin-left: -24px;
-  margin-left: -2.4rem;
+  margin-left: -25.5px;
+  margin-left: -2.55rem;
 }
 
 .lorem__item {
@@ -3842,8 +3842,8 @@ main:active, main:focus {
   word-spacing: normal;
   vertical-align: top;
   text-rendering: auto;
-  padding-left: 24px;
-  padding-left: 2.4rem;
+  padding-left: 25.5px;
+  padding-left: 2.55rem;
 }
 
 .fsa-grid--no-gutter .lorem__item {
