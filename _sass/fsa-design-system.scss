@@ -17,8 +17,7 @@
 @import "components/ds.sitemap";
 
 @import "other/ds.shame";
-
-@import "jekyll/syntax-highlighting";
+@import "other/syntax-highlighting";
 
 html:hover body::before {
   display: none !important; // hide breakpoint bar
