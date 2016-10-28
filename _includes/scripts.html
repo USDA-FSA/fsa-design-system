@@ -11,9 +11,16 @@
 {% endif %}
 
 <script>
+
+  // function getParameterByName(name) {
+  //   var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+  //   return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+  // }
+
   function HomeShow() {
-    $('.ds-home').css({"display":"initial"});
+    $('.ds-home').css({"display":"block"});
   }
+
   $('body').keydown(function(event) {
     if(event.which == 112) { // F1
       HomeShow();
@@ -21,8 +28,14 @@
     }
   });
 
+  if (window.location.search == '?preview') {
+    HomeShow();
+  }
+
   {% if jekyll.environment == "development" %}
+
   HomeShow();
+
   {% endif %}
 
 </script>
