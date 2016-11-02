@@ -141,10 +141,10 @@ If you customize a checkbox element, ensure they continue to meet the the access
 * Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which checkbox.
 * Make sure selections are adequately spaced for touch screens.
 
-## Related Resources
+<!-- ## Related Resources
 
 * [Lorem](lorem)
 * [Ipsum](ipsum)
 * [Dolor](dolor)
 * [Sit](sit)
-* [Amet](amet)
+* [Amet](amet) -->

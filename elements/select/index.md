@@ -234,10 +234,10 @@ If you customize the select element, ensure they continue to meet the the access
 * When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
 * Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times, particularly if interacting with a form solely with keyboard. Auto-submission is also less accessible.
 
-## Related Resources
+<!-- ## Related Resources
 
 * [Lorem](lorem)
 * [Ipsum](ipsum)
 * [Dolor](dolor)
 * [Sit](sit)
-* [Amet](amet)
+* [Amet](amet) -->
