@@ -1,0 +1,11 @@
+{% if site.stylesheets %}
+  {% for sheet in site.stylesheets %}
+  <link rel="stylesheet" href="{{ sheet | prepend: site.baseurl }}"{% if sheet.media %} media="{{ sheet.media }}"{% endif %}>
+  {% endfor %}
+{% endif %}
+  <link rel="stylesheet" href="http://usda-fsa.github.io/fsa-style/css/fsa-style-docs.min.css">
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="{{ site.baseurl }}css/{{ stylesheet }}">
+  {% endfor %}
+{% endif %}

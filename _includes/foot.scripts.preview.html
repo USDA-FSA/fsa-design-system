@@ -1,0 +1,22 @@
+  <script>
+
+    function HomeShow() {
+      $('.ds-home').css({"display":"block"});
+    }
+
+    $('body').keydown(function(event) {
+      if(event.which == 112) { // F1
+        HomeShow();
+        return false;
+      }
+    });
+
+    if (window.location.search == '?preview') {
+      HomeShow();
+    }
+
+    {% if jekyll.environment == "development" %}
+    HomeShow();
+    {% endif %}
+
+  </script>
