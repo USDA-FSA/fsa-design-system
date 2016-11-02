@@ -1,6 +1,8 @@
+## Welcome!
+
 We're so glad you're thinking about contributing to an FSA open source project! If you're unsure about anything, just ask — submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions, whether they be from FSA collaborators or citizens alike.
 
-One of our goals is to ensure a welcoming environment for all contributors to our projects. Our staff follows the [FSA Employee Responsibilities and Conduct](http://www.fsa.usda.gov/FSA/hrdapp?area=home&subject=labr&topic=erc), and all contributors should do the same.
+One of our goals is to ensure a welcoming environment for all contributors to our projects. Our staff follows the [USDA Employee Responsibilities and Conduct](https://www.ocio.usda.gov/document/departmental-regulation-4070-735-001), and all contributors should do the same.
 
 <!-- We encourage you to read this project's CONTRIBUTING policy (you are here), its [LICENSE](../LICENSE.md), [README](../README.md) and its [Workflow](https://github.com/18F/web-design-standards/wiki/Workflow) process.
 
