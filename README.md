@@ -50,4 +50,4 @@ Go to http://localhost:4000/fsa-design-system/ in your browser — you should be
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/USDA-FSA/fsa-design-system/blob/gh-pages/CONTRIBUTING.md). These guidelines are directions for opening issues and submitting pull requests, and they also detail the coding and design standards we follow.
+Please read our [contributing guidelines](https://github.com/USDA-FSA/fsa-design-system/blob/gh-pages/CONTRIBUTING.md) to learn how to open issues and submit pull requests as well as the coding and design standards we follow.

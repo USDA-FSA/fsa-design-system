@@ -7,22 +7,11 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} - FSA Design System</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "css/fsa-design-system.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="http://usda-fsa.github.io/fsa-style/css/fsa-style-docs.min.css">
+  {% include head.stylesheets.html %}
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  {% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}css/{{ stylesheet }}">
-    {% endfor %}
-  {% endif %}
-
-  <!--[if lt IE 9]>
-    <script src="{{ site.baseurl }}js/vendor/html5shiv.js"></script>
-    <script src="{{ site.baseurl }}js/vendor/respond.js"></script>
-    <script src="{{ site.baseurl }}js/vendor/selectivizr-min.js"></script>
-    <script src="{{ site.baseurl }}js/vendor/rem-min.js"></script>
-  <![endif]-->
+  {% include head.scripts.html %}
 
 </head>

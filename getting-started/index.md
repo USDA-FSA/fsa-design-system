@@ -115,7 +115,7 @@ Reference this basic list for the general requirements for your typical HTML str
 1. Reference IE conditional commented JS files to polyfill features below IE9.
 1. Include IE conditional commented Browser Upgrade message.
 1. Include "skipnav" anchor link, with `href` attribute pointing to `<main>` element.
-1. Wrap primary contents with `<main id="main-content">...</main>`.
+1. Wrap primary contents with `<main id="main-content" tabindex="-1">...</main>`.
 1. Build your thing!
 
 <!-- ## Design Resources
