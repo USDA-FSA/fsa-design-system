@@ -41,7 +41,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <p>
     <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
     <label for="lorem-ipsum-9">Label</label>
-  </p>  
+  </p>
 </div>
 
 ### Checked
@@ -56,7 +56,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <p>
     <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
     <label for="lorem-ipsum-6">Label</label>
-  </p>  
+  </p>
 </div>
 
 ### Disabled
@@ -71,7 +71,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <p>
     <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
     <label for="lorem-ipsum-8">Label</label>
-  </p>  
+  </p>
 </div>
 
 ### Disabled and Checked
@@ -86,7 +86,7 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <p>
     <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
     <label for="lorem-ipsum-3">Label</label>
-  </p>  
+  </p>
 </div>
 
 ## Usage
@@ -119,10 +119,10 @@ If you customize a radio button, ensure they continue to meet the the accessibil
 * Make sure selections are adequately spaced for touch screens.
 * Use caution if you decide to set a default value as they cannot be unchecked. Setting a default value can discourage users from making conscious decisions, seem pushy, or alienate users who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.
 
-## Related Resources
+<!-- ## Related Resources
 
 * [Lorem](lorem)
 * [Ipsum](ipsum)
 * [Dolor](dolor)
 * [Sit](sit)
-* [Amet](amet)
+* [Amet](amet) -->

@@ -114,10 +114,10 @@ If you customize the textarea, ensure they continue to meet the the accessibilit
 * Only show error validation messages or stylings after a user has interacted with a particular field.
 * Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
 
-## Related Resources
+<!-- ## Related Resources
 
 * [Lorem](lorem)
 * [Ipsum](ipsum)
 * [Dolor](dolor)
 * [Sit](sit)
-* [Amet](amet)
+* [Amet](amet) -->
