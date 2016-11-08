@@ -31,7 +31,7 @@
     @include breakpoint(L) {
       color: $color-base;
       border-bottom: 1px solid $color-fsa-tertiary-200;
-      padding: $size-small 0 $size-small;
+      padding: $size-small 0;
     }
 
     &:hover,
