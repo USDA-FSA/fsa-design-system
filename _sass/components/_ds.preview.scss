@@ -4,7 +4,7 @@
 
   @include breakpoint(S) {
     border: 1px solid $color-fsa-tertiary-100;
-    border-width: 1px 0 1px;
+    border-width: 1px 0;
     padding: $size-default;
     background-color: $color-fsa-white;
     margin-left: (-$size-default);
@@ -22,7 +22,7 @@
     margin-top: -32px; // yeah, magic number, wheee!
   }
 
-  & + .highlighter-rouge {
+  + .highlighter-rouge {
     margin-top: -34px; // even more randomly magical
   }
 

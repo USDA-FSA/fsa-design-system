@@ -1,24 +1,25 @@
 // -----------------------------------------------------------------------------
-@import "lib/fsa-style/fsa-style";
+@import 'lib/fsa-style/fsa-style';
 // -----------------------------------------------------------------------------
 
-@import "core/ds.layout";
-@import "core/ds.layout.home";
-@import "elements/ds.typography";
+@import 'core/ds.layout';
+@import 'core/ds.layout.home';
+@import 'elements/ds.typography';
 
-@import "components/ds.preview";
-@import "components/ds.disclaimer";
-@import "components/ds.header";
-@import "components/ds.breadcrumb";
-@import "components/ds.subcat-list";
-@import "components/ds.nav";
-@import "components/ds.nav-local";
-@import "components/ds.jump";
-@import "components/ds.sitemap";
+@import 'components/ds.preview';
+@import 'components/ds.disclaimer';
+@import 'components/ds.header';
+@import 'components/ds.breadcrumb';
+@import 'components/ds.subcat-list';
+@import 'components/ds.nav';
+@import 'components/ds.nav-local';
+@import 'components/ds.jump';
+@import 'components/ds.sitemap';
 
-@import "other/ds.shame";
-@import "other/syntax-highlighting";
+@import 'other/ds.shame';
+@import 'other/syntax-highlighting';
 
 html:hover body::before {
+  // scss-lint:disable ImportantRule
   display: none !important; // hide breakpoint bar
 }

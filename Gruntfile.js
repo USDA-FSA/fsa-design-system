@@ -61,6 +61,21 @@ module.exports = function (grunt) {
 
     },
 
+    // Lint scss files
+    scsslint: {
+      allFiles: [
+        '_sass/*.scss',
+        '_sass/*/*.scss',
+      ],
+      options: {
+        bundleExec: false,
+        colorizeOutput: true,
+        config: '.scss-lint.yml',
+        force: true,
+        reporterOutput: null
+      },
+    },
+
     // Sass all the style things
     sass: {
       default: {
@@ -92,7 +107,7 @@ module.exports = function (grunt) {
           '_sass/*.scss',
           '_sass/**/*.scss'
         ],
-        tasks: ['sass','postcss'],
+        tasks: ['sass', 'scsslint', 'postcss'],
         options: { nospawn: true }
       },
       // css: {
@@ -175,6 +190,7 @@ module.exports = function (grunt) {
     'uglify',
     'shell:jekyllServe',
   ]);
+  grunt.registerTask('lint', 'scsslint');
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});
 
 };

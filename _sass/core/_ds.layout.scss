@@ -53,16 +53,18 @@ main {
   }
 
   > blockquote {
+
     @include breakpoint(L) {
       @include font-size(4);
       margin-bottom: 1.5em;
     }
-  }
 
-  > blockquote + blockquote {
-    @include breakpoint(L) {
-      margin-top: -1em;
+    + blockquote {
+      @include breakpoint(L) {
+        margin-top: -1em;
+      }
     }
+
   }
 
 }

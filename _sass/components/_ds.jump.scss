@@ -1,11 +1,11 @@
 
-.ds-jump-wrapper {
-}
+// .ds-jump-wrapper {}
 
 .ds-jump {
 
   margin-top: 1.5em;
 
+  // scss-lint:disable SelectorFormat
   .ds-jump--stuck & {
 
     @include breakpoint(L) {
