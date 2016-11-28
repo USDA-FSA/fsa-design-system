@@ -15,7 +15,7 @@ jump_menu: true
     <h4 class="docs__sub_style">Primary</h4>
     <div class="docs__attr-list__swatch color-fsa-primary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>#21602e</code></li>
+      <li class="docs__attr-list__attr-item"><code>#236430</code></li>
       <li class="docs__attr-list__attr-item"><code>$color-fsa-primary</code></li>
     </ul>
   </li>
@@ -77,7 +77,7 @@ jump_menu: true
     <h4 class="docs__sub_style">Aqua</h4>
     <div class="docs__attr-list__swatch color-fsa-aqua"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>#02bfe7</code></li>
+      <li class="docs__attr-list__attr-item"><code>#00a6d2</code></li>
       <li class="docs__attr-list__attr-item"><code>$color-fsa-aqua</code></li>
     </ul>
   </li>

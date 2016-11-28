@@ -10,7 +10,7 @@
     @include reset-ul();
     margin-top: .5em;
 
-    &--root {}
+    // &--root {}
 
     &:not(.ds-sitemap__list--root) {
       margin-left: $branch-width / 2;
@@ -23,7 +23,7 @@
     @include reset-li();
     margin-bottom: .5em;
 
-    &--root {}
+    // &--root {}
 
     &:not(.ds-sitemap__list-item--root) {
 
