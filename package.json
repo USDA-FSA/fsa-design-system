@@ -1,7 +1,7 @@
 {
   "name": "fsa-design-system",
   "description": "Open Source UI components and visual style guide for USDA-FSA web sites and apps",
-  "version": "1.2.4",
+  "version": "1.3.0",
   "license": "SEE LICENSE in LICENSE.md",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "fsa-style": "^2.0.0",
+    "fsa-style": "^2.0.2",
     "jquery": "^2.2.2"
   },
   "author": "USDA FSA Enterprise Architecture",
