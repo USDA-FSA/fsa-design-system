@@ -16,8 +16,8 @@ title: Home
       <p class="ds-home-features__blurb">508-compliant colors and typography designed to establish a cohesive experience.</p>
     </div>
     <div class="fsa-grid__1 fsa-grid__1/3@m ds-home-features__item">
-      <a class="ds-home-features__link" href="{{ site.baseurl }}elements/">
-        <h3 class="ds-home-features__title">Elements</h3>
+      <a class="ds-home-features__link" href="{{ site.baseurl }}components/">
+        <h3 class="ds-home-features__title">Components</h3>
         <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_ui_components_2x.png" alt="">
       </a>
       <p class="ds-home-features__blurb">Common web interactions with reusable and downloadable HTML/CSS.</p>

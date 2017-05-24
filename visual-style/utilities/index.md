@@ -2,7 +2,7 @@
 layout: page
 parent: "Visual Style"
 title: "CSS Utilities"
-intro: "CSS Utilities are single-purpose styles that can be appended to elements."
+intro: "CSS Utilities are single-purpose styles that can be appended to elements and components."
 jump_menu: true
 ---
 
