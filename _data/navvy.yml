@@ -44,49 +44,41 @@
       subhref: "visual-style/utilities"
       img: "img/subcategories/utilities.png"
 
-- title: "Elements"
-  href: "elements"
+- title: "Components"
+  href: "components"
   subcategories:
 
     - subtitle: "Text Links"
-      subhref: "elements/links"
+      subhref: "components/links"
       img: "img/subcategories/links.png"
 
     - subtitle: "Buttons"
-      subhref: "elements/buttons"
+      subhref: "components/buttons"
       img: "img/subcategories/buttons.png"
 
     - subtitle: "Text Input"
-      subhref: "elements/text-input"
+      subhref: "components/text-input"
       img: "img/subcategories/text-input.png"
 
     - subtitle: "Textarea"
-      subhref: "elements/textarea"
+      subhref: "components/textarea"
       img: "img/subcategories/textarea.png"
 
     - subtitle: "Checkbox"
-      subhref: "elements/checkbox"
+      subhref: "components/checkbox"
       img: "img/subcategories/checkbox.png"
 
     - subtitle: "Radio"
-      subhref: "elements/radio"
+      subhref: "components/radio"
       img: "img/subcategories/radio.png"
 
     - subtitle: "Select"
-      subhref: "elements/select"
+      subhref: "components/select"
       img: "img/subcategories/select.png"
 
     - subtitle: "Tables"
-      subhref: "elements/tables"
+      subhref: "components/tables"
       img: "img/subcategories/tables.png"
-
-# - title: "Components"
-#   href: "components"
-#   subcategories:
-#
-#     - subtitle: "Lorem"
-#       subhref: "components/lorem"
-#       img: "img/subcategories/asdfasdfasdfasdf.png"
 
 - title: "Guides"
   href: "guides"
