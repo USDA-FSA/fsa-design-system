@@ -95,3 +95,7 @@
     - subtitle: "Content"
       subhref: "guides/content"
       img: "img/subcategories/content.png"
+      
+    - subtitle: "Applications"
+      subhref: "guides/applications"
+      img: "img/subcategories/applications.png"
