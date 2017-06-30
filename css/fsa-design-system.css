@@ -474,8 +474,7 @@ body {
 }
 
 .lt-ie9 * {
-  -webkit-filter: none !important;
-          filter: none !important;
+  filter: none !important;
 }
 
 [hidden] {
