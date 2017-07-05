@@ -3,8 +3,8 @@
   alt_title: "Applications"
   href: "guides/applications"
 
-- title: "Buttons"
-  href: "guides/applications/buttons"
+- title: "Header"
+  href: "guides/applications/header"
 
 - title: "Date Format"
   href: "guides/applications/date-format"
