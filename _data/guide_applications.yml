@@ -3,15 +3,36 @@
   alt_title: "Applications"
   href: "guides/applications"
 
+- title: "Color"
+  href: "guides/applications/color"
+  
+- title: "Fonts"
+  href: "guides/applications/fonts"
+
 - title: "Header"
   href: "guides/applications/header"
 
-- title: "Date Format"
-  href: "guides/applications/date-format"
+- title: "Navigation"
+  href: "guides/applications/navigation"
 
+- title: "Footer"
+  href: "guides/applications/footer"
+
+- title: "Buttons"
+  href: "guides/applications/buttons"
+  
 - title: "Forms"
   href: "guides/applications/forms"
-
-- title: "Phone Numbers"
-  href: "guides/applications/phone-numbers"
-
+  
+- title: "Form Validation"
+  href: "guides/applications/form-validation"
+  
+- title: "Tables"
+  href: "guides/applications/tables"
+  
+- title: "Date Format"
+  href: "guides/applications/date-format"
+  
+- title: "Phone Number"
+  href: "guides/applications/phone-number"
+  
