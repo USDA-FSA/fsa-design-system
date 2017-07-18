@@ -40,6 +40,24 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
 </div>
 
+### Alt
+
+```html
+<button class="fsa-btn fsa-btn--alt" type="button">Label</button>
+```
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
+</div>
+
+### Flat
+
+```html
+<button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+```
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+</div>
+
 ### Tertiary
 
 ```html
@@ -49,14 +67,6 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
   <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
 </div>
 
-### Alt
-
-```html
-<button class="fsa-btn fsa-btn--alt" type="button">Label</button>
-```
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
-</div>
 
 ## States
 
