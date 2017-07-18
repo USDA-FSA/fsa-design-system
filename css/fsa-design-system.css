@@ -4229,7 +4229,7 @@ main:active, main:focus {
 .ds-article > p {
   max-width: 530px;
   max-width: 53rem;
-  max-width: 68ch;
+  max-width: 80ch;
 }
 
 @media (min-width: 54em) {
