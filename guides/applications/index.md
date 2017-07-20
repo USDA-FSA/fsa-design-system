@@ -15,7 +15,7 @@ When a User has completed their tasks and is ready to log out of the application
 
 A Screen ID shall be displayed on all pages of the application, below all page content and just above the application footer. 
 
-<img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="Image of example FSA application with Screen ID above footer">
+[<img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="Image of example FSA application with Screen ID above footer">]({{ site.baseurl }}img/subcategories/applications/screen-id.jpg)
 
 ## Last Modified Date
 

@@ -20,6 +20,4 @@ Based on new standards in web design, all FSA applications should include a "Meg
 
 Below is a sample screenshot of and FSA application with a Mega Menu navigation system.
 
-<img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg">
-
 [<img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg" alt="Image of example FSA application header">]({{ site.baseurl }}img/subcategories/applications/mega-menu.jpg)
