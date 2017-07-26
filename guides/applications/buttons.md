@@ -87,11 +87,11 @@ ___
 
 <a href="#" class="dut-button-demo__cancel-link">Cancel</a> vs. <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
 
-When used, the Cancel button can be used as either a text link or a button with Alt style. The Cancel text link is preferred.
+In general, all FSA applications should use the link style for a Cancel button. On occasion, a Canel button could utilize the Alt button style, such as in an application that uses a modal or popup window and the User needs to Cancel the action being performed within the modal or popup. 
 
 ___
 
-<button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Save &amp; Continue</button>
+<button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
 
 A button SHALL use the Tertiary style when the action taken has descructive capabilities.
 
