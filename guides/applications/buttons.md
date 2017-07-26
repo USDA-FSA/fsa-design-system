@@ -10,8 +10,6 @@ intro: "Buttons Introduction text"
 
 The below buttons are the various options available for use in the FSA Design System.
 
-
-
 <div class="dut-button-demo__section">
 
 <button class="fsa-btn fsa-btn--primary" type="button">Primary</button> 
