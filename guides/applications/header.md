@@ -6,7 +6,7 @@ intro: "FSA Applications should all have a consistant header and shall utilize t
 
 ---
 
-Below is a sample screenshot of and FSA application header that represents a good example of the below guidelines.
+Below is a sample screenshot of an FSA application header that represents a good example of the below guidelines.
 
 <a href="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="Image of example FSA application header"></a>
 
