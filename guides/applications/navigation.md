@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Navigation"
-intro: "Introduction text for navigation."
+intro: "FSA Applications should utilize a top navigation system that complies with the below specifications."
 
 ---
 
@@ -20,4 +20,8 @@ Based on new standards in web design, all FSA applications should include a "Meg
 
 Below is a sample screenshot of and FSA application with a Mega Menu navigation system.
 
-[<img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg" alt="Image of example FSA application header">]({{ site.baseurl }}img/subcategories/applications/mega-menu.jpg)
+<a href="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg" alt="Image of example FSA application header"></a>
+
+## Related Resources
+
+ * [Link to Top Navigation component in Design System]

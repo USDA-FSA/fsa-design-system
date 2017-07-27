@@ -2,9 +2,14 @@
 layout: guide
 parent: "Applications"
 title: "Header"
-intro: "Header Introduction text"
+intro: "FSA Applications should all have a consistant header and shall utilize the styles defined in the Design System without editing the CSS framework."
 
 ---
+
+Below is a sample screenshot of and FSA application header that represents a good example of the below guidelines.
+
+<a href="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="Image of example FSA application header"></a>
+
 
 ## Department and Agency
 
@@ -30,10 +35,8 @@ When a User is logged in to an FSA application their username will be displayed 
   * Edit Profile Link
   * Application Sign Out Button
 
-[<img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls">]({{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg)
+<a href="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls"></a>
 
-## Header Screenshot
+## Related Resources
 
-Below is a sample screenshot of and FSA application header that represents a good example of the above guidelines.
-
-[<img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="Image of example FSA application header">]({{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg)
+ * [Link to Header component in Design System]

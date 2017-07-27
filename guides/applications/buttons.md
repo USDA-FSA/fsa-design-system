@@ -354,3 +354,7 @@ ___
 
     </tbody>
 </table>
+
+## Related Resources
+
+ * [Button Components]({{ site.baseurl }}/components/buttons/)
