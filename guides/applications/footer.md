@@ -103,7 +103,4 @@ The FSA footer has 4 columns that progressively expand from Application specific
 </table>
 
 
-## Related Resources
-
- * [Link to Footer component in Design System]
  

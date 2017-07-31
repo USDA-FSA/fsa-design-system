@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Buttons"
-intro: "Buttons Introduction text"
+intro: "FSA applications should have the same look and feel, along with having a consistent naming convention for the most used buttons. Below you will find guidelines on how to use specific style related to various actions and features where a button is used."
 
 ---
 
@@ -24,35 +24,35 @@ The below buttons are the various options available for use in the FSA Design Sy
 
 **SECONDARY:** A secondary style should be applied to buttons that are not top priority, but the action is relevant for features and functionality that keep a User on the same screen. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
 
-**TERTIARY:** A tertiary style should be applied ONLY to button that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style. 
+**TERTIARY:** A tertiary style should be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style. 
 
 **ALT:** The alt style should be applied to buttons available to the User, but the actions are viewed as contrary to progress. An example of this would be a "Reset" button that starts a process on the screen over, but does not delete data that is stored in a database.
 
-**DISABLED:** The disabled style should be applied to ANY buttons that a User should not be able to click, but should remain present and visible as an action that can be performed once other criteria is met.
+**DISABLED:** The disabled style should be applied to any buttons that a User should not be able to click, but should remain present and visible as an action that can be performed once other criteria is met.
 
 **UNDERLINED:** In most cases, a button labeled as "Cancel" should be shown with a style that usings an underline. By giving this button very low priority and prominance on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
 
 ## General Guidelines:
 
- * All buttons SHOULD use an action word to start the label. Eg. "View Details" vs. "Details"
- * A Cancel button SHALL NOT be used unless the online form uses a multi-step process
- * A Cancel button SHALL be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process
- * A Cancel or Close button action SHALL clear the contents of the online form for security/privacy purposes
- * When used, the Cancel button SHOULD appear as a link or Alternative button
- * Buttons SHOULD align to the left with primary or affirmative action on left and secondary or dismissive action on right
+ * All buttons should use an action word to start the label. Eg. "View Details" vs. "Details"
+ * A Cancel button shall not be used unless the online form uses a multi-step process
+ * A Cancel button shall be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process
+ * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes
+ * When used, the Cancel button should appear as a link or Alternative button
+ * Buttons should align to the left with primary or affirmative action on left and secondary or dismissive action on right
  
 ## Multi-Step Process Guidelines:
 
- * The Back button SHOULD be left aligned, followed by the Next or Primary action button
- * Back and Next SHALL be used as button labels
- * the saving of data or state is implied and clicking the Back button SHALL NOT delete data that has been entered
- * Save or Submit SHALL be used on the final step
+ * The Back button should be left aligned, followed by the Next or Primary action button
+ * Back and Next shall be used as button labels
+ * the saving of data or state is implied and clicking the Back button shall not delete data that has been entered
+ * Save or Submit shall be used on the final step
 
 ## Reset and Clear Guidelines:
 
  * Reset is defined as removing all data and returning to the initial state of the application or online form inputs
  * Clear is defined as removing all data from application or online form fields
- * Reset and Clear buttons, if used, SHALL NOT be placed near a Primary button such as Next, Submit, or Save   
+ * Reset and Clear buttons, if used, shall not be placed near a Primary button such as Next, Submit, or Save   
 
 ## Which Label to Use?
 
@@ -73,13 +73,13 @@ ___
 
 <button class="fsa-btn fsa-btn--primary" type="button">Back</button> vs. <a href="#" class="dut-button-demo__cancel-link">Cancel</a> vs. <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
 
-When returning to a previous screen or step, use Back as the button label. When ceasing a process, such as updating your profile, use Cancel as the button label. Exit SHALL NOT be used in the context of returning to a previous screen, as it could imply exiting the application as opposed to the process in the application.
+When returning to a previous screen or step, use Back as the button label. When ceasing a process, such as updating your profile, use Cancel as the button label. Exit shall not be used in the context of returning to a previous screen, as it could imply exiting the application as opposed to the process in the application.
 
 ___
 
 <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
 
-When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset SHALL NOT be used as it implies the clearing or deleting of data and returning to initial state.
+When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset shall not be used as it implies the clearing or deleting of data and returning to initial state.
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 <button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
 
-A button SHALL use the Tertiary style when the action taken has descructive capabilities.
+A button shall use the Tertiary style when the action taken has descructive capabilities.
 
 ___
 

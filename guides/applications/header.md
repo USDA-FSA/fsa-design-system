@@ -37,6 +37,3 @@ When a User is logged in to an FSA application their username will be displayed 
 
 <a href="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls"></a>
 
-## Related Resources
-
- * [Link to Header component in Design System]

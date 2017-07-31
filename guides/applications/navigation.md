@@ -8,7 +8,7 @@ intro: "FSA Applications should utilize a top navigation system that complies wi
 
 ## Top Navigation
 
-Based on new standards in web design, all FSA applications should include a "Mega Menu" format paired with a top navigation system that flows from left to right on the application screen. The top navigation should be distinguishable and positioned in a horizontal bar just below the header of the application. Navigation systems located in a left-side or right-side panel should NOT be used for FSA applications. 
+Based on new standards in web design, all FSA applications should include a "Mega Menu" format paired with a top navigation system that flows from left to right on the application screen. The top navigation should be distinguishable and positioned in a horizontal bar just below the header of the application. Navigation systems located in a left-side or right-side panel should not be used for FSA applications. 
 
 ## Navigation Rules
 
@@ -21,7 +21,3 @@ Based on new standards in web design, all FSA applications should include a "Meg
 Below is a sample screenshot of and FSA application with a Mega Menu navigation system.
 
 <a href="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.jpg" alt="Image of example FSA application header"></a>
-
-## Related Resources
-
- * [Link to Top Navigation component in Design System]
