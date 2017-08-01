@@ -5,6 +5,11 @@ title: "Applications"
 intro: "In this section, we will cover general topics and guidelines for FSA Applications."
 ---
 
+## Guidelines for Design System Use
+
+The main objective of the FSA Design System is to provide a means for Developers to easily download a codebase that has a consistent look and feel baked into the CSS. By following these Guides and working with the associated Components, a Developer has the ability to very quickly build and maintain applications that look and behave the same.
+
+For all FSA applications, it is not permissable for a Developer to update or change any CSS within the FSA Design system. All FSA applications should utilized this framework and the associated classes without modification or augmentation. All custom CSS shall be stored in a separate file, but it is permissable to concatenated CSS files into a single file at the time of a build.  
 
 ## Logging Out
 
