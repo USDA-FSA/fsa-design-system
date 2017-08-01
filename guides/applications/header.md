@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Header"
-intro: "FSA Applications should all have a consistant header and shall utilize the styles defined in the Design System without editing the CSS framework."
+intro: "FSA Applications shall have a consistent header and shall utilize the header component (and associated styles) defined in the Design System. Only certain aspects of the header may be customized for individual applications (specified below).  Fonts, colors, alignment, etc shall not be modified from the common header component provided by the design system.  Nor shall applications add customizations such as logos, imagery, icons, etc."
 
 ---
 
@@ -13,26 +13,26 @@ Below is a sample screenshot of an FSA application header that represents a good
 
 ## Department and Agency
 
-On all FSA applications, the department name and agency name should be displayed in a consistent style and location. Based on the screen width, the department and agency name should be spelled out on larger screen sizes and condense as the screen size gets smaller. 
+The department name and agency name shall be displayed in a consistent style and location as seen in the above example. These elements shall not be customized per application. The Design System will provide responsive behavior based on screen size and condense this section as the screen gets smaller.
 
 ## Application Name
 
-All FSA applications will display the application name in a consistant format. The format shall include the paired acronym to the left of the application name that is fully spelled out. On smaller screens and resolutions, only the application acronym will be shown.
+The application name shall display as shown in the following format: a paired acronym to the left of the application name that is fully spelled out. On smaller screens and resolutions, only the application acronym will be shown.
 
 ## Application Logo
 
-All FSA applications should have a consistant look and feel from a branding perspective and shall not use an application specific logo. 
+FSA applications shall not use an application logo. 
 
 ## Application Help
 
-All FSA applications should include a way for the User to receive help while performing tasks. All FSA applications should utilize a help icon located next to the User name (see below screenshot). When clicked the User will be taken to a separate page with instructions on how to receive help, based on the specific application.
+All FSA applications shall use a help icon located next to the User name (see below screenshot) to access the application's help system. When clicked the User will be taken to a separate page with instructions on how to receive help, based on the specific application. The content of the help system shall be decided by Business Requirements for the specific application. The design system only specifies a consistent mechanism to access the help system.
 
 ## User Profile & Control System
 
-When a User is logged in to an FSA application their username will be displayed right justified and next to the Application Help icon. A Dropdown should be available to control User specific details and actions. The following labels and controls should always be available within the User Control dropdown:
+When a User is logged in to an FSA application their Display Name will be shown right justified and next to the Application Help icon. A Dropdown shall be available to control User specific details and actions. The following labels and controls shall always be available within the User Control dropdown:
 
   * User Role Label(s)
-  * Edit Profile Link
+  * View/Edit Profile Link
   * Application Sign Out Button
 
 <a href="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls"></a>

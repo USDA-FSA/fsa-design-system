@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Buttons"
-intro: "FSA applications should have the same look and feel, along with having a consistent naming convention for the most used buttons. Below you will find guidelines on how to use specific style related to various actions and features where a button is used."
+intro: "FSA applications shall have the same look and feel, along with having a consistent naming convention for the most used buttons. Below you will find guidelines on how to use specific style related to various actions and features where a button is used."
 
 ---
 
@@ -20,30 +20,30 @@ The below buttons are the various options available for use in the FSA Design Sy
 <a href="#" class="dut-button-demo__cancel-link">Cancel</a>
 </div>
 
-**PRIMARY:** A primary style should be applied to a button that represents the top priority action that a User should be taking in a given situation. Submitting a form or continuing a stepped process would be considered primary.
+**PRIMARY:** A primary style shall be applied to a button that represents the top priority action a User might take in a given situation. Submitting a form or continuing a stepped process would be considered primary.
 
-**SECONDARY:** A secondary style should be applied to buttons that are not top priority, but the action is relevant for features and functionality that keep a User on the same screen. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
+**SECONDARY:** A secondary style shall be applied to buttons that are not top priority, but the action is relevant for features and functionality that keep a User on the same screen. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
 
-**TERTIARY:** A tertiary style should be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style. 
+**TERTIARY:** A tertiary style shall be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style. 
 
-**ALT:** The alt style should be applied to buttons available to the User, but the actions are viewed as contrary to progress. An example of this would be a "Reset" button that starts a process on the screen over, but does not delete data that is stored in a database.
+**ALT:** The alt style shall be applied to buttons available to the User, but the actions are viewed as contrary to progress. An example of this would be a "Reset" button that starts a process on the screen over, but does not delete data that is stored in a database.
 
-**DISABLED:** The disabled style should be applied to any buttons that a User should not be able to click, but should remain present and visible as an action that can be performed once other criteria is met.
+**DISABLED:** The disabled style shall be applied to any buttons unable to be clicked by a User, but should remain present and visible as an action that can be performed once other criteria is met.
 
 **UNDERLINED:** In most cases, a button labeled as "Cancel" should be shown with a style that usings an underline. By giving this button very low priority and prominance on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
 
 ## General Guidelines:
 
- * All buttons should use an action word to start the label. Eg. "View Details" vs. "Details"
+ * All buttons shall use an action word to start the label. Eg. "View Details" vs. "Details"
  * A Cancel button shall not be used unless the online form uses a multi-step process
  * A Cancel button shall be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process
  * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes
  * When used, the Cancel button should appear as a link or Alternative button
- * Buttons should align to the left with primary or affirmative action on left and secondary or dismissive action on right
+ * Buttons shall align to the left with primary or affirmative action on left and secondary or dismissive action on right
  
 ## Multi-Step Process Guidelines:
 
- * The Back button should be left aligned, followed by the Next or Primary action button
+ * The Back button shall be left aligned, followed by the Next or Primary action button
  * Back and Next shall be used as button labels
  * the saving of data or state is implied and clicking the Back button shall not delete data that has been entered
  * Save or Submit shall be used on the final step
@@ -155,7 +155,7 @@ ___
             </td>
             <td>
                 <p>Stop current action and cancels out of the process.  Returns users to the page where the action was initiated.</p>
-                <p>NOTE: If data has been entered, a confirmation message should be displayed so the user can confirm they want to cancel.</p>
+                <p>NOTE: If data has been entered, a confirmation message shall be displayed so the user can confirm they want to cancel.</p>
             </td>
         </tr>
 
@@ -198,7 +198,7 @@ ___
             </td>
             <td>
                 <p>Allows the user to delete specific data or a record.</p>
-                <p>NOTE: Should always require a confirmation question, such as a pop-up, with a Yes/No response for the user to confirm the deletion. Information about what is being deleted should also be displayed for the user.</p>
+                <p>NOTE: Shall require a confirmation question, such as a pop-up, with a Yes/No response for the user to confirm the deletion. Information about what is being deleted shall also be displayed for the user.</p>
             </td>
         </tr>
 

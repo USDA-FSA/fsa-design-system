@@ -1,6 +1,9 @@
 - title: "Overview"
   alt_title: "Applications"
   href: "guides/applications"
+  
+- title: "Fonts"
+  href: "guides/applications/fonts"
 
 - title: "Header"
   href: "guides/applications/header"
