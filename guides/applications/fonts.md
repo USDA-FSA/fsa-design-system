@@ -8,7 +8,7 @@ intro: "All FSA applications shall adhere to the below Typography guidelines in 
 
 ## Typography Guidelines
 
-The Typefaces being used within the FSA Design System have been selected because of their legibility and availablity across operating systems. All FSA applications shall utilize only the Typefaces listed below. The Typefaces used within the FSA Design system are open-source and are designed to have a clear and concise look that pairs well in numerous interface elements in an application. Fallback Typefaces are available within the CSS for legacy systems. Developers should review the [Typography section]({{ site.baseurl }}/visual-style/typography/) to gain insight on how to utilize the official Typefaces.
+The Typefaces being used within the FSA Design System have been selected because of their legibility and availability across operating systems. All FSA applications shall utilize only the Typefaces listed below. The Typefaces used within the FSA Design system are open-source and are designed to have a clear and concise look that pairs well in numerous interface elements in an application. Fallback Typefaces are available within the CSS for legacy systems. Developers should review the [Typography section]({{ site.baseurl }}/visual-style/typography/) to gain insight on how to utilize the official Typefaces.
 
 ## Typefaces
 
