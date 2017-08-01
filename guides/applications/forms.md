@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Forms"
-intro: "FSA Applications that should adhere to the layout and specifications for forms that are listed below."
+intro: "FSA Applications shall adhere to the layout and specifications for forms that are listed below."
 
 ---
 
