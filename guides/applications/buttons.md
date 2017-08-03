@@ -26,11 +26,11 @@ The below buttons are the various options available for use in the FSA Design Sy
 
 **TERTIARY:** A tertiary style shall be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style. 
 
-**ALT:** The alt style shall be applied to buttons available to the User, but the actions are viewed as contrary to progress. An example of this would be a "Reset" button that starts a process on the screen over, but does not delete data that is stored in a database.
+**ALT:** The alt style shall be applied to buttons with functionality viewed as contrary to progress. An example of this would be a "Clear" button that removes data from form fields to start a new process, but does not delete data that is stored in a database. The use of "Cancel" within a popup or modal is also appropriate for the alt style.
 
 **DISABLED:** The disabled style shall be applied to any buttons unable to be clicked by a User, but should remain present and visible as an action that can be performed once other criteria is met.
 
-**UNDERLINED:** In most cases, a button labeled as "Cancel" should be shown with a style that usings an underline. By giving this button very low priority and prominance on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
+**UNDERLINED:** In most cases, a button labeled as "Cancel" should be shown with a style that uses an underline. By giving this button very low priority and prominence on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
 
 ## General Guidelines:
 
@@ -67,7 +67,7 @@ Use Submit for a button label when providing data that will not be stored, or if
  
 <button class="fsa-btn fsa-btn--primary" type="button">Search</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
  
-Always use Search as the button label when there is an input text field that allows for free-form text. The Search label is now more accepted for use that the Submit Label when performing a search.
+Search shall be used as the button label when the application is performing a query and returning results. The Search label on a button is more ubiquitous on the web and Users are accustomed to looking for this functionality on a screen.
 
 ___ 
 
@@ -77,21 +77,21 @@ When returning to a previous screen or step, use Back as the button label. When 
 
 ___
 
-<button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
+<button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Reset</button>
 
-When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset shall not be used as it implies the clearing or deleting of data and returning to initial state.
+When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset implies clearing data and returning to the initial state of data.
 
 ___
 
 <a href="#" class="dut-button-demo__cancel-link">Cancel</a> vs. <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
 
-In general, all FSA applications should use the link style for a Cancel button. On occasion, a Canel button could utilize the Alt button style, such as in an application that uses a modal or popup window and the User needs to Cancel the action being performed within the modal or popup. 
+In general, all FSA applications should use the link style for a Cancel button. A Cancel button should utilize the Alt button style within a modal or popup window and the User needs to Cancel the action being performed.
 
 ___
 
-<button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
+<button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Reset</button>
 
-A button shall use the Tertiary style when the action taken has descructive capabilities.
+A button shall use the Tertiary style when the action taken has destructive capabilities. While Reset is an action that removes data from the screen, it should not be used to remove data from a database or other data storage.
 
 ___
 
@@ -119,7 +119,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--primary" type="button">Aprove</button>
+                    <button class="fsa-btn fsa-btn--primary" type="button">Approve</button>
                 </p>
             </td>
             <td>
@@ -174,10 +174,10 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--primary" type="button">Close</button>
+                    <a href="#" class="dut-button-demo__cancel-link">Close</a> [X] 
                 </p>
             </td>
-            <td>Closes a child (popup or modal) window.</td>
+            <td>Closes a child (popup or modal) window. A close text link paired with an "X" icon shall be used within a popup or modal window.</td>
         </tr>
 
         <tr>
@@ -215,15 +215,6 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--alt" type="button">Exit</button>
-                </p>
-            </td>
-            <td>Leave application and Log out.</td>
-        </tr>
-
-        <tr>
-            <td aria-label="Button Label" scope="row">
-                <p>
                     <button class="fsa-btn fsa-btn--primary" type="button">Export</button>
                 </p>
             </td>
@@ -255,6 +246,22 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
+                    <button class="fsa-btn fsa-btn--primary" type="button">Log in</button>
+                </p>
+            </td>
+            <td>Enter an application in an authenticated state.</td>
+        </tr>
+        <tr>
+            <td aria-label="Button Label" scope="row">
+                <p>
+                    <button class="fsa-btn fsa-btn--primary" type="button">Log out</button>
+                </p>
+            </td>
+            <td>Exit an application currently in an authenticated state and return to Log in screen.</td>
+        </tr>
+        <tr>
+            <td aria-label="Button Label" scope="row">
+                <p>
                     <button class="fsa-btn fsa-btn--primary" type="button">No</button>
                 </p>
             </td>
@@ -263,7 +270,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--alt" type="button">Refresh</button>
+                    <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button>
                 </p>
             </td>
             <td>Refreshes the data on the page. Primarily used after data has been updated in another application.</td>
@@ -271,7 +278,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--tertiary" type="button">Reset</button>
+                    <button class="fsa-btn fsa-btn--alt" type="button">Reset</button>
                 </p>
             </td>
             <td>
