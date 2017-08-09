@@ -17,6 +17,7 @@ When using the custom CSS classes provided within the Design System, the structu
 Below is the default table style that should be used in the majority of instances. The borders and spacing provide enough room for most forms of tabular data and allow for easy of use and interpretation.
 
 <table class="fsa-table">
+    <caption>Default Table Style</caption>
   <thead>
     <tr>
       <th scope="col">Commodity</th>

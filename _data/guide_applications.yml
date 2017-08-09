@@ -1,4 +1,4 @@
-- title: "Overview"
+- title: "Applications"
   alt_title: "Applications"
   href: "guides/applications"
   
@@ -19,6 +19,9 @@
   
 - title: "Forms"
   href: "guides/applications/forms"
+  
+- title: "Form Validation"
+  href: "guides/applications/form-validation"
   
 - title: "Tables"
   href: "guides/applications/tables"

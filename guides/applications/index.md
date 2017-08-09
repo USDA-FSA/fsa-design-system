@@ -29,7 +29,7 @@ A Last Modified Date shall not be displayed or used on any FSA applications.
 
 ## Photo Banner
 
-A Photo Banner shall not be used on any FSA applications, and should be removed from existing FSA Applications.
+A Photo Banner shall not be used on any FSA applications.
 
 
 ## Background Imagery
