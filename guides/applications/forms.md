@@ -15,10 +15,10 @@ intro: "FSA Applications shall adhere to the layout and specifications for forms
  * The use of Placeholders shall not replace Labels
  * Labels shall always be visible
  * Font and Font weights shall remain consistent
- * Form fields shall each be of equal and uniform length
+ * Form fields shall each be uniform length and use Design System CSS 
  * Form fields shall have enough space for completion of entry
  * Reduce as much visual noise as possible by eliminating unnecessary fields for the task
- * Content groupings should be intuitive and aligned together for better congnitive response
+ * Content groupings should be intuitive and aligned together for better cognitive response
 
 
 ## Single vs Two Column Layout
