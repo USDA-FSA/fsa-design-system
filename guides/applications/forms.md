@@ -8,7 +8,7 @@ intro: "FSA Applications shall adhere to the layout and specifications for forms
 
 ## General Guidelines
 
- * In general, a single column of input fields is recommend
+ * In general, a single column of input fields is recommended
  * Two column layouts can be used when grouping of form fields requires paired structure
  * Labels shall be top aligned
  * All form elements shall be aligned to the left
