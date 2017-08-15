@@ -12,7 +12,7 @@ The FSA Design System uses 3 different types of design style for tabular data, w
 
 When using the custom CSS classes provided within the Design System, the structure of the table will shift based on the size of the content within the cell. The horizontal spacing of the largest text string or element will determine the width of each column. A Developer shall not hardcode the width or height of the table or table cells.
 
-Tables should be used only to display tabular data, and shall not be used to structure a page or provide a mechanism for layout. Tables used for the purpose of layout are generally not 508 compliant. Developers shall utilize the [FSA Design System Grids]( {{ site.baseurl }}/visual-style/grid/ ) in order to structure their content on a page.
+__Tables should be used only to display tabular data__, and shall not be used to structure a page or provide a mechanism for layout. Tables used for the purpose of layout are generally not 508 compliant. Developers shall utilize the [FSA Design System Grids]( {{ site.baseurl }}/visual-style/grid/ ) in order to structure their content on a page.
 
 ## Default Table Style
 
@@ -50,45 +50,6 @@ Below is the default table style that should be used in the majority of instance
   </tbody>
 </table>
 
-<!--
-Below is an example of a default table that also includes button controls.
-
-<table class="fsa-table">
-  <thead>
-    <tr>
-      <th scope="col">Commodity</th>
-      <th scope="col">Loan Rate</th>
-      <th scope="col">30-Day Period PCP</th>
-      <th scope="col">Effective LDP Rates ($)</th>
-      <th scope="col">Tools</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Barley</td>
-      <td>1.75</td>
-      <td>3.30</td>
-      <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--secondary" type="button">View</button> <button class="fsa-btn fsa-btn--secondary" type="button">Edit</button></td>
-    </tr>
-    <tr>
-      <td>Canola</td>
-      <td>8.94</td>
-      <td>15.99</td>
-      <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--secondary" type="button">View</button> <button class="fsa-btn fsa-btn--secondary" type="button">Edit</button></td>
-    </tr>
-    <tr>
-      <td>Flaxseed</td>
-      <td>10.13</td>
-      <td>15.90</td>
-      <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--secondary" type="button">View</button> <button class="fsa-btn fsa-btn--secondary" type="button">Edit</button></td>
-    </tr>
-  </tbody>
-</table>
--->
-
 ## Examples with Button Controls
 
 <caption>Please select a new farm and tract</caption>
@@ -102,7 +63,7 @@ Below is an example of a default table that also includes button controls.
       <th scope="col">Cropland Acres</th>
       <th scope="col">CRP Cropland Acres</th>
       <th scope="col">CRP MPL Acres</th>
-      <th scope="col">Tools</th>
+      <th scope="col">Controls</th>
     </tr>
   </thead>
   <tbody>
@@ -131,6 +92,7 @@ Below is an example of a default table that also includes button controls.
 
 <button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button> 
 
+<!--
 
 ___
 
@@ -161,7 +123,7 @@ ___
       <th scope="col">Cropland Acres</th>
       <th scope="col">CRP Cropland Acres</th>
       <th scope="col">CRP MPL Acres</th>
-      <th scope="col">Tools</th>
+      <th scope="col">Controls</th>
     </tr>
   </thead>
   <tbody>
@@ -189,6 +151,52 @@ ___
 </table>
 
 <button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button> 
+-->
+
+## Examples with In-line Row Controls
+
+<caption>Assigned Producers</caption>
+<table class="fsa-table">
+  <thead>
+    <tr>
+      <th scope="col">Producer Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Share</th>
+      <th scope="col">Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RUSS NELLORE</td>
+      <td>Other</td>
+      <td><input class="fsa-input" type="text" name="1iuoytytesgdf" value="0.00" placeholder="Placeholder">%</td>
+      <td><input class="fsa-checkbox" id="1p" type="checkbox" name="lorem-9683783" value="lorem-9683783">
+  <label for="lorem-9683783">Primary</label> <input class="fsa-checkbox" id="1r" type="checkbox" checked="checked" name="avl" value="1">
+  <label for="lorem-9683783">Available</label>
+  </td>
+    </tr>
+    <tr>
+      <td>RICHARD L NELLOR</td>
+      <td>Operator</td>
+      <td><input class="fsa-input" type="text" name="1iuoytytesgdf" value="100.00" placeholder="Placeholder">%</td>
+      <td><input class="fsa-checkbox" id="1p" type="checkbox" checked="checked" name="lorem-9683783" value="lorem-9683783">
+  <label for="lorem-9683783">Primary</label> <input class="fsa-checkbox" id="2r" type="checkbox" checked="checked" name="avl" value="1">
+  <label for="lorem-9683783">Available</label>
+  </td>
+    </tr>
+    <tr>
+      <td>STOCKLEY BUILDING CO</td>
+      <td>Owner</td>
+      <td><input class="fsa-input" type="text" name="1iuoytytesgdf" value="0.00" placeholder="Placeholder">%</td>
+      <td><input class="fsa-checkbox" id="1p" type="checkbox" name="lorem-9683783" value="lorem-9683783">
+  <label for="lorem-9683783">Primary</label> <input class="fsa-checkbox" id="3r" type="checkbox" checked="checked" name="avl" value="1">
+  <label for="lorem-9683783">Available</label>
+  </td>
+    </tr>
+    </tbody>
+</table>
+
+<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--primary" type="button">Save</button> 
 
 
 ## Borderless Table Style
@@ -236,7 +244,7 @@ The below example showcases the Borderless Table Style used with text-heavy cont
     <tr>
       <th scope="col">Commodity</th>
       <th scope="col">Description</th>
-      <th scope="col">Tools</th>
+      <th scope="col">Controls</th>
     </tr>
   </thead>
   <tbody>

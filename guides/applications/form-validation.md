@@ -18,6 +18,7 @@ __3. Use the appropriate color for the message__ - Generally speaking, it is bes
 
 __4. Use clear language and provide an actionable resolution__ - The verbiage used when notifying a User of an error should be easy to understand and provide a way to solve the problem. Even if the error messaging is placed in the right spot at the right time, and in the right color scheme, it serves no purpose if the User does not understand how to correct the problem. FSA applications shall use [plain language priciples]({{ site.baseurl }}/guides/content/plain-language/) when displaying validation messaging.
 
+
 ## Example Messaging States
 
 <caption>Unfocused Form Field State</caption><a href="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" alt="Image of a form field in an unfocused state"></a>
@@ -29,6 +30,12 @@ __4. Use clear language and provide an actionable resolution__ - The verbiage us
 
 The themes above have been programmed into the CSS and form components within the Design system, but it is important to understand the concepts and theory behind them in order to implement validation and messaging that complies with best practice.
 
+## Warning Messages
+
+Some FSA applications will require the system to confirm an action taken by a User by showing a Warning or Confirmation message. For actions that are destructive in nature, such as deleting data, Developers shall utilize a Confirmation modal. To find out more information and guidelines on modal windows, [please review the guide here]({{ site.baseurl }}/guides/applications/modal/).
+
+<caption>Modal Window Confirmation</caption>
+<a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" alt="Image of sample Modal Window Confirmation"></a>
 
 ## Related Resources
 
