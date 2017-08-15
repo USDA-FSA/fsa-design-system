@@ -9,9 +9,10 @@ intro: "A Popup window or Modal window is a vital part of many FSA applications 
 ## Modal Window Guidelines
 
  * A Modal window is an on-page popup window, and shall utilize the FSA Design System component
- * A Modal window shall be used in a context of a confirmation message
- * A Modal window shall restrict all other actions and content until a User action is taken
- * A typical Modal window would be a confirmation popup confirming the deletion of data.
+ * A Modal window can be used as a way to confirm an action by the User
+ * A Modal window can be used to show content that is specific and needs sole focus
+ * All actions and content shall be restricted until a User action is taken on the modal
+ * A typical Modal window example would be a popup used to confirm the deletion of data
  
  
 ## Modal Window Sample
