@@ -25,6 +25,7 @@ When a User enters a date, the following formates shall be allowed.
 
 If the date entered, is not MM/DD/YYYY, then the date should be automatically formatted when the focus on the date field is changed or an action button is clicked.
 
+<!--
 ## Warning Message for MMDDYY
 
 There are two dates a year that require special handling and an error message to appear when entered. January 1st without leading zeros and January 2nd without leading zeros combined with any year can produce a possible User error. Below are example dates that when entered can be misinterpreted by the system:
@@ -48,3 +49,4 @@ In these instances, a Developer shall include a warning message to be displayed 
 ## Related Resources
 
  * [Date Picker component]
+-->
