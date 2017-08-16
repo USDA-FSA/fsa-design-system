@@ -28,7 +28,10 @@
 
 - title: "Navigation"
   href: "guides/applications/navigation"
-  
+
+- title: "Phone Number"
+  href: "guides/applications/phone-number"
+
 - title: "Tables"
   href: "guides/applications/tables"
   

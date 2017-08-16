@@ -15,6 +15,9 @@ When a User enters a date, the following formates shall be allowed.
  * MM/DD/YYYY
  * MM/DD/YY
  * M/D/YYYY
+ * MM-DD-YYYY
+ * MM-DD-YY
+ * M-D-YYYY
  * MM.DD.YYYY
  * MM.DD.YY
  * M.D.YYYY
