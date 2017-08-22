@@ -8,9 +8,9 @@ intro: "Validation and error messaging is an integral part of any FSA Applicatio
 
 ## Form Validation Guidelines
 
-Below are four common themes that should be followed when developing a validation and messaging system that will help to optimize the workflow of a User, and allow for a more positive User Experience when an system error has taken place.
+Below are four common themes that should be followed when developing a validation and messaging system that will help to optimize the workflow of a User. This allows for a more positive User Experience when an system or User error has taken place.
 
-__1. Display error messages at the right place__ - Proper error messaging should appear as close as possible to the area of the application where the error has taken place. Always display validation within the context of the action. If an error has occurred, for instance, from a User typing the wrong format of characters into an online form field, the error message shall appear below the .
+__1. Display error messages at the right place__ - Proper error messaging should appear as close as possible to the area of the application where the error has taken place. Always display validation within the context of the action. If an error has occurred, for instance, from a User typing the wrong format of characters into an online form field, the error message shall appear below the form field. Grouping of form error messages at the top or bottom of the form and away from the pertaining form fields shall not be done.
 
 __2. Display error messages at the right time__ - It is also important for the error message to appear in a timely manner, so that the User is still in the proper mindset for completing the task. Error messages shall appear when the action has been completed. So in the instance of wrong format of characters in an online form field, when the form field loses focus the error message shall appear.
 

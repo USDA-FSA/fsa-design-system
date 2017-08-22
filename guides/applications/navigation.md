@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Navigation"
-intro: "FSA Applications shall utilize a top navigation system that complies with the below specifications."
+intro: "FSA applications shall utilize a top navigation system that complies with the below specifications."
 
 ---
 

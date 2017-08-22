@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Phone Number"
-intro: "FSA applications, while public or private need to follow a consistant pattern based on industry standards."
+intro: "FSA applications, whether public or private, need to follow a consistant telephone pattern based on industry standards."
 
 ---
 
