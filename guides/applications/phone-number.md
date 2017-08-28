@@ -37,7 +37,3 @@ FSA applications requiring a User to input a telephone number shall accept the b
  * (555) 555-5555
  * 555-555-5555
  * 555 555 5555
-
-## Related Resources
-
- * [Phone Number component]
