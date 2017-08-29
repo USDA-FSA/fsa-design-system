@@ -7,12 +7,12 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-    <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-    </span>
+  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+  </span>
 </div>
 
 
@@ -31,12 +31,12 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 </span>
 ```
 <div class="ds-preview">
-    <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-    </span>
+  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+  </span>
 </div>
 
 ### Small
@@ -50,12 +50,12 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 </span>
 ```
 <div class="ds-preview">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" aria-label="Label describing this group">
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-    </span>
+  <span class="fsa-btn-group fsa-btn-group--small" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+  </span>
 </div>
 
 
@@ -70,12 +70,12 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 </span>
 ```
 <div class="ds-preview">
-    <span class="fsa-btn-group fsa-btn-group--large" role="group" aria-label="Label describing this group">
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-    </span>
+  <span class="fsa-btn-group fsa-btn-group--large" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+  </span>
 </div>
 
 
@@ -90,12 +90,12 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 </span>
 ```
 <div class="ds-preview">
-    <span class="fsa-btn-group fsa-btn-group--block" role="group" aria-label="Label describing this group">
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-        <button class="fsa-btn-group__item" type="button">Label</button>
-    </span>
+  <span class="fsa-btn-group fsa-btn-group--block" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Active Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+    <button class="fsa-btn-group__item" type="button">Label</button>
+  </span>
 </div>
 
 ## Usage

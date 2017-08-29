@@ -34,23 +34,23 @@ Breadcrumbs are styled with `class="fsa-breadcrumb"`, and should be used with an
 
 ```html
 <div class="fsa-breadcrumb">
-    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-      <ol class="fsa-breadcrumb__list">
-        <li class="fsa-breadcrumb__item">
-          <a href="/" class="fsa-breadcrumb__link">Home</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="/level-1/" class="fsa-breadcrumb__link">Level 1</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="/level-1/level-2/" class="fsa-breadcrumb__link">Level 2</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="/level-1/level-2/level-3" class="fsa-breadcrumb__link">Level 3</a>
-        </li>
-      </ol>
-    </nav>
-  </div>
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="/" class="fsa-breadcrumb__link">Home</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="/level-1/" class="fsa-breadcrumb__link">Level 1</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="/level-1/level-2/" class="fsa-breadcrumb__link">Level 2</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="/level-1/level-2/level-3" class="fsa-breadcrumb__link">Level 3</a>
+      </li>
+    </ol>
+  </nav>
+</div>
 ```
 
 ## Usage
