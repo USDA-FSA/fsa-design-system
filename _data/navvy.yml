@@ -52,10 +52,14 @@
       subhref: "components/links"
       img: "img/subcategories/links.png"
 
+    - subtitle: "Breadcrumbs"
+      subhref: "components/breadcrumbs"
+      img: "img/subcategories/breadcrumbs.png"
+
     - subtitle: "Buttons"
       subhref: "components/buttons"
       img: "img/subcategories/buttons.png"
-      
+
     - subtitle: "Button Group"
       subhref: "components/button-group"
       img: "img/subcategories/button-group.png"
@@ -99,7 +103,7 @@
     - subtitle: "Content"
       subhref: "guides/content"
       img: "img/subcategories/content.png"
-      
+
     - subtitle: "Applications"
       subhref: "guides/applications"
       img: "img/subcategories/applications.png"
