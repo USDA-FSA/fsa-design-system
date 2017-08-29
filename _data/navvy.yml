@@ -55,6 +55,10 @@
     - subtitle: "Buttons"
       subhref: "components/buttons"
       img: "img/subcategories/buttons.png"
+      
+    - subtitle: "Button Group"
+      subhref: "components/button-group"
+      img: "img/subcategories/button-group.png"
 
     - subtitle: "Text Input"
       subhref: "components/text-input"
