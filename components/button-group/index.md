@@ -102,7 +102,8 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 
 ### Use When
 
-Use button groups to consolidate like actions into one condensed component and act as a toggle between the button options. The actions should all pertain to the same feature set and contextual functionality of the application.
+* You want to consolidate like actions into one condensed component that acts as a toggle between the button options.
+* All actions pertain to the same feature set and contextual functionality of the application.
 
 ### Don't Use
 
