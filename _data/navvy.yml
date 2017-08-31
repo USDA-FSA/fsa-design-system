@@ -88,6 +88,10 @@
       subhref: "components/tables"
       img: "img/subcategories/tables.png"
 
+    - subtitle: "Alerts"
+      subhref: "components/alerts"
+      img: "img/subcategories/alerts.png"
+
 - title: "Guides"
   href: "guides"
   subcategories:
