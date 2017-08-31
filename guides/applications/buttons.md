@@ -12,25 +12,25 @@ The below buttons are the various options available for use in the FSA Design Sy
 
 <div class="dut-button-demo__section">
 
-<button class="fsa-btn fsa-btn--primary" type="button">Primary</button> 
+<button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
 <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
 <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
 <button class="fsa-btn fsa-btn--alt" type="button">Alt</button>
 <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
-<a href="#" class="dut-button-demo__cancel-link">Cancel</a>
+<button class="fsa-btn fsa-btn--flat" type="button">Cancel</button>
 </div>
 
 **PRIMARY:** A primary style shall be applied to a button that represents the top priority action a User might take in a given situation. Submitting a form or continuing a stepped process would be considered primary.
 
 **SECONDARY:** A secondary style shall be applied to buttons that are not top priority, but the action is relevant for features and functionality that keep a User on the same screen. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
 
-**TERTIARY:** A tertiary style shall be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style. 
+**TERTIARY:** A tertiary style shall be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style.
 
 **ALT:** The alt style shall be applied to buttons with functionality viewed as contrary to progress. An example of this would be a "Clear" button that removes data from form fields to start a new process, but does not delete data that is stored in a database. The use of "Cancel" within a popup or modal is also appropriate for the alt style.
 
 **DISABLED:** The disabled style shall be applied to any buttons unable to be clicked by a User, but should remain present and visible as an action that can be performed once other criteria is met.
 
-**UNDERLINED:** In most cases, a button labeled as "Cancel" should be shown with a style that uses an underline. By giving this button very low priority and prominence on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
+**FLAT:** In most cases, a button labeled as "Cancel" should be shown with the Flat style which looks similar to a text link. By giving this button very low priority and prominence on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
 
 ## General Guidelines:
 
@@ -40,7 +40,7 @@ The below buttons are the various options available for use in the FSA Design Sy
  * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes
  * When used, the Cancel button should appear as a link or Alternative button
  * Buttons shall align to the left with primary or affirmative action on left and secondary or dismissive action on right
- 
+
 ## Multi-Step Process Guidelines:
 
  * The Back button shall be left aligned, followed by the Next or Primary action button
@@ -62,16 +62,16 @@ Use Submit for a button label when providing data that will not be stored, or if
 
  * Submit - Use for submitting data to generate a report
  * Save - Use for updating User profile information or preferences.
- 
+
  ___
- 
+
 <button class="fsa-btn fsa-btn--primary" type="button">Search</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
- 
+
 Search shall be used as the button label when the application is performing a query and returning results. The Search label on a button is more ubiquitous on the web and Users are accustomed to looking for this functionality on a screen.
 
-___ 
+___
 
-<button class="fsa-btn fsa-btn--primary" type="button">Back</button> vs. <a href="#" class="dut-button-demo__cancel-link">Cancel</a> vs. <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
+<button class="fsa-btn fsa-btn--primary" type="button">Back</button> vs. <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
 
 When returning to a previous screen or step, use Back as the button label. When ceasing a process, such as updating your profile, use Cancel as the button label. Exit shall not be used in the context of returning to a previous screen, as it could imply exiting the application as opposed to the process in the application.
 
@@ -83,9 +83,9 @@ When data or a state in the application has changed, it is recommended to use Re
 
 ___
 
-<a href="#" class="dut-button-demo__cancel-link">Cancel</a> vs. <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
+<button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
 
-In general, all FSA applications should use the link style for a Cancel button. A Cancel button should utilize the Alt button style within a modal or popup window and the User needs to Cancel the action being performed.
+In general, all FSA applications should use the Flat style for a Cancel button. A Cancel button should utilize the Alt button style within a modal or popup window and the User needs to Cancel the action being performed.
 
 ___
 
@@ -149,7 +149,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <a href="#" class="dut-button-demo__cancel-link">Cancel</a>
+                    <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button>
                 </p>
                 <p>(Cancel [noun])</p>
             </td>
@@ -174,7 +174,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <a href="#" class="dut-button-demo__cancel-link">Close</a> [X] 
+                    <a href="#" class="dut-button-demo__cancel-link">Close</a> [X]
                 </p>
             </td>
             <td>Closes a child (popup or modal) window. A close text link paired with an "X" icon shall be used within a popup or modal window.</td>

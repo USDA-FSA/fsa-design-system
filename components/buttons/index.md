@@ -11,6 +11,7 @@ jump_menu: true
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
   <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
   <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
 </div>
 
 ## Variations
