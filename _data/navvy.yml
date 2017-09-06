@@ -92,6 +92,10 @@
       subhref: "components/alerts"
       img: "img/subcategories/alerts.png"
 
+    - subtitle: "Form Fields"
+      subhref: "components/form-fields"
+      img: "img/subcategories/form-fields.png"
+
 - title: "Guides"
   href: "guides"
   subcategories:
