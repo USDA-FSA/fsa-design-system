@@ -39,5 +39,5 @@ Some FSA applications will require the system to confirm an action taken by a Us
 
 ## Related Resources
 
- * [Components for Form elements]({{ site.baseurl }}/components/)
+ * [Form Fields]({{ site.baseurl }}/components/form-fields/)
  * [Plain Language Guide]({{ site.baseurl }}/guides/content/plain-language/)

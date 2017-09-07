@@ -64,6 +64,10 @@
       subhref: "components/button-group"
       img: "img/subcategories/button-group.png"
 
+    - subtitle: "Form Fields"
+      subhref: "components/form-fields"
+      img: "img/subcategories/form-fields.png"
+
     - subtitle: "Text Input"
       subhref: "components/text-input"
       img: "img/subcategories/text-input.png"
@@ -91,10 +95,6 @@
     - subtitle: "Alerts"
       subhref: "components/alerts"
       img: "img/subcategories/alerts.png"
-
-    - subtitle: "Form Fields"
-      subhref: "components/form-fields"
-      img: "img/subcategories/form-fields.png"
 
 - title: "Guides"
   href: "guides"

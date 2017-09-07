@@ -374,19 +374,19 @@ By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}/visual-styl
   <label class="fsa-field__label">Your Favorite Pie</label>
   <ul class="fsa-form-list">
     <li>
-      <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
-      <label for="apple-radio">Apple</label>
+      <input class="fsa-radio" id="apple-radio-err" type="radio" name="fav-pie-err">
+      <label for="apple-radio-err">Apple</label>
     </li>
     <li>
-      <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
-      <label for="key-lime-radio">Key Lime</label>
+      <input class="fsa-radio" id="key-lime-radio-err" type="radio" name="fav-pie-err">
+      <label for="key-lime-radio-err">Key Lime</label>
     </li>
     <li>
-      <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
-      <label for="pumpkin-radio">Pumpkin</label>
+      <input class="fsa-radio" id="pumpkin-radio-err" type="radio" name="fav-pie-err">
+      <label for="pumpkin-radio-err">Pumpkin</label>
     </li>
   </ul>
-  <span class="fsa-field__message" id="pie--message" role="alert">Select at least one</span>
+  <span class="fsa-field__message" id="pie-err--message" role="alert">Select at least one</span>
 </div>
 ```
 <div class="ds-preview">
@@ -394,19 +394,19 @@ By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}/visual-styl
     <label class="fsa-field__label">Your Favorite Pie</label>
     <ul class="fsa-form-list">
       <li>
-        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
-        <label for="apple-radio">Apple</label>
+        <input class="fsa-radio" id="apple-radio-err" type="radio" name="fav-pie-err">
+        <label for="apple-radio-err">Apple</label>
       </li>
       <li>
-        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
-        <label for="key-lime-radio">Key Lime</label>
+        <input class="fsa-radio" id="key-lime-radio-err" type="radio" name="fav-pie-err">
+        <label for="key-lime-radio-err">Key Lime</label>
       </li>
       <li>
-        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
-        <label for="pumpkin-radio">Pumpkin</label>
+        <input class="fsa-radio" id="pumpkin-radio-err" type="radio" name="fav-pie-err">
+        <label for="pumpkin-radio-err">Pumpkin</label>
       </li>
     </ul>
-    <span class="fsa-field__message" id="pie--message" role="alert">Select at least one</span>
+    <span class="fsa-field__message" id="pie-err--message" role="alert">Select at least one</span>
   </div>
 </div>
 
