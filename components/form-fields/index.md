@@ -36,16 +36,16 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="email">Email address <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item" id="email" name="email" type="email" value="">
-  <span class="fsa-field__help">This is how people can contact you</span>
+  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="TheItem" name="TheItem" type="item" value="">
+  <span class="fsa-field__help">Instructional message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="email">Email address <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item" id="email" name="email" type="email" value="">
-    <span class="fsa-field__help">This is how people can contact you</span>
+    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item" id="TheItem" name="TheItem" type="item" value="">
+    <span class="fsa-field__help">Instructional message here</span>
   </div>
 </div>
 
@@ -191,20 +191,225 @@ Below are the variations and code snippets that can be applied using `class="fsa
   </div>
 </div>
 
-## Usage
+### Field Columns
 
-### Use When
+By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}/visual-style/grid/), you can define a consistant column structure, and the fields will stack until the Small breakpoint.
 
-* If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
-* When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.
-* When users want to be able to paste in a response.
-* When users need only a single line of entry.
+```html
+<div class="fsa-field fsa-field--block fsa-field--columns">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__3/12@s">
+      <div class="fsa-field__column">
+        <label class="fsa-field__label" for="lorem-6459">Label 1A</label>
+        <input class="fsa-input fsa-field__item" id="lorem-6459" name="lorem-6459" type="text" value="">
+        <label class="fsa-field__label" for="lorem-6459">Label 1B</label>
+        <input class="fsa-input fsa-field__item" id="lorem-6459" name="lorem-6459" type="text" value="">
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__3/12@s">
+      <div class="fsa-field__column">
+        <label class="fsa-field__label" for="lorem-6543">Label 2A</label>
+        <input class="fsa-input fsa-field__item" id="lorem-6543" name="lorem-6543" type="text" value="">
+        <label class="fsa-field__label" for="lorem-6543">Label 2B</label>
+        <input class="fsa-input fsa-field__item" id="lorem-6543" name="lorem-6543" type="text" value="">
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__6/12@s">
+      <div class="fsa-field__column">
+        <label class="fsa-field__label" for="lorem-0892">Label 3A</label>
+        <select class="fsa-select fsa-field__item" id="lorem-0892" name="lorem-0892">
+          <option value="" selected>- Select a lorem -</option>
+          <option value="Ipsum">Ipsum</option>
+          <option value="Dolor">Dolor</option>
+          <option value="Sit">Sit</option>
+          <option value="Amet">Amet</option>
+          <option value="Consecutar">Consecutar</option>
+        </select>
+        <label class="fsa-field__label" for="lorem-0892">Label 3B</label>
+        <select class="fsa-select fsa-field__item" id="lorem-0892" name="lorem-0892">
+          <option value="" selected>- Select a lorem -</option>
+          <option value="Ipsum">Ipsum</option>
+          <option value="Dolor">Dolor</option>
+          <option value="Sit">Sit</option>
+          <option value="Amet">Amet</option>
+          <option value="Consecutar">Consecutar</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-field fsa-field--block fsa-field--columns">
+    <div class="fsa-grid">
+      <div class="fsa-grid__1 fsa-grid__3/12@s">
+        <div class="fsa-field__column">
+          <label class="fsa-field__label" for="lorem-6459">Label 1A</label>
+          <input class="fsa-input fsa-field__item" id="lorem-6459" name="lorem-6459" type="text" value="">
+          <label class="fsa-field__label" for="lorem-6459">Label 1B</label>
+          <input class="fsa-input fsa-field__item" id="lorem-6459" name="lorem-6459" type="text" value="">
+        </div>
+      </div>
+      <div class="fsa-grid__1 fsa-grid__3/12@s">
+        <div class="fsa-field__column">
+          <label class="fsa-field__label" for="lorem-6543">Label 2A</label>
+          <input class="fsa-input fsa-field__item" id="lorem-6543" name="lorem-6543" type="text" value="">
+          <label class="fsa-field__label" for="lorem-6543">Label 2B</label>
+          <input class="fsa-input fsa-field__item" id="lorem-6543" name="lorem-6543" type="text" value="">
+        </div>
+      </div>
+      <div class="fsa-grid__1 fsa-grid__6/12@s">
+        <div class="fsa-field__column">
+          <label class="fsa-field__label" for="lorem-0892">Label 3A</label>
+          <select class="fsa-select fsa-field__item" id="lorem-0892" name="lorem-0892">
+            <option value="" selected>- Select a lorem -</option>
+            <option value="Ipsum">Ipsum</option>
+            <option value="Dolor">Dolor</option>
+            <option value="Sit">Sit</option>
+            <option value="Amet">Amet</option>
+            <option value="Consecutar">Consecutar</option>
+          </select>
+          <label class="fsa-field__label" for="lorem-0892">Label 3B</label>
+          <select class="fsa-select fsa-field__item" id="lorem-0892" name="lorem-0892">
+            <option value="" selected>- Select a lorem -</option>
+            <option value="Ipsum">Ipsum</option>
+            <option value="Dolor">Dolor</option>
+            <option value="Sit">Sit</option>
+            <option value="Amet">Amet</option>
+            <option value="Consecutar">Consecutar</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>(Resize browser to view responsive behavior.)</p>
+</div>
 
-### Don't Use
+### Checkbox Field
 
-* When the value user enter are limited in amount
-* When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}components/select/), [radio]({{ site.baseurl }}components/radio/), or [checkbox]({{ site.baseurl }}components/checkbox/).
-* When users need to enter multiple lines of content, consider the [textarea]({{ site.baseurl }}components/textarea/) element.
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label">Pies We Like</label>
+  <ul class="fsa-form-list">
+    <li>
+      <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+      <label for="apple">Apple</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+      <label for="key-lime">Key Lime</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+      <label for="pumpkin">Pumpkin</label>
+    </li>
+  </ul>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label">Pies We Like</label>
+    <ul class="fsa-form-list">
+      <li>
+        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+        <label for="apple">Apple</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+        <label for="key-lime">Key Lime</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+        <label for="pumpkin">Pumpkin</label>
+      </li>
+    </ul>
+  </div>
+</div>
+
+### Radio Field
+
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label">Your Favorite Pie</label>
+  <ul class="fsa-form-list">
+    <li>
+      <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+      <label for="apple-radio">Apple</label>
+    </li>
+    <li>
+      <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+      <label for="key-lime-radio">Key Lime</label>
+    </li>
+    <li>
+      <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+      <label for="pumpkin-radio">Key Lime</label>
+    </li>
+  </ul>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label">Your Favorite Pie</label>
+    <ul class="fsa-form-list">
+      <li>
+        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+        <label for="apple-radio">Apple</label>
+      </li>
+      <li>
+        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+        <label for="key-lime-radio">Key Lime</label>
+      </li>
+      <li>
+        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+        <label for="pumpkin-radio">Pumpkin</label>
+      </li>
+    </ul>
+  </div>
+</div>
+
+### Radio Field with Error
+
+```html
+<div class="fsa-field fsa-field--error">
+  <label class="fsa-field__label">Your Favorite Pie</label>
+  <ul class="fsa-form-list">
+    <li>
+      <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+      <label for="apple-radio">Apple</label>
+    </li>
+    <li>
+      <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+      <label for="key-lime-radio">Key Lime</label>
+    </li>
+    <li>
+      <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+      <label for="pumpkin-radio">Pumpkin</label>
+    </li>
+  </ul>
+  <span class="fsa-field__message" id="pie--message" role="alert">Select at least one</span>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-field fsa-field--error">
+    <label class="fsa-field__label">Your Favorite Pie</label>
+    <ul class="fsa-form-list">
+      <li>
+        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+        <label for="apple-radio">Apple</label>
+      </li>
+      <li>
+        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+        <label for="key-lime-radio">Key Lime</label>
+      </li>
+      <li>
+        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+        <label for="pumpkin-radio">Pumpkin</label>
+      </li>
+    </ul>
+    <span class="fsa-field__message" id="pie--message" role="alert">Select at least one</span>
+  </div>
+</div>
+
 
 ## Accessibility
 
