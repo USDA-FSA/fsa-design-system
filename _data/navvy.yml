@@ -96,6 +96,10 @@
       subhref: "components/alerts"
       img: "img/subcategories/alerts.png"
 
+    - subtitle: "Media Objects"
+      subhref: "components/media-objects"
+      img: "img/subcategories/media-objects.png"
+
 - title: "Guides"
   href: "guides"
   subcategories:
