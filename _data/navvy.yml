@@ -95,6 +95,10 @@
     - subtitle: "Alerts"
       subhref: "components/alerts"
       img: "img/subcategories/alerts.png"
+      
+    - subtitle: "Labels"
+      subhref: "components/labels"
+      img: "img/subcategories/labels.png"
 
     - subtitle: "Media Objects"
       subhref: "components/media-objects"
