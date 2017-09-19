@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Badges"
-intro: "Badges are used as indicators of action items that have yet to be completed."
+intro: "Badges are used as indicators of an update or action items that have yet to be completed."
 jump_menu: true
 ---
 
@@ -133,4 +133,4 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ## General Guidance
 
 * Badges should be used for real-time notifications with minimal footprint.
-* See [Accessibility Section]( {{ site.baseurl }}/guides/accessibility/color-and-contrast/ ) for more information on color guidelines.
+* See [Accessibility Section]( {{ site.baseurl }}guides/accessibility/color-and-contrast ) for more information on color guidelines.
