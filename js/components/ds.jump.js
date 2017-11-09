@@ -67,4 +67,4 @@ jQuery(document).ready(function($){
 
 });
 
-module.exports = Jump;
+//module.exports = Jump;

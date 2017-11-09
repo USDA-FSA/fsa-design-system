@@ -45,12 +45,12 @@ module.exports = function (grunt) {
         dest: 'fonts'
       },
 
-      // fsaStyleJavascriptComponents: {
-      //   expand: true,
-      //   src: '**',
-      //   cwd: 'node_modules/fsa-style/src/js/components',
-      //   dest: 'js/components'
-      // },
+      fsaStyleJavascriptComponents: {
+         expand: true,
+         src: '**',
+         cwd: 'node_modules/fsa-style/src/js/components',
+         dest: 'js/components'
+       },
 
       fsaStyleJavascriptVendor: {
         expand: true,
@@ -186,6 +186,11 @@ module.exports = function (grunt) {
     'copy',
     'sass',
     'postcss',
+    'browserify',
+    'uglify',
+    'shell:jekyllServe',
+  ]);
+  grunt.registerTask('rebuildjs', [
     'browserify',
     'uglify',
     'shell:jekyllServe',
