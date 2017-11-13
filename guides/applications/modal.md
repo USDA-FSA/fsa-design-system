@@ -15,8 +15,8 @@ intro: "A Popup window or Modal window is a vital part of many FSA applications 
  * A typical Modal window example would be a popup used to confirm the deletion of data
  * No FSA application shall trigger a modal window without a User action
    * Exception to this rule is when the system needs to display a Warning for system timeout
- 
- 
+
+
 ## Modal Window Sample
 
 <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" alt="Image of sample Modal Window"></a>
@@ -28,4 +28,5 @@ intro: "A Popup window or Modal window is a vital part of many FSA applications 
 
 ## Related Resources
 
- * [Form Validation]({{ site.baseurl }}/guides/applications/form-validation/)
+ * [Modal Component]({{ site.baseurl }}components/modal/)
+ * [Form Validation]({{ site.baseurl }}guides/applications/form-validation/)
