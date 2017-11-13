@@ -100,6 +100,10 @@
       subhref: "components/growl"
       img: "img/subcategories/growl.png"
 
+    - subtitle: "Modal"
+      subhref: "components/modal"
+      img: "img/subcategories/modal.png"
+
     - subtitle: "Labels"
       subhref: "components/labels"
       img: "img/subcategories/labels.png"
