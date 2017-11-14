@@ -190,11 +190,7 @@ module.exports = function (grunt) {
     'uglify',
     'shell:jekyllServe',
   ]);
-  grunt.registerTask('rebuildjs', [
-    'browserify',
-    'uglify',
-    'shell:jekyllServe',
-  ]);
+  grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});
 

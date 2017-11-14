@@ -64,6 +64,10 @@
       subhref: "components/button-group"
       img: "img/subcategories/button-group.png"
 
+    - subtitle: "Content Tabs"
+      subhref: "components/content-tabs"
+      img: "img/subcategories/content-tabs.png"
+
     - subtitle: "Form Fields"
       subhref: "components/form-fields"
       img: "img/subcategories/form-fields.png"

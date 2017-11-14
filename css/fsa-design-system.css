@@ -5643,9 +5643,9 @@ main:active, main:focus {
     border: 1px solid #edecec;
     border-width: 1px 0;
     padding: 1.2rem;
-    background-color: #fff;
     margin-left: -1.2rem;
     margin-right: -1.2rem;
+    background-color: #fff;
   }
 }
 
@@ -5655,6 +5655,12 @@ main:active, main:focus {
     margin-left: 0;
     margin-right: 0;
     border-width: 1px;
+  }
+}
+
+@media (min-width: 30.0625em) {
+  .ds-preview--default-bg {
+    background-color: transparent;
   }
 }
 
