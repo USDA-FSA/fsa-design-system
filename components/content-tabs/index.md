@@ -37,6 +37,7 @@ jump_menu: true
     </ul>
     <div class="fsa-content-tabs__aside"></div>
   </div>
+
 </div>
 
 ## Variations
@@ -424,24 +425,21 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 ### Use When
 
 * Users only require a few specific pieces of content or functionality on the application screen.
-* The information needs to be displayed in a more compact area on the screen.
+* The information needs to be displayed in a more compact area on the screen, requires multiple view states, or multiple categories.
 
 ### Don't Use
 
-* The content of the application is substantial and will require scrolling down the page.
-* If the content within the Tabs is minimal and can more easily be accessed on the page.
+* When the number of categories for Tabs extend the Content Tabs bar too wide. Instead utilize a [Select Menu]({{ site.baseurl }}components/select/) to update content.
+* If the content within the Tabs is minimal and can more easily be accessed on a single page.
 
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-* Ensure that all Tab label Anchor tags have appropriate link titles with intuitive descriptions for assistive devices.
+* Ensure that all Tab label tags have appropriate accessibility applied with intuitive descriptions for assistive devices.
 
 ## General Guidance
 
+* Utilize Content Tabs to categorize application content for easily accessible view states.
 * Ensure to maximize the width of the Content Tabs in the screen space provided for better usability.
 * Best practices would utilize the full width of the application screen.
-
-## Related Resources
-
-* [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
