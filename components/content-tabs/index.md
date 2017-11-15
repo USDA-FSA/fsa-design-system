@@ -423,26 +423,24 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Use When
 
-* You want to consolidate like actions into one condensed component that acts as a toggle between the button options.
-* All actions pertain to the same feature set and contextual functionality of the application.
+* Users only require a few specific pieces of content or functionality on the application screen.
+* The information needs to be displayed in a more compact area on the screen.
 
 ### Don't Use
 
-* When the functionality of the button does not pertain to the feature within the context of the application.
-* If you want to lead users between pages of a website. Use [text links]({{ site.baseurl }}components/links/) instead.
-* Less popular or less important actions may be visually styled as links.
+* The content of the application is substantial and will require scrolling down the page.
+* If the content within the Tabs is minimal and can more easily be accessed on the page.
 
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-* Like buttons, button groups should display a visible focus state when users tab to them.
+* Ensure that all Tab label Anchor tags have appropriate link titles with intuitive descriptions for assistive devices.
 
 ## General Guidance
 
-* Make the first word of the button’s label an action verb. For example, instead of “Complaint Filing” label the button “File a complaint.”
-* Use sentence case for button labels, e.g. "Sign up" instead of "Sign Up".
-
+* Ensure to maximize the width of the Content Tabs in the screen space provided for better usability.
+* Best practices would utilize the full width of the application screen.
 
 ## Related Resources
 
