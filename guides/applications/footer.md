@@ -8,12 +8,12 @@ intro: "All FSA applications shall utilize a standard Footer based on the below 
 
 ## Footer Guidelines
 
-The FSA application footer is a multifacited feature that is designed to provide various levels of nagivational structure to meet the needs of the User. The columns are arranged from left to right to flow from more specific application links to more global navigation and contact options. Any additional links that are outlined in Business Requirements shall be placed in the appropriate column. 
+The FSA application footer is a multifacited feature that is designed to provide various levels of nagivational structure to meet the needs of the User. The columns are arranged from left to right to flow from more specific application links to more global navigation and contact options. Any additional links that are outlined in Business Requirements shall be placed in the appropriate column.
 
 
 ## Footer Column Structure
 
-The FSA footer has 4 columns: 
+The FSA footer has 4 columns:
 
  * First column represents links that are specifc for the application
  * Second column represents Agency links that are more relevant to the program
@@ -27,7 +27,7 @@ The FSA footer has 4 columns:
 
 ## Footer Required Links
 
-Below is the list of recommended links that shall be used on all FSA application footers. Based on the specific application and the Users, some of the below links will not be necessary or applicable. 
+Below is the list of recommended links that shall be used on all FSA application footers. Based on the specific application and the Users, some of the below links will not be necessary or applicable.
 
 <table class="fsa-table fsa-table--responsive">
     <thead>
@@ -45,7 +45,7 @@ Below is the list of recommended links that shall be used on all FSA application
             <td aria-label="URL" scope="row">[Application About Page URL]</td>
             <td></td>
         </tr>
-        
+
         <tr>
             <td aria-label="Category" scope="row">Program Information</td>
             <td aria-label="Label" scope="row">[Application Name] Handbook</td>
@@ -58,7 +58,7 @@ Below is the list of recommended links that shall be used on all FSA application
             <td aria-label="URL" scope="row">http://fsaintranet.sc.egov.usda.gov/fsa/FSAIntranet_newsroom.html</td>
             <td></td>
         </tr>
-        
+
         <tr>
             <td aria-label="Category" scope="row">Agency Guidelines</td>
             <td aria-label="Label" scope="row">Handbooks</td>
@@ -68,7 +68,7 @@ Below is the list of recommended links that shall be used on all FSA application
         <tr>
             <td aria-label="Category" scope="row">Agency Guidelines</td>
             <td aria-label="Label" scope="row">Notices</td>
-            <td aria-label="URL" scope="row">https://www.fsa.usda.gov/FSA/notices?area=home&subject=lare&topic=not&setflag=FROMURL&getData=NONE" target="_blank</td>
+            <td aria-label="URL" scope="row">https://www.fsa.usda.gov/FSA/notices?area=home&subject=lare&topic=not&setflag=FROMURL&getData=NONE"</td>
             <td></td>
         </tr>
         <tr>
@@ -95,7 +95,7 @@ Below is the list of recommended links that shall be used on all FSA application
             <td aria-label="URL" scope="row">https://www.fsa.usda.gov/help/policies-and-links</td>
             <td></td>
         </tr>
-        
+
         <tr>
             <td aria-label="Category" scope="row">Global</td>
             <td aria-label="Label" scope="row">Contact Us</td>
@@ -124,4 +124,4 @@ Below is the list of recommended links that shall be used on all FSA application
 </table>
 
 
- 
+
