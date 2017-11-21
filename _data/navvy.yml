@@ -52,6 +52,10 @@
       subhref: "components/links"
       img: "img/subcategories/links.png"
 
+    - subtitle: "Top Nav"
+      subhref: "components/top-nav"
+      img: "img/subcategories/top-nav.png"
+
     - subtitle: "Breadcrumbs"
       subhref: "components/breadcrumbs"
       img: "img/subcategories/breadcrumbs.png"
