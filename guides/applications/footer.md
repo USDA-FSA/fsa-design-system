@@ -123,5 +123,7 @@ Below is the list of recommended links that shall be used on all FSA application
     </tbody>
 </table>
 
+## Related Information
 
+* [Global Footer Component]({{ site.baseurl }}components/footer)
 
