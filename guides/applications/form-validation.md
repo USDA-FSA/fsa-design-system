@@ -16,7 +16,7 @@ __2. Display error messages at the right time__ - It is also important for the e
 
 __3. Use the appropriate color for the message__ - Generally speaking, it is best practice to use the color red, paired with error text messaging to indicated something needs to be corrected to continue. In the case of confirmation or success messaging, the color green, paired with success text messaging should be used. Based on the location and background color of the area of the error, consideration of 508 compliance shall still be used.
 
-__4. Use clear language and provide an actionable resolution__ - The verbiage used when notifying a User of an error should be easy to understand and provide a way to solve the problem. Even if the error messaging is placed in the right spot at the right time, and in the right color scheme, it serves no purpose if the User does not understand how to correct the problem. FSA applications shall use [plain language priciples]({{ site.baseurl }}/guides/content/plain-language/) when displaying validation messaging.
+__4. Use clear language and provide an actionable resolution__ - The verbiage used when notifying a User of an error should be easy to understand and provide a way to solve the problem. Even if the error messaging is placed in the right spot at the right time, and in the right color scheme, it serves no purpose if the User does not understand how to correct the problem. FSA applications shall use [plain language priciples]({{ site.baseurl }}guides/content/plain-language/) when displaying validation messaging.
 
 
 ## Example Messaging States
@@ -32,12 +32,12 @@ The themes above have been programmed into the CSS and form components within th
 
 ## Warning Messages
 
-Some FSA applications will require the system to confirm an action taken by a User by showing a Warning or Confirmation message. For actions that are destructive in nature, such as deleting data, Developers shall utilize a Confirmation modal. To find out more information and guidelines on modal windows, [please review the guide here]({{ site.baseurl }}/guides/applications/modal/).
+Some FSA applications will require the system to confirm an action taken by a User by showing a Warning or Confirmation message. For actions that are destructive in nature, such as deleting data, Developers shall utilize a Confirmation modal. To find out more information and guidelines on modal windows, [please review the guide here]({{ site.baseurl }}guides/applications/modal/).
 
 <caption>Modal Window Confirmation</caption>
 <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" alt="Image of sample Modal Window Confirmation"></a>
 
 ## Related Resources
 
- * [Form Fields]({{ site.baseurl }}/components/form-fields/)
- * [Plain Language Guide]({{ site.baseurl }}/guides/content/plain-language/)
+ * [Form Fields]({{ site.baseurl }}components/form-fields/)
+ * [Plain Language Guide]({{ site.baseurl }}guides/content/plain-language/)

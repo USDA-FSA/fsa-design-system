@@ -1,16 +1,16 @@
 <footer>
   <div class="ds-footer">
     <div class="ds-footer__bd">
-      <p>Feedback? <a href="{{ site.github_repository_url }}/issues/new">Create an issue</a> on the <a href="{{ site.github_repository_url }}">GitHub repository</a>.</p>
-      <p>Have an idea? Read our <a href="{{ site.github_repository_url }}/blob/gh-pages/CONTRIBUTING.md">contribution guidelines</a>.</p>
-      <p>As a work of the United States government, this project is <a href="{{ site.github_repository_url }}/blob/gh-pages/LICENSE.md">in the public domain</a>.</p>
+      <p>Feedback? <a href="{{ site.github_repository_url }}issues/new">Create an issue</a> on the <a href="{{ site.github_repository_url }}">GitHub repository</a>.</p>
+      <p>Have an idea? Read our <a href="{{ site.github_repository_url }}blob/gh-pages/CONTRIBUTING.md">contribution guidelines</a>.</p>
+      <p>As a work of the United States government, this project is <a href="{{ site.github_repository_url }}blob/gh-pages/LICENSE.md">in the public domain</a>.</p>
       <hr>
       <ul class="fsa-list--inline">
-        <li><a href="{{ site.github_repository_url }}/blob/gh-pages/{{ page.path }}" target="_blank">Edit this page on GitHub</a></li>
+        <li><a href="{{ site.github_repository_url }}blob/gh-pages/{{ page.path }}" target="_blank">Edit this page on GitHub</a></li>
         {% if jekyll.environment == "development" %}<li><a href="{{ site.url }}{{ site.baseurl }}{{ page.path | replace: '.md', '.html' }}" target="_blank">View page in Production</a></li>{% endif %}
         <li><a href="{{ site.github_repository_url }}" target="_blank">GitHub Repo</a></li>
-        <li><a href="{{ site.github_repository_url }}/issues" target="_blank">GitHub Issues</a></li>
-        <li><a href="{{ site.baseurl }}/sitemap">Sitemap</a></li>
+        <li><a href="{{ site.github_repository_url }}issues" target="_blank">GitHub Issues</a></li>
+        <li><a href="{{ site.baseurl }}sitemap">Sitemap</a></li>
       </ul>
       {% if jekyll.environment == "development" %}
       <!--

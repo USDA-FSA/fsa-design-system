@@ -52,14 +52,14 @@ Alternatives can be provided via a `caption`, `alt` attribute, `title` attribute
 
 <div class="ds-preview">
   <figure>
-    <img src="{{site.baseurl}}/img/sign.jpg" alt="">
+    <img src="{{site.baseurl}}img/sign.jpg" alt="">
     <figcaption>Sign that reads: Warning do not read this sign</figcaption>
   </figure>
 </div>
 
 ```html
 <figure>
-  <img src="{{site.baseurl}}/img/sign.jpg" alt="">
+  <img src="{{site.baseurl}}img/sign.jpg" alt="">
   <figcaption>Sign that reads: Warning do not read this sign</figcaption>
 </figure>
 ```

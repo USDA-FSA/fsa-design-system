@@ -12,7 +12,7 @@ The FSA Design System uses 3 different types of design style for tabular data, w
 
 When using the custom CSS classes provided within the Design System, the structure of the table will shift based on the size of the content within the cell. The horizontal spacing of the largest text string or element will determine the width of each column. A Developer shall not hardcode the width or height of the table or table cells.
 
-__Tables should be used only to display tabular data__, and shall not be used to structure a page or provide a mechanism for layout. Tables used for the purpose of layout are generally not 508 compliant. Developers shall utilize the [FSA Design System Grids]( {{ site.baseurl }}/visual-style/grid/ ) in order to structure their content on a page.
+__Tables should be used only to display tabular data__, and shall not be used to structure a page or provide a mechanism for layout. Tables used for the purpose of layout are generally not 508 compliant. Developers shall utilize the [FSA Design System Grids]( {{ site.baseurl }}visual-style/grid/ ) in order to structure their content on a page.
 
 ## Default Table Style
 
@@ -90,7 +90,7 @@ Below is the default table style that should be used in the majority of instance
     </tbody>
 </table>
 
-<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button> 
+<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button>
 
 <!--
 
@@ -109,7 +109,7 @@ ___
 
 <div class="fsa-clearfix">
 <div class="fsa-float--right">
-    <button class="fsa-btn fsa-btn--secondary" type="button">FSA View</button> <button class="fsa-btn fsa-btn--secondary" type="button">Provider View</button> 
+    <button class="fsa-btn fsa-btn--secondary" type="button">FSA View</button> <button class="fsa-btn fsa-btn--secondary" type="button">Provider View</button>
 </div>
 </div>
 
@@ -150,7 +150,7 @@ ___
     </tbody>
 </table>
 
-<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button> 
+<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button>
 -->
 
 ## Examples with In-line Row Controls
@@ -196,7 +196,7 @@ ___
     </tbody>
 </table>
 
-<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--primary" type="button">Save</button> 
+<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
 
 
 ## Borderless Table Style
@@ -269,4 +269,4 @@ The below example showcases the Borderless Table Style used with text-heavy cont
 
 ## Related Resources
 
- * [Tables Component]({{ site.baseurl }}/components/tables)
+ * [Tables Component]({{ site.baseurl }}components/tables)

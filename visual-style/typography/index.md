@@ -277,7 +277,7 @@ With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size([size
 
 ## Related Resources
 
- * [Fonts and Typography Guide]({{ site.baseurl }}/guides/applications/fonts/)
+ * [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)
 
 <!-- ## Related Resources
 

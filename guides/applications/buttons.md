@@ -52,7 +52,7 @@ The below buttons are the various options available for use in the FSA Design Sy
 
  * Reset is defined as removing all data and returning to the initial state of the application or online form inputs
  * Clear is defined as removing all data from application or online form fields
- * Reset and Clear buttons, if used, shall not be placed near a Primary button such as Next, Submit, or Save   
+ * Reset and Clear buttons, if used, shall not be placed near a Primary button such as Next, Submit, or Save
 
 ## Which Label to Use?
 
@@ -364,4 +364,4 @@ ___
 
 ## Related Resources
 
- * [Button Components]({{ site.baseurl }}/components/buttons/)
+ * [Button Components]({{ site.baseurl }}components/buttons/)

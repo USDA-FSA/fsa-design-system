@@ -37,5 +37,5 @@ ___
 
 ## Related Resources
 
- * [Form Fields]({{ site.baseurl }}/components/form-fields/)
- * [Accessibility]({{ site.baseurl }}/guides/accessibility/forms)
+ * [Form Fields]({{ site.baseurl }}components/form-fields/)
+ * [Accessibility]({{ site.baseurl }}guides/accessibility/forms)

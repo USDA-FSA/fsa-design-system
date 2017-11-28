@@ -193,7 +193,7 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ### Field Columns
 
-By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}/visual-style/grid/), you can define a consistant column structure, and the fields will stack until the Small breakpoint.
+By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}visual-style/grid/), you can define a consistant column structure, and the fields will stack until the Small breakpoint.
 
 ```html
 <div class="fsa-field fsa-field--block fsa-field--columns">

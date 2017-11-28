@@ -10,5 +10,5 @@ intro: "Introduction text"
 
 ## Related Resources
 
- * [Color Code]({{ site.baseurl }}/visual-style/color/)
- * [Accessibility]({{ site.baseurl }}/guides/accessibility/color-and-contrast)
+ * [Color Code]({{ site.baseurl }}visual-style/color/)
+ * [Accessibility]({{ site.baseurl }}guides/accessibility/color-and-contrast)

@@ -9,7 +9,7 @@ jump_menu: true
 <div class="ds-preview">
   <div class="fsa-media">
     <div class="fsa-media__section">
-      <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
     </div>
     <div class="fsa-media__section">
       <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -36,7 +36,7 @@ Media Objects are styled with `class="fsa-media"`.
 <div class="ds-preview">
   <div class="fsa-media">
     <div class="fsa-media__section">
-      <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
     </div>
     <div class="fsa-media__section">
       <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -59,7 +59,7 @@ Media Objects are styled with `class="fsa-media"`.
 <div class="ds-preview">
   <div class="fsa-media fsa-media--right">
     <div class="fsa-media__section">
-      <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
     </div>
     <div class="fsa-media__section">
       <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -82,7 +82,7 @@ Media Objects are styled with `class="fsa-media"`.
 <div class="ds-preview">
   <div class="fsa-media fsa-media--middle">
     <div class="fsa-media__section">
-      <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
     </div>
     <div class="fsa-media__section">
       <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -106,7 +106,7 @@ Media Objects are styled with `class="fsa-media"`.
 <div class="ds-preview">
   <div class="fsa-media fsa-media--bottom">
     <div class="fsa-media__section">
-      <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
     </div>
     <div class="fsa-media__section">
       <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -148,19 +148,19 @@ Based on the layout and features of the application, it might be advantageous to
 <div class="ds-preview">
   <div class="fsa-media">
     <div class="fsa-media__section">
-      <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
     </div>
     <div class="fsa-media__section">
       <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
       <div class="fsa-media">
         <div class="fsa-media__section">
-          <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+          <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
         </div>
         <div class="fsa-media__section">
           <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
           <div class="fsa-media">
             <div class="fsa-media__section">
-              <img class="fsa-media__img" src="{{ site.baseurl }}/img/100x100.jpg" alt="">
+              <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
             </div>
             <div class="fsa-media__section">
               <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -181,7 +181,7 @@ Based on the layout and features of the application, it might be advantageous to
 
 ### Don't Use
 
-* As an alternative for structuring page content with the [FSA Grids]({{ site.baseurl }}/visual-style/grid/).
+* As an alternative for structuring page content with the [FSA Grids]({{ site.baseurl }}visual-style/grid/).
 
 ## General Guidance
 
