@@ -64,13 +64,17 @@
       subhref: "components/top-nav"
       img: "img/subcategories/top-nav.png"
 
+    - subtitle: "Breadcrumbs"
+      subhref: "components/breadcrumbs"
+      img: "img/subcategories/breadcrumbs.png"
+
     - subtitle: "Footer"
       subhref: "components/footer"
       img: "img/subcategories/footer.png"
 
-    - subtitle: "Breadcrumbs"
-      subhref: "components/breadcrumbs"
-      img: "img/subcategories/breadcrumbs.png"
+    - subtitle: "Screen ID"
+      subhref: "components/screen-id"
+      img: "img/subcategories/screen-id.png"
 
     - subtitle: "Buttons"
       subhref: "components/buttons"

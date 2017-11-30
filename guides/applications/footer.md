@@ -22,8 +22,58 @@ The FSA footer has 4 columns:
 
 ## Footer Example
 
-<a href="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" alt="Image of example FSA application footer"></a>
 
+<div style="overflow: hidden">
+  <div class="fsa-footer">
+    <div class="fsa-footer__bd">
+      <div class="fsa-grid">
+        <div class="fsa-footer__primary fsa-grid__1/1 fsa-grid__9/12@l">
+          <div class="fsa-grid">
+            <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+              <h3 class="fsa-footer__cat-header">Program Information</h3>
+              <ul class="fsa-footer__list">
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">About XMPL</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">XMPL - Handbook 1</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">XMPL - Handbook 2</a></li>
+              </ul>
+            </div>
+            <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+              <h3 class="fsa-footer__cat-header">Agency Guidelines</h3>
+              <ul class="fsa-footer__list">
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Publications</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Handbooks</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Notices</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">FFAS Employee Forms</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Software Transmittals</a></li>
+              </ul>
+            </div>
+            <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+              <h3 class="fsa-footer__cat-header">Resources</h3>
+              <ul class="fsa-footer__list">
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Inside FSA</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Policies and Links</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="fsa-footer__secondary fsa-grid__1/1 fsa-grid__3/12@l">
+          <ul class="fsa-footer__list fsa-footer__secondary-list">
+            <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
+              <a class="fsa-btn fsa-btn--secondary" href="#" target="_blank">Contact Us</a>
+            </li>
+            <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" target="_blank">1-800-555-1234</a></li>
+            <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
+            <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<a href="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" alt="Image of example FSA application footer"></a>
+-->
 
 ## Footer Required Links
 

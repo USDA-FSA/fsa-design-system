@@ -18,9 +18,20 @@ When a User is ready to log out of the application, the following behavior is ex
 
 ## Screen ID
 
-A Screen ID shall be displayed on all pages of the application, below all page content, and just above the application footer.
+A Screen ID shall be displayed on all pages of the application, below all page content, and just above the application footer. The [Screen ID Component]( {{ site.baseurl }}components/screen-id/ ) can be found in the Components section.
 
+<div class="fsa-screen-id">
+  <div class="fsa-screen-id__bd">
+    <dl class="fsa-screen-id__dl">
+      <dt class="fsa-screen-id__dt">Screen ID</dt>
+      <dd class="fsa-screen-id__dd">XYZ-WEB-007</dd>
+    </dl>
+  </div>
+</div>
+
+<!--
 <a href="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="Image of example FSA application with Screen ID above footer"></a>
+-->
 
 ## Last Modified Date
 
