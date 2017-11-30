@@ -762,7 +762,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 ### Don't Use
 
-* As any other navigation system that is not located directly below the [FSA Header]({{ site.baseurl }}guides/applications/header).
+* As any other navigation system that is not located directly below the [FSA Application Header]({{ site.baseurl }}guides/applications/header).
 * As a jump menu that directs Users to content on the same page.
 
 ## Accessibility

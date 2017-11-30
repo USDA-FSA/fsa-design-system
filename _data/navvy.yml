@@ -56,6 +56,10 @@
       subhref: "components/tophat"
       img: "img/subcategories/tophat.png"
 
+    - subtitle: "Application Header"
+      subhref: "components/header-app"
+      img: "img/subcategories/header-app.png"
+
     - subtitle: "Top Nav"
       subhref: "components/top-nav"
       img: "img/subcategories/top-nav.png"
