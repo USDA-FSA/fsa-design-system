@@ -112,6 +112,10 @@
       subhref: "components/select"
       img: "img/subcategories/select.png"
 
+    - subtitle: "Select Multi"
+      subhref: "components/select-multi"
+      img: "img/subcategories/select-multi.png"
+
     - subtitle: "Tables"
       subhref: "components/tables"
       img: "img/subcategories/tables.png"

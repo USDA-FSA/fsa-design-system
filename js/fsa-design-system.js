@@ -70,7 +70,7 @@ jQuery(document).ready(function($){
 
 //module.exports = Jump;
 
-},{"../vendor/jquery.OnePageNav.js":5,"../vendor/jquery.sticky":6,"jquery":7}],2:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":6,"../vendor/jquery.sticky":7,"jquery":8}],2:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -401,6 +401,128 @@ function modal__trapTab(e){
 }
 
 },{}],4:[function(require,module,exports){
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var selectMulti__triggers = document.querySelectorAll('[data-behavior~="select-multi"]');
+
+// Utility method to loop thru NodeList correctly
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
+// Utilitity method
+var getClosest = function(elem, selector){
+
+    // Element.matches() polyfill
+    if (!Element.prototype.matches) {
+        Element.prototype.matches =
+            Element.prototype.matchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.oMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            function(s) {
+                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                    i = matches.length;
+                while (--i >= 0 && matches.item(i) !== this) {}
+                return i > -1;
+            };
+    }
+
+    // Get the closest matching element
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+    return null;
+
+};
+
+// iterate thru trigger elements and set click handler
+forEach(selectMulti__triggers, function(index, value) {
+  var _el = value;
+  _el.addEventListener('click', function(e){
+
+    var _check = e.target;
+    //var _parent = el.closest('.fsa-select-multi');
+    var _parent = getClosest(_el, '.fsa-select-multi');
+    var _selectAll = _parent.querySelector('[data-behavior~="select-multi-all"]');
+
+    if(_el != _selectAll){
+
+      var _len = _parent.querySelectorAll('[data-behavior~="select-multi"]').length;
+      var _lenChecked = _parent.querySelectorAll('[data-behavior~="select-multi"]:checked').length
+      var _count = _len - _lenChecked;
+
+      if( _el.checked){
+        if(!_selectAll.checked){
+          if( _count <= 1 ){
+            _selectAll.indeterminate = false;
+            _selectAll.checked = true;
+          } else {
+            _selectAll.indeterminate = true;
+            _selectAll.checked = false;
+          }
+        }
+      } else {
+        if(_selectAll.checked){
+          _selectAll.indeterminate = true;
+          _selectAll.checked = false;
+        } else if(_count == (_len)) {
+          _selectAll.indeterminate = false;
+          _selectAll.checked = false;
+        }
+      }
+
+    } else {
+      var _cbs = _parent.querySelectorAll('[data-behavior~="select-multi"]');
+      forEach(_cbs, function (index, value) {
+        value.checked = _selectAll.checked;
+      });
+      _selectAll.indeterminate = false;
+    }
+
+  }, false);
+});
+
+function selectMulti__setState(){
+
+  var _selectAll = document.querySelectorAll('[data-behavior~="select-multi-all"]');
+  forEach(_selectAll, function (index, value) {
+
+    //console.log(typeof value);
+    //var _parent = value.closest('.fsa-select-multi');
+    var _parent = getClosest(value, '.fsa-select-multi');
+    var _selectAll = value;
+
+    var _len = _parent.querySelectorAll('[data-behavior~="select-multi"]').length;
+    var _lenChecked = _parent.querySelectorAll('[data-behavior~="select-multi"]:checked').length
+    var _count = _len - _lenChecked;
+
+    if( _count <= 1 ){
+      _selectAll.indeterminate = false;
+      _selectAll.checked = true;
+    } else {
+      _selectAll.indeterminate = true;
+      _selectAll.checked = false;
+    }
+  });
+}
+
+
+selectMulti__setState();
+
+},{}],5:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -411,9 +533,10 @@ window.$ = $;
 var Jump = require('./components/ds.jump');
 var Growl = require('./components/fsa-growl');
 var Modal = require('./components/fsa-modal');
+var SelectMulti = require('./components/fsa-select-multi');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/ds.jump":1,"./components/fsa-growl":2,"./components/fsa-modal":3,"jquery":7}],5:[function(require,module,exports){
+},{"./components/ds.jump":1,"./components/fsa-growl":2,"./components/fsa-modal":3,"./components/fsa-select-multi":4,"jquery":8}],6:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -638,7 +761,7 @@ var Modal = require('./components/fsa-modal');
 
 })( jQuery, window , document );
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 // Sticky Plugin v1.0.4 for jQuery
 // =============
 // Author: Anthony Garand
@@ -918,7 +1041,7 @@ var Modal = require('./components/fsa-modal');
   });
 }));
 
-},{"jquery":7}],7:[function(require,module,exports){
+},{"jquery":8}],8:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
@@ -10734,4 +10857,4 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
-},{}]},{},[4]);
+},{}]},{},[5]);
