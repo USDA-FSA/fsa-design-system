@@ -120,7 +120,7 @@ The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system
 
 ## Accessibility
 
-Always refer to the [Accessibility Tables Guide]({{ site.baseurl }}guides/accessibility/tables) for overall guidance.
+Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.
 
 * Maintain the Unordered List and Anchor Link structure of the HTML to allow a User to Tab thru each element of the navigation.
 

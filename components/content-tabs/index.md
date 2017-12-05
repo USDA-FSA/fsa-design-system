@@ -436,7 +436,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ## Accessibility
 
-Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
+Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.
 
 * Ensure that all Tab label tags have appropriate accessibility parameters (ALT, TITLE, etc) applied with intuitive descriptions for assistive devices.
 
