@@ -68,6 +68,10 @@
       subhref: "components/breadcrumbs"
       img: "img/subcategories/breadcrumbs.png"
 
+    - subtitle: "Topper"
+      subhref: "components/topper"
+      img: "img/subcategories/topper.png"
+
     - subtitle: "Footer"
       subhref: "components/footer"
       img: "img/subcategories/footer.png"
