@@ -156,6 +156,10 @@
       subhref: "guides/applications"
       img: "img/subcategories/applications.png"
 
+    - subtitle: "Front-end"
+      subhref: "guides/front-end"
+      img: "img/subcategories/front-end.png"
+
     - subtitle: "Accessibility"
       subhref: "guides/accessibility"
       img: "img/subcategories/accessibility.png"
@@ -164,8 +168,6 @@
       subhref: "guides/content"
       img: "img/subcategories/content.png"
 
-    # - subtitle: "Front-end"
-    #   subhref: "guides/front-end"
-    #   img: "img/subcategories/front-end.png"
+
 
 
