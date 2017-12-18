@@ -34,7 +34,7 @@ The FSA Design System utilizes SASS along with a Grunt automated build process. 
 }
 ```
 
-As seen in the above example, the ability to apply variables (`$size-small`) and functions (`breakpoint(M)`) across multiple projects and components allows for a cohesive design and an efficient development environment.
+As seen in the above example, the ability to apply variables (`$size-small`) and functions (`font-size(1)` and `breakpoint(M)`) across multiple projects and components allows for a cohesive design and an efficient development environment.
 
 ## Related Information
 
