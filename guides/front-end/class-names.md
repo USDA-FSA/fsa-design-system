@@ -16,7 +16,7 @@ The structure of all CSS class names are in the `"block__elem--mod"` format, and
 * block and element with hyphenated words: `"fsa-nav-global__list-item"`
 * block, element, and modifier: `"fsa-nav-global__list-item--multi-column"`
 
-All components start with a base class for the block, like `class="fsa-nav-global"`, and will expand with other class names. For example, the above Top Nav class, uses the block and them adds the block and element `class="fsa-nav-global fsa-nav-global__list"` within the class parameter to expand the functionality of the component.
+All components start with a base class for the block, like `class="fsa-nav-global"`, and will expand with other class names. For example, the above Top Nav class, uses the block and them adds the block and element `class="fsa-nav-global fsa-nav-global__list"` within the class parameter to expand the functionality of the component. CSS selectors are prefixed with `fsa-` so there is no conflict with other CSS libraries.
 
 ### Good Examples
 
