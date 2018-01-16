@@ -52,9 +52,49 @@
       subhref: "components/links"
       img: "img/subcategories/links.png"
 
+    - subtitle: "Top Hat"
+      subhref: "components/tophat"
+      img: "img/subcategories/tophat.png"
+
+    - subtitle: "Application Header"
+      subhref: "components/header-app"
+      img: "img/subcategories/header-app.png"
+
+    - subtitle: "Top Nav"
+      subhref: "components/top-nav"
+      img: "img/subcategories/top-nav.png"
+
+    - subtitle: "Breadcrumbs"
+      subhref: "components/breadcrumbs"
+      img: "img/subcategories/breadcrumbs.png"
+
+    - subtitle: "Topper"
+      subhref: "components/topper"
+      img: "img/subcategories/topper.png"
+
+    - subtitle: "Footer"
+      subhref: "components/footer"
+      img: "img/subcategories/footer.png"
+
+    - subtitle: "Screen ID"
+      subhref: "components/screen-id"
+      img: "img/subcategories/screen-id.png"
+
     - subtitle: "Buttons"
       subhref: "components/buttons"
       img: "img/subcategories/buttons.png"
+
+    - subtitle: "Button Group"
+      subhref: "components/button-group"
+      img: "img/subcategories/button-group.png"
+
+    - subtitle: "Content Tabs"
+      subhref: "components/content-tabs"
+      img: "img/subcategories/content-tabs.png"
+
+    - subtitle: "Form Fields"
+      subhref: "components/form-fields"
+      img: "img/subcategories/form-fields.png"
 
     - subtitle: "Text Input"
       subhref: "components/text-input"
@@ -76,22 +116,58 @@
       subhref: "components/select"
       img: "img/subcategories/select.png"
 
+    - subtitle: "Select Multi"
+      subhref: "components/select-multi"
+      img: "img/subcategories/select-multi.png"
+
     - subtitle: "Tables"
       subhref: "components/tables"
       img: "img/subcategories/tables.png"
+
+    - subtitle: "Alerts"
+      subhref: "components/alerts"
+      img: "img/subcategories/alerts.png"
+
+    - subtitle: "Growl"
+      subhref: "components/growl"
+      img: "img/subcategories/growl.png"
+
+    - subtitle: "Modal"
+      subhref: "components/modal"
+      img: "img/subcategories/modal.png"
+
+    - subtitle: "Labels"
+      subhref: "components/labels"
+      img: "img/subcategories/labels.png"
+
+    - subtitle: "Badges"
+      subhref: "components/badges"
+      img: "img/subcategories/badges.png"
+
+    - subtitle: "Media Objects"
+      subhref: "components/media-objects"
+      img: "img/subcategories/media-objects.png"
 
 - title: "Guides"
   href: "guides"
   subcategories:
 
+    - subtitle: "Applications"
+      subhref: "guides/applications"
+      img: "img/subcategories/applications.png"
+
+    - subtitle: "Front-end"
+      subhref: "guides/front-end"
+      img: "img/subcategories/front-end.png"
+
     - subtitle: "Accessibility"
       subhref: "guides/accessibility"
       img: "img/subcategories/accessibility.png"
 
-    # - subtitle: "Front-end"
-    #   subhref: "guides/front-end"
-    #   img: "img/subcategories/front-end.png"
-
     - subtitle: "Content"
       subhref: "guides/content"
       img: "img/subcategories/content.png"
+
+
+
+

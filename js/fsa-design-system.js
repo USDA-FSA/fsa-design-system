@@ -68,9 +68,461 @@ jQuery(document).ready(function($){
 
 });
 
-module.exports = Jump;
+//module.exports = Jump;
 
-},{"../vendor/jquery.OnePageNav.js":3,"../vendor/jquery.sticky":4,"jquery":5}],2:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":6,"../vendor/jquery.sticky":7,"jquery":8}],2:[function(require,module,exports){
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var growl__firstTabStop;
+var growl__lastTabStop;
+
+var growl__triggers = document.querySelectorAll('[data-behavior~="growl-show"]');
+var growl__closeButtons = document.querySelectorAll('[data-behavior~="growl-dismiss"]');
+var growl__closeButtonsDelay = document.querySelectorAll('[data-behavior~="growl-dismiss-delay"]');
+
+// Utility method to loop thru NodeList correctly
+var forEach = function(array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
+// Utilitity method
+var getClosest = function(elem, selector){
+
+    // Element.matches() polyfill
+    if (!Element.prototype.matches) {
+        Element.prototype.matches =
+            Element.prototype.matchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.oMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            function(s) {
+                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                    i = matches.length;
+                while (--i >= 0 && matches.item(i) !== this) {}
+                return i > -1;
+            };
+    }
+
+    // Get the closest matching element
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+    return null;
+
+};
+// iterate thru trigger elements and set click handler
+forEach(growl__triggers, function(index, value) {
+  var _el = value;
+  _el.addEventListener('click', function(e){
+    // set private variables
+    var _trigger = e.target;
+    var _id = _trigger.getAttribute('aria-controls');
+
+    // assign classes and aria
+    _trigger.setAttribute('aria-expanded', 'true');
+    _trigger.setAttribute('data-growl-origin','');
+
+    // pass associated growl to method
+    growl__show( document.getElementById(_id) );
+  }, false);
+});
+
+// iterate thru close buttons and set click handler
+forEach(growl__closeButtons, function(index, value) {
+  var _el = value;
+  _el.addEventListener('click', function(e){
+    // pass associated growl to method
+    var _g = getClosest(e.currentTarget, '.fsa-growl');
+    growl__dismiss( _g );
+  }, false);
+});
+
+function growl__show(g){
+  var _growl = g;
+  _growl.setAttribute('aria-hidden', 'false');
+
+  // for Center Modal style only
+  if( growl__hasClass(_growl, 'fsa-growl--centered') ){
+    // trap tabs inside of modal
+    _growl.addEventListener('keydown', growl__trapTab);
+    // Find all focusable children
+    var _focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+    var _focusableElements = _growl.querySelectorAll(_focusableElementsString);
+
+    // Convert NodeList to Array
+    _focusableElements = Array.prototype.slice.call(_focusableElements);
+
+    growl__firstTabStop = _focusableElements[0];
+    growl__lastTabStop = _focusableElements[_focusableElements.length - 1];
+    growl__firstTabStop.focus();
+    _growl.focus();
+  }else{
+    _growl.addEventListener( growl__getAnimationString(_growl), growl__showDelay);
+  }
+}
+
+function growl__showDelay(e){
+  var _growl = e.target;
+
+  // clean up
+  _growl.removeEventListener(growl__getAnimationString(_growl), growl__showDelay);
+}
+
+function growl__dismiss(g){
+  var _growl = g;
+  _growl.className = _growl.className + ' fsa-growl--dismissing';
+  _growl.addEventListener( growl__getAnimationString(_growl), growl__dismissDelay);
+  if( growl__hasClass(_growl, 'fsa-growl--centered') ){
+    _growl.focus();
+  }
+}
+
+function growl__dismissDelay(e){
+  var _growl = e.target;
+
+  _growl.className = _growl.className.replace(' fsa-growl--dismissing','');
+  _growl.setAttribute('aria-hidden', 'true');
+
+  var _origin = document.querySelector('[data-growl-origin]');
+  _origin.removeAttribute('data-growl-origin');
+  _origin.setAttribute('aria-expanded', 'false');
+  // set focus back to the originating element
+  _origin.focus();
+  // clean up
+  _growl.removeEventListener(growl__getAnimationString(_growl), growl__dismissDelay);
+}
+
+//utility method to trap keys
+function growl__trapTab(e){
+  // Check for TAB key press
+  if (e.keyCode === 9) {
+    // SHIFT + TAB
+    if (e.shiftKey) {
+      if (document.activeElement === growl__firstTabStop) {
+        e.preventDefault();
+        growl__lastTabStop.focus();
+      }
+    // TAB
+    } else {
+      if (document.activeElement === growl__lastTabStop) {
+        e.preventDefault();
+        growl__firstTabStop.focus();
+      }
+    }
+  }
+  // ESCAPE
+  if (e.keyCode === 27) {
+    growl__dismiss();
+  }
+}
+
+function growl__hasClass(el, classname) {
+  return (' ' + el.className + ' ').indexOf(' ' + classname + ' ') > -1;
+}
+
+function growl__getAnimationString(el){
+  var str = "";
+  var t;
+  var animations = {
+    'animation':'animationend',
+    'OAnimation':'oAnimationEnd',
+    'MozAnimation':'animationend',
+    'WebkitAnimation':'webkitAnimationEnd'
+  };
+  for (t in animations) {
+    if ( typeof el.style[t] !== 'undefined' ) str = animations[t];
+  }
+  return str;
+}
+
+},{}],3:[function(require,module,exports){
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var modal__firstTabStop;
+var modal__lastTabStop;
+
+var modal__triggers = document.querySelectorAll('[data-behavior~="open-modal"]');
+var modal__closeButtons = document.querySelectorAll('[data-behavior~="close-modal"]');
+
+
+// Utility method to loop thru NodeList correctly
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
+// Utilitity method
+var getClosest = function(elem, selector){
+
+    // Element.matches() polyfill
+    if (!Element.prototype.matches) {
+        Element.prototype.matches =
+            Element.prototype.matchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.oMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            function(s) {
+                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                    i = matches.length;
+                while (--i >= 0 && matches.item(i) !== this) {}
+                return i > -1;
+            };
+    }
+
+    // Get the closest matching element
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+    return null;
+
+};
+
+// iterate thru trigger elements and set click handler
+forEach(modal__triggers, function(index, value) {
+  var _el = value;
+  _el.addEventListener('click', function(e){
+    // set private variables
+    var _trigger = e.target;
+    var _id = _trigger.getAttribute('aria-controls');
+    // assign classes and aria
+    _trigger.setAttribute('aria-expanded', 'true');
+    _trigger.setAttribute('data-modal-origin','');
+    // pass associated modal to method
+    modal__show( document.getElementById(_id) );
+  }, false);
+});
+
+
+// iterate thru trigger elements and set click handler
+forEach(modal__closeButtons, function (index, value) {
+  var _el = value;
+  _el.addEventListener('click', function(e){
+    // pass associated modal to method
+    var _m = getClosest(e.currentTarget, '.fsa-modal');
+    modal__close( _m );
+  }, false);
+});
+
+function modal__show(m){
+
+  var _modal = m;
+  // show the modal by toggling aria attribute
+  _modal.setAttribute('aria-hidden', 'false');
+
+  // trap tabs inside of modal
+  _modal.addEventListener('keydown', modal__trapTab);
+  // Find all focusable children
+
+  var _focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+  var _focusableElements = _modal.querySelectorAll(_focusableElementsString);
+
+  // Convert NodeList to Array
+  _focusableElements = Array.prototype.slice.call(_focusableElements);
+
+  modal__firstTabStop = _focusableElements[0];
+  modal__lastTabStop = _focusableElements[_focusableElements.length - 1];
+  modal__firstTabStop.focus();
+
+  // Fix double scrollbar issue
+  var _body = document.getElementsByTagName('body')[0];
+  _body.className = _body.className + ' fsa-modal-scroll-fix';
+
+  // gain focus --- needs rewrite
+  setTimeout(function() {
+    _modal.focus();
+  },200);
+
+}
+
+function modal__close(m){
+
+  var _modal = m;
+
+  // hide the modal by toggling aria attribute
+  _modal.setAttribute('aria-hidden', 'true');
+
+  // Fix double scrollbar issue
+  var _body = document.getElementsByTagName('body')[0];
+  _body.className = _body.className.replace(' fsa-modal-scroll-fix','');
+
+  // set focus back to the originating element
+  var _origin = document.querySelector('[data-modal-origin]');
+  _origin.removeAttribute('data-modal-origin');
+  _origin.setAttribute('aria-expanded', 'false');
+  _origin.focus();
+
+}
+
+// Utility method to trap keys
+function modal__trapTab(e){
+  // Check for TAB key press
+  if (e.keyCode === 9) {
+    // SHIFT + TAB
+    if (e.shiftKey) {
+      if (document.activeElement === modal__firstTabStop) {
+        e.preventDefault();
+        modal__lastTabStop.focus();
+      }
+    // TAB
+    } else {
+      if (document.activeElement === modal__lastTabStop) {
+        e.preventDefault();
+        modal__firstTabStop.focus();
+      }
+    }
+  }
+  // ESCAPE
+  if (e.keyCode === 27) {
+    modal__close();
+  }
+}
+
+},{}],4:[function(require,module,exports){
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var selectMulti__triggers = document.querySelectorAll('[data-behavior~="select-multi"]');
+
+// Utility method to loop thru NodeList correctly
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
+// Utilitity method
+var getClosest = function(elem, selector){
+
+    // Element.matches() polyfill
+    if (!Element.prototype.matches) {
+        Element.prototype.matches =
+            Element.prototype.matchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.oMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            function(s) {
+                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                    i = matches.length;
+                while (--i >= 0 && matches.item(i) !== this) {}
+                return i > -1;
+            };
+    }
+
+    // Get the closest matching element
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+    return null;
+
+};
+
+// iterate thru trigger elements and set click handler
+forEach(selectMulti__triggers, function(index, value) {
+  var _el = value;
+  _el.addEventListener('click', function(e){
+
+    var _check = e.target;
+    //var _parent = el.closest('.fsa-select-multi');
+    var _parent = getClosest(_el, '.fsa-select-multi');
+    var _selectAll = _parent.querySelector('[data-behavior~="select-multi-all"]');
+
+    if(_el != _selectAll){
+
+      var _len = _parent.querySelectorAll('[data-behavior~="select-multi"]').length;
+      var _lenChecked = _parent.querySelectorAll('[data-behavior~="select-multi"]:checked').length
+      var _count = _len - _lenChecked;
+
+      if( _el.checked){
+        if(!_selectAll.checked){
+          if( _count <= 1 ){
+            _selectAll.indeterminate = false;
+            _selectAll.checked = true;
+          } else {
+            _selectAll.indeterminate = true;
+            _selectAll.checked = false;
+          }
+        }
+      } else {
+        if(_selectAll.checked){
+          _selectAll.indeterminate = true;
+          _selectAll.checked = false;
+        } else if(_count == (_len)) {
+          _selectAll.indeterminate = false;
+          _selectAll.checked = false;
+        }
+      }
+
+    } else {
+      var _cbs = _parent.querySelectorAll('[data-behavior~="select-multi"]');
+      forEach(_cbs, function (index, value) {
+        value.checked = _selectAll.checked;
+      });
+      _selectAll.indeterminate = false;
+    }
+
+  }, false);
+});
+
+function selectMulti__setState(){
+
+  var _selectAll = document.querySelectorAll('[data-behavior~="select-multi-all"]');
+  forEach(_selectAll, function (index, value) {
+
+    //console.log(typeof value);
+    //var _parent = value.closest('.fsa-select-multi');
+    var _parent = getClosest(value, '.fsa-select-multi');
+    var _selectAll = value;
+
+    var _len = _parent.querySelectorAll('[data-behavior~="select-multi"]').length;
+    var _lenChecked = _parent.querySelectorAll('[data-behavior~="select-multi"]:checked').length
+    var _count = _len - _lenChecked;
+
+    if( _count <= 1 ){
+      _selectAll.indeterminate = false;
+      _selectAll.checked = true;
+    } else {
+      _selectAll.indeterminate = true;
+      _selectAll.checked = false;
+    }
+  });
+}
+
+
+selectMulti__setState();
+
+},{}],5:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -79,9 +531,12 @@ var $ = global.jQuery;
 window.$ = $;
 
 var Jump = require('./components/ds.jump');
+var Growl = require('./components/fsa-growl');
+var Modal = require('./components/fsa-modal');
+var SelectMulti = require('./components/fsa-select-multi');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/ds.jump":1,"jquery":5}],3:[function(require,module,exports){
+},{"./components/ds.jump":1,"./components/fsa-growl":2,"./components/fsa-modal":3,"./components/fsa-select-multi":4,"jquery":8}],6:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -306,7 +761,7 @@ var Jump = require('./components/ds.jump');
 
 })( jQuery, window , document );
 
-},{}],4:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 // Sticky Plugin v1.0.4 for jQuery
 // =============
 // Author: Anthony Garand
@@ -586,7 +1041,7 @@ var Jump = require('./components/ds.jump');
   });
 }));
 
-},{"jquery":5}],5:[function(require,module,exports){
+},{"jquery":8}],8:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
@@ -10402,4 +10857,4 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
-},{}]},{},[2]);
+},{}]},{},[5]);

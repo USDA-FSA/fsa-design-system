@@ -6,9 +6,9 @@
     border: 1px solid $color-fsa-tertiary-100;
     border-width: 1px 0;
     padding: $size-default;
-    background-color: $color-fsa-white;
     margin-left: (-$size-default);
     margin-right: (-$size-default);
+    background-color: $color-fsa-white;
   }
 
   @include breakpoint(M) {
@@ -18,6 +18,12 @@
     border-width: 1px;
   }
 
+  &--default-bg {
+    @include breakpoint(S) {
+      background-color: transparent;
+    }
+  }
+
   .highlighter-rouge + & {
     margin-top: -32px; // yeah, magic number, wheee!
   }
@@ -25,5 +31,4 @@
   + .highlighter-rouge {
     margin-top: -34px; // even more randomly magical
   }
-
 }

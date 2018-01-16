@@ -2,11 +2,14 @@
   alt_title: "Front-end"
   href: "guides/front-end"
 
-- title: "Item 2"
-  href: "guides/front-end/item-2"
+- title: "Naming Conventions"
+  href: "guides/front-end/class-names"
 
-- title: "Item 3"
-  href: "guides/front-end/item-3"
+- title: "Coding Standards"
+  href: "guides/front-end/coding-standards"
 
-- title: "Item 4"
-  href: "guides/front-end/item-4"
+- title: "JavaScript"
+  href: "guides/front-end/javascript"
+
+- title: "CSS Preprocessors"
+  href: "guides/front-end/css-preprocessors"

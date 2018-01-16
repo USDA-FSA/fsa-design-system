@@ -45,12 +45,12 @@ module.exports = function (grunt) {
         dest: 'fonts'
       },
 
-      // fsaStyleJavascriptComponents: {
-      //   expand: true,
-      //   src: '**',
-      //   cwd: 'node_modules/fsa-style/src/js/components',
-      //   dest: 'js/components'
-      // },
+      fsaStyleJavascriptComponents: {
+         expand: true,
+         src: '**',
+         cwd: 'node_modules/fsa-style/src/js/components',
+         dest: 'js/components'
+       },
 
       fsaStyleJavascriptVendor: {
         expand: true,
@@ -190,6 +190,7 @@ module.exports = function (grunt) {
     'uglify',
     'shell:jekyllServe',
   ]);
+  grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');
   grunt.registerTask('test', 'default', function () { grunt.log.writeln('Test that the app runs');});
 

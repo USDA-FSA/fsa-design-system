@@ -32,12 +32,13 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "fsa-style": "^2.0.3",
+    "fsa-style": "^2.1.1",
     "jquery": "^2.2.2"
   },
   "author": "USDA FSA Enterprise Architecture",
   "contributors": [
     "Francis Rupert <France.Rupert@gmail.com> (https://github.com/francisrupert)",
+    "Casey Hill <bignamehere@gmail.com> (https://github.com/bignamehere)",
     "Brian Mills (https://www.linkedin.com/in/brianmills)"
   ],
   "bugs": {

@@ -1,0 +1,37 @@
+- title: "Applications"
+  alt_title: "Applications"
+  href: "guides/applications"
+
+- title: "Buttons"
+  href: "guides/applications/buttons"
+
+- title: "Date Format"
+  href: "guides/applications/date-format"
+
+- title: "Fonts"
+  href: "guides/applications/fonts"
+
+- title: "Footer"
+  href: "guides/applications/footer"
+  
+- title: "Forms"
+  href: "guides/applications/forms"
+  
+- title: "Form Validation"
+  href: "guides/applications/form-validation"
+
+- title: "Header"
+  href: "guides/applications/header"
+
+- title: "Modal Window"
+  href: "guides/applications/modal"
+
+- title: "Navigation"
+  href: "guides/applications/navigation"
+  
+- title: "Phone Number"
+  href: "guides/applications/phone-number"
+
+- title: "Tables"
+  href: "guides/applications/tables"
+  
