@@ -32,7 +32,7 @@
       subhref: "visual-style/typography"
       img: "img/subcategories/typography.png"
 
-    - subtitle: "Size and Space"
+    - subtitle: "Size and Spacing Units"
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
@@ -48,19 +48,15 @@
   href: "components"
   subcategories:
 
-    - subtitle: "Text Links"
-      subhref: "components/links"
-      img: "img/subcategories/links.png"
-
-    - subtitle: "Top Hat"
+    - subtitle: "Header: Top Hat"
       subhref: "components/tophat"
       img: "img/subcategories/tophat.png"
 
-    - subtitle: "Application Header"
+    - subtitle: "Header: Application"
       subhref: "components/header-app"
       img: "img/subcategories/header-app.png"
 
-    - subtitle: "Top Nav"
+    - subtitle: "Header: Global Nav"
       subhref: "components/top-nav"
       img: "img/subcategories/top-nav.png"
 
@@ -79,6 +75,10 @@
     - subtitle: "Screen ID"
       subhref: "components/screen-id"
       img: "img/subcategories/screen-id.png"
+
+    - subtitle: "Text Links"
+      subhref: "components/links"
+      img: "img/subcategories/links.png"
 
     - subtitle: "Buttons"
       subhref: "components/buttons"
@@ -124,11 +124,11 @@
       subhref: "components/tables"
       img: "img/subcategories/tables.png"
 
-    - subtitle: "Alerts"
+    - subtitle: "Inline Alerts"
       subhref: "components/alerts"
       img: "img/subcategories/alerts.png"
 
-    - subtitle: "Growl"
+    - subtitle: "Growl Notifications"
       subhref: "components/growl"
       img: "img/subcategories/growl.png"
 
@@ -167,7 +167,3 @@
     - subtitle: "Content"
       subhref: "guides/content"
       img: "img/subcategories/content.png"
-
-
-
-
