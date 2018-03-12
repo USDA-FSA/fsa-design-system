@@ -6814,6 +6814,10 @@ blockquote code {
   opacity: .4;
 }
 
+.fsa-table__sort {
+  white-space: normal;
+}
+
 /**
  * Syntax highlighting styles
  */

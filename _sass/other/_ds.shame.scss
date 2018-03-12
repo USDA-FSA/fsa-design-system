@@ -167,3 +167,8 @@ code {
   background-image: url('#{$image-path}/chevron-up.svg');
   opacity: .4;
 }
+
+// TODO Add to fsa-style
+.fsa-table__sort {
+  white-space: normal;
+}
