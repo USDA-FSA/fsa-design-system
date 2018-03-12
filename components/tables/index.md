@@ -12,30 +12,42 @@ Tables are great for displaying tabular data. Minimal visual styling helps surfa
   <table class="fsa-table">
     <thead>
       <tr>
-        <th scope="col">A</th>
-        <th scope="col">B</th>
-        <th scope="col">C</th>
-        <th scope="col">D</th>
+        <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
+        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Loan Rate</button></th>
+        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
+        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>1A</td>
-        <td>1B</td>
-        <td>1C</td>
-        <td>1D</td>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">0.00</td>
       </tr>
       <tr>
-        <td>2A</td>
-        <td>2B</td>
-        <td>2C</td>
-        <td>2D</td>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.99</td>
+        <td class="fsa-text-align--right">0.00</td>
       </tr>
       <tr>
-        <td>3A</td>
-        <td>3B</td>
-        <td>3C</td>
-        <td>3D</td>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.49</td>
+        <td class="fsa-text-align--right">0.00</td>
       </tr>
     </tbody>
   </table>

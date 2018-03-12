@@ -1,8 +1,8 @@
 ---
 layout: page
 parent: "Components"
-title: "Alerts"
-intro: "Alerts help to provide messaging for the User during specific actions or events."
+title: "Inline Alerts"
+intro: "Inline Alerts help to provide inline, page-level messaging to the User. These may be as the result of a user's specific actions or unsolicited messages."
 jump_menu: true
 ---
 
@@ -15,7 +15,7 @@ jump_menu: true
 
 ## Variations
 
-Alerts are styled with `class="fsa-alert fsa-alert--[type]"`.
+Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ### Success
 

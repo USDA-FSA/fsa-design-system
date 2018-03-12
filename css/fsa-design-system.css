@@ -6808,6 +6808,12 @@ blockquote code {
   font-size: inherit;
 }
 
+.fsa-table__sort:hover:not(.fsa-table__sort--descending):not(.fsa-table__sort--ascending):after {
+  background-image: url("../img/chevron-up.png");
+  background-image: url("../img/chevron-up.svg");
+  opacity: .4;
+}
+
 /**
  * Syntax highlighting styles
  */
