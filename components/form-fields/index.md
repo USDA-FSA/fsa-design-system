@@ -9,8 +9,8 @@ jump_menu: true
 <div class="ds-preview">
   <div class="fsa-field">
     <label class="fsa-field__label" for="lorem-1234">Email address <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item" id="lorem-1234" name="lorem-1234" type="email" value="">
-    <span class="fsa-field__help">This is how people can contact you</span>
+    <input class="fsa-input fsa-field__item" id="lorem-1234" name="lorem-1234" aria-describedby="lorem-1234-help-1" aria-required="true" type="email" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-1">This is how people can contact you</span>
   </div>
 </div>
 
@@ -36,16 +36,16 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item" id="TheItem" name="TheItem" type="item" value="">
-  <span class="fsa-field__help">Instructional message here</span>
+  <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="item" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item" id="TheItem" name="TheItem" type="item" value="">
-    <span class="fsa-field__help">Instructional message here</span>
+    <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="item" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
   </div>
 </div>
 
@@ -53,16 +53,16 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item fsa-field__item--short" id="TheItem" name="TheItem" type="item" value="">
-  <span class="fsa-field__help">Instructional message here</span>
+  <label class="fsa-field__label" for="TheItem3">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item fsa-field__item--short" id="TheItem3" aria-describedby="lorem-1234-help-3" aria-required="true" name="TheItem3" type="item" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-3">Instructional message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item fsa-field__item--short" id="TheItem" name="TheItem" type="item" value="">
-    <span class="fsa-field__help">Instructional message here</span>
+    <label class="fsa-field__label" for="TheItem3">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item fsa-field__item--short" id="TheItem3" aria-describedby="lorem-1234-help-3" aria-required="true" name="TheItem3" type="item" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-3">Instructional message here</span>
   </div>
 </div>
 
@@ -70,16 +70,16 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item fsa-field__item--medium" id="TheItem" name="TheItem" type="item" value="">
-  <span class="fsa-field__help">Instructional message here</span>
+  <label class="fsa-field__label" for="TheItem4">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item fsa-field__item--medium" id="TheItem4" aria-describedby="lorem-1234-help-4" aria-required="true" name="TheItem4" type="item" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-4">Instructional message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item fsa-field__item--medium" id="TheItem" name="TheItem" type="item" value="">
-    <span class="fsa-field__help">Instructional message here</span>
+    <label class="fsa-field__label" for="TheItem4">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item fsa-field__item--medium" id="TheItem4" aria-describedby="lorem-1234-help-4" aria-required="true" name="TheItem4" type="item" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-4">Instructional message here</span>
   </div>
 </div>
 
@@ -87,16 +87,16 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field--block">
-  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item" id="TheItem" name="TheItem" type="item" value="">
-  <span class="fsa-field__help">Instructional message here</span>
+  <label class="fsa-field__label" for="TheItem5">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="TheItem5" aria-describedby="lorem-1234-help-5" aria-required="true" name="TheItem5" type="item" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-5">Instructional message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field--block">
-    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item" id="TheItem" name="TheItem" type="item" value="">
-    <span class="fsa-field__help">Instructional message here</span>
+    <label class="fsa-field__label" for="TheItem5">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item" id="TheItem5" aria-describedby="lorem-1234-help-5" aria-required="true" name="TheItem5" type="item" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-5">Instructional message here</span>
   </div>
 </div>
 
@@ -106,18 +106,18 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field fsa-field--error">
-  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item fsa-input--error" id="TheItem" name="TheItem" type="item" value="">
-  <span class="fsa-field__help">Instructional message here</span>
-  <span class="fsa-field__message">Helpful error message here</span>
+  <label class="fsa-field__label" for="TheItem6">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item fsa-input--error" id="TheItem6" aria-describedby="lorem-1234-help-6 lorem-1234-message-6" aria-required="true" name="TheItem6" type="item" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-6">Instructional message here</span>
+  <span class="fsa-field__message" id="lorem-1234-message-6" role="alert">Helpful error message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field fsa-field--error">
-    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item fsa-input--error" id="TheItem" name="TheItem" type="item" value="">
-    <span class="fsa-field__help">Instructional message here</span>
-    <span class="fsa-field__message">Helpful error message here</span>
+    <label class="fsa-field__label" for="TheItem6">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item fsa-input--error" id="TheItem6" aria-describedby="lorem-1234-help-6 lorem-1234-message-6" aria-required="true" name="TheItem6" type="item" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-6">Instructional message here</span>
+    <span class="fsa-field__message" id="lorem-1234-message-6" role="alert">Helpful error message here</span>
   </div>
 </div>
 
@@ -125,16 +125,16 @@ Below are the variations and code snippets that can be applied using `class="fsa
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item fsa-input--positive" id="TheItem" name="TheItem" type="item" value="">
-  <span class="fsa-field__help">Instructional message here</span>
+  <label class="fsa-field__label" for="TheItem7">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item fsa-input--positive" id="TheItem7" aria-describedby="lorem-1234-help-7" aria-required="true" name="TheItem7" type="item" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-7">Instructional message here</span>
 </div>
 ```
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item fsa-input--positive" id="TheItem" name="TheItem" type="item" value="">
-    <span class="fsa-field__help">Instructional message here</span>
+    <label class="fsa-field__label" for="TheItem7">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item fsa-input--positive" id="TheItem7" aria-describedby="lorem-1234-help-7" aria-required="true" name="TheItem7" type="item" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-7">Instructional message here</span>
   </div>
 </div>
 
@@ -330,18 +330,18 @@ By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}visual-style
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label">Your Favorite Pie</label>
+  <label class="fsa-field__label" id="lorem-radio-field-1">Your Favorite Pie</label>
   <ul class="fsa-form-list">
     <li>
-      <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+      <input class="fsa-radio" id="apple-radio" aria-describedby="lorem-radio-field-1" type="radio" name="fav-pie">
       <label for="apple-radio">Apple</label>
     </li>
     <li>
-      <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+      <input class="fsa-radio" id="key-lime-radio" aria-describedby="lorem-radio-field-1" type="radio" name="fav-pie">
       <label for="key-lime-radio">Key Lime</label>
     </li>
     <li>
-      <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+      <input class="fsa-radio" id="pumpkin-radio" aria-describedby="lorem-radio-field-1" type="radio" name="fav-pie">
       <label for="pumpkin-radio">Key Lime</label>
     </li>
   </ul>
@@ -349,18 +349,18 @@ By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}visual-style
 ```
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label">Your Favorite Pie</label>
+    <label class="fsa-field__label" id="lorem-radio-field-1">Your Favorite Pie</label>
     <ul class="fsa-form-list">
       <li>
-        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+        <input class="fsa-radio" id="apple-radio" aria-describedby="lorem-radio-field-1" type="radio" name="fav-pie">
         <label for="apple-radio">Apple</label>
       </li>
       <li>
-        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+        <input class="fsa-radio" id="key-lime-radio" aria-describedby="lorem-radio-field-1" type="radio" name="fav-pie">
         <label for="key-lime-radio">Key Lime</label>
       </li>
       <li>
-        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+        <input class="fsa-radio" id="pumpkin-radio" aria-describedby="lorem-radio-field-1" type="radio" name="fav-pie">
         <label for="pumpkin-radio">Pumpkin</label>
       </li>
     </ul>
@@ -371,18 +371,18 @@ By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}visual-style
 
 ```html
 <div class="fsa-field fsa-field--error">
-  <label class="fsa-field__label">Your Favorite Pie</label>
+  <label class="fsa-field__label" id="lorem-radio-field-2">Your Favorite Pie</label>
   <ul class="fsa-form-list">
     <li>
-      <input class="fsa-radio" id="apple-radio-err" type="radio" name="fav-pie-err">
+      <input class="fsa-radio" id="apple-radio-err" aria-describedby="lorem-radio-field-2 pie-err--message" type="radio" name="fav-pie-err">
       <label for="apple-radio-err">Apple</label>
     </li>
     <li>
-      <input class="fsa-radio" id="key-lime-radio-err" type="radio" name="fav-pie-err">
+      <input class="fsa-radio" id="key-lime-radio-err" aria-describedby="lorem-radio-field-2 pie-err--message" type="radio" name="fav-pie-err">
       <label for="key-lime-radio-err">Key Lime</label>
     </li>
     <li>
-      <input class="fsa-radio" id="pumpkin-radio-err" type="radio" name="fav-pie-err">
+      <input class="fsa-radio" id="pumpkin-radio-err" aria-describedby="lorem-radio-field-2 pie-err--message" type="radio" name="fav-pie-err">
       <label for="pumpkin-radio-err">Pumpkin</label>
     </li>
   </ul>
@@ -391,18 +391,18 @@ By using `fsa-field--columns` paired with [Grids]({{ site.baseurl }}visual-style
 ```
 <div class="ds-preview">
   <div class="fsa-field fsa-field--error">
-    <label class="fsa-field__label">Your Favorite Pie</label>
+    <label class="fsa-field__label" id="lorem-radio-field-2">Your Favorite Pie</label>
     <ul class="fsa-form-list">
       <li>
-        <input class="fsa-radio" id="apple-radio-err" type="radio" name="fav-pie-err">
+        <input class="fsa-radio" id="apple-radio-err" aria-describedby="lorem-radio-field-2 pie-err--message" type="radio" name="fav-pie-err">
         <label for="apple-radio-err">Apple</label>
       </li>
       <li>
-        <input class="fsa-radio" id="key-lime-radio-err" type="radio" name="fav-pie-err">
+        <input class="fsa-radio" id="key-lime-radio-err" aria-describedby="lorem-radio-field-2 pie-err--message" type="radio" name="fav-pie-err">
         <label for="key-lime-radio-err">Key Lime</label>
       </li>
       <li>
-        <input class="fsa-radio" id="pumpkin-radio-err" type="radio" name="fav-pie-err">
+        <input class="fsa-radio" id="pumpkin-radio-err" aria-describedby="lorem-radio-field-2 pie-err--message" type="radio" name="fav-pie-err">
         <label for="pumpkin-radio-err">Pumpkin</label>
       </li>
     </ul>
