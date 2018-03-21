@@ -8,22 +8,24 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <p>
-    <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
-    <label for="apple-pie">Apple Pie</label>
-  </p>
-  <p>
-    <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
-    <label for="key-lime-pie">Key Lime Pie</label>
-  </p>
-  <p>
-    <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
-    <label for="raspberry-pie">Raspberry Pie</label>
-  </p>
-  <p>
-    <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
-    <label for="moms-apple-pie">Moms Apple Pie</label>
-  </p>
+  <ul class="fsa-form-list" aria-label="Example display of the 4 checkbox states">
+    <li>
+      <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
+      <label for="apple-pie">Apple Pie</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
+      <label for="key-lime-pie">Key Lime Pie</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
+      <label for="raspberry-pie">Raspberry Pie</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
+      <label for="moms-apple-pie">Mom's Apple Pie</label>
+    </li>
+  </ul>
 </div>
 
 ## States
@@ -33,73 +35,73 @@ Checkbox components are styled via `class="fsa-checkbox"`. Variations don't exis
 ### Default
 
 ```html
-<p>
+<span>
   <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
   <label for="lorem-9683783">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
     <label for="lorem-9683783">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Checked
 
 ```html
-<p>
+<span>
   <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
   <label for="lorem-857">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
     <label for="lorem-857">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Disabled
 
 ```html
-<p>
+<span>
   <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
   <label for="lorem-978">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
     <label for="lorem-978">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Disabled and Checked
 
 ```html
-<p>
+<span>
   <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
   <label for="lorem-935200">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
     <label for="lorem-935200">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Indeterminate
 
-You can't make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript, as has been done in this example.
+You can't make a checkbox indeterminate through HTML, as there is no `indeterminate` attribute for an `input` element. It is a *property* of checkboxes though, modifiable via JavaScript, as has been done in this example:
 
 ```html
 <!-- HTML  -->
-<p>
+<span>
   <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
   <label for="checkbox-indeterminate-example">Label</label>
-</p>
+</span>
 ```
 ```javascript
 // JavaScript
@@ -107,10 +109,10 @@ var checkbox = document.getElementById("checkbox-indeterminate-example");
 checkbox.indeterminate = true;
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
     <label for="checkbox-indeterminate-example">Label</label>
-  </p>
+  </span>
 </div>
 
 ## Usage
