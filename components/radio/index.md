@@ -7,22 +7,32 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <p>
-    <input class="fsa-radio" id="chicken-noodle" type="radio" name="soup" value="chicken-noodle" checked="">
-    <label for="chicken-noodle">Chicken Noodle</label>
-  </p>
-  <p>
-    <input class="fsa-radio" id="tomato" type="radio" name="soup" value="tomato">
-    <label for="tomato">Tomato</label>
-  </p>
-  <p>
-    <input class="fsa-radio" id="cucumber" type="radio" name="soup" value="cucumber" disabled="">
-    <label for="cucumber">Cucumber</label>
-  </p>
-  <p>
-    <input class="fsa-radio" id="lettuce" type="radio" name="qweraewr" value="lettuce" disabled="" checked="">
-    <label for="lettuce">Lettuce</label>
-  </p>
+  <ul class="fsa-form-list" aria-label="Example display of 4 radio states">
+    <li>
+      <span>
+        <input class="fsa-radio" id="lorem-checked" type="radio" name="asdfasdfqewr" value="lorem-checked" checked="">
+        <label for="lorem-checked">Checked</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="lorem-unchecked" type="radio" name="asdfasdfqewr" value="lorem-unchecked">
+        <label for="lorem-unchecked">Unchecked</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="lorem-disabled" type="radio" name="asdfasdfqewr" value="lorem-disabled" disabled="">
+        <label for="lorem-disabled">Disabled</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="lorem-checked-and-disabled" type="radio" name="qweraewr" value="lorem-checked-and-disabled" disabled="" checked="">
+        <label for="lorem-checked-and-disabled">Checked and Disabled</label>
+      </span>
+    </li>
+  </ul>
 </div>
 
 ## States
@@ -32,61 +42,61 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
 ### Default
 
 ```html
-<p>
+<span>
   <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
   <label for="lorem-ipsum-9">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
     <label for="lorem-ipsum-9">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Checked
 
 ```html
-<p>
+<span>
   <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
   <label for="lorem-ipsum-6">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
     <label for="lorem-ipsum-6">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Disabled
 
 ```html
-<p>
+<span>
   <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
   <label for="lorem-ipsum-8">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
     <label for="lorem-ipsum-8">Label</label>
-  </p>
+  </span>
 </div>
 
 ### Disabled and Checked
 
 ```html
-<p>
+<span>
   <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
   <label for="lorem-ipsum-3">Label</label>
-</p>
+</span>
 ```
 <div class="ds-preview">
-  <p>
+  <span>
     <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
     <label for="lorem-ipsum-3">Label</label>
-  </p>
+  </span>
 </div>
 
 ## Usage
