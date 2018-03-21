@@ -898,9 +898,22 @@ dfn {
 }
 
 body {
+  overflow-x: auto;
   background-color: #f8fafc;
   line-height: 1.5;
   color: #2f2c2a;
+}
+
+@media print {
+  body {
+    background-color: transparent;
+  }
+}
+
+@media print {
+  @page {
+    size: 14.875in 19.25in;
+  }
 }
 
 main:focus {
@@ -930,6 +943,10 @@ var code,
 tt code {
   border: 0;
   display: block;
+}
+
+code strong {
+  color: black;
 }
 
 pre {
@@ -994,7 +1011,7 @@ fieldset {
 }
 
 fieldset[disabled] {
-  opacity: .5;
+  opacity: .6;
 }
 
 .fsa-grid {
@@ -1752,10 +1769,21 @@ p + ol {
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: transparent;
-  padding: 0;
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
+  padding: 0;
   border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   height: 39px;
   height: 3.9rem;
   -webkit-user-select: none;
@@ -1792,6 +1820,11 @@ p + ol {
   margin-left: 1.2rem;
 }
 
+.fsa-btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 @supports (-webkit-appearance: none) {
   .fsa-btn {
     top: 0;
@@ -1823,7 +1856,12 @@ p + ol {
   color: rgba(255, 255, 255, 0.8);
   filter: saturate(70%);
   cursor: not-allowed;
-  color: rgba(255, 255, 255, 0.8);
+}
+
+@media print {
+  .fsa-btn[disabled] {
+    filter: none;
+  }
 }
 
 .fsa-btn[disabled]:visited {
@@ -1945,8 +1983,8 @@ p + ol {
   white-space: nowrap;
   height: 48px;
   height: 4.8rem;
-  padding: 14px 22px;
-  padding: 1.4rem 2.2rem;
+  padding: 14px 18px;
+  padding: 1.4rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   border-radius: 0.6rem;
@@ -2212,6 +2250,11 @@ img {
   margin: 0;
   padding: 0;
   margin-top: .5em;
+}
+
+.fsa-form-list > li > .fsa-form-list {
+  margin-left: 24px;
+  margin-left: 2.4rem;
 }
 
 .fsa-checkbox,
@@ -2666,10 +2709,12 @@ thead th {
     border: 0;
     padding: 0;
     width: 100%;
+    text-align: left;
   }
   .fsa-table--responsive th:before,
   .fsa-table--responsive td:before {
     content: attr(aria-label);
+    text-transform: uppercase;
     display: block;
     font-weight: 700;
     margin-top: 1em;
@@ -2681,13 +2726,118 @@ thead th {
   }
 }
 
+@media (max-width: 37.5em) {
+  .fsa-table--responsive-horizontal th,
+  .fsa-table--responsive-horizontal td {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    text-align: right;
+    vertical-align: top;
+    margin-bottom: 0.8rem;
+  }
+  .fsa-table--responsive-horizontal th:last-child,
+  .fsa-table--responsive-horizontal td:last-child {
+    margin-bottom: initial;
+  }
+  .fsa-table--responsive-horizontal th:before,
+  .fsa-table--responsive-horizontal td:before {
+    font-size: 1.5rem;
+    display: initial;
+    margin-right: 0.8rem;
+    margin-top: initial;
+    text-align: left;
+  }
+}
+
+.fsa-table__sort {
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  display: block;
+  width: 100%;
+}
+
+.fsa-table__sort::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.fsa-text-align--right .fsa-table__sort {
+  text-align: right;
+}
+
+@media (min-width: 37.5em) {
+  .fsa-table__sort {
+    white-space: nowrap;
+  }
+}
+
+.fsa-table__sort:focus, .fsa-table__sort:hover {
+  color: #205493;
+}
+
+.fsa-table__sort:after {
+  content: '';
+  background-size: 100%;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-left: 4px;
+}
+
+.fsa-table__sort--descending:after {
+  background-image: url("../img/chevron-up.png");
+  background-image: url("../img/chevron-up.svg");
+}
+
+.fsa-table__sort--ascending:after {
+  background-image: url("../img/chevron-down.png");
+  background-image: url("../img/chevron-down.svg");
+}
+
+.fsa-table__sort:hover:not(.fsa-table__sort--descending):not(.fsa-table__sort--ascending):after {
+  background-image: url("../img/chevron-up.png");
+  background-image: url("../img/chevron-up.svg");
+  opacity: .4;
+}
+
 .fsa-label {
   font-size: 13px;
   font-size: 1.3rem;
-  background-color: transparent;
-  padding: 0;
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
+  padding: 0;
   border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 400;
   line-height: 1;
   display: inline-block;
   background-color: #75716e;
@@ -2698,6 +2848,11 @@ thead th {
   padding: 3px 4px;
   padding: 0.3rem 0.4rem;
   cursor: default;
+}
+
+.fsa-label::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 .fsa-label:visited {
@@ -2729,6 +2884,12 @@ thead th {
 
 .fsa-label--alert {
   background-color: #cd2026;
+}
+
+@media print {
+  .fsa-label--alert {
+    background-color: #520d0f;
+  }
 }
 
 .fsa-label--alert[href]:hover {
@@ -2785,10 +2946,21 @@ a.fsa-label:active {
 .fsa-badge {
   font-size: 13px;
   font-size: 1.3rem;
-  background-color: transparent;
-  padding: 0;
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
+  padding: 0;
   border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   line-height: 1;
   font-weight: 700;
   display: inline-block;
@@ -2802,6 +2974,11 @@ a.fsa-label:active {
   padding: 3px;
   padding: 0.3rem;
   cursor: default;
+}
+
+.fsa-badge::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 .fsa-badge:visited {
@@ -2829,6 +3006,12 @@ a.fsa-label:active {
 
 .fsa-badge--alert {
   background-color: #cd2026;
+}
+
+@media print {
+  .fsa-badge--alert {
+    background-color: #520d0f;
+  }
 }
 
 .fsa-badge--warning {
@@ -2947,6 +3130,12 @@ a.fsa-badge:active {
   padding: 0 1.2rem;
 }
 
+@media print {
+  .fsa-disclaimer__bd {
+    max-width: none;
+  }
+}
+
 .fsa-disclaimer__official {
   display: inline-block;
 }
@@ -3018,6 +3207,12 @@ a.fsa-badge:active {
 @media (min-width: 54em) {
   .fsa-tophat__bd {
     font-size: 1.7rem;
+  }
+}
+
+@media print {
+  .fsa-tophat__bd {
+    max-width: none;
   }
 }
 
@@ -3125,6 +3320,12 @@ a.fsa-badge:active {
   .fsa-header-app__bd {
     padding-top: 3.2rem;
     padding-bottom: 0.8rem;
+  }
+}
+
+@media print {
+  .fsa-header-app__bd {
+    max-width: none;
   }
 }
 
@@ -3270,6 +3471,12 @@ a.fsa-badge:active {
   background-color: #fff;
 }
 
+@media print {
+  .fsa-nav-global {
+    border-bottom-color: #c8c7c6;
+  }
+}
+
 @media (min-width: 54em) {
   .fsa-nav-global {
     border-bottom: 1px solid #edecec;
@@ -3281,6 +3488,12 @@ a.fsa-badge:active {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+}
+
+@media print {
+  .fsa-nav-global__bd {
+    max-width: none;
+  }
 }
 
 .fsa-nav-global__list {
@@ -3392,6 +3605,12 @@ a.fsa-badge:active {
 
 .fsa-nav-global__link--active .fsa-nav-global__text {
   box-shadow: 0 -0.4rem 0 0 #205493 inset;
+}
+
+@media print {
+  .fsa-nav-global__link--active .fsa-nav-global__text {
+    box-shadow: none;
+  }
 }
 
 .fsa-nav-global__link[aria-expanded="true"] {
@@ -3598,11 +3817,44 @@ a.fsa-badge:active {
   margin-right: -1.2rem;
 }
 
+@media print {
+  .fsa-content-tabs {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
 @media (min-width: 54em) {
   .fsa-content-tabs {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.fsa-content-tabs--light {
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-image: linear-gradient(to right, #ffffff, #ffffff), linear-gradient(to right, #ffffff, #ffffff), linear-gradient(to right, #edecec, transparent), linear-gradient(to left, #edecec, transparent);
+  background-position: left center, right center, left center, right center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: 3.6rem 100%, 3.6rem 100%, 1.8rem 100%, 1.8rem 100%;
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+}
+
+.fsa-content-tabs--contrast {
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-image: linear-gradient(to right, #edecec, #edecec), linear-gradient(to right, #edecec, #edecec), linear-gradient(to right, rgba(73, 68, 64, 0.3), transparent), linear-gradient(to left, rgba(73, 68, 64, 0.3), transparent);
+  background-position: left center, right center, left center, right center;
+  background-repeat: no-repeat;
+  background-color: #edecec;
+  background-size: 3.6rem 100%, 3.6rem 100%, 1.8rem 100%, 1.8rem 100%;
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
 }
 
 .fsa-content-tabs__list {
@@ -3665,10 +3917,21 @@ a.fsa-badge:active {
 .fsa-content-tabs__label {
   font-size: 17px;
   font-size: 1.7rem;
-  background-color: transparent;
-  padding: 0;
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
+  padding: 0;
   border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   display: block;
   width: 100%;
   text-decoration: none;
@@ -3679,6 +3942,11 @@ a.fsa-badge:active {
   padding-left: 8px;
   padding-left: 0.8rem;
   white-space: nowrap;
+}
+
+.fsa-content-tabs__label::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 .fsa-content-tabs__label[type]:focus {
@@ -3752,12 +4020,26 @@ a.fsa-badge:active {
   position: relative;
 }
 
+@media print {
+  .fsa-content-tabs__label-text {
+    color: #75716e;
+  }
+}
+
 .fsa-content-tabs__label-text:hover, .fsa-content-tabs__label-text:focus {
   box-shadow: 0 -0.2rem 0 0 #75716e inset;
 }
 
 .fsa-content-tabs__label--active .fsa-content-tabs__label-text {
   box-shadow: 0 -0.4rem 0 0 #205493 inset;
+}
+
+@media print {
+  .fsa-content-tabs__label--active .fsa-content-tabs__label-text {
+    font-weight: 700;
+    color: black;
+    box-shadow: none;
+  }
 }
 
 .fsa-content-tabs__label--small .fsa-content-tabs__label-text {
@@ -3950,6 +4232,16 @@ a.fsa-badge:active {
   border-left-color: #00a6d2;
 }
 
+.fsa-alert--no-icon {
+  padding: 0 8px;
+  padding: 0 0.8rem;
+}
+
+.fsa-alert--no-icon .fsa-alert__body {
+  padding: 0 4px;
+  padding: 0 0.4rem;
+}
+
 .fsa-alert__heading {
   font-size: 20px;
   font-size: 2rem;
@@ -3958,6 +4250,18 @@ a.fsa-badge:active {
   color: #2f2c2a;
   font-weight: 700;
   margin-bottom: .5em;
+}
+
+.fsa-alert--no-icon .fsa-alert__heading {
+  font-size: 17px;
+  font-size: 1.7rem;
+  margin-top: 8px;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+
+.fsa-alert--no-icon .fsa-alert__text {
+  margin: 0;
 }
 
 .fsa-btn-group {
@@ -3979,10 +4283,21 @@ a.fsa-badge:active {
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: transparent;
-  padding: 0;
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
+  padding: 0;
   border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   height: 39px;
   height: 3.9rem;
   -webkit-user-select: none;
@@ -4023,6 +4338,11 @@ a.fsa-badge:active {
   margin-left: 1.2rem;
 }
 
+.fsa-btn-group__item::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 @supports (-webkit-appearance: none) {
   .fsa-btn-group__item {
     top: 0;
@@ -4054,7 +4374,12 @@ a.fsa-badge:active {
   color: rgba(255, 255, 255, 0.8);
   filter: saturate(70%);
   cursor: not-allowed;
-  color: rgba(255, 255, 255, 0.8);
+}
+
+@media print {
+  .fsa-btn-group__item[disabled] {
+    filter: none;
+  }
 }
 
 .fsa-btn-group__item[disabled]:visited {
@@ -4121,8 +4446,8 @@ a.fsa-badge:active {
   white-space: nowrap;
   height: 48px;
   height: 4.8rem;
-  padding: 14px 22px;
-  padding: 1.4rem 2.2rem;
+  padding: 14px 18px;
+  padding: 1.4rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   border-radius: 0.6rem;
@@ -4693,14 +5018,11 @@ a.fsa-badge:active {
   box-shadow: 0 100vh 0 100vh #75716e;
 }
 
-.fsa-footer__bd {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  text-align: left;
-  padding: 24px 0;
-  padding: 2.4rem 0;
-  color: white;
+@media print {
+  .fsa-footer {
+    display: none;
+    box-shadow: none !important;
+  }
 }
 
 .fsa-footer a {
@@ -4714,6 +5036,22 @@ a.fsa-badge:active {
 
 .fsa-footer a:visited {
   text-decoration: none;
+}
+
+.fsa-footer__bd {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: left;
+  padding: 24px 0;
+  padding: 2.4rem 0;
+  color: white;
+}
+
+@media print {
+  .fsa-footer__bd {
+    max-width: none;
+  }
 }
 
 .fsa-footer__primary {
@@ -4800,6 +5138,17 @@ a.fsa-badge:active {
   margin: 0;
 }
 
+@media print {
+  .fsa-screen-id {
+    box-shadow: none !important;
+    border-top: 1px solid #edecec;
+    background-color: transparent;
+    padding: initial;
+    padding-top: .5em;
+    margin: 2em 0 0;
+  }
+}
+
 .fsa-footer + .fsa-screen-id {
   box-shadow: 0 100vh 0 100vh #8a8684;
 }
@@ -4814,6 +5163,13 @@ a.fsa-badge:active {
   text-align: left;
   padding: 8px 0;
   padding: 0.8rem 0;
+}
+
+@media print {
+  .fsa-screen-id__bd {
+    color: initial;
+    max-width: none;
+  }
 }
 
 .fsa-screen-id__dl {
@@ -4841,12 +5197,24 @@ a.fsa-badge:active {
   padding-right: 1.2rem;
 }
 
+@media print {
+  .fsa-topper {
+    display: none;
+  }
+}
+
 .fsa-topper__bd {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
   padding: 24px 0;
   padding: 2.4rem 0;
+}
+
+@media print {
+  .fsa-topper__bd {
+    max-width: none;
+  }
 }
 
 .fsa-topper__link {
