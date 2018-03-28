@@ -35,9 +35,10 @@ The themes above have been programmed into the CSS and form components within th
 Some FSA applications will require the system to confirm an action taken by a User by showing a Warning or Confirmation message. For actions that are destructive in nature, such as deleting data, Developers shall utilize a Confirmation modal. To find out more information and guidelines on modal windows, [please review the guide here]({{ site.baseurl }}guides/applications/modal/).
 
 <caption>Modal Window Confirmation</caption>
-<a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" alt="Image of sample Modal Window Confirmation"></a>
+<a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" alt="Image of sample Modal Window Confirmation"></a>
 
 ## Related Resources
 
  * [Form Fields]({{ site.baseurl }}components/form-fields/)
+ * [Growl Component]({{ site.baseurl }}components/growl/)
  * [Plain Language Guide]({{ site.baseurl }}guides/content/plain-language/)

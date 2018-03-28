@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "fsa-style": "^2.1.2",
-    "jquery": "^2.2.2"
+    "jquery": "^3.0.0"
   },
   "author": "USDA FSA Enterprise Architecture",
   "contributors": [
