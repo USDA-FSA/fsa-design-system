@@ -6185,6 +6185,9 @@ main:active, main:focus {
   .ds-l-page__adjacent {
     float: right;
     width: 20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.2rem;
   }
 }
 
@@ -6206,6 +6209,9 @@ main:active, main:focus {
   .ds-l-guide__adjacent {
     float: left;
     width: 20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.2rem;
   }
 }
 
