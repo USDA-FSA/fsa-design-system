@@ -118,3 +118,5 @@ function selectMulti__setState(){
 
 
 selectMulti__setState();
+
+console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
