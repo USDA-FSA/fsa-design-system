@@ -8,7 +8,7 @@ jump_menu: true
 
 ## Typeface
 
-**Source Sans Pro** is an open-source sans serif typeface created for **legibility in UI design**. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
+**Source Sans Pro** is an open-source sans-serif typeface created for **legibility in UI design**. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/3@m">

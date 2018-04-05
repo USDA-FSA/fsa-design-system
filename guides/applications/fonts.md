@@ -12,7 +12,7 @@ The Typeface used within the FSA Design System has been selected because of thei
 
 ## Typeface
 
-**Source Sans Pro** is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
+**Source Sans Pro** is an open-source sans-serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
 
 ### Source Sans Pro
 
