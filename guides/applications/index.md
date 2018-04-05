@@ -30,7 +30,9 @@ A Screen ID shall be displayed on all pages of the application, below all page c
 </div>
 
 <!--
-<a href="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="Image of example FSA application with Screen ID above footer"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="Image of example FSA application with Screen ID above footer"></a>
+</figure>
 -->
 
 ## Last Modified Date
