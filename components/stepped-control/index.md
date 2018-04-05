@@ -50,6 +50,28 @@ jump_menu: true
 
 ### Sticky + Directional, with Status Message
 
+<div class="DEMO-STICKY-STEPPED-CONTROL">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores, unde aperiam, nemo harum sed repellendus veniam voluptas cupiditate porro facilis voluptates ipsam, sapiente illum odit possimus debitis est. Necessitatibus.</p>
+  <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
+  <div class="fsa-stepped-control fsa-stepped-control--sticky">
+    <div class="fsa-stepped-control__bd">
+      <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+        <strong>5</strong> of <strong>10</strong> Commodities are complete
+      </div>
+      <div class="fsa-stepped-control__list">
+        <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+        </div>
+        <div class="fsa-stepped-control__item">
+          <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+            <span class="fsa-stepped-control__btn-label">[ progressive ]</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ### Within Modal
 
 <p>

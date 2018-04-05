@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 
 //module.exports = Jump;
 
-},{"../vendor/jquery.OnePageNav.js":6,"jquery":7}],2:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":7,"jquery":8}],2:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -503,6 +503,66 @@ selectMulti__setState();
 console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
 },{}],5:[function(require,module,exports){
+var $ = window.jQuery = require('jquery');
+
+;$(function() {
+
+    var $steppedControl = $('.fsa-stepped-control--sticky'); // only the --sticky ones
+
+    function steppedControl() {
+
+      $steppedControl.each(function(index) {
+
+        var $self = $(this)
+        var pageTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var steppendControlPosTop = $self.offset().top - pageTop;
+        var steppendControlHeight = $self.outerHeight();
+        var steppendControlPosBot = windowHeight - (steppendControlPosTop + steppendControlHeight);
+
+        // console.log('pageTop: ' + pageTop);
+        // console.log('windowHeight: ' + windowHeight);
+        // console.log('steppendControlPosTop: ' + steppendControlPosTop);
+        // console.log('steppendControlHeight: ' + steppendControlHeight);
+        // console.log('steppendControlPosBot: ' + steppendControlPosBot);
+
+        if (steppendControlPosBot > 12) {
+          $self.addClass("fsa-stepped-control--unstuck");
+        }
+        else {
+          $self.removeClass("fsa-stepped-control--unstuck");
+        }
+
+      });
+
+    }
+
+    if ($steppedControl.length) { // only run if at least one instance
+
+      $(window).scroll(function() {
+        steppedControl()
+      });
+
+      $('.fsa-modal').scroll(function() {
+        steppedControl()
+      });
+
+      $(document).ready(function() {
+        steppedControl();
+      })
+
+      $(window).resize(function() {
+        // may want to **debounce** this, e.g. http://benalman.com/projects/jquery-throttle-debounce-plugin/
+        steppedControl();
+      })
+
+    }
+
+});
+
+console.log('SteppedControl loaded, its JS is NOT to be used for Production, demo purposes only');
+
+},{"jquery":8}],6:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -514,9 +574,10 @@ var Jump = require('./components/ds.jump');
 var Growl = require('./components/fsa-growl');
 var Modal = require('./components/fsa-modal');
 var SelectMulti = require('./components/fsa-select-multi');
+var SteppedControl = require('./components/fsa-stepped-control');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/ds.jump":1,"./components/fsa-growl":2,"./components/fsa-modal":3,"./components/fsa-select-multi":4,"jquery":7}],6:[function(require,module,exports){
+},{"./components/ds.jump":1,"./components/fsa-growl":2,"./components/fsa-modal":3,"./components/fsa-select-multi":4,"./components/fsa-stepped-control":5,"jquery":8}],7:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -741,7 +802,7 @@ var SelectMulti = require('./components/fsa-select-multi');
 
 })( jQuery, window , document );
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11107,4 +11168,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[5]);
+},{}]},{},[6]);
