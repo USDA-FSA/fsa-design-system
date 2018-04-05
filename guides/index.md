@@ -1,7 +1,7 @@
 ---
 layout: category
 title: "Guides"
-intro: "The FSA Design System contains strategic guidelines based on industry best practices and concepts inspired by the United States Web Design Standards."
+intro: "The FSA Design System contains strategic guidelines based on industry best practices and concepts inspired by the US Digital Service's US Web Design System."
 ---
 
 These Guides will provide the necessary information and guidance to effectively implement the components and styles that are inherent within the FSA Style codebase.

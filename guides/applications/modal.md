@@ -19,12 +19,17 @@ intro: "A Popup window or Modal window is a vital part of many FSA applications 
 
 ## Modal Window Sample
 
-<a href="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" alt="Image of sample Modal Window"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" alt="Image of sample Modal Window"></a>
+</figure>
 
 
-## Modal Window Confirmation Sample
+<!-- ## Modal Window Confirmation Sample
 
-<a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" alt="Image of sample Modal Window Confirmation"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" alt="Image of sample Modal Window Confirmation"></a>
+</figure> 
+ -->
 
 ## Related Resources
 

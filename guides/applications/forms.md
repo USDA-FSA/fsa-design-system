@@ -27,13 +27,17 @@ In general, FSA applications should use a single column layout when possible. Th
 
 ### Single Column Example
 
-<a href="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" alt="Image of Single Column Form"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" alt="Image of Single Column Form"></a>
+</figure>
 
 ___
 
 ### Two Column Example
 
-<a href="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" alt="Image of Two Column Form"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" alt="Image of Two Column Form"></a>
+</figure>
 
 ## Related Resources
 

@@ -96,6 +96,10 @@
       subhref: "components/form-fields"
       img: "img/subcategories/form-fields.png"
 
+    - subtitle: "Stepped Control"
+      subhref: "components/stepped-control"
+      img: "img/subcategories/stepped-control.png"
+
     - subtitle: "Text Input"
       subhref: "components/text-input"
       img: "img/subcategories/text-input.png"

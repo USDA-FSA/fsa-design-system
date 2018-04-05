@@ -8,7 +8,9 @@ intro: "FSA Applications shall have a consistent header and shall utilize the he
 
 Below is a sample screenshot of an FSA application header that represents a good example of the below guidelines.
 
-<a href="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="Image of example FSA application header"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="Image of example FSA application header"></a>
+</figure>
 
 
 ## Department and Agency
@@ -21,7 +23,7 @@ The application name shall display as shown in the following format: a paired ac
 
 ## Application Logo
 
-FSA applications shall not use an application logo. 
+FSA applications shall not use an application logo.
 
 ## Application Help
 
@@ -35,5 +37,6 @@ When a User is logged in to an FSA application their Display Name will be shown 
   * View/Edit Profile Link
   * Application Sign Out Button
 
-<a href="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls"></a>
-
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls"></a>
+</figure>

@@ -10,7 +10,6 @@ jump_menu: true
   <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
   <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
   <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
 </div>
 
@@ -39,15 +38,6 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 ```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-</div>
-
-### Alt
-
-```html
-<button class="fsa-btn fsa-btn--alt" type="button">Label</button>
-```
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--alt" type="button">Label</button>
 </div>
 
 ### Flat
@@ -91,10 +81,13 @@ Each button variation can be modified with one or multiple states:
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
 ```html
-<button class="fsa-btn fsa-btn--[variation]" disabled="disabled" type="button">Label</button>
+<button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>
 ```
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button>
 </div>
 
 ### Small

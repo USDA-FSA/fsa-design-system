@@ -8,7 +8,7 @@ get_started: true
 
 The components and style guide of the FSA Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FSA product teams who want to create beautiful, easy-to-use, digitial experiences consistent with the FSA Style.
 
-It was created and maintained by the USA-FSA Office of Architecture, and is heavily influenced by the [Draft U.S. Web Design Standards](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
+It was created and maintained by the USA-FSA Office of Architecture, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
 
 ### Release History
 
@@ -124,7 +124,7 @@ Reference this basic list for the general requirements for your typical HTML str
 
 <!-- ## Design Resources
 
-The site contains HTML mockups of common UI components designed to follow the Draft U.S. Web Design Standards' visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
+The site contains HTML mockups of common UI components designed to follow the Draft U.S. Web Design System's visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
 All of these designs are also available in various file formats, which are available for download:
 

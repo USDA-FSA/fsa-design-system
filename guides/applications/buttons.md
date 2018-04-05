@@ -6,31 +6,32 @@ intro: "FSA applications shall have the same look and feel, along with having a 
 
 ---
 
-## Button Examples
+## Variations and States
 
-The below buttons are the various options available for use in the FSA Design System.
+The below buttons are the default variations available for use in the FSA Design System. For further details on variations and states, refer to [Button Components]({{ site.baseurl }}components/buttons/).
 
 <div class="dut-button-demo__section">
-
-<button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
-<button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
-<button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
-<button class="fsa-btn fsa-btn--alt" type="button">Alt</button>
-<button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
-<button class="fsa-btn fsa-btn--flat" type="button">Cancel</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
+  <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
+  <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button>
 </div>
 
-**PRIMARY:** A primary style shall be applied to a button that represents the top priority action a User might take in a given situation. Submitting a form or continuing a stepped process would be considered primary.
+### Primary
+A primary style shall be applied to a button that represents the top priority action a User might take in a given context. Submitting a form or continuing a stepped process would be considered primary.
 
-**SECONDARY:** A secondary style shall be applied to buttons that are not top priority, but the action is relevant for features and functionality that keep a User on the same screen. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
+### Secondary
+A secondary style shall be applied to buttons that are not top priority, may be viewed as contrary to progress, or the action is relevant for adjacent features and functionality. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
 
-**TERTIARY:** A tertiary style shall be applied only to buttons that perform a destructive action. A "Delete" button is a good example of an action that requires the tertiary style.
+### Tertiary
+A tertiary style shall be applied only to buttons that perform a **destructive** action. A "Delete" button is a good example of an action that requires the tertiary style.
 
-**ALT:** The alt style shall be applied to buttons with functionality viewed as contrary to progress. An example of this would be a "Clear" button that removes data from form fields to start a new process, but does not delete data that is stored in a database. The use of "Cancel" within a popup or modal is also appropriate for the alt style.
+### Disabled
+The disabled state shall be applied to any buttons unable to be clicked by a User, but should remain present and visible as an action that can be performed once other criteria is met.
 
-**DISABLED:** The disabled style shall be applied to any buttons unable to be clicked by a User, but should remain present and visible as an action that can be performed once other criteria is met.
-
-**FLAT:** In most cases, a button labeled as "Cancel" should be shown with the Flat style which looks similar to a text link. By giving this button very low priority and prominence on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
+### Flat
+In most cases, a button labeled as "Cancel" should be shown with the Flat style which looks similar to a text link. By giving this button very low priority and prominence on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
 
 ## General Guidelines:
 
@@ -38,15 +39,15 @@ The below buttons are the various options available for use in the FSA Design Sy
  * A Cancel button shall not be used unless the online form uses a multi-step process
  * A Cancel button shall be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process
  * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes
- * When used, the Cancel button should appear as a link or Alternative button
- * Buttons shall align to the left with primary or affirmative action on left and secondary or dismissive action on right
+ * When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variation) or Secondary button
+ * Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
 
 ## Multi-Step Process Guidelines:
 
- * The Back button shall be left aligned, followed by the Next or Primary action button
- * Back and Next shall be used as button labels
- * the saving of data or state is implied and clicking the Back button shall not delete data that has been entered
- * Save or Submit shall be used on the final step
+ * A **regressive** action shall be left-aligned, followed by right-aligned **progressive** action(s)
+ * Back and Next can be used as button labels
+ * The saving of data or state is implied and clicking the **"Regressive"** button shall not delete data that has been entered
+ * Save or Submit can be used on the final step
 
 ## Reset and Clear Guidelines:
 
@@ -77,19 +78,19 @@ When returning to a previous screen or step, use Back as the button label. When 
 
 ___
 
-<button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Reset</button>
+<button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> vs. <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> vs. <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
 
 When data or a state in the application has changed, it is recommended to use Refresh as a label. The Reload label implies getting more data, while Refresh is a more general and User friendly term. Reset implies clearing data and returning to the initial state of data.
 
 ___
 
-<button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Cancel</button>
+<button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> vs. <button class="fsa-btn fsa-btn--secondary" type="button">Cancel</button>
 
-In general, all FSA applications should use the Flat style for a Cancel button. A Cancel button should utilize the Alt button style within a modal or popup window and the User needs to Cancel the action being performed.
+In general, all FSA applications should use the Flat style for a Cancel button. A Cancel button should utilize the secondary button style within a modal or popup window and the User needs to Cancel the action being performed.
 
 ___
 
-<button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--alt" type="button">Reset</button>
+<button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> vs. <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
 
 A button shall use the Tertiary style when the action taken has destructive capabilities. While Reset is an action that removes data from the screen, it should not be used to remove data from a database or other data storage.
 
@@ -162,7 +163,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--alt" type="button">Clear</button>
+                    <button class="fsa-btn fsa-btn--secondary" type="button">Clear</button>
                 </p>
             </td>
             <td>
@@ -278,7 +279,7 @@ ___
         <tr>
             <td aria-label="Button Label" scope="row">
                 <p>
-                    <button class="fsa-btn fsa-btn--alt" type="button">Reset</button>
+                    <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
                 </p>
             </td>
             <td>
