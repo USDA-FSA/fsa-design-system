@@ -1,5 +1,4 @@
 var $ = require('jquery');
-var Sticky = require('../vendor/jquery.sticky');
 var OnePageNav = require('../vendor/jquery.OnePageNav.js').OnePageNav;
 
 function JumpBuild() {
@@ -26,30 +25,6 @@ function JumpBuild() {
 
 }
 
-function JumpStick() {
-
-  if (window.matchMedia("(min-width: 54em)").matches) {
-
-    // If browser doesn't support matchMedia(), we don't care if menu is sticky
-
-    $('.ds-jump').sticky({
-      topSpacing: 40,
-      className: 'ds-jump--stuck',
-      wrapperClassName: 'ds-jump-wrapper'
-    });
-
-    $('.ds-jump').on('sticky-start', function() {
-      console.log("Stuck");
-    });
-
-    $('.ds-jump').on('sticky-end', function() {
-      console.log("UNStuck");
-    });
-
-  }
-
-}
-
 function JumpFollow() {
   $('.ds-jump__list').onePageNav({
     currentClass: 'ds-jump__item--active',
@@ -62,7 +37,6 @@ function JumpFollow() {
 jQuery(document).ready(function($){
 
   JumpBuild();
-  JumpStick();
   JumpFollow();
 
 });
