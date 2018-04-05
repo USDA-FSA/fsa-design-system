@@ -9,4 +9,4 @@ var Growl = require('./components/fsa-growl');
 var Modal = require('./components/fsa-modal');
 var SelectMulti = require('./components/fsa-select-multi');
 var SteppedControl = require('./components/fsa-stepped-control');
-// var ColorDocs = require('./components/docs-color');
+var ColorDocs = require('./components/docs-color');
