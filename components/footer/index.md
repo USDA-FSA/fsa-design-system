@@ -44,7 +44,7 @@ jump_menu: true
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
               <a class="fsa-btn fsa-footer__btn" href="#" target="_blank">Contact Us</a>
             </li>
-            <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" target="_blank">1-800-555-1234</a></li>
+            <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" aria-label="FSA Telephone Number. 1 800. 5 5 5. 1 2 3 4." target="_blank">1-800-555-1234</a></li>
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
           </ul>
@@ -96,7 +96,7 @@ The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
             <a class="fsa-btn fsa-footer__btn" href="link.html" target="_blank">Contact Us</a>
           </li>
-          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" target="_blank">1-800-555-1234</a></li>
+          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" aria-label="FSA Telephone Number. 1 800. 5 5 5. 1 2 3 4." target="_blank">1-800-555-1234</a></li>
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
         </ul>
@@ -123,6 +123,7 @@ The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system
 Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.
 
 * Maintain the Unordered List and Anchor Link structure of the HTML to allow a User to Tab thru each element of the navigation.
+* If a telephone number is used, follow the specific spacing structure of the `aria-label` provided in the example code. This will ensure proper 508 compliance and allow screen readers to speak the phone number in the appropriate format and cadence. 
 
 ## General Guidance
 
