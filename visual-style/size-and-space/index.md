@@ -69,7 +69,9 @@ The below example uses different colored bars to represent the various size and 
 * Yellow represents `$size-default`
 * Purple represents `$size-medium`
 
-<a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Image of Spacing example"></a>
+<figure>
+  <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Image of Spacing example"></a>
+</figure>
 
 ## White Space
 

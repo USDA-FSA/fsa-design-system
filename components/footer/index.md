@@ -42,7 +42,7 @@ jump_menu: true
         <div class="fsa-footer__secondary fsa-grid__1/1 fsa-grid__3/12@l">
           <ul class="fsa-footer__list fsa-footer__secondary-list">
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
-              <a class="fsa-btn fsa-btn--secondary" href="#" target="_blank">Contact Us</a>
+              <a class="fsa-btn fsa-footer__btn" href="#" target="_blank">Contact Us</a>
             </li>
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" target="_blank">1-800-555-1234</a></li>
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
@@ -94,7 +94,7 @@ The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system
       <div class="fsa-footer__secondary fsa-grid__1/1 fsa-grid__3/12@l">
         <ul class="fsa-footer__list fsa-footer__secondary-list">
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
-            <a class="fsa-btn fsa-btn--secondary" href="link.html" target="_blank">Contact Us</a>
+            <a class="fsa-btn fsa-footer__btn" href="link.html" target="_blank">Contact Us</a>
           </li>
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" target="_blank">1-800-555-1234</a></li>
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>

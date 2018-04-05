@@ -5,10 +5,10 @@
         {% for subpage in link.subcategories %}
         <li class="ds-subcat-list__list-item">
           <a class="ds-subcat-list__link {% if subpage.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
+            <span class="ds-subcat-list__text">{{ subpage.subtitle }}</span>
             {% if subpage.img %}
               <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subpage.img }}" alt="">
             {% endif %}
-            <span class="ds-subcat-list__text">{{ subpage.subtitle }}</span>
           </a>
         </li>
         {% endfor %}

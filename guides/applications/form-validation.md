@@ -21,12 +21,20 @@ __4. Use clear language and provide an actionable resolution__ - The verbiage us
 
 ## Example Messaging States
 
-<caption>Unfocused Form Field State</caption><a href="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" alt="Image of a form field in an unfocused state"></a>
+<figure class="fsa-m-b--m">
+  <figcaption>Unfocused Form Field State</figcaption>
+  <a href="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" alt="Image of a form field in an unfocused state"></a>
+</figure>
 
-<caption>Focused Form Field State</caption><a href="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" alt="Image of form field in a focused state"></a>
+<figure class="fsa-m-b--m">
+  <figcaption>Focused Form Field State</figcaption>
+  <a href="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" alt="Image of form field in a focused state"></a>
+</figure>
 
-<caption>Unfocused State with Error Messaging</caption><a href="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" alt="Image of a form field with error messaging"></a>
-
+<figure class="fsa-m-b--m">
+  <figcaption>Unfocused State with Error Messaging</figcaption>
+  <a href="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" alt="Image of a form field with error messaging"></a>
+</figure>
 
 The themes above have been programmed into the CSS and form components within the Design system, but it is important to understand the concepts and theory behind them in order to implement validation and messaging that complies with best practice.
 
@@ -34,10 +42,13 @@ The themes above have been programmed into the CSS and form components within th
 
 Some FSA applications will require the system to confirm an action taken by a User by showing a Warning or Confirmation message. For actions that are destructive in nature, such as deleting data, Developers shall utilize a Confirmation modal. To find out more information and guidelines on modal windows, [please review the guide here]({{ site.baseurl }}guides/applications/modal/).
 
-<caption>Modal Window Confirmation</caption>
-<a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.jpg" alt="Image of sample Modal Window Confirmation"></a>
+<figure class="fsa-m-b--m">
+  <figcaption>Modal Window Confirmation</figcaption>
+  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" alt="Image of sample Modal Window Confirmation"></a>
+</figure>
 
 ## Related Resources
 
  * [Form Fields]({{ site.baseurl }}components/form-fields/)
+ * [Growl Component]({{ site.baseurl }}components/growl/)
  * [Plain Language Guide]({{ site.baseurl }}guides/content/plain-language/)

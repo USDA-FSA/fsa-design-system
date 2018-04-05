@@ -59,7 +59,7 @@ The FSA footer has 4 columns:
         <div class="fsa-footer__secondary fsa-grid__1/1 fsa-grid__3/12@l">
           <ul class="fsa-footer__list fsa-footer__secondary-list">
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
-              <a class="fsa-btn fsa-btn--secondary" href="#" target="_blank">Contact Us</a>
+              <a class="fsa-btn fsa-footer__btn" href="#" target="_blank">Contact Us</a>
             </li>
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" target="_blank">1-800-555-1234</a></li>
             <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
@@ -176,4 +176,3 @@ Below is the list of recommended links that shall be used on all FSA application
 ## Related Information
 
 * [Global Footer Component]({{ site.baseurl }}components/footer)
-

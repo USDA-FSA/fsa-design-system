@@ -13,7 +13,6 @@
     padding-right: $size-default;
     padding-left: $size-default;
     font-weight: $font-light;
-    font-family: $font-serif;
     padding-top: 1.5em;
 
     @include breakpoint(M) {
@@ -21,7 +20,7 @@
     }
 
     @include breakpoint(L) {
-      @include font-size(6);
+      font-size: 4.6rem;
     }
 
   }

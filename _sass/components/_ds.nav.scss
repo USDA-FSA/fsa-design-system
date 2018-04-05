@@ -31,13 +31,13 @@
 
   &__link {
 
-    // @include font-size(1);
+    @include font-size(2);
     text-decoration: none;
     color: $color-fsa-white;
 
-    // @include breakpoint(M) {
-    //   @include font-size(3);
-    // }
+    @include breakpoint(M) {
+      @include font-size(3);
+    }
 
     &:hover {
       text-decoration: underline;
