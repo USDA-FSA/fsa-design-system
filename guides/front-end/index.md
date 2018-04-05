@@ -17,9 +17,5 @@ While Developers are generally trained and have experience writing Markup, such 
 
 ## Related Information
 
-* [US Web Design Standards - CSS Architecture](https://standards.usa.gov/getting-started/developers/#css-architecture)
+* [US Web Design System - CSS Architecture](https://standards.usa.gov/getting-started/developers/#css-architecture)
 * [Further Front-end Reading](https://frontend.18f.gov/#javascript)
-
-
-
-
