@@ -1,40 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require('jquery');
-
-;$(function() {
-
-  function hexc(colorval) {
-    var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-    delete(parts[0]);
-    for (var i = 1; i <= 3; ++i) {
-      parts[i] = parseInt(parts[i]).toString(16);
-      if (parts[i].length == 1) parts[i] = '0' + parts[i];
-    }
-    return '#' + parts.join('');
-  }
-
-  var $swatchItem = $('.docs__attr-list__swatch')
-
-  $swatchItem.each(function(index) {
-
-    var $self = $(this)
-    var swatchValue = $self.css('backgroundColor');
-    var $component = $self.closest('.docs__attr-list__item');
-    var $componentAttrList = $component.find('.docs__attr-list__attr');
-
-    var newHTML = '<li class="docs__attr-list__attr-item"><code>' + hexc(swatchValue)  + '</code></li>'
-
-    $componentAttrList.append(newHTML);
-
-  });
-
-
-});
-
-console.log('ColorDocs loaded, its JS is NOT to be used for Production, demo purposes only');
-
-},{"jquery":9}],2:[function(require,module,exports){
-var $ = require('jquery');
 var OnePageNav = require('../vendor/jquery.OnePageNav.js').OnePageNav;
 
 function JumpBuild() {
@@ -79,7 +44,7 @@ jQuery(document).ready(function($){
 
 //module.exports = Jump;
 
-},{"../vendor/jquery.OnePageNav.js":8,"jquery":9}],3:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":7,"jquery":8}],2:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -258,7 +223,7 @@ function growl__getAnimationString(el){
 
 console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -413,7 +378,7 @@ function modal__trapTab(e){
 
 console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -537,7 +502,7 @@ selectMulti__setState();
 
 console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 var $ = window.jQuery = require('jquery');
 
 ;$(function() {
@@ -597,7 +562,7 @@ var $ = window.jQuery = require('jquery');
 
 console.log('SteppedControl loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":9}],7:[function(require,module,exports){
+},{"jquery":8}],6:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -610,10 +575,10 @@ var Growl = require('./components/fsa-growl');
 var Modal = require('./components/fsa-modal');
 var SelectMulti = require('./components/fsa-select-multi');
 var SteppedControl = require('./components/fsa-stepped-control');
-var ColorDocs = require('./components/ds.color-docs');
+// var ColorDocs = require('./components/docs-color');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/ds.color-docs":1,"./components/ds.jump":2,"./components/fsa-growl":3,"./components/fsa-modal":4,"./components/fsa-select-multi":5,"./components/fsa-stepped-control":6,"jquery":9}],8:[function(require,module,exports){
+},{"./components/ds.jump":1,"./components/fsa-growl":2,"./components/fsa-modal":3,"./components/fsa-select-multi":4,"./components/fsa-stepped-control":5,"jquery":8}],7:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -838,7 +803,7 @@ var ColorDocs = require('./components/ds.color-docs');
 
 })( jQuery, window , document );
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11204,4 +11169,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[7]);
+},{}]},{},[6]);

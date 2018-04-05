@@ -15,7 +15,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Primary</h4>
     <div class="docs__attr-list__swatch color-fsa-primary"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#236430</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-primary</code></li>
     </ul>
   </li>
@@ -23,7 +22,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Secondary</h4>
     <div class="docs__attr-list__swatch color-fsa-secondary"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#205493</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-secondary</code></li>
     </ul>
   </li>
@@ -31,7 +29,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Tertiary</h4>
     <div class="docs__attr-list__swatch color-fsa-tertiary"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#494440</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-tertiary</code></li>
     </ul>
   </li>
@@ -77,7 +74,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Aqua</h4>
     <div class="docs__attr-list__swatch color-fsa-aqua"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#00a6d2</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-aqua</code></li>
     </ul>
   </li>
@@ -85,7 +81,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Red</h4>
     <div class="docs__attr-list__swatch color-fsa-red"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#cd2026</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-red</code></li>
     </ul>
   </li>
@@ -122,7 +117,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Text</h4>
     <div class="docs__attr-list__swatch color-fsa-tertiary-dark"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#2f2c2a</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-base</code></li>
     </ul>
   </li>
@@ -130,7 +124,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Link, Default</h4>
     <div class="docs__attr-list__swatch color-fsa-link"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#0071bc</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-link</code></li>
     </ul>
   </li>
@@ -138,7 +131,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Link, Hover</h4>
     <div class="docs__attr-list__swatch color-fsa-link-hover"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#205493</code></li> -->
       <li class="docs__attr-list__attr-item"><code>$color-fsa-link-hover</code></li>
     </ul>
   </li>
@@ -146,7 +138,6 @@ jump_menu: true
     <h4 class="docs__sub_style">Link, visited</h4>
     <div class="docs__attr-list__swatch color-fsa-link-visited"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>#4c2c92</code></li>
       <li class="docs__attr-list__attr-item"><code>$color-fsa-link-visited</code></li>
     </ul>
   </li> -->
