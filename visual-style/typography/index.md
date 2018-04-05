@@ -6,6 +6,49 @@ intro: "Clear and consistent headings, highly legible body paragraphs, clear lab
 jump_menu: true
 ---
 
+## Typeface
+
+**Source Sans Pro** is an open-source sans serif typeface created for **legibility in UI design**. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <h4 class="docs__sub_style">Source Sans Pro, Regular (Default)</h4>
+    <div class="docs__font fsa-font--sans">
+      <p class="docs__font__preview">Aa</p>
+      <div class="docs__font__details">
+        <p class="docs__font__item">abcdefghijklmnopqrstuvwxyz</p>
+        <p class="docs__font__item">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <p class="docs__font__item">1234567890</p>
+        <p class="docs__font__item">!@#$%^&amp;*()-_=+[]{}|;:'&gt;&lt;,./?</p>
+      </div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <h4 class="docs__sub_style">Source Sans Pro, Light</h4>
+    <div class="docs__font fsa-font--sans-light">
+      <p class="docs__font__preview">Aa</p>
+      <div class="docs__font__details">
+        <p class="docs__font__item">abcdefghijklmnopqrstuvwxyz</p>
+        <p class="docs__font__item">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <p class="docs__font__item">1234567890</p>
+        <p class="docs__font__item">!@#$%^&amp;*()-_=+[]{}|;:'&gt;&lt;,./?</p>
+      </div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <h4 class="docs__sub_style">Source Sans Pro, Bold</h4>
+    <div class="docs__font fsa-font--sans-bold">
+      <p class="docs__font__preview">Aa</p>
+      <div class="docs__font__details">
+        <p class="docs__font__item">abcdefghijklmnopqrstuvwxyz</p>
+        <p class="docs__font__item">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <p class="docs__font__item">1234567890</p>
+        <p class="docs__font__item">!@#$%^&amp;*()-_=+[]{}|;:'&gt;&lt;,./?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Headings
 
 ```html
@@ -61,10 +104,10 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
 ### Lead
 
 ```html
-<p class="fsa-text--lead">Clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+<p class="fsa-text--lead">Clear and <strong>consistent</strong> headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
 ```
 <div class="ds-preview">
-  <p class="fsa-text--lead">Clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+  <p class="fsa-text--lead">Clear and <strong>consistent</strong> headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
 </div>
 
 ## Lists

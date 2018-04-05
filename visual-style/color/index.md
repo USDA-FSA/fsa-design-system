@@ -142,14 +142,14 @@ jump_menu: true
       <li class="docs__attr-list__attr-item"><code>$color-fsa-link-hover</code></li>
     </ul>
   </li>
-  <li class="docs__attr-list__item">
+  <!-- <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Link, visited</h4>
     <div class="docs__attr-list__swatch color-fsa-link-visited"></div>
     <ul class="docs__attr-list__attr">
-<!--       <li class="docs__attr-list__attr-item"><code>#4c2c92</code></li> -->
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-link-hover</code></li>
+      <li class="docs__attr-list__attr-item"><code>#4c2c92</code></li>
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-link-visited</code></li>
     </ul>
-  </li>
+  </li> -->
 </ul>
 
 

@@ -44,7 +44,8 @@
 
   &__text {
 
-    font-family: $font-serif;
+    @include font-size(4);
+    font-weight: $font-bold;
 
   }
 
