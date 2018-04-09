@@ -35,5 +35,3 @@ forEach(whiteoutDismiss, function (index, value) {
     _whiteout.setAttribute('aria-expanded', 'true');
   }, false);
 });
-
-console.log('WhiteoutComponent loaded, its JS is NOT to be used for Production, demo purposes only');

@@ -20,6 +20,6 @@ $(window).on('scroll', function(){
 
 console.log(heightToHold);
 
-console.log('DocsNav loaded, its JS is NOT to be used for Production, demo purposes only');
+console.log('DocsNav loaded');
 
 // module.exports = DocsNav;
