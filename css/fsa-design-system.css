@@ -1587,20 +1587,13 @@ h3 + p,
 h4 + p,
 h5 + p,
 h6 + p,
-.h1 + p,
-.fsa-text--h1 + p,
-.h2 + p,
-.fsa-text--h2 + p,
-.h3 + p,
-.fsa-text--h3 + p,
-.h3 + p,
-.fsa-text--h3 + p,
-.h4 + p,
-.fsa-text--h4 + p,
-.h5 + p,
-.fsa-text--h5 + p,
-.h6 + p,
-.fsa-text--h6 + p {
+.h1 + p, .fsa-text--h1 + p,
+.h2 + p, .fsa-text--h2 + p,
+.h3 + p, .fsa-text--h3 + p,
+.h3 + p, .fsa-text--h3 + p,
+.h4 + p, .fsa-text--h4 + p,
+.h5 + p, .fsa-text--h5 + p,
+.h6 + p, .fsa-text--h6 + p {
   margin-top: .5em;
 }
 
@@ -1616,7 +1609,10 @@ h1,
   margin-bottom: 0;
 }
 
-.fsa-section__bd > h1, .fsa-section__bd > .h1, .fsa-section__bd > .fsa-text--h1 {
+.fsa-section__bd > h1,
+.fsa-section__bd >
+.h1,
+.fsa-section__bd > .fsa-text--h1 {
   margin-top: 36px;
   margin-top: 36px;
   margin-top: 3.6rem;
@@ -1875,15 +1871,13 @@ p + ol {
 .fsa-btn[disabled] {
   opacity: .65;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
 @media print {
   .fsa-btn[disabled] {
-    -webkit-filter: none;
-            filter: none;
+    filter: none;
   }
 }
 
@@ -2876,7 +2870,7 @@ th[aria-sort] {
   background-image: url("../img/chevron-down.svg");
 }
 
-.fsa-table__sort:hover :after {
+.fsa-table__sort:hover:not(.fsa-table__sort--descending):not(.fsa-table__sort--ascending):after {
   opacity: 1;
 }
 
@@ -2929,8 +2923,7 @@ th[aria-sort] {
 
 .fsa-label[disabled] {
   opacity: .65;
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
@@ -3066,8 +3059,7 @@ a.fsa-label:active {
 
 .fsa-badge[disabled] {
   opacity: .65;
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
@@ -4516,15 +4508,13 @@ a.fsa-badge:active {
 .fsa-btn-group__item[disabled] {
   opacity: .65;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
 @media print {
   .fsa-btn-group__item[disabled] {
-    -webkit-filter: none;
-            filter: none;
+    filter: none;
   }
 }
 
