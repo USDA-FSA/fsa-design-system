@@ -1941,7 +1941,7 @@ p + ol {
 
 .fsa-btn--secondary:focus:not([disabled]), .fsa-btn--secondary:active:not([disabled]), .fsa-btn--alt:focus:not([disabled]), .fsa-btn--alt:active:not([disabled]) {
   color: #f2f2f2;
-  background-color: #205493;
+  background-color: #0e2642;
   box-shadow: none;
 }
 
@@ -2099,7 +2099,7 @@ img {
 
 .fsa-input[disabled],
 .fsa-textarea[disabled] {
-  background-color: transparent;
+  background-color: #f0f0f0;
   color: #82807f;
 }
 
@@ -2440,7 +2440,7 @@ img {
 .fsa-radio:disabled + label::before,
 .fsa-checkbox:disabled + [type="hidden"] + label::before,
 .fsa-radio:disabled + [type="hidden"] + label::before {
-  background-color: transparent;
+  background-color: #dbdad9;
   cursor: text;
   cursor: not-allowed;
   opacity: .5;
@@ -2448,7 +2448,7 @@ img {
 
 .fsa-radio:disabled + label::before,
 .fsa-radio:disabled + [type="hidden"] + label::before {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #8c8b8b;
+  box-shadow: 0 0 0 2px #dbdad9, 0 0 0 3px #8c8b8b;
 }
 
 .fsa-radio:disabled:checked + label::before,
@@ -2518,7 +2518,7 @@ img {
 }
 
 .fsa-select[disabled] {
-  background-color: transparent;
+  background-color: #f0f0f0;
   color: #82807f;
 }
 
@@ -4552,7 +4552,7 @@ a.fsa-badge:active {
 
 .fsa-btn-group__item:focus:not([disabled]), .fsa-btn-group__item:active:not([disabled]) {
   color: #f2f2f2;
-  background-color: #205493;
+  background-color: #0e2642;
   box-shadow: none;
 }
 
@@ -5464,7 +5464,7 @@ a.fsa-badge:active {
 }
 
 .fsa-select-multi--disabled .fsa-select-multi__list {
-  background-color: transparent;
+  background-color: #f0f0f0;
   color: #82807f;
 }
 
@@ -5496,7 +5496,7 @@ a.fsa-badge:active {
 }
 
 .fsa-select-multi--disabled .fsa-select-multi__item:hover {
-  background-color: transparent;
+  background-color: #f0f0f0;
 }
 
 .fsa-select-multi__label {
