@@ -165,7 +165,7 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
   </ol>
 </div>
 
-### Inline
+### Inline List
 
 ```html
 <ul class="fsa-list--inline">
@@ -304,6 +304,61 @@ If SASS is not an option, these CSS Utilities will reset list styles.
     <li>List item two</li>
     <li>List item three</li>
   </ol>
+</div>
+
+## Text Elements
+```html
+<a href="#link-to-nowhere">anchor element</a>
+<a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external anchor</a>
+<abbr title="Abbreviation">abbr</abbr>
+<b>b element</b>
+<cite>cite element</cite>
+<code>code element</code>
+<del>del element</del>
+<dfn title="Title text">dfn element</dfn>
+<em>em element</em>
+<i>i element</i>
+<ins>ins element</ins>
+<kbd>kbd element</kbd>
+<mark>mark element</mark>
+<q>q element</q>
+<q>q element <q>inside</q> a q element</q>
+<s>s element</s>
+<samp>samp element</samp>
+<small>small element</small>
+<span>span element</span>
+<strong>strong element</strong>
+<sub>sub element</sub>
+<sup>sup element</sup>
+<time datetime="2005-05-15 19:00">time element</time>
+<u>u element</u>
+<var>var element</var>
+```
+<div class="ds-preview">
+  <p>The <a href="#link-to-nowhere">a element</a> and <a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external a element</a></p>
+  <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+  <p>The <b>b element</b> example, though you probably want to use <strong>strong</strong></p>
+  <p>The <cite>cite element</cite> example</p>
+  <p>The <code>code element</code> example</p>
+  <p>The <del>del element</del> example</p>
+  <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+  <p>The <em>em element</em> example</p>
+  <p>The <i>i element</i> example, though you probably want to use <em>em</em></p>
+  <p>The <ins>ins element</ins> example</p>
+  <p>The <kbd>kbd element</kbd> example</p>
+  <p>The <mark>mark element</mark> example</p>
+  <p>The <q>q element</q> example</p>
+  <p>The <q>q element <q>inside</q> a q element</q> example</p>
+  <p>The <s>s element</s> example</p>
+  <p>The <samp>samp element</samp> example</p>
+  <p>The <small>small element</small> example</p>
+  <p>The <span>span element</span> example</p>
+  <p>The <strong>strong element</strong> example</p>
+  <p>The <sub>sub element</sub> example</p>
+  <p>The <sup>sup element</sup> example</p>
+  <p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
+  <p>The <u>u element</u> example</p>
+  <p>The <var>var element</var> example</p>
 </div>
 
 ## Typographical Scale
