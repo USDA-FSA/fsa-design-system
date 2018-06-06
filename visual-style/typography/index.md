@@ -122,10 +122,11 @@ While `<h1>` – `<h6>` elements have an inherent style, their semantic level ca
 ### Lead
 
 ```html
-<p class="fsa-text--lead">Clear and <strong>consistent</strong> headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+<p class="fsa-text--lead">Lorem ipsum dolor <strong>bold text</strong> dignissim brevitas vindico nisl. <a href="link-to-nowhere.html">Inline link</a> olim aliquip tego ideo, iustum validus regula. Enim conventio praesent, duis hendrerit consequat ingenium neque et saepius suscipere velit. Ideo enim mara facilisis ad, validus abluo eligo odio.</p>
+
 ```
 <div class="ds-preview">
-  <p class="fsa-text--lead">Clear and <strong>consistent</strong> headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+  <p class="fsa-text--lead">Lorem ipsum dolor <strong>bold text</strong> dignissim brevitas vindico nisl. <a href="link-to-nowhere.html">Inline link</a> olim aliquip tego ideo, iustum validus regula. Enim conventio praesent, duis hendrerit consequat ingenium neque et saepius suscipere velit. Ideo enim mara facilisis ad, validus abluo eligo odio.</p>
 </div>
 
 ## Lists
