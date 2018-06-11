@@ -4,6 +4,7 @@ parent: "Components"
 title: "Modal"
 intro: "A Modal is used to gain focus on a specific feature or function and restrict access to other areas of the application until the User completes the task or dismisses the modal."
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 
 ## Variations

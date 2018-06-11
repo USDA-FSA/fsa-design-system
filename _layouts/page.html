@@ -4,7 +4,12 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<h1 class="ds-page-title" id="article-title">{{ page.title }}</h1>
+<h1 class="ds-page-title" id="article-title">
+  {{ page.title }}
+  {% if page.title_label %}
+    <span class="fsa-label fsa-label--warning">{{ page.title_label }}</span>
+  {% endif %}
+</h1>
 
 <div class="ds-l-page">
 
