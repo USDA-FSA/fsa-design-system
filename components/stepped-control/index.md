@@ -4,6 +4,7 @@ parent: "Components"
 title: "Stepped Control"
 intro: ""
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 
 <div class="ds-preview">

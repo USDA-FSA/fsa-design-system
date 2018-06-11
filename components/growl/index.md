@@ -1,9 +1,10 @@
 ---
 layout: page
 parent: "Components"
-title: "Growl"
-intro: "A Growl provides application messaging, similar to an Alert, that requires the User to take action to dismiss."
+title: "Growl Notification"
+intro: "A Growl Notification provides application messaging, similar to an Alert, that requires the User to take action to dismiss."
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
 <div class="fsa-growl-container">

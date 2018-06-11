@@ -4,6 +4,7 @@ parent: "Components"
 title: "Global Navigation"
 intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FSA applications."
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 
 <div class="ds-preview">
