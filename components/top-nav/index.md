@@ -1,8 +1,8 @@
 ---
 layout: page
 parent: "Components"
-title: "Top Navigation"
-intro: "The Top Navigation Component shall be used to create a cohesive User Experience across all FSA applications."
+title: "Global Navigation"
+intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FSA applications."
 jump_menu: true
 ---
 
