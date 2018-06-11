@@ -83,7 +83,7 @@ title_label: 'Requires JavaScript'
 
 ## Variations
 
-Growls are styled with `class="fsa-growl fsa-growl--[variation]"`.
+Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ### Default
 
@@ -212,9 +212,6 @@ Growls are styled with `class="fsa-growl fsa-growl--[variation]"`.
   <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Modal Growl</button>
 </div>
 
-
-
-
 ## Usage
 
 ### Use When
@@ -226,7 +223,20 @@ Growls are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 * To show error messages that should be paired with specific form fields.
 
+
 ## General Guidance
 
 * The control element that triggers the Growl shall utilize an aria-controls parameter that matches the ID of the Growl.
-* Growls should be used to help provide guidance and information related to application state, processing, and events.
+* Growl Notifications should be used to help provide guidance and information related to application state, processing, and events.
+
+## JavaScript Guidance
+
+### Summary
+
+Growl Notifications' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
+
+<div class="OUTLINE" style="background-color:pink;padding: 12px">
+  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
+</div>
+
+{% include scripts.about.html %}

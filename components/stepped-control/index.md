@@ -100,3 +100,13 @@ title_label: 'Requires JavaScript'
 * A
 * B
 * C
+
+## JavaScript Guidance
+
+### Summary
+
+<div class="OUTLINE" style="background-color:pink;padding: 12px">
+  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
+</div>
+
+{% include scripts.about.html %}

@@ -6415,6 +6415,10 @@ a.fsa-badge:active {
   overflow-wrap: break-word;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main:active, main:focus {
   outline: 0;
 }

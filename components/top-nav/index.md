@@ -4,7 +4,7 @@ parent: "Components"
 title: "Global Navigation"
 intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FSA applications."
 jump_menu: true
-title_label: 'Requires JavaScript'
+title_label: 'May require JavaScript'
 ---
 
 <div class="ds-preview">
@@ -713,3 +713,13 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.
 
 * Maintain the Unordered List and Anchor Link structure of the HTML to allow a User to Tab thru each element of the navigation.
+
+## JavaScript Guidance
+
+### Summary
+
+<div class="OUTLINE" style="background-color:pink;padding: 12px">
+  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
+</div>
+
+{% include scripts.about.html %}
