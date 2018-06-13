@@ -266,10 +266,10 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 
 ## JavaScript Guidance
 
+{% include scripts.about.html %}
+
 ### Summary
 
 <div class="OUTLINE" style="background-color:pink;padding: 12px">
   <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
 </div>
-
-{% include scripts.about.html %}

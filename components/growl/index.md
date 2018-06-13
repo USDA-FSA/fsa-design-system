@@ -231,6 +231,8 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ## JavaScript Guidance
 
+{% include scripts.about.html %}
+
 ### Summary
 
 Growl Notifications' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
@@ -238,5 +240,3 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 <div class="OUTLINE" style="background-color:pink;padding: 12px">
   <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
 </div>
-
-{% include scripts.about.html %}
