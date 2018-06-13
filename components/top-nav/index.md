@@ -716,9 +716,9 @@ Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility
 
 ## JavaScript Guidance
 
-### Summary
-
 {% include scripts.about.html %}
+
+### Summary
 
 <div class="OUTLINE" style="background-color:pink;padding: 12px">
   <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
