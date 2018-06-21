@@ -253,11 +253,11 @@ Growl Notifications' HTML and its content are typically injected into a page whe
   <tbody>
     <tr>
       <td><code>growl__firstTabStop</code></td>
-      <td>Used to set the value of the element where tab order needs to start</td>
+      <td>The value of the element where tab order needs to start</td>
     </tr>
     <tr>
       <td><code>growl__lastTabStop</code></td>
-      <td>Used to set the value of the element where the tab order will stop</td>
+      <td>The value of the element where the tab order will stop</td>
     </tr>
     <tr>
       <td><code>growl__triggers</code></td>
