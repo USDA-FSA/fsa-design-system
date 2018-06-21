@@ -240,3 +240,81 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 <div class="OUTLINE" style="background-color:pink;padding: 12px">
   <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
 </div>
+
+### Properties
+
+<table class="fsa-table">
+  <thead>
+    <tr>
+      <th scope="col">Property</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>growl__firstTabStop</code></td>
+      <td>Used to set the value of the element where tab order needs to start</td>
+    </tr>
+    <tr>
+      <td><code>growl__lastTabStop</code></td>
+      <td>Used to set the value of the element where the tab order will stop</td>
+    </tr>
+    <tr>
+      <td><code>growl__triggers</code></td>
+      <td>Node list of all elements that can trigger a Growl to show</td>
+    </tr>
+    <tr>
+      <td><code>growl__closeButtons</code></td>
+      <td>Node list of all elements that can trigger a Growl to close</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methods
+
+<table class="fsa-table">
+  <thead>
+    <tr>
+      <th scope="col">Method</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>forEach()</code></td>
+      <td>Utility method used to iterate thru an array and assign a callback method. It is generally used to look thru a Nodelist of elements and assign event listeners to like elements.</td>
+    </tr>
+    <tr>
+      <td><code>getClosest()</code></td>
+      <td>Utility method that returns the the closest element in the DOM Tree that matches the passes in Class selector.</td>
+    </tr>
+    <tr>
+      <td><code>growl__show()</code></td>
+      <td>Method that controls how the Growl component will be displayed on the page, and also sets event listeners on the individual component to trap the Tab Key.</td>
+    </tr>
+    <tr>
+      <td><code>growl__showDelay()</code></td>
+      <td>Method that controls how the Growl component will delay the animation to hide.</td>
+    </tr>
+    <tr>
+      <td><code>growl__dismiss()</code></td>
+      <td>Method that controls how the Growl component will animate and hide itself.</td>
+    </tr>
+    <tr>
+      <td><code>growl__dismissDelay()</code></td>
+      <td>Method that controls how the Growl component will animate and hide itself after a delay.</td>
+    </tr>
+    <tr>
+      <td><code>growl__trapTab()</code></td>
+      <td>Method that instructs the component to listen for specific keycodes and advance focuse to various elements.</td>
+    </tr>
+    <tr>
+      <td><code>growl__hasClass()</code></td>
+      <td>Utility method that returns a boolean based on the existance of a class applied to the element.</td>
+    </tr>
+    <tr>
+      <td><code>growl__getAnimationString()</code></td>
+      <td>Utility method that returns the appropriate string based on the animation naming convention in the browser.</td>
+    </tr>
+  </tbody>
+</table>
