@@ -1,9 +1,10 @@
 ---
 layout: page
 parent: "Components"
-title: "Growl"
-intro: "A Growl provides application messaging, similar to an Alert, that requires the User to take action to dismiss."
+title: "Growl Notification"
+intro: "A Growl Notification provides application messaging, similar to an Alert, that requires the User to take action to dismiss."
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
 <div class="fsa-growl-container">
@@ -82,7 +83,7 @@ jump_menu: true
 
 ## Variations
 
-Growls are styled with `class="fsa-growl fsa-growl--[variation]"`.
+Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ### Default
 
@@ -211,9 +212,6 @@ Growls are styled with `class="fsa-growl fsa-growl--[variation]"`.
   <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Modal Growl</button>
 </div>
 
-
-
-
 ## Usage
 
 ### Use When
@@ -225,7 +223,32 @@ Growls are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 * To show error messages that should be paired with specific form fields.
 
+
 ## General Guidance
 
 * The control element that triggers the Growl shall utilize an aria-controls parameter that matches the ID of the Growl.
-* Growls should be used to help provide guidance and information related to application state, processing, and events.
+* Growl Notifications should be used to help provide guidance and information related to application state, processing, and events.
+
+## JavaScript Guidance
+
+{% include scripts.about.html %}
+
+### Summary
+
+Growl Notifications' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
+
+### Show Growl
+
+* Set `aria-hidden` attribute to false
+* Trap keydown event to set Tab Order
+* Set focus of cursor to Growl
+
+### Dismiss Growl
+
+* Add `fsa-growl--dismissing` class
+* Set `aria-hidden` attribute to true
+* Remove `aria-expanded` attribute from element that triggered Growl
+* Set focus to the element that triggered Growl
+
+
+

@@ -2,18 +2,18 @@
 layout: guide
 parent: "Applications"
 title: "Navigation"
-intro: "FSA applications shall utilize a top navigation system that complies with the below specifications."
+intro: "FSA applications shall utilize a global navigation system that complies with the below specifications."
 
 ---
 
-## Top Navigation
+## Global Navigation
 
-Based on new standards in web design, all FSA applications should include a "Mega Menu" format paired with a top navigation system that flows from left to right on the application screen. The top navigation should be distinguishable and shall be positioned in a horizontal bar just below the header of the application. Navigation systems located in a left-side or right-side panel shall not be used for FSA applications.
+Based on new standards in web design, all FSA applications should include a "Mega Menu" format paired with a global navigation system that flows from left to right on the application screen. The global navigation should be distinguishable and shall be positioned in a horizontal bar just below the header of the application. Navigation systems located in a left-side or right-side panel shall not be used for FSA applications.
 
 ## Navigation Rules
 
-  * A "Home" link shall be available, left justified and as the first option in the top navigation
-  * No more than 6 additional navigation categories shall be used in the top navigation
+  * A "Home" link shall be available, left justified and as the first option in the global navigation
+  * No more than 6 additional navigation categories shall be used in the global navigation
   * Navigation dropdowns or sub-lists shall only contain 2 - 9 sub-navigation options
   * If only 1 navigation is used, it shhall link directly to the page or content and not contain a dropdown or sub-navigation
   * Tertiary navigation shall not be used in FSA applications due to accessibility concerns.

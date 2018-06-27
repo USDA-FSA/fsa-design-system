@@ -4,6 +4,7 @@ parent: "Components"
 title: "Select Multi"
 intro: "The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All."
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 
 <div class="ds-preview">
@@ -214,3 +215,25 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 * Just like with other checkbox elements, all Select Multi options require their own unique ID and a corresponding `for` attribute within the LABEL tag.
 * A Unique ID is also required for the top-level DIV tag which contains the `class="fsa-select-multi"` attribute.
 
+## JavaScript Guidance
+
+{% include scripts.about.html %}
+
+### Summary
+
+The Select Multi uses a series of conditional statements to determine which Select Boxes need to be updated based on their current state, state of their peers, and the state of their parent Select Box. The indeterminate state of a Select Box, is an indication that shows all child Select Boxes are mixed between checked and uncheck. The totality of the children grouping of Select Boxes is not able to be determined. The indeterminate state can only be set via JavaScript. 
+
+### Select Checked State
+
+* `.indeterminate` property of parent is true if all siblings are checked
+* `.checked` property is true
+
+### Select Unchecked State
+
+* `.indeterminate` property of parent is false if all siblings are unchecked
+* `.checked` property is false
+
+### Select Indeterminate State
+
+* `.indeterminate` property is true if at least one child is checked and at least one child is unchecked
+* `.checked` property to false

@@ -29,8 +29,8 @@ function JumpFollow() {
   $('.ds-jump__list').onePageNav({
     currentClass: 'ds-jump__item--active',
     changeHash: false,
-    scrollThreshold: 0.1,
-    scrollSpeed: 550
+    scrollThreshold: 0.2,
+    scrollSpeed: 0,
   });
 }
 

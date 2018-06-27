@@ -63,9 +63,9 @@ Breadcrumbs are styled with `class="fsa-breadcrumb"`, and should be used with an
 
 ### Don't Use
 
-* As a top navigation feature or within the page content as a hyperlink feature.
-* If the application is only one level deep or if the top navigation first level navigation can be used.
+* As a global navigation feature or within the page content as a hyperlink feature.
+* If the application is only one level deep or if the global navigation's first level can be used.
 
 ## General Guidance
 
-* Breadcrumbs should be located just below the top navigation system and above the main content of the application.
+* Breadcrumbs should be located just below the global navigation system and above the main content of the application.
