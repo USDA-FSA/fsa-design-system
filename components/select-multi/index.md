@@ -221,6 +221,19 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ### Summary
 
-<div class="OUTLINE" style="background-color:pink;padding: 12px">
-  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
-</div>
+The Select Multi uses a series of conditional statements to determine which Select Boxes need to be updated based on their current state, state of their peers, and the state of their parent Select Box. The indeterminate state of a Select Box, is an indication that shows all child Select Boxes are mixed between checked and uncheck. The totality of the children grouping of Select Boxes is not able to be determined. The indeterminate state can only be set via JavaScript. 
+
+### Select Checked State
+
+* `.indeterminate` property of parent is true if all siblings are checked
+* `.checked` property is true
+
+### Select Unchecked State
+
+* `.indeterminate` property of parent is false if all siblings are unchecked
+* `.checked` property is false
+
+### Select Indeterminate State
+
+* `.indeterminate` property is true if at least one child is checked and at least one child is unchecked
+* `.checked` property to false
