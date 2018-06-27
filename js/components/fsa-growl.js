@@ -17,14 +17,14 @@ var growl__closeButtons = document.querySelectorAll('[data-behavior~="growl-dism
 var growl__closeButtonsDelay = document.querySelectorAll('[data-behavior~="growl-dismiss-delay"]');
 
 // Utility method to loop thru NodeList correctly
-var growl__forEach = function(array, callback, scope) {
+var forEach = function(array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
     callback.call(scope, i, array[i]); // passes back stuff we need
   }
 };
 
 // Utilitity method
-var growl__getClosest = function(elem, selector){
+var getClosest = function(elem, selector){
 
     // Element.matches() polyfill
     if (!Element.prototype.matches) {
@@ -50,7 +50,7 @@ var growl__getClosest = function(elem, selector){
 
 };
 // iterate thru trigger elements and set click handler
-growl__forEach(growl__triggers, function(index, value) {
+forEach(growl__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // set private variables
@@ -67,11 +67,11 @@ growl__forEach(growl__triggers, function(index, value) {
 });
 
 // iterate thru close buttons and set click handler
-growl__forEach(growl__closeButtons, function(index, value) {
+forEach(growl__closeButtons, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // pass associated growl to method
-    var _g = growl__getClosest(e.currentTarget, '.fsa-growl');
+    var _g = getClosest(e.currentTarget, '.fsa-growl');
     growl__dismiss( _g );
   }, false);
 });
