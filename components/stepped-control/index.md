@@ -297,21 +297,19 @@ title_label: 'May Require JavaScript'
 
 ### Summary
 
-The JavaScript for the Sticky Stepped Control performs a number of calculations based on the position of the component in relation to the top of the screen. JavaScript is not required for the non-sticky variations of the Stepped Control component.
+The JavaScript for the Sticky Stepped Control performs a number of calculations based on the position of the component in relation to the top of the screen. JavaScript is not required for the non-sticky variations of the Stepped Control component. The Component Update Events list below should trigger the change of the Sticky variant of the component.
 
-### Open Modal
+### Component Update
 
-* Set `aria-hidden` attribute to false
-* Trap keydown event to set Tab Order
-* Add `fsa-modal-scroll-fix` class to fix double scrollbar issue
-* Set focus of cursor to Modal
+* Calculate Component position, relative to bottom of screen
+* Apply `fsa-stepped-control--unstuck` class to pin component
 
-### Close Modal
+### Component Update Events
 
-* Set `aria-hidden` attribute to true
-* Remove `fsa-modal-scroll-fix` class from element
-* Set `aria-expanded` attribute to false
-* Set focus to the element that triggered Modal
+* Window scrolling
+* `DOMContentLoaded`
+* Window resize
+* All Modals scrolling, if using Modal variant
 
 <div tabindex="0" id="UNIQUE-ID-stepped-control-demo-1" class="fsa-modal" role="dialog" aria-hidden="true">
     <div class="fsa-modal__dialog">
