@@ -173,5 +173,3 @@ function growl__getAnimationString(el){
   }
   return str;
 }
-
-console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
