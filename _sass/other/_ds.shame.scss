@@ -3,76 +3,6 @@
   outline: 1px solid red;
 }
 
-.your-custom-list {
-
-  @include reset-ul();
-
-  &__item {
-    @include reset-li();
-  }
-
-}
-
-.foo {
-
-  @include fsa-grid-row();
-
-  &__item {
-
-    @include fsa-grid-column();
-
-    p {
-      background-color: $color-fsa-aqua-100;
-    }
-
-    &--fu {
-      @include fsa-grid-column-width(3); // 25%
-    }
-
-    &--bar {
-      @include fsa-grid-column-width(9); // 75%
-    }
-  }
-
-}
-
-.lorem {
-
-  @include fsa-grid-row();
-
-  &__item {
-
-    @include fsa-grid-column();
-
-    p {
-      background-color: $color-fsa-aqua-100;
-    }
-
-    &--fu {
-
-      @include fsa-grid-column-width(6); // 50%
-
-      @include breakpoint(M) {
-        @include fsa-grid-column-width(4); // 33%
-      }
-
-    }
-
-    &--bar {
-
-      @include fsa-grid-column-width(6); // 50%
-
-      @include breakpoint(M) {
-        @include fsa-grid-column-width(8); // 66%
-      }
-
-    }
-
-  }
-
-
-}
-
 .ds-icn {
   &__github {
     display: inline-block;
@@ -166,9 +96,4 @@ code {
   background-image: url('#{$image-path}/chevron-up.png');
   background-image: url('#{$image-path}/chevron-up.svg');
   opacity: .4;
-}
-
-// TODO Add to fsa-style
-.fsa-table__sort {
-  white-space: normal;
 }

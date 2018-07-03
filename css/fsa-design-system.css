@@ -1875,15 +1875,13 @@ p + ol {
 .fsa-btn[disabled] {
   opacity: .65;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
 @media print {
   .fsa-btn[disabled] {
-    -webkit-filter: none;
-            filter: none;
+    filter: none;
   }
 }
 
@@ -2929,8 +2927,7 @@ th[aria-sort] {
 
 .fsa-label[disabled] {
   opacity: .65;
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
@@ -3066,8 +3063,7 @@ a.fsa-label:active {
 
 .fsa-badge[disabled] {
   opacity: .65;
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
@@ -3840,10 +3836,8 @@ a.fsa-badge:active {
 
 @media (min-width: 54em) {
   .fsa-nav-global__list-item--multi-column .fsa-nav-global__sub-menu-bd {
-    -moz-columns: 4;
-         columns: 4;
-    -moz-column-gap: 0.6rem;
-         column-gap: 0.6rem;
+    columns: 4;
+    column-gap: 0.6rem;
     padding-bottom: 1.6rem;
   }
 }
@@ -3868,8 +3862,7 @@ a.fsa-badge:active {
   }
   @supports (-webkit-appearance: none) {
     .fsa-nav-global__sub-menu-group {
-      page-break-before: column;
-           break-before: column;
+      break-before: column;
       display: block;
       width: auto;
     }
@@ -4516,15 +4509,13 @@ a.fsa-badge:active {
 .fsa-btn-group__item[disabled] {
   opacity: .65;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-filter: saturate(70%);
-          filter: saturate(70%);
+  filter: saturate(70%);
   cursor: not-allowed;
 }
 
 @media print {
   .fsa-btn-group__item[disabled] {
-    -webkit-filter: none;
-            filter: none;
+    filter: none;
   }
 }
 
@@ -6415,6 +6406,10 @@ a.fsa-badge:active {
   overflow-wrap: break-word;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main:active, main:focus {
   outline: 0;
 }
@@ -7171,10 +7166,6 @@ main:active, main:focus {
   text-decoration: none;
 }
 
-.OUTLINE {
-  outline: 1px solid red;
-}
-
 .your-custom-list {
   display: block;
   list-style-type: none;
@@ -7292,6 +7283,10 @@ main:active, main:focus {
   }
 }
 
+.OUTLINE {
+  outline: 1px solid red;
+}
+
 .ds-icn__github {
   display: inline-block;
   vertical-align: middle;
@@ -7372,10 +7367,6 @@ blockquote code {
   background-image: url("../img/chevron-up.png");
   background-image: url("../img/chevron-up.svg");
   opacity: .4;
-}
-
-.fsa-table__sort {
-  white-space: normal;
 }
 
 /**

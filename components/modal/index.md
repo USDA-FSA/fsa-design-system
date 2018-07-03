@@ -4,6 +4,7 @@ parent: "Components"
 title: "Modal"
 intro: "A Modal is used to gain focus on a specific feature or function and restrict access to other areas of the application until the User completes the task or dismisses the modal."
 jump_menu: true
+title_label: 'Requires JavaScript'
 ---
 
 ## Variations
@@ -262,3 +263,25 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
     </div>
   </div>
 </div>
+
+## JavaScript Guidance
+
+{% include scripts.about.html %}
+
+### Summary
+
+Modal popups' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
+
+### Open Modal
+
+* Set `aria-hidden` attribute to false
+* Trap keydown event to set Tab Order
+* Add `fsa-modal-scroll-fix` class to fix double scrollbar issue
+* Set focus of cursor to Modal
+
+### Close Modal
+
+* Set `aria-hidden` attribute to true
+* Remove `fsa-modal-scroll-fix` class from element
+* Set `aria-expanded` attribute to false
+* Set focus to the element that triggered Modal

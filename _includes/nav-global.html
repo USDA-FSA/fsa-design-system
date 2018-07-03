@@ -1,17 +1,19 @@
 <nav>
   <div class="ds-nav">
-    <ul class="ds-nav__list">
+    <ul class="ds-nav__list" id="primary-navigation" aria-label="Primary Navigation">
       {% for link in site.data.navvy %}
 
         {% assign activeClassName = nil %}
+        {% assign ariaCurrent = nil %}
 
         {% if page.url contains link.href %}
           {% assign activeClassName = 'ds-nav__list-item--active' %}
+          {% assign ariaCurrent = 'aria-current="true"' %}
         {% endif %}
 
         {% unless link.exclude_from_nav %}
           <li class="ds-nav__list-item {{ activeClassName }} {% if forloop.first %}ds-nav__list-item--first{% endif %} {% if forloop.last %}ds-nav__list-item--last{% endif %}">
-            <a class="ds-nav__link" href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+            <a class="ds-nav__link" href="{{ link.href | prepend: site.baseurl }}" {{ ariaCurrent }}>{{ link.title }}</a>
           </li>
         {% endunless %}
 
