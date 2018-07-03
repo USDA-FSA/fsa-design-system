@@ -720,6 +720,20 @@ Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility
 
 ### Summary
 
-<div class="OUTLINE" style="background-color:pink;padding: 12px">
-  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
-</div>
+The JavaScript for the Top Navigation is used to set a couple of `aria-` attributes to increase usability and accessibility. The attribute changes listed below also affect visual state of the menu and menu items.
+
+### Main Level Open
+
+* Set `aria-expanded` attribute to false
+* Set `aria-hidden` attribute to true
+
+### Main Level Close
+
+* Set `aria-expanded` attribute to true
+* Set `aria-hidden` attribute to false
+
+### Menu Items
+
+* Toggle `aria-expanded` attribute to true or false based on active state
+* Toggle `aria-hidden` attribute to true or false based on active state
+* On `focus` of menu item set `aria-expanded` to true and `aria-hidden` to false

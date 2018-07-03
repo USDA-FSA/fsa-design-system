@@ -237,6 +237,18 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 Growl Notifications' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
 
-<div class="OUTLINE" style="background-color:pink;padding: 12px">
-  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
-</div>
+### Show Growl
+
+* Set `aria-hidden` attribute to false
+* Trap keydown event to set Tab Order
+* Set focus of cursor to Growl
+
+### Dismiss Growl
+
+* Add `fsa-growl--dismissing` class
+* Set `aria-hidden` attribute to true
+* Remove `aria-expanded` attribute from element that triggered Growl
+* Set focus to the element that triggered Growl
+
+
+

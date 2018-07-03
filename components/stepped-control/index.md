@@ -4,7 +4,7 @@ parent: "Components"
 title: "Stepped Control"
 intro: ""
 jump_menu: true
-title_label: 'Requires JavaScript'
+title_label: 'May Require JavaScript'
 ---
 
 <div class="ds-preview">
@@ -274,21 +274,22 @@ title_label: 'Requires JavaScript'
 
 ### Use When
 
-* A
-* B
-* C
+* The process flow of a User requires multiple steps to perform actions
+* A process flow would be enriched by a sticky control at the bottom of the screen
+* A Status Message would help to gain context for the User during a stepped process
 
 ### Don't Use
 
-* A
-* B
-* C
+* As the component to control a singular form or action
+* Buttons with the visual style of a text link
+* At the top of a screen as a means for navigation
+* As a substitute for pagination
 
 ## General Guidance
 
-* A
-* B
-* C
+* The Stepped Control is used as the standard Component to advance from screen to screen within an application 
+* In most cases, the Stepped Control with sticky variation should be used, as it keeps the navigation controls on the screen for the User
+* Variations of the Stepped Control should be used to enhance the User Experience by providing additional context that might be missing for the User.
 
 ## JavaScript Guidance
 
@@ -296,6 +297,76 @@ title_label: 'Requires JavaScript'
 
 ### Summary
 
-<div class="OUTLINE" style="background-color:pink;padding: 12px">
-  <strong>TODO</strong>: summarize in a "docs-like" manner what occurs.
-</div>
+The JavaScript for the Sticky Stepped Control performs a number of calculations based on the position of the component in relation to the top of the screen. JavaScript is not required for the non-sticky variations of the Stepped Control component. The Component Update Events list below should trigger the change of the Sticky variant of the component.
+
+### Component Update
+
+* Calculate Component position, relative to bottom of screen
+* Apply `fsa-stepped-control--unstuck` class to pin component
+
+### Component Update Events
+
+* Window scrolling
+* `DOMContentLoaded`
+* Window resize
+* All Modals scrolling, if using Modal variant
+
+<div tabindex="0" id="UNIQUE-ID-stepped-control-demo-1" class="fsa-modal" role="dialog" aria-hidden="true">
+    <div class="fsa-modal__dialog">
+      <div class="fsa-modal__content">
+        <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <h1 class="fsa-modal__title">Modal Title</h1>
+        <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
+        <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
+        <p>Maxime repellat expedita, rem, sapiente, debitis consectetur placeat dolorum deleniti delectus tenetur commodi? Optio, sequi. Fugiat, hic incidunt, vitae aspernatur voluptates molestiae?</p>
+        <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
+        <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
+        <p>Maxime repellat expedita, rem, sapiente, debitis consectetur placeat dolorum deleniti delectus tenetur commodi? Optio, sequi. Fugiat, hic incidunt, vitae aspernatur voluptates molestiae?</p>
+        <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+          <div class="fsa-stepped-control__bd">
+            <div class="fsa-stepped-control__message" role="status">
+              [ status message ]
+            </div>
+            <div class="fsa-stepped-control__list">
+              <div class="fsa-stepped-control__item">
+                <button class="fsa-btn fsa-btn--alt fsa-stepped-control__btn" type="button">[ secondary ]</button>
+              </div>
+              <div class="fsa-stepped-control__item">
+                <button class="fsa-btn fsa-btn--primary fsa-stepped-control__btn" type="submit">
+                  <span class="fsa-stepped-control__btn-label">[ primary ]</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div tabindex="0" id="UNIQUE-ID-stepped-control-demo-2" class="fsa-modal" role="dialog" aria-hidden="true">
+    <div class="fsa-modal__dialog">
+      <div class="fsa-modal__content">
+        <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <h1 class="fsa-modal__title">Modal Title</h1>
+        <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
+        <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
+        <p>Maxime repellat expedita, rem, sapiente, debitis consectetur placeat dolorum deleniti delectus tenetur commodi? Optio, sequi. Fugiat, hic incidunt, vitae aspernatur voluptates molestiae?</p>
+        <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
+        <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
+        <p>Maxime repellat expedita, rem, sapiente, debitis consectetur placeat dolorum deleniti delectus tenetur commodi? Optio, sequi. Fugiat, hic incidunt, vitae aspernatur voluptates molestiae?</p>
+        <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+          <div class="fsa-stepped-control__bd">
+            <div class="fsa-stepped-control__list">
+              <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
+                <button class="fsa-btn fsa-btn--alt fsa-stepped-control__btn" type="button">[ regressive ]</button>
+              </div>
+              <div class="fsa-stepped-control__item">
+                <button class="fsa-btn fsa-btn--primary fsa-stepped-control__btn" type="submit">
+                  <span class="fsa-stepped-control__btn-label">[ progressive ]</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
