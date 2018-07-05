@@ -9,50 +9,18 @@
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
+var Helper = require('../utilities/helper');
+
 var selectMulti__triggers = document.querySelectorAll('[data-behavior~="select-multi"]');
 
-// Utility method to loop thru NodeList correctly
-var forEach = function (array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
-
-// Utilitity method
-var getClosest = function(elem, selector){
-
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-        Element.prototype.matches =
-            Element.prototype.matchesSelector ||
-            Element.prototype.mozMatchesSelector ||
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.oMatchesSelector ||
-            Element.prototype.webkitMatchesSelector ||
-            function(s) {
-                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                    i = matches.length;
-                while (--i >= 0 && matches.item(i) !== this) {}
-                return i > -1;
-            };
-    }
-
-    // Get the closest matching element
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-
-};
-
 // iterate thru trigger elements and set click handler
-forEach(selectMulti__triggers, function(index, value) {
+Helper.forEach(selectMulti__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
 
     var _check = e.target;
     //var _parent = el.closest('.fsa-select-multi');
-    var _parent = getClosest(_el, '.fsa-select-multi');
+    var _parent = Helper.getClosest(_el, '.fsa-select-multi');
     var _selectAll = _parent.querySelector('[data-behavior~="select-multi-all"]');
 
     if(_el != _selectAll){
@@ -83,7 +51,7 @@ forEach(selectMulti__triggers, function(index, value) {
 
     } else {
       var _cbs = _parent.querySelectorAll('[data-behavior~="select-multi"]');
-      forEach(_cbs, function (index, value) {
+      Helper.forEach(_cbs, function (index, value) {
         value.checked = _selectAll.checked;
       });
       _selectAll.indeterminate = false;
@@ -95,11 +63,11 @@ forEach(selectMulti__triggers, function(index, value) {
 function selectMulti__setState(){
 
   var _selectAll = document.querySelectorAll('[data-behavior~="select-multi-all"]');
-  forEach(_selectAll, function (index, value) {
+  Helper.forEach(_selectAll, function (index, value) {
 
     //console.log(typeof value);
     //var _parent = value.closest('.fsa-select-multi');
-    var _parent = getClosest(value, '.fsa-select-multi');
+    var _parent = Helper.getClosest(value, '.fsa-select-multi');
     var _selectAll = value;
 
     var _len = _parent.querySelectorAll('[data-behavior~="select-multi"]').length;

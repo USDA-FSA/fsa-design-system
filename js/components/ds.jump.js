@@ -1,4 +1,7 @@
-var $ = require('jquery');
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
 var OnePageNav = require('../vendor/jquery.OnePageNav.js').OnePageNav;
 
 function JumpBuild() {

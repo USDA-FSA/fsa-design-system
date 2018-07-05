@@ -10,6 +10,7 @@ Tables are great for displaying tabular data. Minimal visual styling helps surfa
 
 <div class="ds-preview">
   <table class="fsa-table">
+    <caption>[Table caption]</caption>
     <thead>
       <tr>
         <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Column A</button></th>
@@ -55,6 +56,7 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 
 <div class="ds-preview">
   <table class="fsa-table">
+    <caption>[Table caption]</caption>
     <thead>
       <tr>
         <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
@@ -99,6 +101,7 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 </div>
 ```html
 <table class="fsa-table">
+  <caption>[Table caption]</caption>
   <thead>
     <tr>
       <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
@@ -142,9 +145,85 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 </table>
 ```
 
+### Customize caption
+
+<div class="ds-preview">
+  <table class="fsa-table">
+  <caption class="fsa-text--h2">[Table caption that looks like an &lt;h2&gt;]</caption>
+    <thead>
+      <tr>
+        <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
+        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Loan Rate</button></th>
+        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
+        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.99</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.49</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```html
+<table class="fsa-table">
+  <caption class="fsa-text--h2">[Table caption that looks like an &lt;h2&gt;]</caption>
+  <thead>
+    <tr>
+      <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
+      <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Loan Rate</button></th>
+      <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
+      <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Barley $/Bushel</td>
+      <td class="fsa-text-align--right">1.75</td>
+      <td class="fsa-text-align--right">3.30</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+    <tr>
+      <td>Wheat - Soft Red Winter $/Bushel</td>
+      <td class="fsa-text-align--right">2.42</td>
+      <td class="fsa-text-align--right">4.49</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 ### Borderless
 
 <div class="ds-preview">
+  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <table class="fsa-table fsa-table--borderless">
     <thead>
       <tr>
@@ -196,6 +275,7 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 </div>
 ```html
 <table class="fsa-table fsa-table--borderless">
+  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <thead>
     <tr>
       <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
@@ -250,6 +330,7 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 Omitting the default `class="fsa-table"` outright renders a non-styled table, effectively "resetting" it.
 
 <div class="ds-preview">
+  <caption>[Table caption]</caption>
   <table>
     <thead>
       <tr>
@@ -301,6 +382,7 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 </div>
 ```html
 <table>
+  <caption>[Table caption]</caption>
   <thead>
     <tr>
       <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
@@ -374,6 +456,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 <div class="ds-preview">
   <table class="fsa-table fsa-table--responsive">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
     <thead>
       <tr>
         <th scope="col">Commodity</th>
@@ -410,6 +493,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 </div>
 ```html
 <table class="fsa-table fsa-table--responsive">
+  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <thead>
     <tr>
       <th scope="col">Commodity</th>
@@ -447,6 +531,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ### Horizontal
 <div class="ds-preview">
+  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
     <thead>
       <tr>
@@ -476,6 +561,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 </div>
 ```html
 <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <thead>
     <tr>
       <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Document title</button></th>

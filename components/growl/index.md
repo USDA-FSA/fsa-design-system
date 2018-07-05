@@ -209,7 +209,7 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Modal Growl</button>
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Modal Growl</button>
 </div>
 
 ## Usage
@@ -249,6 +249,3 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 * Set `aria-hidden` attribute to true
 * Remove `aria-expanded` attribute from element that triggered Growl
 * Set focus to the element that triggered Growl
-
-
-
