@@ -104,6 +104,10 @@
       subhref: "components/stepped-control"
       img: "img/subcategories/stepped-control.png"
 
+    - subtitle: "Stepped Tabs"
+      subhref: "components/stepped-tabs"
+      img: "img/subcategories/stepped-tabs.png"
+
     - subtitle: "Text Input"
       subhref: "components/text-input"
       img: "img/subcategories/text-input.png"
