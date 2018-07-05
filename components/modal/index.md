@@ -160,7 +160,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 
 ## Related Resources
 
-* [Growl Component]({{ site.baseurl }}components/growl/)
+* [Growl Notification Component]({{ site.baseurl }}components/growl/)
 * [Alert Component]({{ site.baseurl }}components/alerts/)
 
 <div tabindex="0" id="UNIQUE-ID-GGFD36765SSSGH" class="fsa-modal" role="dialog" aria-hidden="true">
