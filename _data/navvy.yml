@@ -88,6 +88,10 @@
       subhref: "components/button-group"
       img: "img/subcategories/button-group.png"
 
+    - subtitle: "Pagination"
+      subhref: "components/pagination"
+      img: "img/subcategories/pagination.png"
+
     - subtitle: "Content Tabs"
       subhref: "components/content-tabs"
       img: "img/subcategories/content-tabs.png"
