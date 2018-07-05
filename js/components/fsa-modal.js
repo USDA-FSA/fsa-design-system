@@ -117,3 +117,5 @@ function modal__trapTab(e){
     modal__close();
   }
 }
+
+console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');

@@ -356,6 +356,8 @@ function modal__trapTab(e){
   }
 }
 
+console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');
+
 },{"../utilities/helper":10,"./fsa-whiteout":8}],5:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -445,6 +447,8 @@ function selectMulti__setState(){
 
 
 selectMulti__setState();
+
+console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
 },{"../utilities/helper":10}],6:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -597,6 +601,8 @@ Helper.forEach(whiteout__dismiss, function (index, value) {
     _whiteout.setAttribute('aria-expanded', 'true');
   }, false);
 });
+
+console.log('WhiteoutComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
 },{"../utilities/helper":10}],9:[function(require,module,exports){
 'use strict';
