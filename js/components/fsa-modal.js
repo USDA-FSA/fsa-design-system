@@ -9,49 +9,17 @@
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
+var Helper = require('../utilities/helper');
+var WhiteoutComponent = require('./fsa-whiteout');
+
 var modal__firstTabStop;
 var modal__lastTabStop;
 
 var modal__triggers = document.querySelectorAll('[data-behavior~="open-modal"]');
 var modal__closeButtons = document.querySelectorAll('[data-behavior~="close-modal"]');
 
-
-// Utility method to loop thru NodeList correctly
-var forEach = function (array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
-
-// Utilitity method
-var getClosest = function(elem, selector){
-
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-        Element.prototype.matches =
-            Element.prototype.matchesSelector ||
-            Element.prototype.mozMatchesSelector ||
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.oMatchesSelector ||
-            Element.prototype.webkitMatchesSelector ||
-            function(s) {
-                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                    i = matches.length;
-                while (--i >= 0 && matches.item(i) !== this) {}
-                return i > -1;
-            };
-    }
-
-    // Get the closest matching element
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-
-};
-
 // iterate thru trigger elements and set click handler
-forEach(modal__triggers, function(index, value) {
+Helper.forEach(modal__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // set private variables
@@ -67,11 +35,11 @@ forEach(modal__triggers, function(index, value) {
 
 
 // iterate thru trigger elements and set click handler
-forEach(modal__closeButtons, function (index, value) {
+Helper.forEach(modal__closeButtons, function (index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // pass associated modal to method
-    var _m = getClosest(e.currentTarget, '.fsa-modal');
+    var _m = Helper.getClosest(e.currentTarget, '.fsa-modal');
     modal__close( _m );
   }, false);
 });
@@ -149,3 +117,5 @@ function modal__trapTab(e){
     modal__close();
   }
 }
+
+console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');

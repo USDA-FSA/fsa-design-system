@@ -88,6 +88,10 @@
       subhref: "components/button-group"
       img: "img/subcategories/button-group.png"
 
+    - subtitle: "Pagination"
+      subhref: "components/pagination"
+      img: "img/subcategories/pagination.png"
+
     - subtitle: "Content Tabs"
       subhref: "components/content-tabs"
       img: "img/subcategories/content-tabs.png"
@@ -96,9 +100,17 @@
       subhref: "components/form-fields"
       img: "img/subcategories/form-fields.png"
 
+    - subtitle: "Spinbox"
+      subhref: "components/spinbox"
+      img: "img/subcategories/spinbox.png"
+
     - subtitle: "Stepped Control"
       subhref: "components/stepped-control"
       img: "img/subcategories/stepped-control.png"
+
+    - subtitle: "Stepped Tabs"
+      subhref: "components/stepped-tabs"
+      img: "img/subcategories/stepped-tabs.png"
 
     - subtitle: "Text Input"
       subhref: "components/text-input"
