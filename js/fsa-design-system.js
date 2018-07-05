@@ -24,7 +24,7 @@ function rgba2hex( color_value ) {
 	return '#' + parts.join('').toUpperCase(); // #F7F7F7
 }
 
-var $swatchItem = $('.docs__attr-list__swatch, .docs__swatch-list__item');
+var $swatchItem = $('.docs__attr-list__swatch:not(.size-swatch), .docs__swatch-list__item');
 
 if ($swatchItem.length) { // only run if at least one instance
   $swatchItem.each(function(index) {
@@ -52,12 +52,14 @@ if ($swatchItem.length) { // only run if at least one instance
   });
 }
 
-
-
 console.log('ColorDocs loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":9}],2:[function(require,module,exports){
-var $ = require('jquery');
+},{"jquery":11}],2:[function(require,module,exports){
+(function (global){
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
 var OnePageNav = require('../vendor/jquery.OnePageNav.js').OnePageNav;
 
 function JumpBuild() {
@@ -102,7 +104,8 @@ jQuery(document).ready(function($){
 
 //module.exports = Jump;
 
-},{"../vendor/jquery.OnePageNav.js":8,"jquery":9}],3:[function(require,module,exports){
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"../vendor/jquery.OnePageNav.js":10,"jquery":11}],3:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -113,6 +116,8 @@ jQuery(document).ready(function($){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var Helper = require('../utilities/helper');
 
 var growl__firstTabStop;
 var growl__lastTabStop;
@@ -121,41 +126,8 @@ var growl__triggers = document.querySelectorAll('[data-behavior~="growl-show"]')
 var growl__closeButtons = document.querySelectorAll('[data-behavior~="growl-dismiss"]');
 var growl__closeButtonsDelay = document.querySelectorAll('[data-behavior~="growl-dismiss-delay"]');
 
-// Utility method to loop thru NodeList correctly
-var forEach = function(array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
-
-// Utilitity method
-var getClosest = function(elem, selector){
-
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-        Element.prototype.matches =
-            Element.prototype.matchesSelector ||
-            Element.prototype.mozMatchesSelector ||
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.oMatchesSelector ||
-            Element.prototype.webkitMatchesSelector ||
-            function(s) {
-                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                    i = matches.length;
-                while (--i >= 0 && matches.item(i) !== this) {}
-                return i > -1;
-            };
-    }
-
-    // Get the closest matching element
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-
-};
 // iterate thru trigger elements and set click handler
-forEach(growl__triggers, function(index, value) {
+Helper.forEach(growl__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // set private variables
@@ -172,11 +144,11 @@ forEach(growl__triggers, function(index, value) {
 });
 
 // iterate thru close buttons and set click handler
-forEach(growl__closeButtons, function(index, value) {
+Helper.forEach(growl__closeButtons, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // pass associated growl to method
-    var _g = getClosest(e.currentTarget, '.fsa-growl');
+    var _g = Helper.getClosest(e.currentTarget, '.fsa-growl');
     growl__dismiss( _g );
   }, false);
 });
@@ -186,7 +158,7 @@ function growl__show(g){
   _growl.setAttribute('aria-hidden', 'false');
 
   // for Center Modal style only
-  if( growl__hasClass(_growl, 'fsa-growl--centered') ){
+  if( Helper.hasClass(_growl, 'fsa-growl--centered') ){
     // trap tabs inside of modal
     _growl.addEventListener('keydown', growl__trapTab);
     // Find all focusable children
@@ -201,7 +173,7 @@ function growl__show(g){
     growl__firstTabStop.focus();
     _growl.focus();
   }else{
-    _growl.addEventListener( growl__getAnimationString(_growl), growl__showDelay);
+    _growl.addEventListener( Helper.getAnimationString(_growl), growl__showDelay);
   }
 }
 
@@ -209,14 +181,14 @@ function growl__showDelay(e){
   var _growl = e.target;
 
   // clean up
-  _growl.removeEventListener(growl__getAnimationString(_growl), growl__showDelay);
+  _growl.removeEventListener( Helper.getAnimationString(_growl), growl__showDelay);
 }
 
 function growl__dismiss(g){
   var _growl = g;
   _growl.className = _growl.className + ' fsa-growl--dismissing';
-  _growl.addEventListener( growl__getAnimationString(_growl), growl__dismissDelay);
-  if( growl__hasClass(_growl, 'fsa-growl--centered') ){
+  _growl.addEventListener( Helper.getAnimationString(_growl), growl__dismissDelay);
+  if( Helper.hasClass(_growl, 'fsa-growl--centered') ){
     _growl.focus();
   }
 }
@@ -233,7 +205,7 @@ function growl__dismissDelay(e){
   // set focus back to the originating element
   _origin.focus();
   // clean up
-  _growl.removeEventListener(growl__getAnimationString(_growl), growl__dismissDelay);
+  _growl.removeEventListener( Helper.getAnimationString(_growl), growl__dismissDelay);
 }
 
 //utility method to trap keys
@@ -260,28 +232,9 @@ function growl__trapTab(e){
   }
 }
 
-function growl__hasClass(el, classname) {
-  return (' ' + el.className + ' ').indexOf(' ' + classname + ' ') > -1;
-}
-
-function growl__getAnimationString(el){
-  var str = "";
-  var t;
-  var animations = {
-    'animation':'animationend',
-    'OAnimation':'oAnimationEnd',
-    'MozAnimation':'animationend',
-    'WebkitAnimation':'webkitAnimationEnd'
-  };
-  for (t in animations) {
-    if ( typeof el.style[t] !== 'undefined' ) str = animations[t];
-  }
-  return str;
-}
-
 console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{}],4:[function(require,module,exports){
+},{"../utilities/helper":9}],4:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -292,6 +245,8 @@ console.log('GrowlComponent loaded, its JS is NOT to be used for Production, dem
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var Helper = require('../utilities/helper');
 
 var modal__firstTabStop;
 var modal__lastTabStop;
@@ -299,43 +254,8 @@ var modal__lastTabStop;
 var modal__triggers = document.querySelectorAll('[data-behavior~="open-modal"]');
 var modal__closeButtons = document.querySelectorAll('[data-behavior~="close-modal"]');
 
-
-// Utility method to loop thru NodeList correctly
-var forEach = function (array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
-
-// Utilitity method
-var getClosest = function(elem, selector){
-
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-        Element.prototype.matches =
-            Element.prototype.matchesSelector ||
-            Element.prototype.mozMatchesSelector ||
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.oMatchesSelector ||
-            Element.prototype.webkitMatchesSelector ||
-            function(s) {
-                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                    i = matches.length;
-                while (--i >= 0 && matches.item(i) !== this) {}
-                return i > -1;
-            };
-    }
-
-    // Get the closest matching element
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-
-};
-
 // iterate thru trigger elements and set click handler
-forEach(modal__triggers, function(index, value) {
+Helper.forEach(modal__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // set private variables
@@ -351,11 +271,11 @@ forEach(modal__triggers, function(index, value) {
 
 
 // iterate thru trigger elements and set click handler
-forEach(modal__closeButtons, function (index, value) {
+Helper.forEach(modal__closeButtons, function (index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // pass associated modal to method
-    var _m = getClosest(e.currentTarget, '.fsa-modal');
+    var _m = Helper.getClosest(e.currentTarget, '.fsa-modal');
     modal__close( _m );
   }, false);
 });
@@ -436,7 +356,7 @@ function modal__trapTab(e){
 
 console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{}],5:[function(require,module,exports){
+},{"../utilities/helper":9}],5:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -447,51 +367,19 @@ console.log('ModalComponent loaded, its JS is NOT to be used for Production, dem
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var Helper = require('../utilities/helper');
 
 var selectMulti__triggers = document.querySelectorAll('[data-behavior~="select-multi"]');
 
-// Utility method to loop thru NodeList correctly
-var forEach = function (array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
-
-// Utilitity method
-var getClosest = function(elem, selector){
-
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-        Element.prototype.matches =
-            Element.prototype.matchesSelector ||
-            Element.prototype.mozMatchesSelector ||
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.oMatchesSelector ||
-            Element.prototype.webkitMatchesSelector ||
-            function(s) {
-                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                    i = matches.length;
-                while (--i >= 0 && matches.item(i) !== this) {}
-                return i > -1;
-            };
-    }
-
-    // Get the closest matching element
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-
-};
-
 // iterate thru trigger elements and set click handler
-forEach(selectMulti__triggers, function(index, value) {
+Helper.forEach(selectMulti__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
 
     var _check = e.target;
     //var _parent = el.closest('.fsa-select-multi');
-    var _parent = getClosest(_el, '.fsa-select-multi');
+    var _parent = Helper.getClosest(_el, '.fsa-select-multi');
     var _selectAll = _parent.querySelector('[data-behavior~="select-multi-all"]');
 
     if(_el != _selectAll){
@@ -522,7 +410,7 @@ forEach(selectMulti__triggers, function(index, value) {
 
     } else {
       var _cbs = _parent.querySelectorAll('[data-behavior~="select-multi"]');
-      forEach(_cbs, function (index, value) {
+      Helper.forEach(_cbs, function (index, value) {
         value.checked = _selectAll.checked;
       });
       _selectAll.indeterminate = false;
@@ -534,11 +422,11 @@ forEach(selectMulti__triggers, function(index, value) {
 function selectMulti__setState(){
 
   var _selectAll = document.querySelectorAll('[data-behavior~="select-multi-all"]');
-  forEach(_selectAll, function (index, value) {
+  Helper.forEach(_selectAll, function (index, value) {
 
     //console.log(typeof value);
     //var _parent = value.closest('.fsa-select-multi');
-    var _parent = getClosest(value, '.fsa-select-multi');
+    var _parent = Helper.getClosest(value, '.fsa-select-multi');
     var _selectAll = value;
 
     var _len = _parent.querySelectorAll('[data-behavior~="select-multi"]').length;
@@ -560,7 +448,7 @@ selectMulti__setState();
 
 console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{}],6:[function(require,module,exports){
+},{"../utilities/helper":9}],6:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -572,82 +460,229 @@ console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Produc
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
-var $ = window.jQuery = require('jquery');
+var Helper = require('../utilities/helper');
 
-;$(function() {
+// What gets clicked?
+var spinbox__triggers = document.querySelectorAll('[data-behavior~="spinbox-spin"]');
 
-    var $steppedControl = $('.fsa-stepped-control--sticky'); // only the --sticky ones
 
-    function steppedControl() {
+// Iterate thru trigger elements and set click handler
+Helper.forEach(spinbox__triggers, function (index, value) {
 
-      $steppedControl.each(function(index) {
+  var _el = value;
 
-        var $self = $(this)
-        var pageTop = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        var steppendControlPosTop = $self.offset().top - pageTop;
-        var steppendControlHeight = $self.outerHeight();
-        var steppendControlPosBot = windowHeight - (steppendControlPosTop + steppendControlHeight);
+  _el.addEventListener('click', function(e){
 
-        // console.log('pageTop: ' + pageTop);
-        // console.log('windowHeight: ' + windowHeight);
-        // console.log('steppendControlPosTop: ' + steppendControlPosTop);
-        // console.log('steppendControlHeight: ' + steppendControlHeight);
-        // console.log('steppendControlPosBot: ' + steppendControlPosBot);
+    var _component = Helper.getClosest(e.currentTarget, '.fsa-spinbox');
+    var _target = _component.querySelector('.fsa-spinbox__input'); // Which form element in this component will be updated with new value?
+    var _targetStepAmount = _target.getAttribute('step'); // By how much will we increment/decrement?
 
-        if (steppendControlPosBot > 12) {
-          $self.addClass("fsa-stepped-control--unstuck");
-        }
-        else {
-          $self.removeClass("fsa-stepped-control--unstuck");
-        }
-
-      });
-
+    if (_targetStepAmount == null) {
+      // If step attribute doesn't exist, the default value is "1"
+      _targetStepAmount = 1;
     }
 
-    if ($steppedControl.length) { // only run if at least one instance
-
-      $(window).scroll(function() {
-        steppedControl()
-      });
-
-      $('.fsa-modal').scroll(function() {
-        steppedControl()
-      });
-
-      $(document).ready(function() {
-        steppedControl();
-      })
-
-      $(window).resize(function() {
-        // may want to **debounce** this, e.g. http://benalman.com/projects/jquery-throttle-debounce-plugin/
-        steppedControl();
-      })
-
+    // For Demo purposes, we're only demo'ing in browsers that *natively* support stepUp() and stepDown()
+    if (Helper.isIE10Down || Helper.isIE11) { // lazily targeting IE 11 and below. For all I know it works above IE 11
+      // Just alert() some basic helpfup info
+      alert('Step up/down by ' + _targetStepAmount);
     }
+    else {
+      if (Helper.hasClass(_el, 'fsa-spinbox__btn--decrement')){
+        // If you click the "Down" button SUBTRACT the step value from the current value
+        _target.stepDown();
+        console.log('Spinbox decremented');
+      }
+      else {
+        // If you click the "Up" button ADD the step value from the current value
+        _target.stepUp();
+        console.log('Spinbox incremented');
+      }
+    }
+
+  }, false);
 
 });
 
+console.log('Spinbox loaded, its JS is NOT to be used for Production, demo purposes only');
+
+},{"../utilities/helper":9}],7:[function(require,module,exports){
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var Helper = require('../utilities/helper');
+
+var steppedControl__elements = document.querySelectorAll('.fsa-stepped-control--sticky');
+
+function steppedControl__setStyle() {
+
+  // iterate thru each stepped control on page
+  Helper.forEach(steppedControl__elements, function(index, value) {
+    var _el = value;
+
+    var _viewportOffset = _el.getBoundingClientRect();
+    var _scHeight = _el.offsetHeight;
+    var _scBottomPosition = window.innerHeight - (_viewportOffset.top + _scHeight);
+
+    if (_scBottomPosition > 12) {
+
+      if(!_el.classList.contains('fsa-stepped-control--unstuck')){
+        _el.classList.add('fsa-stepped-control--unstuck');
+      }
+    } else {
+
+      if(_el.classList.contains('fsa-stepped-control--unstuck')){
+        _el.classList.remove('fsa-stepped-control--unstuck');
+      }
+    }
+  });
+}
+
+// check if SC component exists on page
+if(steppedControl__elements.length){
+
+  window.addEventListener('scroll', function() {
+    steppedControl__setStyle();
+  });
+
+  var steppedControl__modals = document.querySelectorAll('.fsa-modal');
+  Helper.forEach(steppedControl__modals, function(index, value) {
+    var _el = value;
+    _el.addEventListener("scroll", function(){
+      steppedControl__setStyle();
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function(){
+    steppedControl__setStyle();
+  });
+
+  window.addEventListener('resize', function() {
+    steppedControl__setStyle();
+  });
+
+}
+
 console.log('SteppedControl loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":9}],7:[function(require,module,exports){
-(function (global){
+},{"../utilities/helper":9}],8:[function(require,module,exports){
 'use strict';
-
-global.jQuery = require('jquery');
-var $ = global.jQuery;
-window.$ = $;
 
 var Jump = require('./components/ds.jump');
 var Growl = require('./components/fsa-growl');
 var Modal = require('./components/fsa-modal');
 var SelectMulti = require('./components/fsa-select-multi');
 var SteppedControl = require('./components/fsa-stepped-control');
+var Spinbox = require('./components/fsa-spinbox');
 var ColorDocs = require('./components/docs-color');
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./components/docs-color":1,"./components/ds.jump":2,"./components/fsa-growl":3,"./components/fsa-modal":4,"./components/fsa-select-multi":5,"./components/fsa-stepped-control":6,"jquery":9}],8:[function(require,module,exports){
+},{"./components/docs-color":1,"./components/ds.jump":2,"./components/fsa-growl":3,"./components/fsa-modal":4,"./components/fsa-select-multi":5,"./components/fsa-spinbox":6,"./components/fsa-stepped-control":7}],9:[function(require,module,exports){
+
+var Helper = (function () {
+
+  var defaults = {};
+
+  //PRIVATE METHODS
+
+  // Utility method to loop thru NodeList correctly
+  var _forEach = function(array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+      callback.call(scope, i, array[i]); // passes back stuff we need
+    }
+  };
+
+  // Utilitity method
+  var _getClosest = function(elem, selector){
+
+    // Element.matches() polyfill
+    if (!Element.prototype.matches) {
+      Element.prototype.matches =
+      Element.prototype.matchesSelector ||
+      Element.prototype.mozMatchesSelector ||
+      Element.prototype.msMatchesSelector ||
+      Element.prototype.oMatchesSelector ||
+      Element.prototype.webkitMatchesSelector ||
+      function(s) {
+        var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+        i = matches.length;
+        while (--i >= 0 && matches.item(i) !== this) {}
+          return i > -1;
+      };
+    }
+
+    // Get the closest matching element
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+      if ( elem.matches( selector ) ) return elem;
+    }
+
+    return null;
+  };
+
+  var _getAnimationString = function(el){
+    var str = "";
+    var t;
+    var animations = {
+      'animation':'animationend',
+      'OAnimation':'oAnimationEnd',
+      'MozAnimation':'animationend',
+      'WebkitAnimation':'webkitAnimationEnd'
+    };
+    for (t in animations) {
+      if ( typeof el.style[t] !== 'undefined' ) str = animations[t];
+    }
+    return str;
+  }
+
+  var _hasClass = function(elem, classname) {
+    return (' ' + elem.className + ' ').indexOf(' ' + classname + ' ') > -1;
+  };
+
+
+  // PUBLIC METHODS
+  var forEach = function( array, callback, scope ){
+    return _forEach( array, callback, scope );
+  }
+
+  var getClosest = function(elem, selector){
+    return _getClosest( elem, selector );
+  }
+
+  var getAnimationString = function(elem){
+    return _getAnimationString(elem);
+  }
+
+  var hasClass = function(elem, classname){
+    return _hasClass(elem, classname);
+  }
+
+  var isIE10Down = (function() {
+    if (new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null) {
+      return parseFloat( RegExp.$1 );
+    }
+    else {
+      return false;
+    }
+  })();
+
+  var isIE11 = '-ms-scroll-limit' in document.documentElement.style && '-ms-ime-align' in document.documentElement.style;
+
+  //Object Literal Return
+  return {
+    forEach: forEach, //( array, callback, scope )
+    getClosest: getClosest, //( elem, selector )
+    getAnimationString: getAnimationString, //( elem ),
+    hasClass: hasClass, //( elem, classname )
+    isIE10Down: isIE10Down,
+    isIE11: isIE11
+  };
+
+})();
+
+module.exports = Helper;
+
+},{}],10:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -872,7 +907,7 @@ var ColorDocs = require('./components/docs-color');
 
 })( jQuery, window , document );
 
-},{}],9:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11238,4 +11273,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[7]);
+},{}]},{},[8]);

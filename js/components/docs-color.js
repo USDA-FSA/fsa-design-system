@@ -23,7 +23,7 @@ function rgba2hex( color_value ) {
 	return '#' + parts.join('').toUpperCase(); // #F7F7F7
 }
 
-var $swatchItem = $('.docs__attr-list__swatch, .docs__swatch-list__item');
+var $swatchItem = $('.docs__attr-list__swatch:not(.size-swatch), .docs__swatch-list__item');
 
 if ($swatchItem.length) { // only run if at least one instance
   $swatchItem.each(function(index) {
@@ -50,7 +50,5 @@ if ($swatchItem.length) { // only run if at least one instance
 
   });
 }
-
-
 
 console.log('ColorDocs loaded, its JS is NOT to be used for Production, demo purposes only');

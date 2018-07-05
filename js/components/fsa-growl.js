@@ -9,6 +9,8 @@
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
+var Helper = require('../utilities/helper');
+
 var growl__firstTabStop;
 var growl__lastTabStop;
 
@@ -16,41 +18,8 @@ var growl__triggers = document.querySelectorAll('[data-behavior~="growl-show"]')
 var growl__closeButtons = document.querySelectorAll('[data-behavior~="growl-dismiss"]');
 var growl__closeButtonsDelay = document.querySelectorAll('[data-behavior~="growl-dismiss-delay"]');
 
-// Utility method to loop thru NodeList correctly
-var forEach = function(array, callback, scope) {
-  for (var i = 0; i < array.length; i++) {
-    callback.call(scope, i, array[i]); // passes back stuff we need
-  }
-};
-
-// Utilitity method
-var getClosest = function(elem, selector){
-
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-        Element.prototype.matches =
-            Element.prototype.matchesSelector ||
-            Element.prototype.mozMatchesSelector ||
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.oMatchesSelector ||
-            Element.prototype.webkitMatchesSelector ||
-            function(s) {
-                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                    i = matches.length;
-                while (--i >= 0 && matches.item(i) !== this) {}
-                return i > -1;
-            };
-    }
-
-    // Get the closest matching element
-    for ( ; elem && elem !== document; elem = elem.parentNode ) {
-        if ( elem.matches( selector ) ) return elem;
-    }
-    return null;
-
-};
 // iterate thru trigger elements and set click handler
-forEach(growl__triggers, function(index, value) {
+Helper.forEach(growl__triggers, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // set private variables
@@ -67,11 +36,11 @@ forEach(growl__triggers, function(index, value) {
 });
 
 // iterate thru close buttons and set click handler
-forEach(growl__closeButtons, function(index, value) {
+Helper.forEach(growl__closeButtons, function(index, value) {
   var _el = value;
   _el.addEventListener('click', function(e){
     // pass associated growl to method
-    var _g = getClosest(e.currentTarget, '.fsa-growl');
+    var _g = Helper.getClosest(e.currentTarget, '.fsa-growl');
     growl__dismiss( _g );
   }, false);
 });
@@ -81,7 +50,7 @@ function growl__show(g){
   _growl.setAttribute('aria-hidden', 'false');
 
   // for Center Modal style only
-  if( growl__hasClass(_growl, 'fsa-growl--centered') ){
+  if( Helper.hasClass(_growl, 'fsa-growl--centered') ){
     // trap tabs inside of modal
     _growl.addEventListener('keydown', growl__trapTab);
     // Find all focusable children
@@ -96,7 +65,7 @@ function growl__show(g){
     growl__firstTabStop.focus();
     _growl.focus();
   }else{
-    _growl.addEventListener( growl__getAnimationString(_growl), growl__showDelay);
+    _growl.addEventListener( Helper.getAnimationString(_growl), growl__showDelay);
   }
 }
 
@@ -104,14 +73,14 @@ function growl__showDelay(e){
   var _growl = e.target;
 
   // clean up
-  _growl.removeEventListener(growl__getAnimationString(_growl), growl__showDelay);
+  _growl.removeEventListener( Helper.getAnimationString(_growl), growl__showDelay);
 }
 
 function growl__dismiss(g){
   var _growl = g;
   _growl.className = _growl.className + ' fsa-growl--dismissing';
-  _growl.addEventListener( growl__getAnimationString(_growl), growl__dismissDelay);
-  if( growl__hasClass(_growl, 'fsa-growl--centered') ){
+  _growl.addEventListener( Helper.getAnimationString(_growl), growl__dismissDelay);
+  if( Helper.hasClass(_growl, 'fsa-growl--centered') ){
     _growl.focus();
   }
 }
@@ -128,7 +97,7 @@ function growl__dismissDelay(e){
   // set focus back to the originating element
   _origin.focus();
   // clean up
-  _growl.removeEventListener(growl__getAnimationString(_growl), growl__dismissDelay);
+  _growl.removeEventListener( Helper.getAnimationString(_growl), growl__dismissDelay);
 }
 
 //utility method to trap keys
@@ -153,25 +122,6 @@ function growl__trapTab(e){
   if (e.keyCode === 27) {
     growl__dismiss();
   }
-}
-
-function growl__hasClass(el, classname) {
-  return (' ' + el.className + ' ').indexOf(' ' + classname + ' ') > -1;
-}
-
-function growl__getAnimationString(el){
-  var str = "";
-  var t;
-  var animations = {
-    'animation':'animationend',
-    'OAnimation':'oAnimationEnd',
-    'MozAnimation':'animationend',
-    'WebkitAnimation':'webkitAnimationEnd'
-  };
-  for (t in animations) {
-    if ( typeof el.style[t] !== 'undefined' ) str = animations[t];
-  }
-  return str;
 }
 
 console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
