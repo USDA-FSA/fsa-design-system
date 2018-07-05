@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Tabs"
-intro: ""
+intro: "(Introduction. Work in Progress)"
 jump_menu: true
 ---
 
@@ -436,12 +436,18 @@ jump_menu: true
   </nav>
 </div>
 
-### Default
-
 ## Usage
+
+(Work in progress.)
 
 ### Use When
 
+(Work in progress.)
+
 ### Don't Use
 
+(Work in progress.)
+
 ## General Guidance
+
+(Work in progress.)

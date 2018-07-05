@@ -51,4 +51,4 @@ if ($swatchItem.length) { // only run if at least one instance
   });
 }
 
-console.log('ColorDocs loaded, its JS is NOT to be used for Production, demo purposes only');
+console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');

@@ -10,6 +10,7 @@
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
 var Helper = require('../utilities/helper');
+var WhiteoutComponent = require('./fsa-whiteout');
 
 var modal__firstTabStop;
 var modal__lastTabStop;
