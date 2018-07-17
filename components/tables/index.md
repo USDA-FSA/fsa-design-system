@@ -439,18 +439,24 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@m">
     <h3>Default</h3>
-    <p><img src="{{ site.baseurl }}img/tables-responsive--default.png" alt="Image of table rendering on small devices"></p>
+    <figure>
+      <img src="{{ site.baseurl }}img/tables-responsive--default.png" alt="Image of table rendering on small devices">
+      <figcaption><code>fsa-table--responsive</code></figcaption>
+    </figure>
   </div>
   <div class="fsa-grid__1 fsa-grid__1/2@m">
     <h3>Horizontal</h3>
-    <p><img src="{{ site.baseurl }}img/tables-responsive--horizontal.png" alt="Image of table rendering on small devices"></p>
+    <figure>
+      <img src="{{ site.baseurl }}img/tables-responsive--horizontal.png" alt="Image of table rendering on small devices">
+      <figcaption><code>fsa-table--responsive fsa-table--responsive-horizontal</code></figcaption>
+    </figure>
   </div>
 </div>
 
 ### Structure
 
 * Responsive table styles are identical at the smaller breakpoints regardless of initial variation used.
-* The key to Responsive Tables is the use of the `aria-label` attribute on each data data cell, e.g. `<td aria-label="Commodity">...</td>`.
+* The key to Responsive Tables is the use of the `aria-label` attribute on each data data cell, e.g. `<td aria-label="Commodity">...</td>` to replicate each column header (`th`).
 
 ### Default
 
