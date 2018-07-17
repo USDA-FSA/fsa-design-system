@@ -97,3 +97,8 @@ code {
   background-image: url('#{$image-path}/chevron-up.svg');
   opacity: .4;
 }
+
+span.fsa-stepped-tabs__label,
+div.fsa-stepped-tabs__label {
+  cursor: initial;
+}
