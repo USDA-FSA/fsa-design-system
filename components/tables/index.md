@@ -223,8 +223,8 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 ### Borderless
 
 <div class="ds-preview">
-  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <table class="fsa-table fsa-table--borderless">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
     <thead>
       <tr>
         <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
@@ -531,8 +531,8 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ### Horizontal
 <div class="ds-preview">
-  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
     <thead>
       <tr>
         <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Document title</button></th>
