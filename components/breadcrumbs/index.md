@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Breadcrumbs"
-intro: "Breadcrumbs are a navigation element used to help orient a User within an application."
+intro: "Breadcrumbs are a navigation element used to help orient a User within an application, and enable quick access to a parent level."
 jump_menu: true
 ---
 
@@ -26,12 +26,6 @@ jump_menu: true
     </nav>
   </div>
 </div>
-
-
-## Variations
-
-Breadcrumbs are styled with `class="fsa-breadcrumb"`, and should be used with an Ordered or Unordered List tag.
-
 ```html
 <div class="fsa-breadcrumb">
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
@@ -57,15 +51,26 @@ Breadcrumbs are styled with `class="fsa-breadcrumb"`, and should be used with an
 
 ### Use When
 
+* Displaying hierarchy.
 * The application structure is several levels deep.
-* You want to allow the User to navigation quickly to various levels within the application architecture without using the browser back button.
+* You want to allow the User to navigate quickly to various levels within the application architecture without using the browser back button.
 * You want to help orient the User and provide contextual awareness within a process or application structure.
 
 ### Don't Use
 
-* As a global navigation feature or within the page content as a hyperlink feature.
+* In place of [Global Navigation]({{ site.baseurl }}components/top-nav/).
+* To display History.
+* To reflect a multi-step process. Use [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/).
+* Within the page content as a hyperlink feature.
 * If the application is only one level deep or if the global navigation's first level can be used.
 
 ## General Guidance
 
+* Breadcrumbs are marked up an an Ordered List (`<ol>`) as its order matters.
+* The last crumb of the component is **not** intended to reflect the current view; rather, it is the current view's **immediate** parent.
 * Breadcrumbs should be located just below the global navigation system and above the main content of the application.
+* Keep each crumb's title brief but descriptive.
+
+## Accessibility
+
+* Note the use of the `<nav>` element and `aria` attributes to describe the type of navigation.
