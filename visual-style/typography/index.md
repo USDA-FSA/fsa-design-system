@@ -394,8 +394,8 @@ With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size([size
 
 ## Related Resources
 
- * [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)
-
-<!-- ## Related Resources
-
-(Content TBD) -->
+* [Utilities > Text Size]({{ site.baseurl }}visual-style/utilities/#text-size)
+* [Utilities > Font]({{ site.baseurl }}visual-style/utilities/#font-face)
+* [Utilities > Text Alignment]({{ site.baseurl }}visual-style/utilities/#text-alignment)
+* [Utilities > Text Headers]({{ site.baseurl }}visual-style/utilities/#text-headers)
+* [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)
