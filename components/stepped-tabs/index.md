@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Tabs"
-intro: "(Introduction. Work in Progress)"
+intro: "The Stepped Tabs Component is designed to provide guidance, context, and nagivation to the User while in a stepped process."
 jump_menu: true
 ---
 
@@ -438,16 +438,21 @@ jump_menu: true
 
 ## Usage
 
-(Work in progress.)
-
 ### Use When
 
-(Work in progress.)
+* A process flow requires more than 2 steps and/or screens
+* A process flow can allow the User to skip multiple steps backwards to previous steps and/or screens
+* Providing the User with a clear indication of the status within the process is needed 
 
 ### Don't Use
 
-(Work in progress.)
+* As a system of naviation unrelated to a stepped process flow
+* If the process flow will only have 2 screens and/or steps
+* The Stepped Tabs Component and allow the User to skip forward using the Stepped Tabs themselves
+* If the process flow will not go thru all of the steps provided in the tabs to complete the process
 
 ## General Guidance
 
-(Work in progress.)
+* Ensure that all of the appropriate states of the tab are used in accordance with the instructions above
+* If the User will not be able to proceed forward or go backwards within a process, utilize the `Actionable: none` variation
+* Icons before the text within a tab can enhance the understanding about where the User is within a process flow
