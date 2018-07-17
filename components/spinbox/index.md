@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Spinbox"
-intro: "Introducing Spinbox  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+intro: "A Spinbox Component provides enhanced controls for a numeric input, designed to expedite data entry."
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---
@@ -121,7 +121,9 @@ title_label: 'Requires JavaScript'
 </div>
 ```
 
-### step="5"
+### Step Value (`step="5"`)
+
+The Spinbox Component allows for incrementing of data by utilizing the `step=""` attribute of the `input` element.
 
 <div class="ds-preview">
   <div class="fsa-spinbox">
@@ -146,7 +148,9 @@ title_label: 'Requires JavaScript'
 </div>
 ```
 
-### step="100" min="-400" max="500"
+### Step Value with Minimum and Maximum
+
+This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 
 <div class="ds-preview">
   <div class="fsa-spinbox">
@@ -171,7 +175,7 @@ title_label: 'Requires JavaScript'
 </div>
 ```
 
-### step=".01"
+### Decimal Step Value (`step=".01"`)
 
 <div class="ds-preview">
   <div class="fsa-spinbox">
@@ -196,7 +200,7 @@ title_label: 'Requires JavaScript'
 </div>
 ```
 
-### step="5000"
+### Larger Step Values (`step="5000"`)
 
 <div class="ds-preview">
   <div class="fsa-spinbox">
@@ -286,26 +290,32 @@ title_label: 'Requires JavaScript'
 
 ## Usage
 
-(Work in progress.)
-
 ### Use When
 
-(Work in progress.)
+* A form requires a numeric value to be input by the User
+* The User would benefit from incrementing a numeric value by a predefined amount
+* The User would benefit from incrementing a numeric value that uses decimal places
 
 ### Don't Use
 
-(Work in progress.)
+* With non-numeric inputs
+* For input elements designed to select a day, month, or year
 
 ## Accessibility
 
-(Work in progress.)
+Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
+
+* The ability to utilize larger incremental values allows for speed of entry for Users with dexterity restrictions.
 
 ## General Guidance
 
-(Work in progress.)
+* The Spinbox Component has the unique ability to allow for both fine tuning of numeric inputs and also allowing for larger increments.
+* The Spinbox is ideal for use of an input field that has prepopulated numeric data that needs to be adjusted by the User.
 
 ## JavaScript Guidance
 
 {% include scripts.about.html %}
 
-(Work in progress.)
+### Summary
+
+The JavaScript for the Spinbox is primarily used to increase or decrease a value within the input field by calling the native `stepUp()` or `stepDown()` method on the element and passing the step value. For browsers that do not support these native methods, debug messages are implemented and will be written to the console for testing purposes.
