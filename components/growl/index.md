@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Growl Notification"
-intro: "A Growl Notification provides application messaging, similar to an Alert, that requires the User to take action to dismiss."
+intro: "Growl Notification provides application messaging, providing information about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---
@@ -79,7 +79,6 @@ title_label: 'Requires JavaScript'
     </div>
   </div>
 </div>
-
 
 ## Variations
 
@@ -184,7 +183,7 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
   <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Open Success Growl</button>
 </div>
 
-### Error with Modal
+### Modal display
 
 ```html
 <!-- PLACE JUST BELOW BODY TAG -->
@@ -216,13 +215,14 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ### Use When
 
-* The application needs to provide real-time messaging to the User.
+* The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background processes.
 * The application requires a message to appear and have the User take action to dismiss.
+* The application displays non-critical information that won't disrupt a workflow.
 
 ### Don't Use
 
-* To show error messages that should be paired with specific form fields.
-
+* When displaying error messages paired with specific form fields, use [Form Field States]({{ site.baseurl }}components/form-fields/)
+* When displaying messages related to specific components on the current view, consider an [Inline Alert]({{ site.baseurl }}components/alerts/)
 
 ## General Guidance
 

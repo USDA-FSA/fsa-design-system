@@ -2,10 +2,12 @@
 layout: page
 parent: "Components"
 title: "Modal"
-intro: "A Modal is used to gain focus on a specific feature or function and restrict access to other areas of the application until the User completes the task or dismisses the modal."
+intro: "Use a Modal to gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state."
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---
+
+A Modal will to take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
 
 ## Variations
 
@@ -141,17 +143,23 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Use When
 
 * You need to isolate a feature or action to gain sole focus of that feature or action.
-* You would like to display a way to confirm an action by a User.
 * A system timeout message is required for an applications.
 
 ### Don't Use
 
-* When the content within the Modal requires the screen to scroll.
 * When the content or message requires interaction with other parts of the application or screen.
+* When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
+* Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/)
+* When its content content or features can be part of the page without complicating the page's intent.
 
 ## Accessibility
 
 * [Accessibility Timeouts Guide]({{ site.baseurl }}guides/accessibility/timeouts) for system timeout guidance.
+* Note `aria` and `role` attributes in use by component variations and examples.
+* Managing focus:
+  * Trap focus inside to the Modal using JavaScript when displayed.
+  * Dismissing Modal returns focus to originating element, e.g. the button or link that initially spawned the Modal's display.
+  * Refer to this page's [JavaScript Guidance](#javascript-guidance) for details.
 
 
 ## General Guidance

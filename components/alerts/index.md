@@ -114,11 +114,16 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ### Use When
 
-* The application needs to provide real-time inline messaging to the User.
+* The application needs to provide system-level messaging to the user.
+* The application needs to provide real-time inline messaging to the User, in context of components visible on the current view.
 * The application needs to report a general error not related to a User interaction.
 
 ### Don't Use
-* To show error messages that should be paired with specific form fields. Defer to in-context [Error States in the Form Field component](http://localhost:4000/fsa-design-system/components/form-fields/#error).
+
+* When displaying error messages paired with specific form fields. Use [Form Field States]({{ site.baseurl }}components/form-fields/).
+* The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background processes. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
+* The application requires a message to appear and have the User take action to dismiss. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
+* The application displays non-critical information that won’t disrupt a workflow. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * Too many Alerts at one time as this will confuse the User and push content down the screen.
 
 ## General Guidance
