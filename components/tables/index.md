@@ -610,5 +610,6 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 Always refer to the [Accessibility Tables Guide]({{ site.baseurl }}guides/accessibility/tables) for overall guidance.
 
+* Note use of `aria` attributes for declaring by which column a table is sorted, and in which direction, `descending` or `ascending`.
 * Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
 * Complex tables are tables with more than two levels of headers. Each header should be given a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
