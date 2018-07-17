@@ -1,7 +1,7 @@
 ---
 layout: page
 parent: "Visual Style"
-title: "Grid"
+title: "Grid and Layout"
 intro: "A 12-column, responsive grid provides structure for website content."
 jump_menu: true
 ---
