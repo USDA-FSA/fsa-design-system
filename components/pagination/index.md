@@ -355,16 +355,17 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 * The dataset or search results of an application have a maximum total of 10 or fewer results needing to be displayed.
 * As a navigation system for a stepped process, and instead utilize the [Stepped Control Component]({{ site.baseurl }}components/stepped-control).
 
-## Accessibility
-
-Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
-
-* The Use of buttons as text link styles instead of achor tags allows for a larger hit area for selecting the desired page.
-
 ## General Guidance
 
-* As seen in the variation above, the number of pages within the dataset dictates the variation that should be applied. 
+* As seen in the variation above, the number of pages within the dataset dictates the variation that should be applied.
 * A maximum total of five numbers should be visible at any given time for desktop screens, which the very first number and last number always being shown.
 * When six or more pages are available, an elipsis (`...`) shall be used to indicate the existence of available pages not shown.
 * When the first page is in view, the first page button shall be selected and the `Previous` button shall be disabled.
 * When the last page is in view, the last page button shall be selected and the `Next` button shall be disabled.
+
+## Accessibility
+
+Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
+
+* Note the use of `aria-` attributes, e.g. `aria-label`, `aria-current`, and `aria-hidden`.
+* The Use of buttons as text link styles instead of anchor tags allows for a larger hit area for selecting the desired page.

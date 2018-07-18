@@ -78,3 +78,8 @@ The below example uses different colored bars to represent the various size and 
 The importance of "White Space" is generally understated when it comes to applications and allowing for better usability. The role of White Space can be compaired to the supporting cast whose role to to make the lead actor look good and become the focal point of the show. White Space gives the other elements of the application support by providing a decreased level of cognitive disonance and noise. In short, White Space helps make the application easier to use. While the name implies the color white, the term actually means the space not being used by the primary element or the surrounding space.
 
 One of the best example websites that has always used white space to support the design and objectives of the site is Apple.com. They have developed an appropriate design system that includes various levels of spacing between elements to avoid any noise on the page, which typically makes that website harder to use. The size and spacing classes listed above take into account Best Practices for White Space for areas between various elements within the FSA Design System Components.
+
+## Related Resources
+
+* [Utilities > Margins]({{ site.baseurl }}visual-style/utilities/#margins)
+* [Utilities > Padding]({{ site.baseurl }}visual-style/utilities/#padding)

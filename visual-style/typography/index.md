@@ -371,7 +371,7 @@ With a `fsa-text-size--[size]` selector - where `[size]` is one of `0-7`.
 
 ```html
 <!-- HTML -->
-<element class="fsa-text-size--*">Yosemite National Park is set...</element>
+<element class="fsa-text-size--[size]">Yosemite National Park is set...</element>
 ```
 <div class="ds-preview">
   <div class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
@@ -394,8 +394,8 @@ With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size([size
 
 ## Related Resources
 
- * [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)
-
-<!-- ## Related Resources
-
-(Content TBD) -->
+* [Utilities > Text Size]({{ site.baseurl }}visual-style/utilities/#text-size)
+* [Utilities > Font]({{ site.baseurl }}visual-style/utilities/#font-face)
+* [Utilities > Text Alignment]({{ site.baseurl }}visual-style/utilities/#text-alignment)
+* [Utilities > Text Headers]({{ site.baseurl }}visual-style/utilities/#text-headers)
+* [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)

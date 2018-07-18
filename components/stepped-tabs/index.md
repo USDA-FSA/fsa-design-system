@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Tabs"
-intro: "(Introduction. Work in Progress)"
+intro: "The Stepped Tabs Component is designed to provide guidance, context, and nagivation to the User while in a stepped process workflow."
 jump_menu: true
 ---
 
@@ -41,6 +41,37 @@ jump_menu: true
 
 ### Default
 
+<div class="ds-preview">
+  <nav aria-label="Breadcrumbs">
+    <div class="fsa-stepped-tabs">
+      <div class="fsa-stepped-tabs__bd">
+        <ol class="fsa-stepped-tabs__list">
+          <li class="fsa-stepped-tabs__item">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+              <span class="fsa-stepped-tabs__text">Lor</span>
+            </a>
+          </li>
+          <li class="fsa-stepped-tabs__item">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
+              <span class="fsa-stepped-tabs__text">Em ipsum</span>
+            </a>
+          </li>
+          <li class="fsa-stepped-tabs__item">
+            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
+              <span class="fsa-stepped-tabs__text">Dol</span>
+            </span>
+          </li>
+          <li class="fsa-stepped-tabs__item">
+            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
+              <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
+            </span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+</div>
+```html
 <nav aria-label="Breadcrumbs">
   <div class="fsa-stepped-tabs">
     <div class="fsa-stepped-tabs__bd">
@@ -69,6 +100,7 @@ jump_menu: true
     </div>
   </div>
 </nav>
+```
 
 ### Buttons
 
@@ -438,16 +470,28 @@ jump_menu: true
 
 ## Usage
 
-(Work in progress.)
-
 ### Use When
 
-(Work in progress.)
+* A process flow requires more than 2 linear steps and/or screens.
+* A process flow can allow the User to skip multiple steps backwards to previous steps and/or screens.
+* Providing the User with a clear indication of the status within the process is needed.
 
 ### Don't Use
 
-(Work in progress.)
+* As a system of navigation unrelated to a linear stepped process workflow.
+* If the process flow will only have 2 screens and/or steps.
+* The Stepped Tabs Component and allow the User to skip forward using the Stepped Tabs themselves.
+* If the process flow will not go through each steps provided in the tabs to complete the process.
+* As a Breadcrumb. Use [Breadcrumb]({{ site.baseurl }}components/breadcrumb/).
 
 ## General Guidance
 
-(Work in progress.)
+* Typically paired with the [Stepped Control]({{ site.baseurl }}components/stepped-control/) component.
+* Ensure that all of the appropriate states of the tab are used in accordance with the instructions above.
+* If the User will not be able to proceed forward or go backwards within a process, utilize the `Actionable: none` variation.
+* Icons before the text within a tab can enhance the understanding about where the User is within a process flow.
+
+## Accessibility
+
+* Note the use of `aria` atttributes, most especially `aria-current`.
+* When each step is actionable, wrap the component with a `<nav>` element.

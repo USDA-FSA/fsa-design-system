@@ -223,8 +223,8 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 ### Borderless
 
 <div class="ds-preview">
-  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <table class="fsa-table fsa-table--borderless">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
     <thead>
       <tr>
         <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
@@ -439,18 +439,24 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@m">
     <h3>Default</h3>
-    <p><img src="{{ site.baseurl }}img/tables-responsive--default.png" alt="Image of table rendering on small devices"></p>
+    <figure>
+      <img src="{{ site.baseurl }}img/tables-responsive--default.png" alt="Image of table rendering on small devices">
+      <figcaption><code>fsa-table--responsive</code></figcaption>
+    </figure>
   </div>
   <div class="fsa-grid__1 fsa-grid__1/2@m">
     <h3>Horizontal</h3>
-    <p><img src="{{ site.baseurl }}img/tables-responsive--horizontal.png" alt="Image of table rendering on small devices"></p>
+    <figure>
+      <img src="{{ site.baseurl }}img/tables-responsive--horizontal.png" alt="Image of table rendering on small devices">
+      <figcaption><code>fsa-table--responsive fsa-table--responsive-horizontal</code></figcaption>
+    </figure>
   </div>
 </div>
 
 ### Structure
 
 * Responsive table styles are identical at the smaller breakpoints regardless of initial variation used.
-* The key to Responsive Tables is the use of the `aria-label` attribute on each data data cell, e.g. `<td aria-label="Commodity">...</td>`.
+* The key to Responsive Tables is the use of the `aria-label` attribute on each data data cell, e.g. `<td aria-label="Commodity">...</td>` to replicate each column header (`th`).
 
 ### Default
 
@@ -531,8 +537,8 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ### Horizontal
 <div class="ds-preview">
-  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
     <thead>
       <tr>
         <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Document title</button></th>
@@ -604,5 +610,6 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 Always refer to the [Accessibility Tables Guide]({{ site.baseurl }}guides/accessibility/tables) for overall guidance.
 
+* Note use of `aria` attributes for declaring by which column a table is sorted, and in which direction, `descending` or `ascending`.
 * Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
 * Complex tables are tables with more than two levels of headers. Each header should be given a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
