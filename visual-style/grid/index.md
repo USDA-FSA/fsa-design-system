@@ -1,7 +1,7 @@
 ---
 layout: page
 parent: "Visual Style"
-title: "Grid"
+title: "Grid and Layout"
 intro: "A 12-column, responsive grid provides structure for website content."
 jump_menu: true
 ---
@@ -257,9 +257,9 @@ Each grid column's proportional width can be adjusted across a range of viewport
   </div>
 </div>
 
-### Breakpoints
+<!-- ### Breakpoints -->
 
-(TBD. Document Breakpoints here, but determine better approach for communicating RWD.)
+<!-- (TBD. Document Breakpoints here, but determine better approach for communicating RWD.) -->
 
 ## No Gutter
 

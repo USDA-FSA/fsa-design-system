@@ -1879,13 +1879,15 @@ p + ol {
 .fsa-btn[disabled] {
   opacity: .65;
   color: rgba(255, 255, 255, 0.8);
-  filter: saturate(70%);
+  -webkit-filter: saturate(70%);
+          filter: saturate(70%);
   cursor: not-allowed;
 }
 
 @media print {
   .fsa-btn[disabled] {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 
@@ -2929,7 +2931,8 @@ th[aria-sort] {
 
 .fsa-label[disabled] {
   opacity: .65;
-  filter: saturate(70%);
+  -webkit-filter: saturate(70%);
+          filter: saturate(70%);
   cursor: not-allowed;
 }
 
@@ -3065,7 +3068,8 @@ a.fsa-label:active {
 
 .fsa-badge[disabled] {
   opacity: .65;
-  filter: saturate(70%);
+  -webkit-filter: saturate(70%);
+          filter: saturate(70%);
   cursor: not-allowed;
 }
 
@@ -3838,8 +3842,10 @@ a.fsa-badge:active {
 
 @media (min-width: 54em) {
   .fsa-nav-global__list-item--multi-column .fsa-nav-global__sub-menu-bd {
-    columns: 4;
-    column-gap: 0.6rem;
+    -moz-columns: 4;
+         columns: 4;
+    -moz-column-gap: 0.6rem;
+         column-gap: 0.6rem;
     padding-bottom: 1.6rem;
   }
 }
@@ -3864,7 +3870,8 @@ a.fsa-badge:active {
   }
   @supports (-webkit-appearance: none) {
     .fsa-nav-global__sub-menu-group {
-      break-before: column;
+      page-break-before: column;
+           break-before: column;
       display: block;
       width: auto;
     }
@@ -4511,13 +4518,15 @@ a.fsa-badge:active {
 .fsa-btn-group__item[disabled] {
   opacity: .65;
   color: rgba(255, 255, 255, 0.8);
-  filter: saturate(70%);
+  -webkit-filter: saturate(70%);
+          filter: saturate(70%);
   cursor: not-allowed;
 }
 
 @media print {
   .fsa-btn-group__item[disabled] {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 
@@ -5695,10 +5704,12 @@ a.fsa-badge:active {
     width: 2rem;
     margin-right: 0.4rem;
     vertical-align: bottom;
-    filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.6));
+    -webkit-filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.6));
   }
   .fsa-stepped-tabs__label--incomplete .fsa-stepped-tabs__icon {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 
@@ -6207,7 +6218,8 @@ a.fsa-badge:active {
 
 .fsa-pagination__label--disabled {
   color: #2f2c2a;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   opacity: .5;
   cursor: text;
   background-color: transparent;
@@ -6344,7 +6356,8 @@ a.fsa-badge:active {
 .fsa-spinbox__btn[disabled] {
   background-color: #f0f0f0;
   cursor: not-allowed;
-  filter: grayscale(100);
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
 }
 
 .fsa-spinbox__btn:hover, .fsa-spinbox__btn:active {
@@ -8007,6 +8020,11 @@ blockquote code {
   background-image: url("../img/chevron-up.png");
   background-image: url("../img/chevron-up.svg");
   opacity: .4;
+}
+
+span.fsa-stepped-tabs__label,
+div.fsa-stepped-tabs__label {
+  cursor: initial;
 }
 
 /**
