@@ -306,9 +306,12 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
 * The ability to utilize larger incremental values allows for speed of entry for Users with dexterity restrictions.
+* Including `tabindex="-1"` to increment/decrement buttons intentionally removes keyboard access.
+* Including `aria-hidden="true"` on the Spinbox actions, intentionally suppressing visibility to screenreaders.
 
 ## General Guidance
 
+* Will nearly always be implemented as part of a [Form Field]({{ site.baseurl }}components/form-fields/) component.
 * The Spinbox Component has the unique ability to allow for both fine tuning of numeric inputs and also allowing for larger increments.
 * The Spinbox is ideal for use of an input field that has prepopulated numeric data that needs to be adjusted by the User.
 
@@ -318,4 +321,4 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ### Summary
 
-The JavaScript for the Spinbox is primarily used to increase or decrease a value within the input field by calling the native `stepUp()` or `stepDown()` method on the element and passing the step value. For browsers that do not support these native methods, debug messages are implemented and will be written to the console for testing purposes.
+The JavaScript for the Spinbox increases or decreases the value within the input field. It calls the native `stepUp()` or `stepDown()` methods, passing the `step` attribute's value. For browsers that do not support these native methods, debug messages are implemented and will be written to the console for testing purposes.
