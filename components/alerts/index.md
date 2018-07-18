@@ -6,10 +6,12 @@ intro: "Inline Alerts help to provide inline, page-level messaging to the User. 
 jump_menu: true
 ---
 
-<div class="fsa-alert fsa-alert--success" role="alert">
-  <div class="fsa-alert__body">
-    <h3 class="fsa-alert__heading">Optional success title</h3>
-    <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
+<div class="ds-preview">
+  <div class="fsa-alert fsa-alert--success" role="alert">
+    <div class="fsa-alert__body">
+      <h3 class="fsa-alert__heading">Optional success title</h3>
+      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
+    </div>
   </div>
 </div>
 
@@ -121,7 +123,7 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 ### Don't Use
 
 * When displaying error messages paired with specific form fields. Use [Form Field States]({{ site.baseurl }}components/form-fields/).
-* The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background processes. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
+* The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background process. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * The application requires a message to appear and have the User take action to dismiss. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * The application displays non-critical information that won’t disrupt a workflow. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * Too many Alerts at one time as this will confuse the User and push content down the screen.
