@@ -7,7 +7,7 @@ jump_menu: true
 title_label: 'Requires JavaScript'
 ---
 
-A Modal will to take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
+A Modal will take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
 
 ## Variations
 
@@ -142,15 +142,17 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 
 ### Use When
 
+* Completing a subtask required by underlying page.
 * You need to isolate a feature or action to gain sole focus of that feature or action.
-* A system timeout message is required for an applications.
+* Providing non-essential information related to the underlying page.
 
 ### Don't Use
 
 * When the content or message requires interaction with other parts of the application or screen.
 * When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
-* Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/)
+* Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * When its content content or features can be part of the page without complicating the page's intent.
+* A system timeout message is required for an applications, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
 
 ## Accessibility
 
