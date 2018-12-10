@@ -164,6 +164,39 @@
       subhref: "components/media-objects"
       img: "img/subcategories/media-objects.png"
 
+- title: "Utilities"
+  href: "utilities"
+
+  subcategories:
+
+    - subtitle: "Margins"
+      subhref: "utilities/margins"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Padding"
+      subhref: "utilities/padding"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Floats"
+      subhref: "utilities/floats"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Text size"
+      subhref: "utilities/text-size"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Text Alignment"
+      subhref: "utilities/text-alignment"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Text Headers"
+      subhref: "utilities/text-headers"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Visibility"
+      subhref: "utilities/visibility"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
 - title: "Guides"
   href: "guides"
   subcategories:
