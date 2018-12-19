@@ -36,13 +36,13 @@
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
-    - subtitle: "Grid, Layout, and Responsive Web Design"
-      subhref: "visual-style/grid"
-      img: "img/subcategories/grid.png"
+    # - subtitle: "Grid, Layout, and Responsive Web Design"
+    #   subhref: "visual-style/grid"
+    #   img: "img/subcategories/grid.png"
 
-    - subtitle: "CSS Utilities"
-      subhref: "visual-style/utilities"
-      img: "img/subcategories/utilities.png"
+    # - subtitle: "CSS Utilities"
+    #   subhref: "visual-style/utilities"
+    #   img: "img/subcategories/utilities.png"
 
 - title: "Components"
   href: "components"
@@ -163,6 +163,9 @@
     - subtitle: "Media Objects"
       subhref: "components/media-objects"
       img: "img/subcategories/media-objects.png"
+
+- title: "Grid and Layout"
+  href: "grid-and-layout"
 
 - title: "Utilities"
   href: "utilities"
