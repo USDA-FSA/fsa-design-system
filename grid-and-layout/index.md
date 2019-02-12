@@ -264,7 +264,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
       <p class="fsa-grid__demo">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="fsa-grid__1/1 fsa-grid__1/2@m">
-      <p class="fsa-grid__demo">Lorem ipsum dolor sit ametcing elit sed do gna aliqua. <</p>
+      <p class="fsa-grid__demo">Lorem ipsum dolor sit ametcing elit sed do gna aliqua. </p>
     </div>
   </div>
 </div>
@@ -290,6 +290,46 @@ Each grid column's proportional width can be adjusted across a range of viewport
 <!-- ### Breakpoints -->
 
 <!-- (TBD. Document Breakpoints here, but determine better approach for communicating RWD.) -->
+
+## Nesting
+
+Nesting a new grid container within a grid column is allowed and follows the same rendering behavior based on the same 12-column, responsive grid.
+
+```html
+<div class="fsa-grid">
+  <div class="fsa-grid__9/12">
+    <div class="fsa-grid">
+      <div class="fsa-grid__4/12">...</div>
+      <div class="fsa-grid__4/12">...</div>
+      <div class="fsa-grid__4/12">...</div>
+    </div>
+  </div>
+  <div class="fsa-grid__3/12">...</div>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-grid">
+    <div class="fsa-grid__9/12">
+      <div class="fsa-grid__demo">
+        <p><code>fsa-grid__<strong>9/12</strong></code><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="fsa-grid">
+          <div class="fsa-grid__4/12">
+            <p class="fsa-grid__demo"><code>fsa-grid__<strong>4/12</strong></code><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="fsa-grid__4/12">
+            <p class="fsa-grid__demo"><code>fsa-grid__<strong>4/12</strong></code><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="fsa-grid__4/12">
+            <p class="fsa-grid__demo"><code>fsa-grid__<strong>4/12</strong></code><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fsa-grid__3/12">
+      <p class="fsa-grid__demo"><code>fsa-grid__<strong>3/12</strong></code><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
 
 ## No Gutter
 

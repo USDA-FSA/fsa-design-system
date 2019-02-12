@@ -9443,6 +9443,11 @@ div.fsa-stepped-tabs__label {
   cursor: initial;
 }
 
+.fsa-grid__demo {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 /**
  * Syntax highlighting styles
  */
