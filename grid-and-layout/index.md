@@ -107,13 +107,13 @@ jump_menu: true
 
 ## Getting Started
 
-Instantiate a new grid with...
+### 1. Instantiate a new grid...
 
 ```html
 <div class="fsa-grid">...</div>
 ```
 
-At least one grid column is required, each described by its proportional width via `fsa-grid__[width]`. For example: `class="fsa-grid__1/2"` = 50% proportion.
+### 2. Create your grid structure with columns
 
 ```html
 <div class="fsa-grid">
@@ -121,6 +121,9 @@ At least one grid column is required, each described by its proportional width v
   <div class="fsa-grid__1/2">...</div>
 </div>
 ```
+
+Each grid column's proportional width is assigned via `fsa-grid__[width]`. For example: `class="fsa-grid__1/2"` is 50% proportion.
+
 <div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/2">
@@ -160,6 +163,16 @@ Available column proportions are identified via the `fsa-grid__*` selector, wher
   <div class="fsa-grid docs__grid-inventory-item">
     <div class="fsa-grid__3/12">
       <div class="fsa-grid__demo"><code>3/12</code></div>
+    </div>
+  </div>
+  <div class="fsa-grid docs__grid-inventory-item">
+    <div class="fsa-grid__1/3">
+      <div class="fsa-grid__demo"><code>1/3</code></div>
+    </div>
+  </div>
+  <div class="fsa-grid docs__grid-inventory-item">
+    <div class="fsa-grid__4/12">
+      <div class="fsa-grid__demo"><code>4/12</code></div>
     </div>
   </div>
   <div class="fsa-grid docs__grid-inventory-item">
@@ -234,7 +247,6 @@ Available column proportions are identified via the `fsa-grid__*` selector, wher
   </div>
 </div>
 
-
 ## Responsive
 
 Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via `fsa-grid__[width]@[breakpoint]`. For example, `class="fsa-grid__1/1 fsa-grid__1/2@s"` will render as full-width by default (`1/1`), and then 50% proportion at the `m` breakpoint.
@@ -253,6 +265,24 @@ Each grid column's proportional width can be adjusted across a range of viewport
     </div>
     <div class="fsa-grid__1/1 fsa-grid__1/2@m">
       <p class="fsa-grid__demo">Lorem ipsum dolor sit ametcing elit sed do gna aliqua. <</p>
+    </div>
+  </div>
+</div>
+
+<div class="docs__rwd-demo-block">
+  <h3>Demo</h3>
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="phone" class="fsa-btn-group__item" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="desktop" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" aria-selected="true">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__grid.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--desktop" id="rwd-demo_grid">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__grid.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>
@@ -286,7 +316,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
 
 ## Auto-width
 
-A grid column can be automatically proportioned via `class="fsa-grid__auto"`. For example, if you have two colums of variable width, e.g. `1/6` and `1/4`, then `fsa-grid__auto` will distribute across the remaining space.
+A grid column's width can automatically distribute itself via `class="fsa-grid__auto"`. For example, if you have two colums of variable width, e.g. `1/6` and `1/4`, then grid unit with `fsa-grid__auto` will flex itself to the remaining space.
 
 ```html
 <div class="fsa-grid">
