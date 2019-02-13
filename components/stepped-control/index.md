@@ -47,6 +47,23 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+      </div>
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ primary ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Default, with Status Message
 <div class="fsa-stepped-control">
@@ -67,6 +84,26 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__message" role="status">
+      <strong>5</strong> of <strong>10</strong> Commodities are complete
+    </div>
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+      </div>
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ primary ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Default, with multiple secondary
 
@@ -88,6 +125,26 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary_1 ]</button>
+      </div>
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary_2 ]</button>
+      </div>
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ primary ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Directional
 
@@ -106,6 +163,23 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+      </div>
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ progressive ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Directional, with multiple actions
 
@@ -127,6 +201,26 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+      </div>
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ prog_secondary ]</button>
+      </div>
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ progressive ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Directional, with Status Message
 
@@ -148,6 +242,26 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <strong>5</strong> of <strong>10</strong> Commodities are complete
+    </div>
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+      </div>
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ progressive ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Directional, with Status Message <em>and</em> multiple actions
 
@@ -172,6 +286,29 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div class="fsa-stepped-control">
+  <div class="fsa-stepped-control__bd">
+    <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <strong>5</strong> of <strong>10</strong> Commodities are complete
+    </div>
+    <div class="fsa-stepped-control__list">
+      <div class="fsa-stepped-control__item">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive_1 ]</button>
+      </div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive_2 ]</button>
+      </div>
+      <div class="fsa-stepped-control__shim"></div>
+      <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
+        <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
+          <span class="fsa-stepped-control__btn-label">[ progressive ]</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Sticky + Default
 
@@ -180,7 +317,7 @@ title_label: 'May Require JavaScript'
   <p>Consectetur sit dolorum iste doloribus laudantium eaque itaque unde ipsa. Tempora non accusamus nihil aut, perferendis nesciunt earum dolor laborum necessitatibus reprehenderit.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores, unde aperiam, nemo harum sed repellendus veniam voluptas cupiditate porro facilis voluptates ipsam, sapiente illum odit possimus debitis est. Necessitatibus.</p>
   <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
-  <div class="fsa-stepped-control fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+  <div class="fsa-stepped-control fsa-stepped-control--sticky">
     <div class="fsa-stepped-control__bd">
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__shim"></div>
@@ -196,6 +333,15 @@ title_label: 'May Require JavaScript'
     </div>
   </div>
 </div>
+```html
+<div>
+  <p>...</p>
+  <div class="fsa-stepped-control fsa-stepped-control--sticky">
+    ...
+  </div>
+  <p>...</p>
+</div>
+```
 
 ### Sticky + Default, with Status Message
 
@@ -204,7 +350,7 @@ title_label: 'May Require JavaScript'
   <p>Consectetur sit dolorum iste doloribus laudantium eaque itaque unde ipsa. Tempora non accusamus nihil aut, perferendis nesciunt earum dolor laborum necessitatibus reprehenderit.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores, unde aperiam, nemo harum sed repellendus veniam voluptas cupiditate porro facilis voluptates ipsam, sapiente illum odit possimus debitis est. Necessitatibus.</p>
   <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
-  <div class="fsa-stepped-control fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+  <div class="fsa-stepped-control fsa-stepped-control--sticky">
     <div class="fsa-stepped-control__bd">
       <div class="fsa-stepped-control__message" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
@@ -231,7 +377,7 @@ title_label: 'May Require JavaScript'
   <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
   <p>Reprehenderit inv omnis saepe quam assumenda iste eum cum magnamentore eos explicabo fugiat excepturi dolorum, natus deleniti? Hic magni facilis.</p>
   <p>Quia quos cupiditate quae sed earum doloribus voluptatum praesentium! Quae sapiente ea quia veniam, cumque, beatae animi commodi, molestias, temporibus rerum harum.</p>
-  <div class="fsa-stepped-control fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+  <div class="fsa-stepped-control fsa-stepped-control--sticky">
     <div class="fsa-stepped-control__bd">
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
@@ -253,7 +399,7 @@ title_label: 'May Require JavaScript'
 <div class="DEMO-STICKY-STEPPED-CONTROL">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores, unde aperiam, nemo harum sed repellendus veniam voluptas cupiditate porro facilis voluptates ipsam, sapiente illum odit possimus debitis est. Necessitatibus.</p>
   <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
-  <div class="fsa-stepped-control fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+  <div class="fsa-stepped-control fsa-stepped-control--sticky">
     <div class="fsa-stepped-control__bd">
       <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
@@ -281,12 +427,11 @@ title_label: 'May Require JavaScript'
   <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-stepped-control-demo-2" aria-expanded="false" type="button">Directional</button>
 </p>
 
-
 ## Usage
 
 ### Use When
 
-* The process flow of a User requires multiple steps to perform actions
+* A process flow requires multiple steps to perform actions, and should be paired with the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component.
 * A process flow would be enriched by a sticky control at the bottom of the screen
 * A Status Message would help to gain context for the User during a stepped process
 
@@ -334,7 +479,7 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
       <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
       <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
       <p>Maxime repellat expedita, rem, sapiente, debitis consectetur placeat dolorum deleniti delectus tenetur commodi? Optio, sequi. Fugiat, hic incidunt, vitae aspernatur voluptates molestiae?</p>
-      <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+      <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky">
         <div class="fsa-stepped-control__bd">
           <div class="fsa-stepped-control__message" role="status">
             {{ status message }}
@@ -366,7 +511,7 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
       <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
       <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
       <p>Maxime repellat expedita, rem, sapiente, debitis consectetur placeat dolorum deleniti delectus tenetur commodi? Optio, sequi. Fugiat, hic incidunt, vitae aspernatur voluptates molestiae?</p>
-      <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky fsa-stepped-control--unstuck">
+      <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky">
         <div class="fsa-stepped-control__bd">
           <div class="fsa-stepped-control__list">
             <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
