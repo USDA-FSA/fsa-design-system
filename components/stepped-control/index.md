@@ -431,7 +431,8 @@ title_label: 'May Require JavaScript'
 
 ### Use When
 
-* A process flow requires multiple steps to perform actions, and should be paired with the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component.
+* A process flow requires multiple steps to perform actions
+* Using the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component
 * A process flow would be enriched by a sticky control at the bottom of the screen
 * A Status Message would help to gain context for the User during a stepped process
 
