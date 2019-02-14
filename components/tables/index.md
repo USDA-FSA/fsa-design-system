@@ -432,6 +432,152 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 </table>
 ```
 
+### Vertical Align: Middle
+
+<div class="ds-preview">
+  <table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
+    <thead>
+      <tr>
+        <th>Lorem ipsum dolor sit amet consec tetur</th>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Sitaw</th>
+        <th>Ametg</th>
+        <th>Conse</th>
+        <th>Adipi</th>
+        <th>Accus</th>
+        <th>Omnisi</th>
+        <th>Aliqum</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+```html
+<table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
+  ...
+</table>
+```
+
+### Vertical Align: Bottom
+
+<div class="ds-preview">
+  <table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
+    <thead>
+      <tr>
+        <th>Lorem ipsum dolor sit amet consec tetur</th>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Sitaw</th>
+        <th>Ametg</th>
+        <th>Conse</th>
+        <th>Adipi</th>
+        <th>Accus</th>
+        <th>Omnisi</th>
+        <th>Aliqum</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+```html
+<table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
+  ...
+</table>
+```
+
 ## Responsive Tables
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `fsa-table--responsive`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
