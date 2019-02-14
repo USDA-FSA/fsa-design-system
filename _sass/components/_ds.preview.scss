@@ -24,6 +24,11 @@
     }
   }
 
+  &--overflow-example {
+    overflow: auto;
+    height: 50vh;
+  }
+
   .highlighter-rouge + & {
     margin-top: -32px; // yeah, magic number, wheee!
   }

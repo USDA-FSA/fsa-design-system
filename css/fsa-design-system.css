@@ -8711,6 +8711,11 @@ main:active, main:focus {
   }
 }
 
+.ds-preview--overflow-example {
+  overflow: auto;
+  height: 50vh;
+}
+
 .highlighter-rouge + .ds-preview {
   margin-top: -32px;
 }
