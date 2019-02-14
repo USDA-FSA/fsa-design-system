@@ -29,6 +29,12 @@
 
     }
 
+    code {
+      @include breakpoint(M) {
+        padding: 0;
+      }
+    }
+
     .highlighter-rouge & {
 
       margin-left:  (-$size-default);
