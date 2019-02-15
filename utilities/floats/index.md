@@ -6,9 +6,13 @@ intro: "Selectively adjust floating behavior of elements or components"
 jump_menu: true
 ---
 
-`[direction]` is one of `left`, `right`, `none`.
-
 ## Variations
+
+```html
+<el class="fsa-float--[direction]">...</el>
+```
+
+`[direction]` is one of `left`, `right`, `none`.
 
 ### Left
 
