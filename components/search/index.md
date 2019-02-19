@@ -406,14 +406,13 @@ jump_menu: true
 
 ## General Guidance
 
-* Allow the search bar to be as wide as possible, but a minimum of 27 characters wide. This allows users to enter multiple search terms and still be able to see all of them. The more users can see their search terms, the easier it is to review, verify, and submit their search query.
-* The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and doesn’t need to be visually paired with the word "Search" as long as it remains for screen readers.
-* Maintain this search bar when displaying the search results with the original search terms.
-* On a site's home page the search function should appear as a search box instead of a link so users can locate it easily.
-* Don't offer advanced search as the default option. The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of a person making a mistake in their query.
-* Even if the search bar isn't visually displaying a label, the form field should include a label for screen reader users.
-* The search button itself should be a submit button for the form to reduce the number of keystrokes required to use the form.
-* Don't automatically clear the search field. Allow the user complete control on whether or not it is cleared.
+* Allow the search bar to be as wide as possible, ideally allowing approximately 27 characters to be visible without horizontal scrolling. This allows users to enter multiple search terms, decreasing the chances of obscuring some text. The more users can see their search terms, the easier it is to review, verify, and submit their search query.
+* The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and may not always need be visually paired with the word "Search" as long as it remains for screen readers.
+* When displaying search results retain this component with its original search terms intact.
+* Do not allow the system to automatically clear the search field. Allow the user complete control on whether or not it is cleared.
+* Even if the search component doesn't visually display a label, the form field should include a label for screen reader users.
+* The search button itself must be a submit button (i.e. `<input type="submit...`) to reduce the number of keystrokes required to use the form.
+* Avoid offering advanced search as the default option. The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of a person making a mistake in their query.
 
 ## Accessibility
 
@@ -425,3 +424,7 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 * Always include the word "search" inside the <code>&lt;button&gt;</code> element for screen readers, particularly if using an [Icon variation](#default-with-icon).
 
 
+
+## Related Resources
+
+* The [Global Navigation]({{ site.baseurl }}components/top-nav/#example-with-search) component contains examples with this component nested.
