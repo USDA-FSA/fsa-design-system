@@ -697,6 +697,64 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
   </div>
 </div>
 
+### Example: with Search
+
+<div class="ds-preview">
+  <div class="fsa-nav-global">
+    <div class="fsa-nav-global__bd">
+      <ul class="fsa-nav-global__list" aria-label="Primary Navigation" id="primary-navigation-99">
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
+            <span class="fsa-nav-global__text">Home</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+      </ul>
+      <div class="fsa-nav-global__search">
+        <form action="dest.html">
+          <div class="fsa-search fsa-search--small" role="search">
+            <div class="fsa-search__bd">
+              <div class="fsa-search__entry fsa-search__entry--grow">
+                <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-88w84d">Search [app-name]</label>
+                <input placeholder="Search" class="fsa-input fsa-input--small fsa-search__input" id="UNIQUE-ID-88w84d" type="search" name="search">
+              </div>
+              <div class="fsa-search__submit">
+                <button class="fsa-btn fsa-btn--small fsa-search__btn fsa-search__btn--icon" type="submit">
+                  <span class="fsa-search__text">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Usage
 
 ### Use When
