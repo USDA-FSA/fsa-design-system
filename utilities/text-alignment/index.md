@@ -67,3 +67,8 @@ Where `direction` is one of `left`, `center`, or `right`
     </div>
   </div>
 </div>
+
+## Related Utilities
+
+* [Text Size]({{ site.baseurl }}utilities/text-alignment/) to selectively adjust text size.
+* [Text Headers]({{ site.baseurl }}utilities/text-headers/) to selectively adjust header elements (e.g. `h1` - `h6`).

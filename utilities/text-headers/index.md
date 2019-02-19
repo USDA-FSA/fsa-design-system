@@ -75,3 +75,7 @@ Each of the below examples demonstrate how the visual presentation of a second-l
   </div>
 </div>
 
+## Related Utilities
+
+* [Text Size]({{ site.baseurl }}utilities/text-alignment/) to selectively adjust text size.
+* [Text Alignment]({{ site.baseurl }}utilities/text-alignment/) to selectively align blocks of text.
