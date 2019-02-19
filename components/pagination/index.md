@@ -367,5 +367,6 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-* Note the use of `aria-` attributes, e.g. `aria-label`, `aria-current`, and `aria-hidden`.
+* `<nav aria-label="Pagination">...</nav>` contains this component as it serves as **navigation**, informing users where they currently are, and where they may navigate to.
+* Note the use of all `aria-` attributes, e.g. `aria-label`, `aria-current`, and `aria-hidden`.
 * The Use of buttons as text link styles instead of anchor tags allows for a larger hit area for selecting the desired page.
