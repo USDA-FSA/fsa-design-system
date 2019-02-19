@@ -29,11 +29,10 @@
     height: 50vh;
   }
 
-  .highlighter-rouge + & {
-    margin-top: -32px; // yeah, magic number, wheee!
-  }
-
+  .highlighter-rouge + &,
   + .highlighter-rouge {
-    margin-top: -34px; // even more randomly magical
+    @include breakpoint(S) {
+      margin-top: -34px; // yeah, magic number, wheee!
+    }
   }
 }
