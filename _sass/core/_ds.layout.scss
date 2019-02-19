@@ -49,9 +49,11 @@ main {
 
   > ul:not([class]),
   > ol:not([class]),
-  > p {
-    max-width: $text-max-width;
-    max-width: 80ch;
+  > p:not([class]) {
+    @include breakpoint(L) {
+      max-width: $text-max-width;
+      max-width: 80ch;
+    }
   }
 
   > blockquote {

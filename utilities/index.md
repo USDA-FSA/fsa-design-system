@@ -1,7 +1,8 @@
 ---
 layout: category
 title: "Utilities"
-intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsum ea piditate eligendi iusto voluptatum harum laudantium autem numquam ipsa, aliquid earum saepe facilis animi officia iure."
+intro: "CSS Utilities are single-purpose styles that can be appended to elements and components. They are typically mapped to a single CSS property and value (e.g. margin), and are most useful when you want to override a default value or in one-off situations."
 ---
 
-Bab perspiciatis sapiente.Alias recusandae itaque provident, minus, dolor molestiae atque asperiores maiores labore cum, magni maxime vitae nostrum est! Quaerat nobis soluta quas sunt excepturi facilis ex minus debitis. Eaque, deserunt ratione.
+Also known as “trumps,” “helper classes,” or “alterations,” these are high-specificity selectors used to make very targeted alterations to existing elements or components. Be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style.
+

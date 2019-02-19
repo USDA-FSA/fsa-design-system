@@ -8560,12 +8560,13 @@ main:active, main:focus {
   position: relative;
 }
 
-.ds-article > ul:not([class]),
-.ds-article > ol:not([class]),
-.ds-article > p {
-  max-width: 530px;
-  max-width: 53rem;
-  max-width: 80ch;
+@media (min-width: 54em) {
+  .ds-article > ul:not([class]),
+  .ds-article > ol:not([class]),
+  .ds-article > p:not([class]) {
+    max-width: 53rem;
+    max-width: 80ch;
+  }
 }
 
 @media (min-width: 54em) {
@@ -8709,6 +8710,11 @@ main:active, main:focus {
   .ds-preview--default-bg {
     background-color: transparent;
   }
+}
+
+.ds-preview--overflow-example {
+  overflow: auto;
+  height: 50vh;
 }
 
 .highlighter-rouge + .ds-preview {
