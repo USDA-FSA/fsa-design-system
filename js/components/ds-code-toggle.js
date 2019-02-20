@@ -5,7 +5,7 @@ window.$ = $;
 $('body').on('change', '[data-behavior~="toggle-code-display"]', function(event) {
 
   var $self = $(this);
-  var $targets = $('.ds-article .highlighter-rouge');
+  var $targets = $('.ds-preview + .highlighter-rouge');
 
   $targets.toggleClass('highlighter-rouge--visible');
 

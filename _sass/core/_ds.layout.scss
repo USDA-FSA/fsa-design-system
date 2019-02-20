@@ -71,15 +71,8 @@ main {
 
   }
 
-  .highlighter-rouge {
-    display: none;
-    &--visible {
-      display: initial;
-    }
-  }
 
 }
-
 
 .ds-page-title {
 
@@ -87,6 +80,11 @@ main {
     border-bottom: 1px solid $color-fsa-tertiary-200;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: $color-fsa-site-bg;
+    padding-top: $size-default;
+    z-index: 10;
   }
 
   &__hd {
@@ -146,7 +144,7 @@ main {
       float: right;
       width: 20%;
       position: sticky;
-      top: $size-default;
+      top: ($size-base * 16);
 
     }
 

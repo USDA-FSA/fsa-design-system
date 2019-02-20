@@ -35,4 +35,13 @@
       margin-top: -34px; // yeah, magic number, wheee!
     }
   }
+
+  + .highlighter-rouge {
+    display: none;
+    &--visible {
+      display: block;
+    }
+  }
+
 }
+
