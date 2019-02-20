@@ -30,17 +30,6 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 
 ### Default
 
-```html
-<p>
-  <select class="fsa-select" name="Options lorem">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
 <div class="ds-preview">
   <p>
     <select class="fsa-select" name="Options lorem">
@@ -52,12 +41,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Full-width
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--block" name="Options ipsum">
+  <select class="fsa-select" name="Options lorem">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -66,6 +52,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Full-width
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--block" name="Options ipsum">
@@ -77,12 +66,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Small
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--small" name="Options dolor">
+  <select class="fsa-select fsa-select--block" name="Options ipsum">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -91,6 +77,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Small
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--small" name="Options dolor">
@@ -102,12 +91,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Large
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--large" name="Options sit">
+  <select class="fsa-select fsa-select--small" name="Options dolor">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -116,6 +102,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Large
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--large" name="Options sit">
@@ -127,12 +116,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Response: Error
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--error" name="Options amet">
+  <select class="fsa-select fsa-select--large" name="Options sit">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -141,6 +127,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Response: Error
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--error" name="Options amet">
@@ -152,12 +141,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Response: Positive
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--positive" name="Options gemino">
+  <select class="fsa-select fsa-select--error" name="Options amet">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -166,6 +152,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Response: Positive
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--positive" name="Options gemino">
@@ -177,14 +166,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Disabled
-
-Disabled select components do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
-
 ```html
 <p>
-  <select class="fsa-select" disabled="disabled" name="Options quis">
+  <select class="fsa-select fsa-select--positive" name="Options gemino">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -193,6 +177,11 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
   </select>
 </p>
 ```
+
+### Disabled
+
+Disabled select components do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select" disabled="disabled" name="Options quis">
@@ -204,6 +193,17 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
     </select>
   </p>
 </div>
+```html
+<p>
+  <select class="fsa-select" disabled="disabled" name="Options quis">
+    <option value="Option A" selected="selected">Option A</option>
+    <option value="Option B">Option B</option>
+    <option value="Option C">Option C</option>
+    <option value="Option D">Option D</option>
+    <option value="Option E">Option E</option>
+  </select>
+</p>
+```
 
 ## Usage
 

@@ -84,7 +84,7 @@ main {
     top: 0;
     background-color: $color-fsa-site-bg;
     padding-top: $size-default;
-    z-index: 10;
+    z-index: 9999;
   }
 
   &__hd {

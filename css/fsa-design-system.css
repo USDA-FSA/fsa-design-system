@@ -9651,7 +9651,7 @@ main:active, main:focus {
     top: 0;
     background-color: #f8fafc;
     padding-top: 1.2rem;
-    z-index: 10;
+    z-index: 9999;
   }
 }
 

@@ -23,16 +23,6 @@ Media Objects are styled with `class="fsa-media"`.
 
 ### Default
 
-```html
-<div class="fsa-media">
-  <div class="fsa-media__section">
-    <img class="fsa-media__img" src="path/to/image.jpg" alt="image description">
-  </div>
-  <div class="fsa-media__section">
-    <p>Lorem ipsum.</p>
-  </div>
-</div>
-```
 <div class="ds-preview">
   <div class="fsa-media">
     <div class="fsa-media__section">
@@ -43,19 +33,19 @@ Media Objects are styled with `class="fsa-media"`.
     </div>
   </div>
 </div>
-
-### Right
-
 ```html
-<div class="fsa-media fsa-media--right">
+<div class="fsa-media">
   <div class="fsa-media__section">
-    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+    <img class="fsa-media__img" src="path/to/image.jpg" alt="image description">
   </div>
   <div class="fsa-media__section">
     <p>Lorem ipsum.</p>
   </div>
 </div>
 ```
+
+### Right
+
 <div class="ds-preview">
   <div class="fsa-media fsa-media--right">
     <div class="fsa-media__section">
@@ -66,11 +56,8 @@ Media Objects are styled with `class="fsa-media"`.
     </div>
   </div>
 </div>
-
-### Middle
-
 ```html
-<div class="fsa-media fsa-media--middle">
+<div class="fsa-media fsa-media--right">
   <div class="fsa-media__section">
     <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
   </div>
@@ -79,6 +66,9 @@ Media Objects are styled with `class="fsa-media"`.
   </div>
 </div>
 ```
+
+### Middle
+
 <div class="ds-preview">
   <div class="fsa-media fsa-media--middle">
     <div class="fsa-media__section">
@@ -90,11 +80,8 @@ Media Objects are styled with `class="fsa-media"`.
     </div>
   </div>
 </div>
-
-### Bottom
-
 ```html
-<div class="fsa-media fsa-media--bottom">
+<div class="fsa-media fsa-media--middle">
   <div class="fsa-media__section">
     <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
   </div>
@@ -103,6 +90,9 @@ Media Objects are styled with `class="fsa-media"`.
   </div>
 </div>
 ```
+
+### Bottom
+
 <div class="ds-preview">
   <div class="fsa-media fsa-media--bottom">
     <div class="fsa-media__section">
@@ -114,37 +104,21 @@ Media Objects are styled with `class="fsa-media"`.
     </div>
   </div>
 </div>
+```html
+<div class="fsa-media fsa-media--bottom">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
 
 ## Nesting Media Objects
 
 Based on the layout and features of the application, it might be advantageous to utilized a nesting methodology to structure a page. Media Objects can easily be nested within the content or text-based area, represented within a DIV with `class="fsa-media__section"` applied to it.
 
-```html
-<div class="fsa-media">
-  <div class="fsa-media__section">
-    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
-  </div>
-  <div class="fsa-media__section">
-    <p>Lorem ipsum...</p>
-    <div class="fsa-media">
-      <div class="fsa-media__section">
-        <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
-      </div>
-      <div class="fsa-media__section">
-        <p>Lorem ipsum...</p>
-        <div class="fsa-media">
-          <div class="fsa-media__section">
-            <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
-          </div>
-          <div class="fsa-media__section">
-            <p>Lorem ipsum...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-```
 <div class="ds-preview">
   <div class="fsa-media">
     <div class="fsa-media__section">
@@ -171,6 +145,32 @@ Based on the layout and features of the application, it might be advantageous to
     </div>
   </div>
 </div>
+```html
+<div class="fsa-media">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum...</p>
+    <div class="fsa-media">
+      <div class="fsa-media__section">
+        <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+      </div>
+      <div class="fsa-media__section">
+        <p>Lorem ipsum...</p>
+        <div class="fsa-media">
+          <div class="fsa-media__section">
+            <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+          </div>
+          <div class="fsa-media__section">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ## Usage
 
@@ -181,7 +181,7 @@ Based on the layout and features of the application, it might be advantageous to
 
 ### Don't Use
 
-* As an alternative for structuring page content with the [FSA Grids]({{ site.baseurl }}visual-style/grid/).
+* As an alternative for structuring page content with the [Grid System]({{ site.baseurl }}grid-and-layout/).
 
 ## General Guidance
 

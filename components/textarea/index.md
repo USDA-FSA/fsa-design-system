@@ -22,70 +22,70 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 
 ### Default
 
-```html
-<p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Small
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Large
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Response: Error
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Response: Positive
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Disabled
 
 Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using the `disabled` attribute.
 
-```html
-<p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+```
 
 ### Readonly
 
 Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using the `readonly` attribute.
 
-```html
-<p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+```
 
 ## Usage
 

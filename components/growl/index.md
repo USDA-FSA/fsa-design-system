@@ -86,6 +86,9 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ### Default
 
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Open Default Growl</button>
+</div>
 ```html
 <div class="fsa-growl-container">
   <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9E" aria-hidden="true" tabindex="0" role="dialog">
@@ -102,13 +105,12 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
   </div>
 </div>
 ```
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Open Default Growl</button>
-</div>
-
 
 ### Error
 
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Open Error Growl</button>
+</div>
 ```html
 <div class="fsa-growl-container">
   <div class="fsa-growl fsa-growl--error" id="UNIQUE-ID-832353AD65DB511B" aria-hidden="true" tabindex="0" role="dialog">
@@ -128,13 +130,13 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Open Error Growl</button>
-</div>
 
 
 ### Warning
 
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Open Warning Growl</button>
+</div>
 ```html
 <div class="fsa-growl-container">
   <div class="fsa-growl fsa-growl--warning" id="UNIQUE-ID-BC33C95AA75A8E1C" aria-hidden="true" tabindex="0" role="dialog">
@@ -154,12 +156,12 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Open Warning Growl</button>
-</div>
 
 ### Success
 
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Open Success Growl</button>
+</div>
 ```html
 <div class="fsa-growl-container">
   <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-8A386E512C033F57" aria-hidden="true" tabindex="0" role="dialog">
@@ -179,14 +181,14 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Open Success Growl</button>
-</div>
 
 ### Modal display
 
+<div class="ds-preview">
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Modal Growl</button>
+</div>
 ```html
-<!-- PLACE JUST BELOW BODY TAG -->
+<!-- PLACE JUST BELOW BODY START TAG AT THE BEGINNING OF DOCUMENT -->
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
 <!-- END WHITEOUT -->
 
@@ -207,9 +209,7 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
   </div>
 </div>
 ```
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Modal Growl</button>
-</div>
+
 
 ## Usage
 

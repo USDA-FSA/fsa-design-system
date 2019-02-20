@@ -25,6 +25,7 @@ jump_menu: true
 ## Variations
 
 ### Default
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search" role="search">
@@ -42,8 +43,26 @@ jump_menu: true
     </div>
   </form>
 </div>
+```html
+<form action="dest.html">
+  <div class="fsa-search" role="search">
+    <div class="fsa-search__bd">
+      <div class="fsa-search__entry fsa-search__entry--grow">
+        <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-yughsjj6j">Label</label>
+        <input class="fsa-input fsa-search__input" id="UNIQUE-ID-yughsjj6j" type="search" name="search">
+      </div>
+      <div class="fsa-search__submit">
+        <button class="fsa-btn fsa-search__btn" type="submit">
+          <span class="fsa-search__text">Search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+```
 
 ### Default, with Icon
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search" role="search">
@@ -61,7 +80,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search" role="search">
@@ -81,6 +99,7 @@ jump_menu: true
 ```
 
 ### Default, with Select
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search" role="search">
@@ -107,7 +126,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search" role="search">
@@ -136,6 +154,7 @@ jump_menu: true
 ```
 
 ### Small
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search fsa-search--small" role="search">
@@ -153,7 +172,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search fsa-search--small" role="search">
@@ -173,6 +191,7 @@ jump_menu: true
 ```
 
 ### Small, with Icon
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search fsa-search--small" role="search">
@@ -190,7 +209,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search fsa-search--small" role="search">
@@ -210,6 +228,7 @@ jump_menu: true
 ```
 
 ### Small, with Select
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search fsa-search--small" role="search">
@@ -236,7 +255,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search fsa-search--small" role="search">
@@ -265,6 +283,7 @@ jump_menu: true
 ```
 
 ### Large
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search fsa-search--large" role="search">
@@ -282,7 +301,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search fsa-search--large" role="search">
@@ -302,6 +320,7 @@ jump_menu: true
 ```
 
 ### Large, with Icon
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search fsa-search--large" role="search">
@@ -319,7 +338,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search fsa-search--large" role="search">
@@ -339,6 +357,7 @@ jump_menu: true
 ```
 
 ### Large, with Select
+
 <div class="ds-preview">
   <form action="dest.html">
     <div class="fsa-search fsa-search--large" role="search">
@@ -365,7 +384,6 @@ jump_menu: true
     </div>
   </form>
 </div>
-
 ```html
 <form action="dest.html">
   <div class="fsa-search fsa-search--large" role="search">

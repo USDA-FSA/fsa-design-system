@@ -34,86 +34,84 @@ Checkbox components are styled via `class="fsa-checkbox"`. Variations don't exis
 
 ### Default
 
-```html
-<span>
-  <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
-  <label for="lorem-9683783">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
     <label for="lorem-9683783">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-checkbox" id="lorem-9683783" type="checkbox" name="lorem-9683783" value="lorem-9683783">
+  <label for="lorem-9683783">Label</label>
+</span>
+```
 
 ### Checked
 
-```html
-<span>
-  <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
-  <label for="lorem-857">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
     <label for="lorem-857">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-checkbox" checked="checked" id="lorem-857" type="checkbox" name="lorem-857" value="lorem-857">
+  <label for="lorem-857">Label</label>
+</span>
+```
 
 ### Disabled
 
-```html
-<span>
-  <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
-  <label for="lorem-978">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
     <label for="lorem-978">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-checkbox" disabled="disabled" id="lorem-978" type="checkbox" name="lorem-978" value="lorem-978">
+  <label for="lorem-978">Label</label>
+</span>
+```
 
 ### Disabled and Checked
 
-```html
-<span>
-  <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
-  <label for="lorem-935200">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
     <label for="lorem-935200">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-checkbox" disabled="disabled" checked="checked" id="lorem-935200" type="checkbox" name="lorem-935200" value="lorem-935200">
+  <label for="lorem-935200">Label</label>
+</span>
+```
 
 ### Indeterminate
 
 You can't make a checkbox indeterminate through HTML, as there is no `indeterminate` attribute for an `input` element. It is a *property* of checkboxes though, modifiable via JavaScript, as has been done in this example:
 
-```html
-<!-- HTML  -->
-<span>
-  <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
-  <label for="checkbox-indeterminate-example">Label</label>
-</span>
-```
-```javascript
-// JavaScript
-var checkbox = document.getElementById("checkbox-indeterminate-example");
-checkbox.indeterminate = true;
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
     <label for="checkbox-indeterminate-example">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
+  <label for="checkbox-indeterminate-example">Label</label>
+</span>
+<script>
+  var checkbox = document.getElementById("checkbox-indeterminate-example");
+  checkbox.indeterminate = true;
+</script>
+```
 
 ## Usage
 

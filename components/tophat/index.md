@@ -6,25 +6,26 @@ intro: "The FSA Header should include the Top Hat component as an indication of 
 jump_menu: true
 ---
 
-<div class="fsa-tophat">
-  <div class="fsa-tophat__bd">
-    <div class="fsa-tophat__primary">
-      <span class="fsa-tophat__agency">
-        <a class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
-          <img role="presentation" class="fsa-tophat__agency-logo" src="{{ site.baseurl }}img/usda-logo--white.svg" alt="">
-          <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
-          <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
-        </a>
-      </span>
-    </div>
-    <div class="fsa-tophat__secondary">
-      <span class="fsa-tophat__subagency">
-        <a class="fsa-tophat__link" href="//fsa.usda.gov" title="Link to FSA homepage">Farm Service Agency</a>
-      </span>
+<div class="ds-preview">
+  <div class="fsa-tophat">
+    <div class="fsa-tophat__bd">
+      <div class="fsa-tophat__primary">
+        <span class="fsa-tophat__agency">
+          <a class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
+            <img role="presentation" class="fsa-tophat__agency-logo" src="{{ site.baseurl }}img/usda-logo--white.svg" alt="">
+            <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
+            <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
+          </a>
+        </span>
+      </div>
+      <div class="fsa-tophat__secondary">
+        <span class="fsa-tophat__subagency">
+          <a class="fsa-tophat__link" href="//fsa.usda.gov" title="Link to FSA homepage">Farm Service Agency</a>
+        </span>
+      </div>
     </div>
   </div>
 </div>
-
 ```html
 <div class="fsa-tophat">
   <div class="fsa-tophat__bd">
