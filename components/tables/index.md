@@ -905,24 +905,28 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 
 
 
-## Responsive Tables
+## Responsive
 
-Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `fsa-table--responsive`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
+Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
 
-<div class="fsa-grid">
-  <div class="fsa-grid__1 fsa-grid__1/2@m">
-    <h3>Default</h3>
-    <figure>
-      <img src="{{ site.baseurl }}img/tables-responsive--default.png" alt="Image of table rendering on small devices">
-      <figcaption><code>fsa-table--responsive</code></figcaption>
-    </figure>
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <div class="docs__bd">
+    <p>
+      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      </span>
+      <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" target="_blank">View in new window</a>
+    </p>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@m">
-    <h3>Horizontal</h3>
-    <figure>
-      <img src="{{ site.baseurl }}img/tables-responsive--horizontal.png" alt="Image of table rendering on small devices">
-      <figcaption><code>fsa-table--responsive fsa-table--responsive-horizontal</code></figcaption>
-    </figure>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_table">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
   </div>
 </div>
 
