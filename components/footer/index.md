@@ -54,10 +54,6 @@ jump_menu: true
   </div>
 </div>
 
-## Variations
-
-The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system for optimal layout.
-
 ```html
 <div class="fsa-footer">
   <div class="fsa-footer__bd">
@@ -106,6 +102,27 @@ The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system
 </div>
 ```
 
+## Responsive
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__footer.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_footer">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__footer.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Usage
 
 ### Use When
@@ -123,7 +140,7 @@ The Global Footer shall use `class="fsa-footer"` paired with the FSA grid system
 Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.
 
 * Maintain the Unordered List and Anchor Link structure of the HTML to allow a User to Tab thru each element of the navigation.
-* If a telephone number is used, follow the specific spacing structure of the `aria-label` provided in the example code. This will ensure proper 508 compliance and allow screen readers to speak the phone number in the appropriate format and cadence. 
+* If a telephone number is used, follow the specific spacing structure of the `aria-label` provided in the example code. This will ensure proper 508 compliance and allow screen readers to speak the phone number in the appropriate format and cadence.
 
 ## General Guidance
 
