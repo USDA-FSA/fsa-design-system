@@ -76,6 +76,7 @@ main {
 .ds-page-title {
 
   margin: 0;
+  outline: 2px solid orangered;
 
   @include breakpoint(L) {
     border-bottom: 1px solid $color-fsa-tertiary-200;

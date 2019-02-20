@@ -9641,6 +9641,7 @@ main:active, main:focus {
 
 .ds-page-title {
   margin: 0;
+  outline: 2px solid orangered;
 }
 
 @media (min-width: 54em) {
@@ -10184,31 +10185,6 @@ main:active, main:focus {
 @media (min-width: 54em) {
   .ds-jump--stuck .ds-jump {
     margin-top: 0;
-  }
-}
-
-.ds-jump__title {
-  display: none;
-}
-
-@media (min-width: 54em) {
-  .ds-jump__title {
-    font-size: 1.7rem;
-    display: block;
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: all ease-in-out .23s;
-  }
-}
-
-@media (min-width: 54em) {
-  .ds-jump--stuck .ds-jump__title {
-    height: auto;
-    margin-bottom: 1em;
-    border-bottom: 1px solid #a6bbd4;
   }
 }
 
