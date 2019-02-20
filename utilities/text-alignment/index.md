@@ -43,14 +43,10 @@ Where `direction` is one of `left`, `center`, or `right`
 
 ## Responsive
 
-<p class="fsa-show@l">Adjust text alignment per media query breakpoint.</p>
-<div class="fsa-hide@l">
-  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
-    <div class="fsa-alert__body">
-      <p class="fsa-alert__text">View this page on a large screen to view complete Responsive Web Design options.</p>
-    </div>
-  </div>
-</div>
+Adjust text alignment per media query breakpoint.
+
+{% include alert.rwd-rendering.html %}
+
 <div class="docs__rwd-demo-block">
   <p>
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">

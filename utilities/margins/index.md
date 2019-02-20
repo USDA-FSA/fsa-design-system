@@ -143,13 +143,8 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 Margins can be adjusted per media query breakpoint.
 
-<div class="fsa-hide@l">
-  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
-    <div class="fsa-alert__body">
-      <p class="fsa-alert__text">View this page on a large screen to view complete Responsive Web Design options.</p>
-    </div>
-  </div>
-</div>
+{% include alert.rwd-rendering.html %}
+
 <div class="docs__rwd-demo-block">
   <p>
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component>

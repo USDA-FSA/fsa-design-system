@@ -271,6 +271,8 @@ Each grid column's proportional width can be adjusted across a range of viewport
   </div>
 </div>
 
+{% include alert.rwd-rendering.html %}
+
 <div class="docs__rwd-demo-block">
   <h3>Demo</h3>
   <p>

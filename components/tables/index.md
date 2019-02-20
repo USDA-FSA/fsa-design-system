@@ -909,6 +909,8 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `fsa-table--responsive`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
 
+{% include alert.rwd-rendering.html %}
+
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@m">
     <h3>Default</h3>

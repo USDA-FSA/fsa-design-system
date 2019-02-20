@@ -29,15 +29,10 @@ Where `size` is one of `0` - `7`
 
 ## Responsive
 
-<p class="fsa-show@l">Text size can be adjusted per media query breakpoint.</p>
+Text size can be adjusted per media query breakpoint.
 
-<div class="fsa-hide@l">
-  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
-    <div class="fsa-alert__body">
-      <p class="fsa-alert__text">View this page on a large screen to view complete Responsive Web Design options.</p>
-    </div>
-  </div>
-</div>
+{% include alert.rwd-rendering.html %}
+
 <div class="docs__rwd-demo-block">
   <p><code>class="fsa-text-size<strong>--[size]@[breakpoint]</strong>"</code>, where <code>size</code> is one of <code>0</code> - <code>7</code>, and <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code></p>
   <p>
