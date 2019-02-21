@@ -9650,8 +9650,17 @@ main:active, main:focus {
     position: sticky;
     top: 0;
     background-color: #f8fafc;
-    padding-top: 1.2rem;
     z-index: 9999;
+    transition: all .23s ease-in-out;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    box-shadow: 0 0 0 0 rgba(73, 68, 64, 0);
+  }
+}
+
+@media (min-width: 54em) {
+  .ds-page-title--stuck {
+    box-shadow: 0 8px 6px -6px rgba(73, 68, 64, 0.2);
   }
 }
 

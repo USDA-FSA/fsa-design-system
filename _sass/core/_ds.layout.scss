@@ -83,8 +83,17 @@ main {
     position: sticky;
     top: 0;
     background-color: $color-fsa-site-bg;
-    padding-top: $size-default;
     z-index: 9999;
+    transition: all .23s ease-in-out;
+    padding-top: $size-default;
+    padding-bottom: $size-default;
+    box-shadow: 0 0 0 0 rgba($color: $color-fsa-tertiary, $alpha: 0);
+  }
+
+  &--stuck {
+    @include breakpoint(L) {
+      box-shadow: 0 8px 6px -6px rgba($color: $color-fsa-tertiary, $alpha: .2);
+    }
   }
 
   &__hd {
