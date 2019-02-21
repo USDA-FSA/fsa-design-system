@@ -4,6 +4,7 @@ parent: "Utilities"
 title: "Visibility"
 intro: "Selectively show or hide elements or blocks at a variety of screen sizes (i.e. Media Query breakpoints)."
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 <div class="fsa-hide@xl">

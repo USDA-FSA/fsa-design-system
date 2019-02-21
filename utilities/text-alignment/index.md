@@ -4,6 +4,7 @@ parent: "Utilities"
 title: "Text Alignment"
 intro: "Selectively align blocks of text."
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 ```html

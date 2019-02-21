@@ -4,6 +4,7 @@ parent: "Utilities"
 title: "Padding"
 intro: "Selectively manipulate padding within an element or component"
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ site.baseurl }}visual-style/size-and-space/).

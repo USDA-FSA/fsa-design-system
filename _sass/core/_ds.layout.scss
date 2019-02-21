@@ -84,7 +84,6 @@ main {
     top: 0;
     background-color: $color-fsa-site-bg;
     z-index: 9999;
-    transition: all .23s ease-in-out;
     padding-top: $size-default;
     padding-bottom: $size-default;
     box-shadow: 0 0 0 0 rgba($color: $color-fsa-tertiary, $alpha: 0);
@@ -92,7 +91,7 @@ main {
 
   &--stuck {
     @include breakpoint(L) {
-      box-shadow: 0 8px 6px -6px rgba($color: $color-fsa-tertiary, $alpha: .2);
+      box-shadow: 0 8px 6px -6px rgba($color: $color-fsa-tertiary, $alpha: .15);
     }
   }
 
@@ -153,7 +152,7 @@ main {
       float: right;
       width: 20%;
       position: sticky;
-      top: ($size-base * 16);
+      top: ($size-base * 18);
 
     }
 

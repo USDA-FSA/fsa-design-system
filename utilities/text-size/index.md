@@ -4,6 +4,7 @@ parent: "Utilities"
 title: "Text Size"
 intro: "Selectively adjust text size."
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 Text Size utility classes follow's the [Visual Style's vertical rythym]({{ site.baseurl }}visual-style/typography/).
