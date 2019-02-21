@@ -9837,6 +9837,9 @@ main:active, main:focus {
 
 .ds-preview + .highlighter-rouge {
   display: none;
+}
+
+.ds-preview + .highlighter-rouge pre {
   max-height: 224px;
   overflow: auto;
 }
@@ -9849,6 +9852,14 @@ main:active, main:focus {
   .highlighter-rouge + .docs__utilities__demo {
     margin-top: -34px;
   }
+}
+
+.ds-clipboard {
+  margin-top: -80px;
+  margin-top: -8rem;
+  text-align: right;
+  padding: 8px;
+  padding: 0.8rem;
 }
 
 .ds-disclaimer {
