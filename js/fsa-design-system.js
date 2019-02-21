@@ -92,6 +92,7 @@ $('body').on('change', '[data-behavior~="toggle-rwd-table"]', function(event) {
 console.log('DocsRWD loaded, its JS is NOT to be used for Production, demo purposes only');1
 
 },{"jquery":17}],3:[function(require,module,exports){
+(function (global){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -103,7 +104,15 @@ console.log('DocsRWD loaded, its JS is NOT to be used for Production, demo purpo
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
 var ClipboardJS = require('../vendor/clipboard.js');
+
+$('pre.highlight')
+  .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" data-behavior="copy-code">Copy</button></div>')
+;
 
 var clipboaryardee = new ClipboardJS('[data-behavior~="copy-code"]', {
   target: function(trigger) {
@@ -124,7 +133,8 @@ clipboaryardee.on('success', function(e) {
 
 console.log('Clipboard Loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../vendor/clipboard.js":15}],4:[function(require,module,exports){
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"../vendor/clipboard.js":15,"jquery":17}],4:[function(require,module,exports){
 (function (global){
 global.jQuery = require('jquery');
 var $ = global.jQuery;

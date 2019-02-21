@@ -9,7 +9,15 @@
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
 var ClipboardJS = require('../vendor/clipboard.js');
+
+$('pre.highlight')
+  .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" data-behavior="copy-code">Copy</button></div>')
+;
 
 var clipboaryardee = new ClipboardJS('[data-behavior~="copy-code"]', {
   target: function(trigger) {

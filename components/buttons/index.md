@@ -21,7 +21,6 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 <button class="fsa-btn fsa-btn--[variation]" type="button">Label</button>
 <a class="fsa-btn fsa-btn--[variation]" href="link.html">Label</a>
 ```
-<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" data-behavior="copy-code">Copy</button></div>
 
 ### Default
 

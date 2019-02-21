@@ -1,8 +1,14 @@
+pre.highlight {
+  position: relative;
+}
+
 .ds-clipboard {
 
-  margin-top: -($size-base * 20);
-  text-align: right;
-  padding: $size-small;
+  pre.highlight & {
+    position: absolute;
+    right: $size-small;
+    top: $size-small;
+  }
 
   &__btn {}
 

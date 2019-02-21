@@ -91,7 +91,7 @@ main {
 
   &--stuck {
     @include breakpoint(L) {
-      box-shadow: 0 8px 6px -6px rgba($color: $color-fsa-tertiary, $alpha: .15);
+      box-shadow: 0 8px 3px -7px rgba($color: $color-fsa-tertiary, $alpha: .15);
     }
   }
 

@@ -9659,7 +9659,7 @@ main:active, main:focus {
 
 @media (min-width: 54em) {
   .ds-page-title--stuck {
-    box-shadow: 0 8px 6px -6px rgba(73, 68, 64, 0.15);
+    box-shadow: 0 8px 3px -7px rgba(73, 68, 64, 0.15);
   }
 }
 
@@ -9854,12 +9854,16 @@ main:active, main:focus {
   }
 }
 
-.ds-clipboard {
-  margin-top: -80px;
-  margin-top: -8rem;
-  text-align: right;
-  padding: 8px;
-  padding: 0.8rem;
+pre.highlight {
+  position: relative;
+}
+
+pre.highlight .ds-clipboard {
+  position: absolute;
+  right: 8px;
+  right: 0.8rem;
+  top: 8px;
+  top: 0.8rem;
 }
 
 .ds-disclaimer {
