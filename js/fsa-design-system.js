@@ -54,7 +54,7 @@ if ($swatchItem.length) { // only run if at least one instance
 
 console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":13}],2:[function(require,module,exports){
+},{"jquery":15}],2:[function(require,module,exports){
 var $ = window.jQuery = require('jquery');
 
 $('body').on('click', '[data-behavior~="toggle-rwd-size"]', function(event) {
@@ -91,7 +91,89 @@ $('body').on('change', '[data-behavior~="toggle-rwd-table"]', function(event) {
 
 console.log('DocsRWD loaded, its JS is NOT to be used for Production, demo purposes only');1
 
-},{"jquery":13}],3:[function(require,module,exports){
+},{"jquery":15}],3:[function(require,module,exports){
+(function (global){
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
+$('body').on('change', '[data-behavior~="toggle-code-display"]', function(event) {
+
+  var $self = $(this);
+  var $targets = $('.ds-preview + .highlighter-rouge');
+
+  $targets.toggleClass('highlighter-rouge--visible');
+
+})
+
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"jquery":15}],4:[function(require,module,exports){
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+// None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
+
+var Helper = require('../utilities/helper');
+
+// ds-page-title
+
+var pageTitle__elements = document.querySelectorAll('.ds-page-title');
+
+function pageTitle__setStyle() {
+
+  // iterate thru each .ds-page-title on page
+  Helper.forEach(pageTitle__elements, function(index, value) {
+
+    var _el = value;
+
+    var _viewportOffset = _el.getBoundingClientRect();
+    var _pageTitlePosition = _viewportOffset.top;
+
+    if (_pageTitlePosition == 0) {
+
+      if(!_el.classList.contains('ds-page-title--stuck')){
+        _el.classList.add('ds-page-title--stuck');
+      }
+
+    } else {
+
+      if(_el.classList.contains('ds-page-title--stuck')){
+        _el.classList.remove('ds-page-title--stuck');
+      }
+    }
+
+  });
+}
+
+// check if SC component exists on page
+if(pageTitle__elements.length){
+
+  window.addEventListener('scroll', function() {
+    pageTitle__setStyle();
+  });
+
+  var steppedControl__modals = document.querySelectorAll('.fsa-modal');
+  Helper.forEach(steppedControl__modals, function(index, value) {
+    var _el = value;
+    _el.addEventListener("scroll", function(){
+      pageTitle__setStyle();
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function(){
+    pageTitle__setStyle();
+  });
+
+  window.addEventListener('resize', function() {
+    pageTitle__setStyle();
+  });
+
+}
+
+console.log('ds-page-title loaded, its JS is NOT to be used for Production, demo purposes only');
+
+},{"../utilities/helper":13}],5:[function(require,module,exports){
 (function (global){
 global.jQuery = require('jquery');
 var $ = global.jQuery;
@@ -104,11 +186,9 @@ function JumpBuild() {
   var $articleBody = $('.ds-article');
   var $articleTitles = $articleBody.find('h2[id]');
   var $jumpTarget = $('#jump-target');
-  var $jumpTitle = $('#article-title').text();
 
   $jumpTarget.html('\
     <div class="ds-jump">\
-      <h2 class="ds-jump__title">' + $jumpTitle + '</h2>\
       <ul class="ds-jump__list">\
         <li class="ds-jump__item ds-jump__item--active"><a class="ds-jump__link" href="#main-content">Overview</a></li>\
       </ul>\
@@ -142,7 +222,7 @@ jQuery(document).ready(function($){
 //module.exports = Jump;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/jquery.OnePageNav.js":12,"jquery":13}],4:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":14,"jquery":15}],6:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -272,7 +352,7 @@ function growl__trapTab(e){
 
 console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":11,"./fsa-whiteout":9}],5:[function(require,module,exports){
+},{"../utilities/helper":13,"./fsa-whiteout":11}],7:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -395,7 +475,7 @@ function modal__trapTab(e){
 
 console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":11,"./fsa-whiteout":9}],6:[function(require,module,exports){
+},{"../utilities/helper":13,"./fsa-whiteout":11}],8:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -487,7 +567,7 @@ selectMulti__setState();
 
 console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":11}],7:[function(require,module,exports){
+},{"../utilities/helper":13}],9:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -545,7 +625,7 @@ Helper.forEach(spinbox__triggers, function (index, value) {
 
 console.log('Spinbox loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":11}],8:[function(require,module,exports){
+},{"../utilities/helper":13}],10:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -606,7 +686,7 @@ if(steppedControl__elements.length){
 
 console.log('SteppedControl loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":11}],9:[function(require,module,exports){
+},{"../utilities/helper":13}],11:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -641,10 +721,12 @@ Helper.forEach(whiteout__dismiss, function (index, value) {
 
 console.log('WhiteoutComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":11}],10:[function(require,module,exports){
+},{"../utilities/helper":13}],12:[function(require,module,exports){
 'use strict';
 
 var Jump = require('./components/ds.jump');
+var TitleBar = require('./components/ds-page-title');
+var CodeToggle = require('./components/ds-code-toggle');
 var Growl = require('./components/fsa-growl');
 var Modal = require('./components/fsa-modal');
 var SelectMulti = require('./components/fsa-select-multi');
@@ -652,7 +734,7 @@ var SteppedControl = require('./components/fsa-stepped-control');
 var Spinbox = require('./components/fsa-spinbox');
 var ColorDocs = require('./components/docs-color');
 var DocsRWD = require('./components/docs-rwd');
-},{"./components/docs-color":1,"./components/docs-rwd":2,"./components/ds.jump":3,"./components/fsa-growl":4,"./components/fsa-modal":5,"./components/fsa-select-multi":6,"./components/fsa-spinbox":7,"./components/fsa-stepped-control":8}],11:[function(require,module,exports){
+},{"./components/docs-color":1,"./components/docs-rwd":2,"./components/ds-code-toggle":3,"./components/ds-page-title":4,"./components/ds.jump":5,"./components/fsa-growl":6,"./components/fsa-modal":7,"./components/fsa-select-multi":8,"./components/fsa-spinbox":9,"./components/fsa-stepped-control":10}],13:[function(require,module,exports){
 
 var Helper = (function () {
 
@@ -756,7 +838,7 @@ var Helper = (function () {
 
 module.exports = Helper;
 
-},{}],12:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -981,7 +1063,7 @@ module.exports = Helper;
 
 })( jQuery, window , document );
 
-},{}],13:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11347,4 +11429,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[10]);
+},{}]},{},[12]);

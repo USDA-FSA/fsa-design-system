@@ -4,6 +4,7 @@ parent: "Visual Style"
 title: "Grid and Layout"
 intro: "A 12-column, responsive grid provides structure for website content."
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 Structure page content with this Grid System. Use a series of containers, rows, and columns to distribute and align content. As a flexible mobile-first grid system (aka Responsive Web Design), it can be adjusted for a variety of viewport widths. For example, it could be 2 columns on a phone while being 4 columns on a desktop.

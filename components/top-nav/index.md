@@ -52,24 +52,6 @@ Global Navigation shall use `class="fsa-nav-global"`.
 
 ### Default
 
-```html
-<nav>
-  <div class="fsa-nav-global">
-    <div class="fsa-nav-global__bd">
-      <ul class="fsa-nav-global__list" aria-label="Primary Navigation">
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
-            <span class="fsa-nav-global__text">Home</span>
-          </a>
-        </li>
-
-        ...
-
-      </ul>
-    </div>
-  </div>
-</nav>
-```
 <div class="ds-preview">
   <div class="fsa-nav-global">
     <div class="fsa-nav-global__bd">
@@ -108,6 +90,24 @@ Global Navigation shall use `class="fsa-nav-global"`.
     </div>
   </div>
 </div>
+```html
+<nav>
+  <div class="fsa-nav-global">
+    <div class="fsa-nav-global__bd">
+      <ul class="fsa-nav-global__list" aria-label="Primary Navigation">
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
+            <span class="fsa-nav-global__text">Home</span>
+          </a>
+        </li>
+
+        ...
+
+      </ul>
+    </div>
+  </div>
+</nav>
+```
 
 ### Sub Menus
 

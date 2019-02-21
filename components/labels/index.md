@@ -16,54 +16,54 @@ Label are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 
 ### Default
 
-```html
-<span class="fsa-label">Default Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label">Default Label</span>
 </div>
+```html
+<span class="fsa-label">Default Label</span>
+```
 
 ### Alert
 
-```html
-<span class="fsa-label fsa-label--alert">Alert Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--alert">Alert Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--alert">Alert Label</span>
+```
 
 ### Warning
 
-```html
-<span class="fsa-label fsa-label--warning">Warning Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--warning">Warning Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--warning">Warning Label</span>
+```
 
 ### Success
 
-```html
-<span class="fsa-label fsa-label--success">Success Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--success">Success Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--success">Success Label</span>
+```
 
 ### Large
 
-```html
-<span class="fsa-label fsa-label--large">Large Default Label</span>
-<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
-<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
-<span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--large">Large Default Label</span>
   <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
   <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
   <span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--large">Large Default Label</span>
+<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
+<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
+<span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
+```
 
 ## Usage
 

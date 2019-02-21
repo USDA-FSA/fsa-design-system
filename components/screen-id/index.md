@@ -6,19 +6,16 @@ intro: "The Screen ID Component shall be used across all FSA applications to bet
 jump_menu: true
 ---
 
-<div class="fsa-screen-id">
-  <div class="fsa-screen-id__bd">
-    <dl class="fsa-screen-id__dl">
-      <dt class="fsa-screen-id__dt">Screen ID</dt>
-      <dd class="fsa-screen-id__dd">XYZ-WEB-007</dd>
-    </dl>
+<div class="ds-preview">
+  <div class="fsa-screen-id">
+    <div class="fsa-screen-id__bd">
+      <dl class="fsa-screen-id__dl">
+        <dt class="fsa-screen-id__dt">Screen ID</dt>
+        <dd class="fsa-screen-id__dd">XYZ-WEB-007</dd>
+      </dl>
+    </div>
   </div>
 </div>
-
-## Variations
-
-The Screen ID shall use the following `class="fsa-screen-id"`.
-
 ```html
 <div class="fsa-screen-id">
   <div class="fsa-screen-id__bd">

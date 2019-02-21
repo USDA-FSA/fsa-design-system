@@ -6,26 +6,27 @@ intro: "The FSA Application Header component provides a prominent way to display
 jump_menu: true
 ---
 
-<div class="fsa-header-app">
-  <div class="fsa-header-app__bd">
-    <div class="fsa-header-app__primary">
-      <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
-        <span class="fsa-header-app__app-name">
-          <abbr class="fsa-header-app__app-abbr" title="[Spell out the acronym]">[abbr]</abbr>
-          <span class="fsa-header-app__app-full">[app name]</span>
-        </span>
-      </a>
-    </div>
-    <div class="fsa-header-app__secondary">
-      <span class="fsa-header-app__profile">
-        <a href="link.html" class="fsa-header-app__profile-link">
-          <span class="fsa-header-app__profile-name" title="[first_name] [last_name]">[first_name] [last_name]</span>
+<div class="ds-preview">
+  <div class="fsa-header-app">
+    <div class="fsa-header-app__bd">
+      <div class="fsa-header-app__primary">
+        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+          <span class="fsa-header-app__app-name">
+            <abbr class="fsa-header-app__app-abbr" title="[Spell out the acronym]">[abbr]</abbr>
+            <span class="fsa-header-app__app-full">[app name]</span>
+          </span>
         </a>
-      </span>
+      </div>
+      <div class="fsa-header-app__secondary">
+        <span class="fsa-header-app__profile">
+          <a href="link.html" class="fsa-header-app__profile-link">
+            <span class="fsa-header-app__profile-name" title="[first_name] [last_name]">[first_name] [last_name]</span>
+          </a>
+        </span>
+      </div>
     </div>
   </div>
 </div>
-
 ```html
 <div class="fsa-header-app">
   <div class="fsa-header-app__bd">

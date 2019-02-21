@@ -498,7 +498,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     </tbody>
   </table>
 </div>
-
 ```html
 <table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
   ...
@@ -571,7 +570,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     </tbody>
   </table>
 </div>
-
 ```html
 <table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
   ...
@@ -903,8 +901,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 </table>
 ```
 
-
-
 ## Responsive
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
@@ -1080,7 +1076,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ### Don't Use
 
-* For layout, use [Grids]({{ site.baseurl }}visual-style/grid/).
+* For layout, use the [Grid System]({{ site.baseurl }}grid-and-layout/).
 * If the amount of content is simple or brief enough, and depending on its context, consider structuring as an [unordered list]({{ site.baseurl }}visual-style/typography/#unordered-list-bullet), [ordered list]({{ site.baseurl }}visual-style/typography/#ordered-list-numbered), or [definition list]({{ site.baseurl }}visual-style/typography/#definition-list).
 
 ## Accessibility

@@ -15,7 +15,13 @@ layout: default
   <div class="ds-l-guide__body">
 
     <article class="ds-article">
-      <h1 class="ds-page-title" id="article-title">{{ page.title }}</h1>
+
+      <div class="ds-page-title">
+        <div class="ds-page-title__hd">
+          <h1 class="ds-page-title__hd-text" id="article-title">{{ page.title }}</h1>
+        </div>
+        <div class="ds-page-title__ft"></div>
+      </div>
 
       {% if page.intro %}
       <p class="fsa-text--lead">{{ page.intro }}</p>

@@ -4,6 +4,7 @@ parent: "Utilities"
 title: "Floats"
 intro: "Selectively adjust floating behavior of elements or components"
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 ## Variations

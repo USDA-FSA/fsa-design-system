@@ -21,14 +21,6 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ### Success
 
-```html
-<div class="fsa-alert fsa-alert--success" role="alert">
-  <div class="fsa-alert__body">
-    <h3 class="fsa-alert__heading">Optional success title</h3>
-    <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
-  </div>
-</div>
-```
 <div class="ds-preview">
   <div class="fsa-alert fsa-alert--success" role="alert">
     <div class="fsa-alert__body">
@@ -37,17 +29,17 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
     </div>
   </div>
 </div>
-
-### Warning
-
 ```html
-<div class="fsa-alert fsa-alert--warning" role="alert">
+<div class="fsa-alert fsa-alert--success" role="alert">
   <div class="fsa-alert__body">
-    <h3 class="fsa-alert__heading">Optional warning title</h3>
+    <h3 class="fsa-alert__heading">Optional success title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
 ```
+
+### Warning
+
 <div class="ds-preview">
   <div class="fsa-alert fsa-alert--warning" role="alert">
     <div class="fsa-alert__body">
@@ -56,17 +48,17 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
     </div>
   </div>
 </div>
-
-### Error
-
 ```html
-<div class="fsa-alert fsa-alert--error" role="alert">
+<div class="fsa-alert fsa-alert--warning" role="alert">
   <div class="fsa-alert__body">
-    <h3 class="fsa-alert__heading">Optional error title</h3>
+    <h3 class="fsa-alert__heading">Optional warning title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
 ```
+
+### Error
+
 <div class="ds-preview">
   <div class="fsa-alert fsa-alert--error" role="alert">
     <div class="fsa-alert__body">
@@ -75,17 +67,17 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
     </div>
   </div>
 </div>
-
-### Info
-
 ```html
-<div class="fsa-alert fsa-alert--info" role="alert">
+<div class="fsa-alert fsa-alert--error" role="alert">
   <div class="fsa-alert__body">
-    <h3 class="fsa-alert__heading">Optional information title</h3>
+    <h3 class="fsa-alert__heading">Optional error title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
 ```
+
+### Info
+
 <div class="ds-preview">
   <div class="fsa-alert fsa-alert--info" role="alert">
     <div class="fsa-alert__body">
@@ -94,14 +86,17 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
     </div>
   </div>
 </div>
+```html
+<div class="fsa-alert fsa-alert--info" role="alert">
+  <div class="fsa-alert__body">
+    <h3 class="fsa-alert__heading">Optional information title</h3>
+    <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
+  </div>
+</div>
+```
 
 ### No icon
 
-```html
-<div class="fsa-alert fsa-alert--[type] fsa-alert--no-icon" role="alert">
-  ....
-</div>
-```
 <div class="ds-preview">
   <div class="fsa-alert fsa-alert--success fsa-alert--no-icon" role="alert">
     <div class="fsa-alert__body">
@@ -110,7 +105,11 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
     </div>
   </div>
 </div>
-
+```html
+<div class="fsa-alert fsa-alert--[type] fsa-alert--no-icon" role="alert">
+  ....
+</div>
+```
 
 ## Usage
 

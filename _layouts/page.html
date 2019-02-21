@@ -4,12 +4,22 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<h1 class="ds-page-title" id="article-title">
-  {{ page.title }}
-  {% if page.title_label %}
+<div class="ds-page-title">
+  <div class="ds-page-title__hd">
+    <h1 class="ds-page-title__hd-text" id="article-title">{{ page.title }}</h1>
+    {% if page.title_label %}
     <a class="fsa-label fsa-label--warning" href="#javascript-guidance">{{ page.title_label }}</a>
-  {% endif %}
-</h1>
+    {% endif %}
+  </div>
+  <div class="ds-page-title__ft">
+    {% if page.suppress_code_toggle != true %}
+    <div class="ds-page-title__ft-item">
+      <input class="fsa-checkbox" id="ds-doc-code-toggle" type="checkbox" name="toggle-code" data-behavior="toggle-code-display">
+      <label for="ds-doc-code-toggle">Show Code</label>
+    </div>
+    {% endif %}
+  </div>
+</div>
 
 <div class="ds-l-page">
 

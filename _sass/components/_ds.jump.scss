@@ -14,30 +14,30 @@
 
   }
 
-  &__title {
+  // &__title {
 
-    display: none;
+  //   display: none;
 
-    @include breakpoint(L) {
-      @include font-size(3);
-      display: block;
-      height: 0;
-      overflow: hidden;
-      margin: 0;
-      font-weight: $font-bold;
-      text-transform: uppercase;
-      transition: all ease-in-out .23s;
-    }
+  //   @include breakpoint(L) {
+  //     @include font-size(3);
+  //     display: block;
+  //     height: 0;
+  //     overflow: hidden;
+  //     margin: 0;
+  //     font-weight: $font-bold;
+  //     text-transform: uppercase;
+  //     transition: all ease-in-out .23s;
+  //   }
 
-    .ds-jump--stuck & {
-      @include breakpoint(L) {
-        height: auto;
-        margin-bottom: 1em;
-        border-bottom: 1px solid $color-fsa-secondary-200;
-      }
-    }
+  //   .ds-jump--stuck & {
+  //     @include breakpoint(L) {
+  //       height: auto;
+  //       margin-bottom: 1em;
+  //       border-bottom: 1px solid $color-fsa-secondary-200;
+  //     }
+  //   }
 
-  }
+  // }
 
   &__list {
 

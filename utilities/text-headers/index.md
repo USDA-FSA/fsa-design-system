@@ -4,6 +4,7 @@ parent: "Utilities"
 title: "Text Headers"
 intro: "Selectively adjust header elements."
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 While `h1` – `h6` elements have a hierarchical style assigned, sometimes the heading level may vary depending on its context. These CSS Utilities below enable you to maintain the visual hierarchy independent from the structural, semantic HTML heading level.

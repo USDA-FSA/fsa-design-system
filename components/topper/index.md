@@ -13,11 +13,6 @@ jump_menu: true
     </div>
   </div>
 </div>
-
-## Default
-
-The Topper is used by including `class="fsa-topper"`.
-
 ```html
 <div class="fsa-topper">
   <div class="fsa-topper__bd">

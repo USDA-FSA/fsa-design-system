@@ -35,4 +35,21 @@
       margin-top: -34px; // yeah, magic number, wheee!
     }
   }
+
+  + .highlighter-rouge {
+    display: none;
+    max-height: 224px;
+    overflow: auto;
+    &--visible {
+      display: block;
+    }
+  }
+
 }
+
+.highlighter-rouge + .docs__utilities__demo {
+  @include breakpoint(S) {
+    margin-top: -34px; // yeah, magic number, wheee!
+  }
+}
+

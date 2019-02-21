@@ -57,23 +57,6 @@ title_label: 'Requires JavaScript'
 
 The style for Select Multi components always start with `class="fsa-select-multi"`.
 
-```html
-<div class="fsa-select-multi">
-  <ul class="fsa-select-multi__list">
-    <li class="fsa-select-multi__item">
-      <input class="fsa-checkbox fsa-select-multi__check" id="default_one" type="checkbox" name="default_one" value="One" checked="">
-      <label class="fsa-select-multi__label" for="default_one">One</label>
-    </li>
-    <li class="fsa-select-multi__item">
-      <input class="fsa-checkbox fsa-select-multi__check" id="default_two" type="checkbox" name="default_two" value="Two">
-      <label class="fsa-select-multi__label" for="default_two">Two</label>
-    </li>
-
-    ...
-
-  </ul>
-</div>
-```
 <div class="ds-preview">
   <div class="fsa-select-multi">
     <ul class="fsa-select-multi__list">
@@ -116,32 +99,27 @@ The style for Select Multi components always start with `class="fsa-select-multi
     </ul>
   </div>
 </div>
-
-### Select All
-
-Use `data-behavior="select-multi select-multi-all"` to trigger the JavaScript to select or unselect all options.
-
 ```html
-<div class="fsa-select-multi" id="UNIQUE-ID-A04AE3BF636B6CBC">
+<div class="fsa-select-multi">
   <ul class="fsa-select-multi__list">
     <li class="fsa-select-multi__item">
-      <input class="fsa-checkbox fsa-select-multi__check" id="sa-selectall" data-behavior="select-multi select-multi-all" type="checkbox" name="selectall" value="ALL">
-      <label class="fsa-select-multi__label" for="sa-selectall">Select all</label>
+      <input class="fsa-checkbox fsa-select-multi__check" id="default_one" type="checkbox" name="default_one" value="One" checked="">
+      <label class="fsa-select-multi__label" for="default_one">One</label>
     </li>
     <li class="fsa-select-multi__item">
-      <input class="fsa-checkbox fsa-select-multi__check" id="sa-default_one" data-behavior="select-multi" type="checkbox" name="sa-default_one" value="One" checked="">
-      <label class="fsa-select-multi__label" for="sa-default_one">One</label>
-    </li>
-    <li class="fsa-select-multi__item">
-      <input class="fsa-checkbox fsa-select-multi__check" id="sa-default_two" data-behavior="select-multi" type="checkbox" name="sa-default_two" value="Two">
-      <label class="fsa-select-multi__label" for="sa-default_two">Two</label>
+      <input class="fsa-checkbox fsa-select-multi__check" id="default_two" type="checkbox" name="default_two" value="Two">
+      <label class="fsa-select-multi__label" for="default_two">Two</label>
     </li>
 
     ...
 
-    </ul>
-  </div>
+  </ul>
+</div>
 ```
+
+### Select All
+
+Use `data-behavior="select-multi select-multi-all"` to trigger the JavaScript to select or unselect all options.
 
 <div class="ds-preview">
   <div class="fsa-select-multi" id="UNIQUE-ID-A04AE3BF636B6CBC">
@@ -189,7 +167,27 @@ Use `data-behavior="select-multi select-multi-all"` to trigger the JavaScript to
     </ul>
   </div>
 </div>
+```html
+<div class="fsa-select-multi" id="UNIQUE-ID-A04AE3BF636B6CBC">
+  <ul class="fsa-select-multi__list">
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="sa-selectall" data-behavior="select-multi select-multi-all" type="checkbox" name="selectall" value="ALL">
+      <label class="fsa-select-multi__label" for="sa-selectall">Select all</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="sa-default_one" data-behavior="select-multi" type="checkbox" name="sa-default_one" value="One" checked="">
+      <label class="fsa-select-multi__label" for="sa-default_one">One</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="sa-default_two" data-behavior="select-multi" type="checkbox" name="sa-default_two" value="Two">
+      <label class="fsa-select-multi__label" for="sa-default_two">Two</label>
+    </li>
 
+    ...
+
+    </ul>
+  </div>
+```
 
 ## Usage
 
@@ -221,7 +219,7 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ### Summary
 
-The Select Multi uses a series of conditional statements to determine which Select Boxes need to be updated based on their current state, state of their peers, and the state of their parent Select Box. The indeterminate state of a Select Box, is an indication that shows all child Select Boxes are mixed between checked and uncheck. The totality of the children grouping of Select Boxes is not able to be determined. The indeterminate state can only be set via JavaScript. 
+The Select Multi uses a series of conditional statements to determine which Select Boxes need to be updated based on their current state, state of their peers, and the state of their parent Select Box. The indeterminate state of a Select Box, is an indication that shows all child Select Boxes are mixed between checked and uncheck. The totality of the children grouping of Select Boxes is not able to be determined. The indeterminate state can only be set via JavaScript.
 
 ### Select Checked State
 

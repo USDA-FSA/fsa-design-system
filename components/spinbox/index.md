@@ -287,7 +287,6 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 </div>
 ```
 
-
 ## Usage
 
 ### Use When
