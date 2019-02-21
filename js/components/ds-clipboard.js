@@ -25,6 +25,7 @@ var clipboaryardee = new ClipboardJS('[data-behavior~="copy-code"]', {
   }
 });
 
+
 clipboaryardee.on('success', function(e) {
 
   console.info('Action:', e.action);
@@ -35,5 +36,6 @@ clipboaryardee.on('success', function(e) {
   e.trigger.blur();
 
 });
+
 
 console.log('Clipboard Loaded, its JS is NOT to be used for Production, demo purposes only');
