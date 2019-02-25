@@ -4,7 +4,7 @@ parent: "Components"
 title: "Select Multi"
 intro: "The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All."
 jump_menu: true
-title_label: 'Requires JavaScript'
+title_label: 'May require JavaScript'
 ---
 
 <div class="ds-preview">
@@ -49,7 +49,6 @@ title_label: 'Requires JavaScript'
     </ul>
   </div>
 </div>
-
 
 ## Variations
 
@@ -119,7 +118,7 @@ The style for Select Multi components always start with `class="fsa-select-multi
 
 ### Select All
 
-Use `data-behavior="select-multi select-multi-all"` to trigger the JavaScript to select or unselect all options.
+Use `data-behavior="select-multi select-multi-all"` to trigger the JavaScript to select or unselect all options. [*See JavaScript Guidance](#javascript-guidance).
 
 <div class="ds-preview">
   <div class="fsa-select-multi" id="UNIQUE-ID-A04AE3BF636B6CBC">
@@ -189,6 +188,184 @@ Use `data-behavior="select-multi select-multi-all"` to trigger the JavaScript to
   </div>
 ```
 
+## States
+
+### Disabled, all
+
+<div class="ds-preview">
+  <div class="fsa-select-multi fsa-select-multi--disabled" id="UNIQUE-ID-hshsj55035d00">
+    <ul class="fsa-select-multi__list">
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_one" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_one" value="One" checked="">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_one">One</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_two" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_two" value="Two">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_two">Two</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_three" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_three" value="Three" checked="">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_three">Three</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_four" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_four" value="Four" checked="">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_four">Four</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_five" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_five" value="Five">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_five">Five</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_six" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_six" value="Six">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_six">Six</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_seven" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_seven" value="Seven">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_seven">Seven</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_eight" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_eight" value="Eight">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_eight">Eight</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_nine" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_nine" value="Nine">
+        <label class="fsa-select-multi__label" for="sa-default_6az73_nine">Nine</label>
+      </li>
+    </ul>
+  </div>
+</div>
+```html
+<div class="fsa-select-multi fsa-select-multi--disabled" id="UNIQUE-ID-hshsj55035d00">
+  <ul class="fsa-select-multi__list">
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_one" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_one" value="One" checked="">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_one">One</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_two" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_two" value="Two">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_two">Two</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_three" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_three" value="Three" checked="">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_three">Three</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_four" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_four" value="Four" checked="">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_four">Four</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_five" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_five" value="Five">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_five">Five</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_six" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_six" value="Six">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_six">Six</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_seven" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_seven" value="Seven">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_seven">Seven</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_eight" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_eight" value="Eight">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_eight">Eight</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input disabled class="fsa-checkbox fsa-select-multi__check" id="sa-default_6az73_nine" data-behavior="select-multi" type="checkbox" name="sa-default_6az73_nine" value="Nine">
+      <label class="fsa-select-multi__label" for="sa-default_6az73_nine">Nine</label>
+    </li>
+  </ul>
+</div>
+```
+
+### Disabled, some
+
+Items "One" and "Four" below are disabled.
+
+<div class="ds-preview">
+    <div class="fsa-select-multi">
+      <ul class="fsa-select-multi__list">
+        <li class="fsa-select-multi__item">
+          <input disabled class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFone" type="checkbox" name="1default_ASDFone" value="One" checked="">
+          <label class="fsa-select-multi__label" for="1default_ASDFone">One</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFtwo" type="checkbox" name="1default_ASDFtwo" value="Two">
+          <label class="fsa-select-multi__label" for="1default_ASDFtwo">Two</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFthree" type="checkbox" name="1default_ASDFthree" value="Three" checked="">
+          <label class="fsa-select-multi__label" for="1default_ASDFthree">Three</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input disabled class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFfour" type="checkbox" name="1default_ASDFfour" value="Four" checked="">
+          <label class="fsa-select-multi__label" for="1default_ASDFfour">Four</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFfive" type="checkbox" name="1default_ASDFfive" value="Five">
+          <label class="fsa-select-multi__label" for="1default_ASDFfive">Five</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFsix" type="checkbox" name="1default_ASDFsix" value="Six">
+          <label class="fsa-select-multi__label" for="1default_ASDFsix">Six</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFseven" type="checkbox" name="1default_ASDFseven" value="Seven">
+          <label class="fsa-select-multi__label" for="1default_ASDFseven">Seven</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFeight" type="checkbox" name="1default_ASDFeight" value="Eight">
+          <label class="fsa-select-multi__label" for="1default_ASDFeight">Eight</label>
+        </li>
+        <li class="fsa-select-multi__item">
+          <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFnine" type="checkbox" name="1default_ASDFnine" value="Nine">
+          <label class="fsa-select-multi__label" for="1default_ASDFnine">Nine</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  ```html
+  <div class="fsa-select-multi">
+    <ul class="fsa-select-multi__list">
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFone" type="checkbox" name="1default_ASDFone" value="One" checked="">
+        <label class="fsa-select-multi__label" for="1default_ASDFone">One</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFtwo" type="checkbox" name="1default_ASDFtwo" value="Two">
+        <label class="fsa-select-multi__label" for="1default_ASDFtwo">Two</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFthree" type="checkbox" name="1default_ASDFthree" value="Three" checked="">
+        <label class="fsa-select-multi__label" for="1default_ASDFthree">Three</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input disabled class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFfour" type="checkbox" name="1default_ASDFfour" value="Four" checked="">
+        <label class="fsa-select-multi__label" for="1default_ASDFfour">Four</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFfive" type="checkbox" name="1default_ASDFfive" value="Five">
+        <label class="fsa-select-multi__label" for="1default_ASDFfive">Five</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFsix" type="checkbox" name="1default_ASDFsix" value="Six">
+        <label class="fsa-select-multi__label" for="1default_ASDFsix">Six</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFseven" type="checkbox" name="1default_ASDFseven" value="Seven">
+        <label class="fsa-select-multi__label" for="1default_ASDFseven">Seven</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFeight" type="checkbox" name="1default_ASDFeight" value="Eight">
+        <label class="fsa-select-multi__label" for="1default_ASDFeight">Eight</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="1default_ASDFnine" type="checkbox" name="1default_ASDFnine" value="Nine">
+        <label class="fsa-select-multi__label" for="1default_ASDFnine">Nine</label>
+      </li>
+    </ul>
+  </div>
+  ```
+
 ## Usage
 
 ### Use When
@@ -219,7 +396,7 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ### Summary
 
-The Select Multi uses a series of conditional statements to determine which Select Boxes need to be updated based on their current state, state of their peers, and the state of their parent Select Box. The indeterminate state of a Select Box, is an indication that shows all child Select Boxes are mixed between checked and uncheck. The totality of the children grouping of Select Boxes is not able to be determined. The indeterminate state can only be set via JavaScript.
+Use of the "Select all" feature uses a series of conditional statements to determine which checkbox items need to be updated based on their current state, the state of their peers, and the state of their direct parent container. The indeterminate state of a checkbox item is an indication that shows all child checkbox items are of a mix of checked and not checked. The totality of the children grouping of checkbox items is considered in this script. The indeterminate state can only be set via JavaScript, as there is no equivalent HTML-based property.
 
 ### Select Checked State
 
