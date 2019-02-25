@@ -37,12 +37,18 @@
   }
 
   + .highlighter-rouge {
+
     display: none;
-    max-height: 224px;
-    overflow: auto;
+
+    pre {
+      max-height: 224px;
+      overflow: auto;
+    }
+
     &--visible {
       display: block;
     }
+
   }
 
 }

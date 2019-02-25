@@ -9650,7 +9650,7 @@ main:active, main:focus {
     position: sticky;
     top: 0;
     background-color: #f8fafc;
-    z-index: 9999;
+    z-index: 1002;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     box-shadow: 0 0 0 0 rgba(73, 68, 64, 0);
@@ -9659,7 +9659,7 @@ main:active, main:focus {
 
 @media (min-width: 54em) {
   .ds-page-title--stuck {
-    box-shadow: 0 8px 6px -6px rgba(73, 68, 64, 0.15);
+    box-shadow: 0 8px 3px -7px rgba(73, 68, 64, 0.15);
   }
 }
 
@@ -9837,6 +9837,9 @@ main:active, main:focus {
 
 .ds-preview + .highlighter-rouge {
   display: none;
+}
+
+.ds-preview + .highlighter-rouge pre {
   max-height: 224px;
   overflow: auto;
 }
@@ -9849,6 +9852,18 @@ main:active, main:focus {
   .highlighter-rouge + .docs__utilities__demo {
     margin-top: -34px;
   }
+}
+
+pre.highlight {
+  position: relative;
+}
+
+pre.highlight .ds-clipboard {
+  position: absolute;
+  right: 8px;
+  right: 0.8rem;
+  top: 8px;
+  top: 0.8rem;
 }
 
 .ds-disclaimer {

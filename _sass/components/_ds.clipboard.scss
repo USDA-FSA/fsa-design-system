@@ -1,0 +1,15 @@
+pre.highlight {
+  position: relative;
+}
+
+.ds-clipboard {
+
+  pre.highlight & {
+    position: absolute;
+    right: $size-small;
+    top: $size-small;
+  }
+
+  &__btn {}
+
+}
