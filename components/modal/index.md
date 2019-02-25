@@ -16,7 +16,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Default
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Open Default Modal</button>
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Trigger Default Modal</button>
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-GGFD36765SSSGH" class="fsa-modal" role="dialog" aria-hidden="true">
@@ -38,7 +38,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Top
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Open Top Modal</button>
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Trigger Top Modal</button>
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
@@ -63,7 +63,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Small
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Open Small Modal</button>
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Trigger Small Modal</button>
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23458CF9J99DIS" class="fsa-modal fsa-modal--small" role="dialog" aria-hidden="true">
@@ -86,7 +86,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Large
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Open Large Modal</button>
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Trigger Large Modal</button>
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23458CF77S77S7" class="fsa-modal fsa-modal--large" role="dialog" aria-hidden="true">
@@ -108,7 +108,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Fullscreen
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Open Fullscreen Modal</button>
+  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Trigger Fullscreen Modal</button>
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23451CF80S77S9" class="fsa-modal fsa-modal--fullscreen" role="dialog" aria-hidden="true">

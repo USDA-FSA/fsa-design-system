@@ -10,23 +10,59 @@ jump_menu: true
 <div class="ds-preview">
   <ul class="fsa-form-list" aria-label="Example display of the 4 checkbox states">
     <li>
-      <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
-      <label for="apple-pie">Apple Pie</label>
+      <span>
+        <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
+        <label for="apple-pie">Apple Pie</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
-      <label for="key-lime-pie">Key Lime Pie</label>
+      <span>
+        <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
+        <label for="key-lime-pie">Key Lime Pie</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
-      <label for="raspberry-pie">Raspberry Pie</label>
+      <span>
+        <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
+        <label for="raspberry-pie">Raspberry Pie</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
-      <label for="moms-apple-pie">Mom's Apple Pie</label>
+      <span>
+        <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
+        <label for="moms-apple-pie">Mom's Apple Pie</label>
+      </span>
     </li>
   </ul>
 </div>
+```html
+<ul class="fsa-form-list" aria-label="Example display of the 4 checkbox states">
+  <li>
+    <span>
+      <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
+      <label for="apple-pie">Apple Pie</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
+      <label for="key-lime-pie">Key Lime Pie</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
+      <label for="raspberry-pie">Raspberry Pie</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
+      <label for="moms-apple-pie">Mom's Apple Pie</label>
+    </span>
+  </li>
+</ul>
+```
 
 ## States
 
@@ -140,11 +176,3 @@ If you customize a checkbox element, ensure they continue to meet the the access
 * Users should be able to tap on or click on either the text `<label>` or the checkbox element itself to toggle an option. Aids accessibility.
 * Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which checkbox.
 * Make sure selections are adequately spaced for touch screens.
-
-<!-- ## Related Resources
-
-* [Lorem](lorem)
-* [Ipsum](ipsum)
-* [Dolor](dolor)
-* [Sit](sit)
-* [Amet](amet) -->

@@ -147,6 +147,8 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 
 ### Customize caption
 
+The `<caption>` element within this table example uses a [Text Header Utility class]({{ site.baseurl }}utilities/text-headers/) to visually present it as a hierarchical header element.
+
 <div class="ds-preview">
   <table class="fsa-table">
   <caption class="fsa-text--h2">[Table caption that looks like an &lt;h2&gt;]</caption>

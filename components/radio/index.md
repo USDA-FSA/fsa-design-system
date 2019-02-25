@@ -34,6 +34,34 @@ jump_menu: true
     </li>
   </ul>
 </div>
+```html
+<ul class="fsa-form-list" aria-label="Example display of 4 radio states">
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-checked" type="radio" name="asdfasdfqewr" value="lorem-checked" checked="">
+      <label for="lorem-checked">Checked</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-unchecked" type="radio" name="asdfasdfqewr" value="lorem-unchecked">
+      <label for="lorem-unchecked">Unchecked</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-disabled" type="radio" name="asdfasdfqewr" value="lorem-disabled" disabled="">
+      <label for="lorem-disabled">Disabled</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-checked-and-disabled" type="radio" name="qweraewr" value="lorem-checked-and-disabled" disabled="" checked="">
+      <label for="lorem-checked-and-disabled">Checked and Disabled</label>
+    </span>
+  </li>
+</ul>
+```
 
 ## States
 
