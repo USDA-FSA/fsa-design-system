@@ -108,6 +108,10 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
+$(document).ready(function(){
+  $('#ds-doc-code-toggle').prop('checked', false);
+});
+
 var ClipboardJS = require('../vendor/clipboard.js');
 
 $('pre.highlight')
