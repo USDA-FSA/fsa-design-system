@@ -115,17 +115,17 @@ $(document).ready(function(){
 var ClipboardJS = require('../vendor/clipboard.js');
 
 $('pre.highlight')
-  .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" title="Copy code to clipboard">Copy</button></div>')
+  .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" title="Copy code to clipboard" data-behavior="copy-code">Copy</button></div>')
 ;
 
-var clipboaryardee = new ClipboardJS('[data-behavior~="copy-code"]', {
+var clipboardardee = new ClipboardJS('[data-behavior~="copy-code"]', {
   target: function(trigger) {
     return trigger.parentElement.previousElementSibling;
   }
 });
 
 
-clipboaryardee.on('success', function(e) {
+clipboardardee.on('success', function(e) {
 
   console.info('Action:', e.action);
   console.info('Text:', e.text);
