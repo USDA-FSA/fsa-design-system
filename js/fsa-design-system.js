@@ -111,7 +111,7 @@ window.$ = $;
 var ClipboardJS = require('../vendor/clipboard.js');
 
 $('pre.highlight')
-  .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" data-behavior="copy-code">Copy</button></div>')
+  .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" title="Copy code to clipboard">Copy</button></div>')
 ;
 
 var clipboaryardee = new ClipboardJS('[data-behavior~="copy-code"]', {
