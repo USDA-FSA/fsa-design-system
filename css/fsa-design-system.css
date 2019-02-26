@@ -9866,6 +9866,32 @@ pre.highlight .ds-clipboard {
   top: 0.8rem;
 }
 
+.ds-clipboard__success {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  position: absolute;
+  right: calc(100% + 0.8rem);
+  top: 4px;
+  top: 0.4rem;
+  animation: clipboardConfirm 2.3s ease-in-out forwards;
+}
+
+@keyframes clipboardConfirm {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  10%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(125%);
+  }
+}
+
 .ds-disclaimer {
   background-color: #1a4b24;
   height: auto;
