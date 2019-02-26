@@ -135,8 +135,12 @@ if (ClipboardJS.isSupported()) {
     e.clearSelection();
     e.trigger.blur();
 
-    // e.trigger.appendChild('<span>Copied to Clipboard!</span>');
     e.trigger.insertAdjacentHTML('afterend', '<span class="ds-clipboard__success" role="alert">Copied to Clipboard</span>');
+
+    setTimeout(function() {
+      var clipboardMsg = e.trigger.nextElementSibling;
+      clipboardMsg.parentNode.removeChild(clipboardMsg);
+    }, 2500);
 
   });
 } else {
