@@ -141,18 +141,20 @@ console.log('Clipboard Loaded, its JS is NOT to be used for Production, demo pur
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"../vendor/clipboard.js":15,"jquery":17}],4:[function(require,module,exports){
-(function (global){
-global.jQuery = require('jquery');
-var $ = global.jQuery;
-window.$ = $;
+var Helper = require('../utilities/helper');
 
-$('body').on('change', '[data-behavior~="toggle-code-display"]', function(event) {
-  $('body').toggleClass('ds-show-da-code');
-})
+var _code_toggle = document.querySelectorAll('[data-behavior~="toggle-code-display"]');
 
+Helper.forEach(_code_toggle, function(index, value) {
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":17}],5:[function(require,module,exports){
+  var _el = value;
+
+  _el.addEventListener('change', function(e){
+    document.body.classList.toggle('ds-show-da-code');
+  }, false);
+
+});
+},{"../utilities/helper":14}],5:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
