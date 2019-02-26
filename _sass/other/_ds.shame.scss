@@ -114,3 +114,15 @@ div.fsa-stepped-tabs__label {
 .docs__rwd-embed--desktop {
   width: 1187px;
 }
+
+.ds-code-toggle {
+
+  padding-right: $size-default;
+  padding-left: $size-default;
+
+  label {
+    margin-right: 0;
+    font-weight: $font-bold;
+  }
+
+}

@@ -45,12 +45,12 @@
       overflow: auto;
     }
 
-    &--visible {
-      display: block;
-    }
-
   }
 
+}
+
+.ds-show-da-code div.highlighter-rouge {
+  display: block;
 }
 
 .highlighter-rouge + .docs__utilities__demo {
