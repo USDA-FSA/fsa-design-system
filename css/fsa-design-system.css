@@ -9788,8 +9788,8 @@ main:active, main:focus {
   .ds-article h2[id]:before {
     content: '';
     display: block;
-    height: 8rem;
-    margin: -8rem 0 0;
+    height: 9.2rem;
+    margin: -9.2rem 0 0;
   }
 }
 
