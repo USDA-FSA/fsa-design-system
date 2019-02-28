@@ -7,7 +7,7 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <p><input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text"></p>
+  <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text">
 </div>
 
 ## Variations
@@ -21,63 +21,65 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 ### Default
 
 <div class="ds-preview">
-  <p><input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder">
 </div>
 ```html
-<p><input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder"></p>
+<input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder">
 ```
 
 ### Full-width
 
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
 </div>
 ```html
-<p><input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder"></p>
+<input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
 ```
 
 ### Small
 
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder">
 </div>
 ```html
-<p><input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder"></p>
+<input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder">
 ```
 
 ### Large
 
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 </div>
 ```html
-<p><input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder"></p>
+<input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 ```
 
-### Response: Error
+### Error
 
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--error" type="text" name="7id" value="Text"></p>
+  <input class="fsa-input fsa-input--error" type="text" name="7id" value="Text">
 </div>
 ```html
-<p><input class="fsa-input fsa-input--error" type="text" name="7id" value="Text"></p>
+<input class="fsa-input fsa-input--error" type="text" name="7id" value="Text">
 ```
 
-### Response: Positive
+### Positive
 
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text"></p>
+  <input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
 </div>
 ```html
-<p><input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text"></p>
+<input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
 ```
+
+## States
 
 ### Disabled
 
 Disabled fields do not have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
 
 <div class="ds-preview">
-  <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
+  <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
 </div>
 ```html
 <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
@@ -88,10 +90,10 @@ Disabled fields do not have a `class="fsa-input--[variation]"`, instead using th
 Readonly fields do not have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
 
 <div class="ds-preview">
-  <p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
+  <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
 </div>
 ```html
-<p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
+<input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
 ```
 
 ## Usage
