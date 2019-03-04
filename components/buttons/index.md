@@ -112,12 +112,11 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 
 ### Use When
 
-Use buttons for the most important actions you want users to take on your site, such as "Download," "Sign up," or "Log out."
+* Triggering invokes an action or behavior, such as submitting a form or spawning a Modal. Otherwise, use a [text link]({{ site.baseurl }}components/links/).
 
 ### Don't Use
 
-* If you want to lead users between pages of a website. Use [text links]({{ site.baseurl }}components/links/) instead.
-* Less popular or less important actions may be visually styled as links.
+* To navigate between destinations. Use a [text link]({{ site.baseurl }}components/links/) instead.
 
 ## Accessibility
 

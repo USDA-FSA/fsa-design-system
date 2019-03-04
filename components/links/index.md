@@ -15,9 +15,19 @@ jump_menu: true
 <a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">FSA Homepage</a>
 ```
 
+## Usage
+
+### Use When
+
+* Allowing users to navigate between destinations.
+
+### Don't Use
+
+* To trigger an action or behavior. Use a [Button]({{ site.baseurl }}components/buttons/) instead.
+
 ## Accessibility
 
-* Users must be able to tab to navigate between links.
+* Users must be able to tab (via keyboard) to focus through each link.
 * Users must be able to activate a link when pressing ‘Enter’ on their keyboard.
 * Users must be able to identify links without relying on color alone.
 * Users must be able to activate hover and focus states with both a mouse and a keyboard.
