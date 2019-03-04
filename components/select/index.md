@@ -6,6 +6,8 @@ intro: "Sometimes referred to as a “drop down,” the select element allows us
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select" name="Options">
@@ -128,7 +130,106 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 </p>
 ```
 
-### Response: Error
+### Example: opt-group
+
+`<optgroup>` allows for grouping of multiple `<option>` within a `<select>` element.
+
+<div class="ds-preview">
+  <select class="fsa-select" id="lealtad-de-beisbol" name="lealtad-de-beisbol">
+    <optgroup label="American League West">
+      <option value="Houston Astros">Houston Astros</option>
+      <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+      <option value="Oakland Athletics">Oakland Athletics</option>
+      <option value="Seattle Mariners">Seattle Mariners</option>
+      <option value="Texas Rangers">Texas Rangers</option>
+    </optgroup>
+    <optgroup label="American League East" disabled="" title="Disabled group">
+      <option value="Baltimore Orioles">Baltimore Orioles</option>
+      <option value="Boston Red Sox">Boston Red Sox</option>
+      <option value="New York Yankees">New York Yankees</option>
+      <option value="Tampa Bay Rays">Tampa Bay Rays</option>
+      <option value="Toronto Blue Jays">Toronto Blue Jays</option>
+    </optgroup>
+    <optgroup label="American League Central">
+      <option value="Chicago White Sox">Chicago White Sox</option>
+      <option value="Cleveland Indians">Cleveland Indians</option>
+      <option value="Detroit Tigers">Detroit Tigers</option>
+      <option value="Kansas City Royals">Kansas City Royals</option>
+      <option value="Minnesota Twins">Minnesota Twins</option>
+    </optgroup>
+    <optgroup label="National League East">
+      <option value="Atlanta Braves">Atlanta Braves</option>
+      <option value="Miami Marlins">Miami Marlins</option>
+      <option value="New York Mets">New York Mets</option>
+      <option value="Philadelphia Phillies">Philadelphia Phillies</option>
+      <option value="Washington Nationals">Washington Nationals</option>
+    </optgroup>
+    <optgroup label="National League Central">
+      <option value="Chicago Cubs">Chicago Cubs</option>
+      <option value="Cincinnati Reds">Cincinnati Reds</option>
+      <option value="Milwaukee Brewers">Milwaukee Brewers</option>
+      <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
+      <option value="St. Louis Cardinals">St. Louis Cardinals</option>
+    </optgroup>
+    <optgroup label="National League West">
+      <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
+      <option value="Colorado Rockies">Colorado Rockies</option>
+      <option value="Los Angeles Dodgers" selected="selected">Los Angeles Dodgers</option>
+      <option value="San Diego Padres">San Diego Padres</option>
+      <option value="San Francisco Giants">San Francisco Giants</option>
+    </optgroup>
+  </select>
+</div>
+```html
+<select class="fsa-select" id="lealtad-de-beisbol" name="lealtad-de-beisbol">
+  <optgroup label="American League West">
+    <option value="Houston Astros">Houston Astros</option>
+    <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+    <option value="Oakland Athletics">Oakland Athletics</option>
+    <option value="Seattle Mariners">Seattle Mariners</option>
+    <option value="Texas Rangers">Texas Rangers</option>
+  </optgroup>
+  <optgroup label="American League East" disabled="" title="Disabled group">
+    <option value="Baltimore Orioles">Baltimore Orioles</option>
+    <option value="Boston Red Sox">Boston Red Sox</option>
+    <option value="New York Yankees">New York Yankees</option>
+    <option value="Tampa Bay Rays">Tampa Bay Rays</option>
+    <option value="Toronto Blue Jays">Toronto Blue Jays</option>
+  </optgroup>
+  <optgroup label="American League Central">
+    <option value="Chicago White Sox">Chicago White Sox</option>
+    <option value="Cleveland Indians">Cleveland Indians</option>
+    <option value="Detroit Tigers">Detroit Tigers</option>
+    <option value="Kansas City Royals">Kansas City Royals</option>
+    <option value="Minnesota Twins">Minnesota Twins</option>
+  </optgroup>
+  <optgroup label="National League East">
+    <option value="Atlanta Braves">Atlanta Braves</option>
+    <option value="Miami Marlins">Miami Marlins</option>
+    <option value="New York Mets">New York Mets</option>
+    <option value="Philadelphia Phillies">Philadelphia Phillies</option>
+    <option value="Washington Nationals">Washington Nationals</option>
+  </optgroup>
+  <optgroup label="National League Central">
+    <option value="Chicago Cubs">Chicago Cubs</option>
+    <option value="Cincinnati Reds">Cincinnati Reds</option>
+    <option value="Milwaukee Brewers">Milwaukee Brewers</option>
+    <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
+    <option value="St. Louis Cardinals">St. Louis Cardinals</option>
+  </optgroup>
+  <optgroup label="National League West">
+    <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
+    <option value="Colorado Rockies">Colorado Rockies</option>
+    <option value="Los Angeles Dodgers" selected="selected">Los Angeles Dodgers</option>
+    <option value="San Diego Padres">San Diego Padres</option>
+    <option value="San Francisco Giants">San Francisco Giants</option>
+  </optgroup>
+</select>
+```
+
+## State
+
+### Error
 
 <div class="ds-preview">
   <p>
@@ -152,33 +253,6 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
-
-### Response: Positive
-
-<div class="ds-preview">
-  <p>
-    <select class="fsa-select fsa-select--positive" name="Options gemino">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
-  <select class="fsa-select fsa-select--positive" name="Options gemino">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
-
-## State
 
 ### Disabled
 
