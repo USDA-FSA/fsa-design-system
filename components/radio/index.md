@@ -6,6 +6,8 @@ intro: "Radio buttons allow users to see all available choices at once and selec
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <ul class="fsa-form-list" aria-label="Example display of 4 radio states">
     <li>

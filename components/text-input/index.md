@@ -6,6 +6,8 @@ intro: "Text input fields allow people to enter any combination of letters, numb
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text">
 </div>

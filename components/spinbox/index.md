@@ -7,6 +7,8 @@ jump_menu: true
 title_label: 'Requires JavaScript'
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <div class="fsa-spinbox">
     <div class="fsa-spinbox__number">
