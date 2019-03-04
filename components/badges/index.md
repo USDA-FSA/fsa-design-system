@@ -19,13 +19,23 @@ jump_menu: true
 
 Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 
+* **Read-only**: use a `<span>` element.
+* **Invoke an action**: use a `<button>` element.
+* **Navigate somewhere**: use an `<a>` elment.
+
+```html
+<span class="fsa-badge">1</span>
+<button class="fsa-badge" type="button">1</button>
+<a class="fsa-badge" href="link.html">1</a>
+```
+
 ### Default
 
 <div class="ds-preview">
-  <span class="fsa-badge">1</span> Message
+  <span class="fsa-badge">1</span>
 </div>
 ```html
-<span class="fsa-badge">1</span> Message
+<span class="fsa-badge">1</span>
 ```
 
 ### Alert
