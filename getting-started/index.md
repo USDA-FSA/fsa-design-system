@@ -4,11 +4,12 @@ title: "Getting Started"
 intro: "The Design System's HTML/CSS assets provide the plug-and-play design and code to help you set a new bar for simplicity and consistency across FSA digital products."
 jump_menu: true
 get_started: true
+suppress_code_toggle: true
 ---
 
 The components and style guide of the FSA Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FSA product teams who want to create beautiful, easy-to-use, digitial experiences consistent with the FSA Style.
 
-It was created and maintained by the USA-FSA Office of Architecture, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
+It was created and maintained by the USDA-FSA Office of Architecture, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
 
 ### Release History
 
