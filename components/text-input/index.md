@@ -56,6 +56,8 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 ```
 
+## States
+
 ### Error
 
 <div class="ds-preview">
@@ -73,8 +75,6 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 ```html
 <input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
 ```
-
-## States
 
 ### Disabled
 

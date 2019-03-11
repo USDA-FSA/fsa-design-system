@@ -594,6 +594,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 
 All variations above have error states available by the addition of `fsa-field--error`, and will likely be paired with an `fsa-field__message` to provide clarity to the field's requirements.
 
+Additionally, each **core nested component** may have additional selectors to denote an error state, e.g. `fsa-textarea--error`.
+
 ### Error
 
 <div class="ds-preview">

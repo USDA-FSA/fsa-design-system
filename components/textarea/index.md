@@ -49,6 +49,8 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 <p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
 ```
 
+## States
+
 ### Response: Error
 
 <div class="ds-preview">
