@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Buttons"
-intro: "Use buttons to signal actions."
+intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
 jump_menu: true
 ---
 

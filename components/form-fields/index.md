@@ -20,7 +20,7 @@ The **core nested component** of each variation and example can be one of [Text 
 
 Refer to each of their documentation pages for more complete usage guidelines.
 
-## Variations
+## Variations and Examples
 
 ### Text
 
@@ -90,40 +90,6 @@ Refer to each of their documentation pages for more complete usage guidelines.
 </div>
 ```
 
-### Textarea
-
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
-    <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
-    <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
-  </div>
-</div>
-```html
-<div class="fsa-field">
-  <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
-  <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
-  <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
-</div>
-```
-
-### Textarea, Full Width
-
-<div class="ds-preview">
-  <div class="fsa-field fsa-field--block">
-    <label class="fsa-field__label" for="UNIQUE-ID-yyss88xx22x2x2">Label <span class="fsa-field__label-desc">Required</span></label>
-    <textarea class="fsa-textarea fsa-field__item fsa-field__item--" placeholder="Placeholder" id="UNIQUE-ID-yyss88xx22x2x2" aria-describedby="lorem-yyss88xx22x2x2-help-4" aria-required="true" name="UNIQUE-ID-yyss88xx22x2x2"></textarea>
-    <span class="fsa-field__help" id="lorem-yyss88xx22x2x2-help-4">Instructional message here</span>
-  </div>
-</div>
-```html
-<div class="fsa-field fsa-field--block">
-  <label class="fsa-field__label" for="UNIQUE-ID-yyss88xx22x2x2">Label <span class="fsa-field__label-desc">Required</span></label>
-  <textarea class="fsa-textarea fsa-field__item fsa-field__item--" placeholder="Placeholder" id="UNIQUE-ID-yyss88xx22x2x2" aria-describedby="lorem-yyss88xx22x2x2-help-4" aria-required="true" name="UNIQUE-ID-yyss88xx22x2x2"></textarea>
-  <span class="fsa-field__help" id="lorem-yyss88xx22x2x2-help-4">Instructional message here</span>
-</div>
-```
-
 ### Text, Date Format
 
 Three distinct text fields are the easiest way for users to enter most dates. Use this format for most dates &ndash; particularly memorized dates. A fully interactive and accessible Date Picker component is currently under consideration.
@@ -180,6 +146,41 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
   <span class="fsa-field__help" id="lorem-1234-help-88">For example: 04 28 2017</span>
 </div>
 ```
+
+### Textarea
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
+    <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
+    <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
+  <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
+  <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
+</div>
+```
+
+### Textarea, Full Width
+
+<div class="ds-preview">
+  <div class="fsa-field fsa-field--block">
+    <label class="fsa-field__label" for="UNIQUE-ID-yyss88xx22x2x2">Label <span class="fsa-field__label-desc">Required</span></label>
+    <textarea class="fsa-textarea fsa-field__item fsa-field__item--" placeholder="Placeholder" id="UNIQUE-ID-yyss88xx22x2x2" aria-describedby="lorem-yyss88xx22x2x2-help-4" aria-required="true" name="UNIQUE-ID-yyss88xx22x2x2"></textarea>
+    <span class="fsa-field__help" id="lorem-yyss88xx22x2x2-help-4">Instructional message here</span>
+  </div>
+</div>
+```html
+<div class="fsa-field fsa-field--block">
+  <label class="fsa-field__label" for="UNIQUE-ID-yyss88xx22x2x2">Label <span class="fsa-field__label-desc">Required</span></label>
+  <textarea class="fsa-textarea fsa-field__item fsa-field__item--" placeholder="Placeholder" id="UNIQUE-ID-yyss88xx22x2x2" aria-describedby="lorem-yyss88xx22x2x2-help-4" aria-required="true" name="UNIQUE-ID-yyss88xx22x2x2"></textarea>
+  <span class="fsa-field__help" id="lorem-yyss88xx22x2x2-help-4">Instructional message here</span>
+</div>
+```
+
 
 ### Checkbox List
 
