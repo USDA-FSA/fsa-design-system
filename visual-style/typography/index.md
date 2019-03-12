@@ -86,6 +86,10 @@ Should the Web Font, Source Sans Pro, fail to load for any reason.
 <h6>h6 header</h6>
 ```
 
+### Customizing Heading Size
+
+All `h1`-`h6` elements have a deliberate size assigned to establish a predictable system of hierarchy. Occasionally the heading level may vary depending on its context, [Text Header]({{ site.baseurl }}utilities/#text-headers) utilities are available to override its visual appearance while retaining its semantic meaning.
+
 ## Paragraphs
 
 ### Default
@@ -106,8 +110,11 @@ Should the Web Font, Source Sans Pro, fail to load for any reason.
 </div>
 ```html
 <p class="fsa-text--lead">Lorem ipsum dolor <strong>bold text</strong> dignissim brevitas vindico nisl. <a href="link-to-nowhere.html">Inline link</a> olim aliquip tego ideo, iustum validus regula. Enim conventio praesent, duis hendrerit consequat ingenium neque et saepius suscipere velit. Ideo enim mara facilisis ad, validus abluo eligo odio.</p>
-
 ```
+
+### Customizing Font Size
+
+Most elements and components have a deliberate size assigned to them, Utilities are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
 
 ## Lists
 
