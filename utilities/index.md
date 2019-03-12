@@ -10,6 +10,34 @@ Utilities &ndash; also known as “trumps,” “helper classes,” or “altera
 
 They are most useful when you want to override a default value, in one-off situations, or even to explore design ideas; though be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style.
 
+### Sample use case
+
+An `h2` element has a top margin you'd like to minimize.
+
+```html
+<!-- Before  -->
+<h2>Second level heading</h2>
+```
+<div class="ds-preview">
+  <!-- Before  -->
+  <p>Modi, voluptatibus nostrum itaque cupiditate nemo magnam aliquam fuga harum suscipit architecto alias. Nobis aliquam officia voluptatibus. </p>
+  <h2>Second level heading</h2>
+  <p>Voluptatem cupiditate excepturi quas sequi assumenda?</p>
+</div>
+
+Apply the `fsa-m-t--m` utilty class.
+
+```html
+<!-- After  -->
+<h2 class="fsa-m-t--m">Second level heading</h2>
+```
+<div class="ds-preview">
+  <!-- After  -->
+  <p>Modi, voluptatibus nostrum itaque cupiditate nemo magnam aliquam fuga harum suscipit architecto alias. Nobis aliquam officia voluptatibus. </p>
+  <h2 class="fsa-m-t--m">Second level heading</h2>
+  <p>Voluptatem cupiditate excepturi quas sequi assumenda?</p>
+</div>
+
 ## Margins
 
 <p class="fsa-text--lead">Selectively manipulate margins around an element or component. </p>
