@@ -25,7 +25,7 @@ title: Home
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
       <a class="ds-home-features__link" href="{{ site.baseurl }}grid-and-layout/">
         <h3 class="ds-home-features__title">Grid and Layout</h3>
-        <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_ui_components_2x.png" alt="">
+        <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_grid_2x.png" alt="">
       </a>
       <p class="ds-home-features__blurb">Structure your content with a responsive grid system.</p>
     </div>
