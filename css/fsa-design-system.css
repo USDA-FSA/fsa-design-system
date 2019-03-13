@@ -10315,8 +10315,17 @@ pre.highlight .ds-clipboard {
 }
 
 @media (min-width: 54em) {
+  .ds-jump__item {
+    padding-left: 0.8rem;
+    border-left: 0.4rem solid transparent;
+    transition: border .115s ease-in-out;
+  }
+}
+
+@media (min-width: 54em) {
   .ds-jump__item--active {
     font-weight: 700;
+    border-left-color: #205493;
   }
 }
 
