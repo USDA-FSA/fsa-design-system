@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Control"
-intro: ""
+intro: "Anchor a multi-step process with directional actions, typically paired with <a href=\"../stepped-tabs/\">Stepped Tabs</a>."
 jump_menu: true
 title_label: 'May Require JavaScript'
 ---
