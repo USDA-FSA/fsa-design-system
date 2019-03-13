@@ -9,11 +9,9 @@ function JumpBuild() {
   var $articleBody = $('.ds-article');
   var $articleTitles = $articleBody.find('h2[id]');
   var $jumpTarget = $('#jump-target');
-  var $jumpTitle = $('#article-title').text();
 
   $jumpTarget.html('\
     <div class="ds-jump">\
-      <h2 class="ds-jump__title">' + $jumpTitle + '</h2>\
       <ul class="ds-jump__list">\
         <li class="ds-jump__item ds-jump__item--active"><a class="ds-jump__link" href="#main-content">Overview</a></li>\
       </ul>\

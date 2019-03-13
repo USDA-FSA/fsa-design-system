@@ -31,12 +31,25 @@ All FSA applications shall use a help icon located next to the User name (see be
 
 ## User Profile & Control System
 
-When a User is logged in to an FSA application their Display Name will be shown right justified and next to the Application Help icon. A Dropdown shall be available to control User specific details and actions. The following labels and controls shall always be available within the User Control dropdown:
+When a User is logged in to an FSA application their Display Name shall be displayed at a level complementary to the Application Name.
 
-  * User Role Label(s)
-  * View/Edit Profile Link
-  * Application Sign Out Button
+An **optional Dropdown** may be displayed to reveal further User-specific details and actions, if available and relevant. Example labels and controls to display within the User Control dropdown:
 
-<figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.jpg" alt="Image of FSA User Controls"></a>
-</figure>
+* User Role Label(s)
+* View/Edit Profile Link
+* Application Sign Out Button
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/2@m">
+    <h3>With Dropdown</h3>
+    <figure>
+      <img src="{{ site.baseurl }}img/subcategories/applications/user-control-dropdown.png" alt="Image of FSA User Controls">
+    </figure>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/2@m">
+    <h3>Without Dropdown</h3>
+    <figure>
+      <img src="{{ site.baseurl }}img/subcategories/applications/user-control-no-dropdown.png" alt="Image of FSA User Profile display">
+    </figure>
+  </div>
+</div>

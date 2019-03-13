@@ -19,52 +19,54 @@ jump_menu: true
 
 Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 
-### Default
+* **Read-only**: use a `<span>` element.
+* **Invoke an action**: use a `<button>` element.
+* **Navigate somewhere**: use an `<a>` elment.
 
 ```html
-<span class="fsa-badge">1</span> Message
+<span class="fsa-badge">1</span>
+<button class="fsa-badge" type="button">1</button>
+<a class="fsa-badge" href="link.html">1</a>
 ```
+
+### Default
+
 <div class="ds-preview">
-  <span class="fsa-badge">1</span> Message
+  <span class="fsa-badge">1</span>
 </div>
+```html
+<span class="fsa-badge">1</span>
+```
 
 ### Alert
 
-```html
-<span class="fsa-badge fsa-badge--alert">11</span> Bugs Found
-```
 <div class="ds-preview">
   <span class="fsa-badge fsa-badge--alert">11</span> Bugs Found
 </div>
+```html
+<span class="fsa-badge fsa-badge--alert">11</span> Bugs Found
+```
 
 ### Warning
 
-```html
-<span class="fsa-badge fsa-badge--warning">22</span> Issues Recorded
-```
 <div class="ds-preview">
   <span class="fsa-badge fsa-badge--warning">22</span> Issues Recorded
 </div>
+```html
+<span class="fsa-badge fsa-badge--warning">22</span> Issues Recorded
+```
 
 ### Success
 
-```html
-<span class="fsa-badge fsa-badge--success">197</span> Feature Updates
-```
 <div class="ds-preview">
   <span class="fsa-badge fsa-badge--success">197</span> Feature Updates
 </div>
+```html
+<span class="fsa-badge fsa-badge--success">197</span> Feature Updates
+```
 
 ### Large
 
-```html
-<p>
-  <span class="fsa-badge fsa-badge--large">1</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>
-</p>
-```
 <div class="ds-preview">
   <p>
     <span class="fsa-badge fsa-badge--large">1</span>
@@ -73,18 +75,17 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
     <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>
   </p>
 </div>
+```html
+<p>
+  <span class="fsa-badge fsa-badge--large">1</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>
+</p>
+```
 
 ### Inverse
 
-```html
-<p style="background-color: #666; padding: 12px">
-  <a class="fsa-badge fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
-  <span class="fsa-badge fsa-badge--inverse">1</span>
-  <span class="fsa-badge fsa-badge--inverse">11</span>
-  <span class="fsa-badge fsa-badge--inverse">22</span>
-  <span class="fsa-badge fsa-badge--inverse">197</span>
-</p>
-```
 
 <div class="ds-preview">
   <p style="background-color: #666; padding: 12px">
@@ -95,18 +96,18 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
     <span class="fsa-badge fsa-badge--inverse">197</span>
   </p>
 </div>
+```html
+<p style="background-color: #666; padding: 12px">
+  <a class="fsa-badge fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
+  <span class="fsa-badge fsa-badge--inverse">1</span>
+  <span class="fsa-badge fsa-badge--inverse">11</span>
+  <span class="fsa-badge fsa-badge--inverse">22</span>
+  <span class="fsa-badge fsa-badge--inverse">197</span>
+</p>
+```
 
 ### Inverse & Large
 
-```html
-<p style="background-color: #666; padding: 12px">
-  <a class="fsa-badge fsa-badge--large fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">1</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">11</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">22</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">197</span>
-</p>
-```
 
 <div class="ds-preview">
   <p style="background-color: #666; padding: 12px">
@@ -117,6 +118,15 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
     <span class="fsa-badge fsa-badge--large fsa-badge--inverse">197</span>
   </p>
 </div>
+```html
+<p style="background-color: #666; padding: 12px">
+  <a class="fsa-badge fsa-badge--large fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
+  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">1</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">11</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">22</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">197</span>
+</p>
+```
 
 ## Usage
 

@@ -1,5 +1,6 @@
 // -----------------------------------------------------------------------------
 @import 'lib/fsa-style/fsa-style';
+@import 'lib/fsa-style/fsa-style-docs';
 // -----------------------------------------------------------------------------
 
 @import 'core/ds.layout';
@@ -7,6 +8,7 @@
 @import 'elements/ds.typography';
 
 @import 'components/ds.preview';
+@import 'components/ds.clipboard';
 @import 'components/ds.disclaimer';
 @import 'components/ds.header';
 @import 'components/ds.breadcrumb';

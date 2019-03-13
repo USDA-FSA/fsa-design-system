@@ -6,6 +6,8 @@ intro: "Textareas can accept any combination of letters, numbers, or symbols - t
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <p>
     <textarea class="fsa-textarea" name="Name" placeholder="Placeholder">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
@@ -22,70 +24,72 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 
 ### Default
 
-```html
-<p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Small
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Large
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
+```
+
+## States
 
 ### Response: Error
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Response: Positive
 
-```html
-<p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
+```
 
 ### Disabled
 
 Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using the `disabled` attribute.
 
-```html
-<p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+```
 
 ### Readonly
 
 Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using the `readonly` attribute.
 
-```html
-<p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
-```
 <div class="ds-preview">
   <p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
 </div>
+```html
+<p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+```
 
 ## Usage
 

@@ -36,14 +36,6 @@
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
-    - subtitle: "Grid, Layout, and Responsive Web Design"
-      subhref: "visual-style/grid"
-      img: "img/subcategories/grid.png"
-
-    - subtitle: "CSS Utilities"
-      subhref: "visual-style/utilities"
-      img: "img/subcategories/utilities.png"
-
 - title: "Components"
   href: "components"
   subcategories:
@@ -104,6 +96,10 @@
       subhref: "components/spinbox"
       img: "img/subcategories/spinbox.png"
 
+    - subtitle: "Search"
+      subhref: "components/search"
+      img: "img/subcategories/search.png"
+
     - subtitle: "Stepped Control"
       subhref: "components/stepped-control"
       img: "img/subcategories/stepped-control.png"
@@ -163,6 +159,12 @@
     - subtitle: "Media Objects"
       subhref: "components/media-objects"
       img: "img/subcategories/media-objects.png"
+
+- title: "Grid and Layout"
+  href: "grid-and-layout"
+
+- title: "Utilities"
+  href: "utilities"
 
 - title: "Guides"
   href: "guides"

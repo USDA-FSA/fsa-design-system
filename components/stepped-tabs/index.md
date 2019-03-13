@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Tabs"
-intro: "The Stepped Tabs Component is designed to provide guidance, context, and nagivation to the User while in a stepped process workflow."
+intro: "Provide guidance, context, and nagivation to the User while in a stepped process workflow, typically paired with a <a href=\"../stepped-control/\">Stepped Control</a> component."
 jump_menu: true
 ---
 
@@ -36,6 +36,14 @@ jump_menu: true
     </div>
   </nav>
 </div>
+
+### Step States
+
+Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In the above example:
+
+1. **Step 1**: Completed
+1. **Step 2**: Current
+1. **Step 3** and **"Step 4"**: Incomplete / Upcoming / Future
 
 ## Variations and Examples
 
@@ -230,6 +238,8 @@ jump_menu: true
 ```
 
 ### Actionable: none
+
+Use when user should be **prevented** from using Stepped Tabs as a means of navigation (forward backwards within a process), utilize this variation. Each `fsa-stepped-tabs__label` is a `<span>` instead of an actionable `<a>` or `<button>`.
 
 <div class="ds-preview">
   <div class="fsa-stepped-tabs">

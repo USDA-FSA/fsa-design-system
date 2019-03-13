@@ -14,31 +14,6 @@
 
   }
 
-  &__title {
-
-    display: none;
-
-    @include breakpoint(L) {
-      @include font-size(3);
-      display: block;
-      height: 0;
-      overflow: hidden;
-      margin: 0;
-      font-weight: $font-bold;
-      text-transform: uppercase;
-      transition: all ease-in-out .23s;
-    }
-
-    .ds-jump--stuck & {
-      @include breakpoint(L) {
-        height: auto;
-        margin-bottom: 1em;
-        border-bottom: 1px solid $color-fsa-secondary-200;
-      }
-    }
-
-  }
-
   &__list {
 
     @include reset-ul();
@@ -50,9 +25,16 @@
     @include reset-li();
     margin-bottom: $size-small;
 
+    @include breakpoint(L) {
+      padding-left: $size-small;
+      border-left: $size-base solid transparent;
+      transition: border .115s ease-in-out;
+    }
+
     &--active {
       @include breakpoint(L) {
         font-weight: $font-bold;
+        border-left-color: $color-fsa-secondary;
       }
     }
 

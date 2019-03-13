@@ -4,9 +4,8 @@ parent: "Visual Style"
 title: "Color"
 intro: "A flexible, yet distinctly American palette designed to communicate warmth and trustworthiness while meeting the highest standards of 508 color contrast requirements."
 jump_menu: true
-
+suppress_code_toggle: true
 ---
-
 
 ## Core Palette
 

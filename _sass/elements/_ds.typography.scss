@@ -5,11 +5,13 @@ h2[id] {
     border-bottom: 2px solid $color-fsa-tertiary-300;
 
     &:before {
-      $fudge-amount: $size-extra-large;
-      content: '';
-      display: block;
-      height: $fudge-amount;
-      margin: (-$fudge-amount) 0 0;
+      @include breakpoint(L) {
+        $fudge-amount: ($size-base * 23);
+        content: '';
+        display: block;
+        height: $fudge-amount;
+        margin: (-$fudge-amount) 0 0;
+      }
     }
 
   }

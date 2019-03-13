@@ -7,6 +7,8 @@ jump_menu: true
 title_label: 'Requires JavaScript'
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <div class="fsa-spinbox">
     <div class="fsa-spinbox__number">
@@ -262,6 +264,8 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 </div>
 ```
 
+## States
+
 ### Disabled
 
 <div class="ds-preview">
@@ -287,6 +291,30 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 </div>
 ```
 
+### Readonly
+
+<div class="ds-preview">
+  <div class="fsa-spinbox">
+    <div class="fsa-spinbox__number">
+      <input readonly="readonly" class="fsa-input fsa-spinbox__input" id="lorem-ipsum-amount-77shs93" name="lorem-ipsum-amount-77shs93" type="number" value="10">
+    </div>
+    <div class="fsa-spinbox__actions" aria-hidden="true">
+      <button disabled="disabled" tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+      <button disabled="disabled" tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-spinbox">
+  <div class="fsa-spinbox__number">
+    <input readonly="readonly" class="fsa-input fsa-spinbox__input" id="lorem-ipsum-amount-77shs93" name="lorem-ipsum-amount-77shs93" type="number" value="10">
+  </div>
+  <div class="fsa-spinbox__actions" aria-hidden="true">
+    <button disabled="disabled" tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+    <button disabled="disabled" tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+  </div>
+</div>
+```
 
 ## Usage
 

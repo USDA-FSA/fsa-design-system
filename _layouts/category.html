@@ -4,7 +4,12 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<h1 class="ds-page-title">{{ page.title }}</h1>
+<div class="ds-page-title">
+  <div class="ds-page-title__hd">
+    <h1 class="ds-page-title__hd-text" id="article-title">{{ page.title }}</h1>
+  </div>
+  <div class="ds-page-title__ft"></div>
+</div>
 
 <article class="ds-article">
 

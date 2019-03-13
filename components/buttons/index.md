@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Buttons"
-intro: "Use buttons to signal actions."
+intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
 jump_menu: true
 ---
 
@@ -24,39 +24,39 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 ### Default
 
-```html
-<button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--primary" type="button">Label</button>
+```
 
 ### Secondary
 
-```html
-<button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
+```
 
 ### Flat
 
-```html
-<button class="fsa-btn fsa-btn--flat" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+```
 
 ### Tertiary
 
-```html
-<button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+```
 
 
 ## States
@@ -69,55 +69,54 @@ Each button variation can be modified with one or multiple states:
 
 ### Full-width
 
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--block" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--[variation] fsa-btn--block" type="button">Label</button>
+```
 
 ### Disabled
 
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
-```html
-<button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button>
   <button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button>
   <button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button>
   <button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>
+```
 
 ### Small
 
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--small" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--[variation] fsa-btn--small" type="button">Label</button>
+```
 
 ### Large
 
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--large" type="button">Label</button>
-```
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Label</button>
 </div>
+```html
+<button class="fsa-btn fsa-btn--[variation] fsa-btn--large" type="button">Label</button>
+```
 
 ## Usage
 
 ### Use When
 
-Use buttons for the most important actions you want users to take on your site, such as "Download," "Sign up," or "Log out."
+* Triggering invokes an action or behavior, such as submitting a form or spawning a Modal. Otherwise, use a [text link]({{ site.baseurl }}components/links/).
 
 ### Don't Use
 
-* If you want to lead users between pages of a website. Use [text links]({{ site.baseurl }}components/links/) instead.
-* Less popular or less important actions may be visually styled as links.
+* To navigate between destinations. Use a [text link]({{ site.baseurl }}components/links/) instead.
 
 ## Accessibility
 

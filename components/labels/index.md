@@ -7,63 +7,73 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <span class="fsa-label fsa-label--success">New Content</span> Lorem ipsum dolor sit amet.
+  <span class="fsa-label fsa-label--success">New Content</span>
 </div>
 
 ## Variations
 
-Label are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
+Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
+
+* **Read-only**: use a `<span>` element.
+* **Invoke an action**: use a `<button>` element.
+* **Navigate somewhere**: use an `<a>` elment.
+
+```html
+<span class="fsa-label fsa-label--[variation]">Label</span>
+<button class="fsa-label fsa-label--[variation]" type="button">Label</button>
+<a class="fsa-label fsa-label--[variation]" href="link.html">Label</a>
+```
 
 ### Default
 
-```html
-<span class="fsa-label">Default Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label">Default Label</span>
 </div>
+```html
+<span class="fsa-label">Default Label</span>
+```
 
 ### Alert
 
-```html
-<span class="fsa-label fsa-label--alert">Alert Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--alert">Alert Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--alert">Alert Label</span>
+```
 
 ### Warning
 
-```html
-<span class="fsa-label fsa-label--warning">Warning Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--warning">Warning Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--warning">Warning Label</span>
+```
 
 ### Success
 
-```html
-<span class="fsa-label fsa-label--success">Success Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--success">Success Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--success">Success Label</span>
+```
 
 ### Large
 
-```html
-<span class="fsa-label fsa-label--large">Large Default Label</span>
-<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
-<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
-<span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
-```
 <div class="ds-preview">
   <span class="fsa-label fsa-label--large">Large Default Label</span>
   <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
   <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
   <span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
 </div>
+```html
+<span class="fsa-label fsa-label--large">Large Default Label</span>
+<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
+<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
+<span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
+```
 
 ## Usage
 
