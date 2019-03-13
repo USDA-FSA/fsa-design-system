@@ -12,30 +12,24 @@ They are most useful when you want to override a default value, in one-off situa
 
 ### Sample use case
 
-An `h2` element has a top margin you'd like to minimize.
+An `h2` element has a **top margin** you'd like to minimize.
 
 ```html
 <!-- Before  -->
 <h2>Second level heading</h2>
 ```
-<div class="ds-preview">
-  <!-- Before  -->
-  <p>Modi, voluptatibus nostrum itaque cupiditate nemo magnam aliquam fuga harum suscipit architecto alias. Nobis aliquam officia voluptatibus. </p>
+<div class="docs__utilities__demo">
   <h2>Second level heading</h2>
-  <p>Voluptatem cupiditate excepturi quas sequi assumenda?</p>
 </div>
 
-Apply the `fsa-m-t--m` utilty class.
+Apply the `fsa-m-t--s` utility class.
 
 ```html
 <!-- After  -->
-<h2 class="fsa-m-t--m">Second level heading</h2>
+<h2 class="fsa-m-t--s">Second level heading</h2>
 ```
-<div class="ds-preview">
-  <!-- After  -->
-  <p>Modi, voluptatibus nostrum itaque cupiditate nemo magnam aliquam fuga harum suscipit architecto alias. Nobis aliquam officia voluptatibus. </p>
-  <h2 class="fsa-m-t--m">Second level heading</h2>
-  <p>Voluptatem cupiditate excepturi quas sequi assumenda?</p>
+<div class="docs__utilities__demo">
+  <h2 class="fsa-m-t--s">Second level heading</h2>
 </div>
 
 ## Margins
