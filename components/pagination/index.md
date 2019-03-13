@@ -342,6 +342,27 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 </nav>
 ```
 
+## Responsive
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_pagination" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_pagination" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_pagination" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_pagination" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__pagination.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_pagination">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__pagination.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Usage
 
 ### Use When
@@ -359,7 +380,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 
 * As seen in the variation above, the number of pages within the dataset dictates the variation that should be applied.
 * A maximum total of five numbers should be visible at any given time for desktop screens, which the very first number and last number always being shown.
-* When six or more pages are available, an elipsis (`...`) shall be used to indicate the existence of available pages not shown.
+* When six or more pages are available, an ellipsis (`...`) shall be used to indicate the existence of available pages not shown.
 * When the first page is in view, the first page button shall be selected and the `Previous` button shall be disabled.
 * When the last page is in view, the last page button shall be selected and the `Next` button shall be disabled.
 
@@ -367,5 +388,6 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 
-* Note the use of `aria-` attributes, e.g. `aria-label`, `aria-current`, and `aria-hidden`.
+* `<nav aria-label="Pagination">...</nav>` contains this component as it serves as **navigation**, informing users where they currently are, and where they may navigate to.
+* Note the use of all `aria-` attributes, e.g. `aria-label`, `aria-current`, and `aria-hidden`.
 * The Use of buttons as text link styles instead of anchor tags allows for a larger hit area for selecting the desired page.

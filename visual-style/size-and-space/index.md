@@ -4,6 +4,7 @@ parent: "Visual Style"
 title: "Size and Space"
 intro: "In FSA Applications, it is important to understand the value of size and spacing of elements themselves along with the space around the element as well."
 jump_menu: true
+suppress_code_toggle: true
 ---
 
 <ul class="docs__attr-list docs__attr-list--open">
@@ -81,5 +82,5 @@ One of the best example websites that has always used white space to support the
 
 ## Related Resources
 
-* [Utilities > Margins]({{ site.baseurl }}visual-style/utilities/#margins)
-* [Utilities > Padding]({{ site.baseurl }}visual-style/utilities/#padding)
+* [Utilities > Margins]({{ site.baseurl }}utilities/margins/)
+* [Utilities > Padding]({{ site.baseurl }}utilities/padding/)

@@ -6,6 +6,8 @@ intro: "Radio buttons allow users to see all available choices at once and selec
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <ul class="fsa-form-list" aria-label="Example display of 4 radio states">
     <li>
@@ -34,6 +36,34 @@ jump_menu: true
     </li>
   </ul>
 </div>
+```html
+<ul class="fsa-form-list" aria-label="Example display of 4 radio states">
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-checked" type="radio" name="asdfasdfqewr" value="lorem-checked" checked="">
+      <label for="lorem-checked">Checked</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-unchecked" type="radio" name="asdfasdfqewr" value="lorem-unchecked">
+      <label for="lorem-unchecked">Unchecked</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-disabled" type="radio" name="asdfasdfqewr" value="lorem-disabled" disabled="">
+      <label for="lorem-disabled">Disabled</label>
+    </span>
+  </li>
+  <li>
+    <span>
+      <input class="fsa-radio" id="lorem-checked-and-disabled" type="radio" name="qweraewr" value="lorem-checked-and-disabled" disabled="" checked="">
+      <label for="lorem-checked-and-disabled">Checked and Disabled</label>
+    </span>
+  </li>
+</ul>
+```
 
 ## States
 
@@ -41,63 +71,63 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
 
 ### Default
 
-```html
-<span>
-  <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
-  <label for="lorem-ipsum-9">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
     <label for="lorem-ipsum-9">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-radio" id="lorem-ipsum-9" type="radio" name="lorem-ipsum-9" value="lorem-ipsum-9">
+  <label for="lorem-ipsum-9">Label</label>
+</span>
+```
 
 ### Checked
 
-```html
-<span>
-  <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
-  <label for="lorem-ipsum-6">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
     <label for="lorem-ipsum-6">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-radio" checked="checked" id="lorem-ipsum-6" type="radio" name="lorem-ipsum-6" value="lorem-ipsum-6">
+  <label for="lorem-ipsum-6">Label</label>
+</span>
+```
 
 ### Disabled
 
-```html
-<span>
-  <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
-  <label for="lorem-ipsum-8">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
     <label for="lorem-ipsum-8">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-radio" disabled="disabled" id="lorem-ipsum-8" type="radio" name="lorem-ipsum-8" value="lorem-ipsum-8">
+  <label for="lorem-ipsum-8">Label</label>
+</span>
+```
 
 ### Disabled and Checked
 
-```html
-<span>
-  <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
-  <label for="lorem-ipsum-3">Label</label>
-</span>
-```
 <div class="ds-preview">
   <span>
     <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
     <label for="lorem-ipsum-3">Label</label>
   </span>
 </div>
+```html
+<span>
+  <input class="fsa-radio" checked="checked" disabled="disabled" id="lorem-ipsum-3" type="radio" name="lorem-ipsum-3" value="lorem-ipsum-3">
+  <label for="lorem-ipsum-3">Label</label>
+</span>
+```
 
 ## Usage
 

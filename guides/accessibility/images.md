@@ -26,36 +26,27 @@ Alternatives can be provided via a `caption`, `alt` attribute, `title` attribute
 
 ### Passes
 
-<div class="ds-preview">
-  <img src="{{ site.baseurl }}img/sign.jpg" alt="Sign that reads: Warning do not read this sign">
-</div>
-
 ```html
 <img src="{{ site.baseurl }}img/sign.jpg" alt="Sign that reads: Warning do not read this sign">
 ```
+<div class="ds-preview">
+  <img src="{{ site.baseurl }}img/sign.jpg" alt="Sign that reads: Warning do not read this sign">
+</div>
 
 > **Passes:** Preferred method for providing alternate content.
 
 > **Passes:** Clear `alt` tag with all text included.
 
+```html
+<img src="{{ site.baseurl }}img/sign.jpg" title="Sign that reads: Warning do not read this sign">
+```
 <div class="ds-preview">
   <img src="{{ site.baseurl }}img/sign.jpg" title="Sign that reads: Warning do not read this sign">
 </div>
 
-```html
-<img src="{{ site.baseurl }}img/sign.jpg" title="Sign that reads: Warning do not read this sign">
-```
-
 > **Passes:** Clear `title` attribute with all text included.
 
 > **Passes:** Acceptable, but less compatible with certain AT, defer to `alt` attribute over `title` attribute.
-
-<div class="ds-preview">
-  <figure>
-    <img src="{{site.baseurl}}img/sign.jpg" alt="">
-    <figcaption>Sign that reads: Warning do not read this sign</figcaption>
-  </figure>
-</div>
 
 ```html
 <figure>
@@ -63,6 +54,13 @@ Alternatives can be provided via a `caption`, `alt` attribute, `title` attribute
   <figcaption>Sign that reads: Warning do not read this sign</figcaption>
 </figure>
 ```
+<div class="ds-preview">
+  <figure>
+    <img src="{{site.baseurl}}img/sign.jpg" alt="">
+    <figcaption>Sign that reads: Warning do not read this sign</figcaption>
+  </figure>
+</div>
+
 
 > **Passes:** Information contained in the image is provided on the page, in immediate context.
 
@@ -72,33 +70,30 @@ Alternatives can be provided via a `caption`, `alt` attribute, `title` attribute
 
 ### Incorrect
 
+```html
+<img src="{{ site.baseurl }}img/sign.jpg">
+```
 <div class="ds-preview">
   <img src="{{ site.baseurl }}img/sign.jpg">
 </div>
 
-```html
-<img src="{{ site.baseurl }}img/sign.jpg">
-```
-
 > **Fails:** Image is missing an `alt` attribute and alternative content.
-
-<div class="ds-preview">
-  <img src="{{ site.baseurl }}img/sign.jpg" alt="">
-</div>
 
 ```html
 <img src="{{ site.baseurl }}img/sign.jpg" alt="">
 ```
+<div class="ds-preview">
+  <img src="{{ site.baseurl }}img/sign.jpg" alt="">
+</div>
 
 > **Fails:** `Alt` attribute is missing text from image.
-
-<div class="ds-preview">
-  <img src="{{ site.baseurl }}img/sign.jpg" alt="Image of sign that says: WARNING DO NOT READ THIS SIGN">
-</div>
 
 ```html
 <img src="{{ site.baseurl }}img/sign.jpg" alt="Image of sign that says: WARNING DO NOT READ THIS SIGN">
 ```
+<div class="ds-preview">
+  <img src="{{ site.baseurl }}img/sign.jpg" alt="Image of sign that says: WARNING DO NOT READ THIS SIGN">
+</div>
 
 > **Fails:** Avoid using "Image of" or "Picture of" as the <abbr title="Assistive Technology">AT</abbr> will notify the user that it is an image.
 

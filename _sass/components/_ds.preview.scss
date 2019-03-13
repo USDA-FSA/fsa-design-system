@@ -24,11 +24,38 @@
     }
   }
 
-  .highlighter-rouge + & {
-    margin-top: -32px; // yeah, magic number, wheee!
+  &--overflow-example {
+    overflow: auto;
+    height: 50vh;
+  }
+
+  .highlighter-rouge + &,
+  + .highlighter-rouge {
+    @include breakpoint(S) {
+      margin-top: -34px; // yeah, magic number, wheee!
+    }
   }
 
   + .highlighter-rouge {
-    margin-top: -34px; // even more randomly magical
+
+    display: none;
+
+    pre {
+      max-height: 224px;
+      overflow: auto;
+    }
+
+  }
+
+}
+
+.ds-show-da-code div.highlighter-rouge {
+  display: block;
+}
+
+.highlighter-rouge + .docs__utilities__demo {
+  @include breakpoint(S) {
+    margin-top: -34px; // yeah, magic number, wheee!
   }
 }
+

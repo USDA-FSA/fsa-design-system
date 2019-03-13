@@ -4,7 +4,7 @@ $(document).ready(function(){
     $blink = $('.blink');
   $('#blinkbutton').click(function(){
     if (!blinking){
-      $('#blinkbutton').html('Click to stop blinking');
+      $('#blinkbutton').html('Trigger to stop blinking');
       interval = setInterval(function(){
         $blink.toggle();
       },200);
@@ -13,7 +13,7 @@ $(document).ready(function(){
     else
     {
       clearInterval(interval);
-      $('#blinkbutton').html('Click to see non-compliant flashing');
+      $('#blinkbutton').html('Trigger to see non-compliant flashing');
       $blink.hide();
       blinking = false;
     }

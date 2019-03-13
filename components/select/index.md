@@ -6,6 +6,8 @@ intro: "Sometimes referred to as a “drop down,” the select element allows us
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select" name="Options">
@@ -30,17 +32,6 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 
 ### Default
 
-```html
-<p>
-  <select class="fsa-select" name="Options lorem">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
 <div class="ds-preview">
   <p>
     <select class="fsa-select" name="Options lorem">
@@ -52,12 +43,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Full-width
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--block" name="Options ipsum">
+  <select class="fsa-select" name="Options lorem">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -66,6 +54,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Full-width
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--block" name="Options ipsum">
@@ -77,12 +68,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Small
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--small" name="Options dolor">
+  <select class="fsa-select fsa-select--block" name="Options ipsum">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -91,6 +79,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Small
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--small" name="Options dolor">
@@ -102,12 +93,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Large
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--large" name="Options sit">
+  <select class="fsa-select fsa-select--small" name="Options dolor">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -116,6 +104,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Large
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--large" name="Options sit">
@@ -127,12 +118,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Response: Error
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--error" name="Options amet">
+  <select class="fsa-select fsa-select--large" name="Options sit">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -141,6 +129,108 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
+
+### Example: opt-group
+
+`<optgroup>` allows for grouping of multiple `<option>` within a `<select>` element.
+
+<div class="ds-preview">
+  <select class="fsa-select" id="lealtad-de-beisbol" name="lealtad-de-beisbol">
+    <optgroup label="American League West">
+      <option value="Houston Astros">Houston Astros</option>
+      <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+      <option value="Oakland Athletics">Oakland Athletics</option>
+      <option value="Seattle Mariners">Seattle Mariners</option>
+      <option value="Texas Rangers">Texas Rangers</option>
+    </optgroup>
+    <optgroup label="American League East" disabled="" title="Disabled group">
+      <option value="Baltimore Orioles">Baltimore Orioles</option>
+      <option value="Boston Red Sox">Boston Red Sox</option>
+      <option value="New York Yankees">New York Yankees</option>
+      <option value="Tampa Bay Rays">Tampa Bay Rays</option>
+      <option value="Toronto Blue Jays">Toronto Blue Jays</option>
+    </optgroup>
+    <optgroup label="American League Central">
+      <option value="Chicago White Sox">Chicago White Sox</option>
+      <option value="Cleveland Indians">Cleveland Indians</option>
+      <option value="Detroit Tigers">Detroit Tigers</option>
+      <option value="Kansas City Royals">Kansas City Royals</option>
+      <option value="Minnesota Twins">Minnesota Twins</option>
+    </optgroup>
+    <optgroup label="National League East">
+      <option value="Atlanta Braves">Atlanta Braves</option>
+      <option value="Miami Marlins">Miami Marlins</option>
+      <option value="New York Mets">New York Mets</option>
+      <option value="Philadelphia Phillies">Philadelphia Phillies</option>
+      <option value="Washington Nationals">Washington Nationals</option>
+    </optgroup>
+    <optgroup label="National League Central">
+      <option value="Chicago Cubs">Chicago Cubs</option>
+      <option value="Cincinnati Reds">Cincinnati Reds</option>
+      <option value="Milwaukee Brewers">Milwaukee Brewers</option>
+      <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
+      <option value="St. Louis Cardinals">St. Louis Cardinals</option>
+    </optgroup>
+    <optgroup label="National League West">
+      <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
+      <option value="Colorado Rockies">Colorado Rockies</option>
+      <option value="Los Angeles Dodgers" selected="selected">Los Angeles Dodgers</option>
+      <option value="San Diego Padres">San Diego Padres</option>
+      <option value="San Francisco Giants">San Francisco Giants</option>
+    </optgroup>
+  </select>
+</div>
+```html
+<select class="fsa-select" id="lealtad-de-beisbol" name="lealtad-de-beisbol">
+  <optgroup label="American League West">
+    <option value="Houston Astros">Houston Astros</option>
+    <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+    <option value="Oakland Athletics">Oakland Athletics</option>
+    <option value="Seattle Mariners">Seattle Mariners</option>
+    <option value="Texas Rangers">Texas Rangers</option>
+  </optgroup>
+  <optgroup label="American League East" disabled="" title="Disabled group">
+    <option value="Baltimore Orioles">Baltimore Orioles</option>
+    <option value="Boston Red Sox">Boston Red Sox</option>
+    <option value="New York Yankees">New York Yankees</option>
+    <option value="Tampa Bay Rays">Tampa Bay Rays</option>
+    <option value="Toronto Blue Jays">Toronto Blue Jays</option>
+  </optgroup>
+  <optgroup label="American League Central">
+    <option value="Chicago White Sox">Chicago White Sox</option>
+    <option value="Cleveland Indians">Cleveland Indians</option>
+    <option value="Detroit Tigers">Detroit Tigers</option>
+    <option value="Kansas City Royals">Kansas City Royals</option>
+    <option value="Minnesota Twins">Minnesota Twins</option>
+  </optgroup>
+  <optgroup label="National League East">
+    <option value="Atlanta Braves">Atlanta Braves</option>
+    <option value="Miami Marlins">Miami Marlins</option>
+    <option value="New York Mets">New York Mets</option>
+    <option value="Philadelphia Phillies">Philadelphia Phillies</option>
+    <option value="Washington Nationals">Washington Nationals</option>
+  </optgroup>
+  <optgroup label="National League Central">
+    <option value="Chicago Cubs">Chicago Cubs</option>
+    <option value="Cincinnati Reds">Cincinnati Reds</option>
+    <option value="Milwaukee Brewers">Milwaukee Brewers</option>
+    <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
+    <option value="St. Louis Cardinals">St. Louis Cardinals</option>
+  </optgroup>
+  <optgroup label="National League West">
+    <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
+    <option value="Colorado Rockies">Colorado Rockies</option>
+    <option value="Los Angeles Dodgers" selected="selected">Los Angeles Dodgers</option>
+    <option value="San Diego Padres">San Diego Padres</option>
+    <option value="San Francisco Giants">San Francisco Giants</option>
+  </optgroup>
+</select>
+```
+
+## State
+
+### Error
+
 <div class="ds-preview">
   <p>
     <select class="fsa-select fsa-select--error" name="Options amet">
@@ -152,12 +242,9 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     </select>
   </p>
 </div>
-
-### Response: Positive
-
 ```html
 <p>
-  <select class="fsa-select fsa-select--positive" name="Options gemino">
+  <select class="fsa-select fsa-select--error" name="Options amet">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
     <option value="Option C">Option C</option>
@@ -166,33 +253,11 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
 </p>
 ```
-<div class="ds-preview">
-  <p>
-    <select class="fsa-select fsa-select--positive" name="Options gemino">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
 
 ### Disabled
 
 Disabled select components do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
 
-```html
-<p>
-  <select class="fsa-select" disabled="disabled" name="Options quis">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</p>
-```
 <div class="ds-preview">
   <p>
     <select class="fsa-select" disabled="disabled" name="Options quis">
@@ -204,6 +269,17 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
     </select>
   </p>
 </div>
+```html
+<p>
+  <select class="fsa-select" disabled="disabled" name="Options quis">
+    <option value="Option A" selected="selected">Option A</option>
+    <option value="Option B">Option B</option>
+    <option value="Option C">Option C</option>
+    <option value="Option D">Option D</option>
+    <option value="Option E">Option E</option>
+  </select>
+</p>
+```
 
 ## Usage
 
@@ -217,6 +293,7 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
 * If the list of options is very long. Let users type the same information into a [text input]({{ site.baseurl }}components/text-input/) that suggests possible options instead.
 * If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from the select element. Use [checkboxes]({{ site.baseurl }}components/checkbox/) instead.
 * For site navigation.
+* The `multiple` attribute, use the [Select Multi component]({{ site.baseurl }}components/select-multi/) instead.
 
 ## Accessibility
 

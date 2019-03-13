@@ -6,8 +6,10 @@ intro: "Text input fields allow people to enter any combination of letters, numb
 jump_menu: true
 ---
 
+Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+
 <div class="ds-preview">
-  <p><input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text"></p>
+  <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text">
 </div>
 
 ## Variations
@@ -20,79 +22,81 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 ### Default
 
-```html
-<p><input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder"></p>
-```
 <div class="ds-preview">
-  <p><input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder">
 </div>
+```html
+<input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder">
+```
 
 ### Full-width
 
-```html
-<p><input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder"></p>
-```
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
 </div>
+```html
+<input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
+```
 
 ### Small
 
-```html
-<p><input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder"></p>
-```
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder">
 </div>
+```html
+<input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder">
+```
 
 ### Large
 
-```html
-<p><input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder"></p>
-```
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder"></p>
+  <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 </div>
-
-### Response: Error
-
 ```html
-<p><input class="fsa-input fsa-input--error" type="text" name="7id" value="Text"></p>
+<input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 ```
+
+## States
+
+### Error
+
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--error" type="text" name="7id" value="Text"></p>
+  <input class="fsa-input fsa-input--error" type="text" name="7id" value="Text">
 </div>
-
-### Response: Positive
-
 ```html
-<p><input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text"></p>
+<input class="fsa-input fsa-input--error" type="text" name="7id" value="Text">
 ```
+
+### Positive
+
 <div class="ds-preview">
-  <p><input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text"></p>
+  <input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
 </div>
+```html
+<input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
+```
 
 ### Disabled
 
 Disabled fields do not have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
 
+<div class="ds-preview">
+  <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
+</div>
 ```html
 <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
 ```
-<div class="ds-preview">
-  <p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
-</div>
 
 ### Readonly
 
 Readonly fields do not have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
 
-```html
-<p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
-```
 <div class="ds-preview">
-  <p><input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text"></p>
+  <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
 </div>
+```html
+<input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
+```
 
 ## Usage
 

@@ -147,6 +147,8 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 
 ### Customize caption
 
+The `<caption>` element within this table example uses a [Text Header Utility class]({{ site.baseurl }}utilities/text-headers/) to visually present it as a hierarchical header element.
+
 <div class="ds-preview">
   <table class="fsa-table">
   <caption class="fsa-text--h2">[Table caption that looks like an &lt;h2&gt;]</caption>
@@ -432,24 +434,497 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 </table>
 ```
 
-## Responsive Tables
+### Vertical Align: Middle
 
-Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `fsa-table--responsive`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
+<div class="ds-preview">
+  <table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
+    <thead>
+      <tr>
+        <th>Lorem ipsum dolor sit amet consec tetur</th>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Sitaw</th>
+        <th>Ametg</th>
+        <th>Conse</th>
+        <th>Adipi</th>
+        <th>Accus</th>
+        <th>Omnisi</th>
+        <th>Aliqum</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```html
+<table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
+  ...
+</table>
+```
 
-<div class="fsa-grid">
-  <div class="fsa-grid__1 fsa-grid__1/2@m">
-    <h3>Default</h3>
-    <figure>
-      <img src="{{ site.baseurl }}img/tables-responsive--default.png" alt="Image of table rendering on small devices">
-      <figcaption><code>fsa-table--responsive</code></figcaption>
-    </figure>
+### Vertical Align: Bottom
+
+<div class="ds-preview">
+  <table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
+    <thead>
+      <tr>
+        <th>Lorem ipsum dolor sit amet consec tetur</th>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Sitaw</th>
+        <th>Ametg</th>
+        <th>Conse</th>
+        <th>Adipi</th>
+        <th>Accus</th>
+        <th>Omnisi</th>
+        <th>Aliqum</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio volupt atibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consec tetur</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>Rerum odio voluptatibus eligendi</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```html
+<table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
+  ...
+</table>
+```
+
+### Sticky Header
+<div class="ds-preview--overflow-example">
+  <table class="fsa-table fsa-table--borderless">
+    <thead>
+      <tr>
+        <th class="fsa-table__th--sticky">top header cell</th>
+        <th class="fsa-table__th--sticky">top header cell</th>
+        <th class="fsa-table__th--sticky">top header cell</th>
+        <th class="fsa-table__th--sticky">top header cell</th>
+        <th class="fsa-table__th--sticky">top header cell</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```html
+<table class="fsa-table ...">
+  <thead>
+    <tr>
+      ...
+      <th class="fsa-table__th--sticky">top header cell</th>
+      ...
+    </tr>
+  </thead>
+  <tbody>
+    ...
+  </tbody>
+</table>
+```
+
+## Responsive
+
+Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <div class="docs__bd">
+    <p>
+      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      </span>
+      <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" target="_blank">View in new window</a>
+    </p>
   </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@m">
-    <h3>Horizontal</h3>
-    <figure>
-      <img src="{{ site.baseurl }}img/tables-responsive--horizontal.png" alt="Image of table rendering on small devices">
-      <figcaption><code>fsa-table--responsive fsa-table--responsive-horizontal</code></figcaption>
-    </figure>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_table">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
   </div>
 </div>
 
@@ -603,7 +1078,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ### Don't Use
 
-* For layout, use [Grids]({{ site.baseurl }}visual-style/grid/).
+* For layout, use the [Grid System]({{ site.baseurl }}grid-and-layout/).
 * If the amount of content is simple or brief enough, and depending on its context, consider structuring as an [unordered list]({{ site.baseurl }}visual-style/typography/#unordered-list-bullet), [ordered list]({{ site.baseurl }}visual-style/typography/#ordered-list-numbered), or [definition list]({{ site.baseurl }}visual-style/typography/#definition-list).
 
 ## Accessibility

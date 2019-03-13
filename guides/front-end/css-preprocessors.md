@@ -13,7 +13,7 @@ The FSA Design System utilizes SASS along with a Grunt automated build process. 
 
 ### CSS Preprocessor Code Snippet
 
-```html
+```scss
 .fsa-breadcrumb {
 
   &__list {
