@@ -39,40 +39,6 @@ Refer to each of their documentation pages for more complete usage guidelines.
 </div>
 ```
 
-### Text, Short
-
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem3">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item fsa-field__item--short" id="TheItem3" aria-describedby="lorem-1234-help-3" aria-required="true" name="TheItem3" type="text" value="">
-    <span class="fsa-field__help" id="lorem-1234-help-3">Instructional message here</span>
-  </div>
-</div>
-```html
-<div class="fsa-field">
-  <label class="fsa-field__label" for="TheItem3">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item fsa-field__item--short" id="TheItem3" aria-describedby="lorem-1234-help-3" aria-required="true" name="TheItem3" type="text" value="">
-  <span class="fsa-field__help" id="lorem-1234-help-3">Instructional message here</span>
-</div>
-```
-
-### Text, Medium
-
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem4">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item fsa-field__item--medium" id="TheItem4" aria-describedby="lorem-1234-help-4" aria-required="true" name="TheItem4" type="text" value="">
-    <span class="fsa-field__help" id="lorem-1234-help-4">Instructional message here</span>
-  </div>
-</div>
-```html
-<div class="fsa-field">
-  <label class="fsa-field__label" for="TheItem4">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item fsa-field__item--medium" id="TheItem4" aria-describedby="lorem-1234-help-4" aria-required="true" name="TheItem4" type="text" value="">
-  <span class="fsa-field__help" id="lorem-1234-help-4">Instructional message here</span>
-</div>
-```
-
 ### Text, Full Width
 
 <div class="ds-preview">
