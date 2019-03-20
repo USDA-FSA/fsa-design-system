@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Breadcrumbs"
-intro: "Breadcrumbs are a navigation element used to help orient a User within an application, and enable quick access to a parent level."
+intro: "Breadcrumbs are a secondary navigation element used to help orient a User within an application, and enable quick access to a parent level."
 jump_menu: true
 ---
 
