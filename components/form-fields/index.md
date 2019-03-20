@@ -101,19 +101,19 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
       <div class="fsa-grid__auto">
         <div class="fsa-field__column">
           <label class="fsa-field__help" for="date__month_98">Month</label>
-          <input class="fsa-input fsa-input--block" id="date__month_98" name="date__month_98" type="number" pattern="0?[1-9]|1[012]" min="1" max="12" value="" aria-describedby="lorem-1234-help-88">
+          <input placeholder="mm" class="fsa-input fsa-input--block" id="date__month_98" name="date__month_98" type="number" pattern="0?[1-9]|1[012]" min="1" max="12" value="" aria-describedby="lorem-1234-help-88">
         </div>
       </div>
       <div class="fsa-grid__auto">
         <div class="fsa-field__column">
           <label class="fsa-field__help" for="date__day_98">Day</label>
-          <input class="fsa-input fsa-input--block" id="date__day_98" name="day" type="number" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" min="1" max="31" value="" aria-describedby="lorem-1234-help-88">
+          <input placeholder="dd" class="fsa-input fsa-input--block" id="date__day_98" name="day" type="number" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" min="1" max="31" value="" aria-describedby="lorem-1234-help-88">
         </div>
       </div>
       <div class="fsa-grid__auto">
         <div class="fsa-field__column">
           <label class="fsa-field__help" for="date__year_98">Year</label>
-          <input class="fsa-input fsa-input--block" id="date__year_98" name="year" type="number" pattern="[0-9]{4}" min="1900" max="2050" value="" aria-describedby="lorem-1234-help-88">
+          <input placeholder="yyyy" class="fsa-input fsa-input--block" id="date__year_98" name="year" type="number" pattern="[0-9]{4}" min="1900" max="2050" value="" aria-describedby="lorem-1234-help-88">
         </div>
       </div>
     </div>
@@ -538,20 +538,18 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
   </div>
 </div>
 ```html
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="UNIQUE-ID-spinsa22">Label</label>
-    <div class="fsa-spinbox fsa-field__item">
-      <div class="fsa-spinbox__number">
-        <input class="fsa-input fsa-spinbox__input" type="number" value="10" id="UNIQUE-ID-spinsa22" aria-describedby="UNIQUE-ID-spinsa22-help" name="UNIQUE-ID-spinsa22">
-      </div>
-      <div class="fsa-spinbox__actions" aria-hidden="true">
-        <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
-        <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
-      </div>
+<div class="fsa-field">
+  <label class="fsa-field__label" for="UNIQUE-ID-spinsa22">Label</label>
+  <div class="fsa-spinbox fsa-field__item">
+    <div class="fsa-spinbox__number">
+      <input class="fsa-input fsa-spinbox__input" type="number" value="10" id="UNIQUE-ID-spinsa22" aria-describedby="UNIQUE-ID-spinsa22-help" name="UNIQUE-ID-spinsa22">
     </div>
-    <span class="fsa-field__help" id="UNIQUE-ID-spinsa22-help">Instructional message here</span>
+    <div class="fsa-spinbox__actions" aria-hidden="true">
+      <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+      <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+    </div>
   </div>
+  <span class="fsa-field__help" id="UNIQUE-ID-spinsa22-help">Instructional message here</span>
 </div>
 ```
 
@@ -573,20 +571,18 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
   </div>
 </div>
 ```html
-<div class="ds-preview">
-  <div class="fsa-field fsa-field--block">
-    <label class="fsa-field__label" for="UNIQUE-ID-spinsawsqz">Label</label>
-    <div class="fsa-spinbox fsa-field__item">
-      <div class="fsa-spinbox__number">
-        <input class="fsa-input fsa-spinbox__input" type="number" value="10" id="UNIQUE-ID-spinsawsqz" aria-describedby="UNIQUE-ID-spinsawsqz-help" name="UNIQUE-ID-spinsawsqz">
-      </div>
-      <div class="fsa-spinbox__actions" aria-hidden="true">
-        <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
-        <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
-      </div>
+<div class="fsa-field fsa-field--block">
+  <label class="fsa-field__label" for="UNIQUE-ID-spinsawsqz">Label</label>
+  <div class="fsa-spinbox fsa-field__item">
+    <div class="fsa-spinbox__number">
+      <input class="fsa-input fsa-spinbox__input" type="number" value="10" id="UNIQUE-ID-spinsawsqz" aria-describedby="UNIQUE-ID-spinsawsqz-help" name="UNIQUE-ID-spinsawsqz">
     </div>
-    <span class="fsa-field__help" id="UNIQUE-ID-spinsawsqz-help">Instructional message here</span>
+    <div class="fsa-spinbox__actions" aria-hidden="true">
+      <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+      <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+    </div>
   </div>
+  <span class="fsa-field__help" id="UNIQUE-ID-spinsawsqz-help">Instructional message here</span>
 </div>
 ```
 
