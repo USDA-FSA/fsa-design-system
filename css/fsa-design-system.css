@@ -10156,6 +10156,10 @@ main:active, main:focus {
   text-decoration: none;
 }
 
+.ds-home-features__link:focus {
+  outline: none;
+}
+
 .ds-home-features__link:hover {
   text-decoration: underline;
 }
@@ -10163,6 +10167,10 @@ main:active, main:focus {
 .ds-home-features__title {
   margin-bottom: 0;
   color: inherit;
+}
+
+.ds-home-features__link:focus .ds-home-features__title {
+  outline: 3px solid #009afa;
 }
 
 .ds-home-features__img {
@@ -10552,6 +10560,10 @@ pre.highlight .ds-clipboard {
   text-decoration: none;
 }
 
+.ds-subcat-list__link:focus {
+  outline: 0;
+}
+
 .ds-subcat-list__link:hover {
   text-decoration: underline;
 }
@@ -10568,6 +10580,10 @@ pre.highlight .ds-clipboard {
   font-weight: 700;
   margin-bottom: 4px;
   margin-bottom: 0.4rem;
+}
+
+.ds-subcat-list__link:focus .ds-subcat-list__text {
+  outline: 3px solid #009afa;
 }
 
 .ds-subcat-list__img {
