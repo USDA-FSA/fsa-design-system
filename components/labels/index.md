@@ -75,6 +75,21 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 <span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
 ```
 
+### Actionable
+
+Label styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
+
+<div class="ds-preview">
+  <a class="fsa-label fsa-label--general" href="link.html">Anchor</a>
+  <button class="fsa-label fsa-label--general" type="button">Button</button>
+  <button class="fsa-label fsa-label--general" type="button" disabled="disabled">Disabled Button</button>
+</div>
+```html
+<a class="fsa-label fsa-label--general" href="link.html">Anchor</a>
+<button class="fsa-label fsa-label--general" type="button">Button</button>
+<button class="fsa-label fsa-label--general" type="button" disabled="disabled">Disabled Button</button>
+```
+
 ## Usage
 
 ### Use When
