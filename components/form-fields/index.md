@@ -24,6 +24,8 @@ Refer to each of their documentation pages for more complete usage guidelines.
 
 ### Text
 
+Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
+
 <div class="ds-preview">
   <div class="fsa-field">
     <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
@@ -115,6 +117,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 
 ### Textarea
 
+Using [Textarea]({{ site.baseurl }}components/textarea/) as core component.
+
 <div class="ds-preview">
   <div class="fsa-field">
     <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
@@ -148,6 +152,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 ```
 
 ### Checkbox List
+
+Using [Checkboxes]({{ site.baseurl }}components/checkbox/) as core component.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -190,6 +196,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 ```
 
 ### Radio List
+
+Using [Radio]({{ site.baseurl }}components/radio/) as core component.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -241,6 +249,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 ```
 
 ### Select
+
+Using [Select]({{ site.baseurl }}components/select/) as core component.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -299,6 +309,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 ```
 
 ### Select Multi
+
+Using [Select Multi]({{ site.baseurl }}components/select-multi/) as core component.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -489,6 +501,8 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 ```
 
 ### Spinbox
+
+Using [Spinbox]({{ site.baseurl }}components/spinbox/) as core component.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -944,31 +958,37 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
 
 ## CSS Class Overview
 
-<table class="fsa-table">
+<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
   <thead>
     <th scope="col">Selector</th>
     <th scope="col">Description</th>
+    <th scope="col">Required</th>
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><code>fsa-field__label</code></th>
-      <td>Provide the standard style and position of the label of the form element</td>
+      <th aria-label="Selector" scope="row"><code>fsa-field__label</code></th>
+      <td aria-label="Description">Provide the standard style and position of the label of the form element</td>
+      <td aria-label="Required">Yes</td>
     </tr>
     <tr>
-      <th scope="row"><code>fsa-field__label-desc</code></th>
-      <td>Paired with <code>fsa-field__label</code>, may be used to indicate Required or Optional fields</td>
+      <th aria-label="Selector" scope="row"><code>fsa-field__label-desc</code></th>
+      <td aria-label="Description"><span>Paired with <code>fsa-field__label</code>, may be used to indicate Required or Optional fields, or omitted.</span></td>
+      <td aria-label="Required">No</td>
     </tr>
     <tr>
-      <th scope="row"><code>fsa-field__item</code></th>
-      <td>Provides standardized style and position for form elements</td>
+      <th aria-label="Selector" scope="row"><code>fsa-field__item</code></th>
+      <td aria-label="Description">Provides standardized style and position for form elements</td>
+      <td aria-label="Required">Yes</td>
     </tr>
     <tr>
-      <th scope="row"><code>fsa-field__help</code></th>
-      <td>Provides instructional text in a standardized location</td>
+      <th aria-label="Selector" scope="row"><code>fsa-field__help</code></th>
+      <td aria-label="Description">Provides instructional text in a standardized location</td>
+      <td aria-label="Required">No, though advised</td>
     </tr>
     <tr>
-      <th scope="row"><code>fsa-field__message</code></th>
-      <td>Provides validation and error messaging in standardized location</td>
+      <th aria-label="Selector" scope="row"><code>fsa-field__message</code></th>
+      <td aria-label="Description">Provides validation and error messaging in standardized location</td>
+      <td aria-label="Required">No, though advised</td>
     </tr>
   </tbody>
 </table>
