@@ -31,14 +31,15 @@
       color: $button-download-text;
     }
 
-    &:hover {
-      color: $button-download-text;
-    }
+    // &:hover {
+    //   color: $button-download-text;
+    // }
 
-    &:hover:not([disabled]) {
-      background-color: $button-download-hover;
-    }
+    // &:hover:not([disabled]) {
+    //   background-color: $button-download-hover;
+    // }
 
+    &:hover:not([disabled]),
     &:focus:not([disabled]),
     &:active:not([disabled]) {
       color: $button-download-text;
@@ -65,6 +66,7 @@
         background-color: $getting-started-active-color;
       }
 
+      &:focus:after,
       &:hover:after {
         background-color: $button-download-hover;
       }
