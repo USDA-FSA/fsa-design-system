@@ -147,7 +147,6 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
 </div>
 ```
 
-
 ### Checkbox List
 
 <div class="ds-preview">
@@ -167,6 +166,7 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
         <label for="pumpkin">Pumpkin</label>
       </li>
     </ul>
+    <span class="fsa-field__help" id="lorem-yywqqq8iyxx2x2-help-8">Helpful message here</span>
   </div>
 </div>
 ```html
@@ -212,6 +212,7 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
         <label for="none-radio">None of the above</label>
       </li>
     </ul>
+    <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>
   </div>
 </div>
 ```html
@@ -235,6 +236,7 @@ Three distinct text fields are the easiest way for users to enter most dates. Us
       <label for="none-radio">None of the above</label>
     </li>
   </ul>
+  <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>
 </div>
 ```
 
