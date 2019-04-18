@@ -10,6 +10,8 @@ Utilities &ndash; also known as “trumps,” “helper classes,” or “altera
 
 They are most useful when you want to override a default value, in one-off situations, or even to explore design ideas; though be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style.
 
+Most include **Responsive** options, enabling you to make targeted alterations at different screen sizes. e.g. *"Small padding on small screens, larger padding on bigger screens."*
+
 ### Sample use case
 
 An `h2` element has a **top margin** you'd like to minimize.
@@ -370,9 +372,8 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 <div class="fsa-clearfix docs__utilities__demo">
   <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio harum provident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
 </div>
-
 
 #### Right
 
@@ -381,7 +382,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 ```
 <div class="fsa-clearfix docs__utilities__demo">
   <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio harum provident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
 </div>
 
 #### None
@@ -393,7 +394,7 @@ Effectively an override.
 ```
 <div class="fsa-clearfix docs__utilities__demo">
   <p class="docs__utilities__demo-item fsa-float--left fsa-float--none"><strong>I'm not floating.</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio harum provident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
 </div>
 
 ### Containing Floats
