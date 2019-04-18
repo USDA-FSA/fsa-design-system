@@ -101,6 +101,7 @@ code {
 }
 
 // This isn't broken in fsa-style, but for is with Ruby-based SASS
+// scss-lint:disable QualifyingElement
 span.fsa-stepped-tabs__label,
 div.fsa-stepped-tabs__label {
   cursor: initial;
@@ -109,7 +110,7 @@ div.fsa-stepped-tabs__label {
 // TODO move to fsa-style
 .fsa-grid__demo {
   padding: 0;
-  background-color: rgba(0,0,0,.05);
+  background-color: rgba(0, 0, 0, .05);
 }
 
 // TODO move to fsa-style

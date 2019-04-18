@@ -625,6 +625,23 @@ Using [Spinbox]({{ site.baseurl }}components/spinbox/) as core component.
 </div>
 ```
 
+### Upload File
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="uploadexample02020">Upload image preview</label>
+    <input placeholder="Choosie choose choose something" accept="image/png, image/jpeg, image/gif" multiple class="fsa-input fsa-field__item" id="uploadexample02020" aria-describedby="lorem-1234-02020" aria-required="true" name="uploadexample02020" type="file" value="">
+    <span class="fsa-field__help" id="lorem-1234-02020">Accepted file types: PNG, JPG, GIF</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="uploadexample02020">Upload image preview</label>
+  <input placeholder="Choosie choose choose something" accept="image/png, image/jpeg, image/gif" multiple class="fsa-input fsa-field__item" id="uploadexample02020" aria-describedby="lorem-1234-02020" aria-required="true" name="uploadexample02020" type="file" value="">
+  <span class="fsa-field__help" id="lorem-1234-02020">Accepted file types: PNG, JPG, GIF</span>
+</div>
+```
+
 ## States
 
 All variations above have error states available by the addition of `fsa-field--error`, and will likely be paired with an `fsa-field__message` to provide clarity to the field's requirements.

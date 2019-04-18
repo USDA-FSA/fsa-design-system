@@ -49,10 +49,12 @@
 
 }
 
+// scss-lint:disable QualifyingElement
 .ds-show-da-code div.highlighter-rouge {
   display: block;
 }
 
+// scss-lint:disable SelectorFormat
 .highlighter-rouge + .docs__utilities__demo {
   @include breakpoint(S) {
     margin-top: -34px; // yeah, magic number, wheee!
