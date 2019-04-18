@@ -246,25 +246,25 @@ Using [Radio]({{ site.baseurl }}components/radio/) as core component.
     <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
       <li>
         <span>
-          <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+          <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie-zz99">
           <label for="apple-radio">Apple</label>
         </span>
       </li>
       <li>
         <span>
-          <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+          <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie-zz99">
           <label for="key-lime-radio">Key Lime</label>
         </span>
       </li>
       <li>
         <span>
-          <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+          <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie-zz99">
           <label for="pumpkin-radio">Pumpkin</label>
         </span>
       </li>
       <li>
         <span>
-          <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
+          <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie-zz99" checked>
           <label for="none-radio">None of the above</label>
         </span>
       </li>
@@ -278,25 +278,25 @@ Using [Radio]({{ site.baseurl }}components/radio/) as core component.
   <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
     <li>
       <span>
-        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie-zz99">
         <label for="apple-radio">Apple</label>
       </span>
     </li>
     <li>
       <span>
-        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie-zz99">
         <label for="key-lime-radio">Key Lime</label>
       </span>
     </li>
     <li>
       <span>
-        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie-zz99">
         <label for="pumpkin-radio">Pumpkin</label>
       </span>
     </li>
     <li>
       <span>
-        <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
+        <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie-zz99" checked>
         <label for="none-radio">None of the above</label>
       </span>
     </li>
@@ -639,6 +639,320 @@ Using [Spinbox]({{ site.baseurl }}components/spinbox/) as core component.
   <label class="fsa-field__label" for="uploadexample02020">Upload image preview</label>
   <input placeholder="Choosie choose choose something" accept="image/png, image/jpeg, image/gif" multiple class="fsa-input fsa-field__item" id="uploadexample02020" aria-describedby="lorem-1234-02020" aria-required="true" name="uploadexample02020" type="file" value="">
   <span class="fsa-field__help" id="lorem-1234-02020">Accepted file types: PNG, JPG, GIF</span>
+</div>
+```
+
+### Progressive Disclosure, or "Other"
+
+A UI Pattern for revealing an additional form field upon selection of an "Other" option (though actual label can of course be something other than... um... "other").
+
+#### Radio
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>DEMO:</strong> Choose <em>"Other"</em> from the radio list below.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" id="lorem-radio-field-33aa">Your Favorite Pie</label>
+    <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-33aa">
+      <li>
+        <span>
+          <input class="fsa-radio" id="apple-radio-33aa" type="radio" name="fav-pie">
+          <label for="apple-radio-33aa">Apple</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-radio" id="key-lime-radio-33aa" type="radio" name="fav-pie">
+          <label for="key-lime-radio-33aa">Key Lime</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-radio" id="pumpkin-radio-33aa" type="radio" name="fav-pie">
+          <label for="pumpkin-radio-33aa">Pumpkin</label>
+        </span>
+      </li>
+      <li>
+        <div>
+          <input class="fsa-radio" id="none-radio-33aa" type="radio" name="fav-pie">
+          <label for="none-radio-33aa">Other</label>
+          <div class="fsa-radio__other">
+            <input class="fsa-input fsa-input--block" type="text" name="loremasdfas" value="" placeholder="e.g. Strawberry" aria-label="Other Favorite Pie">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" id="lorem-radio-field-33aa">Your Favorite Pie</label>
+  <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-33aa">
+    <li>
+      <span>
+        <input class="fsa-radio" id="apple-radio-33aa" type="radio" name="fav-pie">
+        <label for="apple-radio-33aa">Apple</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="key-lime-radio-33aa" type="radio" name="fav-pie">
+        <label for="key-lime-radio-33aa">Key Lime</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="pumpkin-radio-33aa" type="radio" name="fav-pie">
+        <label for="pumpkin-radio-33aa">Pumpkin</label>
+      </span>
+    </li>
+    <li>
+      <div>
+        <input class="fsa-radio" id="none-radio-33aa" type="radio" name="fav-pie">
+        <label for="none-radio-33aa">Other</label>
+        <div class="fsa-radio__other">
+          <input class="fsa-input fsa-input--block" type="text" name="loremasdfas" value="" placeholder="e.g. Strawberry" aria-label="Other Favorite Pie">
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+
+#### Checkbox
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>DEMO:</strong> Choose <em>"Other"</em> from the checkbox list below.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" id="unique-id-lorem--eezz">Fruit Pies you like</label>
+    <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--eezz">
+      <li>
+        <input class="fsa-checkbox" id="apple-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="apple-pie_2-eezz" checked="">
+        <label for="apple-pie_2-eezz">Apple</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="key-lime-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="key-lime-pie_2-eezz">
+        <label for="key-lime-pie_2-eezz">Key Lime</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="pumpkin-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="pumpkin-pie_2-eezz" disabled="">
+        <label for="pumpkin-pie_2-eezz">Pumpkin</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="other-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="other-pie_2-eezz">
+        <label for="other-pie_2-eezz">Other</label>
+        <div class="fsa-checkbox__other">
+          <input class="fsa-input fsa-input--block" type="text" name="-eezz-eezz-eezz-eezz" value="" placeholder="e.g. Strawberry" aria-label="Other Fruit Pie you like" id="other-pie_9-eezz">
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" id="unique-id-lorem--eezz">Fruit Pies you like</label>
+  <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--eezz">
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="apple-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="apple-pie_2-eezz" checked="">
+        <label for="apple-pie_2-eezz">Apple</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="key-lime-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="key-lime-pie_2-eezz">
+        <label for="key-lime-pie_2-eezz">Key Lime</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="pumpkin-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="pumpkin-pie_2-eezz" disabled="">
+        <label for="pumpkin-pie_2-eezz">Pumpkin</label>
+      </span>
+    </li>
+    <li>
+      <div>
+        <input class="fsa-checkbox" id="other-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="other-pie_2-eezz">
+        <label for="other-pie_2-eezz">Other</label>
+        <div class="fsa-checkbox__other">
+          <input class="fsa-input fsa-input--block" type="text" name="-eezz-eezz-eezz-eezz" value="" placeholder="e.g. Strawberry" aria-label="Other Fruit Pie you like" id="other-pie_9-eezz">
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+
+#### Checkbox, with `textarea`
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>DEMO:</strong> Choose <em>"Other"</em> from the checkbox list below.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label">Hobbies</label>
+    <ul class="fsa-form-list">
+      <li>
+        <input class="fsa-checkbox" id="hobby-photography" type="checkbox" name="boat-pie_3" value="hobby-photography" checked="">
+        <label for="hobby-photography">Photography</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="hobby-cooking" type="checkbox" name="boat-pie_3" value="hobby-cooking">
+        <label for="hobby-cooking">Cooking</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="hobby-other" type="checkbox" name="boat-pie_3" value="hobby-other">
+        <label for="hobby-other">Other</label>
+        <div class="fsa-checkbox__other">
+          <textarea class="fsa-textarea" name="1324hgxi" placeholder="" aria-label="Other" aria-label="Other Hobbies">Long walks on the beach, surfing, mountain biking, carpentry</textarea>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label">Hobbies</label>
+  <ul class="fsa-form-list">
+    <li>
+      <input class="fsa-checkbox" id="hobby-photography" type="checkbox" name="boat-pie_3" value="hobby-photography" checked="">
+      <label for="hobby-photography">Photography</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="hobby-cooking" type="checkbox" name="boat-pie_3" value="hobby-cooking">
+      <label for="hobby-cooking">Cooking</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="hobby-other" type="checkbox" name="boat-pie_3" value="hobby-other">
+      <label for="hobby-other">Other</label>
+      <div class="fsa-checkbox__other">
+        <textarea class="fsa-textarea" name="1324hgxi" placeholder="" aria-label="Other">Long walks on the beach while sipping poorly brewed Folger's dark roast</textarea>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+
+#### Select
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="lorem-beisbol-993">Team <span class="fsa-field__label-desc">Optional</span></label>
+    <select class="fsa-select fsa-field__item" id="lorem-beisbol-993" name="lorem-beisbol-993">
+      <optgroup label="American League West">
+        <option value="Houston Astros">Houston Astros</option>
+        <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+        <option value="Oakland Athletics">Oakland Athletics</option>
+        <option value="Seattle Mariners">Seattle Mariners</option>
+        <option value="Texas Rangers">Texas Rangers</option>
+      </optgroup>
+      <optgroup label="American League East" disabled="" title="Disabled group">
+        <option value="Baltimore Orioles">Baltimore Orioles</option>
+        <option value="Boston Red Sox">Boston Red Sox</option>
+        <option value="New York Yankees">New York Yankees</option>
+        <option value="Tampa Bay Rays">Tampa Bay Rays</option>
+        <option value="Toronto Blue Jays">Toronto Blue Jays</option>
+      </optgroup>
+      <optgroup label="American League Central">
+        <option value="Chicago White Sox">Chicago White Sox</option>
+        <option value="Cleveland Indians">Cleveland Indians</option>
+        <option value="Detroit Tigers">Detroit Tigers</option>
+        <option value="Kansas City Royals">Kansas City Royals</option>
+        <option value="Minnesota Twins">Minnesota Twins</option>
+      </optgroup>
+      <optgroup label="National League East">
+        <option value="Atlanta Braves">Atlanta Braves</option>
+        <option value="Miami Marlins">Miami Marlins</option>
+        <option value="New York Mets">New York Mets</option>
+        <option value="Philadelphia Phillies">Philadelphia Phillies</option>
+        <option value="Washington Nationals">Washington Nationals</option>
+      </optgroup>
+      <optgroup label="National League Central">
+        <option value="Chicago Cubs">Chicago Cubs</option>
+        <option value="Cincinnati Reds">Cincinnati Reds</option>
+        <option value="Milwaukee Brewers">Milwaukee Brewers</option>
+        <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
+        <option value="St. Louis Cardinals">St. Louis Cardinals</option>
+      </optgroup>
+      <optgroup label="National League West">
+        <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
+        <option value="Colorado Rockies">Colorado Rockies</option>
+        <option value="Los Angeles Dodgers">Los Angeles Dodgers</option>
+        <option value="San Diego Padres">San Diego Padres</option>
+        <option value="San Francisco Giants">San Francisco Giants</option>
+      </optgroup>
+      <option value="other" selected>Other</option>
+    </select>
+    <div class="fsa-select__other">
+      <input class="fsa-input fsa-input--block" type="text" name="asdfasdf" value="Mudville Nine" placeholder="" aria-label="Other team name">
+    </div>
+    <span class="fsa-field__help">Where does your loyalty lie?</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-beisbol-993">Team <span class="fsa-field__label-desc">Optional</span></label>
+  <select class="fsa-select fsa-field__item" id="lorem-beisbol-993" name="lorem-beisbol-993">
+    <optgroup label="American League West">
+      <option value="Houston Astros">Houston Astros</option>
+      <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+      <option value="Oakland Athletics">Oakland Athletics</option>
+      <option value="Seattle Mariners">Seattle Mariners</option>
+      <option value="Texas Rangers">Texas Rangers</option>
+    </optgroup>
+    <optgroup label="American League East" disabled="" title="Disabled group">
+      <option value="Baltimore Orioles">Baltimore Orioles</option>
+      <option value="Boston Red Sox">Boston Red Sox</option>
+      <option value="New York Yankees">New York Yankees</option>
+      <option value="Tampa Bay Rays">Tampa Bay Rays</option>
+      <option value="Toronto Blue Jays">Toronto Blue Jays</option>
+    </optgroup>
+    <optgroup label="American League Central">
+      <option value="Chicago White Sox">Chicago White Sox</option>
+      <option value="Cleveland Indians">Cleveland Indians</option>
+      <option value="Detroit Tigers">Detroit Tigers</option>
+      <option value="Kansas City Royals">Kansas City Royals</option>
+      <option value="Minnesota Twins">Minnesota Twins</option>
+    </optgroup>
+    <optgroup label="National League East">
+      <option value="Atlanta Braves">Atlanta Braves</option>
+      <option value="Miami Marlins">Miami Marlins</option>
+      <option value="New York Mets">New York Mets</option>
+      <option value="Philadelphia Phillies">Philadelphia Phillies</option>
+      <option value="Washington Nationals">Washington Nationals</option>
+    </optgroup>
+    <optgroup label="National League Central">
+      <option value="Chicago Cubs">Chicago Cubs</option>
+      <option value="Cincinnati Reds">Cincinnati Reds</option>
+      <option value="Milwaukee Brewers">Milwaukee Brewers</option>
+      <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
+      <option value="St. Louis Cardinals">St. Louis Cardinals</option>
+    </optgroup>
+    <optgroup label="National League West">
+      <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
+      <option value="Colorado Rockies">Colorado Rockies</option>
+      <option value="Los Angeles Dodgers">Los Angeles Dodgers</option>
+      <option value="San Diego Padres">San Diego Padres</option>
+      <option value="San Francisco Giants">San Francisco Giants</option>
+    </optgroup>
+    <option value="other" selected>Other</option>
+  </select>
+  <div class="fsa-select__other">
+    <input class="fsa-input fsa-input--block" type="text" name="asdfasdf" value="Mudville Nine" placeholder="" aria-label="Other team name">
+  </div>
+  <span class="fsa-field__help">Where does your loyalty lie?</span>
 </div>
 ```
 
