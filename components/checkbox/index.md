@@ -230,4 +230,5 @@ If you customize a checkbox element, ensure they continue to meet the the access
 
 * Users should be able to tap on or click on either the text `<label>` or the checkbox element itself to toggle an option. Aids accessibility.
 * Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which checkbox.
+* Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive promotional email.
 * Make sure selections are adequately spaced for touch screens.
