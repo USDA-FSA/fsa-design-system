@@ -147,11 +147,13 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 
 ### Customize caption
 
-The `<caption>` element within this table example uses a [Text Header Utility class]({{ site.baseurl }}utilities/text-headers/) to visually present it as a hierarchical header element.
+The `<caption>`'s default presentation does not provide a hierarchical context. An `<hN>` element can nested within to provide a stronger heading structure and clear hierarchy while providing stricter access through the `<caption>` element.
 
 <div class="ds-preview">
   <table class="fsa-table">
-  <caption class="fsa-text--h2">[Table caption that looks like an &lt;h2&gt;]</caption>
+    <caption>
+      <h2>[Table caption as an &lt;h2&gt;]</h2>
+    </caption>
     <thead>
       <tr>
         <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
@@ -196,7 +198,9 @@ The `<caption>` element within this table example uses a [Text Header Utility cl
 </div>
 ```html
 <table class="fsa-table">
-  <caption class="fsa-text--h2">[Table caption that looks like an &lt;h2&gt;]</caption>
+  <caption>
+    <h2>[Table caption as an &lt;h2&gt;]</h2>
+  </caption>
   <thead>
     <tr>
       <th scope="col" aria-sort="descending"><button class="fsa-table__sort fsa-table__sort--descending" type="button">Commodity</button></th>
