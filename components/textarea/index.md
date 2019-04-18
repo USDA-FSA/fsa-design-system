@@ -66,6 +66,17 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 </div>
 ```
 
+### Custom height
+
+`.fsa-textarea` has a default minimum height, modifiable via the `rows` attribute. Each row is approximately the `line-height` of its text. Overall default height may vary between browsers, though it is generally equivalent to `rows="6"`.
+
+<div class="ds-preview">
+  <textarea class="fsa-textarea" name="Name" placeholder="Placeholder" rows="13"></textarea>
+</div>
+```html
+<textarea class="fsa-textarea" name="Name" placeholder="Placeholder" rows="13"></textarea>
+```
+
 ## States
 
 ### Response: Error
