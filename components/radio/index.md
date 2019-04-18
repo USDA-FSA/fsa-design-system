@@ -136,20 +136,28 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
     <label class="fsa-field__label" id="lorem-radio-field-1">Your Favorite Pie</label>
     <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
       <li>
-        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
-        <label for="apple-radio">Apple</label>
+        <span>
+          <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+          <label for="apple-radio">Apple</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
-        <label for="key-lime-radio">Key Lime</label>
+        <span>
+          <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+          <label for="key-lime-radio">Key Lime</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
-        <label for="pumpkin-radio">Pumpkin</label>
+        <span>
+          <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+          <label for="pumpkin-radio">Pumpkin</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
-        <label for="none-radio">None of the above</label>
+        <span>
+          <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
+          <label for="none-radio">None of the above</label>
+        </span>
       </li>
     </ul>
     <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>
@@ -160,20 +168,28 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <label class="fsa-field__label" id="lorem-radio-field-1">Your Favorite Pie</label>
   <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
     <li>
-      <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
-      <label for="apple-radio">Apple</label>
+      <span>
+        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+        <label for="apple-radio">Apple</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
-      <label for="key-lime-radio">Key Lime</label>
+      <span>
+        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+        <label for="key-lime-radio">Key Lime</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
-      <label for="pumpkin-radio">Pumpkin</label>
+      <span>
+        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+        <label for="pumpkin-radio">Pumpkin</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
-      <label for="none-radio">None of the above</label>
+      <span>
+        <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
+        <label for="none-radio">None of the above</label>
+      </span>
     </li>
   </ul>
   <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>

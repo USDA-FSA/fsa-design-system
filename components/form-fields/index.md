@@ -189,16 +189,22 @@ Using [Checkboxes]({{ site.baseurl }}components/checkbox/) as core component.
     <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
     <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
       <li>
-        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
-        <label for="apple">Apple</label>
+        <span>
+          <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+          <label for="apple">Apple</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
-        <label for="key-lime">Key Lime</label>
+        <span>
+          <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+          <label for="key-lime">Key Lime</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
-        <label for="pumpkin">Pumpkin</label>
+        <span>
+          <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+          <label for="pumpkin">Pumpkin</label>
+        </span>
       </li>
     </ul>
     <span class="fsa-field__help" id="lorem-yywqqq8iyxx2x2-help-8">Helpful message here</span>
@@ -209,16 +215,22 @@ Using [Checkboxes]({{ site.baseurl }}components/checkbox/) as core component.
   <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
   <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
     <li>
-      <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
-      <label for="apple">Apple</label>
+      <span>
+        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+        <label for="apple">Apple</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
-      <label for="key-lime">Key Lime</label>
+      <span>
+        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+        <label for="key-lime">Key Lime</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
-      <label for="pumpkin">Pumpkin</label>
+      <span>
+        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+        <label for="pumpkin">Pumpkin</label>
+      </span>
     </li>
   </ul>
 </div>
@@ -233,20 +245,28 @@ Using [Radio]({{ site.baseurl }}components/radio/) as core component.
     <label class="fsa-field__label" id="lorem-radio-field-1">Your Favorite Pie</label>
     <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
       <li>
-        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
-        <label for="apple-radio">Apple</label>
+        <span>
+          <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+          <label for="apple-radio">Apple</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
-        <label for="key-lime-radio">Key Lime</label>
+        <span>
+          <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+          <label for="key-lime-radio">Key Lime</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
-        <label for="pumpkin-radio">Pumpkin</label>
+        <span>
+          <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+          <label for="pumpkin-radio">Pumpkin</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
-        <label for="none-radio">None of the above</label>
+        <span>
+          <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
+          <label for="none-radio">None of the above</label>
+        </span>
       </li>
     </ul>
     <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>
@@ -257,20 +277,28 @@ Using [Radio]({{ site.baseurl }}components/radio/) as core component.
   <label class="fsa-field__label" id="lorem-radio-field-1">Your Favorite Pie</label>
   <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
     <li>
-      <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
-      <label for="apple-radio">Apple</label>
+      <span>
+        <input class="fsa-radio" id="apple-radio" type="radio" name="fav-pie">
+        <label for="apple-radio">Apple</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
-      <label for="key-lime-radio">Key Lime</label>
+      <span>
+        <input class="fsa-radio" id="key-lime-radio" type="radio" name="fav-pie">
+        <label for="key-lime-radio">Key Lime</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
-      <label for="pumpkin-radio">Pumpkin</label>
+      <span>
+        <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie">
+        <label for="pumpkin-radio">Pumpkin</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
-      <label for="none-radio">None of the above</label>
+      <span>
+        <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie" checked>
+        <label for="none-radio">None of the above</label>
+      </span>
     </li>
   </ul>
   <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>

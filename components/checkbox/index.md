@@ -158,16 +158,22 @@ You can't make a checkbox indeterminate through HTML, as there is no `indetermin
     <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
     <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
       <li>
-        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
-        <label for="apple">Apple</label>
+        <span>
+          <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+          <label for="apple">Apple</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
-        <label for="key-lime">Key Lime</label>
+        <span>
+          <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+          <label for="key-lime">Key Lime</label>
+        </span>
       </li>
       <li>
-        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
-        <label for="pumpkin">Pumpkin</label>
+        <span>
+          <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+          <label for="pumpkin">Pumpkin</label>
+        </span>
       </li>
     </ul>
   </div>
@@ -177,16 +183,22 @@ You can't make a checkbox indeterminate through HTML, as there is no `indetermin
   <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
   <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
     <li>
-      <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
-      <label for="apple">Apple</label>
+      <span>
+        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+        <label for="apple">Apple</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
-      <label for="key-lime">Key Lime</label>
+      <span>
+        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+        <label for="key-lime">Key Lime</label>
+      </span>
     </li>
     <li>
-      <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
-      <label for="pumpkin">Pumpkin</label>
+      <span>
+        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+        <label for="pumpkin">Pumpkin</label>
+      </span>
     </li>
   </ul>
 </div>
