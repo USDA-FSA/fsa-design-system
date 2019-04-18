@@ -58,6 +58,35 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
 </div>
 ```
 
+### Text, Custom Width
+
+The width of `.fsa-field`'s use of `.fsa-input` defaults to the full width of its parent container (i.e. `.fsa-field`). Though it should be **rarely** necessary, its can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="lorem-0128">Label</label>
+    <input class="fsa-input fsa-field__item" id="lorem-0128" name="lorem-0128" type="text" value="" size="4">
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-0128">Label</label>
+  <input class="fsa-input fsa-field__item" id="lorem-0128" name="lorem-0128" type="text" value="" size="4">
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="lorem-6719">Label</label>
+    <input class="fsa-input fsa-input--block fsa-field__item" id="lorem-6719" name="lorem-6719" type="text" value="" size="14">
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-6719">Label</label>
+  <input class="fsa-input fsa-input--block fsa-field__item" id="lorem-6719" name="lorem-6719" type="text" value="" size="14">
+</div>
+```
+
 ### Text, Date Format
 
 Three distinct text fields are the easiest way for users to enter most dates. Use this format for most dates &ndash; particularly memorized dates. A fully interactive and accessible Date Picker component is currently under consideration.
