@@ -56,6 +56,23 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 ```
 
+### Within a [Field]({{ site.baseurl }}components/form-fields/)
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="text" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="text" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
+</div>
+```
+
 ## States
 
 ### Error

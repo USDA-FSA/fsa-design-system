@@ -49,6 +49,23 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 <p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
 ```
 
+### Within a [Field]({{ site.baseurl }}components/form-fields/)
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
+    <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
+    <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
+  <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
+  <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
+</div>
+```
+
 ## States
 
 ### Response: Error

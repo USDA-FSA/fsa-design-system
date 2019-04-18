@@ -151,6 +151,47 @@ You can't make a checkbox indeterminate through HTML, as there is no `indetermin
 </script>
 ```
 
+### Within a [Field]({{ site.baseurl }}components/form-fields/)
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
+    <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
+      <li>
+        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+        <label for="apple">Apple</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+        <label for="key-lime">Key Lime</label>
+      </li>
+      <li>
+        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+        <label for="pumpkin">Pumpkin</label>
+      </li>
+    </ul>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
+  <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
+    <li>
+      <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+      <label for="apple">Apple</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+      <label for="key-lime">Key Lime</label>
+    </li>
+    <li>
+      <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+      <label for="pumpkin">Pumpkin</label>
+    </li>
+  </ul>
+</div>
+```
+
 ## Usage
 
 ### Use When

@@ -227,7 +227,36 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 </select>
 ```
 
-## State
+### Within a [Field]({{ site.baseurl }}components/form-fields/)
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="UNIQUE-ID-hshhsjtext">Label <span class="fsa-field__label-desc">Required</span></label>
+    <select class="fsa-select fsa-field__item" id="UNIQUE-ID-hshhsjtext" aria-describedby="lorem-hshhsjtext-help-4" aria-required="true" name="UNIQUE-ID-hshhsjtext">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+    <span class="fsa-field__help" id="lorem-hshhsjtext-help-4">Instructional message here</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="UNIQUE-ID-hshhsjtext">Label <span class="fsa-field__label-desc">Required</span></label>
+  <select class="fsa-select fsa-field__item" id="UNIQUE-ID-hshhsjtext" aria-describedby="lorem-hshhsjtext-help-4" aria-required="true" name="UNIQUE-ID-hshhsjtext">
+    <option value="Option A" selected="selected">Option A</option>
+    <option value="Option B">Option B</option>
+    <option value="Option C">Option C</option>
+    <option value="Option D">Option D</option>
+    <option value="Option E">Option E</option>
+  </select>
+  <span class="fsa-field__help" id="lorem-hshhsjtext-help-4">Instructional message here</span>
+</div>
+```
+
+## States
 
 ### Error
 
