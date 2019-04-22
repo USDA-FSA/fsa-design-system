@@ -2,11 +2,13 @@
 layout: page
 parent: "Components"
 title: "Growl Notification"
-intro: "Growl Notification provides application messaging, providing information about page-level or out-of-view events."
+intro: "A Growl Notification surfaces application messaging, providing information about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
+custom_js: "growl-init-demo.js"
 ---
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
+
 <div class="fsa-growl-container">
   <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9E" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
@@ -59,6 +61,41 @@ title_label: 'Requires JavaScript'
       <p>
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
+      </p>
+    </div>
+  </div>
+  <div class="fsa-growl fsa-growl--warning" id="growl-init-demo-3" aria-hidden="true" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>Would you like to see a <strong>Modal-based example</strong>?</p>
+      <p>
+        <button data-behavior="growl-dismiss growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Yes</button>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">No</button>
+      </p>
+    </div>
+  </div>
+  <div class="fsa-growl" id="growl-init-demo-2" aria-hidden="true" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>You can have more than one when/if necessary.</p>
+      <p>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cool</button>
+      </p>
+    </div>
+  </div>
+  <div class="fsa-growl" id="growl-init-demo" aria-hidden="true" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <h2 class="fsa-growl__title">Growl Notification doc loaded</h2>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>You've viewing a sample of a <strong>Growl Notification</strong>.</p>
+      <p>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK, thanks</button>
       </p>
     </div>
   </div>
@@ -80,14 +117,82 @@ title_label: 'Requires JavaScript'
   </div>
 </div>
 
+<div class="ds-preview">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--default.png" alt="Growl screen: default variation">
+        <figcaption>Default</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--error.png" alt="Growl screen: error variation">
+        <figcaption>Error</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--warning.png" alt="Growl screen: warning variation">
+        <figcaption>Warning</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--success.png" alt="Growl screen: success variation">
+        <figcaption>Success</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
+        <figcaption>Modal</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--all.png" alt="Growl screen: all variations">
+        <figcaption>Multiple viewable</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+## Behavior
+
+**Trigger sample Notifications:**
+
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Default</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Error</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Warning</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Success</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal</button>
+
+Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
+
 ## Variations
 
-Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
+Growl Notifications are styled with `class="fsa-growl [fsa-growl--[variation]]"`.
 
 ### Default
 
+For events of lower relative importance, or for generic use.
+
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Trigger Default Growl</button>
+  <div style="max-width: 340px;">
+    <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9Efrf" aria-hidden="false" tabindex="0" role="dialog">
+      <div class="fsa-growl__hd">
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <h2 class="fsa-growl__title">Something happened</h2>
+      </div>
+      <div class="fsa-growl__bd">
+        <p>You're probably just fine.</p>
+        <p>
+          <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 ```html
 <div class="fsa-growl-container">
@@ -108,8 +213,25 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ### Error
 
+When things go wrong.
+
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Trigger Error Growl</button>
+  <div style="max-width: 340px;">
+    <div class="fsa-growl fsa-growl--error" id="UNIQUE-ID-832353AD65DB5frf" aria-hidden="false" tabindex="0" role="dialog">
+      <div class="fsa-growl__hd">
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <h2 class="fsa-growl__title">Growl title</h2>
+      </div>
+      <div class="fsa-growl__bd">
+        <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
+        <p>And another line here for kicks.</p>
+        <p>
+          <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
+          <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 ```html
 <div class="fsa-growl-container">
@@ -130,12 +252,27 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 
-
-
 ### Warning
 
+For events that require user attention.
+
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Trigger Warning Growl</button>
+  <div style="max-width: 340px;">
+    <div class="fsa-growl fsa-growl--warning" id="UNIQUE-ID-BC33C95AA75A8E1Cfrf" aria-hidden="false" tabindex="0" role="dialog">
+      <div class="fsa-growl__hd">
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <h2 class="fsa-growl__title">Growl title</h2>
+      </div>
+      <div class="fsa-growl__bd">
+        <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
+        <p>And another line here for kicks.</p>
+        <p>
+          <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
+          <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 ```html
 <div class="fsa-growl-container">
@@ -156,11 +293,27 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 
-
 ### Success
 
+For reporting of a successful end of an operation or action.
+
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Trigger Success Growl</button>
+  <div style="max-width: 340px;">
+    <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-8A386E512C033F57frf" aria-hidden="false" tabindex="0" role="dialog">
+      <div class="fsa-growl__hd">
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <h2 class="fsa-growl__title">Growl title</h2>
+      </div>
+      <div class="fsa-growl__bd">
+        <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
+        <p>And another line here for kicks.</p>
+        <p>
+          <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
+          <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 ```html
 <div class="fsa-growl-container">
@@ -181,11 +334,14 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 </div>
 ```
 
+### Modal
 
-### Modal display
+To prompt users before further action or operation may proceed.
+
+More often displayed as `fsa-growl--error`, though other style variations (e.g. Default, Warning, Success) may be contextually appropriate.
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Trigger Modal Growl</button>
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
 </div>
 ```html
 <!-- PLACE JUST BELOW BODY START TAG AT THE BEGINNING OF DOCUMENT -->
@@ -209,7 +365,6 @@ Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
   </div>
 </div>
 ```
-
 
 ## Usage
 

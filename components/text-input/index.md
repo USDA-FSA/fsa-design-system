@@ -56,6 +56,44 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
 ```
 
+### Within a [Field]({{ site.baseurl }}components/form-fields/)
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="text" value="">
+    <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="text" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
+</div>
+```
+
+### Customizing Width
+
+Though it should be **rarely** necessary, the width of `.fsa-input`* can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
+
+<div class="ds-preview">
+  <input class="fsa-input" size="2" type="text" name="some_name" value="2">
+  <input class="fsa-input" size="5" type="text" name="some_name" value="5">
+  <input class="fsa-input" size="7" type="text" name="some_name" value="7">
+  <input class="fsa-input" size="14" type="text" name="some_name" value="14">
+  <input class="fsa-input" size="29" type="text" name="some_name" value="29">
+</div>
+```html
+<input class="fsa-input" size="2" type="text" name="some_name" value="2">
+<input class="fsa-input" size="5" type="text" name="some_name" value="5">
+<input class="fsa-input" size="7" type="text" name="some_name" value="7">
+<input class="fsa-input" size="14" type="text" name="some_name" value="14">
+<input class="fsa-input" size="29" type="text" name="some_name" value="29">
+```
+
+*The default width of an `<input class="fsa-input">` is generally `22` characters, though it can vary from browser to browser. Within a [Field]({{ site.baseurl }}components/form-fields/) it defaults to `100%` of its parent container and rarely should be overridden.
+
 ## States
 
 ### Error

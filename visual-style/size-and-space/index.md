@@ -82,5 +82,5 @@ One of the best example websites that has always used white space to support the
 
 ## Related Resources
 
-* [Utilities > Margins]({{ site.baseurl }}utilities/margins/)
-* [Utilities > Padding]({{ site.baseurl }}utilities/padding/)
+* [Utilities > Margins]({{ site.baseurl }}utilities/#margins)
+* [Utilities > Padding]({{ site.baseurl }}utilities/#padding)

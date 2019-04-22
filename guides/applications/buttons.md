@@ -11,11 +11,11 @@ intro: "FSA applications shall have the same look and feel, along with having a 
 The below buttons are the default variations available for use in the FSA Design System. For further details on variations and states, refer to [Button Components]({{ site.baseurl }}components/buttons/).
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
-    <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
-    <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
-    <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
-    <button class="fsa-btn fsa-btn--flat" type="button">Flat</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
+  <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
+  <button class="fsa-btn fsa-btn--flat" type="button">Flat</button>
 </div>
 
 ### Primary
@@ -36,9 +36,9 @@ In most cases, a button labeled as "Cancel" should be shown with the Flat style 
 ## Size
 
 <div class="ds-preview">
-    <button class="fsa-btn" type="button">Default</button>
-    <button class="fsa-btn fsa-btn--small" type="button">Small</button>
-    <button class="fsa-btn fsa-btn--large" type="button">Large</button>
+  <button class="fsa-btn" type="button">Default</button>
+  <button class="fsa-btn fsa-btn--small" type="button">Small</button>
+  <button class="fsa-btn fsa-btn--large" type="button">Large</button>
 </div>
 
 ## General Guidelines:
@@ -66,7 +66,7 @@ In most cases, a button labeled as "Cancel" should be shown with the Flat style 
 ## Which Label to Use?
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--primary" type="button">Submit</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Submit</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
 </div>
 
 Use Submit for a button label when providing data that will not be stored, or if the data is submitted by an anonymous User. Use a Save label when the User is authenticated and will be updating data within a system.
@@ -77,7 +77,7 @@ Use Submit for a button label when providing data that will not be stored, or if
  ___
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--primary" type="button">Search</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Search</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
 </div>
 
 * **Search** shall be used as the button label when the application is performing a query and returning results.
@@ -86,7 +86,7 @@ Use Submit for a button label when providing data that will not be stored, or if
 ___
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--primary" type="button">Back</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Back</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
 </div>
 
 * When returning to a previous screen or step, use **Back** as the button label.
@@ -96,7 +96,7 @@ ___
 ___
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
 </div>
 
 * When data or a state in the application has changed, it is recommended to use **Refresh** as a label.
@@ -106,7 +106,7 @@ ___
 ___
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Cancel</button>
+  <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Cancel</button>
 </div>
 
 * In general, all FSA applications should use the Flat style for a **Cancel** button.
@@ -115,7 +115,7 @@ ___
 ___
 
 <div class="ds-preview">
-    <button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
 </div>
 
 * A button shall use the **Tertiary** style when the action taken has destructive capabilities.

@@ -10,6 +10,8 @@ Utilities &ndash; also known as “trumps,” “helper classes,” or “altera
 
 They are most useful when you want to override a default value, in one-off situations, or even to explore design ideas; though be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style.
 
+Most include **Responsive** options, enabling you to make targeted alterations at different screen sizes. e.g. *"Small padding on small screens, larger padding on bigger screens."*
+
 ### Sample use case
 
 An `h2` element has a **top margin** you'd like to minimize.
@@ -183,7 +185,7 @@ Margins can be adjusted per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__margins.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__margins.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_margin">
@@ -341,7 +343,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__padding.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__padding.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_padding">
@@ -370,9 +372,8 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 <div class="fsa-clearfix docs__utilities__demo">
   <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio harum provident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
 </div>
-
 
 #### Right
 
@@ -381,7 +382,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 ```
 <div class="fsa-clearfix docs__utilities__demo">
   <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio harum provident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
 </div>
 
 #### None
@@ -393,7 +394,7 @@ Effectively an override.
 ```
 <div class="fsa-clearfix docs__utilities__demo">
   <p class="docs__utilities__demo-item fsa-float--left fsa-float--none"><strong>I'm not floating.</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio harum provident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
 </div>
 
 ### Containing Floats
@@ -433,7 +434,7 @@ Adjust floating presentation per media query breakpoint.
     <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
     <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
@@ -482,7 +483,7 @@ Text size can be adjusted per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-size">
@@ -544,7 +545,7 @@ Adjust text alignment per media query breakpoint.
     <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
     <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
@@ -613,7 +614,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-headers">
@@ -645,7 +646,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--show-min-screen-size">
@@ -665,7 +666,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--show-at-screen-size">
@@ -685,7 +686,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--hide-min-screen-size">
@@ -705,7 +706,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--hide-at-screen-size">
