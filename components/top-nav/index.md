@@ -1578,6 +1578,12 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 ## Usage
 
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>DEMO:</strong> View <a href="http://usda-fsa.github.io/fsa-style/demo/rwd__header-nav-global.html" class="usa-external_link" target="_blank">demo</a> for an example of behavior. Note the <a href="#javascript-guidance">JavaScript guidance</a> of this component.</p>
+  </div>
+</div>
+
 ### Use When
 
 * An FSA Application requires navigation to other areas within the application.
