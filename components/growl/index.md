@@ -129,7 +129,7 @@ Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
 ## Variations
 
-Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
+Growl Notifications are styled with `class="fsa-growl [fsa-growl--[variation]]"`.
 
 ### Default
 
