@@ -5,8 +5,10 @@ title: "Growl Notification"
 intro: "A Growl Notification surfaces application messaging, providing information about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
+custom_js: "growl-init-demo.js"
 ---
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
+
 <div class="fsa-growl-container">
   <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9E" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
@@ -59,6 +61,18 @@ title_label: 'Requires JavaScript'
       <p>
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
+      </p>
+    </div>
+  </div>
+  <div class="fsa-growl" id="growl-init-demo" aria-hidden="true" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <h2 class="fsa-growl__title">Growl notification doc loaded</h2>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>You've viewing a sample of a <strong>Growl Notification</strong>.</p>
+      <p>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK, thanks</button>
       </p>
     </div>
   </div>
