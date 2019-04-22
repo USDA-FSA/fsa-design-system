@@ -10441,6 +10441,11 @@ pre.highlight .ds-clipboard {
   text-decoration: underline;
 }
 
+.ds-header__version {
+  color: #b2c9b7;
+  font-size: 66%;
+}
+
 .ds-breadcrumb__list {
   margin: 0 0 8px;
   margin: 0 0 0.8rem;
