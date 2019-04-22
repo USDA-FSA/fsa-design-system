@@ -84,8 +84,22 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 </p>
 ```
 
-### Inverse
+### Actionable
 
+Badge styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
+
+<div class="ds-preview">
+  <a class="fsa-badge fsa-badge--general" href="link.html">A</a>
+  <button class="fsa-badge fsa-badge--general" type="button">B</button>
+  <button class="fsa-badge fsa-badge--general" type="button" disabled="disabled">Z</button>
+</div>
+```html
+<a class="fsa-badge fsa-badge--general" href="link.html">A</a>
+<button class="fsa-badge fsa-badge--general" type="button">B</button>
+<button class="fsa-badge fsa-badge--general" type="button" disabled="disabled">Z</button>
+```
+
+### Inverse
 
 <div class="ds-preview">
   <p style="background-color: #666; padding: 12px">

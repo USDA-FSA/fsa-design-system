@@ -37,6 +37,10 @@
     display: block;
     text-decoration: none;
 
+    &:focus {
+      outline: 0;
+    }
+
     &:hover {
       text-decoration: underline;
     }
@@ -53,6 +57,10 @@
     display: block;
     font-weight: $font-bold;
     margin-bottom: $size-base;
+
+    .ds-subcat-list__link:focus & {
+      @include fsa-focus;
+    }
 
   }
 

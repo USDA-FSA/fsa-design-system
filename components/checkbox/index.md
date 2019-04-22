@@ -151,6 +151,59 @@ You can't make a checkbox indeterminate through HTML, as there is no `indetermin
 </script>
 ```
 
+### Within a [Field]({{ site.baseurl }}components/form-fields/)
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
+    <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
+      <li>
+        <span>
+          <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+          <label for="apple">Apple</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+          <label for="key-lime">Key Lime</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+          <label for="pumpkin">Pumpkin</label>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
+  <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
+        <label for="apple">Apple</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="key-lime" type="checkbox" name="pie">
+        <label for="key-lime">Key Lime</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="pumpkin" type="checkbox" name="pie">
+        <label for="pumpkin">Pumpkin</label>
+      </span>
+    </li>
+  </ul>
+</div>
+```
+
 ## Usage
 
 ### Use When
@@ -177,4 +230,5 @@ If you customize a checkbox element, ensure they continue to meet the the access
 
 * Users should be able to tap on or click on either the text `<label>` or the checkbox element itself to toggle an option. Aids accessibility.
 * Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which checkbox.
+* Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive promotional email.
 * Make sure selections are adequately spaced for touch screens.

@@ -20,6 +20,10 @@
 
     text-decoration: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &:hover {
       text-decoration: underline;
     }
@@ -27,8 +31,14 @@
   }
 
   &__title {
+
     margin-bottom: 0;
     color: inherit;
+
+    .ds-home-features__link:focus & {
+      @include fsa-focus;
+    }
+
   }
 
   &__img {

@@ -80,6 +80,7 @@
 
   &__link {
 
+    display: inline-block;
     color: $color-fsa-white;
     text-decoration: none;
 
@@ -112,6 +113,11 @@
       }
 
     }
+  }
+
+  &__version {
+    color: $color-fsa-primary-200;
+    font-size: 66%;
   }
 
 }

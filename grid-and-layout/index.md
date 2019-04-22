@@ -283,7 +283,7 @@ Each grid column's proportional width can be adjusted across a range of viewport
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="desktop" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" aria-selected="true">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__grid.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__grid.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--desktop" id="rwd-demo_grid">

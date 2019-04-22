@@ -9,14 +9,61 @@ title_label: 'Requires JavaScript'
 
 A Modal will take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
 
+<div class="ds-preview">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--default.png" alt="Modal screen: Default variation">
+        <figcaption>Default</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--small.png" alt="Modal screen: Small variation">
+        <figcaption>Small</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--large.png" alt="Modal screen: Large variation">
+        <figcaption>Large</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--fullscreen.png" alt="Modal screen: Fullscreen variation">
+        <figcaption>Fullscreen</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--top.png" alt="Modal screen: Top variation">
+        <figcaption>Top</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+## Behavior
+
+**Trigger sample Modals:**
+
+<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button>
+
+Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
+
 ## Variations
 
-Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
+Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 
 ### Default
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Trigger Default Modal</button>
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--default.png" alt="Modal screen: Default variation">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-GGFD36765SSSGH" class="fsa-modal" role="dialog" aria-hidden="true">
@@ -35,35 +82,10 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 </div>
 ```
 
-### Top
-
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Trigger Top Modal</button>
-</div>
-```html
-<div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
-  <div class="fsa-modal__dialog">
-    <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
-      <h1 class="fsa-modal__title">[top title]</h1>
-      <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
-      <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
-      <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
-      </ul>
-      <p>Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
-      <p>Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
-      <p>Amet deserunt commodi velit officia suscipit magnam praesentium explicabo delectus animi. Sapiente beatae adipisci saepe perferendis, iste quaerat aperiam vero architecto provident.</p>
-    </div>
-  </div>
-</div>
-```
-
 ### Small
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Trigger Small Modal</button>
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--small.png" alt="Modal screen: Small variation">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23458CF9J99DIS" class="fsa-modal fsa-modal--small" role="dialog" aria-hidden="true">
@@ -86,7 +108,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Large
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Trigger Large Modal</button>
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--large.png" alt="Modal screen: Large variation">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23458CF77S77S7" class="fsa-modal fsa-modal--large" role="dialog" aria-hidden="true">
@@ -108,7 +130,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
 ### Fullscreen
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Trigger Fullscreen Modal</button>
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--fullscreen.png" alt="Modal screen: Fullscreen variation">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23451CF80S77S9" class="fsa-modal fsa-modal--fullscreen" role="dialog" aria-hidden="true">
@@ -116,26 +138,43 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
     <div class="fsa-modal__content">
       <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
       <h1 class="fsa-modal__title">[fullscreen title]</h1>
-      <p>
-        Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.
-        Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!
-      </p>
+      <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi. Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
       <ul>
         <li><a href="">Fake Link</a></li>
         <li><a href="">Fake Link</a></li>
       </ul>
-      <p>
-        Ad, mollitia reiciendis maiores saepe vero repellat unde esse, tempora illo deserunt necessitatibus dignissimos perspiciatis et reprehenderit expedita eos eaque sint ab.
-        Velit harum consequatur quam ratione voluptatem officia, necessitatibus quasi facere nulla sint, eius nihil id accusantium minus pariatur corporis. Perferendis, non, consectetur.
-
-        <!-- large amount of text here -->
-
-      </p>
+      <p>Ad, mollitia reiciendis maiores saepe vero repellat unde esse, tempora illo deserunt necessitatibus dignissimos perspiciatis et reprehenderit expedita eos eaque sint ab. Velit harum consequatur quam ratione voluptatem officia, necessitatibus quasi facere nulla sint, eius nihil id accusantium minus pariatur corporis. Perferendis, non, consectetur. </p>
     </div>
   </div>
 </div>
 ```
 
+### Top
+
+Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal fsa-modal--small fsa-modal--top"`.
+
+<div class="ds-preview">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--top.png" alt="Modal screen: Top variation">
+</div>
+```html
+<div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
+  <div class="fsa-modal__dialog">
+    <div class="fsa-modal__content">
+      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <h1 class="fsa-modal__title">[top title]</h1>
+      <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
+      <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
+      <ul>
+        <li><a href="">Fake Link</a></li>
+        <li><a href="">Fake Link</a></li>
+      </ul>
+      <p>Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
+      <p>Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
+      <p>Amet deserunt commodi velit officia suscipit magnam praesentium explicabo delectus animi. Sapiente beatae adipisci saepe perferendis, iste quaerat aperiam vero architecto provident.</p>
+    </div>
+  </div>
+</div>
+```
 
 ## Responsive
 
@@ -149,7 +188,7 @@ Modals are styled with `class="fsa-modal fsa-modal--[size]"`.
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_modal" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_modal" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__modal.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__modal.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_modal">
