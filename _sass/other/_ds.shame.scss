@@ -77,6 +77,11 @@
 
 }
 
+.ds-screen {
+  border: 1px solid $color-fsa-tertiary-200;
+  box-shadow: 0 0 $size-base transparentize($color-fsa-tertiary-200, .1);
+}
+
 .sr-only {
   @include sr-only;
 }

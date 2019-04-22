@@ -10972,6 +10972,11 @@ pre.highlight .ds-clipboard {
   background-color: #14381b;
 }
 
+.ds-screen {
+  border: 1px solid #dbdad9;
+  box-shadow: 0 0 0.4rem rgba(219, 218, 217, 0.9);
+}
+
 .sr-only {
   position: absolute;
   left: -999em;
