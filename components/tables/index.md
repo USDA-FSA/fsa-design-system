@@ -922,7 +922,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
         <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
         <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
       </span>
-      <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" target="_blank">View in new window</a>
+      <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" target="_blank">View in new window</a>
     </p>
   </div>
   <div class="docs__rwd-embed-container">

@@ -59,7 +59,7 @@ jump_menu: true
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_top-hat" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_top-hat" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_top-hat">
