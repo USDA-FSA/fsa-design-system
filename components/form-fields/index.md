@@ -4,6 +4,7 @@ parent: "Components"
 title: "Form Fields"
 intro: "Form fields are multifaceted components that allow Developers to create application forms with appropriate instructional and validation features."
 jump_menu: true
+custom_js: "select-other.js"
 ---
 
 <div class="ds-preview">
@@ -847,56 +848,26 @@ A UI Pattern for revealing an additional form field upon selection of an "Other"
 
 #### Select
 
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>DEMO:</strong> Choose <em>"Other"</em> from the <code>&lt;select&gt;</code> below.</p>
+  </div>
+</div>
+
 <div class="ds-preview">
   <div class="fsa-field">
     <label class="fsa-field__label" for="lorem-beisbol-993">Team <span class="fsa-field__label-desc">Optional</span></label>
-    <select class="fsa-select fsa-field__item" id="lorem-beisbol-993" name="lorem-beisbol-993">
-      <optgroup label="American League West">
-        <option value="Houston Astros">Houston Astros</option>
-        <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
-        <option value="Oakland Athletics">Oakland Athletics</option>
-        <option value="Seattle Mariners">Seattle Mariners</option>
-        <option value="Texas Rangers">Texas Rangers</option>
-      </optgroup>
-      <optgroup label="American League East" disabled="" title="Disabled group">
-        <option value="Baltimore Orioles">Baltimore Orioles</option>
-        <option value="Boston Red Sox">Boston Red Sox</option>
-        <option value="New York Yankees">New York Yankees</option>
-        <option value="Tampa Bay Rays">Tampa Bay Rays</option>
-        <option value="Toronto Blue Jays">Toronto Blue Jays</option>
-      </optgroup>
-      <optgroup label="American League Central">
-        <option value="Chicago White Sox">Chicago White Sox</option>
-        <option value="Cleveland Indians">Cleveland Indians</option>
-        <option value="Detroit Tigers">Detroit Tigers</option>
-        <option value="Kansas City Royals">Kansas City Royals</option>
-        <option value="Minnesota Twins">Minnesota Twins</option>
-      </optgroup>
-      <optgroup label="National League East">
-        <option value="Atlanta Braves">Atlanta Braves</option>
-        <option value="Miami Marlins">Miami Marlins</option>
-        <option value="New York Mets">New York Mets</option>
-        <option value="Philadelphia Phillies">Philadelphia Phillies</option>
-        <option value="Washington Nationals">Washington Nationals</option>
-      </optgroup>
-      <optgroup label="National League Central">
-        <option value="Chicago Cubs">Chicago Cubs</option>
-        <option value="Cincinnati Reds">Cincinnati Reds</option>
-        <option value="Milwaukee Brewers">Milwaukee Brewers</option>
-        <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
-        <option value="St. Louis Cardinals">St. Louis Cardinals</option>
-      </optgroup>
-      <optgroup label="National League West">
-        <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
-        <option value="Colorado Rockies">Colorado Rockies</option>
-        <option value="Los Angeles Dodgers">Los Angeles Dodgers</option>
-        <option value="San Diego Padres">San Diego Padres</option>
-        <option value="San Francisco Giants">San Francisco Giants</option>
-      </optgroup>
-      <option value="other" selected>Other</option>
+    <select class="fsa-select fsa-field__item" id="lorem-beisbol-993" name="lorem-beisbol-993" data-behavior="select-other-demo" data-target="select-other-target">
+      <option value=""></option>
+      <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
+      <option value="Kansas City Royals">Kansas City Royals</option>
+      <option value="Los Angeles Dodgers">Los Angeles Dodgers</option>
+      <option value="San Diego Padres">San Diego Padres</option>
+      <option value="Mudville Nine">Mudville Nine</option>
+      <option value="other">Other</option>
     </select>
-    <div class="fsa-select__other">
-      <input class="fsa-input fsa-input--block" type="text" name="asdfasdf" value="Mudville Nine" placeholder="" aria-label="Other team name">
+    <div class="fsa-select__other" id="select-other-target" aria-hidden="true" hidden>
+      <input class="fsa-input fsa-input--block" type="text" name="asdfasdf" value="" aria-label="Other team name">
     </div>
     <span class="fsa-field__help">Where does your loyalty lie?</span>
   </div>
