@@ -64,10 +64,33 @@ custom_js: "growl-init-demo.js"
       </p>
     </div>
   </div>
+  <div class="fsa-growl fsa-growl--warning" id="growl-init-demo-3" aria-hidden="true" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>Would you like to see a <strong>Modal-based example</strong>?</p>
+      <p>
+        <button data-behavior="growl-dismiss growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Yes</button>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">No</button>
+      </p>
+    </div>
+  </div>
+  <div class="fsa-growl" id="growl-init-demo-2" aria-hidden="true" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>You can have more than one when/if necessary.</p>
+      <p>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cool</button>
+      </p>
+    </div>
+  </div>
   <div class="fsa-growl" id="growl-init-demo" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
       <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
-      <h2 class="fsa-growl__title">Growl notification doc loaded</h2>
+      <h2 class="fsa-growl__title">Growl Notification doc loaded</h2>
     </div>
     <div class="fsa-growl__bd">
       <p>You've viewing a sample of a <strong>Growl Notification</strong>.</p>
@@ -124,6 +147,12 @@ custom_js: "growl-init-demo.js"
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
         <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
         <figcaption>Modal</figcaption>
+      </figure>
+    </div>
+    <div class="fsa-grid__1/2 fsa-grid__1/3@m">
+      <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--all.png" alt="Growl screen: all variations">
+        <figcaption>Multiple viewable</figcaption>
       </figure>
     </div>
   </div>
