@@ -98,14 +98,14 @@ code {
   }
 }
 
-// This isn't broken in fsa-style, but for is with Ruby-based SASS, which strips out the :not() rule
+// This isn't broken in fsa-style, but for is with Ruby-based Sass, which strips out the :not() rule
 .fsa-table__sort:hover:not(.fsa-table__sort--descending, .fsa-table__sort--ascending):after {
   background-image: url('#{$image-path}/chevron-up.png');
   background-image: url('#{$image-path}/chevron-up.svg');
   opacity: .4;
 }
 
-// This isn't broken in fsa-style, but for is with Ruby-based SASS
+// This isn't broken in fsa-style, but for is with Ruby-based Sass
 // scss-lint:disable QualifyingElement
 span.fsa-stepped-tabs__label,
 div.fsa-stepped-tabs__label {

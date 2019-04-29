@@ -222,7 +222,7 @@ Most elements and components have a deliberate size assigned to them, Utilities 
 
 ### Unstyled
 
-#### SASS Mixin
+#### Sass Mixin
 
 Resets `<ul>` or `<ol>` elements by stripping all style properties, e.g. bullets, numbers, margins, etc.
 
@@ -234,7 +234,7 @@ Resets `<ul>` or `<ol>` elements by stripping all style properties, e.g. bullets
   </ul>
 </div>
 ```scss
-// SASS
+// SCSS
 .your-custom-list {
 
   @include reset-ul();
@@ -256,7 +256,7 @@ Resets `<ul>` or `<ol>` elements by stripping all style properties, e.g. bullets
 
 #### HTML
 
-If SASS is not an option, these CSS Utilities will reset list styles.
+If Sass is not an option, these CSS Utilities will reset list styles.
 
 ##### Unordered list
 
@@ -379,12 +379,9 @@ Most HTML elements and components immediately have an assigned font size, follow
   </div>
 </div>
 
+### CSS (via Sass)
 
-
-
-### CSS (via SASS)
-
-With a <a href="http://sass-lang.com/">SASS</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
+With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
 
 ```scss
 .your-custom-selector { @include font-size([size]); }

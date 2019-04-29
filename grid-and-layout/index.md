@@ -427,7 +427,7 @@ A grid column's width can automatically distribute itself via `class="fsa-grid__
   </div>
 </div>
 
-## SASS Mixins
+## Sass Mixins
 
 Homeroll your own semantic grids.
 

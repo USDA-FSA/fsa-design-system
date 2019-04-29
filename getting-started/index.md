@@ -32,7 +32,7 @@ npm install --save fsa-style
 ```
 
 The package will be installed in `node_modules/fsa-style`. You can either use the un-compiled files
-found in the `src/` or the compiled files in the `dist/` directory. For example, if you're interested in using the SASS files (`.scss`) you would use the `src/` directory; otherwise, `dist/` is what you want.
+found in the `src/` or the compiled files in the `dist/` directory. For example, if you're interested in using the Sass files (`.scss`) you would use the `src/` directory; otherwise, `dist/` is what you want.
 
 ```
 node_modules/fsa-style/
