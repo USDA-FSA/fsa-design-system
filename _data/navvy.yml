@@ -92,6 +92,10 @@
       subhref: "components/form-fields"
       img: "img/subcategories/form-fields.png"
 
+    - subtitle: "Date Picker"
+      subhref: "components/date-picker"
+      img: "img/subcategories/date-picker.png"
+
     - subtitle: "Spinbox"
       subhref: "components/spinbox"
       img: "img/subcategories/spinbox.png"

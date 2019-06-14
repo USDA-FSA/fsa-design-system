@@ -12,6 +12,7 @@ var Modal = require('./components/fsa-modal');
 var SelectMulti = require('./components/fsa-select-multi');
 var SteppedControl = require('./components/fsa-stepped-control');
 var Spinbox = require('./components/fsa-spinbox');
+//var DatePicker = require('./vendor/fsa-date-picker');
 
 // fsa-style: Docs
 var ColorDocs = require('./components/docs-color');

@@ -525,7 +525,7 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
       <div class="fsa-stepped-control fsa-stepped-control--modal fsa-stepped-control--sticky">
         <div class="fsa-stepped-control__bd">
           <div class="fsa-stepped-control__message" role="status">
-            {{ status message }}
+            {{ status-message }}
           </div>
           <div class="fsa-stepped-control__list">
             <div class="fsa-stepped-control__shim"></div>
