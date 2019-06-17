@@ -3692,9 +3692,3 @@ var datePickerController = (function datePickerController() {
 
     };
 })();
-
-datePickerController.createDatePicker({
-	formElements: { "date-picker-example-0": "%m/%d/%Y" },
-	disabledDays:[0,0,0,0,0,1,1]
-	//disableFormatting: true // default is false
-});

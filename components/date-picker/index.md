@@ -28,6 +28,7 @@ custom_js: "datepicker-demo.js"
   <span class="fsa-field__help" id="date-picker-example-0__help">Example 05/14/1975</span>
 </div>
 
+// Placed at bottom of page
 <script>
 datePickerController.createDatePicker({
   // Associate the text input to a DD/MM/YYYY date format                            
