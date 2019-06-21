@@ -11,22 +11,22 @@ jump_menu: true
     <div class="fsa-pagination" data-current="1" data-total="120">
       <ul class="fsa-pagination__list">
         <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
-          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled">Previous</span>
+          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">1</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 1</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">2</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
         </li>
         <li class="fsa-pagination__item" aria-hidden="true">
           <span class="fsa-pagination__label">…</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">120</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
         </li>
       </ul>
     </div>
@@ -44,22 +44,22 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     <div class="fsa-pagination" data-current="1" data-total="120">
       <ul class="fsa-pagination__list">
         <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
-          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled">Previous</span>
+          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">1</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 1</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">2</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
         </li>
         <li class="fsa-pagination__item" aria-hidden="true">
           <span class="fsa-pagination__label">…</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">120</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
         </li>
       </ul>
     </div>
@@ -70,22 +70,22 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
   <div class="fsa-pagination" data-current="1" data-total="120">
     <ul class="fsa-pagination__list">
       <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
-        <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled">Previous</span>
+        <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">1</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 1</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">2</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
       </li>
       <li class="fsa-pagination__item" aria-hidden="true">
         <span class="fsa-pagination__label">…</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">120</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
       </li>
       <li class="fsa-pagination__item fsa-pagination__item--next">
-        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
       </li>
     </ul>
   </div>
@@ -99,31 +99,31 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     <div class="fsa-pagination" data-current="56" data-total="120">
       <ul class="fsa-pagination__list">
         <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">1</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
         </li>
         <li class="fsa-pagination__item" aria-hidden="true">
           <span class="fsa-pagination__label">…</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">55</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 55</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">56</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 56</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">57</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 57</a>
         </li>
         <li class="fsa-pagination__item" aria-hidden="true">
           <span class="fsa-pagination__label">…</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">120</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
         </li>
       </ul>
     </div>
@@ -134,31 +134,31 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
   <div class="fsa-pagination" data-current="56" data-total="120">
     <ul class="fsa-pagination__list">
       <li class="fsa-pagination__item fsa-pagination__item--previous">
-        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">1</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
       </li>
       <li class="fsa-pagination__item" aria-hidden="true">
         <span class="fsa-pagination__label">…</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">55</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 55</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">56</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 56</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">57</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 57</a>
       </li>
       <li class="fsa-pagination__item" aria-hidden="true">
         <span class="fsa-pagination__label">…</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">120</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
       </li>
       <li class="fsa-pagination__item fsa-pagination__item--next">
-        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
       </li>
     </ul>
   </div>
@@ -172,22 +172,22 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     <div class="fsa-pagination" data-current="120" data-total="120">
       <ul class="fsa-pagination__list">
         <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">1</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
         </li>
         <li class="fsa-pagination__item" aria-hidden="true">
           <span class="fsa-pagination__label">…</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">119</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 119</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">120</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 120</span>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next" aria-hidden="true">
-          <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled">Next</span>
+          <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></span>
         </li>
       </ul>
     </div>
@@ -198,22 +198,22 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
   <div class="fsa-pagination" data-current="120" data-total="120">
     <ul class="fsa-pagination__list">
       <li class="fsa-pagination__item fsa-pagination__item--previous">
-        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">1</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
       </li>
       <li class="fsa-pagination__item" aria-hidden="true">
         <span class="fsa-pagination__label">…</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">119</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 119</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">120</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 120</span>
       </li>
       <li class="fsa-pagination__item fsa-pagination__item--next" aria-hidden="true">
-        <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled">Next</span>
+        <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></span>
       </li>
     </ul>
   </div>
@@ -227,25 +227,25 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     <div class="fsa-pagination" data-current="2" data-total="5">
       <ul class="fsa-pagination__list">
         <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">1</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">2</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">3</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">4</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 4</a>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">5</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 5</a>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
         </li>
       </ul>
     </div>
@@ -256,25 +256,25 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
   <div class="fsa-pagination" data-current="2" data-total="5">
     <ul class="fsa-pagination__list">
       <li class="fsa-pagination__item fsa-pagination__item--previous">
-        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">1</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">2</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">3</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">4</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 4</a>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">5</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 5</a>
       </li>
       <li class="fsa-pagination__item fsa-pagination__item--next">
-        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
       </li>
     </ul>
   </div>
@@ -288,25 +288,25 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     <div class="fsa-pagination" data-current="2" data-total="6">
       <ul class="fsa-pagination__list">
         <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">1</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">2</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">3</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
         </li>
         <li class="fsa-pagination__item" aria-hidden="true">
           <span class="fsa-pagination__label">…</span>
         </li>
         <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html">6</a>
+          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 6</a>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
         </li>
       </ul>
     </div>
@@ -317,25 +317,25 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
   <div class="fsa-pagination" data-current="2" data-total="6">
     <ul class="fsa-pagination__list">
       <li class="fsa-pagination__item fsa-pagination__item--previous">
-        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html">Previous</a>
+        <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">1</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true">2</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">3</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
       </li>
       <li class="fsa-pagination__item" aria-hidden="true">
         <span class="fsa-pagination__label">…</span>
       </li>
       <li class="fsa-pagination__item">
-        <a class="fsa-pagination__label" href="link.html">6</a>
+        <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 6</a>
       </li>
       <li class="fsa-pagination__item fsa-pagination__item--next">
-        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html">Next</a>
+        <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
       </li>
     </ul>
   </div>
