@@ -13,7 +13,7 @@ Before you publish something, check that the user need you’re trying to addres
 
 - Search for the content using a popular search engine like Google or Bing. This is how most users will start, too. If content is already easy to find, duplicating it can lead us to compete with ourselves for search results.
 
-- Often, FSA writes about a agricultural service, tool, or program. Think authoritatively: What government department or agency controls the thing you’re writing about? What information have they produced already?
+- Often, FPAC writes about a agricultural service, tool, or program. Think authoritatively: What government department or agency controls the thing you’re writing about? What information have they produced already?
 
 - Start significant projects with a [content audit][]. Identify how any existing information is used and whether it will be helpful to your users in its current state. If it isn’t helpful, what must change for it to help you address your users’ needs? Focus your work on those changes.
 

@@ -2,12 +2,12 @@
 layout: guide
 parent: "Front-end"
 title: "Naming Conventions"
-intro: "The FSA Design System uses specific nomenclature and conventions to enforce a more structured approach to CSS."
+intro: "The Design System uses specific nomenclature and conventions to enforce a more structured approach to CSS."
 ---
 
 ## Class Naming Best Practices
 
-The Cascading Style Sheets (CSS) use a naming convention that follows the Block Element Modifier (BEM) methodology. BEM aligns the approach that all FSA Application should utilize technology and coding practices that are easy to use, modular, and flexible. The nomenclature is specifically designed to be followed in a strict way to enforce complience accross a large array of FSA Applications. For larger, more complex websites and online applications, it is very important for all Development teams to utilize a standard naming convention. This enables better portability of assets and components across multiple projects and products.
+The Cascading Style Sheets (CSS) use a naming convention that follows the Block Element Modifier (BEM) methodology. BEM aligns the approach that all FPAC Application should utilize technology and coding practices that are easy to use, modular, and flexible. The nomenclature is specifically designed to be followed in a strict way to enforce complience accross a large array of Applications. For larger, more complex websites and online applications, it is very important for all Development teams to utilize a standard naming convention. This enables better portability of assets and components across multiple projects and products.
 
 The structure of all CSS class names are in the `"block__elem--mod"` format, and use a single hyphen to eperate individual words withing the block, element, or the modifier portion of the class name.
 

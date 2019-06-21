@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Top Hat"
-intro: "The FSA Header should include the Top Hat component as an indication of an official government website."
+intro: "The Header should include the Top Hat component as an indication of an official government website."
 jump_menu: true
 ---
 
@@ -72,8 +72,8 @@ jump_menu: true
 
 ### Use When
 
-* An FSA Application is viewable to a internal or public audience.
-* An FSA Application needs to have a clear indication of an offical government website.
+* An Application is viewable to a internal or public audience.
+* An Application needs to have a clear indication of an offical government website.
 
 ### Don't Use
 
@@ -81,4 +81,4 @@ jump_menu: true
 
 ## General Guidance
 
-* The Top Hat should be positioned above the [Application Header Component]({{ site.baseurl }}components/header-app/) when paired together in an FSA Application.
+* The Top Hat should be positioned above the [Application Header Component]({{ site.baseurl }}components/header-app/) when paired together in an FPAC Application.

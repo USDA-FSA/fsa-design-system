@@ -2,13 +2,13 @@
 layout: guide
 parent: "Applications"
 title: "Buttons"
-intro: "FSA applications shall have the same look and feel, along with having a consistent naming convention for the most used buttons. Below you will find guidelines on how to use specific style related to various actions and features where a button is used."
+intro: "FPAC applications shall have the same look and feel, along with having a consistent naming convention for the most used buttons. Below you will find guidelines on how to use specific style related to various actions and features where a button is used."
 
 ---
 
 ## Variations and States
 
-The below buttons are the default variations available for use in the FSA Design System. For further details on variations and states, refer to [Button Components]({{ site.baseurl }}components/buttons/).
+The below buttons are the default variations available for use in the Design System. For further details on variations and states, refer to [Button Components]({{ site.baseurl }}components/buttons/).
 
 <div class="ds-preview">
   <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
@@ -109,7 +109,7 @@ ___
   <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Cancel</button>
 </div>
 
-* In general, all FSA applications should use the Flat style for a **Cancel** button.
+* In general, all FPAC applications should use the Flat style for a **Cancel** button.
 * A Cancel button should utilize the secondary button style within a modal or popup window and the User needs to Cancel the action being performed.
 
 ___
@@ -345,7 +345,7 @@ ___
             </td>
             <td aria-label="Functionality">
                 <p>Send data to an application process, such as saving to a database. Returns users to the page where the action was initiated or to the home page.</p>
-                <p>NOTE: Data is recorded on multiple pages in a multi-page process. Save or Save &amp; Continue would be the options through each of those pages. However on the page where the producer signature is recorded, the option would be to “Submit” because recording the producer signature signifies the application is being submitted to FSA for approval consideration. Status of the contract/application would then generally go from “initiated” to “filed” or “signed” as required by the applicable program application.
+                <p>NOTE: Data is recorded on multiple pages in a multi-page process. Save or Save &amp; Continue would be the options through each of those pages. However on the page where the producer signature is recorded, the option would be to “Submit” because recording the producer signature signifies the application is being submitted to FPAC for approval consideration. Status of the contract/application would then generally go from “initiated” to “filed” or “signed” as required by the applicable program application.
                 </p>
             </td>
         </tr>

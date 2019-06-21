@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Footer"
-intro: "The Global Footer Component shall be used across all FSA applications with standard links along with application specific links."
+intro: "The Global Footer Component shall be used across all FPAC applications with standard links along with application specific links."
 jump_menu: true
 ---
 
@@ -128,8 +128,8 @@ jump_menu: true
 
 ### Use When
 
-* An FSA Application requires a global footer within the application.
-* An FSA Application requires additional application specific navigation or links to documentation.
+* An Application requires a global footer within the application.
+* An Application requires additional application specific navigation or links to documentation.
 
 ### Don't Use
 
@@ -146,4 +146,4 @@ Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility
 ## General Guidance
 
 * The first column of the Global Footer is used for application-specific links to supplemental content, such as Handbooks.
-* The links in the remaining columns are standard and shall be included in all FSA Applications. [See Footer Guide for more information.]({{ site.baseurl }}guides/applications/footer)
+* The links in the remaining columns are standard and shall be included in all FPAC Applications. [See Footer Guide for more information.]({{ site.baseurl }}guides/applications/footer)

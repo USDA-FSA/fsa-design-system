@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Screen ID"
-intro: "The Screen ID Component shall be used across all FSA applications to better identify technical issues."
+intro: "The Screen ID Component shall be used across all FPAC applications to better identify technical issues."
 jump_menu: true
 ---
 
@@ -31,7 +31,7 @@ jump_menu: true
 
 ### Use When
 
-* An FSA Application required the use of a page identifier to help with technical issues.
+* An FPAC Application required the use of a page identifier to help with technical issues.
 
 ### Don't Use
 
@@ -39,4 +39,4 @@ jump_menu: true
 
 ## General Guidelines
 
-* The Screen ID is used by FSA Technical Support representatives and County Offices to identify areas of FSA Applications that are having technical issues.
+* The Screen ID is used by FPAC Technical Support representatives and County Offices to identify areas of FPAC Applications that are having technical issues.

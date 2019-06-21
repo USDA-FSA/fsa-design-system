@@ -21,7 +21,7 @@ It’s not necessary to have `www.` at the start of a domain. This is a holdover
 
 As domains should not be more than three levels deep in most cases (e.g., `fsa.usda.gov` is fine), it’s rare that more than four levels is justifiable. On a related note, it’s unnecessary to have a two-level domain for everything.
 
-If a domain level has more than one word, you should strongly consider separating the words with dashes to make sure users read them the way you intend. If FSA had a project hypothetically called "Service Systems for Youth (SSY)"" that for some reason needed a two-level domain, that domain should be `fsa-ssy.gov` and not `fsassy.gov` (`ssy.fsa.gov` would probably be the ideal).
+If a domain level has more than one word, you should strongly consider separating the words with dashes to make sure users read them the way you intend. If FPAC had a project hypothetically called "Service Systems for Youth (SSY)"" that for some reason needed a two-level domain, that domain should be `fsa-ssy.gov` and not `fsassy.gov` (`ssy.fsa.gov` would probably be the ideal).
 
 As domains are case-insensitive, they should almost always be written in lowercase.
 

@@ -2,7 +2,7 @@
 layout: guide
 parent: "Front-end"
 title: "Coding Standards"
-intro: "While developing FSA Applications, follow the below standards for best practice Front-end Development."
+intro: "While developing FPAC Applications, follow the below standards for best practice Front-end Development."
 ---
 
 ## HTML Best Practices
@@ -20,8 +20,8 @@ intro: "While developing FSA Applications, follow the below standards for best p
 
 ## CSS Best Practices
 
-* Always utilize the FSA classes provided within the Design System, before creating your own classes.
-* Never use inline CSS styles within an FSA Application.
+* Always utilize `fsa-style`'s selectors (e.g. `class="selector-name"` provided within the Design System, before creating your own classes.
+* Never use inline CSS styles within an FPAC Application.
 * Never style raw HTML elements, and instead utilize a linked CSS file with classes.
 * Do not create CSS classes solely for programming purposes. They should always align to a style.
 * The use of the `id` attribute should be done sparingly and only for programming purposes, not visual or style purposes.

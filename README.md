@@ -1,19 +1,19 @@
-# FSA Design System Site
+# FPAC Design System Site
 
-Open Source design resource and guidelines defining the next generation of FSA digital products, setting a new bar for simplicity and consistency across the USDA Farm Service Agency.
+Open Source design resource and guidelines establishing a cohesive user experience across USDA Farm Production and Conservation (FPAC).
 
-The FSA Design System comprises of two core repositories:
+The Design System comprises of two core repositories:
 
-1. **[fsa-design-system](https://github.com/USDA-FSA/fsa-style/)**: Source code for the [FSA Design System web site](http://usda-fsa.github.io/fsa-design-system), documenting the FSA Style and accompanying guidelines.
-1. **[fsa-style](https://github.com/USDA-FSA/fsa-style/)**: Style assets (HTML, CSS, Images) available for download or install, as documented by the [FSA Design System web site](http://usda-fsa.github.io/fsa-design-system).
+1. **[fsa-design-system](https://github.com/USDA-FSA/fsa-style/)**: Source code for the [Design System web site](http://usda-fsa.github.io/fsa-design-system), documenting `fsa-style` and accompanying guidelines.
+1. **[fsa-style](https://github.com/USDA-FSA/fsa-style/)**: CSS Framework: style assets (HTML, CSS, Images) available for download or install, as documented by the [Design System web site](http://usda-fsa.github.io/fsa-design-system).
 
 ## Using fsa-style
 
-Refer to [FSA Design System > Get Started](http://usda-fsa.github.io/fsa-design-system/getting-started/) for directions on using fsa-style assets as a dependency.
+Refer to [Design System > Get Started](http://usda-fsa.github.io/fsa-design-system/getting-started/) for directions on using fsa-style assets as a dependency.
 
 ## Running fsa-design-system locally
 
-The [FSA Design System site](http://usda-fsa.github.io/fsa-design-system) is built using [Jekyll]() for the file framework and static site, [Grunt](http://gruntjs.com/) for task management, incorporates the [fsa-style node module](https://www.npmjs.com/package/fsa-style) for its style, and is deployed via [GitHub Pages](https://pages.github.com/) at http://usda-fsa.github.io/fsa-style/.
+The [Design System site](http://usda-fsa.github.io/fsa-design-system) is built using [Jekyll]() for the file framework and static site, [Grunt](http://gruntjs.com/) for task management, incorporates the [fsa-style node module](https://www.npmjs.com/package/fsa-style) for its style, and is deployed via [GitHub Pages](https://pages.github.com/) at http://usda-fsa.github.io/fsa-style/.
 
 ### 1. Before you start
 

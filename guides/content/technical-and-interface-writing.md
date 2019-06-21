@@ -68,7 +68,7 @@ Include a short two- or three-sentence summary about the document to help the re
 
 Use [backticks](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code) to style text and code snippets readers may want to copy and paste. For example:
 
->  Use the `legend` element to offer a label within each form element.  
+>  Use the `legend` element to offer a label within each form element.
 
 > Copy and paste `mkdir /home/foo/doc/bar && cd $_` into Terminal.
 
@@ -91,7 +91,7 @@ Use [straight quotes](http://smartquotesforsmartpeople.com/) within code blocks 
 
 The same rules apply to pieces of text that must be used exactly as presented, such as passwords or Wi-Fi network names:
 
-> `someCl3v3rN4me` is the name of our Wi-Fi network.  
+> `someCl3v3rN4me` is the name of our Wi-Fi network.
 > Your password is `PleaseChangeMeSoon`.
 
 ### Interface elements
@@ -105,8 +105,8 @@ Use clear verbs to tell readers how to interact with interface elements:
 
 For instance, to emphasize the name of an interface label:
 
-> 1. In the **File** menu, choose **Save**.  
-> 2. Select **I agree**.  
+> 1. In the **File** menu, choose **Save**.
+> 2. Select **I agree**.
 > 3. Click **Continue**.
 
 ### Tables
@@ -124,6 +124,6 @@ It’s rare that a document lives on its own. Tell people where to go for help i
 
 For documentation and guides, you might say:
 
-> For more information, see the [FSA Editorial Guide](../content).
+> For more information, see the [FPAC Editorial Guide](../content).
 
 If your work relates to several other documents, pick the most important ones or gather the links in a section at the bottom of your content.

@@ -2,14 +2,14 @@
 layout: guide
 parent: "Guides"
 title: "Content"
-intro: "This editorial content guide is designed to minimize user frustration by making language on FSA digital properties more plainspoken and readable."
+intro: "This editorial content guide is designed to minimize user frustration by making language on FPAC digital properties more plainspoken and readable."
 ---
 
 ## Introduction
 
 This editorial content guide helps writers create content that’s easy to understand and meets people where they are. Government websites often talk at readers rather than to or with them. As with other facets of its online presence, .gov writing tends to describe the government’s concerns in “governmentese,” leaving users frustrated by information that is neither actionable nor understandable.
 
-This  guide takes that frustration into account, as well as several commonly supported guidelines about writing for the web. Using this guide can help content designers benefit from FSA experience to date, incorporate user feedback into the editorial process, and build trust by communicating in a consistent manner
+This  guide takes that frustration into account, as well as several commonly supported guidelines about writing for the web. Using this guide can help content designers benefit from FPAC experience to date, incorporate user feedback into the editorial process, and build trust by communicating in a consistent manner
 
 ## How to use this guide
 
@@ -19,7 +19,7 @@ To this end, we structured the guide into descriptively named sections. Find the
 
 ## Related resources
 
-Unless noted, FSA generally follows [AP style](https://www.apstylebook.com/). As this guide was created, we also referenced these resources:
+Unless noted, FPAC generally follows [AP style](https://www.apstylebook.com/). As this guide was created, we also referenced these resources:
 
 * [The U.S. Government Publishing Office](https://www.gpo.gov/)
 * [Conscious Style Guide](http://consciousstyleguide.com/)

@@ -29,13 +29,13 @@ Here are a few sample sentences that exemplify our tone of voice:
 
 > We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word federal, for instance, or when you’re wondering how to create a friendly, informational tone.
 
-## Use contractions  
+## Use contractions
 
 In all of the communication we produce, we want to create a strong connection with our users. We want to get them the information they need in a straightforward way and show that we know what’s important to them. As a government organization, we need to sound somewhat official; we also recognize that official doesn’t need to translate to stuffy, archaic, or aloof.
 
-For this reason, we use contractions in the writing we create for our site. We also encourage clients to consider using contractions, too, though we recognize this may not be the right choice for all contexts.  
+For this reason, we use contractions in the writing we create for our site. We also encourage clients to consider using contractions, too, though we recognize this may not be the right choice for all contexts.
 
-The government is run by people for the benefit of people, and we never want users to forget that FSA is a group of enthusiastic, dedicated, hardworking, (and friendly) folks. This desire informs how we craft our voice.
+The government is run by people for the benefit of people, and we never want users to forget that FPAC is a group of enthusiastic, dedicated, hardworking, (and friendly) folks. This desire informs how we craft our voice.
 
 ## Establishing your own voice
 

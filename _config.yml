@@ -10,9 +10,9 @@
 ################################################################################
 # Site settings
 
-title: FSA Design System
+title: FPAC Design System
 email: France.Rupert@gmail.com
-description: Design System site for USDA Farm Production and Conservation (FPAC)
+description: Design System for USDA Farm Production and Conservation (FPAC)
 name: "fsa-design-system"
 baseurl: "/fsa-design-system/" # the subpath of your site, e.g. /blog
 url: "https://usda-fsa.github.io" # the base hostname & protocol for your site

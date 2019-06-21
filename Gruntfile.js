@@ -155,7 +155,7 @@ module.exports = function (grunt) {
     // Uglify (minimize) JS
     uglify: {
       options: {
-        banner: '/*! FSA Design System - Docs | http://usda-fsa.github.io/fsa-design-system/ */\n\n'
+        banner: '/*! FPAC Design System - Docs | http://usda-fsa.github.io/fsa-design-system/ */\n\n'
       },
       build: {
         src: 'js/<%= pkg.name %>.js',

@@ -2,14 +2,14 @@
 layout: guide
 parent: "Front-end"
 title: "CSS Preprocessors"
-intro: "The FSA Design System takes advantage of an automated build system which utilizes Sass."
+intro: "The Design System takes advantage of an automated build system which utilizes Sass."
 ---
 
 ## What is a CSS Preprocessor
 
 Cascading Style Sheets (CSS) control the majority of the visual elements within an application, and while the technology is fairly straight forward, keeping your styles organized and structured properly can be an arguous task. Preprocessors extend CSS with variables, operators, function, and mixins which allow for more programatic control and structure over your CSS. Some CSS preprocessors include [Sass](https://sass-lang.com/) and [LESS](http://lesscss.org/), and are generally paired with [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) to create an automated build process for Developers.
 
-The FSA Design System's CSS Framework (`fsa-style`) utilizes Sass paired with a Grunt automated build process. Components and styles are structured in a modular and systematic format to allow for easy of integration into projects. This also allows for better code optimization, system maintenance, and feature updates.
+The Design System's CSS Framework (`fsa-style`) utilizes Sass paired with a Grunt automated build process. Components and styles are structured in a modular and systematic format to allow for easy of integration into projects. This also allows for better code optimization, system maintenance, and feature updates.
 
 ### CSS Preprocessor Code Snippet
 

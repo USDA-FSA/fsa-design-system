@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "Getting Started"
-intro: "The Design System's HTML/CSS assets provide the plug-and-play design and code to help you set a new bar for simplicity and consistency across FSA digital products."
+intro: "The Design System's CSS Framework, <code>fsa-style</code>, provides plug-and-play HTML and CSS to help you set a new bar for a cohesive user experience across FPAC digital products."
 jump_menu: true
 get_started: true
 suppress_code_toggle: true
 ---
 
-The components and style guide of the FSA Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FSA product teams who want to create beautiful, easy-to-use, digitial experiences consistent with the FSA Style.
+The components and style guide of the Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FPAC product teams who want to create beautiful, easy-to-use, and consistent digitial experiences.
 
-It was created and maintained by the USDA-FSA Office of Architecture, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
+It was created and maintained within FPAC's ISSDOB/FBCSS division, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
 
 ### Release History
 
@@ -69,7 +69,7 @@ Lastly, refer to [Using the Boilerplate](#using-the-boilerplate) for basic guida
 
 ### Download ZIP
 
-If you don't have Node or the ability to incorporate source files into a build process (Grunt, Gulp, etc), follow these steps to manually use the FSA Style.
+If you don't have Node or the ability to incorporate source files into a build process (Grunt, Gulp, etc), follow these steps to manually use the Design Sytem's CSS Framework, `fsa-style`.
 
 Download the latest assets **[fsa-style-{{ site.fsa-style_version }}.zip](https://github.com/usda-fsa/fsa-style/releases/download/{{ site.fsa-style_version }}/fsa-style-{{ site.fsa-style_version }}.zip)**
 
@@ -79,7 +79,7 @@ Download the latest assets **[fsa-style-{{ site.fsa-style_version }}.zip](https:
 
 #### 2. Boilerplate
 
-`boilerplate.html` provides a non-designed starting point. It serves as general guidance for the HTML structure most typically required of an FSA digital product. Viewable at
+`boilerplate.html` provides a non-designed starting point. It serves as general guidance for the HTML structure most typically required of an FPAC digital product. Viewable at
 [http://usda-fsa.github.io/fsa-style/boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html).
 
 #### 3. Manually adding to your project

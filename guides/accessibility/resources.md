@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Resources"
-intro: "The most common tools and tutorials FSA uses to improve and test accessibility."
+intro: "The most common tools and tutorials FPAC can use to improve and test accessibility."
 ---
 
 ## Code compliance
@@ -65,4 +65,4 @@ intro: "The most common tools and tutorials FSA uses to improve and test accessi
 
 ----
 
-**Disclaimer:** This resource is intended to help FSA develop accessible products and is not a replacement for the standards defined by the Access Board. Please visit the [Access Board](http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards) for information on Section 508 and its compliance criteria.
+**Disclaimer:** This resource is intended to help FPAC develop accessible products and is not a replacement for the standards defined by the Access Board. Please visit the [Access Board](http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards) for information on Section 508 and its compliance criteria.

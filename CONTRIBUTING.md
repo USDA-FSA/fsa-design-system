@@ -1,6 +1,6 @@
 ## Welcome!
 
-We're so glad you're thinking about contributing to an FSA open source project! If you're unsure about anything, just ask — submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions, whether they be from FSA collaborators or citizens alike.
+We're so glad you're thinking about contributing to an FPAC open source project! If you're unsure about anything, just ask — submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions, whether they be from FPAC collaborators or citizens alike.
 
 One of our goals is to ensure a welcoming environment for all contributors to our projects. Our staff follows the [USDA Employee Responsibilities and Conduct](https://www.ocio.usda.gov/document/departmental-regulation-4070-735-001), and all contributors should do the same.
 
@@ -31,7 +31,7 @@ Have questions or need help with setup? Open an issue here [https://github.com/1
 
 ### Building fsa-style locally with Grunt
 
-The FSA Design System's [fsa-style](https://github.com/USDA-FSA/fsa-style) package (the ZIP download or contents of published NPM module) and Design System website (our public site that displays examples of each component and the HTML code) are built using Grunt automation. To use Grunt, first make sure you've installed it on your machine globally.
+The Design System's [fsa-style](https://github.com/USDA-FSA/fsa-style) package (the ZIP download or contents of published NPM module) and Design System website (our public site that displays examples of each component and the HTML code) are built using Grunt automation. To use Grunt, first make sure you've installed it on your machine globally.
 
 ```sh
 npm install --global grunt-cli
