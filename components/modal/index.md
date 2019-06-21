@@ -69,7 +69,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 <div tabindex="0" id="UNIQUE-ID-GGFD36765SSSGH" class="fsa-modal" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[default title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <ul>
@@ -91,7 +91,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 <div tabindex="0" id="UNIQUE-ID-23458CF9J99DIS" class="fsa-modal fsa-modal--small" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[small title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
@@ -114,7 +114,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 <div tabindex="0" id="UNIQUE-ID-23458CF77S77S7" class="fsa-modal fsa-modal--large" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[large title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
       <ul>
@@ -136,7 +136,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 <div tabindex="0" id="UNIQUE-ID-23451CF80S77S9" class="fsa-modal fsa-modal--fullscreen" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[fullscreen title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi. Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
       <ul>
@@ -160,7 +160,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 <div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[top title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
@@ -235,7 +235,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 <div tabindex="0" id="UNIQUE-ID-GGFD36765SSSGH" class="fsa-modal" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[default title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <ul>
@@ -249,7 +249,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 <div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[top title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
@@ -266,7 +266,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 <div tabindex="0" id="UNIQUE-ID-23458CF9J99DIS" class="fsa-modal fsa-modal--small" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[small title]</h1>
        <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
@@ -281,7 +281,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 <div tabindex="0" id="UNIQUE-ID-23458CF77S77S7" class="fsa-modal fsa-modal--large" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[large title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
       <ul>
@@ -295,7 +295,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 <div tabindex="0" id="UNIQUE-ID-23451CF80S77S9" class="fsa-modal fsa-modal--fullscreen" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">[fullscreen title]</h1>
       <p>
         Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.
