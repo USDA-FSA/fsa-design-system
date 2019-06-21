@@ -14,21 +14,26 @@ var Helper = require('../utilities/helper');
 // Disable functionality if class is present
 if (document.querySelectorAll('.docs__page').length == 0) {
 
+  var navGlobal = document.querySelectorAll('.fsa-nav-global');
   var navGlobal__menuItem = document.querySelectorAll('.fsa-nav-global__link--has-sub-menu');
   var navGlobal__main = document.querySelectorAll('.fsa-tophat, .fsa-header-app, #main-content, .fsa-footer');
 
   Helper.forEach(navGlobal__main, function (index, value) {
-    var _el = value;
+    var _el = value; 
+
     _el.addEventListener('click', function (e) {
       if (document.querySelector('.fsa-nav-global__link[aria-expanded="true"]')) {
         document.querySelector('.fsa-nav-global__link[aria-expanded="true"]').setAttribute('aria-expanded', 'false');
         document.querySelector('.fsa-nav-global__sub-menu[aria-hidden="false"]').setAttribute('aria-hidden', 'true');
       }
     });
+  
+
   });
 
   Helper.forEach(navGlobal__menuItem, function (index, value) {
     var _el = value;
+
     _el.addEventListener('click', function (e) {
 
       var _self = this;
@@ -75,6 +80,17 @@ if (document.querySelectorAll('.docs__page').length == 0) {
     });
 
   });
+
+  Helper.forEach(navGlobal, function (index, value) {
+    var _el = value;
+    _el.addEventListener('keydown', function (e) {      
+      if(e.keyCode == 27){
+        document.querySelector('.fsa-nav-global__link[aria-expanded="true"]').setAttribute('aria-expanded', 'false');
+        document.querySelector('.fsa-nav-global__sub-menu[aria-hidden="false"]').setAttribute('aria-hidden', 'true');
+      }
+    });
+  });
+
 
   console.log('FSA_NAV_GLOBAL loaded, its JS ***not*** to be used for Production');
 

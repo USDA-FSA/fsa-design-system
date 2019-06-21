@@ -2597,7 +2597,6 @@ img {
 
 .fsa-checkbox:checked + label::before,
 .fsa-checkbox:checked + [type="hidden"] + label::before {
-  background-image: url("../img/correct8.png");
   background-image: url("../img/correct8.svg");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -2605,7 +2604,6 @@ img {
 
 .fsa-checkbox:indeterminate + label::before,
 .fsa-checkbox:indeterminate + [type="hidden"] + label::before {
-  background-image: url("../img/dash.png");
   background-image: url("../img/dash.svg");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -2672,7 +2670,6 @@ img {
   color: #2f2c2a;
   line-height: 1;
   background-color: #fff;
-  background-image: url("../img/arrow-down.png");
   background-image: url("../img/arrow-down.svg");
   background-position: right 13px center;
   background-position: right 1.3rem center;
@@ -3073,7 +3070,6 @@ table:not(.fsa-table) .fsa-table__th--sticky {
   top: -2px;
   margin-left: 4px;
   opacity: .2;
-  background-image: url("../img/chevron-up.png");
   background-image: url("../img/chevron-up.svg");
 }
 
@@ -3082,12 +3078,10 @@ table:not(.fsa-table) .fsa-table__th--sticky {
 }
 
 .fsa-table__sort--ascending:after {
-  background-image: url("../img/chevron-up.png");
   background-image: url("../img/chevron-up.svg");
 }
 
 .fsa-table__sort--descending:after {
-  background-image: url("../img/chevron-down.png");
   background-image: url("../img/chevron-down.svg");
 }
 
@@ -3434,7 +3428,6 @@ a.fsa-badge:active {
 }
 
 .fsa-search__btn--icon {
-  background-image: url("../img/search.png");
   background-image: url("../img/search.svg");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -3770,7 +3763,6 @@ a.fsa-badge:active {
   width: 1.2rem;
   height: 14px;
   height: 1.4rem;
-  background-image: url("../img/angle-arrow-down-hover.png");
   background-image: url("../img/angle-arrow-down-hover.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -3787,6 +3779,8 @@ a.fsa-badge:active {
 }
 
 .fsa-header-app__app-name {
+  display: -ms-flexbox;
+  display: flex;
   font-size: 30px;
   font-size: 3rem;
   line-height: 1.3;
@@ -3807,22 +3801,32 @@ a.fsa-badge:active {
 
 .fsa-header-app__app-abbr {
   font-weight: 700;
+  border-bottom: 1px solid transparent;
 }
 
 .fsa-header-app__home-link:hover .fsa-header-app__app-abbr {
-  border-bottom: 1px solid #fff;
+  border-bottom-color: #fff;
   cursor: pointer;
 }
 
 .fsa-header-app__app-abbr[title] {
-  border-bottom: 0;
+  border-bottom: 1px solid transparent;
   text-decoration: none;
 }
 
 @media (min-width: 37.5em) {
   .fsa-header-app__app-abbr:after {
-    content: ' |';
+    content: '|';
     font-weight: 300;
+    position: relative;
+    top: -2px;
+    padding-left: 0.4rem;
+  }
+}
+
+@media (min-width: 54em) {
+  .fsa-header-app__app-abbr:after {
+    padding-left: 0.8rem;
   }
 }
 
@@ -3838,6 +3842,14 @@ a.fsa-badge:active {
 @media (min-width: 37.5em) {
   .fsa-header-app__app-full {
     display: inline;
+    padding-left: 0.4rem;
+  }
+}
+
+@media (min-width: 54em) {
+  .fsa-header-app__app-full {
+    display: inline;
+    padding-left: 0.8rem;
   }
 }
 
@@ -4062,7 +4074,6 @@ a.fsa-badge:active {
   width: 0.792rem;
   height: 7.92px;
   height: 0.792rem;
-  background-image: url("../img/angle-arrow-down.png");
   background-image: url("../img/angle-arrow-down.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -4083,7 +4094,6 @@ a.fsa-badge:active {
 }
 
 [aria-expanded="true"] .fsa-nav-global__text:after {
-  background-image: url("../img/angle-arrow-down-hover.png");
   background-image: url("../img/angle-arrow-down-hover.svg");
 }
 
@@ -4558,12 +4568,19 @@ a.fsa-badge:active {
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+  width: 48px;
+  width: 4.8rem;
+  height: 48px;
+  height: 4.8rem;
   position: absolute;
   top: 0;
   right: 0;
   padding: 18px;
   padding: 1.8rem;
   z-index: 2;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fsa-modal__close::-moz-focus-inner {
@@ -4576,9 +4593,7 @@ a.fsa-badge:active {
 }
 
 .fsa-modal__close-icon {
-  width: 16px;
-  width: 1.6rem;
-  display: block;
+  display: none;
 }
 
 .fsa-modal__title {
@@ -5101,6 +5116,10 @@ a.fsa-badge:active {
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+  width: 48px;
+  width: 4.8rem;
+  height: 48px;
+  height: 4.8rem;
   position: absolute;
   top: -12px;
   top: -1.2rem;
@@ -5108,6 +5127,9 @@ a.fsa-badge:active {
   right: -1.2rem;
   padding: 18px;
   padding: 1.8rem;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fsa-growl__close::-moz-focus-inner {
@@ -5120,9 +5142,7 @@ a.fsa-badge:active {
 }
 
 .fsa-growl__close-icon {
-  width: 12px;
-  width: 1.2rem;
-  display: block;
+  display: none;
 }
 
 .fsa-growl__title {
@@ -5395,6 +5415,464 @@ h1 + .fsa-field {
   .fsa-field--columns {
     margin-top: -1em;
   }
+}
+
+.fsa-date-control {
+  color: #2f2c2a;
+}
+
+.fsa-input + .fsa-date-control {
+  margin-left: -39px;
+  margin-left: -3.9rem;
+}
+
+.fsa-input--block + .fsa-date-control,
+.fsa-field__item + .fsa-date-control {
+  margin-left: initial;
+}
+
+.fsa-input--block + .fsa-date-control,
+.fsa-field__item + .fsa-date-control {
+  position: relative;
+  display: block;
+}
+
+.fsa-date-control__date-input-hidden {
+  display: none;
+}
+
+.fsa-date-control__btn {
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 39px;
+  width: 3.9rem;
+  height: 39px;
+  height: 3.9rem;
+  overflow: hidden;
+  color: transparent;
+  text-indent: -300%;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAgMAAADw5/WeAAAACVBMVEUAAABJRED///+d7TLCAAAAAXRSTlMAQObYZgAAAC9JREFUCNdjCGEMdRBlCAUBFDJq1apVS+HktMhUOAkSiUwFsSEkHpEoGAkRQTIfACPTLNlYz9hoAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fsa-date-control__btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.fsa-date-control__btn:hover:not(:disabled) {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAgMAAADw5/WeAAAACVBMVEUAAAAAcbz///8Qy/ePAAAAAXRSTlMAQObYZgAAAC9JREFUCNdjCGEMdRBlCAUBFDJq1apVS+HktMhUOAkSiUwFsSEkHpEoGAkRQTIfACPTLNlYz9hoAAAAAElFTkSuQmCC");
+}
+
+.fsa-date-control__btn--active {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAgMAAADw5/WeAAAACVBMVEUAAAAAcbz///8Qy/ePAAAAAXRSTlMAQObYZgAAAC9JREFUCNdjCGEMdRBlCAUBFDJq1apVS+HktMhUOAkSiUwFsSEkHpEoGAkRQTIfACPTLNlYz9hoAAAAAElFTkSuQmCC");
+}
+
+.fsa-date-control__btn[disabled] {
+  opacity: .4;
+}
+
+.fsa-input--block + .fsa-date-control .fsa-date-control__btn,
+.fsa-field__item + .fsa-date-control .fsa-date-control__btn {
+  position: absolute;
+  top: -39px;
+  top: -3.9rem;
+  right: 0;
+}
+
+.fsa-date-control__text {
+  visibility: hidden;
+}
+
+.fsa-date-calendar {
+  color: #2f2c2a;
+  border: 1px solid #c8c7c6;
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+  background: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 12px;
+  margin-left: 1.2rem;
+  margin-right: 12px;
+  margin-right: 1.2rem;
+}
+
+.fsa-date-calendar--static {
+  box-shadow: none;
+  position: relative;
+  margin: 0;
+  margin-top: 8px;
+  margin-top: 0.8rem;
+}
+
+.fsa-field__date-input-hidden + .fsa-date-calendar--static {
+  margin-top: 0;
+}
+
+.fsa-date-calendar--static.fsa-date-calendar--focus {
+  box-shadow: none;
+}
+
+.fsa-date-control__date-input-hidden + .fsa-date-calendar--static {
+  margin-top: 0;
+}
+
+.fsa-date-calendar--disabled {
+  cursor: text;
+  opacity: 0.6 !important;
+  filter: grayscale(1);
+  background-color: transparent;
+}
+
+.fsa-date-calendar--disabled:hover *, .fsa-date-calendar--disabled:hover {
+  cursor: text;
+}
+
+.fsa-date-calendar--focus {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.fsa-date-calendar--drag-enabled {
+  cursor: move;
+}
+
+.fsa-date-calendar__title {
+  /* [month] [year] title */
+  font-size: 17px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.fsa-date-calendar__title-month, .fsa-date-calendar__title-year {
+  display: inline-block;
+  line-height: 1;
+  margin: 8px 0 0;
+  margin: 0.8rem 0 0;
+  color: #2f2c2a;
+}
+
+.fsa-date-calendar__prev-but, .fsa-date-calendar__next-but, .fsa-date-calendar__today-but {
+  line-height: 1;
+  display: block;
+  font-weight: 400;
+  cursor: pointer;
+  color: #0068ad;
+  margin: 0 0 4px;
+  margin: 0 0 0.4rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fsa-date-calendar__prev-but, .fsa-date-calendar__next-but {
+  font-size: 36px;
+  padding: 0 12px 4px 12px;
+  padding: 0 1.2rem 0.4rem 1.2rem;
+}
+
+.fsa-date-calendar__prev-but:hover, .fsa-date-calendar__next-but:hover {
+  color: #183f6e;
+}
+
+.fsa-date-calendar__prev-but:active:not(.fsa-date-calendar__disabled-item), .fsa-date-calendar__next-but:active:not(.fsa-date-calendar__disabled-item) {
+  outline: 3px solid #009afa;
+}
+
+.fsa-date-calendar__prev-but.fsa-date-calendar__disabled-item,
+.fsa-date-calendar__disabled-item .fsa-date-calendar__prev-but, .fsa-date-calendar__next-but.fsa-date-calendar__disabled-item,
+.fsa-date-calendar__disabled-item .fsa-date-calendar__next-but {
+  cursor: text;
+  opacity: 0.6 !important;
+  filter: grayscale(1);
+}
+
+.fsa-date-calendar__prev-but--year {
+  margin-left: 8px;
+  margin-left: 0.8rem;
+}
+
+.fsa-date-calendar__next-but--year {
+  margin-right: 8px;
+  margin-right: 0.8rem;
+}
+
+.fsa-date-calendar__today-but {
+  font-size: 17px;
+  font-size: 1.7rem;
+  padding: 12px 12px;
+  padding: 1.2rem 1.2rem;
+}
+
+.fsa-date-calendar__today-but.fsa-date-calendar__disabled-item {
+  cursor: text;
+  opacity: 1 !important;
+  filter: grayscale(1);
+}
+
+.fsa-date-calendar__today-but:hover {
+  color: #183f6e;
+}
+
+.fsa-date-calendar__today-but:active:not(.fsa-date-calendar__disabled-item) {
+  outline: 3px solid #009afa;
+}
+
+.fsa-date-calendar__disabled-item .fsa-date-calendar__today-but {
+  cursor: text;
+  opacity: 1 !important;
+  filter: grayscale(1);
+}
+
+.fsa-date-calendar__prev-but:not(.fsa-date-calendar__disabled-item):hover, .fsa-date-calendar__next-but:not(.fsa-date-calendar__disabled-item):hover, .fsa-date-calendar__today-but:not(.fsa-date-calendar__disabled-item):hover {
+  box-shadow: 0 0 0 1px #dbdad9 inset;
+}
+
+.fsa-date-calendar__table {
+  font-size: 15px;
+  font-size: 1.5rem;
+  table-layout: fixed;
+  empty-cells: show;
+  border-collapse: collapse;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 30.0625em) {
+  .fsa-date-calendar__table {
+    width: auto;
+  }
+}
+
+.fsa-date-calendar--static .fsa-date-calendar__table {
+  width: 100%;
+}
+
+.fsa-date-calendar__thead th {
+  padding: 0;
+  text-align: center;
+  color: inherit;
+}
+
+.fsa-date-calendar__day-name {
+  display: block;
+  padding: 12px;
+  padding: 1.2rem;
+  line-height: 1;
+}
+
+.fsa-date-calendar__day {
+  color: #2f2c2a;
+  border: 1px solid #ededec;
+  border-left: 0;
+  border-right: 0;
+  line-height: 1;
+  text-align: center;
+  vertical-align: bottom;
+  cursor: pointer;
+  padding: 12px;
+  padding: 1.2rem;
+  width: 36px;
+  width: 3.6rem;
+}
+
+.fsa-date-calendar__day:last-child {
+  padding: 12px;
+  padding: 1.2rem;
+}
+
+.fsa-date-calendar__day:focus {
+  outline: 0;
+}
+
+.fsa-date-calendar__day--header {
+  /* The "mon tue wed thu fri sat sun" day header styles */
+  font-size: 14px;
+  font-size: 1.4rem;
+  border: 0;
+  border-top: 1px solid #c8c7c6;
+  text-align: center;
+  vertical-align: middle;
+  cursor: help;
+  text-transform: uppercase;
+  padding: 8px 4px;
+  padding: 0.8rem 0.4rem;
+}
+
+.fsa-date-calendar__day--unused {
+  /* TD cell that is _not_ used to display a day of the month */
+  cursor: text !important;
+}
+
+.fsa-date-calendar__day--today {
+  /* The "todays date" cell style */
+  font-weight: 700;
+}
+
+.fsa-date-calendar__day--highlight {
+  /* The "highlight days" style */
+}
+
+.fsa-date-calendar__day--hover {
+  z-index: 99999;
+}
+
+.fsa-date-calendar--focus .fsa-date-calendar__day--hover {
+  outline: 3px solid #009afa;
+  background: #e1f3f8;
+}
+
+.fsa-date-calendar--focus .fsa-date-calendar__day--hover:hover {
+  outline: 0 !important;
+}
+
+.fsa-date-calendar--disabled .fsa-date-calendar__day--hover {
+  outline: 0 !important;
+  background-color: transparent !important;
+}
+
+.fsa-date-calendar--static .fsa-date-calendar__day--hover:not(.fsa-date-calendar__day--selected-date) {
+  background-color: #e1f3f8;
+}
+
+.fsa-date-calendar--focus .fsa-date-calendar__day:active {
+  outline: 3px solid #009afa !important;
+}
+
+.fsa-date-calendar--focus .fsa-date-calendar__day.fsa-date-calendar__day--disabled:active {
+  outline: 0 !important;
+}
+
+.fsa-date-calendar__day--selected-date {
+  background-color: #183f6e;
+  color: #fff;
+  font-weight: 700;
+}
+
+.fsa-date-calendar__day--selected-date.fsa-date-calendar__day--hover {
+  background-color: #183f6e;
+}
+
+.fsa-date-calendar__day--0 {
+  /* Monday */
+}
+
+.fsa-date-calendar__day--1 {
+  /* Tuesday */
+}
+
+.fsa-date-calendar__day--2 {
+  /* Wednesday */
+}
+
+.fsa-date-calendar__day--3 {
+  /* Thursday */
+}
+
+.fsa-date-calendar__day--4 {
+  /* Friday */
+}
+
+.fsa-date-calendar__day--5 {
+  /* Saturday */
+}
+
+.fsa-date-calendar__day--6 {
+  /* Sunday */
+}
+
+.fsa-date-calendar__day--month-out {
+  /* Used only when `fillGrid: true` */
+}
+
+.fsa-date-calendar__day--disabled, .fsa-date-calendar__day--disabled:hover, .fsa-date-calendar__day--out-of-range, .fsa-date-calendar__day--out-of-range:hover, .fsa-date-calendar__day--not-selectable, .fsa-date-calendar__day--not-selectable:hover {
+  color: #acabaa !important;
+  background-color: #f8f8f7 !important;
+  cursor: text;
+}
+
+.fsa-date-calendar__day--disabled.fsa-date-calendar__day--hover, .fsa-date-calendar__day--out-of-range.fsa-date-calendar__day--hover, .fsa-date-calendar__day--not-selectable.fsa-date-calendar__day--hover {
+  outline-color: gray !important;
+}
+
+.fsa-date-calendar__week-header {
+  color: #2f2c2a;
+  border: 1px solid #ededec;
+  border-left: 0;
+  border-right: 0;
+  line-height: 1;
+  text-align: center;
+  vertical-align: bottom;
+  cursor: pointer;
+  padding: 12px;
+  padding: 1.2rem;
+  width: 36px;
+  width: 3.6rem;
+  font-size: 13px;
+  font-size: 1.3rem;
+  background: transparent;
+  cursor: text;
+  border-left: 0;
+  font-weight: 700;
+  background-color: transparent;
+  box-shadow: -2px 0 0 0 #edecec inset, -4px 0 0 0 #f6f6f5 inset, -6px 0 0 0 #fbfbfb inset;
+  border-right: 1px solid #c8c7c6;
+}
+
+.fsa-date-calendar__week-header:last-child {
+  padding: 12px;
+  padding: 1.2rem;
+}
+
+.fsa-date-calendar__thead .fsa-date-calendar__week-header {
+  vertical-align: middle;
+  background-color: transparent;
+  font-weight: normal;
+  text-transform: uppercase;
+  cursor: help;
+}
+
+.fsa-date-calendar__status-bar {
+  /* tfoot status bar */
+  font-size: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: text;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: 0 none;
+  padding: 6px;
+  padding: 0.6rem;
+}
+
+.fsa-date-calendar-is-dragging {
+  /* body */
 }
 
 .fsa-footer-nav {
@@ -6452,14 +6930,12 @@ h1 + .fsa-field {
 }
 
 .fsa-pagination__label--previous:before {
-  background-image: url("../img/chevron-left.png");
   background-image: url("../img/chevron-left--link.svg");
   margin-right: 8px;
   margin-right: 0.8rem;
 }
 
 .fsa-pagination__label--next:after {
-  background-image: url("../img/chevron-right.png");
   background-image: url("../img/chevron-right--link.svg");
   margin-left: 8px;
   margin-left: 0.8rem;
@@ -6618,12 +7094,10 @@ h1 + .fsa-field {
 }
 
 .fsa-spinbox__btn--increment {
-  background-image: url("../img/angle-arrow-up-primary.png");
   background-image: url("../img/angle-arrow-up-primary.svg");
 }
 
 .fsa-spinbox__btn--decrement {
-  background-image: url("../img/angle-arrow-down-primary.png");
   background-image: url("../img/angle-arrow-down-primary.svg");
   border-top: 0;
 }
@@ -9340,19 +9814,13 @@ html:hover body::before {
   background-size: 2rem 2rem;
   background-position: 0 0, 50px 50px;
   background-position: 0 0, 5rem 5rem;
-  padding: 8px;
-  padding: 0.8rem;
-}
-
-@media (min-width: 30.0625em) {
-  .docs__logo {
-    padding: 2.4rem;
-  }
+  padding: 28px;
+  padding: 2.8rem;
 }
 
 @media (min-width: 37.5em) {
   .docs__logo {
-    padding: 2.4rem 4.8rem;
+    padding: 6rem;
   }
 }
 
