@@ -5479,7 +5479,7 @@ h1 + .fsa-field {
   border: 0;
 }
 
-.fsa-date-control__btn:hover {
+.fsa-date-control__btn:hover:not(:disabled) {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAgMAAADw5/WeAAAACVBMVEUAAAAAcbz///8Qy/ePAAAAAXRSTlMAQObYZgAAAC9JREFUCNdjCGEMdRBlCAUBFDJq1apVS+HktMhUOAkSiUwFsSEkHpEoGAkRQTIfACPTLNlYz9hoAAAAAElFTkSuQmCC");
 }
 
@@ -9814,19 +9814,13 @@ html:hover body::before {
   background-size: 2rem 2rem;
   background-position: 0 0, 50px 50px;
   background-position: 0 0, 5rem 5rem;
-  padding: 8px;
-  padding: 0.8rem;
-}
-
-@media (min-width: 30.0625em) {
-  .docs__logo {
-    padding: 2.4rem;
-  }
+  padding: 28px;
+  padding: 2.8rem;
 }
 
 @media (min-width: 37.5em) {
   .docs__logo {
-    padding: 2.4rem 4.8rem;
+    padding: 6rem;
   }
 }
 
