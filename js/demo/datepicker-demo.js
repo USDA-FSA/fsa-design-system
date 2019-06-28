@@ -3694,7 +3694,43 @@ var datePickerController = (function datePickerController() {
 })();
 
 datePickerController.createDatePicker({
-	formElements: { "date-picker-example-0": "%m/%d/%Y" },
+	formElements: { "date-picker-default": "%m/%d/%Y" },
+});
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-block": "%m/%d/%Y" },
+});
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-disabled": "%m/%d/%Y" },
+});
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-disabledweekends": "%m/%d/%Y" },
 	disabledDays:[0,0,0,0,0,1,1]
-	//disableFormatting: true // default is false
+});
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-upper-lower": "%m/%d/%Y" },
+});
+
+datePickerController.setRangeLow("date-picker-upper-lower", '20190407');  // disabled PRIOR to April 7, 2019
+datePickerController.setRangeHigh("date-picker-upper-lower", new Date());  // disabled AFTER  today
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-static-display": "%m/%d/%Y" },
+  disabledDays:[0,0,0,0,0,1,1],
+  staticPos: true  
+});
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-static-display-disabled": "%m/%d/%Y" },
+  staticPos: true  
+});
+
+//
+
+datePickerController.createDatePicker({
+	formElements: { "date-picker-disableformating": "%m/%d/%Y" },
+  disableFormatting: true // default is false
 });
