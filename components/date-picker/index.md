@@ -17,7 +17,7 @@ custom_js: "datepicker-demo.js"
 
 ## Variations and Examples
 
-To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in the [table below](#date-formatting-options). 
+The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Fields]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in the [table below](#date-formatting-options). 
 
 ### Basic JavaScript Initialization
 
@@ -94,13 +94,13 @@ To instantiate an instance of the Date Picker, you pass in the Input element's I
 
 ### Disable Weekends
 
-You can only allow for the selection of weekdays on the calendar, by assigning an array <code>[0,0,0,0,0,1,1]</code> as the <code>disabledDays</code> property when instantiating an instance of the Date Picker. The first spot in the array is represented by a Monday.
+You can only allow for the selection of weekdays on the calendar, by assigning an array <code>[0,0,0,0,0,1,1]</code> as the <code>disabledDays</code> property when instantiating an instance of the Date Picker. The first spot in the array is represented by a Monday. You can also disable a specific day of the week by adding a one to the array for any of the days represented.
 
 <div class="ds-preview">
   <div class="fsa-field">
     <label class="fsa-field__label" for="date-picker-disabledweekends">Select Date</label>
     <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-disabledweekends" aria-describedby="date-picker-disabledweekends__help" aria-required="true" name="date-picker-disabledweekends" type="text" value="">
-    <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 05/14/1975</span>
+    <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 07/04/2019</span>
   </div>
 </div>
 
@@ -109,7 +109,7 @@ You can only allow for the selection of weekdays on the calendar, by assigning a
 <div class="fsa-field--block">
   <label class="fsa-field__label" for="date-picker-disabledweekends">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-disabledweekends" aria-describedby="date-picker-disabledweekends__help" aria-required="true" name="date-picker-disabledweekends" type="text" value="">
-  <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 05/14/1975</span>
+  <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 07/04/2019</span>
 </div>
 
 // Placed at bottom of page
@@ -417,6 +417,7 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 
 ## General Guidance
 
+* The Date Picker utilizes a navitation bar consisting of four arrows and a Today button. These button are intended for navigation purposes within the Calendar, so selecting the Today button will navigate the User to today's date, NOT select today's date.
 * The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
 * Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
 * Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
