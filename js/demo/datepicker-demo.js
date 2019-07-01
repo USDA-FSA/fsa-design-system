@@ -3728,8 +3728,13 @@ datePickerController.createDatePicker({
   staticPos: true  
 });
 
-//
+datePickerController.createDatePicker({
+	formElements: { "date-picker-status": "%m/%d/%Y" },
+  statusFormat:"%l, %d%S %F %Y"  
+});
 
+
+//
 datePickerController.createDatePicker({
 	formElements: { "date-picker-disableformating": "%m/%d/%Y" },
   disableFormatting: true // default is false

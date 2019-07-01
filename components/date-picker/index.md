@@ -123,7 +123,7 @@ You can only allow for the selection of weekdays on the calendar, by assigning a
 
 ### Upper and Lower Dates
 
-If you would like to limit the date selection, you would use an additional JavaScript method (<code>setRangeLow</code> & <code>setRangeHigh</code>) and pass in a string for the date in the <code>YYYYDDMM</code> format or pass in a new Date object.
+Additional JavaScript methods can be used to limit the selection of a date. If you would like to limit the selection of a date to AFTER a period of time, you can us the JavaScript method <code>setRangeLow</code>. To limit the selection of a date BEFORE a period of time, you use the <code>setRangeHigh</code> JavaScript Method. Both JavaScript methods require you to pass in a string for the date in the <code>YYYYDDMM</code> format or pass in a new Date object. The example below uses both JavaScript methods to only allow for the selection between April 7th, 2019 and Today.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -213,6 +213,35 @@ Adding the <code>disabled</code> parameter to the Input element will disable the
 </script>
 ```
 
+### Calendar with Status Bar
+
+To augment the visual impact of date selection, you can add a status message, displaying at the bottom of the calendar. Add the JavaScript method <code>statusFormat</code> to the initialized object, and specify a date format that follows the Date Formatting Options shown below. The below example uses <code>"%l, %d%S %F %Y"</code>. 
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="date-picker-status">Select Date</label>
+    <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-status" aria-describedby="date-picker-status__help" aria-required="true" name="date-picker-status" type="text" value="">
+    <span class="fsa-field__help" id="date-picker-status__help">Example 05/14/1975</span>
+  </div>
+</div>
+
+
+```html
+<div class="fsa-field--block">
+  <label class="fsa-field__label" for="date-picker-status">Select Date</label>
+  <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-status" aria-describedby="date-picker-status__help" aria-required="true" name="date-picker-status" type="text" value="">
+  <span class="fsa-field__help" id="date-picker-status__help">Example 05/14/1975</span>
+</div>
+
+// Placed at bottom of page
+<script>
+  datePickerController.createDatePicker({
+    formElements: { "date-picker-static-status": "%m/%d/%Y" },
+    statusFormat:"%l, %d%S %F %Y"
+  });
+</script>
+```
+
 
 ## Date Formatting Options
 
@@ -272,6 +301,30 @@ The following list of conversion specifiers are valid for use within the date fo
       </td>
       <td aria-label="Description">
         A two digit representation of a year
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="Specifier" scope="row">
+        %l
+      </td>
+      <td aria-label="Description">
+        A full textual representation of the day of the week (Monday – Sunday)
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="Specifier" scope="row">
+        %S
+      </td>
+      <td aria-label="Description">
+        English ordinal suffix for the day of the month: st, nd, rd or th
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="Specifier" scope="row">
+        %F
+      </td>
+      <td aria-label="Description">
+        A full textual representation of a month, such as January or March
       </td>
     </tr>
 
