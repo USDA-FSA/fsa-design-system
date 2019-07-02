@@ -88,63 +88,6 @@ The width of `.fsa-field`'s use of `.fsa-input` defaults to the full width of it
 </div>
 ```
 
-### Text, Date Format
-
-Three distinct text fields are the easiest way for users to enter most dates. Use this format for most dates &ndash; particularly memorized dates. A fully interactive and accessible Date Picker component is currently under consideration.
-
-<div class="ds-preview">
-  <div class="fsa-field fsa-field--columns">
-    <span class="fsa-field__label">Date</span>
-    <div class="fsa-grid">
-      <div class="fsa-grid__auto">
-        <div class="fsa-field__column">
-          <label class="fsa-field__help" for="date__month_98">Month</label>
-          <input placeholder="mm" class="fsa-input fsa-input--block" id="date__month_98" name="date__month_98" type="number" pattern="0?[1-9]|1[012]" min="1" max="12" value="" aria-describedby="lorem-1234-help-88">
-        </div>
-      </div>
-      <div class="fsa-grid__auto">
-        <div class="fsa-field__column">
-          <label class="fsa-field__help" for="date__day_98">Day</label>
-          <input placeholder="dd" class="fsa-input fsa-input--block" id="date__day_98" name="day" type="number" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" min="1" max="31" value="" aria-describedby="lorem-1234-help-88">
-        </div>
-      </div>
-      <div class="fsa-grid__auto">
-        <div class="fsa-field__column">
-          <label class="fsa-field__help" for="date__year_98">Year</label>
-          <input placeholder="yyyy" class="fsa-input fsa-input--block" id="date__year_98" name="year" type="number" pattern="[0-9]{4}" min="1900" max="2050" value="" aria-describedby="lorem-1234-help-88">
-        </div>
-      </div>
-    </div>
-    <span class="fsa-field__help" id="lorem-1234-help-88">For example: 04 28 2017</span>
-  </div>
-</div>
-```html
-<div class="fsa-field fsa-field--columns">
-  <span class="fsa-field__label">Date</span>
-  <div class="fsa-grid">
-    <div class="fsa-grid__auto">
-      <div class="fsa-field__column">
-        <label class="fsa-field__help" for="date__month_98">Month</label>
-        <input class="fsa-input fsa-input--block" id="date__month_98" name="date__month_98" type="number" pattern="0?[1-9]|1[012]" min="1" max="12" value="" aria-describedby="lorem-1234-help-88">
-      </div>
-    </div>
-    <div class="fsa-grid__auto">
-      <div class="fsa-field__column">
-        <label class="fsa-field__help" for="date__day_98">Day</label>
-        <input class="fsa-input fsa-input--block" id="date__day_98" name="day" type="number" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" min="1" max="31" value="" aria-describedby="lorem-1234-help-88">
-      </div>
-    </div>
-    <div class="fsa-grid__auto">
-      <div class="fsa-field__column">
-        <label class="fsa-field__help" for="date__year_98">Year</label>
-        <input class="fsa-input fsa-input--block" id="date__year_98" name="year" type="number" pattern="[0-9]{4}" min="1900" max="2050" value="" aria-describedby="lorem-1234-help-88">
-      </div>
-    </div>
-  </div>
-  <span class="fsa-field__help" id="lorem-1234-help-88">For example: 04 28 2017</span>
-</div>
-```
-
 ### Textarea
 
 Using [Textarea]({{ site.baseurl }}components/textarea/) as core component.
@@ -1002,63 +945,6 @@ Additionally, each **core nested component** may have additional selectors to de
       </div>
     </div>
   </div>
-</div>
-```
-
-### Error, Text, Date Format
-
-<div class="ds-preview">
-  <div class="fsa-field fsa-field--columns fsa-field--error">
-    <span class="fsa-field__label">Date</span>
-    <div class="fsa-grid">
-      <div class="fsa-grid__auto">
-        <div class="fsa-field__column">
-          <label class="fsa-field__help" for="date__month">Month</label>
-          <input class="fsa-input fsa-input--block" id="date__month" name="date__month" type="number" pattern="0?[1-9]|1[012]" min="01" max="12" value="05" aria-describedby="lorem-1234-help-99">
-        </div>
-      </div>
-      <div class="fsa-grid__auto">
-        <div class="fsa-field__column">
-          <label class="fsa-field__help" for="date__day">Day</label>
-          <input class="fsa-input fsa-input--error fsa-input--block" id="date__day" name="day" type="number" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" min="01" max="31" value="32" aria-describedby="UNIQUE-ID__789456123 lorem-1234-help-99">
-        </div>
-      </div>
-      <div class="fsa-grid__auto">
-        <div class="fsa-field__column">
-          <label class="fsa-field__help" for="date__year">Year</label>
-          <input class="fsa-input fsa-input--block" id="date__year" name="year" type="number" pattern="[0-9]{4}" min="1900" max="2050" value="2017" aria-describedby="UNIQUE-ID__154824454 lorem-1234-help-99">
-        </div>
-      </div>
-    </div>
-    <span class="fsa-field__help" id="lorem-1234-help-99">For example: 04 28 2017</span>
-    <span class="fsa-field__message" id="UNIQUE-ID__789456123" role="alert">Add a valid value for "Day".</span>
-  </div>
-</div>
-```html
-<div class="fsa-field fsa-field--columns fsa-field--error">
-  <span class="fsa-field__label">Date</span>
-  <div class="fsa-grid">
-    <div class="fsa-grid__auto">
-      <div class="fsa-field__column">
-        <label class="fsa-field__help" for="date__month">Month</label>
-        <input class="fsa-input fsa-input--block" id="date__month" name="date__month" type="number" pattern="0?[1-9]|1[012]" min="01" max="12" value="05" aria-describedby="lorem-1234-help-99">
-      </div>
-    </div>
-    <div class="fsa-grid__auto">
-      <div class="fsa-field__column">
-        <label class="fsa-field__help" for="date__day">Day</label>
-        <input class="fsa-input fsa-input--error fsa-input--block" id="date__day" name="day" type="number" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" min="01" max="31" value="32" aria-describedby="UNIQUE-ID__789456123 lorem-1234-help-99">
-      </div>
-    </div>
-    <div class="fsa-grid__auto">
-      <div class="fsa-field__column">
-        <label class="fsa-field__help" for="date__year">Year</label>
-        <input class="fsa-input fsa-input--block" id="date__year" name="year" type="number" pattern="[0-9]{4}" min="1900" max="2050" value="2017" aria-describedby="UNIQUE-ID__154824454 lorem-1234-help-99">
-      </div>
-    </div>
-  </div>
-  <span class="fsa-field__help" id="lorem-1234-help-99">For example: 04 28 2017</span>
-  <span class="fsa-field__message" id="UNIQUE-ID__789456123" role="alert">Add a valid value for "Day".</span>
 </div>
 ```
 
