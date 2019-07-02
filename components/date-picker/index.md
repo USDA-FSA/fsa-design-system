@@ -17,7 +17,7 @@ custom_js: "datepicker-demo.js"
 
 ## Variations and Examples
 
-The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Field]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in below under [Date Formatting Options](#date-formatting-options).
+The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Fields]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed below under [Date Formatting Options](#date-formatting-options).
 
 ### Basic JavaScript Initialization
 
