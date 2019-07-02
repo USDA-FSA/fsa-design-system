@@ -416,37 +416,58 @@ The below Overview of CSS Classes are identical to the [Form Fields Component]({
 
 ## Keyboard Navigation
 
-Using the blow set of Keyboard commands, the User can navigate the Date Picker Input field along with the Calendar portion as well.
+The following keyboard commands allows the user to navigate Date Picker's calendar when in focus.
 
-**Up Arrow and Down Arrow**
-Goes to the same day of the week in the previous or next week respectively. If the user advances past the end of the month they continue into the next or previous month as appropriate.
-
-**Left Arrow and Right Arrow**
-Advances one day to the next‚ also in a continuum. Visually focus is moved from day to day and wraps from row to row in a grid of days and weeks.
-
-**Alt + Page Up**
-Moves to the same date in the previous year
-
-**Alt + Page Down**
-Moves to the same date in the next year
-
-**Home**
-Moves to the first day of the current month.
-
-**End**
-Moves to the last day of the current month.
-
-**Page Up**
-Moves to the same date in the previous month
-
-**Page Down**
-Moves to the same date in the next month
-
-**Enter**
-Selects the date that currently has focus. Keyboard focus will move back to the associated text field once the datepicker has closed.
-
-**Escape**
-In the case of a popup datepicker‚ closes the widget without any action. Keyboard focus will move back to the associated text field once the datepicker has closed.
+<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+  <thead>
+    <tr>
+      <th scope="col">Keystroke</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><nobr><kbd title="Up">↑</kbd> or <kbd title="Down">↓</kbd></nobr></td>
+      <td aria-label="Description">Goes to the same day of the week in the previous or next week respectively. If the user advances past the end of the month they continue into the next or previous month as appropriate.</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><nobr><kbd title="Left">←</kbd> or <kbd title="Right">→</kbd></nobr></td>
+      <td aria-label="Description">Advances one day to the next‚ also in a continuum. Visually focus is moved from day to day and wraps from row to row in a grid of days and weeks.</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><nobr><kbd>Alt</kbd> + <kbd>Page Up</kbd></nobr></td>
+      <td aria-label="Description">Moves to the same date in the previous year</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><nobr><kbd>Alt</kbd> + <kbd>Page Down</kbd></nobr></td>
+      <td aria-label="Description">Moves to the same date in the next year</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><kbd>Home</kbd></td>
+      <td aria-label="Description">Moves to the first day of the current month.</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><kbd>End</kbd></td>
+      <td aria-label="Description">Moves to the last day of the current month.</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><kbd>Page Up</kbd></td>
+      <td aria-label="Description">Moves to the same date in the previous month</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><kbd>Page Down</kbd></td>
+      <td aria-label="Description">Moves to the same date in the next month</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><kbd>Enter</kbd></td>
+      <td aria-label="Description">Selects the date that currently has focus. Keyboard focus will move back to the associated text field once the datepicker has closed.</td>
+    </tr>
+    <tr>
+      <td aria-label="Keystroke" scope="row"><kbd title="Escape">Esc</kbd></td>
+      <td aria-label="Description">In the case of a popup datepicker‚ closes the widget without any action. Keyboard focus will move back to the associated text field once the datepicker has closed.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Accessibility
 
