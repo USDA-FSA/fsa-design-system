@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Date Picker"
-intro: "The Date Picker is a component designed to augment an Input element or Form Field with the ability to select a date in a Calendar view."
+intro: "The Date Picker augments an Input element or Form Field with the ability to select a date in a Calendar view."
 jump_menu: true
 custom_js: "datepicker-demo.js"
 ---
@@ -17,7 +17,7 @@ custom_js: "datepicker-demo.js"
 
 ## Variations and Examples
 
-The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Fields]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in the [table below](#date-formatting-options).
+The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Field]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in below under [Date Formatting Options](#date-formatting-options).
 
 ### Basic JavaScript Initialization
 
@@ -92,7 +92,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 
 ### Disable Weekends
 
-You can only allow for the selection of weekdays on the calendar, by assigning an array <code>[0,0,0,0,0,1,1]</code> as the <code>disabledDays</code> property when instantiating an instance of the Date Picker. The first spot in the array is represented by a Monday. You can also disable a specific day of the week by adding a one to the array for any of the days represented.
+You can only allow for the selection of specific weekdays on the calendar, by assigning an array <code>[0,0,0,0,0,1,1]</code> as the <code>disabledDays</code> property when instantiating an instance of the Date Picker. The first spot in the array represents Monday. You can also disable a specific day of the week by adding a `1` to the array for any of the days represented.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -120,7 +120,7 @@ You can only allow for the selection of weekdays on the calendar, by assigning a
 
 ### Upper and Lower Dates
 
-Additional JavaScript methods can be used to limit the selection of a date. If you would like to limit the selection of a date to AFTER a period of time, you can us the JavaScript method <code>setRangeLow</code>. To limit the selection of a date BEFORE a period of time, you use the <code>setRangeHigh</code> JavaScript Method. Both JavaScript methods require you to pass in a string for the date in the <code>YYYYDDMM</code> format or pass in a new Date object. The example below uses both JavaScript methods to only allow for the selection between April 7th, 2019 and Today.
+Additional JavaScript methods can be used to limit the selection of a date. If you would like to limit the selection of a date to **after** a period of time, you can us the JavaScript method <code>setRangeLow</code>. To limit the selection of a date **prior** to a period of time, you use the <code>setRangeHigh</code> JavaScript Method. Both require you to pass in a string for the date in the <code>YYYYDDMM</code> format or pass in a new Date object (i.e. `new Date()`). The example below uses both JavaScript methods to only allow for the selection between April 7th, 2019 and Today.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -180,7 +180,7 @@ By utilising the <code>staticPos</code> property and setting the value to <code>
 
 ### Disabled Static Calendar Location
 
-Adding the <code>disabled</code> parameter to the Input element will disable the Input and also the entire Static Calendar.
+Adding the <code>disabled</code> parameter to the `<input>` element disables both the `<input>` field and the entire Static Calendar.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -208,7 +208,7 @@ Adding the <code>disabled</code> parameter to the Input element will disable the
 
 ### Calendar with Status Bar
 
-To augment the visual impact of date selection, you can add a status message, displaying at the bottom of the calendar. Add the JavaScript method <code>statusFormat</code> to the initialized object, and specify a date format that follows the Date Formatting Options shown below. The below example uses <code>"%l, %d%S %F %Y"</code>.
+To augment the visual impact of date selection, you can add a status message, dynamically displayed beneath the calendar. Add the JavaScript method <code>statusFormat</code> to the initialized object, specifying a date format that follows the [Date Formatting Options](#date-formatting-options) shown below. The below example uses <code>"%l, %d%S %F %Y"</code>.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -248,23 +248,23 @@ The following list of conversion specifiers are valid for use within the date fo
   <tbody>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %d
+        <code>%d</code>
       </td>
       <td aria-label="Description">
-        Day of the month, 2 digits with leading zeros (01 – 31)
+        Day of the month, 2 digits with leading zeros (<code>01</code> – <code>31</code>)
       </td>
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %j
+        <code>%j</code>
       </td>
       <td aria-label="Description">
-        Day of the month without leading zeros (1 – 31)
+        Day of the month without leading zeros (<code>1</code> – <code>31</code>)
       </td>
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %m
+        <code>%m</code>
       </td>
       <td aria-label="Description">
         Numeric representation of a month, with leading zeros
@@ -272,7 +272,7 @@ The following list of conversion specifiers are valid for use within the date fo
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %n
+        <code>%n</code>
       </td>
       <td aria-label="Description">
         Numeric representation of a month, without leading zeros
@@ -280,7 +280,7 @@ The following list of conversion specifiers are valid for use within the date fo
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %Y
+        <code>%Y</code>
       </td>
       <td aria-label="Description">
         A full numeric representation of a year, 4 digits
@@ -288,7 +288,7 @@ The following list of conversion specifiers are valid for use within the date fo
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %y
+        <code>%y</code>
       </td>
       <td aria-label="Description">
         A two digit representation of a year
@@ -296,7 +296,7 @@ The following list of conversion specifiers are valid for use within the date fo
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %l
+        <code>%l</code>
       </td>
       <td aria-label="Description">
         A full textual representation of the day of the week (Monday – Sunday)
@@ -304,15 +304,15 @@ The following list of conversion specifiers are valid for use within the date fo
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %S
+        <code>%S</code>
       </td>
       <td aria-label="Description">
-        English ordinal suffix for the day of the month: st, nd, rd or th
+        English ordinal suffix for the day of the month: st, nd, rd or th (e.g. "1st", "2nd", "3rd", "5th")
       </td>
     </tr>
     <tr>
       <td aria-label="Specifier" scope="row">
-        %F
+        <code>%F</code>
       </td>
       <td aria-label="Description">
         A full textual representation of a month, such as January or March
@@ -337,7 +337,7 @@ The following list of conversion specifiers are valid for use within the date fo
         MMDDYYYY
       </td>
       <td aria-label="Description">
-        %m%d%Y
+        <code>%m%d%Y</code>
       </td>
     </tr>
     <tr>
@@ -345,7 +345,7 @@ The following list of conversion specifiers are valid for use within the date fo
         MM/DD/YYYY
       </td>
       <td aria-label="Description">
-        %m/%d/%Y
+        <code>%m/%d/%Y</code>
       </td>
     </tr>
     <tr>
@@ -353,7 +353,7 @@ The following list of conversion specifiers are valid for use within the date fo
         MM-DD-YYYY
       </td>
       <td aria-label="Description">
-        %m-%d-%Y
+        <code>%m-%d-%Y</code>
       </td>
     </tr>
     <tr>
@@ -361,7 +361,7 @@ The following list of conversion specifiers are valid for use within the date fo
         M/D/YY
       </td>
       <td aria-label="Description">
-        %n%j%y
+        <code>%n%j%y</code>
       </td>
     </tr>
     <tr>
@@ -369,7 +369,7 @@ The following list of conversion specifiers are valid for use within the date fo
         M.D.YYYY
       </td>
       <td aria-label="Description">
-        %n.%j.%Y
+        <code>%n.%j.%Y</code>
       </td>
     </tr>
   </tbody>
