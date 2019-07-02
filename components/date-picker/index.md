@@ -17,11 +17,9 @@ custom_js: "datepicker-demo.js"
 
 ## Variations and Examples
 
-The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Fields]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in the [table below](#date-formatting-options). 
+The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Fields]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed in the [table below](#date-formatting-options).
 
 ### Basic JavaScript Initialization
-
-
 
 ```html
 <div class="fsa-field">
@@ -30,10 +28,10 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
   <span class="fsa-field__help" id="date-picker-basic__help">Example 05/14/1975</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
-    // Associate the text input to a DD/MM/YYYY date format                            
+    // Associate the text input to a DD/MM/YYYY date format
     formElements: { "date-picker-basic": "%m/%d/%Y" }
   });
 </script>
@@ -56,11 +54,11 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
   <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
-    // Associate the text input to a DD/MM/YYYY date format                            
-    formElements: { "elementID": "%m/%d/%Y" }
+    // Associate the text input to a DD/MM/YYYY date format
+    formElements: { "date-picker-block": "%m/%d/%Y" }
   });
 </script>
 ```
@@ -82,11 +80,11 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
   <span class="fsa-field__help" id="date-picker-disabled__help">Example 05/14/1975</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
-    // Associate the text input to a DD/MM/YYYY date format                            
-    formElements: { "elementID": "%m/%d/%Y" },
+    // Associate the text input to a DD/MM/YYYY date format
+    formElements: { "date-picker-disabled": "%m/%d/%Y" },
     staticPos: true
   });
 </script>
@@ -104,7 +102,6 @@ You can only allow for the selection of weekdays on the calendar, by assigning a
   </div>
 </div>
 
-
 ```html
 <div class="fsa-field--block">
   <label class="fsa-field__label" for="date-picker-disabledweekends">Select Date</label>
@@ -112,7 +109,7 @@ You can only allow for the selection of weekdays on the calendar, by assigning a
   <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 07/04/2019</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
     formElements: { "date-picker-disabledweekends": "%m/%d/%Y" },
@@ -133,7 +130,6 @@ Additional JavaScript methods can be used to limit the selection of a date. If y
   </div>
 </div>
 
-
 ```html
 <div class="fsa-field--block">
   <label class="fsa-field__label" for="date-picker-upper-lower">Select Date Between 04/07/2019 - Today</label>
@@ -141,7 +137,7 @@ Additional JavaScript methods can be used to limit the selection of a date. If y
   <span class="fsa-field__help" id="date-picker-upper-lower__help">Example 06/06/2019</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
     formElements: { "date-picker-upper-lower": "%m/%d/%Y" },
@@ -152,7 +148,6 @@ Additional JavaScript methods can be used to limit the selection of a date. If y
   datePickerController.setRangeHigh("date-picker-upper-lower", new Date());
 </script>
 ```
-
 
 ### Static Calendar Location
 
@@ -166,7 +161,6 @@ By utilising the <code>staticPos</code> property and setting the value to <code>
   </div>
 </div>
 
-
 ```html
 <div class="fsa-field--block">
   <label class="fsa-field__label" for="date-picker-static-display">Select Date</label>
@@ -174,7 +168,7 @@ By utilising the <code>staticPos</code> property and setting the value to <code>
   <span class="fsa-field__help" id="date-picker-static-display__help">Example 05/14/1975</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
     formElements: { "date-picker-static-display": "%m/%d/%Y" },
@@ -196,7 +190,6 @@ Adding the <code>disabled</code> parameter to the Input element will disable the
   </div>
 </div>
 
-
 ```html
 <div class="fsa-field--block">
   <label class="fsa-field__label" for="date-picker-static-display-disabled">Select Date</label>
@@ -204,7 +197,7 @@ Adding the <code>disabled</code> parameter to the Input element will disable the
   <span class="fsa-field__help" id="date-picker-static-display-disabled__help">Example 05/14/1975</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
     formElements: { "date-picker-static-display-disabled": "%m/%d/%Y" },
@@ -215,7 +208,7 @@ Adding the <code>disabled</code> parameter to the Input element will disable the
 
 ### Calendar with Status Bar
 
-To augment the visual impact of date selection, you can add a status message, displaying at the bottom of the calendar. Add the JavaScript method <code>statusFormat</code> to the initialized object, and specify a date format that follows the Date Formatting Options shown below. The below example uses <code>"%l, %d%S %F %Y"</code>. 
+To augment the visual impact of date selection, you can add a status message, displaying at the bottom of the calendar. Add the JavaScript method <code>statusFormat</code> to the initialized object, and specify a date format that follows the Date Formatting Options shown below. The below example uses <code>"%l, %d%S %F %Y"</code>.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -225,7 +218,6 @@ To augment the visual impact of date selection, you can add a status message, di
   </div>
 </div>
 
-
 ```html
 <div class="fsa-field--block">
   <label class="fsa-field__label" for="date-picker-status">Select Date</label>
@@ -233,15 +225,14 @@ To augment the visual impact of date selection, you can add a status message, di
   <span class="fsa-field__help" id="date-picker-status__help">Example 05/14/1975</span>
 </div>
 
-// Placed at bottom of page
+<!-- Placed at bottom of page -->
 <script>
   datePickerController.createDatePicker({
-    formElements: { "date-picker-static-status": "%m/%d/%Y" },
+    formElements: { "date-picker-status": "%m/%d/%Y" },
     statusFormat:"%l, %d%S %F %Y"
   });
 </script>
 ```
-
 
 ## Date Formatting Options
 
@@ -425,7 +416,7 @@ The below Overview of CSS Classes are identical to the [Form Fields Component]({
 
 ## Keyboard Navigation
 
-Using the blow set of Keyboard commands, the User can navigate the Date Picker Input field along with the Calendar portion as well. 
+Using the blow set of Keyboard commands, the User can navigate the Date Picker Input field along with the Calendar portion as well.
 
 **Up Arrow and Down Arrow**
 Goes to the same day of the week in the previous or next week respectively. If the user advances past the end of the month they continue into the next or previous month as appropriate.
