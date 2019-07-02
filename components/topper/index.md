@@ -25,8 +25,8 @@ jump_menu: true
 
 ### Use When
 
-* An FSA Application page is longer and requires.
-* An FSA Application requires a quick way to return to the top of the page.
+* An Application page is longer and requires.
+* An Application requires a quick way to return to the top of the page.
 
 ### Don't Use
 
@@ -44,5 +44,5 @@ Always refer to the [Accessibility Text Links Guide]({{ site.baseurl }}guides/ac
 
 ## General Guidance
 
-* The Topper is generally placed just above the FSA Application Footer.
+* The Topper is generally placed just above the FPAC Application Footer.
 * The Topper component can be used multiple times on a page for extended content, such as an FAQs section.

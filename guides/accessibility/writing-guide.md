@@ -24,7 +24,7 @@ While related in ways, the Rehabilitation Act is not part of the Americans with 
 
 ## Talking points
 
-* The goal of accessibility at FSA is to build sites that are usable by everyone, not to meet minimum standards.
+* The goal of accessibility at FPAC is to build digital products that are usable by everyone, not just to meet minimum standards.
 * We focus on building accessibility into every step of a project, from design to each sprint review.
 * Employing accessibility best practices improves the user experience of all users.
-* FSA guidelines and best practices are not intended to be a replacement or supplement for Section 508 standards, but are tools to achieving these standards in modern web development.
+* FPAC guidelines and best practices are not intended to be a replacement or supplement for Section 508 standards, but are tools to achieving these standards in modern web development.

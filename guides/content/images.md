@@ -23,7 +23,7 @@ When floating images left or right around the text on a page, make sure the imag
 
 ## Copyrighted images
 
-Government works, including both written content and images created by FSA employees, are in the public domain by default.
+Government works, including both written content and images created by FPAC employees, are in the public domain by default.
 
 If you want to use existing images, explore public domain options before resorting to works under copyright. The process of publishing will be simpler, and questions of attribution will be much less confusing for the public if they choose to use our written content elsewhere. Look for images with a [public domain (CC0) license](https://creativecommons.org/about/cc0).
 
@@ -42,12 +42,12 @@ If you do use copyrighted images:
 
 ## Accessibility
 
-Images must comply with [508 standards and accessibility guidelines](https://www.section508.gov/summary-section508-standards). The broad requirement is that any information presented in an image must also be presented in an alternative format (for people who cannot view images). While 508 compliant is the minimum threshold for our content, we generally hold FSA work to a higher standard specified by the [Web Content Accessibility Guidelines’ (WCAG) AA standard](https://www.w3.org/WAI/intro/wcag.php).
+Images must comply with [508 standards and accessibility guidelines](https://www.section508.gov/summary-section508-standards). The broad requirement is that any information presented in an image must also be presented in an alternative format (for people who cannot view images). While 508 compliant is the minimum threshold for our content, we generally hold FPAC work to a higher standard specified by the [Web Content Accessibility Guidelines’ (WCAG) AA standard](https://www.w3.org/WAI/intro/wcag.php).
 
-For images, this means every image on a web page must have “alt text” describing the image. Additionally, any text that appears in the image must also appear in the alt text. Most screen readers already add “Image of” when reading out an image, so alt text like “Image of the FSA logo” is redundant because screen readers will read it as “Image of image of the FSA logo.” A good rule of thumb is to limit alt text to 150 words; anything longer should be placed in the content of the page. Images that serve solely to illustrate or provide visual interest for other nearby content do not require alt text, but they do require the “alt” attribute (in HTML, this is `alt=""`).
+For images, this means every image on a web page must have “alt text” describing the image. Additionally, any text that appears in the image must also appear in the alt text. Most screen readers already add “Image of” when reading out an image, so alt text like “Image of the FPAC logo” is redundant because screen readers will read it as “Image of image of the FPAC logo.” A good rule of thumb is to limit alt text to 150 words; anything longer should be placed in the content of the page. Images that serve solely to illustrate or provide visual interest for other nearby content do not require alt text, but they do require the “alt” attribute (in HTML, this is `alt=""`).
 
-For more details and examples, read the [FSA Accessibility Guide](../accessibility/images).
+For more details and examples, read the [Accessibility Guide](../accessibility/images).
 
 ## Captions
 
-When captioning an image, the goal is to add additional context and information. Don’t simply state what the reader is able to see by looking at the photo itself. Captions should increase depth and understanding. They're also a good place to include attribution information when images are under a Creative Commons license or other groups have granted FSA permission to use an image.
+When captioning an image, the goal is to add additional context and information. Don’t simply state what the reader is able to see by looking at the photo itself. Captions should increase depth and understanding. They're also a good place to include attribution information when images are under a Creative Commons license or other groups have granted FPAC permission to use an image.

@@ -2,18 +2,18 @@
 layout: guide
 parent: "Applications"
 title: "Footer"
-intro: "All FSA applications shall utilize a standard Footer based on the below specifications. The links in the below table are required for all FSA applications. Additional links that are specific to individual applications can be appended in the appropriate category column."
+intro: "All FPAC applications shall utilize a standard Footer based on the below specifications. The links in the below table are required for all applications. Additional links that are specific to individual applications can be appended in the appropriate category column."
 
 ---
 
 ## Footer Guidelines
 
-The FSA application footer is a multifacited feature that is designed to provide various levels of nagivational structure to meet the needs of the User. The columns are arranged from left to right to flow from more specific application links to more global navigation and contact options. Any additional links that are outlined in Business Requirements shall be placed in the appropriate column.
+The FPAC application footer is a multifacited feature that is designed to provide various levels of nagivational structure to meet the needs of the User. The columns are arranged from left to right to flow from more specific application links to more global navigation and contact options. Any additional links that are outlined in Business Requirements shall be placed in the appropriate column.
 
 
 ## Footer Column Structure
 
-The FSA footer has 4 columns:
+The footer has 4 columns:
 
  * First column represents links that are specifc for the application
  * Second column represents Agency links that are more relevant to the program
@@ -77,7 +77,7 @@ The FSA footer has 4 columns:
 
 ## Footer Required Links
 
-Below is the list of recommended links that shall be used on all FSA application footers. Based on the specific application and the Users, some of the below links will not be necessary or applicable.
+Below is the list of recommended links that shall be used on all FPAC application footers. Based on the specific application and the Users, some of the below links will not be necessary or applicable.
 
 <table class="fsa-table fsa-table--responsive">
     <thead>

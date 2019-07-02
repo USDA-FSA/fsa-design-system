@@ -24,7 +24,7 @@ Check that the title shown in the tab for the page is unique and describes the p
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Page Titles - FSA Design System</title>
+    <title>Page Titles - FPAC Design System</title>
   </head>
   <body>
     ...
@@ -33,4 +33,4 @@ Check that the title shown in the tab for the page is unique and describes the p
 
 ```
 
-> The title for this page is 'Page Titles - FSA Design System'. The first half is the name of this page and the second is the name of the site.
+> The title for this page is 'Page Titles - FPAC Design System'. The first half is the name of this page and the second is the name of the site.

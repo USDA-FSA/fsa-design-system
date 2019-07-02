@@ -5,7 +5,7 @@ title: "Links and Repetitive Content"
 intro: "Links are commonly used to quickly navigate a site when someone is using Assistive Technology (AT). Often, screen reader users won't read through an entire page to find what they are looking for, they simply move from link to link."
 ---
 
-Things become problematic when links only make sense with context. Common link call-to-action language such as 'Click here' or 'Read more' doesn't make sense without visual context. It's important that we inspect FSA sites for links that lack visual context. While these links can be made more accessible by adding ```title``` or ```ARIA``` attributes, this is not ideal. The ideal method for making such links accessible, is simply by writing contextually descriptive link text from the start.
+Things become problematic when links only make sense with context. Common link call-to-action language such as 'Click here' or 'Read more' doesn't make sense without visual context. It's important that we inspect FPAC applications and sites for links that lack visual context. While these links can be made more accessible by adding ```title``` or ```ARIA``` attributes, this is not ideal. The ideal method for making such links accessible, is simply by writing contextually descriptive link text from the start.
 
 The other issue that screen reader and keyboard users frequently encounter is lengthy nav bars. A list of links and with compound menus,  nav bars can be quite lengthy to tab through. To alleviate these pains, a skip navigation link should be provided as the first link on the page which then jumps to an anchor with a ```tabindex='-1'```.
 

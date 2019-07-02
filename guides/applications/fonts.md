@@ -2,13 +2,13 @@
 layout: guide
 parent: "Applications"
 title: "Fonts"
-intro: "All FSA applications shall adhere to the below Typography guidelines in order to maintain consistency throughout all agency applications."
+intro: "All FPAC applications shall adhere to the below Typography guidelines in order to maintain consistency throughout all agency applications."
 
 ---
 
 ## Typography Guidelines
 
-The Typeface used within the FSA Design System has been selected because of their legibility and availability across operating systems. All FSA applications shall utilize only the Typeface listed below. They are open-source and designed to have a clear and concise look that pairs well in numerous interface elements in an application. Fallback Typefaces are available within the CSS for legacy systems. Developers should review the [Typography section]({{ site.baseurl }}visual-style/typography/) to gain further insight on how to utilize the official typeface.
+The Typeface used within the Design System has been selected because of their legibility and availability across operating systems. All FPAC applications shall utilize only the Typeface listed below. They are open-source and designed to have a clear and concise look that pairs well in numerous interface elements in an application. Fallback Typefaces are available within the CSS for legacy systems. Developers should review the [Typography section]({{ site.baseurl }}visual-style/typography/) to gain further insight on how to utilize the official typeface.
 
 ## Typeface
 
@@ -83,7 +83,7 @@ Should the Web Fonts, Source Sans Pro or Merriweather, fail to load for any reas
 
 ## Usage
 
-The font system being used allows for various pairings of fonts that are contemporary and are optimized for readability. When used properly, the FSA Design System will automatically choose a consistent (and correct) font for all elements within the web page. Developers need not explicitly specify the font for any web element. All approved fonts are contained within the custom CSS framework (fsa-style) and should be applied using the appropriate classes. Developers shall not augment or change fonts within the FSA Design System for use within FSA Applications.
+The font system being used allows for various pairings of fonts that are contemporary and are optimized for readability. When used properly, the Design System will automatically choose a consistent (and correct) font for all elements within the web page. Developers need not explicitly specify the font for any web element. All approved fonts are contained within the custom CSS framework (fsa-style) and should be applied using the appropriate classes. Developers shall not augment or change fonts within the Design System for use within FPAC Applications.
 
 ## Related Resources
 

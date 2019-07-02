@@ -7,7 +7,7 @@ intro: "Introduction to <strong>Front-end</strong> Design and Development"
 
 ## What is Front-end?
 
-As Developers adapt and grow to the ever-changing roles, technology, and tooling, it is important to understand the difference between various parts of the FSA Application. While most Developers understand the inner workings of the backend, consisting of the server, application layer, and a database, the concept of the Front-end is sometimes ambigious.
+As Developers adapt and grow to the ever-changing roles, technology, and tooling, it is important to understand the difference between various parts of the FPAC Application. While most Developers understand the inner workings of the backend, consisting of the server, application layer, and a database, the concept of the Front-end is sometimes ambigious.
 
 The Front-end of a web application is any functionality, visuals, text, or process that takes place in a browser. In general, the basic technical components of any Front-end include HTML, CSS, and JavaScript and combined they create the interface and interactions of an application.
 

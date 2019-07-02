@@ -1,9 +1,9 @@
 ---
 layout: category
 title: "Guides"
-intro: "The FSA Design System contains strategic guidelines based on industry best practices and concepts inspired by the US Digital Service's US Web Design System."
+intro: "The Design System contains strategic guidelines based on industry best practices and concepts inspired by the US Digital Service's US Web Design System."
 ---
 
-These Guides will provide the necessary information and guidance to effectively implement the components and styles that are inherent within the FSA Style codebase.
+These Guides will provide the necessary information and guidance to effectively implement the components and styles that are inherent within the Design System's CSS Framework, `fsa-style`.
 
-<!-- These Guides will provide the necessary information and guidance to utilize the FSA Design System in the most efficient and effective way. Important topics, such as 508 Compliance, are covered as supplemental information, and the Application Guidelines provide the rules and procedures to utilize the components and styles that are inherent while implementing the FSA Style codebase. -->
+<!-- These Guides will provide the necessary information and guidance to utilize the Design System in the most efficient and effective way. Important topics, such as 508 Compliance, are covered as supplemental information, and the Application Guidelines provide the rules and procedures to utilize the components and styles that are inherent while implementing the `fsa-style` codebase. -->

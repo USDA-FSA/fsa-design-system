@@ -2,7 +2,7 @@
 layout: guide
 parent: "Content"
 title: "Structure the content"
-intro: "What works well when reading online as well as FSA recommendations on ways to keep online readers in mind when writing and editing."
+intro: "What works well when reading online as well as FPAC recommendations on ways to keep online readers in mind when writing and editing."
 ---
 
 ## Important information first

@@ -5,7 +5,7 @@ title: Home
 
 <div class="ds-article">
 
-  <p class="fsa-text--lead">Open Source design resource and guidelines defining the next generation of FSA digital products, setting a new bar for simplicity and consistency across the USDA Farm Service Agency.</p>
+  <p class="fsa-text--lead"><abbr title="Farm Production and Conservation">FPAC</abbr>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for a cohesive user experience across USDA Farm Production and Conservation.</p>
 
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
@@ -41,7 +41,7 @@ title: Home
         <h3 class="ds-home-features__title">Guides</h3>
         <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_designer_2x.png" alt="">
       </a>
-      <p class="ds-home-features__blurb">Guidelines covering Accessibility and Content for FSA digital products.</p>
+      <p class="ds-home-features__blurb">Guidelines covering Accessibility and Content for FPAC digital products.</p>
     </div>
   </div>
 

@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Global Navigation"
-intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FSA applications."
+intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FPAC applications."
 jump_menu: true
 title_label: 'May Require JavaScript'
 ---
@@ -1586,11 +1586,11 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 ### Use When
 
-* An FSA Application requires navigation to other areas within the application.
+* An FPAC Application requires navigation to other areas within the application.
 
 ### Don't Use
 
-* As any other navigation system that is not located directly below the [FSA Application Header]({{ site.baseurl }}guides/applications/header).
+* As any other navigation system that is not located directly below the [Application Header]({{ site.baseurl }}guides/applications/header).
 * As a jump menu that directs Users to content on the same page.
 
 ## Accessibility

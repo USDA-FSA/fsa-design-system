@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Forms"
-intro: "FSA applications shall adhere to the layout and specifications for forms that are listed below."
+intro: "FPAC applications shall adhere to the layout and specifications for forms that are listed below."
 
 ---
 
@@ -23,7 +23,7 @@ intro: "FSA applications shall adhere to the layout and specifications for forms
 
 ## Single vs Two Column Layout
 
-In general, FSA applications should use a single column layout when possible. There are instances when a two or multi-column layout is appropriate which will be determined based on the complexity and groupings of the form fields.
+In general, FPAC applications should use a single column layout when possible. There are instances when a two or multi-column layout is appropriate which will be determined based on the complexity and groupings of the form fields.
 
 ### Single Column Example
 

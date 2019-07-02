@@ -2,7 +2,7 @@
 layout: page
 parent: "Getting Started"
 title: "License"
-intro: "Overview for the <strong>license</strong> to the FSA Design System."
+intro: "Overview for the <strong>license</strong> to the Design System."
 ---
 
 ## License

@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Application Header"
-intro: "The FSA Application Header component provides a prominent way to display the application abbreviation and name."
+intro: "The Application Header component provides a prominent way to display the application abbreviation and name."
 jump_menu: true
 ---
 
@@ -76,8 +76,8 @@ jump_menu: true
 
 ### Use When
 
-* An FSA Application is viewable to a internal or public audience.
-* An FSA Application needs to prominently display the application abbreviation, application name, and Username.
+* An Application is viewable to a internal or public audience.
+* An Application needs to prominently display the application abbreviation, application name, and Username.
 
 ### Don't Use
 
@@ -85,4 +85,4 @@ jump_menu: true
 
 ## General Guidance
 
-* The Application Header should be positioned just below the [Top Hat Component]({{ site.baseurl }}components/tophat/) when paired together in an FSA Application.
+* The Application Header should be positioned just below the [Top Hat Component]({{ site.baseurl }}components/tophat/) when paired together in an FPAC Application.

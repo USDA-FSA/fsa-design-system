@@ -12,7 +12,7 @@ custom_js: "growl-init-demo.js"
 <div class="fsa-growl-container">
   <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9E" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Something happened</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -24,7 +24,7 @@ custom_js: "growl-init-demo.js"
   </div>
   <div class="fsa-growl fsa-growl--error" id="UNIQUE-ID-832353AD65DB511B" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl title</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -38,7 +38,7 @@ custom_js: "growl-init-demo.js"
   </div>
   <div class="fsa-growl fsa-growl--warning" id="UNIQUE-ID-BC33C95AA75A8E1C" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl title</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -52,7 +52,7 @@ custom_js: "growl-init-demo.js"
   </div>
   <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-8A386E512C033F57" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl title</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -66,7 +66,7 @@ custom_js: "growl-init-demo.js"
   </div>
   <div class="fsa-growl fsa-growl--warning" id="growl-init-demo-3" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
     </div>
     <div class="fsa-growl__bd">
       <p>Would you like to see a <strong>Modal-based example</strong>?</p>
@@ -78,7 +78,7 @@ custom_js: "growl-init-demo.js"
   </div>
   <div class="fsa-growl" id="growl-init-demo-2" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
     </div>
     <div class="fsa-growl__bd">
       <p>You can have more than one when/if necessary.</p>
@@ -89,7 +89,7 @@ custom_js: "growl-init-demo.js"
   </div>
   <div class="fsa-growl" id="growl-init-demo" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl Notification doc loaded</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -182,7 +182,7 @@ For events of lower relative importance, or for generic use.
   <div style="max-width: 340px;">
     <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9Efrf" aria-hidden="false" tabindex="0" role="dialog">
       <div class="fsa-growl__hd">
-        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
         <h2 class="fsa-growl__title">Something happened</h2>
       </div>
       <div class="fsa-growl__bd">
@@ -198,7 +198,7 @@ For events of lower relative importance, or for generic use.
 <div class="fsa-growl-container">
   <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9E" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Something happened</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -219,7 +219,7 @@ When things go wrong.
   <div style="max-width: 340px;">
     <div class="fsa-growl fsa-growl--error" id="UNIQUE-ID-832353AD65DB5frf" aria-hidden="false" tabindex="0" role="dialog">
       <div class="fsa-growl__hd">
-        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
         <h2 class="fsa-growl__title">Growl title</h2>
       </div>
       <div class="fsa-growl__bd">
@@ -237,7 +237,7 @@ When things go wrong.
 <div class="fsa-growl-container">
   <div class="fsa-growl fsa-growl--error" id="UNIQUE-ID-832353AD65DB511B" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl title</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -260,7 +260,7 @@ For events that require user attention.
   <div style="max-width: 340px;">
     <div class="fsa-growl fsa-growl--warning" id="UNIQUE-ID-BC33C95AA75A8E1Cfrf" aria-hidden="false" tabindex="0" role="dialog">
       <div class="fsa-growl__hd">
-        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
         <h2 class="fsa-growl__title">Growl title</h2>
       </div>
       <div class="fsa-growl__bd">
@@ -278,7 +278,7 @@ For events that require user attention.
 <div class="fsa-growl-container">
   <div class="fsa-growl fsa-growl--warning" id="UNIQUE-ID-BC33C95AA75A8E1C" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl title</h2>
     </div>
     <div class="fsa-growl__bd">
@@ -301,7 +301,7 @@ For reporting of a successful end of an operation or action.
   <div style="max-width: 340px;">
     <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-8A386E512C033F57frf" aria-hidden="false" tabindex="0" role="dialog">
       <div class="fsa-growl__hd">
-        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
         <h2 class="fsa-growl__title">Growl title</h2>
       </div>
       <div class="fsa-growl__bd">
@@ -319,7 +319,7 @@ For reporting of a successful end of an operation or action.
 <div class="fsa-growl-container">
   <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-8A386E512C033F57" aria-hidden="true" tabindex="0" role="dialog">
     <div class="fsa-growl__hd">
-      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
       <h2 class="fsa-growl__title">Growl title</h2>
     </div>
     <div class="fsa-growl__bd">

@@ -514,7 +514,7 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
 <div tabindex="0" id="UNIQUE-ID-stepped-control-demo-1" class="fsa-modal" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">Modal Title</h1>
       <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
       <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
@@ -546,7 +546,7 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
 <div tabindex="0" id="UNIQUE-ID-stepped-control-demo-2" class="fsa-modal" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close" data-behavior="close-modal" title="Close Modal" aria-label="Close Modal" type="button"></button>
       <h1 class="fsa-modal__title">Modal Title</h1>
       <p>Voluptas vel, excepturi! Quo, veritatis. Aliquam voluptate, aut voluptates neque, repellat, dolore autem provident, deserunt ducimus quibusdam similique dolorum facilis. Quis, ducimus.</p>
       <p>Cupiditate, nemo illo. Rerum dolor suscipit, doloribus nam unde, nostrum quod voluptatum, amet nulla molestias debitis, officia asperiores temporibus aliquid! Ipsum, at.</p>
