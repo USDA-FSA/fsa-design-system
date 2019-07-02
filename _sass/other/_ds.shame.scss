@@ -134,3 +134,19 @@ div.fsa-stepped-tabs__label {
   }
 
 }
+
+// TODO: graduate up to fsa-style
+kbd {
+  background-color: white;
+  padding: ($size-base * .25) ($size-base + ($size-base / 2));
+  color: $color-fsa-tertiary;
+  border: 1px solid $color-fsa-tertiary-200;
+  box-shadow: 0 1px 0 $color-fsa-tertiary-200;
+  border-radius: 3px;
+  font-size: $font-size-0;
+  font-weight: $font-bold;
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 3ch;
+  text-align: center;
+}
