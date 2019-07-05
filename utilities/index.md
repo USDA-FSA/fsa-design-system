@@ -8,7 +8,7 @@ suppress_code_toggle: true
 
 Utilities &ndash; also known as “trumps,” “helper classes,” or “alterations,” &ndash; are high-specificity selectors for making very targeted alterations to existing elements or components.
 
-They are most useful when you want to override a default value, in one-off situations, or even to explore design ideas; though be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style.
+They are most useful when you want to override a default value, in one-off situations, or even to explore design ideas; though be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style. This is very deliberate as utility classes are for **final adjustments, and should not be overridden by anything that comes before them**.
 
 Most include **Responsive** options, enabling you to make targeted alterations at different screen sizes. e.g. *"Small padding on small screens, larger padding on bigger screens."*
 
