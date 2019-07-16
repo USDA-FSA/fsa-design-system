@@ -67,8 +67,8 @@ jump_menu: true
 ## General Guidance
 
 * Breadcrumbs are marked up an an Ordered List (`<ol>`) as its order matters.
-* The last crumb of the component is **not** intended to reflect the current view; rather, it is the current view's **immediate** parent.
-* Breadcrumbs should be located just below the global navigation system and above the main content of the application.
+* The last crumb of the component should **not** be a duplicate of the current view's Page Title (e.g. `<h1>`). If an alternate label cannot sufficiently describe the current page, that the last crumb should reflect the current view's **immediate** parent.
+* Breadcrumbs should be located just below the global navigation system and above the main content of the application, typically immediately above the `<h1>` page title.
 * Keep each crumb's title brief but descriptive.
 
 ## Accessibility

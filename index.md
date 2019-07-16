@@ -5,7 +5,7 @@ title: Home
 
 <div class="ds-article">
 
-  <p class="fsa-text--lead"><abbr title="Farm Production and Conservation">FPAC</abbr>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for a cohesive user experience across USDA Farm Production and Conservation.</p>
+  <p class="fsa-text--lead fsa-m-t--none"><abbr title="Farm Production and Conservation">FPAC</abbr>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for a cohesive user experience across USDA Farm Production and Conservation.</p>
 
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
