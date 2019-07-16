@@ -475,15 +475,15 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 If you customize the text inputs, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
-* Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form components must have an associated `<label>` with matching `for` attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
+* Form components **must have an associated** `<label>` with matching `for` attribute.
+* Do not use the `placeholder` attribute as the sole label for accessibility reasons. In addition to not being a suitable replacement for the required `<label>` element, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
 * Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 * Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
 * The above list of [Keyboard Commands](#keyboard-navigation) follows the recommended 508 Compliance standards.
 
 ## General Guidance
 
-* The Date Picker utilizes a navitation bar consisting of four arrows and a Today button. These button are intended for navigation purposes within the Calendar, so selecting the Today button will navigate the User to today's date, NOT select today's date.
-* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
+* The Date Picker utilizes a navigation bar consisting of four arrows and a Today button. They are intended for navigation purposes within the Calendar. For example, selecting the "Today" button navigates the User to today's date, though it does **not** select today's date.
 * Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
 * Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
 * Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
