@@ -40,7 +40,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 ### Block Example
 
 <div class="ds-preview">
-  <div class="fsa-field--block">
+  <div class="fsa-field fsa-field--block">
     <label class="fsa-field__label" for="date-picker-block">Date of Birth</label>
     <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
     <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
@@ -103,7 +103,7 @@ You can only allow for the selection of specific weekdays on the calendar, by as
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" for="date-picker-disabledweekends">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-disabledweekends" aria-describedby="date-picker-disabledweekends__help" aria-required="true" name="date-picker-disabledweekends" type="text" value="">
   <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 07/04/2019</span>
@@ -131,7 +131,7 @@ Additional JavaScript methods can be used to limit the selection of a date. If y
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" for="date-picker-upper-lower">Select Date Between 04/07/2019 - Today</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-upper-lower" aria-describedby="date-picker-upper-lower__help" aria-required="true" name="date-picker-upper-lower" type="text" value="">
   <span class="fsa-field__help" id="date-picker-upper-lower__help">Example 06/06/2019</span>
@@ -162,7 +162,7 @@ By utilising the <code>staticPos</code> property and setting the value to <code>
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" for="date-picker-static-display">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-static-display" aria-describedby="date-picker-static-display__help" aria-required="true" name="date-picker-static-display" type="text" value="">
   <span class="fsa-field__help" id="date-picker-static-display__help">Example 05/14/1975</span>
@@ -191,7 +191,7 @@ Adding the <code>disabled</code> parameter to the `<input>` element disables bot
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" for="date-picker-static-display-disabled">Select Date</label>
   <input placeholder="mm/dd/yyyy" disabled class="fsa-input fsa-field__item" id="date-picker-static-display-disabled" aria-describedby="date-picker-static-display-disabled__help" aria-required="true" name="date-picker-static-display-disabled" type="text" value="">
   <span class="fsa-field__help" id="date-picker-static-display-disabled__help">Example 05/14/1975</span>
@@ -219,7 +219,7 @@ To augment the visual impact of date selection, you can add a status message, dy
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" for="date-picker-status">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-status" aria-describedby="date-picker-status__help" aria-required="true" name="date-picker-status" type="text" value="">
   <span class="fsa-field__help" id="date-picker-status__help">Example 05/14/1975</span>
