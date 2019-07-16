@@ -47,6 +47,114 @@ jump_menu: true
 </div>
 ```
 
+## Examples
+
+Breadcrumbs are typically paired with the `<h1>` page title. The following examples demonstrate how `fsa-breadcrumb` works in concert with the `<h1>` Page Title.
+
+### Reflect current page
+
+Avoid using the same redundant label for the last crumb to reflect the current page, instead provide an alternate label that suffiently describes the page without being the same literal text.
+
+In this example, the last crumb is indeed the current page - though with an alternate text label accurately describing the current page.
+
+<div class="ds-preview">
+  <div class="fsa-breadcrumb">
+    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+      <ol class="fsa-breadcrumb__list">
+        <li class="fsa-breadcrumb__item">
+          <a href="/" class="fsa-breadcrumb__link">Home</a>
+        </li>
+        <li class="fsa-breadcrumb__item">
+          <a href="link.html" class="fsa-breadcrumb__link">Farm Micro Authority</a>
+        </li>
+        <li class="fsa-breadcrumb__item">
+          <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
+        </li>
+        <li class="fsa-breadcrumb__item" aria-current="page">
+          <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <h1>Inspection #1234</h1>
+</div>
+```html
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="/" class="fsa-breadcrumb__link">Home</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link.html" class="fsa-breadcrumb__link">Farm Micro Authority</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
+      </li>
+      <li class="fsa-breadcrumb__item" aria-current="page">
+        <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<h1>Inspection #1234</h1>
+```
+
+### Reflect parent
+
+When an alternate label (to the Page Title) cannot sufficiently describe the current page, then the last crumb shall reflect the current view's **immediate** parent.
+
+In this example the immediate parent, *American League*, acts as the last crumb to the current page, *Kansas City Royals*.
+
+<div class="ds-preview">
+  <div class="fsa-breadcrumb">
+    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+      <ol class="fsa-breadcrumb__list">
+        <li class="fsa-breadcrumb__item">
+          <a href="/" class="fsa-breadcrumb__link">Home</a>
+        </li>
+        <li class="fsa-breadcrumb__item">
+          <a href="link.html" class="fsa-breadcrumb__link">Sports</a>
+        </li>
+        <li class="fsa-breadcrumb__item">
+          <a href="link.html" class="fsa-breadcrumb__link">Baseball</a>
+        </li>
+        <li class="fsa-breadcrumb__item">
+          <a href="link.html" class="fsa-breadcrumb__link">MLB</a>
+        </li>
+        <li class="fsa-breadcrumb__item">
+          <a href="link.html" class="fsa-breadcrumb__link">American League</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <h1>Kansas City Royals</h1>
+</div>
+```html
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="/" class="fsa-breadcrumb__link">Home</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link.html" class="fsa-breadcrumb__link">Sports</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link.html" class="fsa-breadcrumb__link">Baseball</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link.html" class="fsa-breadcrumb__link">MLB</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link.html" class="fsa-breadcrumb__link">American League</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<h1>Kansas City Royals</h1>
+```
+
 ## Usage
 
 ### Use When
@@ -67,7 +175,6 @@ jump_menu: true
 ## General Guidance
 
 * Breadcrumbs are marked up an an Ordered List (`<ol>`) as its order matters.
-* The last crumb of the component should **not** be a duplicate of the current view's Page Title (e.g. `<h1>`). If an alternate label cannot sufficiently describe the current page, that the last crumb should reflect the current view's **immediate** parent.
 * Breadcrumbs should be located just below the global navigation system and above the main content of the application, typically immediately above the `<h1>` page title.
 * Keep each crumb's title brief but descriptive.
 
