@@ -2,7 +2,7 @@
 layout: page
 parent: "Visual Style"
 title: "Grid and Layout"
-intro: "A 12-column, responsive grid provides structure for web site and app content."
+intro: "A 12-column, responsive <strong>Grid System</strong> provides structure for web site and app content."
 jump_menu: true
 suppress_code_toggle: true
 ---
