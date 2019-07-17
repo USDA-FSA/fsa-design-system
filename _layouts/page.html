@@ -33,10 +33,9 @@ layout: default
 
   </div>
 
-  <div class="ds-l-page__body">
+  <div class="ds-l-page__body{% if page.full_width %} ds-l-page__body--full-width{% endif %}">
 
     <article class="ds-article">
-
 
       {% if page.intro %}
       <p class="fsa-text--lead">{{ page.intro }}</p>

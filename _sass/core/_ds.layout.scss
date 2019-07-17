@@ -145,6 +145,12 @@ main {
 
     }
 
+    &--full-width {
+      float: none;
+      width: auto;
+      padding-right: 0;
+    }
+
   }
 
   &__adjacent {

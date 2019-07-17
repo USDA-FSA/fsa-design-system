@@ -10707,6 +10707,12 @@ main:active, main:focus {
   }
 }
 
+.ds-l-page__body--full-width {
+  float: none;
+  width: auto;
+  padding-right: 0;
+}
+
 @media (min-width: 54em) {
   .ds-l-page__adjacent {
     float: right;
