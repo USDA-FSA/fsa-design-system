@@ -8,14 +8,21 @@ intro: "FPAC applications shall have the same look and feel, along with having a
 
 ## Variations and States
 
-The below buttons are the default variations available for use in the Design System. For further details on variations and states, refer to [Button Components]({{ site.baseurl }}components/buttons/).
+The below buttons are the default variations available for use in the Design System. For further details on variations and states, view the [Button Components]({{ site.baseurl }}components/buttons/) component documentation.
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
-  <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
-  <button class="fsa-btn fsa-btn--primary" disabled="disabled" type="button">Disabled</button>
-  <button class="fsa-btn fsa-btn--flat" type="button">Flat</button>
+  <p>
+      <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
+      <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
+      <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
+      <button class="fsa-btn fsa-btn--flat" type="button">Flat</button>
+  </p>
+  <p>
+      <button class="fsa-btn fsa-btn--primary" type="button" disabled>Disabled Primary</button>
+      <button class="fsa-btn fsa-btn--secondary" type="button" disabled>Disabled Secondary</button>
+      <button class="fsa-btn fsa-btn--tertiary" type="button" disabled>Disabled Tertiary</button>
+      <button class="fsa-btn fsa-btn--flat" type="button" disabled>Disabled Flat</button>
+  </p>
 </div>
 
 ### Primary
@@ -36,28 +43,31 @@ In most cases, a button labeled as "Cancel" should be shown with the Flat style 
 ## Size
 
 <div class="ds-preview">
-  <button class="fsa-btn" type="button">Default</button>
-  <button class="fsa-btn fsa-btn--small" type="button">Small</button>
-  <button class="fsa-btn fsa-btn--large" type="button">Large</button>
+  <button class="fsa-btn fsa-btn--primary" type="button">Default</button>
+  <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Small</button>
+  <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Large</button>
 </div>
 
-## General Guidelines:
+## General Guidelines
 
- * All buttons shall use an action word to start the label. Eg. "View Details" vs. "Details"
+ * All buttons should use an action word to start the label. Eg. "View Details" vs. "Details"
  * A Cancel button shall not be used unless the online form uses a multi-step process
  * A Cancel button shall be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process
  * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes
  * When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variation) or Secondary button
  * Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
 
-## Multi-Step Process Guidelines:
+## Multi-Step Process Guidelines
+
 
  * A **regressive** action shall be left-aligned, followed by right-aligned **progressive** action(s)
  * Back and Next can be used as button labels
  * The saving of data or state is implied and clicking the **"Regressive"** button shall not delete data that has been entered
  * Save or Submit can be used on the final step
 
-## Reset and Clear Guidelines:
+View [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/) component for documentation.
+
+## Reset and Clear Guidelines
 
  * Reset is defined as removing all data and returning to the initial state of the application or online form inputs
  * Clear is defined as removing all data from application or online form fields
@@ -379,6 +389,9 @@ ___
     </tbody>
 </table>
 
-## Related Resources
+## Related Components
 
- * [Button Components]({{ site.baseurl }}components/buttons/)
+* [Buttons]({{ site.baseurl }}components/buttons/)
+* [Form Fields]({{ site.baseurl }}fsa-design-system/components/form-fields/)
+* [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/)
+* [Search]({{ site.baseurl }}fsa-design-system/components/search/)
