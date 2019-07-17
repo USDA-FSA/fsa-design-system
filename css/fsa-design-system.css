@@ -10752,6 +10752,10 @@ main:active, main:focus {
   }
 }
 
+.ds-home-features__item {
+  margin-bottom: 1em;
+}
+
 .ds-home-features__link {
   text-decoration: none;
 }
@@ -10765,7 +10769,7 @@ main:active, main:focus {
 }
 
 .ds-home-features__title {
-  margin-bottom: 0;
+  margin: 0;
   color: inherit;
 }
 
@@ -11405,10 +11409,6 @@ pre.highlight .ds-clipboard {
   padding-left: 0;
 }
 
-.foo__item p {
-  background-color: #e1f3f8;
-}
-
 .foo__item--fu {
   width: 25%;
 }
@@ -11447,10 +11447,6 @@ pre.highlight .ds-clipboard {
 
 .fsa-grid--no-gutter .lorem__item {
   padding-left: 0;
-}
-
-.lorem__item p {
-  background-color: #e1f3f8;
 }
 
 .lorem__item--fu {
@@ -11564,6 +11560,18 @@ div.fsa-stepped-tabs__label {
 
 .docs__rwd-embed--desktop {
   width: 1187px;
+}
+
+.docs__grid-inventory .docs__grid-inventory {
+  --grid-demo-bgcolor-nest: #bfe9f4;
+  --grid-demo-background-columns-nest: repeating-linear-gradient(
+      to right,
+      var(--grid-demo-bgcolor-nest),
+      var(--grid-demo-bgcolor-nest) var(--grid-demo-column-width),
+      transparent var(--grid-demo-column-width),
+      transparent var(--grid-demo-repeating-width)
+    );
+  background-image: var(--grid-demo-background-columns-nest);
 }
 
 .ds-code-toggle {

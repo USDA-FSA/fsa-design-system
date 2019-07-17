@@ -16,10 +16,6 @@
 
     @include fsa-grid-column();
 
-    p {
-      background-color: $color-fsa-aqua-100;
-    }
-
     &--fu {
       @include fsa-grid-column-width(3); // 25%
     }
@@ -38,10 +34,6 @@
   &__item {
 
     @include fsa-grid-column();
-
-    p {
-      background-color: $color-fsa-aqua-100;
-    }
 
     &--fu {
 

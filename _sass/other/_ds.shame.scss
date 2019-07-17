@@ -86,6 +86,7 @@
   @include sr-only;
 }
 
+// TODO move to fsa-style
 code {
   h1 &,
   h2 &,
@@ -98,7 +99,7 @@ code {
   }
 }
 
-// This isn't broken in fsa-style, but for is with Ruby-based Sass, which strips out the :not() rule
+// This isn't broken in fsa-style, but is with Ruby-based Sass, which strips out the :not() rule
 .fsa-table__sort:hover:not(.fsa-table__sort--descending, .fsa-table__sort--ascending):after {
   background-image: url('#{$image-path}/chevron-up.png');
   background-image: url('#{$image-path}/chevron-up.svg');
@@ -121,6 +122,25 @@ div.fsa-stepped-tabs__label {
 // TODO move to fsa-style
 .docs__rwd-embed--desktop {
   width: 1187px;
+}
+
+// TODO move to fsa-style
+.docs__grid-inventory {
+
+  & & {
+    --grid-demo-bgcolor-nest: #{tint($color-fsa-aqua, 75%)};
+    --grid-demo-background-columns-nest: repeating-linear-gradient(
+      to right,
+      var(--grid-demo-bgcolor-nest),
+      var(--grid-demo-bgcolor-nest) var(--grid-demo-column-width),
+      transparent var(--grid-demo-column-width),
+      transparent var(--grid-demo-repeating-width)
+    );
+
+    background-image: var(--grid-demo-background-columns-nest);
+
+  }
+
 }
 
 .ds-code-toggle {
