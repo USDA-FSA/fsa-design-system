@@ -1,7 +1,7 @@
 {
   "name": "fsa-design-system",
-  "description": "Open Source UI components and visual style guide for USDA-FSA web sites and apps",
-  "version": "1.12.0",
+  "description": "Open Source Design System for USDA Farm Production and Convervation (FPAC)",
+  "version": "1.13.0",
   "license": "SEE LICENSE in LICENSE.md",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "fsa-style": "^2.3.2",
+    "fsa-style": "^2.3.3",
     "jquery": "^3.0.0"
   },
   "author": "USDA Farm Service and Production, ISSDOB/FBCSS",

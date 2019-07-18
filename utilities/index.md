@@ -6,32 +6,48 @@ jump_menu: true
 suppress_code_toggle: true
 ---
 
-Utilities &ndash; also known as “trumps,” “helper classes,” or “alterations,” &ndash; are high-specificity selectors for making very targeted alterations to existing elements or components.
+Utilities &ndash; also known as “trumps,” “helper classes,” or “alterations” &ndash; are high-specificity selectors for making very targeted alterations to existing elements or components.
 
 They are most useful when you want to override a default value, in one-off situations, or even to explore design ideas; though be aware that they often use an `!important` flag in the CSS to ensure the desired alteration is achieved by superceding an element's default style. This is very deliberate as utility classes are for **final adjustments, and should not be overridden by anything that comes before them**.
 
 Most include **Responsive** options, enabling you to make targeted alterations at different screen sizes. e.g. *"Small padding on small screens, larger padding on bigger screens."*
 
-### Sample use case
+## Usage
 
-An `h2` element has a **top margin** you'd like to minimize.
+A sample use case: you'd like to adjust a component's **margins** .
 
 ```html
-<!-- Before  -->
 <h2>Second level heading</h2>
 ```
-<div class="docs__utilities__demo">
+<div class="docs__utilities__demo fsa-m-b--l">
   <h2>Second level heading</h2>
 </div>
 
-Apply the `fsa-m-t--s` utility class.
+...let's give it a **small** top margin...
 
 ```html
-<!-- After  -->
 <h2 class="fsa-m-t--s">Second level heading</h2>
 ```
-<div class="docs__utilities__demo">
+<div class="docs__utilities__demo fsa-m-b--l">
   <h2 class="fsa-m-t--s">Second level heading</h2>
+</div>
+
+...or perhaps **remove** the top margin, and **increase** its bottom margin...
+
+```html
+<h2 class="fsa-m-t--none fsa-m-b--xl">Second level heading</h2>
+```
+<div class="docs__utilities__demo fsa-m-b--l">
+  <h2 class="fsa-m-t--none fsa-m-b--xl">Second level heading</h2>
+</div>
+
+...or even **remove all** of its margins...
+
+```html
+<h2 class="fsa-m--none">Second level heading</h2>
+```
+<div class="docs__utilities__demo fsa-m-b--l">
+  <h2 class="fsa-m--none">Second level heading</h2>
 </div>
 
 ## Margins
@@ -387,7 +403,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 #### None
 
-Effectively an override.
+Most likely used to override a component's current `float` property.
 
 ```html
 <el class="fsa-float--none">...</el>
@@ -443,19 +459,21 @@ Adjust floating presentation per media query breakpoint.
   </div>
 </div>
 
-## Text size
+## Text Size
 
 <p class="fsa-text--lead">Selectively adjust text size. </p>
 
 Text Size utility classes follow's the system's **vertical rythym** &ndash; [Typography]({{ site.baseurl }}visual-style/typography/) and [Size and Space]({{ site.baseurl }}visual-style/size-and-space/) working in concert for a cohesive look and feel.
 
-**Note** to override text size of `h1-h6` elements, refer to [Text Headers](#text-headers).
+<aside>
+  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+    <div class="fsa-alert__body">
+      <p class="fsa-alert__text"><strong>Note:</strong> to override text size of <code>&lt;h1&gt;</code> &ndash; <code>&lt;h6&gt;</code> elements, refer to <a href="#text-headers">Text Headers utilities</a>.</p>
+    </div>
+  </div>
+</aside>
 
-```html
-<el class="fsa-text-size--[size]">...</el>
-```
-
-Where `size` is one of `0` - `7`
+Where `size` is one of `0` - `7`. For reference, the **base** font size is equal to `3`.
 
 ### Variations
 
@@ -492,67 +510,6 @@ Text size can be adjusted per media query breakpoint.
   </div>
 </div>
 
-## Text Alignment
-
-<p class="fsa-text--lead">Selectively align blocks of text.</p>
-
-```html
-<el class="fsa-text-size--[direction]">...</el>
-```
-
-Where `direction` is one of `left`, `center`, or `right`
-
-### Variations
-
-#### Right
-
-```html
-<el class="fsa-text-align--right">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-#### Centered
-
-```html
-<el class="fsa-text-align--center">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-#### Left
-
-```html
-<el class="fsa-text-align--left">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-### Responsive
-
-Adjust text alignment per media query breakpoint.
-
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <p>
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-    </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
-  </p>
-  <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
 
 ## Text Headers
 
@@ -623,16 +580,80 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
   </div>
 </div>
 
+## Text Alignment
+
+<p class="fsa-text--lead">Selectively align blocks of content.</p>
+
+```html
+<el class="fsa-text-size--[direction]">...</el>
+```
+
+Where `direction` is one of `left`, `center`, or `right`
+
+### Variations
+
+#### Right
+
+```html
+<el class="fsa-text-align--right">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+#### Centered
+
+```html
+<el class="fsa-text-align--center">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+#### Left
+
+```html
+<el class="fsa-text-align--left">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+### Responsive
+
+Adjust text alignment per media query breakpoint.
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Visibility
 
 <p class="fsa-text--lead">Selectively show or hide elements or blocks at a variety of screen sizes (i.e. Media Query breakpoints).</p>
 
 <div class="fsa-hide@xl">
-  <div class="fsa-alert fsa-alert--warning" role="alert">
-    <div class="fsa-alert__body">
-      <p class="fsa-alert__text">View this page on a larger screen to view complete Responsive Web Design options.</p>
+  <aside>
+    <div class="fsa-alert fsa-alert--warning">
+      <div class="fsa-alert__body">
+        <p class="fsa-alert__text">View this page on a larger screen to view complete Responsive Web Design options.</p>
+      </div>
     </div>
-  </div>
+  </aside>
 </div>
 
 ### Show at minimum screen size

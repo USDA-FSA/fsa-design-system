@@ -86,6 +86,7 @@
   @include sr-only;
 }
 
+// TODO move to fsa-style
 code {
   h1 &,
   h2 &,
@@ -98,7 +99,7 @@ code {
   }
 }
 
-// This isn't broken in fsa-style, but for is with Ruby-based Sass, which strips out the :not() rule
+// This isn't broken in fsa-style, but is with Ruby-based Sass, which strips out the :not() rule
 .fsa-table__sort:hover:not(.fsa-table__sort--descending, .fsa-table__sort--ascending):after {
   background-image: url('#{$image-path}/chevron-up.png');
   background-image: url('#{$image-path}/chevron-up.svg');
@@ -113,6 +114,17 @@ div.fsa-stepped-tabs__label {
 }
 
 // TODO move to fsa-style
+.color-fsa-page-bg {
+  background-color: $color-fsa-site-bg;
+  border: 1px solid $color-fsa-tertiary-200;
+}
+
+.color-fsa-white {
+  background-color: $color-fsa-white;
+  border: 1px solid $color-fsa-tertiary-200;
+}
+
+// TODO move to fsa-style
 .fsa-grid__demo {
   padding: 0;
   background-color: rgba(0, 0, 0, .05);
@@ -121,6 +133,25 @@ div.fsa-stepped-tabs__label {
 // TODO move to fsa-style
 .docs__rwd-embed--desktop {
   width: 1187px;
+}
+
+// TODO move to fsa-style
+.docs__grid-inventory {
+
+  & & {
+    --grid-demo-bgcolor-nest: #{tint($color-fsa-aqua, 75%)};
+    --grid-demo-background-columns-nest: repeating-linear-gradient(
+      to right,
+      var(--grid-demo-bgcolor-nest),
+      var(--grid-demo-bgcolor-nest) var(--grid-demo-column-width),
+      transparent var(--grid-demo-column-width),
+      transparent var(--grid-demo-repeating-width)
+    );
+
+    background-image: var(--grid-demo-background-columns-nest);
+
+  }
+
 }
 
 .ds-code-toggle {
@@ -135,18 +166,3 @@ div.fsa-stepped-tabs__label {
 
 }
 
-// TODO: graduate up to fsa-style
-kbd {
-  background-color: white;
-  padding: ($size-base * .25) ($size-base + ($size-base / 2));
-  color: $color-fsa-tertiary;
-  border: 1px solid $color-fsa-tertiary-200;
-  box-shadow: 0 1px 0 $color-fsa-tertiary-200;
-  border-radius: 3px;
-  font-size: $font-size-0;
-  font-weight: $font-bold;
-  display: inline-block;
-  white-space: nowrap;
-  min-width: 3ch;
-  text-align: center;
-}

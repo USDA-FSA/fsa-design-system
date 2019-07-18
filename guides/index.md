@@ -1,7 +1,7 @@
 ---
 layout: category
 title: "Guides"
-intro: "The Design System contains strategic guidelines based on industry best practices and concepts inspired by the US Digital Service's US Web Design System."
+intro: The Design System contains strategic guidelines based on industry best practices and concepts inspired by the US Digital Service's <a href="https://designsystem.digital.gov/">US Web Design System</a>.
 ---
 
 These Guides will provide the necessary information and guidance to effectively implement the components and styles that are inherent within the Design System's CSS Framework, `fsa-style`.

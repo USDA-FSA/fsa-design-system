@@ -19,9 +19,8 @@ jump_menu: true
       </div>
       <div class="fsa-header-app__secondary">
         <span class="fsa-header-app__profile">
-          <a href="link.html" class="fsa-header-app__profile-link">
-            <span class="fsa-header-app__profile-name" title="[first_name] [last_name]">[first_name] [last_name]</span>
-          </a>
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
         </span>
       </div>
     </div>
@@ -39,12 +38,11 @@ jump_menu: true
       </a>
     </div>
     <div class="fsa-header-app__secondary">
-      <span class="fsa-header-app__profile">
-        <a href="link.html" class="fsa-header-app__profile-link">
-          <span class="fsa-header-app__profile-name" title="[first_name] [last_name]">[first_name] [last_name]</span>
-        </a>
-      </span>
-    </div>
+        <span class="fsa-header-app__profile">
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+        </span>
+      </div>
   </div>
 </div>
 ```
