@@ -41,7 +41,7 @@ title: Home
         <h3 class="ds-home-features__title">Guides</h3>
         <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_designer_2x.png" alt="">
       </a>
-      <p class="ds-home-features__blurb">Guidelines covering Accessibility and Content for FPAC digital products.</p>
+      <p class="ds-home-features__blurb">Guidelines covering topics such as Accessibility and Content.</p>
     </div>
   </div>
 

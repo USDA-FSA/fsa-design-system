@@ -11128,10 +11128,6 @@ pre.highlight .ds-clipboard {
   outline: 0;
 }
 
-.ds-subcat-list__link:hover {
-  text-decoration: underline;
-}
-
 .ds-subcat-list__link:visited {
   color: #0068ad;
 }
@@ -11158,6 +11154,10 @@ pre.highlight .ds-clipboard {
   border-top-width: 8px;
   border-top-width: 0.8rem;
   border-radius: 0.4rem;
+}
+
+.ds-subcat-list__link:hover .ds-subcat-list__img {
+  border-top-color: #0068ad;
 }
 
 .ds-nav {
@@ -11561,6 +11561,16 @@ blockquote code {
 span.fsa-stepped-tabs__label,
 div.fsa-stepped-tabs__label {
   cursor: initial;
+}
+
+.color-fsa-page-bg {
+  background-color: #f8fafc;
+  border: 1px solid #dbdad9;
+}
+
+.color-fsa-white {
+  background-color: #fff;
+  border: 1px solid #dbdad9;
 }
 
 .fsa-grid__demo {

@@ -7,6 +7,46 @@ jump_menu: true
 suppress_code_toggle: true
 ---
 
+## Base Palette
+
+<ul class="docs__attr-list">
+  <li class="docs__attr-list__item">
+    <h4 class="docs__sub_style">Text</h4>
+    <div class="docs__attr-list__swatch color-fsa-tertiary-dark"></div>
+    <ul class="docs__attr-list__attr">
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-base</code></li>
+    </ul>
+  </li>
+  <li class="docs__attr-list__item">
+    <h4 class="docs__sub_style">Link, Default</h4>
+    <div class="docs__attr-list__swatch color-fsa-link"></div>
+    <ul class="docs__attr-list__attr">
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-link</code></li>
+    </ul>
+  </li>
+  <li class="docs__attr-list__item">
+    <h4 class="docs__sub_style">Link, Hover</h4>
+    <div class="docs__attr-list__swatch color-fsa-link-hover"></div>
+    <ul class="docs__attr-list__attr">
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-link-hover</code></li>
+    </ul>
+  </li>
+  <li class="docs__attr-list__item">
+    <h4 class="docs__sub_style">Background</h4>
+    <div class="docs__attr-list__swatch color-fsa-page-bg"></div>
+    <ul class="docs__attr-list__attr">
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-site-bg</code></li>
+    </ul>
+  </li>
+  <li class="docs__attr-list__item">
+    <h4 class="docs__sub_style">White</h4>
+    <div class="docs__attr-list__swatch color-fsa-white"></div>
+    <ul class="docs__attr-list__attr">
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-white</code></li>
+    </ul>
+  </li>
+</ul>
+
 ## Core Palette
 
 <ul class="docs__attr-list">
@@ -32,7 +72,6 @@ suppress_code_toggle: true
     </ul>
   </li>
 </ul>
-
 
 ### Tints and Shades
 
@@ -66,7 +105,7 @@ suppress_code_toggle: true
   </li>
 </ul>
 
-## Accent
+## Accent Palette
 
 <ul class="docs__attr-list">
   <li class="docs__attr-list__item">
@@ -108,41 +147,6 @@ suppress_code_toggle: true
   </li>
 </ul>
 
-
-## Base
-
-<ul class="docs__attr-list">
-  <li class="docs__attr-list__item">
-    <h4 class="docs__sub_style">Text</h4>
-    <div class="docs__attr-list__swatch color-fsa-tertiary-dark"></div>
-    <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-base</code></li>
-    </ul>
-  </li>
-  <li class="docs__attr-list__item">
-    <h4 class="docs__sub_style">Link, Default</h4>
-    <div class="docs__attr-list__swatch color-fsa-link"></div>
-    <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-link</code></li>
-    </ul>
-  </li>
-  <li class="docs__attr-list__item">
-    <h4 class="docs__sub_style">Link, Hover</h4>
-    <div class="docs__attr-list__swatch color-fsa-link-hover"></div>
-    <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-link-hover</code></li>
-    </ul>
-  </li>
-  <!-- <li class="docs__attr-list__item">
-    <h4 class="docs__sub_style">Link, visited</h4>
-    <div class="docs__attr-list__swatch color-fsa-link-visited"></div>
-    <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-link-visited</code></li>
-    </ul>
-  </li> -->
-</ul>
-
-
 ## Text Accessibility
 
 WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of [at least 4.5:1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). This ensures that viewers who cannot see the full color spectrum are able to read the text.
@@ -150,9 +154,3 @@ WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by
 If you choose to customize beyond this palette, [WebAIM Color Contrast Checker](http://webaim.org/resources/contrastchecker/) is a useful resource for testing the compliance of any color combination. Similar tools are listed in our Accessibility Guide under [Resources]({{ site.baseurl }}guides/accessibility/resources).
 
 Further accessibility implications covered in our Accessibility Guide under [Color and Contrast]({{ site.baseurl }}guides/accessibility/color-and-contrast)
-
-
-
-<!-- ## Related
-
-Is nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->

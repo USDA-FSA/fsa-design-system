@@ -114,6 +114,17 @@ div.fsa-stepped-tabs__label {
 }
 
 // TODO move to fsa-style
+.color-fsa-page-bg {
+  background-color: $color-fsa-site-bg;
+  border: 1px solid $color-fsa-tertiary-200;
+}
+
+.color-fsa-white {
+  background-color: $color-fsa-white;
+  border: 1px solid $color-fsa-tertiary-200;
+}
+
+// TODO move to fsa-style
 .fsa-grid__demo {
   padding: 0;
   background-color: rgba(0, 0, 0, .05);
@@ -154,3 +165,4 @@ div.fsa-stepped-tabs__label {
   }
 
 }
+

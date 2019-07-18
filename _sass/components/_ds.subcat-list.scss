@@ -42,7 +42,7 @@
     }
 
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
     }
 
     &:visited {
@@ -65,11 +65,17 @@
   }
 
   &__img {
+
     display: block;
     width: 100%;
     border: ($size-base / 2) solid $color-fsa-tertiary-200;
     border-top-width: $size-small;
     border-radius: $size-base;
+
+    .ds-subcat-list__link:hover & {
+      border-top-color: $color-fsa-link;
+    }
+
   }
 
 }
