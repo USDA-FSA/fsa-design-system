@@ -87,7 +87,7 @@ Below is the default table style that should be used in the majority of instance
       <td>74.70</td>
       <td>0.00</td>
       <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--primary" type="button">Save</button></td>
+      <td><button class="fsa-btn fsa-btn--small fsa-btn--block fsa-btn--primary" type="button">Save</button></td>
     </tr>
     <tr>
       <td>700</td>
@@ -97,76 +97,10 @@ Below is the default table style that should be used in the majority of instance
       <td>7.80</td>
       <td>0.00</td>
       <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--primary" type="button">Save</button></td>
+      <td><button class="fsa-btn fsa-btn--small fsa-btn--block fsa-btn--primary" type="button">Save</button></td>
     </tr>
     </tbody>
 </table>
-
-<p>
-  <button class="fsa-btn fsa-btn--secondary" type="button">Back</button>
-  <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button>
-</p>
-
-<!--
-
-___
-
-
-### Select Receipts for View
-<div class="fsa-grid">
-  <div class="fsa-grid__1/2"><strong>State:</strong> All states - 00</div>
-  <div class="fsa-grid__1/2"><strong>Country:</strong> All counties - 00</div>
-  <div class="fsa-grid__1/2"><strong>Commodity:</strong> Peanuts - All</div>
-  <div class="fsa-grid__1/2"><strong>Crop Year:</strong> 2016</div>
-  <div class="fsa-grid__1/2"><strong>Warehouse Code:</strong> 72150</div>
-  <div class="fsa-grid__1/2"><strong>Filesequence Number:</strong> </div>
-</div>
-
-<div class="fsa-clearfix">
-<div class="fsa-float--right">
-    <button class="fsa-btn fsa-btn--secondary" type="button">FPAC View</button> <button class="fsa-btn fsa-btn--secondary" type="button">Provider View</button>
-</div>
-</div>
-
-<table class="fsa-table">
-  <thead>
-    <tr>
-      <th scope="col">Farm Number</th>
-      <th scope="col">Tract Number</th>
-      <th scope="col">Description</th>
-      <th scope="col">Farmland Acres</th>
-      <th scope="col">Cropland Acres</th>
-      <th scope="col">CRP Cropland Acres</th>
-      <th scope="col">CRP MPL Acres</th>
-      <th scope="col">Controls</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>700</td>
-      <td>1269</td>
-      <td>H10 NE4 35-14-23</td>
-      <td>160.00</td>
-      <td>74.70</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--primary" type="button">Save</button></td>
-    </tr>
-    <tr>
-      <td>700</td>
-      <td>2804</td>
-      <td>H7 E2SE4 27-13-23</td>
-      <td>20.00</td>
-      <td>7.80</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td><button class="fsa-btn fsa-btn--primary" type="button">Save</button></td>
-    </tr>
-    </tbody>
-</table>
-
-<button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--secondary" type="button">Modify Search</button>
--->
 
 ## Examples with In-line Row Controls
 
@@ -229,11 +163,6 @@ ___
   </tbody>
 </table>
 
-<p>
-  <button class="fsa-btn fsa-btn--secondary" type="button">Back</button> <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
-</p>
-
-
 ## Borderless Table Style
 
 This style of table is generally used for tables with more text content that needs to be displayed without adding extra visual noise. The horizontal row lines help to organize the content and allow the User to effortlessly read across the row. Below is an example of the same tabular data found in the first example above, but in a variation on the table style.
@@ -285,17 +214,17 @@ The below example showcases the Borderless Table Style used with text-heavy cont
     <tr>
       <td>Barley</td>
       <td>Barley, a member of the grass family, is a major cereal grain grown in temperate climates globally. It was one of the first cultivated grains, particularly in Eurasia as early as 10,000 years ago. Barley has been used as animal fodder, as a source of fermentable material for beer and certain distilled beverages, and as a component of various health foods.</td>
-      <td><button class="fsa-btn fsa-btn--secondary" type="button">Edit</button></td>
+      <td><button class="fsa-btn fsa-btn--small fsa-btn--block fsa-btn--secondary" type="button">Edit</button></td>
     </tr>
     <tr>
       <td>Canola</td>
       <td>Canola may refer to an edible and industrial oil (also known as canola oil) produced from the seed of any of several cultivars of rapeseed bred to be low in erucic acid from the Brassicaceae family of plants, or to the plants themselves, namely cultivars of Brassica napus L., Brassica rapa subsp. oleifera, syn. B. campestris L. or Brassica juncea. To be called canola, the oil must contain less than 2% erucic acid and the leftover meal must contain less than 30 micromoles of aliphatic glucosinolates per gram.</td>
-      <td><button class="fsa-btn fsa-btn--secondary" type="button">Edit</button></td>
+      <td><button class="fsa-btn fsa-btn--small fsa-btn--block fsa-btn--secondary" type="button">Edit</button></td>
     </tr>
     <tr>
       <td>Flaxseed</td>
       <td>Flax (also known as common flax or linseed), Linum usitatissimum, is a member of the genus Linum in the family Linaceae. It is a food and fiber crop cultivated in cooler regions of the world. The textiles made from flax are known in the Western countries as linen, and traditionally used for bed sheets, underclothes, and table linen. The oil is known as linseed oil. In addition to referring to the plant itself, the word "flax" may refer to the unspun fibers of the flax plant. The plant species is known only as a cultivated plant, and appears to have been domesticated just once from the wild species Linum bienne, called pale flax.</td>
-      <td><button class="fsa-btn fsa-btn--secondary" type="button">Edit</button></td>
+      <td><button class="fsa-btn fsa-btn--small fsa-btn--block fsa-btn--secondary" type="button">Edit</button></td>
     </tr>
   </tbody>
 </table>

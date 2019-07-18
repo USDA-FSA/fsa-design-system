@@ -1,20 +1,22 @@
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
-<div class="ds-breadcrumb">
-  <ol class="ds-breadcrumb__list">
-    <li class="ds-breadcrumb__item">
-      <a href="{{ site.baseurl }}" class="ds-breadcrumb__link">Home</a>
-    </li>
-    {% for crumb in crumbs offset: 1 %}
-      {% if forloop.last %}
-        <!-- {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }} -->
-      {% else %}
-      <li class="ds-breadcrumb__item">
-        <a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}/{{ crumb }}{% endfor %}" class="ds-breadcrumb__link">
-          {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
-        </a>
+<div class="fsa-breadcrumb fsa-m-t--none">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="{{ site.baseurl }}" class="fsa-breadcrumb__link">Home</a>
       </li>
-      {% endif %}
-    {% endfor %}
-  </ol>
+      {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+          <!-- {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }} -->
+        {% else %}
+        <li class="fsa-breadcrumb__item">
+          <a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}/{{ crumb }}{% endfor %}" class="fsa-breadcrumb__link">
+            {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
 </div>

@@ -5,6 +5,7 @@ title: "Date Picker"
 intro: "The Date Picker augments an Input element or Form Field with the ability to select a date in a Calendar view."
 jump_menu: true
 custom_js: "datepicker-demo.js"
+title_label: 'JavaScript Included'
 ---
 
 <div class="ds-preview">
@@ -40,7 +41,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 ### Block Example
 
 <div class="ds-preview">
-  <div class="fsa-field--block">
+  <div class="fsa-field fsa-field--block">
     <label class="fsa-field__label" for="date-picker-block">Date of Birth</label>
     <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
     <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
@@ -48,7 +49,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 </div>
 
 ```html
-<div class="fsa-field">
+<div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" for="date-picker-block">Date of Birth</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
   <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
@@ -103,7 +104,7 @@ You can only allow for the selection of specific weekdays on the calendar, by as
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field">
   <label class="fsa-field__label" for="date-picker-disabledweekends">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-disabledweekends" aria-describedby="date-picker-disabledweekends__help" aria-required="true" name="date-picker-disabledweekends" type="text" value="">
   <span class="fsa-field__help" id="date-picker-disabledweekends__help">Example 07/04/2019</span>
@@ -131,7 +132,7 @@ Additional JavaScript methods can be used to limit the selection of a date. If y
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field">
   <label class="fsa-field__label" for="date-picker-upper-lower">Select Date Between 04/07/2019 - Today</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-upper-lower" aria-describedby="date-picker-upper-lower__help" aria-required="true" name="date-picker-upper-lower" type="text" value="">
   <span class="fsa-field__help" id="date-picker-upper-lower__help">Example 06/06/2019</span>
@@ -162,7 +163,7 @@ By utilising the <code>staticPos</code> property and setting the value to <code>
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field">
   <label class="fsa-field__label" for="date-picker-static-display">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-static-display" aria-describedby="date-picker-static-display__help" aria-required="true" name="date-picker-static-display" type="text" value="">
   <span class="fsa-field__help" id="date-picker-static-display__help">Example 05/14/1975</span>
@@ -191,7 +192,7 @@ Adding the <code>disabled</code> parameter to the `<input>` element disables bot
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field">
   <label class="fsa-field__label" for="date-picker-static-display-disabled">Select Date</label>
   <input placeholder="mm/dd/yyyy" disabled class="fsa-input fsa-field__item" id="date-picker-static-display-disabled" aria-describedby="date-picker-static-display-disabled__help" aria-required="true" name="date-picker-static-display-disabled" type="text" value="">
   <span class="fsa-field__help" id="date-picker-static-display-disabled__help">Example 05/14/1975</span>
@@ -219,7 +220,7 @@ To augment the visual impact of date selection, you can add a status message, dy
 </div>
 
 ```html
-<div class="fsa-field--block">
+<div class="fsa-field">
   <label class="fsa-field__label" for="date-picker-status">Select Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-status" aria-describedby="date-picker-status__help" aria-required="true" name="date-picker-status" type="text" value="">
   <span class="fsa-field__help" id="date-picker-status__help">Example 05/14/1975</span>
@@ -475,15 +476,19 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 If you customize the text inputs, ensure they continue to meet the the accessibility requirements that apply to all form controls.
 
-* Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form components must have an associated `<label>` with matching `for` attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
+* Form components **must have an associated** `<label>` with matching `for` attribute.
+* Do not use the `placeholder` attribute as the sole label for accessibility reasons. In addition to not being a suitable replacement for the required `<label>` element, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
 * Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 * Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
 * The above list of [Keyboard Commands](#keyboard-navigation) follows the recommended 508 Compliance standards.
 
 ## General Guidance
 
-* The Date Picker utilizes a navitation bar consisting of four arrows and a Today button. These button are intended for navigation purposes within the Calendar, so selecting the Today button will navigate the User to today's date, NOT select today's date.
-* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
+* The Date Picker utilizes a navigation bar consisting of four arrows and a Today button. They are intended for navigation purposes within the Calendar. For example, selecting the "Today" button navigates the User to today's date, though it does **not** select today's date.
 * Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
 * Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
 * Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
+
+## JavaScript Guidance
+
+(TBD)

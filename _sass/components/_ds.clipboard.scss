@@ -28,7 +28,7 @@ pre.highlight {
 @keyframes clipboardConfirm {
   0% {
     opacity: 0;
-    transform: translateY(-50%);
+    transform: translateY(105%);
   }
   10%, 80% {
     opacity: 1;
@@ -36,6 +36,6 @@ pre.highlight {
   }
   100% {
     opacity: 0;
-    transform: translateY(125%);
+    transform: translateY(-50%);
   }
 }

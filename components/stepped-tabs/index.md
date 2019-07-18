@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Tabs"
-intro: "Provide guidance, context, and nagivation to the User while in a stepped process workflow, typically paired with a <a href=\"../stepped-control/\">Stepped Control</a> component."
+intro: "Provide guidance, context, and nagivation to the User while in a stepped process workflow, typically paired with a <strong><a href=\"../stepped-control/\">Stepped Control</a></strong> component."
 jump_menu: true
 ---
 
@@ -13,22 +13,22 @@ jump_menu: true
         <ol class="fsa-stepped-tabs__list">
           <li class="fsa-stepped-tabs__item">
             <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
-              <span class="fsa-stepped-tabs__text">Step 1</span>
+              <span class="fsa-stepped-tabs__text">Shipping Information</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
             <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
-              <span class="fsa-stepped-tabs__text">Step 2</span>
+              <span class="fsa-stepped-tabs__text">Billing Information</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
             <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Step 3</span>
+              <span class="fsa-stepped-tabs__text">Payment Details</span>
             </span>
           </li>
           <li class="fsa-stepped-tabs__item">
             <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Step 4</span>
+              <span class="fsa-stepped-tabs__text">Review & Place Order</span>
             </span>
           </li>
         </ol>
@@ -43,7 +43,8 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
 
 1. **Step 1**: Completed
 1. **Step 2**: Current
-1. **Step 3** and **"Step 4"**: Incomplete / Upcoming / Future
+1. **Step 3**: Incomplete / Upcoming / Future
+1. **Step 4**: Incomplete / Upcoming / Future
 
 ## Variations and Examples
 
@@ -157,69 +158,6 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
           <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" type="button" aria-current="true">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </button>
-        </li>
-        <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-            <span class="fsa-stepped-tabs__text">Dol</span>
-          </span>
-        </li>
-        <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-            <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
-          </span>
-        </li>
-      </ol>
-    </div>
-  </div>
-</nav>
-```
-
-### Justified
-
-<div class="ds-preview">
-  <nav aria-label="Breadcrumbs">
-    <div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-      <div class="fsa-stepped-tabs__bd">
-        <ol class="fsa-stepped-tabs__list">
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
-              <span class="fsa-stepped-tabs__text">Lor</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
-              <span class="fsa-stepped-tabs__text">Em ipsum</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Dol</span>
-            </span>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
-            </span>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </nav>
-</div>
-```html
-<nav aria-label="Breadcrumbs">
-  <div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-    <div class="fsa-stepped-tabs__bd">
-      <ol class="fsa-stepped-tabs__list">
-        <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
-            <span class="fsa-stepped-tabs__text">Lor</span>
-          </a>
-        </li>
-        <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
-            <span class="fsa-stepped-tabs__text">Em ipsum</span>
-          </a>
         </li>
         <li class="fsa-stepped-tabs__item">
           <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
