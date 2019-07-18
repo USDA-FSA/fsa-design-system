@@ -11153,7 +11153,11 @@ pre.highlight .ds-clipboard {
 .ds-subcat-list__img {
   display: block;
   width: 100%;
-  border: 1px solid #dbdad9;
+  border: 2px solid #dbdad9;
+  border: 0.2rem solid #dbdad9;
+  border-top-width: 8px;
+  border-top-width: 0.8rem;
+  border-radius: 0.4rem;
 }
 
 .ds-nav {

@@ -67,7 +67,9 @@
   &__img {
     display: block;
     width: 100%;
-    border: 1px solid $color-fsa-tertiary-200;
+    border: ($size-base / 2) solid $color-fsa-tertiary-200;
+    border-top-width: $size-small;
+    border-radius: $size-base;
   }
 
 }
