@@ -7,7 +7,11 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <span class="fsa-label fsa-label--success">New Content</span>
+  <span class="fsa-label">Default Label</span>
+  <span class="fsa-label fsa-label--general">General Label</span>
+  <span class="fsa-label fsa-label--alert">Alert Label</span>
+  <span class="fsa-label fsa-label--warning">Warning Label</span>
+  <span class="fsa-label fsa-label--success">Success Label</span>
 </div>
 
 ## Variations
@@ -31,6 +35,15 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 </div>
 ```html
 <span class="fsa-label">Default Label</span>
+```
+
+### General
+
+<div class="ds-preview">
+  <span class="fsa-label fsa-label--general">General Label</span>
+</div>
+```html
+<span class="fsa-label fsa-label--general">General Label</span>
 ```
 
 ### Alert
@@ -64,12 +77,14 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 
 <div class="ds-preview">
   <span class="fsa-label fsa-label--large">Large Default Label</span>
+  <span class="fsa-label fsa-label--general fsa-label--large">Large General Label</span>
   <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
   <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
   <span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
 </div>
 ```html
 <span class="fsa-label fsa-label--large">Large Default Label</span>
+<span class="fsa-label fsa-label--general fsa-label--large">Large General Label</span>
 <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
 <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
 <span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
