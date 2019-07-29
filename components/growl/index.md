@@ -7,7 +7,7 @@ jump_menu: true
 title_label: 'Requires JavaScript'
 custom_js: "growl-init-demo.js"
 ---
-<div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
+<div class="fsa-whiteout" tabindex="-1" id="fsa-whiteout" aria-hidden="true"></div>
 
 <div class="fsa-growl-container">
   <div class="fsa-growl" id="UNIQUE-ID-AC598060D7502E9E" aria-hidden="true" tabindex="0" role="dialog">
@@ -345,7 +345,7 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 </div>
 ```html
 <!-- PLACE JUST BELOW BODY START TAG AT THE BEGINNING OF DOCUMENT -->
-<div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
+<div class="fsa-whiteout" tabindex="-1" id="fsa-whiteout" aria-hidden="true"></div>
 <!-- END WHITEOUT -->
 
 <div class="fsa-growl-container fsa-growl-container--centered">
