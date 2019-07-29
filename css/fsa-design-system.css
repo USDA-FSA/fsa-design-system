@@ -10775,8 +10775,13 @@ main:active, main:focus {
 }
 
 .ds-home-features__title {
-  margin: 0;
-  color: inherit;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.3;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
 }
 
 .ds-home-features__link:focus .ds-home-features__title {
