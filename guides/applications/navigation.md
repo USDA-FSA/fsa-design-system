@@ -21,5 +21,5 @@ Based on new standards in web design, all FPAC applications should include a "Me
 Below is a sample screenshot of an FPAC application with a multi-column Mega Menu navigation system. This combines [Top Hat]({{ site.baseurl }}fsa-design-system/components/tophat/), [Application Header]({{ site.baseurl }}fsa-design-system/components/header-app/), and [Global Navigation]({{ site.baseurl }}fsa-design-system/components/top-nav/) components - each of which have further variations and examples.
 
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/mega-menu.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.png" alt="Image of example FPAC application header"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/mega-menu.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.png" alt="example FPAC application header"></a>
 </figure>

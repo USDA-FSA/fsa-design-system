@@ -72,7 +72,7 @@ The footer has 4 columns:
 </div>
 
 <!--
-<a href="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" alt="Image of example FSA application footer"></a>
+<a href="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/footer1.jpg" alt="Example FSA application footer"></a>
 -->
 
 ## Footer Required Links

@@ -28,7 +28,7 @@ In general, FPAC applications should use a single column layout when possible. T
 ### Single Column Example
 
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" alt="Image of Single Column Form"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-single-column.jpg" alt="Single Column Form"></a>
 </figure>
 
 ___
@@ -36,7 +36,7 @@ ___
 ### Two Column Example
 
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" alt="Image of Two Column Form"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/forms-two-column.jpg" alt="Two Column Form"></a>
 </figure>
 
 ## Related Resources

@@ -31,7 +31,7 @@ A Screen ID shall be displayed on all pages of the application, below all page c
 
 <!--
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="Image of example FPAC application with Screen ID above footer"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/screen-id.jpg" alt="example FPAC application with Screen ID above footer"></a>
 </figure>
 -->
 

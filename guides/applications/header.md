@@ -11,7 +11,7 @@ Only certain aspects of the header may be customized for individual applications
 Below is a sample screenshot of an FPAC application header that represents a good example of the below guidelines.
 
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="Image of example application header"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/app-name-approved.jpg" alt="example application header"></a>
 </figure>
 
 ## Department and Agency
