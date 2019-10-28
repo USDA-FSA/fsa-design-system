@@ -9,6 +9,7 @@ jump_menu: true
 <div class="ds-preview">
   <p>
     <span class="fsa-badge">1</span>
+    <span class="fsa-badge fsa-badge--neutral">8</span>
     <span class="fsa-badge fsa-badge--general">11</span>
     <span class="fsa-badge fsa-badge--alert">11</span>
     <span class="fsa-badge fsa-badge--warning">22</span>
@@ -37,6 +38,15 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 </div>
 ```html
 <span class="fsa-badge">1</span>
+```
+
+### Neutral
+
+<div class="ds-preview">
+  <span class="fsa-badge fsa-badge--neutral">8</span>
+</div>
+```html
+<span class="fsa-badge fsa-badge--neutral">8</span>
 ```
 
 ### General
@@ -80,6 +90,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 <div class="ds-preview">
   <p>
     <span class="fsa-badge fsa-badge--large">1</span>
+    <span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
@@ -89,6 +100,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ```html
 <p>
   <span class="fsa-badge fsa-badge--large">1</span>
+    <span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
@@ -101,57 +113,35 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 Badge styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
 
 <div class="ds-preview">
-  <a class="fsa-badge fsa-badge--general" href="link.html">A</a>
-  <button class="fsa-badge fsa-badge--general" type="button">B</button>
-  <button class="fsa-badge fsa-badge--general" type="button" disabled="disabled">Z</button>
+  <a class="fsa-badge" href="link.html">A</a>
+  <button class="fsa-badge" type="button">B</button>
+  <button class="fsa-badge" type="button" disabled="disabled">Z</button>
 </div>
 ```html
-<a class="fsa-badge fsa-badge--general" href="link.html">A</a>
-<button class="fsa-badge fsa-badge--general" type="button">B</button>
-<button class="fsa-badge fsa-badge--general" type="button" disabled="disabled">Z</button>
+<a class="fsa-badge" href="link.html">A</a>
+<button class="fsa-badge" type="button">B</button>
+<button class="fsa-badge" type="button" disabled="disabled">Z</button>
 ```
 
-### Inverse
+### Example: Dark Background
 
-<div class="ds-preview">
-  <p style="background-color: #666; padding: 12px">
-    <a class="fsa-badge fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
-    <span class="fsa-badge fsa-badge--inverse">1</span>
-    <span class="fsa-badge fsa-badge--inverse">11</span>
-    <span class="fsa-badge fsa-badge--inverse">22</span>
-    <span class="fsa-badge fsa-badge--inverse">99+</span>
-  </p>
+<div class="ds-preview" style="background-color: #666;">
+  <span class="fsa-badge">1</span>
+  <span class="fsa-badge fsa-badge--neutral">8</span>
+  <span class="fsa-badge fsa-badge--general">11</span>
+  <span class="fsa-badge fsa-badge--alert">11</span>
+  <span class="fsa-badge fsa-badge--warning">22</span>
+  <span class="fsa-badge fsa-badge--success">99+</span>
 </div>
 ```html
-<p style="background-color: #666; padding: 12px">
-  <a class="fsa-badge fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
-  <span class="fsa-badge fsa-badge--inverse">1</span>
-  <span class="fsa-badge fsa-badge--inverse">11</span>
-  <span class="fsa-badge fsa-badge--inverse">22</span>
-  <span class="fsa-badge fsa-badge--inverse">99+</span>
-</p>
-```
-
-### Inverse & Large
-
-
-<div class="ds-preview">
-  <p style="background-color: #666; padding: 12px">
-    <a class="fsa-badge fsa-badge--large fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
-    <span class="fsa-badge fsa-badge--large fsa-badge--inverse">1</span>
-    <span class="fsa-badge fsa-badge--large fsa-badge--inverse">11</span>
-    <span class="fsa-badge fsa-badge--large fsa-badge--inverse">22</span>
-    <span class="fsa-badge fsa-badge--large fsa-badge--inverse">99+</span>
-  </p>
+<div style="background-color: #666;">
+  <span class="fsa-badge">1</span>
+  <span class="fsa-badge fsa-badge--neutral">8</span>
+  <span class="fsa-badge fsa-badge--general">11</span>
+  <span class="fsa-badge fsa-badge--alert">11</span>
+  <span class="fsa-badge fsa-badge--warning">22</span>
+  <span class="fsa-badge fsa-badge--success">99+</span>
 </div>
-```html
-<p style="background-color: #666; padding: 12px">
-  <a class="fsa-badge fsa-badge--large fsa-badge--inverse" href="link/to/asdfasdf.html">1</a>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">1</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">11</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">22</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">99+</span>
-</p>
 ```
 
 ## Usage
