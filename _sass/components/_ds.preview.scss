@@ -29,6 +29,12 @@
     height: 50vh;
   }
 
+  &--bare {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
   .highlighter-rouge + &,
   + .highlighter-rouge {
     @include breakpoint(S) {

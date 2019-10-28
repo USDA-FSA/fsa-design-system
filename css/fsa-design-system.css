@@ -12380,6 +12380,12 @@ main:active, main:focus {
   height: 50vh;
 }
 
+.ds-preview--bare {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
 @media (min-width: 30.0625em) {
   .highlighter-rouge + .ds-preview,
   .ds-preview + .highlighter-rouge {
