@@ -4,6 +4,7 @@ parent: "Components"
 title: "Inline Alerts"
 intro: "Inline Alerts help to provide inline, page-level messaging to the User. These may be as the result of a user's specific actions or unsolicited messages."
 jump_menu: true
+custom_js: "inline-alert.js"
 ---
 
 <div class="ds-preview">
@@ -108,6 +109,27 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 ```html
 <div class="fsa-alert fsa-alert--[type] fsa-alert--no-icon" role="alert">
   ....
+</div>
+```
+
+### Dismissable
+
+<div class="ds-preview">
+  <div class="fsa-alert fsa-alert--success" role="alert">
+    <button class="fsa-alert__close" data-behavior="alert-dismiss" type="button" title="Dismiss this message" aria-label="Dismiss this message"></button>
+    <div class="fsa-alert__body">
+      <h3 class="fsa-alert__heading">Optional success title</h3>
+      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing assumenda harum accusamus nemo non iste quia. Nihil ab tenetur ipsa dolore nisi qui molestias assumenda a perferendis maxime sed do eiusmod.</p>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-alert fsa-alert--success" role="alert">
+  <button class="fsa-alert__close" data-behavior="alert-dismiss" type="button" title="Dismiss this message" aria-label="Dismiss this message"></button>
+  <div class="fsa-alert__body">
+    <h3 class="fsa-alert__heading">Optional success title</h3>
+    <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing assumenda harum accusamus nemo non iste quia. Nihil ab tenetur ipsa dolore nisi qui molestias assumenda a perferendis maxime sed do eiusmod.</p>
+  </div>
 </div>
 ```
 
