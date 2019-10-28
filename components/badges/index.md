@@ -12,7 +12,7 @@ jump_menu: true
     <span class="fsa-badge fsa-badge--general">11</span>
     <span class="fsa-badge fsa-badge--alert">11</span>
     <span class="fsa-badge fsa-badge--warning">22</span>
-    <span class="fsa-badge fsa-badge--success">197</span>
+    <span class="fsa-badge fsa-badge--success">99+</span>
   </p>
 </div>
 
@@ -69,10 +69,10 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ### Success
 
 <div class="ds-preview">
-  <span class="fsa-badge fsa-badge--success">197</span> Feature Updates
+  <span class="fsa-badge fsa-badge--success">99+</span> Feature Updates
 </div>
 ```html
-<span class="fsa-badge fsa-badge--success">197</span> Feature Updates
+<span class="fsa-badge fsa-badge--success">99+</span> Feature Updates
 ```
 
 ### Large
@@ -83,7 +83,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
     <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
-    <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>
+    <span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span>
   </p>
 </div>
 ```html
@@ -92,7 +92,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
   <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span>
 </p>
 ```
 
@@ -119,7 +119,7 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
     <span class="fsa-badge fsa-badge--inverse">1</span>
     <span class="fsa-badge fsa-badge--inverse">11</span>
     <span class="fsa-badge fsa-badge--inverse">22</span>
-    <span class="fsa-badge fsa-badge--inverse">197</span>
+    <span class="fsa-badge fsa-badge--inverse">99+</span>
   </p>
 </div>
 ```html
@@ -128,7 +128,7 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
   <span class="fsa-badge fsa-badge--inverse">1</span>
   <span class="fsa-badge fsa-badge--inverse">11</span>
   <span class="fsa-badge fsa-badge--inverse">22</span>
-  <span class="fsa-badge fsa-badge--inverse">197</span>
+  <span class="fsa-badge fsa-badge--inverse">99+</span>
 </p>
 ```
 
@@ -141,7 +141,7 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
     <span class="fsa-badge fsa-badge--large fsa-badge--inverse">1</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--inverse">11</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--inverse">22</span>
-    <span class="fsa-badge fsa-badge--large fsa-badge--inverse">197</span>
+    <span class="fsa-badge fsa-badge--large fsa-badge--inverse">99+</span>
   </p>
 </div>
 ```html
@@ -150,7 +150,7 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
   <span class="fsa-badge fsa-badge--large fsa-badge--inverse">1</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--inverse">11</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--inverse">22</span>
-  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">197</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--inverse">99+</span>
 </p>
 ```
 
