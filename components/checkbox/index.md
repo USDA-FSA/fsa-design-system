@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Checkbox"
-intro: "Checkboxes allow users to select one or more options from a visible list."
+intro: "A form element enabling the selection of one or more options from a visible list."
 custom_js: "checkbox.js"
 jump_menu: true
 ---
@@ -66,9 +66,9 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 </ul>
 ```
 
-## States
+## Variations
 
-Checkbox components are styled via `class="fsa-checkbox"`. Variations don't exist, though they are uniquely styled depending on their state and may be combinable, e.g. disabled and checked.
+`class="fsa-checkbox fsa-checkbox--[variation]"`
 
 ### Default
 
@@ -84,6 +84,56 @@ Checkbox components are styled via `class="fsa-checkbox"`. Variations don't exis
   <label for="lorem-9683783">Label</label>
 </span>
 ```
+
+### Solo
+
+<div class="ds-preview">
+  <span>
+    <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__01" type="checkbox" name="solo-example__01" value="solo-example__01">
+    <label for="solo-example__01"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__02" type="checkbox" name="solo-example__02" value="solo-example__02" checked="">
+    <label for="solo-example__02"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__03" type="checkbox" name="solo-example__03" value="solo-example__03" disabled="">
+    <label for="solo-example__03"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__04" type="checkbox" name="solo-example__04" value="solo-example__04" disabled="" checked>
+    <label for="solo-example__04"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__05" type="checkbox" name="solo-example__05" value="solo-example__05">
+    <label for="solo-example__05"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <script>
+    document.getElementById("solo-example__05").indeterminate = true;
+  </script>
+</div>
+```html
+<span>
+  <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__01" type="checkbox" name="solo-example__01" value="solo-example__01">
+  <label for="solo-example__01"><span class="fsa-sr-only">Label</span></label>
+</span>
+<span>
+  <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__02" type="checkbox" name="solo-example__02" value="solo-example__02" checked="">
+  <label for="solo-example__02"><span class="fsa-sr-only">Label</span></label>
+</span>
+<span>
+  <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__03" type="checkbox" name="solo-example__03" value="solo-example__03" disabled="">
+  <label for="solo-example__03"><span class="fsa-sr-only">Label</span></label>
+</span>
+<span>
+  <input class="fsa-checkbox fsa-checkbox--solo" id="solo-example__04" type="checkbox" name="solo-example__04" value="solo-example__04" disabled="" checked>
+  <label for="solo-example__04"><span class="fsa-sr-only">Label</span></label>
+</span>
+```
+
+## States
+
+Checkbox states are styled not by a `class`, but depending on their state (primarily through the presense of an attribute) and may be combinable, e.g. `disabled` and `checked`.
 
 ### Checked
 
@@ -132,13 +182,16 @@ Checkbox components are styled via `class="fsa-checkbox"`. Variations don't exis
 
 ### Indeterminate
 
-You can't make a checkbox indeterminate through HTML, as there is no `indeterminate` attribute for an `input` element. It is a *property* of checkboxes though, modifiable via JavaScript, as has been done in this example:
+There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rather, it is a *property* modifiable via JavaScript. The example below shows a sample for doing so, though may not be typically how it is modified in Production-ready scripts.
 
 <div class="ds-preview">
   <span>
     <input class="fsa-checkbox" id="checkbox-indeterminate-example" type="checkbox" name="checkbox-indeterminate-example" value="checkbox-indeterminate-example">
     <label for="checkbox-indeterminate-example">Label</label>
   </span>
+  <script>
+    document.getElementById("checkbox-indeterminate-example").indeterminate = true;
+  </script>
 </div>
 ```html
 <span>
@@ -146,12 +199,11 @@ You can't make a checkbox indeterminate through HTML, as there is no `indetermin
   <label for="checkbox-indeterminate-example">Label</label>
 </span>
 <script>
-  var checkbox = document.getElementById("checkbox-indeterminate-example");
-  checkbox.indeterminate = true;
+  document.getElementById("checkbox-indeterminate-example")ndeterminate = true;
 </script>
 ```
 
-### Within a [Field]({{ site.baseurl }}components/form-fields/)
+### Example: within a [Field]({{ site.baseurl }}components/form-fields/)
 
 <div class="ds-preview">
   <div class="fsa-field">
