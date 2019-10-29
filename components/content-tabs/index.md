@@ -35,7 +35,6 @@ jump_menu: true
         </a>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 
 </div>
@@ -75,7 +74,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 </div>
 ```html
@@ -107,7 +105,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
   </ul>
-  <div class="fsa-content-tabs__aside"></div>
 </div>
 ```
 
@@ -142,7 +139,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 </div>
 ```html
@@ -174,7 +170,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
   </ul>
-  <div class="fsa-content-tabs__aside"></div>
 </div>
 ```
 
@@ -210,7 +205,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 </div>
 ```html
@@ -242,7 +236,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
   </ul>
-  <div class="fsa-content-tabs__aside"></div>
 </div>
 ```
 
@@ -273,7 +266,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 </div>
 ```html
@@ -300,7 +292,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
   </ul>
-  <div class="fsa-content-tabs__aside"></div>
 </div>
 ```
 
@@ -330,7 +321,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 </div>
 ```html
@@ -357,13 +347,12 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
   </ul>
-  <div class="fsa-content-tabs__aside"></div>
 </div>
 ```
 
 ### As Buttons
 
-<p>Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <code>&lt;button&gt;</code> element.</p>
+Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <code>&lt;button&gt;</code> element.
 
 <div class="ds-preview ds-preview--default-bg">
   <div class="fsa-content-tabs">
@@ -389,7 +378,6 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </button>
       </li>
     </ul>
-    <div class="fsa-content-tabs__aside"></div>
   </div>
 </div>
 ```html
@@ -416,7 +404,79 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </button>
     </li>
   </ul>
-  <div class="fsa-content-tabs__aside"></div>
+</div>
+```
+
+### With optional aside
+
+Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.fsa-content-tabs__aside`) is available for contextually relevant content.
+
+<div class="ds-preview ds-preview--default-bg">
+  <div class="fsa-content-tabs">
+    <ul class="fsa-content-tabs__list">
+      <li class="fsa-content-tabs__item">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+          <span class="fsa-content-tabs__label-text">Lorem</span>
+        </a>
+      </li>
+      <li class="fsa-content-tabs__item">
+        <a class="fsa-content-tabs__label" href="#link">
+          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
+        </a>
+      </li>
+      <li class="fsa-content-tabs__item">
+        <a class="fsa-content-tabs__label" href="#link">
+          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
+        </a>
+      </li>
+      <li class="fsa-content-tabs__item">
+        <a class="fsa-content-tabs__label" href="#link">
+          <span class="fsa-content-tabs__label-text">Elit sed do</span>
+        </a>
+      </li>
+      <li class="fsa-content-tabs__item">
+        <a class="fsa-content-tabs__label" href="#link">
+          <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
+        </a>
+      </li>
+    </ul>
+    <div class="fsa-content-tabs__aside">
+      <a href="#link-to-nowhere" onclick="alert('A text link is but one example of what can go here.')">Help</a>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-content-tabs">
+  <ul class="fsa-content-tabs__list">
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <span class="fsa-content-tabs__label-text">Lorem</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">Elit sed do</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
+      </a>
+    </li>
+  </ul>
+  <div class="fsa-content-tabs__aside">
+    <a href="link.html">Help</a>
+  </div>
 </div>
 ```
 
