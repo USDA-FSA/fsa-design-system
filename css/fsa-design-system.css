@@ -12386,6 +12386,12 @@ main:active, main:focus {
   border: 0;
 }
 
+@media (min-width: 54em) {
+  html body.x-ray .ds-article .ds-preview--bare {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
 @media (min-width: 30.0625em) {
   .highlighter-rouge + .ds-preview,
   .ds-preview + .highlighter-rouge {
@@ -12400,6 +12406,166 @@ main:active, main:focus {
 .ds-preview + .highlighter-rouge pre {
   max-height: 224px;
   overflow: auto;
+}
+
+html body.x-ray .ds-preview {
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+  background-size: 2rem 2rem;
+  background-position: 0 0, 50px 50px;
+  background-position: 0 0, 5rem 5rem;
+  background-color: #f8fafc;
+}
+
+@media (min-width: 30.0625em) {
+  html body.x-ray .ds-preview {
+    box-shadow: 0 0 0 12px #fff inset, 0 0 0 13px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
+@media (min-width: 37.5em) {
+  html body.x-ray .ds-preview {
+    box-shadow: 0 0 0 24px #fff inset, 0 0 0 25px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
+html body.x-ray .ds-preview * {
+  background-color: rgba(255, 0, 0, 0.08);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+  color: black !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html body.x-ray .ds-preview *:before {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .ds-preview *:after {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .ds-preview * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * {
+  background-color: rgba(255, 0, 255, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * {
+  background-color: rgba(0, 255, 255, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * {
+  background-color: rgba(255, 255, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * * {
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal *,
+html body.x-ray .fsa-growl-container *,
+html body.x-ray .fsa-date-calendar * {
+  background-color: rgba(255, 0, 0, 0.08);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+  color: black !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html body.x-ray .fsa-modal *:before,
+html body.x-ray .fsa-growl-container *:before,
+html body.x-ray .fsa-date-calendar *:before {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .fsa-modal *:after,
+html body.x-ray .fsa-growl-container *:after,
+html body.x-ray .fsa-date-calendar *:after {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .fsa-modal * *,
+html body.x-ray .fsa-growl-container * *,
+html body.x-ray .fsa-date-calendar * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * *,
+html body.x-ray .fsa-growl-container * * *,
+html body.x-ray .fsa-date-calendar * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * *,
+html body.x-ray .fsa-growl-container * * * *,
+html body.x-ray .fsa-date-calendar * * * * {
+  background-color: rgba(255, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * *,
+html body.x-ray .fsa-growl-container * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * {
+  background-color: rgba(0, 255, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * {
+  background-color: rgba(255, 255, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * * {
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-growl-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+  background-size: 2rem 2rem;
+  background-position: 0 0, 50px 50px;
+  background-position: 0 0, 5rem 5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+html body.x-ray .fsa-modal {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .ds-show-da-code div.highlighter-rouge {
