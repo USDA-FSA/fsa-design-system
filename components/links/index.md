@@ -7,8 +7,7 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <p>This is <a href="http://www.fsa.usda.gov/">text link</a></p>
-  <p>This is a link that goes to an <a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">external website</a>.</p>
+  This is <a href="http://www.fsa.usda.gov/">text link</a>. And a link that goes to an <a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">external website</a>.
 </div>
 ```html
 <a href="http://www.fsa.usda.gov/">Text link</a>

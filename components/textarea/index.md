@@ -9,9 +9,7 @@ jump_menu: true
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-preview">
-  <p>
-    <textarea class="fsa-textarea" name="Name" placeholder="Placeholder">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
-  </p>
+  <textarea class="fsa-textarea" name="Name" placeholder="Placeholder">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 </div>
 
 ## Variations
@@ -25,28 +23,28 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 ### Default
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
+  <textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea></p>
+<textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea>
 ```
 
 ### Small
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
+  <textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea></p>
+<textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea>
 ```
 
 ### Large
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
+  <textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea></p>
+<textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea>
 ```
 
 ### Within a [Field]({{ site.baseurl }}components/form-fields/)
@@ -82,19 +80,19 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 ### Response: Error
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
+  <textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea></p>
+<textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea>
 ```
 
 ### Response: Positive
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
+  <textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea></p>
+<textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea>
 ```
 
 ### Disabled
@@ -102,10 +100,10 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using the `disabled` attribute.
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+  <textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+<textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
 ```
 
 ### Readonly
@@ -113,10 +111,10 @@ Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using
 Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using the `readonly` attribute.
 
 <div class="ds-preview">
-  <p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+  <textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
 </div>
 ```html
-<p><textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea></p>
+<textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
 ```
 
 ## Usage

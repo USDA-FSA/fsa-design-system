@@ -337,8 +337,8 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
 Omitting the default `class="fsa-table"` outright renders a non-styled table, effectively "resetting" it.
 
 <div class="ds-preview">
-  <caption>[Table caption]</caption>
   <table>
+    <caption>[Table caption]</caption>
     <thead>
       <tr>
         <th scope="col" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Commodity</button></th>

@@ -9,15 +9,13 @@ jump_menu: true
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select" name="Options">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
+  <select class="fsa-select" name="Options">
+    <option value="Option A" selected="selected">Option A</option>
+    <option value="Option B">Option B</option>
+    <option value="Option C">Option C</option>
+    <option value="Option D">Option D</option>
+    <option value="Option E">Option E</option>
+  </select>
 </div>
 
 ## Variations
@@ -33,18 +31,6 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 ### Default
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select" name="Options lorem">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
   <select class="fsa-select" name="Options lorem">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
@@ -52,24 +38,20 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     <option value="Option D">Option D</option>
     <option value="Option E">Option E</option>
   </select>
-</p>
+</div>
+```html
+<select class="fsa-select" name="Options lorem">
+  <option value="Option A" selected="selected">Option A</option>
+  <option value="Option B">Option B</option>
+  <option value="Option C">Option C</option>
+  <option value="Option D">Option D</option>
+  <option value="Option E">Option E</option>
+</select>
 ```
 
 ### Full-width
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select fsa-select--block" name="Options ipsum">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
   <select class="fsa-select fsa-select--block" name="Options ipsum">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
@@ -77,24 +59,20 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     <option value="Option D">Option D</option>
     <option value="Option E">Option E</option>
   </select>
-</p>
+</div>
+```html
+<select class="fsa-select fsa-select--block" name="Options ipsum">
+  <option value="Option A" selected="selected">Option A</option>
+  <option value="Option B">Option B</option>
+  <option value="Option C">Option C</option>
+  <option value="Option D">Option D</option>
+  <option value="Option E">Option E</option>
+</select>
 ```
 
 ### Small
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select fsa-select--small" name="Options dolor">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
   <select class="fsa-select fsa-select--small" name="Options dolor">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
@@ -102,24 +80,20 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     <option value="Option D">Option D</option>
     <option value="Option E">Option E</option>
   </select>
-</p>
+</div>
+```html
+<select class="fsa-select fsa-select--small" name="Options dolor">
+  <option value="Option A" selected="selected">Option A</option>
+  <option value="Option B">Option B</option>
+  <option value="Option C">Option C</option>
+  <option value="Option D">Option D</option>
+  <option value="Option E">Option E</option>
+</select>
 ```
 
 ### Large
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select fsa-select--large" name="Options sit">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
   <select class="fsa-select fsa-select--large" name="Options sit">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
@@ -127,7 +101,15 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     <option value="Option D">Option D</option>
     <option value="Option E">Option E</option>
   </select>
-</p>
+</div>
+```html
+<select class="fsa-select fsa-select--large" name="Options sit">
+  <option value="Option A" selected="selected">Option A</option>
+  <option value="Option B">Option B</option>
+  <option value="Option C">Option C</option>
+  <option value="Option D">Option D</option>
+  <option value="Option E">Option E</option>
+</select>
 ```
 
 ### Example: opt-group
@@ -261,18 +243,6 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 ### Error
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select fsa-select--error" name="Options amet">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
   <select class="fsa-select fsa-select--error" name="Options amet">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
@@ -280,7 +250,15 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     <option value="Option D">Option D</option>
     <option value="Option E">Option E</option>
   </select>
-</p>
+</div>
+```html
+<select class="fsa-select fsa-select--error" name="Options amet">
+  <option value="Option A" selected="selected">Option A</option>
+  <option value="Option B">Option B</option>
+  <option value="Option C">Option C</option>
+  <option value="Option D">Option D</option>
+  <option value="Option E">Option E</option>
+</select>
 ```
 
 ### Disabled
@@ -288,18 +266,6 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 Disabled select components do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
 
 <div class="ds-preview">
-  <p>
-    <select class="fsa-select" disabled="disabled" name="Options quis">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-  </p>
-</div>
-```html
-<p>
   <select class="fsa-select" disabled="disabled" name="Options quis">
     <option value="Option A" selected="selected">Option A</option>
     <option value="Option B">Option B</option>
@@ -307,7 +273,15 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
     <option value="Option D">Option D</option>
     <option value="Option E">Option E</option>
   </select>
-</p>
+</div>
+```html
+<select class="fsa-select" disabled="disabled" name="Options quis">
+  <option value="Option A" selected="selected">Option A</option>
+  <option value="Option B">Option B</option>
+  <option value="Option C">Option C</option>
+  <option value="Option D">Option D</option>
+  <option value="Option E">Option E</option>
+</select>
 ```
 
 ## Usage
