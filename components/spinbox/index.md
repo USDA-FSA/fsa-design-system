@@ -349,4 +349,4 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ### Summary
 
-The JavaScript for the Spinbox increases or decreases the value within the input field. It calls the native `stepUp()` or `stepDown()` methods, passing the `step` attribute's value. For browsers that do not support these native methods, debug messages are implemented and will be written to the console for testing purposes.
+The JavaScript for the Spinbox increments or decrements the value within the input field. It calls the native `stepUp()` or `stepDown()` methods, passing the `step` attribute's value. For browsers that do not support these native methods, debug messages are implemented and will be written to the console for testing purposes.

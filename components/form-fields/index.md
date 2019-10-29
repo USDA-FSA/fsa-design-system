@@ -954,6 +954,14 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
 
 ### Example
 
+<div class="fsa-show@m">
+  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
+    <div class="fsa-alert__body">
+      <p class="fsa-alert__text fsa-text-size--2">Resize browser or view on handheld devices to view responsive behavior.</p>
+    </div>
+  </div>
+</div>
+
 <div class="ds-preview">
   <div class="fsa-field fsa-field--block fsa-field--columns">
     <div class="fsa-grid">
@@ -1013,7 +1021,6 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
       </div>
     </div>
   </div>
-  <p>(Resize browser or view on handheld devices to view responsive behavior.)</p>
 </div>
 ```html
 <div class="fsa-field fsa-field--block fsa-field--columns">
