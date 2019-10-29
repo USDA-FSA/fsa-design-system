@@ -80,7 +80,7 @@ main {
   @include breakpoint(L) {
     border-bottom: 1px solid $color-fsa-tertiary-200;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     position: sticky;
     top: 0;
     background-color: $color-fsa-site-bg;

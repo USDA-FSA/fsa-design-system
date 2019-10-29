@@ -12172,8 +12172,8 @@ main:active, main:focus {
     border-bottom: 1px solid #dbdad9;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-align: baseline;
+        align-items: baseline;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
