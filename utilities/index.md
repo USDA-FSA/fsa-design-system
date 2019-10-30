@@ -50,6 +50,97 @@ A sample use case: you'd like to adjust a component's **margins** .
   <h2 class="fsa-m--none">Second level heading</h2>
 </div>
 
+## Floats
+
+<p class="fsa-text--lead">Selectively adjust floating behavior of elements or components.</p>
+
+### Variations
+
+```html
+<el class="fsa-float--[direction]">...</el>
+```
+
+`[direction]` is one of `left`, `right`, `none`.
+
+#### Left
+
+```html
+<el class="fsa-float--left">...</el>
+```
+
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+</div>
+
+#### Right
+
+```html
+<el class="fsa-float--right">...</el>
+```
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+</div>
+
+#### None
+
+Most likely used to override a component's current `float` property.
+
+```html
+<el class="fsa-float--none">...</el>
+```
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left fsa-float--none"><strong>I'm not floating.</strong></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+</div>
+
+### Containing Floats
+
+aka "clearfix"
+
+```html
+<el class="fsa-clearfix">...</el>
+```
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
+</div>
+<p>The above container has been cleared</p>
+
+### Clearing Floats
+
+```html
+<el class="fsa-clear">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p class="docs__utilities__demo-item fsa-clear"><strong>I've been cleared</strong></p>
+</div>
+
+### Responsive
+
+Adjust floating presentation per media query breakpoint.
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Margins
 
 <p class="fsa-text--lead">Selectively manipulate margins around an element or component. </p>
@@ -210,6 +301,174 @@ Margins can be adjusted per media query breakpoint.
   </div>
 </div>
 
+## Media Object
+
+<p class="fsa-text--lead">Pair an object (typically an image) with text-based content to one of the sides.</p>
+
+Media Objects are a very quick and easy way to pair visual references to text-based content that references the media or vice versa. A detailed write-up explains it well at [The media object saves hundreds of lines of code](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/.).
+
+```html
+<div class="fsa-media [fsa-media--[variation]]">...</div>
+```
+
+### Variations
+
+#### Default
+
+<div class="ds-preview">
+  <div class="fsa-media">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.jpg" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+#### Right
+
+<div class="ds-preview">
+  <div class="fsa-media fsa-media--right">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media fsa-media--right">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+#### Middle
+
+<div class="ds-preview">
+  <div class="fsa-media fsa-media--middle">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media fsa-media--middle">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+#### Bottom
+
+<div class="ds-preview">
+  <div class="fsa-media fsa-media--bottom">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media fsa-media--bottom">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+### Nesting Media Objects
+
+Based on the layout and features of the application, it might be advantageous to utilized a nesting methodology to structure a page. Media Objects can easily be nested within the content or text-based area, represented within a DIV with `class="fsa-media__section"` applied to it.
+
+<div class="ds-preview">
+  <div class="fsa-media">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <div class="fsa-media">
+        <div class="fsa-media__section">
+          <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+        </div>
+        <div class="fsa-media__section">
+          <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <div class="fsa-media">
+            <div class="fsa-media__section">
+              <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+            </div>
+            <div class="fsa-media__section">
+              <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum...</p>
+    <div class="fsa-media">
+      <div class="fsa-media__section">
+        <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+      </div>
+      <div class="fsa-media__section">
+        <p>Lorem ipsum...</p>
+        <div class="fsa-media">
+          <div class="fsa-media__section">
+            <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+          </div>
+          <div class="fsa-media__section">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 ## Padding
 
 <p class="fsa-text--lead">Selectively manipulate padding within an element or component.</p>
@@ -368,93 +627,64 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
   </div>
 </div>
 
-## Floats
+## Text Alignment
 
-<p class="fsa-text--lead">Selectively adjust floating behavior of elements or components.</p>
+<p class="fsa-text--lead">Selectively align blocks of content.</p>
+
+```html
+<el class="fsa-text-size--[direction]">...</el>
+```
+
+Where `direction` is one of `left`, `center`, or `right`
 
 ### Variations
-
-```html
-<el class="fsa-float--[direction]">...</el>
-```
-
-`[direction]` is one of `left`, `right`, `none`.
-
-#### Left
-
-```html
-<el class="fsa-float--left">...</el>
-```
-
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
-</div>
 
 #### Right
 
 ```html
-<el class="fsa-float--right">...</el>
-```
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
-</div>
-
-#### None
-
-Most likely used to override a component's current `float` property.
-
-```html
-<el class="fsa-float--none">...</el>
-```
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left fsa-float--none"><strong>I'm not floating.</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
-</div>
-
-### Containing Floats
-
-aka "clearfix"
-
-```html
-<el class="fsa-clearfix">...</el>
-```
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
-</div>
-<p>The above container has been cleared</p>
-
-### Clearing Floats
-
-```html
-<el class="fsa-clear">...</el>
+<el class="fsa-text-align--right">...</el>
 ```
 <div class="docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p class="docs__utilities__demo-item fsa-clear"><strong>I've been cleared</strong></p>
+  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+#### Centered
+
+```html
+<el class="fsa-text-align--center">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+#### Left
+
+```html
+<el class="fsa-text-align--left">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
 </div>
 
 ### Responsive
 
-Adjust floating presentation per media query breakpoint.
+Adjust text alignment per media query breakpoint.
 
 {% include alert.rwd-rendering.html %}
 
 <div class="docs__rwd-demo-block">
   <p>
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>
@@ -580,67 +810,6 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
   </div>
 </div>
 
-## Text Alignment
-
-<p class="fsa-text--lead">Selectively align blocks of content.</p>
-
-```html
-<el class="fsa-text-size--[direction]">...</el>
-```
-
-Where `direction` is one of `left`, `center`, or `right`
-
-### Variations
-
-#### Right
-
-```html
-<el class="fsa-text-align--right">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-#### Centered
-
-```html
-<el class="fsa-text-align--center">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-#### Left
-
-```html
-<el class="fsa-text-align--left">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-### Responsive
-
-Adjust text alignment per media query breakpoint.
-
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <p>
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-    </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
-  </p>
-  <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
 
 ## Visibility
 

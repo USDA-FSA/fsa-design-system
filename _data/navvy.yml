@@ -160,10 +160,6 @@
       subhref: "components/badges"
       img: "img/subcategories/badges.png"
 
-    - subtitle: "Media Objects"
-      subhref: "components/media-objects"
-      img: "img/subcategories/media-objects.png"
-
 - title: "Grid and Layout"
   href: "grid-and-layout"
 
