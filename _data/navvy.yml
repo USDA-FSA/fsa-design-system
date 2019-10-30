@@ -38,6 +38,15 @@
 
 - title: "Components"
   href: "components"
+  componentgroup:
+
+    - title: Form Elements
+    - title: Feedback
+    - title: Pivot
+    - title: Tables and Lists
+    - title: Header
+    - title: Footer
+
   subcategories:
 
     - subtitle: "Header: Top Hat"
