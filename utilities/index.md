@@ -325,7 +325,7 @@ Media Objects are a very quick and easy way to pair visual references to text-ba
     </div>
   </div>
 </div>
-<div><!-- Intentionally empty div. Don't ask me why. --></div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
 ```html
 <div class="fsa-media">
   <div class="fsa-media__section">
@@ -349,7 +349,7 @@ Media Objects are a very quick and easy way to pair visual references to text-ba
     </div>
   </div>
 </div>
-<div><!-- Intentionally empty div. Don't ask me why. --></div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
 ```html
 <div class="fsa-media fsa-media--right">
   <div class="fsa-media__section">
@@ -374,7 +374,7 @@ Media Objects are a very quick and easy way to pair visual references to text-ba
     </div>
   </div>
 </div>
-<div><!-- Intentionally empty div. Don't ask me why. --></div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
 ```html
 <div class="fsa-media fsa-media--middle">
   <div class="fsa-media__section">
@@ -399,7 +399,7 @@ Media Objects are a very quick and easy way to pair visual references to text-ba
     </div>
   </div>
 </div>
-<div><!-- Intentionally empty div. Don't ask me why. --></div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
 ```html
 <div class="fsa-media fsa-media--bottom">
   <div class="fsa-media__section">
@@ -441,7 +441,7 @@ Based on the layout and features of the application, it might be advantageous to
     </div>
   </div>
 </div>
-<div><!-- Intentionally empty div. Don't ask me why. --></div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
 ```html
 <div class="fsa-media">
   <div class="fsa-media__section">
