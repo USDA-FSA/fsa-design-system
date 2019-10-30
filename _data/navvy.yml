@@ -140,6 +140,18 @@
       subhref: "components/tables"
       img: "img/subcategories/tables.png"
 
+    - subtitle: "Progress"
+      subhref: "components/progress"
+      img: "img/subcategories/progress.png"
+
+    - subtitle: "Switch"
+      subhref: "components/switch"
+      img: "img/subcategories/switch.png"
+
+    - subtitle: "Timeline"
+      subhref: "components/timeline"
+      img: "img/subcategories/timeline.png"
+
     - subtitle: "Inline Alerts"
       subhref: "components/alerts"
       img: "img/subcategories/alerts.png"
