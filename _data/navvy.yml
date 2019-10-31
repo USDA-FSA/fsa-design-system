@@ -40,146 +40,164 @@
   href: "components"
   componentgroup:
 
-    - title: Form Elements
-    - title: Feedback
-    - title: Pivot
-    - title: Tables and Lists
-    - title: Header
-    - title: Footer
+    - title: "Form Elements"
+      subcategories:
 
-  subcategories:
+        - subtitle: "Buttons"
+          subhref: "components/buttons"
+          img: "img/subcategories/buttons.png"
 
-    - subtitle: "Header: Top Hat"
-      subhref: "components/tophat"
-      img: "img/subcategories/tophat.png"
+        - subtitle: "Button Group"
+          subhref: "components/button-group"
+          img: "img/subcategories/button-group.png"
 
-    - subtitle: "Header: Application"
-      subhref: "components/header-app"
-      img: "img/subcategories/header-app.png"
+        - subtitle: "Checkbox"
+          subhref: "components/checkbox"
+          img: "img/subcategories/checkbox.png"
 
-    - subtitle: "Header: Global Nav"
-      subhref: "components/top-nav"
-      img: "img/subcategories/top-nav.png"
+        - subtitle: "Date Picker"
+          subhref: "components/date-picker"
+          img: "img/subcategories/date-picker.png"
 
-    - subtitle: "Breadcrumbs"
-      subhref: "components/breadcrumbs"
-      img: "img/subcategories/breadcrumbs.png"
+        - subtitle: "Form Fields"
+          subhref: "components/form-fields"
+          img: "img/subcategories/form-fields.png"
 
-    - subtitle: "Topper"
-      subhref: "components/topper"
-      img: "img/subcategories/topper.png"
+        - subtitle: "Radio"
+          subhref: "components/radio"
+          img: "img/subcategories/radio.png"
 
-    - subtitle: "Footer"
-      subhref: "components/footer"
-      img: "img/subcategories/footer.png"
+        - subtitle: "Search"
+          subhref: "components/search"
+          img: "img/subcategories/search.png"
 
-    - subtitle: "Screen ID"
-      subhref: "components/screen-id"
-      img: "img/subcategories/screen-id.png"
+        - subtitle: "Select"
+          subhref: "components/select"
+          img: "img/subcategories/select.png"
 
-    - subtitle: "Text Links"
-      subhref: "components/links"
-      img: "img/subcategories/links.png"
+        - subtitle: "Select Multi"
+          subhref: "components/select-multi"
+          img: "img/subcategories/select-multi.png"
 
-    - subtitle: "Buttons"
-      subhref: "components/buttons"
-      img: "img/subcategories/buttons.png"
+        - subtitle: "Spinbox"
+          subhref: "components/spinbox"
+          img: "img/subcategories/spinbox.png"
 
-    - subtitle: "Button Group"
-      subhref: "components/button-group"
-      img: "img/subcategories/button-group.png"
+        - subtitle: "Stepped Control"
+          subhref: "components/stepped-control"
+          img: "img/subcategories/stepped-control.png"
 
-    - subtitle: "Pagination"
-      subhref: "components/pagination"
-      img: "img/subcategories/pagination.png"
+        - subtitle: "Switch"
+          subhref: "components/switch"
+          img: "img/subcategories/switch.png"
 
-    - subtitle: "Content Tabs"
-      subhref: "components/content-tabs"
-      img: "img/subcategories/content-tabs.png"
+        - subtitle: "Text Input"
+          subhref: "components/text-input"
+          img: "img/subcategories/text-input.png"
 
-    - subtitle: "Form Fields"
-      subhref: "components/form-fields"
-      img: "img/subcategories/form-fields.png"
+        - subtitle: "Textarea"
+          subhref: "components/textarea"
+          img: "img/subcategories/textarea.png"
 
-    - subtitle: "Date Picker"
-      subhref: "components/date-picker"
-      img: "img/subcategories/date-picker.png"
+    - title: "Feedback"
+      subcategories:
 
-    - subtitle: "Spinbox"
-      subhref: "components/spinbox"
-      img: "img/subcategories/spinbox.png"
+        - subtitle: "Badges"
+          subhref: "components/badges"
+          img: "img/subcategories/badges.png"
 
-    - subtitle: "Search"
-      subhref: "components/search"
-      img: "img/subcategories/search.png"
+        - subtitle: "Growl Notifications"
+          subhref: "components/growl"
+          img: "img/subcategories/growl.png"
 
-    - subtitle: "Stepped Control"
-      subhref: "components/stepped-control"
-      img: "img/subcategories/stepped-control.png"
+        - subtitle: "Inline Alerts"
+          subhref: "components/alerts"
+          img: "img/subcategories/alerts.png"
 
-    - subtitle: "Stepped Tabs"
-      subhref: "components/stepped-tabs"
-      img: "img/subcategories/stepped-tabs.png"
+        - subtitle: "Labels"
+          subhref: "components/labels"
+          img: "img/subcategories/labels.png"
 
-    - subtitle: "Text Input"
-      subhref: "components/text-input"
-      img: "img/subcategories/text-input.png"
+        - subtitle: "Modal"
+          subhref: "components/modal"
+          img: "img/subcategories/modal.png"
 
-    - subtitle: "Textarea"
-      subhref: "components/textarea"
-      img: "img/subcategories/textarea.png"
+        - subtitle: "Progress"
+          subhref: "components/progress"
+          img: "img/subcategories/progress.png"
 
-    - subtitle: "Checkbox"
-      subhref: "components/checkbox"
-      img: "img/subcategories/checkbox.png"
+        - subtitle: "Splash"
+          subhref: "components/splash"
+          img: "img/subcategories/splash.png"
 
-    - subtitle: "Radio"
-      subhref: "components/radio"
-      img: "img/subcategories/radio.png"
+    - title: "Pivot"
+      subcategories:
 
-    - subtitle: "Select"
-      subhref: "components/select"
-      img: "img/subcategories/select.png"
+        - subtitle: "Breadcrumbs"
+          subhref: "components/breadcrumbs"
+          img: "img/subcategories/breadcrumbs.png"
 
-    - subtitle: "Select Multi"
-      subhref: "components/select-multi"
-      img: "img/subcategories/select-multi.png"
+        - subtitle: "Content Tabs"
+          subhref: "components/content-tabs"
+          img: "img/subcategories/content-tabs.png"
 
-    - subtitle: "Tables"
-      subhref: "components/tables"
-      img: "img/subcategories/tables.png"
+        - subtitle: "Links"
+          subhref: "components/links"
+          img: "img/subcategories/links.png"
 
-    - subtitle: "Progress"
-      subhref: "components/progress"
-      img: "img/subcategories/progress.png"
+        - subtitle: "Pagination"
+          subhref: "components/pagination"
+          img: "img/subcategories/pagination.png"
 
-    - subtitle: "Switch"
-      subhref: "components/switch"
-      img: "img/subcategories/switch.png"
+        - subtitle: "Stepped Tabs"
+          subhref: "components/stepped-tabs"
+          img: "img/subcategories/stepped-tabs.png"
 
-    - subtitle: "Timeline"
-      subhref: "components/timeline"
-      img: "img/subcategories/timeline.png"
+    - title: "Tables and Lists"
+      subcategories:
 
-    - subtitle: "Inline Alerts"
-      subhref: "components/alerts"
-      img: "img/subcategories/alerts.png"
+        - subtitle: "Lists"
+          subhref: "components/lists"
+          img: "img/subcategories/lists.png"
 
-    - subtitle: "Growl Notifications"
-      subhref: "components/growl"
-      img: "img/subcategories/growl.png"
+        - subtitle: "Tables"
+          subhref: "components/tables"
+          img: "img/subcategories/tables.png"
 
-    - subtitle: "Modal"
-      subhref: "components/modal"
-      img: "img/subcategories/modal.png"
+        - subtitle: "Timeline"
+          subhref: "components/timeline"
+          img: "img/subcategories/timeline.png"
 
-    - subtitle: "Labels"
-      subhref: "components/labels"
-      img: "img/subcategories/labels.png"
+    - title: "Header"
 
-    - subtitle: "Badges"
-      subhref: "components/badges"
-      img: "img/subcategories/badges.png"
+      subcategories:
+
+        - subtitle: "Header: Top Hat"
+          subhref: "components/tophat"
+          img: "img/subcategories/tophat.png"
+
+        - subtitle: "Header: Application"
+          subhref: "components/header-app"
+          img: "img/subcategories/header-app.png"
+
+        - subtitle: "Header: Global Nav"
+          subhref: "components/top-nav"
+          img: "img/subcategories/top-nav.png"
+
+    - title: "Footer"
+      subcategories:
+
+        - subtitle: "Topper"
+          subhref: "components/topper"
+          img: "img/subcategories/topper.png"
+
+        - subtitle: "Footer"
+          subhref: "components/footer"
+          img: "img/subcategories/footer.png"
+
+        - subtitle: "Screen ID"
+          subhref: "components/screen-id"
+          img: "img/subcategories/screen-id.png"
 
 - title: "Grid and Layout"
   href: "grid-and-layout"

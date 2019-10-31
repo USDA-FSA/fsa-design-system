@@ -12773,6 +12773,10 @@ pre.highlight .ds-clipboard {
   font-size: 66%;
 }
 
+.ds-subcat-title {
+  border-bottom: 2px solid #75716e;
+}
+
 .ds-subcat-list__list {
   display: block;
   list-style-type: none;

@@ -1,18 +1,59 @@
+{% comment %}
+
+!!!!!!
+
+This Liquid templating using navvy.yml is not a clean way of doing it.
+
+Works for now. ¯\_(ツ)_/¯
+
+If anything changes about IA structure, it'll probably need an overhaul.
+
+{% endcomment %}
+
 {% for link in site.data.navvy %}
+
   {% if link.title == page.title or link.title == page.parent %}
-    <div class="ds-subcat-list">
-      <ul class="ds-subcat-list__list">
-        {% for subpage in link.subcategories %}
-        <li class="ds-subcat-list__list-item">
-          <a class="ds-subcat-list__link {% if subpage.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
-            <span class="ds-subcat-list__text">{{ subpage.subtitle }}</span>
-            {% if subpage.img %}
-              <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subpage.img }}" alt="">
-            {% endif %}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+
+    {% if link.componentgroup %}
+      <!-- HAS components -->
+      {% for group in link.componentgroup %}
+        <h2 id="{{ group.title | downcase | replace: ' ', '-' }}">{{ group.title }}</h2>
+        <div class="ds-subcat-list">
+          <ul class="ds-subcat-list__list">
+            {% for subgroup in group.subcategories order:ascending %}
+            <li class="ds-subcat-list__list-item">
+              <a class="ds-subcat-list__link {% if subgroup.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subgroup.subhref | prepend: site.baseurl }}">
+                <span class="ds-subcat-list__text">{{ subgroup.subtitle }}</span>
+                {% if subgroup.img %}
+                  <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subgroup.img }}" alt="">
+                {% endif %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    {% else %}
+      <!-- NOT have components -->
+      <div class="ds-subcat-list">
+        <ul class="ds-subcat-list__list">
+          {% assign sortedCategories = link.subcategories | sort %}
+          {% for subpage in sortedCategories %}
+          <li class="ds-subcat-list__list-item">
+            <a class="ds-subcat-list__link {% if subpage.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
+              <span class="ds-subcat-list__text">{{ subpage.subtitle }}</span>
+              {% if subpage.img %}
+                <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subpage.img }}" alt="">
+              {% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
   {% endif %}
+
 {% endfor %}
+
+
