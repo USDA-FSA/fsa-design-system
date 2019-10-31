@@ -1,32 +1,15 @@
-# https://pages.18f.gov/content-guide/content-principles
-# https://pages.18f.gov/content-guide/address-the-user
-# https://pages.18f.gov/content-guide/avoid-duplication
-# https://pages.18f.gov/content-guide/be-concise
-# https://pages.18f.gov/content-guide/plain-language
-# https://pages.18f.gov/content-guide/structure-the-content
-# https://pages.18f.gov/content-guide/abbreviations-and-acronyms
-# https://pages.18f.gov/content-guide/active-voice
-# https://pages.18f.gov/content-guide/capitalization
-# https://pages.18f.gov/content-guide/conscious-style
-# https://pages.18f.gov/content-guide/numbers-and-percentages
-# https://pages.18f.gov/content-guide/punctuation
-# https://pages.18f.gov/content-guide/specific-words-and-phrases
-# https://pages.18f.gov/content-guide/voice-and-tone
-# https://pages.18f.gov/content-guide/headings-and-titles
-# https://pages.18f.gov/content-guide/images
-# https://pages.18f.gov/content-guide/technical-and-interface-writing
-# https://pages.18f.gov/content-guide/trademarks-and-brands
-# https://pages.18f.gov/content-guide/urls-and-filenames
-
 - title: "Overview"
   alt_title: "Content"
   href: "guides/content"
 
-- title: "Content Principles"
-  href: "guides/content/content-principles"
+- title: "Abbreviations and Acronyms"
+  href: "guides/content/abbreviations-and-acronyms"
 
 - title: "Address the User"
   href: "guides/content/address-the-user"
+
+- title: "Active Voice"
+  href: "guides/content/active-voice"
 
 - title: "Avoid Duplication"
   href: "guides/content/avoid-duplication"
@@ -34,26 +17,26 @@
 - title: "Be Concise"
   href: "guides/content/be-concise"
 
-- title: "Plain Language"
-  href: "guides/content/plain-language"
-
-- title: "Structure the Content"
-  href: "guides/content/structure-the-content"
-
-- title: "Abbreviations and Acronyms"
-  href: "guides/content/abbreviations-and-acronyms"
-
-- title: "Active Voice"
-  href: "guides/content/active-voice"
-
 - title: "Capitalization"
   href: "guides/content/capitalization"
+
+- title: "Content Principles"
+  href: "guides/content/content-principles"
 
 - title: "Conscious Style"
   href: "guides/content/conscious-style"
 
+- title: "Images"
+  href: "guides/content/images"
+
+- title: "Headings and Titles"
+  href: "guides/content/headings-and-titles"
+
 - title: "Numbers and Percentages"
   href: "guides/content/numbers-and-percentages"
+
+- title: "Plain Language"
+  href: "guides/content/plain-language"
 
 - title: "Punctuation"
   href: "guides/content/punctuation"
@@ -61,14 +44,8 @@
 - title: "Specific Words and Phrases"
   href: "guides/content/specific-words-and-phrases"
 
-- title: "Voice and Tone"
-  href: "guides/content/voice-and-tone"
-
-- title: "Headings and Titles"
-  href: "guides/content/headings-and-titles"
-
-- title: "Images"
-  href: "guides/content/images"
+- title: "Structure the Content"
+  href: "guides/content/structure-the-content"
 
 - title: "Technical and Interface Writing"
   href: "guides/content/technical-and-interface-writing"
@@ -78,3 +55,6 @@
 
 - title: "URLs and Filenames"
   href: "guides/content/urls-and-filenames"
+
+- title: "Voice and Tone"
+  href: "guides/content/voice-and-tone"
