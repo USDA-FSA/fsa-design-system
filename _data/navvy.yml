@@ -168,36 +168,35 @@
           subhref: "components/timeline"
           img: "img/subcategories/timeline.png"
 
-    - title: "Header"
-
-      subcategories:
-
-        - subtitle: "Header: Top Hat"
-          subhref: "components/tophat"
-          img: "img/subcategories/tophat.png"
-
-        - subtitle: "Header: Application"
-          subhref: "components/header-app"
-          img: "img/subcategories/header-app.png"
-
-        - subtitle: "Header: Global Nav"
-          subhref: "components/top-nav"
-          img: "img/subcategories/top-nav.png"
-
     - title: "Footer"
       subcategories:
-
-        - subtitle: "Topper"
-          subhref: "components/topper"
-          img: "img/subcategories/topper.png"
 
         - subtitle: "Footer"
           subhref: "components/footer"
           img: "img/subcategories/footer.png"
 
+        - subtitle: "Topper"
+          subhref: "components/topper"
+          img: "img/subcategories/topper.png"
+
         - subtitle: "Screen ID"
           subhref: "components/screen-id"
           img: "img/subcategories/screen-id.png"
+
+    - title: "Header"
+      subcategories:
+
+        - subtitle: "Application Header"
+          subhref: "components/header-app"
+          img: "img/subcategories/header-app.png"
+
+        - subtitle: "Global Nav"
+          subhref: "components/top-nav"
+          img: "img/subcategories/top-nav.png"
+
+        - subtitle: "Top Hat"
+          subhref: "components/tophat"
+          img: "img/subcategories/tophat.png"
 
 - title: "Grid and Layout"
   href: "grid-and-layout"
