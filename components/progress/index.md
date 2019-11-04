@@ -545,3 +545,7 @@ custom_js: "progress.js"
   </div>
 </div>
 
+
+## Related Resources
+
+* [Splash]({{ site.baseurl }}components/splash/)
