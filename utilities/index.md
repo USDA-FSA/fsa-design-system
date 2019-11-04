@@ -50,6 +50,61 @@ A sample use case: you'd like to adjust a component's **margins** .
   <h2 class="fsa-m--none">Second level heading</h2>
 </div>
 
+## Ellipsis
+
+<p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
+
+### Variations
+
+```html
+<element class="fsa-ellipsis[--variation]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/2@m">
+    <h4>Default</h4>
+    <p class="docs__code-sample"><code>class="fsa-ellipsis"</code></p>
+    <div class="fsa-ellipsis">Tenetur vel enim numquam officiis dolorem soluta eveniet facere nulla esse maiores assumenda tempora nobis nde sint commodi atque consequuntur veniam nequ ibusdam incidunt accusantium enim a ea laboriosam explicabo obcaecati possimusarchitecto necessitatibus delectus reiciendis laboriosam tempore cumque natus quae ullam nam atque.</div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/2@m">
+    <h4>Unset</h4>
+    <p class="docs__code-sample"><code>class="fsa-ellipsis<strong>--none</strong>"</code></p>
+    <div class="fsa-ellipsis fsa-ellipsis--none">Tenetur vel enim numquam officiis dolorem soluta eveniet facere nulla esse maiores assumenda tempora nobis nde sint commodi atque consequuntur veniam nequ ibusdam incidunt accusantium enim a ea laboriosam explicabo obcaecati possimusarchitecto necessitatibus delectus reiciendis laboriosam tempore cumque natus quae ullam nam atque.</div>
+  </div>
+</div>
+
+### Responsive
+
+Set overflow of block-level elements to Ellipsis at select media query breakpoints.
+
+{% include alert.rwd-rendering.html %}
+
+<p>
+  <code>fsa-ellipsis<strong>[--none]@[breakpoint]</strong></code>, where
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_ellipsis">
+      <iframe title="Responsive Demo: ellipsis" src="http://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Floats
 
 <p class="fsa-text--lead">Selectively adjust floating behavior of elements or components.</p>
