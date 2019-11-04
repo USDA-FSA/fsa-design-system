@@ -682,6 +682,33 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
   </div>
 </div>
 
+## Screenreader only
+
+<p class="fsa-text--lead">Visibly hidden <strong>though announced</strong> to screenreaders within a variety of screen size ranges (i.e. Media Query breakpoints).</p>
+
+{% include alert.rwd-rendering.html %}
+
+```html
+<element class="fsa-sr-only@[size]">...</element>
+```
+
+Visibly hide when viewport is *within* a specific range, where `[size]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
+
+<p>
+  <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="Portrait" aria-selected="true"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+  </span>
+  <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" target="_blank">View in new window</a>
+</p>
+<div class="docs__rwd-embed-container">
+  <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_sr-only">
+    <iframe title="Responsive Demo: sr only" src="http://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+  </div>
+</div>
+
 ## Text Alignment
 
 <p class="fsa-text--lead">Selectively align blocks of content.</p>
