@@ -12346,7 +12346,7 @@ main:active, main:focus {
 }
 
 .ds-preview {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 @media (min-width: 30.0625em) {
@@ -12393,9 +12393,14 @@ main:active, main:focus {
 }
 
 @media (min-width: 30.0625em) {
-  .highlighter-rouge + .ds-preview,
+  .highlighter-rouge + .ds-preview {
+    margin-top: -2em;
+  }
+}
+
+@media (min-width: 30.0625em) {
   .ds-preview + .highlighter-rouge {
-    margin-top: -34px;
+    margin-top: -1em;
   }
 }
 
@@ -12432,7 +12437,7 @@ html body.x-ray .ds-preview {
 
 html body.x-ray .ds-preview * {
   background-color: rgba(255, 0, 0, 0.08);
-  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.15);
   outline-offset: -1px;
   color: black !important;
   text-shadow: none !important;
@@ -12485,7 +12490,7 @@ html body.x-ray .fsa-modal *,
 html body.x-ray .fsa-growl-container *,
 html body.x-ray .fsa-date-calendar * {
   background-color: rgba(255, 0, 0, 0.08);
-  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.15);
   outline-offset: -1px;
   color: black !important;
   text-shadow: none !important;
@@ -12574,7 +12579,7 @@ html body.x-ray .fsa-modal {
 
 @media (min-width: 30.0625em) {
   .highlighter-rouge + .docs__utilities__demo {
-    margin-top: -34px;
+    margin-top: -2em;
   }
 }
 

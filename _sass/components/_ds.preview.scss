@@ -2,7 +2,7 @@
 @mixin x-ray() {
   * {
     background-color: rgba(255,0,0,.08);
-    outline: 1px solid rgba(0,0,0,.1);
+    outline: 1px solid rgba(0,0,0,.15);
     outline-offset: -1px;
     color: black !important;
     text-shadow: none !important;
@@ -26,7 +26,7 @@
 
   & {
 
-    margin: 2em 0;
+    margin: 1em 0;
 
     @include breakpoint(S) {
       border: 1px solid $color-fsa-tertiary-100;
@@ -69,13 +69,17 @@
       }
     }
 
-
   }
 
-  .highlighter-rouge + &,
+  .highlighter-rouge + & {
+    @include breakpoint(S) {
+      margin-top: -2em;
+    }
+  }
+
   + .highlighter-rouge {
     @include breakpoint(S) {
-      margin-top: -34px; // yeah, magic number, wheee!
+      margin-top: -1em;
     }
   }
 
@@ -108,7 +112,6 @@
     }
     @include x-ray();
   }
-
 }
 
 html body.x-ray {
@@ -135,7 +138,7 @@ html body.x-ray {
 // scss-lint:disable SelectorFormat
 .highlighter-rouge + .docs__utilities__demo {
   @include breakpoint(S) {
-    margin-top: -34px; // yeah, magic number, wheee!
+    margin-top: -2em;
   }
 }
 
