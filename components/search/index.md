@@ -61,6 +61,43 @@ jump_menu: true
 </form>
 ```
 
+### Default, with label
+
+<div class="ds-preview">
+  <form action="dest.html">
+    <div class="fsa-search" role="search">
+      <div class="fsa-search__bd">
+        <div class="fsa-search__entry fsa-search__entry--grow">
+          <label class="fsa-search__label" for="UNIQUE-ID-yu3h55_">Label</label>
+          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-yu3h55_" type="search" name="search">
+        </div>
+        <div class="fsa-search__submit">
+          <button class="fsa-btn fsa-search__btn" type="submit">
+            <span class="fsa-search__text">Search</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+```html
+<form action="dest.html">
+  <div class="fsa-search" role="search">
+    <div class="fsa-search__bd">
+      <div class="fsa-search__entry fsa-search__entry--grow">
+        <label class="fsa-search__label" for="UNIQUE-ID-yu3h55_">Label</label>
+        <input class="fsa-input fsa-search__input" id="UNIQUE-ID-yu3h55_" type="search" name="search">
+      </div>
+      <div class="fsa-search__submit">
+        <button class="fsa-btn fsa-search__btn" type="submit">
+          <span class="fsa-search__text">Search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+```
+
 ### Default, with Icon
 
 <div class="ds-preview">
@@ -137,6 +174,61 @@ jump_menu: true
       <div class="fsa-search__entry">
         <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-dfyu65ppj">Label</label>
         <select class="fsa-select fsa-search__select" name="UNIQUE-NAME-dfyu65ppj" id="UNIQUE-ID-dfyu65ppj">
+          <option value="none" selected="selected">All</option>
+          <option value="asdf">Farms</option>
+          <option value="qwer">States</option>
+          <option value="qwer">Markets</option>
+        </select>
+      </div>
+      <div class="fsa-search__submit">
+        <button class="fsa-btn fsa-search__btn fsa-search__btn--icon" type="submit">
+          <span class="fsa-search__text">Search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+```
+
+### Default, with Select and Labels
+
+<div class="ds-preview">
+  <form action="dest.html">
+    <div class="fsa-search" role="search">
+      <div class="fsa-search__bd">
+        <div class="fsa-search__entry fsa-search__entry--grow">
+          <label class="fsa-search__label" for="UNIQUE-ID-hg__553">Label</label>
+          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-hg__553" type="search" name="search">
+        </div>
+        <div class="fsa-search__entry">
+          <label class="fsa-search__label" for="UNIQUE-ID-d___999s">Label</label>
+          <select class="fsa-select fsa-search__select" name="UNIQUE-NAME-dfyu65ppj" id="UNIQUE-ID-d___999s">
+            <option value="none" selected="selected">All</option>
+            <option value="asdf">Farms</option>
+            <option value="qwer">States</option>
+            <option value="qwer">Markets</option>
+          </select>
+        </div>
+        <div class="fsa-search__submit">
+          <button class="fsa-btn fsa-search__btn fsa-search__btn--icon" type="submit">
+            <span class="fsa-search__text">Search</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+```html
+<form action="dest.html">
+  <div class="fsa-search" role="search">
+    <div class="fsa-search__bd">
+      <div class="fsa-search__entry fsa-search__entry--grow">
+        <label class="fsa-search__label" for="UNIQUE-ID-hg__553">Label</label>
+        <input class="fsa-input fsa-search__input" id="UNIQUE-ID-hg__553" type="search" name="search">
+      </div>
+      <div class="fsa-search__entry">
+        <label class="fsa-search__label" for="UNIQUE-ID-d___999s">Label</label>
+        <select class="fsa-select fsa-search__select" name="UNIQUE-NAME-dfyu65ppj" id="UNIQUE-ID-d___999s">
           <option value="none" selected="selected">All</option>
           <option value="asdf">Farms</option>
           <option value="qwer">States</option>
