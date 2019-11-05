@@ -12712,7 +12712,7 @@ pre.highlight .ds-clipboard {
   padding: 1.2rem;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 54em) {
   .ds-header__bd {
     width: 100%;
     display: table;
@@ -12724,17 +12724,25 @@ pre.highlight .ds-clipboard {
   margin-bottom: 1.2rem;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 54em) {
   .ds-header__nav {
     display: table-cell;
   }
 }
 
-@media (min-width: 37.5em) {
+.ds-header__options {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+@media (min-width: 54em) {
   .ds-header__options {
-    display: table-cell;
-    text-align: right;
-    white-space: nowrap;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
 }
 
@@ -12745,6 +12753,10 @@ pre.highlight .ds-clipboard {
 .ds-header__options-item--start {
   margin-right: 24px;
   margin-right: 2.4rem;
+}
+
+.ds-header__options-item--github {
+  white-space: nowrap;
 }
 
 @media (max-width: 54em) {
@@ -12907,15 +12919,18 @@ pre.highlight .ds-clipboard {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -8px;
+  margin-left: -0.8rem;
 }
 
 .ds-nav__list-item {
   display: list-item;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  margin-right: 12px;
-  margin-right: 1.2rem;
 }
 
 .ds-nav__list-item--active {
@@ -12931,10 +12946,13 @@ pre.highlight .ds-clipboard {
 }
 
 .ds-nav__link {
+  display: block;
   font-size: 15px;
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
+  padding: 2px 8px;
+  padding: 0.2rem 0.8rem;
 }
 
 @media (min-width: 37.5em) {
@@ -12943,12 +12961,18 @@ pre.highlight .ds-clipboard {
   }
 }
 
-.ds-nav__link:hover {
-  text-decoration: underline;
+@media (min-width: 54em) {
+  .ds-nav__link {
+    padding: 0.8rem;
+  }
 }
 
 .ds-nav__link:active, .ds-nav__link:hover, .ds-nav__link:hover:visited, .ds-nav__link:visited {
   color: #fff;
+}
+
+.ds-nav__link:hover {
+  text-decoration: underline;
 }
 
 .ds-nav-local__list {

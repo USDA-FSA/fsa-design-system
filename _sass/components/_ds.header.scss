@@ -31,7 +31,7 @@
     max-width: ($site-max-width + 24px);
     padding: $size-default;
 
-    @include breakpoint(M) {
+    @include breakpoint(L) {
       width: 100%;
       display: table;
     }
@@ -42,7 +42,7 @@
 
     margin-bottom: $size-default;
 
-    @include breakpoint(M) {
+    @include breakpoint(L) {
       display: table-cell;
     }
 
@@ -50,10 +50,13 @@
 
   &__options {
 
-    @include breakpoint(M) {
-      display: table-cell;
-      text-align: right;
-      white-space: nowrap;
+    & {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include breakpoint(L) {
+        justify-content: flex-end;
+      }
     }
 
     &-item {
@@ -61,17 +64,14 @@
       display: inline-block;
 
       &--start {
-
         margin-right: $size-medium;
-
       }
 
       &--github {
-
+        white-space: nowrap;
         @include breakpoint(L, down) {
           @include font-size(2);
         }
-
       }
 
     }
