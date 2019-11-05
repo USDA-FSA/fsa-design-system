@@ -16,7 +16,9 @@ title_label: 'May Require JavaScript'
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item">
           <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -38,7 +40,9 @@ title_label: 'May Require JavaScript'
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item">
           <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -55,7 +59,9 @@ title_label: 'May Require JavaScript'
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__item">
         <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -78,7 +84,9 @@ title_label: 'May Require JavaScript'
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item">
           <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -98,7 +106,9 @@ title_label: 'May Require JavaScript'
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__item">
         <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -118,10 +128,14 @@ title_label: 'May Require JavaScript'
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary_1 ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ secondary_1 ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary_2 ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ secondary_2 ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item">
           <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -138,10 +152,14 @@ title_label: 'May Require JavaScript'
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary_1 ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ secondary_1 ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__item">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary_2 ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ secondary_2 ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__item">
         <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -160,7 +178,9 @@ title_label: 'May Require JavaScript'
     <div class="fsa-stepped-control__bd">
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -177,7 +197,9 @@ title_label: 'May Require JavaScript'
   <div class="fsa-stepped-control__bd">
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -197,11 +219,15 @@ title_label: 'May Require JavaScript'
     <div class="fsa-stepped-control__bd">
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ prog_secondary ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ prog_secondary ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item">
           <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -217,11 +243,15 @@ title_label: 'May Require JavaScript'
   <div class="fsa-stepped-control__bd">
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ prog_secondary ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ prog_secondary ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__item">
         <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -243,7 +273,9 @@ title_label: 'May Require JavaScript'
       </div>
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -263,7 +295,9 @@ title_label: 'May Require JavaScript'
     </div>
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -286,10 +320,14 @@ title_label: 'May Require JavaScript'
       </div>
       <div class="fsa-stepped-control__list">
         <div class="fsa-stepped-control__item">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive_1 ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ regressive_1 ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive_2 ]</button>
+          <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+            <span class="fsa-stepped-control__btn-label">[ regressive_2 ]</span>
+          </button>
         </div>
         <div class="fsa-stepped-control__shim"></div>
         <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -309,10 +347,14 @@ title_label: 'May Require JavaScript'
     </div>
     <div class="fsa-stepped-control__list">
       <div class="fsa-stepped-control__item">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive_1 ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ regressive_1 ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive_2 ]</button>
+        <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+          <span class="fsa-stepped-control__btn-label">[ regressive_2 ]</span>
+        </button>
       </div>
       <div class="fsa-stepped-control__shim"></div>
       <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -338,7 +380,9 @@ title_label: 'May Require JavaScript'
         <div class="fsa-stepped-control__list">
           <div class="fsa-stepped-control__shim"></div>
           <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+              <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+            </button>
           </div>
           <div class="fsa-stepped-control__item">
             <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -376,7 +420,9 @@ title_label: 'May Require JavaScript'
         <div class="fsa-stepped-control__list">
           <div class="fsa-stepped-control__shim"></div>
           <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
-            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ secondary ]</button>
+            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+              <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+            </button>
           </div>
           <div class="fsa-stepped-control__item">
             <button class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="submit">
@@ -401,7 +447,9 @@ title_label: 'May Require JavaScript'
       <div class="fsa-stepped-control__bd">
         <div class="fsa-stepped-control__list">
           <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+              <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+            </button>
           </div>
           <div class="fsa-stepped-control__shim"></div>
           <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -428,7 +476,9 @@ title_label: 'May Require JavaScript'
         </div>
         <div class="fsa-stepped-control__list">
           <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">[ regressive ]</button>
+            <button class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+              <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+            </button>
           </div>
           <div class="fsa-stepped-control__shim"></div>
           <div class="fsa-stepped-control__item fsa-stepped-control__item--push">
@@ -530,7 +580,9 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
           <div class="fsa-stepped-control__list">
             <div class="fsa-stepped-control__shim"></div>
             <div class="fsa-stepped-control__item">
-              <button class="fsa-btn fsa-btn--alt fsa-stepped-control__btn" type="button">[ secondary ]</button>
+              <button class="fsa-btn fsa-btn--alt fsa-stepped-control__btn" type="button">
+                <span class="fsa-stepped-control__btn-label">[ secondary ]</span>
+              </button>
             </div>
             <div class="fsa-stepped-control__item">
               <button class="fsa-btn fsa-btn--primary fsa-stepped-control__btn" type="submit">
@@ -558,7 +610,9 @@ The JavaScript for the Sticky Stepped Control performs a number of calculations 
         <div class="fsa-stepped-control__bd">
           <div class="fsa-stepped-control__list">
             <div class="fsa-stepped-control__item fsa-stepped-control__item--pull">
-              <button class="fsa-btn fsa-btn--alt fsa-stepped-control__btn" type="button">[ regressive ]</button>
+              <button class="fsa-btn fsa-btn--alt fsa-stepped-control__btn" type="button">
+                <span class="fsa-stepped-control__btn-label">[ regressive ]</span>
+              </button>
             </div>
             <div class="fsa-stepped-control__shim"></div>
             <div class="fsa-stepped-control__item">
