@@ -2,7 +2,7 @@
 layout: guide
 parent: "Content"
 title: "Content Principles"
-intro: "Our five core principles for authoring content at FSA."
+intro: "Our five core principles for authoring content at FPAC."
 ---
 
 ## 1. Start with user needs.

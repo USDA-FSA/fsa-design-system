@@ -403,4 +403,4 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 * Add `fsa-growl--dismissing` class
 * Set `aria-hidden` attribute to true
 * Remove `aria-expanded` attribute from element that triggered Growl
-* Set focus to the element that triggered Growl
+* Set focus to the element that initially triggered the Notification
