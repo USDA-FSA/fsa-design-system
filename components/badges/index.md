@@ -9,6 +9,7 @@ jump_menu: true
 <div class="ds-preview">
   <p>
     <span class="fsa-badge">1</span>
+    <span class="fsa-badge fsa-badge--general">11</span>
     <span class="fsa-badge fsa-badge--alert">11</span>
     <span class="fsa-badge fsa-badge--warning">22</span>
     <span class="fsa-badge fsa-badge--success">197</span>
@@ -36,6 +37,15 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 </div>
 ```html
 <span class="fsa-badge">1</span>
+```
+
+### General
+
+<div class="ds-preview">
+  <span class="fsa-badge fsa-badge--general">11</span>
+</div>
+```html
+<span class="fsa-badge fsa-badge--general">11</span>
 ```
 
 ### Alert
@@ -70,6 +80,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 <div class="ds-preview">
   <p>
     <span class="fsa-badge fsa-badge--large">1</span>
+    <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
     <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>
@@ -78,6 +89,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ```html
 <p>
   <span class="fsa-badge fsa-badge--large">1</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
   <span class="fsa-badge fsa-badge--large fsa-badge--success">197</span>

@@ -19,17 +19,17 @@ Below are four common themes that should be followed when developing a validatio
 
 <figure class="fsa-m-b--m">
   <figcaption>Unfocused Form Field State</figcaption>
-  <a href="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" alt="Image of a form field in an unfocused state"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" alt="form field in an unfocused state"></a>
 </figure>
 
 <figure class="fsa-m-b--m">
   <figcaption>Focused Form Field State</figcaption>
-  <a href="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" alt="Image of form field in a focused state"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-2.jpg" alt="form field in a focused state"></a>
 </figure>
 
 <figure class="fsa-m-b--m">
   <figcaption>Unfocused State with Error Messaging</figcaption>
-  <a href="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" alt="Image of a form field with error messaging"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-3.jpg" alt="form field with error messaging"></a>
 </figure>
 
 The themes above have been programmed into the CSS and form components within the Design system, but it is important to understand the concepts and theory behind them in order to implement validation and messaging that complies with best practice.
@@ -40,7 +40,7 @@ Some applications will require the system to confirm an action taken by a User b
 
 <figure class="fsa-m-b--m">
   <figcaption>Modal Window Confirmation</figcaption>
-  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" alt="Image of sample Modal Window Confirmation"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" alt="sample Modal Window Confirmation"></a>
 </figure>
 
 ## Related Resources

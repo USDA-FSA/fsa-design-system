@@ -20,7 +20,7 @@ intro: "A Popup window or Modal window is a vital part of many FPAC applications
 ## Modal Window Sample
 
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" alt="Image of sample Modal Window"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample1.jpg" alt="sample Modal Window"></a>
 </figure>
 
 ## Related Resources
