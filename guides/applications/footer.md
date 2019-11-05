@@ -50,7 +50,7 @@ The footer has 4 columns:
             <div class="fsa-grid__1/1 fsa-grid__1/3@m">
               <h3 class="fsa-footer__cat-header">Resources</h3>
               <ul class="fsa-footer__list">
-                <li class="fsa-footer__list-item"><a href="#" target="_blank">Inside FSA</a></li>
+                <li class="fsa-footer__list-item"><a href="#" target="_blank">Inside FPAC</a></li>
                 <li class="fsa-footer__list-item"><a href="#" target="_blank">Policies and Links</a></li>
               </ul>
             </div>

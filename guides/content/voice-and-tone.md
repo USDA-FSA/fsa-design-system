@@ -15,7 +15,7 @@ Our **voice** is our unique personality. It can be helpful to think of voice as 
 
 ## Our voice
 
-At FSA, we like to communicate in a friendly, straightforward way. We consider our voice to be:
+At FPAC, we like to communicate in a friendly, straightforward way. We consider our voice to be:
 
 * Authoritative
 * Conversational

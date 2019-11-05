@@ -2,7 +2,7 @@
 layout: guide
 parent: "Guides"
 title: "Accessibility"
-intro: "Why we build accessible digital artifacts at FSA. "
+intro: "Why we build accessible digital artifacts at FPAC. "
 ---
 
 ## Our challenge
@@ -15,7 +15,7 @@ Accessibility is one of the most important aspects of modern web development. Ac
 
 Accessibility works best when incorporated into an [Agile production environment](https://en.wikipedia.org/wiki/Agile_software_development). It's very hard to adequately address accessibility concerns at the end of a project, but if taken into account at the beginning, it's quite straightforward and cost-effective. The best and perhaps only way to ensure this is done, is through training and education. Every member of a production team should be aware of what accessibility concerns are and a have a basic understanding of how they're addressed.
 
-Here at FSA, we follow both the [GSA Accessibility Playbook](https://www.section508.gov/content/it-accessibility-playbook) and [WCAG2.0 AA](https://www.w3.org/TR/WCAG20) as our standard for why and how we facilitate accessible design. WCAG has long been the gold standard for accessibility on the web and part 1194.5 of the Section 508 standards allows FPAC to use a set of standards that meet current user needs. Further, the [Access Board](http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards) has also been working on a refresh to correct the Section 508 standards to incorporate WCAG2.0 AA. The GSA Accessibility Playbook is a critical step in that process.
+Here at FPAC, we follow both the [GSA Accessibility Playbook](https://www.section508.gov/content/it-accessibility-playbook) and [WCAG2.0 AA](https://www.w3.org/TR/WCAG20) as our standard for why and how we facilitate accessible design. WCAG has long been the gold standard for accessibility on the web and part 1194.5 of the Section 508 standards allows FPAC to use a set of standards that meet current user needs. Further, the [Access Board](http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards) has also been working on a refresh to correct the Section 508 standards to incorporate WCAG2.0 AA. The GSA Accessibility Playbook is a critical step in that process.
 
 This site is currently in Draft as it is still being built. It will eventually contain resources for all things accessibility, development best practices, testing guides, and tools. If you have any questions about accessibility, 508, or would like help, please reach out on the [GitHub Repo](https://github.com/usda-fsa/fsa-design-system).
 

@@ -2,7 +2,7 @@
 layout: guide
 parent: "Accessibility"
 title: "Writing Guide"
-intro: "How we talk about Section 508 when we write about it at FSA."
+intro: "How we talk about Section 508 when we write about it at FPAC."
 ---
 
 ## The law

@@ -118,6 +118,8 @@ Most elements and components have a deliberate size assigned to them, Utilities 
 
 ## Lists
 
+Further detail available at [Components > Lists]({{ site.baseurl }}components/lists/)
+
 ### Unordered List (bullet)
 
 <div class="ds-preview">

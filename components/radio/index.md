@@ -65,9 +65,9 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 </ul>
 ```
 
-## States
+## Variations
 
-Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though they are uniquely styled depending on their state and may be combinable, e.g. disabled and checked.
+`class="fsa-radio fsa-radio--[variation]"`
 
 ### Default
 
@@ -83,6 +83,49 @@ Radio buttons are styled via `class="fsa-radio"`. Variations don't exist, though
   <label for="lorem-ipsum-9">Label</label>
 </span>
 ```
+
+### Solo
+
+<div class="ds-preview">
+  <span>
+    <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__01" type="radio" name="solo-radio-example" value="solo-radio-example__01">
+    <label for="solo-radio-example__01"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__02" type="radio" name="solo-radio-example" value="solo-radio-example__02" checked="">
+    <label for="solo-radio-example__02"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__03" type="radio" name="solo-radio-example" value="solo-radio-example__03" disabled="">
+    <label for="solo-radio-example__03"><span class="fsa-sr-only">Label</span></label>
+  </span>
+  <span>
+    <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__04" type="radio" name="solo-radio-example__asdf" value="solo-radio-example__04" disabled="" checked>
+    <label for="solo-radio-example__04"><span class="fsa-sr-only">Label</span></label>
+  </span>
+</div>
+```html
+<span>
+  <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__01" type="radio" name="solo-radio-example" value="solo-radio-example__01">
+  <label for="solo-radio-example__01"><span class="fsa-sr-only">Label</span></label>
+</span>
+<span>
+  <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__02" type="radio" name="solo-radio-example" value="solo-radio-example__02" checked="">
+  <label for="solo-radio-example__02"><span class="fsa-sr-only">Label</span></label>
+</span>
+<span>
+  <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__03" type="radio" name="solo-radio-example" value="solo-radio-example__03" disabled="">
+  <label for="solo-radio-example__03"><span class="fsa-sr-only">Label</span></label>
+</span>
+<span>
+  <input class="fsa-radio fsa-radio--solo" id="solo-radio-example__04" type="radio" name="solo-radio-example__asdf" value="solo-radio-example__04" disabled="" checked>
+  <label for="solo-radio-example__04"><span class="fsa-sr-only">Label</span></label>
+</span>
+```
+
+## States
+
+Radio states are styled not by a `class`, but depending on their state (primarily through the presense of an attribute) and may be combinable, e.g. `disabled` and `checked`.
 
 ### Checked
 
