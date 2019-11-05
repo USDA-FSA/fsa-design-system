@@ -1,7 +1,7 @@
 {
   "name": "fsa-design-system",
   "description": "Open Source Design System for USDA Farm Production and Convervation (FPAC)",
-  "version": "1.13.3",
+  "version": "1.14.0",
   "license": "SEE LICENSE in LICENSE.md",
   "repository": {
     "type": "git",
