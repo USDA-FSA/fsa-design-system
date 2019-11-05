@@ -489,7 +489,7 @@ custom_js: "progress.js"
 ### Paired with Growl Notification, modal-based
 <button class="fsa-btn fsa-btn--small fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-hsyys88UUUhn" aria-expanded="false" type="button">Show a Notification (Modal-based)</button>
 <div class="fsa-growl-container fsa-growl-container--centered">
-  <div class="fsa-growl fsa-growl--warning fsa-growl--centered" id="UNIQUE-ID-hsyys88UUUhn" aria-hidden="true" tabindex="0" role="dialog">
+  <div class="fsa-growl fsa-growl--warning fsa-growl--centered" id="UNIQUE-ID-hsyys88UUUhn" aria-hidden="true" tabindex="0" role="alertdialog">
     <div class="fsa-growl__hd">
       <h2 class="fsa-growl__title">Go get a frappacino</h2>
     </div>
@@ -539,7 +539,7 @@ custom_js: "progress.js"
 
 ## Usage
 
-<div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
   <div class="fsa-alert__body">
     <p class="fsa-alert__text">Documentation in progress.</p>
   </div>

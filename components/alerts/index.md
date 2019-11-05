@@ -143,12 +143,12 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ### Don't Use
 
-* When displaying error messages paired with specific form fields. Use [Form Field States]({{ site.baseurl }}components/form-fields/).
+* When displaying error messages paired with specific form fields. Use error states provided in [Form Field]({{ site.baseurl }}components/form-fields/) component.
 * The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background process. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
-* The application requires a message to appear and have the User take action to dismiss. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
+* For destructive actions. If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, with an option available for user to confirm or deny. Consider the Modal-based variation of [Growl Notification]({{ site.baseurl }}components/growl/)
 * The application displays non-critical information that won’t disrupt a workflow. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * Too many Alerts at one time as this will confuse the User and push content down the screen.
 
 ## General Guidance
 
-* Alerts should be used to help provide guidance and information related to application state, processing, and events.
+* Alerts should be used to help provide contextual guidance and information related to application state, processing, and events.

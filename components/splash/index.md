@@ -75,7 +75,7 @@ suppress_code_toggle: true
 
 ## Usage
 
-<div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
   <div class="fsa-alert__body">
     <p class="fsa-alert__text">Documentation in progress.</p>
   </div>

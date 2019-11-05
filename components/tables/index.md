@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Tables"
-intro: "Tables show tabular data in columns and rows."
+intro: "Data tables presenting tabular data in columns and rows."
 jump_menu: true
 custom_js: "table-select-demo.js"
 ---
@@ -43,9 +43,11 @@ Tables are great for displaying tabular data. Minimal visual styling helps surfa
   </table>
 </div>
 
-## Variations
+## Variations and Examples
 
 Styled `<table>` components use `class="fsa-table"`, with several modifications available with `fsa-table--[variation]`.
+
+Multiple modifying options are demonstrated for table rows (`tr`), table header cells (`th`), and table body cells (`td`) &ndash; along with sample use of other Design System components.
 
 ```html
 <table class="fsa-table fsa-table--[variation]">
@@ -148,7 +150,7 @@ Styled `<table>` components use `class="fsa-table"`, with several modifications 
 
 ### Customize caption
 
-The `<caption>`'s default presentation does not provide a hierarchical context. An `<hN>` element can nested within to provide a stronger heading structure and clear hierarchy while providing stricter access through the `<caption>` element.
+The `<caption>`'s default presentation does not provide a hierarchical context. An `<hN>` element can be nested within to provide a stronger heading structure and clear visual hierarchy while providing stricter access through the `<caption>` element.
 
 <div class="ds-preview">
   <table class="fsa-table">
@@ -237,7 +239,6 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
         <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
         <th scope="col" class="fsa-text-align--right" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Loan Rate</button></th>
         <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Alternative PCP</button></th>
         <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
       </tr>
     </thead>
@@ -246,35 +247,30 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
         <td>Oats $/Bushel</td>
         <td class="fsa-text-align--right">1.43</td>
         <td class="fsa-text-align--right">2.97</td>
-        <td class="fsa-text-align--right">1.92</td>
         <td class="fsa-text-align--right">0.00</td>
       </tr>
       <tr>
         <td>Barley $/Bushel</td>
         <td class="fsa-text-align--right">1.75</td>
         <td class="fsa-text-align--right">3.30</td>
-        <td class="fsa-text-align--right">2.60</td>
         <td class="fsa-text-align--right">0.00</td>
       </tr>
       <tr>
         <td>Wheat - Soft Red Winter $/Bushel</td>
         <td class="fsa-text-align--right">2.42</td>
         <td class="fsa-text-align--right">4.49</td>
-        <td class="fsa-text-align--right">4.19</td>
         <td class="fsa-text-align--right">0.00</td>
       </tr>
       <tr>
         <td>Canola $/Cwt.</td>
         <td class="fsa-text-align--right">8.94</td>
         <td class="fsa-text-align--right">15.99</td>
-        <td class="fsa-text-align--right">15.89</td>
         <td class="fsa-text-align--right">0.00</td>
       </tr>
       <tr>
         <td>Flaxseed $/Cwt.</td>
         <td class="fsa-text-align--right">10.13</td>
         <td class="fsa-text-align--right">15.90</td>
-        <td class="fsa-text-align--right">14.62</td>
         <td class="fsa-text-align--right">0.00</td>
       </tr>
     </tbody>
@@ -1778,5 +1774,6 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 Always refer to the [Accessibility Tables Guide]({{ site.baseurl }}guides/accessibility/tables) for overall guidance.
 
 * Note use of `aria` attributes for declaring by which column a table is sorted, and in which direction, `descending` or `ascending`.
-* Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
+* The `caption` element is required, as demonstrated is each example on this page. Some are visually hidden, though remain available to screenreaders; others have been visually modified to convey a visual hierarchy.
+* Simple tables can have two levels of headers. Each header cell (`th`) should have `scope="col"` or `scope="row"`.
 * Complex tables are tables with more than two levels of headers. Each header should be given a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
