@@ -2,7 +2,7 @@
 layout: page
 parent: "Visual Style"
 title: "Size and Space"
-intro: "In FSA Applications, it is important to understand the value of size and spacing of elements themselves along with the space around the element as well."
+intro: "In FPAC Applications, it is important to understand the value of size and spacing of elements themselves along with the space around the element as well."
 jump_menu: true
 suppress_code_toggle: true
 ---
@@ -64,14 +64,21 @@ Spacing within the Design System is related to setting default values for CSS pr
 
 ### Spacing Example
 
-The below example uses different colored bars to represent the various size and space variables being used in an example application.
+The screenshot below demonstrates various sizing variables in an example application.
 
-* Pink represents `$size-small`
-* Yellow represents `$size-default`
-* Purple represents `$size-medium`
 
 <figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Spacing example"></a>
+  <style>
+    .ds-sizing-swatch { display: inline-block; width: 24px; height: 24px; vertical-align: middle; background-color: white; border: 1px solid rgba(73,68,64,0.15); }
+  </style>
+  <figcaption class="fsa-m-b--s">
+    <ul class="fsa-list--inline">
+      <li><span class="ds-sizing-swatch" title="Pink" style="background-color: #f010d5;"></span> <code>$size-small</code></li>
+      <li><span class="ds-sizing-swatch" title="Yellow" style="background-color: #ffc000;"></span> <code>$size-default</code></li>
+      <li><span class="ds-sizing-swatch" title="Purple" style="background-color: #7030a0;"></span> <code>$size-medium</code></li>
+    </ul>
+  </figcaption>
+  <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank"><img style="border: 1px solid rgba(73,68,64,0.15)" src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Spacing example"></a>
 </figure>
 
 ## White Space
