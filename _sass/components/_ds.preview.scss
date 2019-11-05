@@ -1,21 +1,49 @@
+
+@mixin x-ray() {
+  * {
+    background-color: rgba(255,0,0,.08);
+    outline: 1px solid rgba(0,0,0,.15);
+    outline-offset: -1px;
+    color: black !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    &:before { background-color: rgba(000,000,250,.2); outline: 1px solid rgba(0,0,0,.2); }
+    &:after  { background-color: rgba(000,000,250,.2); outline: 1px solid rgba(0,0,0,.2); }
+  }
+  * *                 { background-color: rgba(000,255,000,.08); }
+  * * *               { background-color: rgba(000,000,255,.08); }
+  * * * *             { background-color: rgba(255,000,255,.08); }
+  * * * * *           { background-color: rgba(000,255,255,.08); }
+  * * * * * *         { background-color: rgba(255,255,000,.08); }
+  * * * * * * *       { background-color: rgba(255,000,000,.08); }
+  * * * * * * * *     { background-color: rgba(000,255,000,.08); }
+  * * * * * * * * *   { background-color: rgba(000,000,255,.08); }
+}
+
 .ds-preview {
 
-  margin: 2em 0;
+  $component-bgc: $color-fsa-white;
 
-  @include breakpoint(S) {
-    border: 1px solid $color-fsa-tertiary-100;
-    border-width: 1px 0;
-    padding: $size-default;
-    margin-left: (-$size-default);
-    margin-right: (-$size-default);
-    background-color: $color-fsa-white;
-  }
+  & {
 
-  @include breakpoint(M) {
-    padding: $size-medium;
-    margin-left: 0;
-    margin-right: 0;
-    border-width: 1px;
+    margin: 1em 0;
+
+    @include breakpoint(S) {
+      border: 1px solid $color-fsa-tertiary-100;
+      border-width: 1px 0;
+      padding: $size-default;
+      margin-left: (-$size-default);
+      margin-right: (-$size-default);
+      background-color: $component-bgc;
+    }
+
+    @include breakpoint(M) {
+      padding: $size-medium;
+      margin-left: 0;
+      margin-right: 0;
+      border-width: 1px;
+    }
+
   }
 
   &--default-bg {
@@ -29,10 +57,29 @@
     height: 50vh;
   }
 
-  .highlighter-rouge + &,
+  &--bare {
+
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+
+    @include breakpoint(L) {
+      html body.x-ray .ds-article & {
+        box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+      }
+    }
+
+  }
+
+  .highlighter-rouge + & {
+    @include breakpoint(S) {
+      margin-top: -2em;
+    }
+  }
+
   + .highlighter-rouge {
     @include breakpoint(S) {
-      margin-top: -34px; // yeah, magic number, wheee!
+      margin-top: -1em;
     }
   }
 
@@ -47,7 +94,41 @@
 
   }
 
+  html body.x-ray & {
+    @include checkerboard();
+    // border-color: $color-fsa-site-bg;
+    background-color: $color-fsa-site-bg;
+    @include breakpoint(S) {
+      box-shadow:
+        0 0 0 12px $component-bgc inset,
+        0 0 0 13px rgba(0,0,0,.1) inset
+      ;
+    }
+    @include breakpoint(M) {
+      box-shadow:
+        0 0 0 24px $component-bgc inset,
+        0 0 0 25px rgba(0,0,0,.1) inset
+      ;
+    }
+    @include x-ray();
+  }
 }
+
+html body.x-ray {
+  .fsa-modal,
+  .fsa-growl-container,
+  .fsa-date-calendar {
+    @include x-ray();
+  }
+  .fsa-growl-container {
+    @include checkerboard();
+    background-color: rgba(255,255,255,.6);
+  }
+  .fsa-modal {
+    background-color: rgba(255,255,255,.6);
+  }
+}
+
 
 // scss-lint:disable QualifyingElement
 .ds-show-da-code div.highlighter-rouge {
@@ -57,7 +138,7 @@
 // scss-lint:disable SelectorFormat
 .highlighter-rouge + .docs__utilities__demo {
   @include breakpoint(S) {
-    margin-top: -34px; // yeah, magic number, wheee!
+    margin-top: -2em;
   }
 }
 

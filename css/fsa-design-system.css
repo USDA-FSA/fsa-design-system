@@ -12172,8 +12172,8 @@ main:active, main:focus {
     border-bottom: 1px solid #dbdad9;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-align: baseline;
+        align-items: baseline;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -12346,7 +12346,7 @@ main:active, main:focus {
 }
 
 .ds-preview {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 @media (min-width: 30.0625em) {
@@ -12380,10 +12380,27 @@ main:active, main:focus {
   height: 50vh;
 }
 
+.ds-preview--bare {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (min-width: 54em) {
+  html body.x-ray .ds-article .ds-preview--bare {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
 @media (min-width: 30.0625em) {
-  .highlighter-rouge + .ds-preview,
+  .highlighter-rouge + .ds-preview {
+    margin-top: -2em;
+  }
+}
+
+@media (min-width: 30.0625em) {
   .ds-preview + .highlighter-rouge {
-    margin-top: -34px;
+    margin-top: -1em;
   }
 }
 
@@ -12396,13 +12413,173 @@ main:active, main:focus {
   overflow: auto;
 }
 
+html body.x-ray .ds-preview {
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+  background-size: 2rem 2rem;
+  background-position: 0 0, 50px 50px;
+  background-position: 0 0, 5rem 5rem;
+  background-color: #f8fafc;
+}
+
+@media (min-width: 30.0625em) {
+  html body.x-ray .ds-preview {
+    box-shadow: 0 0 0 12px #fff inset, 0 0 0 13px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
+@media (min-width: 37.5em) {
+  html body.x-ray .ds-preview {
+    box-shadow: 0 0 0 24px #fff inset, 0 0 0 25px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
+html body.x-ray .ds-preview * {
+  background-color: rgba(255, 0, 0, 0.08);
+  outline: 1px solid rgba(0, 0, 0, 0.15);
+  outline-offset: -1px;
+  color: black !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html body.x-ray .ds-preview *:before {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .ds-preview *:after {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .ds-preview * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * {
+  background-color: rgba(255, 0, 255, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * {
+  background-color: rgba(0, 255, 255, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * {
+  background-color: rgba(255, 255, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * * {
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .ds-preview * * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal *,
+html body.x-ray .fsa-growl-container *,
+html body.x-ray .fsa-date-calendar * {
+  background-color: rgba(255, 0, 0, 0.08);
+  outline: 1px solid rgba(0, 0, 0, 0.15);
+  outline-offset: -1px;
+  color: black !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html body.x-ray .fsa-modal *:before,
+html body.x-ray .fsa-growl-container *:before,
+html body.x-ray .fsa-date-calendar *:before {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .fsa-modal *:after,
+html body.x-ray .fsa-growl-container *:after,
+html body.x-ray .fsa-date-calendar *:after {
+  background-color: rgba(0, 0, 250, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+html body.x-ray .fsa-modal * *,
+html body.x-ray .fsa-growl-container * *,
+html body.x-ray .fsa-date-calendar * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * *,
+html body.x-ray .fsa-growl-container * * *,
+html body.x-ray .fsa-date-calendar * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * *,
+html body.x-ray .fsa-growl-container * * * *,
+html body.x-ray .fsa-date-calendar * * * * {
+  background-color: rgba(255, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * *,
+html body.x-ray .fsa-growl-container * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * {
+  background-color: rgba(0, 255, 255, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * {
+  background-color: rgba(255, 255, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * * {
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.08);
+}
+
+html body.x-ray .fsa-modal * * * * * * * * *,
+html body.x-ray .fsa-growl-container * * * * * * * * *,
+html body.x-ray .fsa-date-calendar * * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.08);
+}
+
+html body.x-ray .fsa-growl-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+  background-size: 2rem 2rem;
+  background-position: 0 0, 50px 50px;
+  background-position: 0 0, 5rem 5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+html body.x-ray .fsa-modal {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .ds-show-da-code div.highlighter-rouge {
   display: block;
 }
 
 @media (min-width: 30.0625em) {
   .highlighter-rouge + .docs__utilities__demo {
-    margin-top: -34px;
+    margin-top: -2em;
   }
 }
 
@@ -12601,6 +12778,10 @@ pre.highlight .ds-clipboard {
   font-size: 66%;
 }
 
+.ds-subcat-title {
+  border-bottom: 2px solid #75716e;
+}
+
 .ds-subcat-list__list {
   display: block;
   list-style-type: none;
@@ -12667,6 +12848,12 @@ pre.highlight .ds-clipboard {
   .ds-subcat-list__list-item {
     width: 25%;
     margin-bottom: 3.6rem;
+  }
+}
+
+@media (min-width: 54em) {
+  .ds-subcat-list__list-item--thirds {
+    width: 33.3333333333%;
   }
 }
 

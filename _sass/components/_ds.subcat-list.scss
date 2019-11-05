@@ -1,3 +1,7 @@
+.ds-subcat-title {
+  border-bottom: 2px solid #75716e;
+}
+
 .ds-subcat-list {
 
   &__list {
@@ -28,6 +32,12 @@
     @include breakpoint(L) {
       @include fsa-grid-column-width(3);
       margin-bottom: $size-large;
+    }
+
+    &--thirds {
+      @include breakpoint(L) {
+        @include fsa-grid-column-width(4);
+      }
     }
 
   }

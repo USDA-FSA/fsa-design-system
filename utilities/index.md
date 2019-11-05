@@ -14,7 +14,7 @@ Most include **Responsive** options, enabling you to make targeted alterations a
 
 ## Usage
 
-A sample use case: you'd like to adjust a component's **margins** .
+A sample use case: you'd like to adjust a component's [margins](#margins) .
 
 ```html
 <h2>Second level heading</h2>
@@ -48,6 +48,276 @@ A sample use case: you'd like to adjust a component's **margins** .
 ```
 <div class="docs__utilities__demo fsa-m-b--l">
   <h2 class="fsa-m--none">Second level heading</h2>
+</div>
+
+## Box
+
+```html
+<element class="fsa-box">...</element>
+```
+<div class="ds-preview ds-preview--default-bg">
+  <div class="fsa-box">
+    <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+  </div>
+</div>
+
+### Responsive
+
+```html
+<element class="fsa-box@[breakpoint]">...</element>
+```
+
+Selectively apply to an element at each Media Query breakpoint, where `breakpoint` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>.
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__box.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_box">
+      <iframe title="Responsive Demo: box" src="http://usda-fsa.github.io/fsa-style/demo/rwd__box.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
+### Modifiers
+
+While these modifiers are specific to `.fsa-box`, other CSS Utilities and Helpers (e.g. [Margins](#margins)) can be combined for further flexibility.
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bg-0</strong>"</code></p>
+    <div class="fsa-box fsa-box--bg-0">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bg-1</strong>"</code></p>
+    <div class="fsa-box fsa-box--bg-1">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bg-2</strong>"</code></p>
+    <div class="fsa-box fsa-box--bg-2">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bg-3</strong>"</code></p>
+    <div class="fsa-box fsa-box--bg-3">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bw-0</strong>"</code></p>
+    <div class="fsa-box fsa-box--bw-0">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bw-1</strong>"</code></p>
+    <div class="fsa-box fsa-box--bw-1">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bw-2</strong>"</code></p>
+    <div class="fsa-box fsa-box--bw-2">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>bw-3</strong>"</code></p>
+    <div class="fsa-box fsa-box--bw-3">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>br-0</strong>"</code></p>
+    <div class="fsa-box fsa-box--br-0">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>br-1</strong>"</code></p>
+    <div class="fsa-box fsa-box--br-1">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>br-2</strong>"</code></p>
+    <div class="fsa-box fsa-box--br-2">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+    <p class="docs__code-sample"><code>class="fsa-box fsa-box--<strong>br-3</strong>"</code></p>
+    <div class="fsa-box fsa-box--br-3">
+      <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
+    </div>
+  </div>
+</div>
+
+### Responsive Modifiers
+
+```html
+<element class="fsa-box fsa-box[property]@[breakpoint]">...</element>
+```
+
+Selectively override several style properties of `.fsa-box` at each Media Query breakpoint, where `property` is one of <code title="background-color">bg</code>, <code title="border-width">bw</code>, or <code title="border-radius">br</code>, and where <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box-modifiers" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box-modifiers" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box-modifiers" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_box-modifiers" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__box-modifiers.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_box-modifiers">
+      <iframe title="Responsive Demo: box modifiers" src="http://usda-fsa.github.io/fsa-style/demo/rwd__box-modifiers.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
+## Ellipsis
+
+<p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
+
+### Variations
+
+```html
+<element class="fsa-ellipsis[--variation]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/2@m">
+    <h4>Default</h4>
+    <p class="docs__code-sample"><code>class="fsa-ellipsis"</code></p>
+    <div class="fsa-ellipsis">Tenetur vel enim numquam officiis dolorem soluta eveniet facere nulla esse maiores assumenda tempora nobis nde sint commodi atque consequuntur veniam nequ ibusdam incidunt accusantium enim a ea laboriosam explicabo obcaecati possimusarchitecto necessitatibus delectus reiciendis laboriosam tempore cumque natus quae ullam nam atque.</div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/2@m">
+    <h4>Unset</h4>
+    <p class="docs__code-sample"><code>class="fsa-ellipsis<strong>--none</strong>"</code></p>
+    <div class="fsa-ellipsis fsa-ellipsis--none">Tenetur vel enim numquam officiis dolorem soluta eveniet facere nulla esse maiores assumenda tempora nobis nde sint commodi atque consequuntur veniam nequ ibusdam incidunt accusantium enim a ea laboriosam explicabo obcaecati possimusarchitecto necessitatibus delectus reiciendis laboriosam tempore cumque natus quae ullam nam atque.</div>
+  </div>
+</div>
+
+### Responsive
+
+Set overflow of block-level elements to Ellipsis at select media query breakpoints.
+
+{% include alert.rwd-rendering.html %}
+
+<p>
+  <code>fsa-ellipsis<strong>[--none]@[breakpoint]</strong></code>, where
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_ellipsis">
+      <iframe title="Responsive Demo: ellipsis" src="http://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
+## Floats
+
+<p class="fsa-text--lead">Selectively adjust floating behavior of elements or components.</p>
+
+### Variations
+
+```html
+<el class="fsa-float--[direction]">...</el>
+```
+
+`[direction]` is one of `left`, `right`, `none`.
+
+#### Left
+
+```html
+<el class="fsa-float--left">...</el>
+```
+
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+</div>
+
+#### Right
+
+```html
+<el class="fsa-float--right">...</el>
+```
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+</div>
+
+#### None
+
+Most likely used to override a component's current `float` property.
+
+```html
+<el class="fsa-float--none">...</el>
+```
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left fsa-float--none"><strong>I'm not floating.</strong></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
+</div>
+
+### Containing Floats
+
+aka "clearfix"
+
+```html
+<el class="fsa-clearfix">...</el>
+```
+<div class="fsa-clearfix docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
+</div>
+<p>The above container has been cleared</p>
+
+### Clearing Floats
+
+```html
+<el class="fsa-clear">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
+  <p class="docs__utilities__demo-item fsa-clear"><strong>I've been cleared</strong></p>
+</div>
+
+### Responsive
+
+Adjust floating presentation per media query breakpoint.
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <p>
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+    </span>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank">View in new window</a>
+  </p>
+  <div class="docs__rwd-embed-container">
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
 </div>
 
 ## Margins
@@ -210,6 +480,174 @@ Margins can be adjusted per media query breakpoint.
   </div>
 </div>
 
+## Media Object
+
+<p class="fsa-text--lead">Pair an object (typically an image) with text-based content to one of the sides.</p>
+
+Media Objects are a very quick and easy way to pair visual references to text-based content that references the media or vice versa. A detailed write-up explains it well at [The media object saves hundreds of lines of code](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/.).
+
+```html
+<div class="fsa-media [fsa-media--[variation]]">...</div>
+```
+
+### Variations
+
+#### Default
+
+<div class="ds-preview">
+  <div class="fsa-media">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.jpg" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+#### Right
+
+<div class="ds-preview">
+  <div class="fsa-media fsa-media--right">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media fsa-media--right">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+#### Middle
+
+<div class="ds-preview">
+  <div class="fsa-media fsa-media--middle">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media fsa-media--middle">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+#### Bottom
+
+<div class="ds-preview">
+  <div class="fsa-media fsa-media--bottom">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+</div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media fsa-media--bottom">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum.</p>
+  </div>
+</div>
+```
+
+### Nesting Media Objects
+
+Based on the layout and features of the application, it might be advantageous to utilized a nesting methodology to structure a page. Media Objects can easily be nested within the content or text-based area, represented within a DIV with `class="fsa-media__section"` applied to it.
+
+<div class="ds-preview">
+  <div class="fsa-media">
+    <div class="fsa-media__section">
+      <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+    </div>
+    <div class="fsa-media__section">
+      <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <div class="fsa-media">
+        <div class="fsa-media__section">
+          <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+        </div>
+        <div class="fsa-media__section">
+          <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <div class="fsa-media">
+            <div class="fsa-media__section">
+              <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
+            </div>
+            <div class="fsa-media__section">
+              <p>Lorem ipsum sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="margin-bottom: -34px;"><!-- Intentionally empty div. Don't ask me why. --></div>
+```html
+<div class="fsa-media">
+  <div class="fsa-media__section">
+    <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+  </div>
+  <div class="fsa-media__section">
+    <p>Lorem ipsum...</p>
+    <div class="fsa-media">
+      <div class="fsa-media__section">
+        <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+      </div>
+      <div class="fsa-media__section">
+        <p>Lorem ipsum...</p>
+        <div class="fsa-media">
+          <div class="fsa-media__section">
+            <img class="fsa-media__img" src="path/to/image.ext" alt="image description">
+          </div>
+          <div class="fsa-media__section">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 ## Padding
 
 <p class="fsa-text--lead">Selectively manipulate padding within an element or component.</p>
@@ -368,93 +806,91 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
   </div>
 </div>
 
-## Floats
+## Screenreader only
 
-<p class="fsa-text--lead">Selectively adjust floating behavior of elements or components.</p>
+<p class="fsa-text--lead">Visibly hidden <strong>though announced</strong> to screenreaders within a variety of screen size ranges (i.e. Media Query breakpoints).</p>
+
+{% include alert.rwd-rendering.html %}
+
+```html
+<element class="fsa-sr-only@[size]">...</element>
+```
+
+Visibly hide when viewport is *within* a specific range, where `[size]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
+
+<p>
+  <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="Portrait" aria-selected="true"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+  </span>
+  <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" target="_blank">View in new window</a>
+</p>
+<div class="docs__rwd-embed-container">
+  <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_sr-only">
+    <iframe title="Responsive Demo: sr only" src="http://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+  </div>
+</div>
+
+## Text Alignment
+
+<p class="fsa-text--lead">Selectively align blocks of content.</p>
+
+```html
+<el class="fsa-text-size--[direction]">...</el>
+```
+
+Where `direction` is one of `left`, `center`, or `right`
 
 ### Variations
-
-```html
-<el class="fsa-float--[direction]">...</el>
-```
-
-`[direction]` is one of `left`, `right`, `none`.
-
-#### Left
-
-```html
-<el class="fsa-float--left">...</el>
-```
-
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
-</div>
 
 #### Right
 
 ```html
-<el class="fsa-float--right">...</el>
-```
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
-</div>
-
-#### None
-
-Most likely used to override a component's current `float` property.
-
-```html
-<el class="fsa-float--none">...</el>
-```
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left fsa-float--none"><strong>I'm not floating.</strong></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae itaque velit? Excepturi commodi, tempore odio amet consectetur adipisicing elit. Minus pariatur quaerat commodi maxime dignissimos repellendus placeat nulla quasi, sed at accusantium cum laborum minima. Quae earum enim unde vident deserunt? Illo ut tempora error est corporis optio amet ipsa doloremque ad.</p>
-</div>
-
-### Containing Floats
-
-aka "clearfix"
-
-```html
-<el class="fsa-clearfix">...</el>
-```
-<div class="fsa-clearfix docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p class="docs__utilities__demo-item fsa-float--right"><strong>I'm floating to right</strong></p>
-</div>
-<p>The above container has been cleared</p>
-
-### Clearing Floats
-
-```html
-<el class="fsa-clear">...</el>
+<el class="fsa-text-align--right">...</el>
 ```
 <div class="docs__utilities__demo">
-  <p class="docs__utilities__demo-item fsa-float--left"><strong>I'm floating to left</strong></p>
-  <p class="docs__utilities__demo-item fsa-clear"><strong>I've been cleared</strong></p>
+  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+#### Centered
+
+```html
+<el class="fsa-text-align--center">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
+</div>
+
+#### Left
+
+```html
+<el class="fsa-text-align--left">...</el>
+```
+<div class="docs__utilities__demo">
+  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
 </div>
 
 ### Responsive
 
-Adjust floating presentation per media query breakpoint.
+Adjust text alignment per media query breakpoint.
 
 {% include alert.rwd-rendering.html %}
 
 <div class="docs__rwd-demo-block">
   <p>
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank">View in new window</a>
+    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
   </p>
   <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>
@@ -580,67 +1016,6 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
   </div>
 </div>
 
-## Text Alignment
-
-<p class="fsa-text--lead">Selectively align blocks of content.</p>
-
-```html
-<el class="fsa-text-size--[direction]">...</el>
-```
-
-Where `direction` is one of `left`, `center`, or `right`
-
-### Variations
-
-#### Right
-
-```html
-<el class="fsa-text-align--right">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--right">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-#### Centered
-
-```html
-<el class="fsa-text-align--center">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--center">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-#### Left
-
-```html
-<el class="fsa-text-align--left">...</el>
-```
-<div class="docs__utilities__demo">
-  <p class="fsa-text-align--left">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
-</div>
-
-### Responsive
-
-Adjust text alignment per media query breakpoint.
-
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <p>
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-    <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-    </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank">View in new window</a>
-  </p>
-  <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
 
 ## Visibility
 

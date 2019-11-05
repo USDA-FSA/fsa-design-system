@@ -101,7 +101,7 @@ custom_js: "growl-init-demo.js"
   </div>
 </div>
 <div class="fsa-growl-container fsa-growl-container--centered">
-  <div class="fsa-growl fsa-growl--error fsa-growl--centered" id="UNIQUE-ID-9469E21387FAF609" aria-hidden="true" tabindex="0" role="dialog">
+  <div class="fsa-growl fsa-growl--error fsa-growl--centered" id="UNIQUE-ID-9469E21387FAF609" aria-hidden="true" tabindex="0" role="alertdialog">
     <div class="fsa-growl__hd">
       <button class="fsa-growl__close" data-behavior="growl-dismiss whiteout-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
       <h2 class="fsa-growl__title">Growl Title</h2>
@@ -146,7 +146,7 @@ custom_js: "growl-init-demo.js"
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
         <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
-        <figcaption>Modal</figcaption>
+        <figcaption>Modal / Prompt</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
@@ -166,13 +166,13 @@ custom_js: "growl-init-demo.js"
 <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Error</button>
 <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Warning</button>
 <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Success</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal</button>
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal/Prompt</button>
 
 Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
 ## Variations
 
-Growl Notifications are styled with `class="fsa-growl [fsa-growl--[variation]]"`.
+Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
 
 ### Default
 
@@ -334,7 +334,7 @@ For reporting of a successful end of an operation or action.
 </div>
 ```
 
-### Modal
+### Modal / Prompt
 
 To prompt users before further action or operation may proceed.
 
@@ -349,7 +349,7 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 <!-- END WHITEOUT -->
 
 <div class="fsa-growl-container fsa-growl-container--centered">
-  <div class="fsa-growl fsa-growl--error fsa-growl--centered" id="UNIQUE-ID-9469E21387FAF609" aria-hidden="true" tabindex="0" role="dialog">
+  <div class="fsa-growl fsa-growl--error fsa-growl--centered" id="UNIQUE-ID-9469E21387FAF609" aria-hidden="true" tabindex="0" role="alertdialog">
     <div class="fsa-growl__hd">
       <button class="fsa-growl__close" data-behavior="growl-dismiss whiteout-dismiss" type="button"><img class="fsa-growl__close-icon" src="{{ site.baseurl }}img/close.svg" alt="close"></button>
       <h2 class="fsa-growl__title">Growl Title</h2>
@@ -403,4 +403,4 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 * Add `fsa-growl--dismissing` class
 * Set `aria-hidden` attribute to true
 * Remove `aria-expanded` attribute from element that triggered Growl
-* Set focus to the element that triggered Growl
+* Set focus to the element that initially triggered the Notification

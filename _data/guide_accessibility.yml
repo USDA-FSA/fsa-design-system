@@ -2,65 +2,66 @@
   alt_title: "Accessibility"
   href: "guides/accessibility/"
 
+- title: "Alternative Versions"
+  href: "guides/accessibility/alternative-versions"
+
 - title: "Checklist"
   href: "guides/accessibility/checklist"
-
-- title: "Resources"
-  href: "guides/accessibility/resources"
-
-- title: "Keyboard Access"
-  href: "guides/accessibility/keyboard"
-
-- title: "Images"
-  href: "guides/accessibility/images"
 
 - title: "Color and Contrast"
   href: "guides/accessibility/color-and-contrast"
 
-- title: "Forms"
-  href: "guides/accessibility/forms"
+- title: "CSS Dependence"
+  href: "guides/accessibility/css"
 
 - title: "Flashing"
   href: "guides/accessibility/flashing"
 
-- title: "Page Titles"
-  href: "guides/accessibility/page-titles"
-
-- title: "Headings"
-  href: "guides/accessibility/headings"
-
-- title: "Landmarks"
-  href: "guides/accessibility/landmarks"
-
-- title: "Multimedia"
-  href: "guides/accessibility/multimedia"
-
-- title: "Timeouts"
-  href: "guides/accessibility/timeouts"
-
-- title: "Text Properties"
-  href: "guides/accessibility/language"
-
-- title: "Tables"
-  href: "guides/accessibility/tables"
-
-- title: "CSS Dependence"
-  href: "guides/accessibility/css"
+- title: "Forms"
+  href: "guides/accessibility/forms"
 
 - title: "Frames"
   href: "guides/accessibility/frames"
 
+- title: "Headings"
+  href: "guides/accessibility/headings"
+
+- title: "Images"
+  href: "guides/accessibility/images"
+
+- title: "Keyboard Access"
+  href: "guides/accessibility/keyboard"
+
+- title: "Landmarks"
+  href: "guides/accessibility/landmarks"
+
 - title: "Links and Repetitive Content"
   href: "guides/accessibility/links"
+
+- title: "Multimedia"
+  href: "guides/accessibility/multimedia"
+
+- title: "Page Titles"
+  href: "guides/accessibility/page-titles"
 
 - title: "Plugins"
   href: "guides/accessibility/plugins"
 
-- title: "Alternative Versions"
-  href: "guides/accessibility/alternative-versions"
+- title: "Resources"
+  href: "guides/accessibility/resources"
+
+- title: "Tables"
+  href: "guides/accessibility/tables"
+
+- title: "Text Properties"
+  href: "guides/accessibility/language"
+
+- title: "Timeouts"
+  href: "guides/accessibility/timeouts"
+
+- title: "Training Videos"
+  href: "guides/accessibility/videos"
 
 - title: "Writing Guide"
   href: "guides/accessibility/writing-guide"
 
-- title: "Training Videos"
-  href: "guides/accessibility/videos"

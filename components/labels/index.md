@@ -8,6 +8,7 @@ jump_menu: true
 
 <div class="ds-preview">
   <span class="fsa-label">Default Label</span>
+  <span class="fsa-label fsa-label--neutral">General Label</span>
   <span class="fsa-label fsa-label--general">General Label</span>
   <span class="fsa-label fsa-label--alert">Alert Label</span>
   <span class="fsa-label fsa-label--warning">Warning Label</span>
@@ -35,6 +36,15 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 </div>
 ```html
 <span class="fsa-label">Default Label</span>
+```
+
+### Neutral
+
+<div class="ds-preview">
+  <span class="fsa-label fsa-label--neutral">Neutral Label</span>
+</div>
+```html
+<span class="fsa-label fsa-label--neutral">Neutral Label</span>
 ```
 
 ### General
@@ -76,18 +86,20 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 ### Large
 
 <div class="ds-preview">
-  <span class="fsa-label fsa-label--large">Large Default Label</span>
-  <span class="fsa-label fsa-label--general fsa-label--large">Large General Label</span>
-  <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
-  <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
-  <span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
+  <span class="fsa-label fsa-label--large">Large Default</span>
+  <span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span>
+  <span class="fsa-label fsa-label--general fsa-label--large">Large General</span>
+  <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span>
+  <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span>
+  <span class="fsa-label fsa-label--success fsa-label--large">Large Success</span>
 </div>
 ```html
-<span class="fsa-label fsa-label--large">Large Default Label</span>
-<span class="fsa-label fsa-label--general fsa-label--large">Large General Label</span>
-<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert Label</span>
-<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning Label</span>
-<span class="fsa-label fsa-label--success fsa-label--large">Large Success Label</span>
+<span class="fsa-label fsa-label--large">Large Default</span>
+<span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span>
+<span class="fsa-label fsa-label--general fsa-label--large">Large General</span>
+<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span>
+<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span>
+<span class="fsa-label fsa-label--success fsa-label--large">Large Success</span>
 ```
 
 ### Actionable
@@ -104,6 +116,17 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 <button class="fsa-label fsa-label--general" type="button">Button</button>
 <button class="fsa-label fsa-label--general" type="button" disabled="disabled">Disabled Button</button>
 ```
+
+### Example: Dark Background
+
+<div class="ds-preview" style="background-color: #666;">
+  <span class="fsa-label">Default</span>
+  <span class="fsa-label fsa-label--neutral">General</span>
+  <span class="fsa-label fsa-label--general">General</span>
+  <span class="fsa-label fsa-label--alert">Alert</span>
+  <span class="fsa-label fsa-label--warning">Warning</span>
+  <span class="fsa-label fsa-label--success">Success</span>
+</div>
 
 ## Usage
 

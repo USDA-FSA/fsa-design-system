@@ -14,35 +14,35 @@ suppress_code_toggle: true
     <h4 class="docs__sub_style">Text</h4>
     <div class="docs__attr-list__swatch color-fsa-tertiary-dark"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-base</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-base</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Link, Default</h4>
     <div class="docs__attr-list__swatch color-fsa-link"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-link</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-link</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Link, Hover</h4>
     <div class="docs__attr-list__swatch color-fsa-link-hover"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-link-hover</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-link-hover</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Background</h4>
     <div class="docs__attr-list__swatch color-fsa-page-bg"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-site-bg</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-site-bg</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">White</h4>
     <div class="docs__attr-list__swatch color-fsa-white"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-white</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-white</code></li>
     </ul>
   </li>
 </ul>
@@ -54,21 +54,21 @@ suppress_code_toggle: true
     <h4 class="docs__sub_style">Primary</h4>
     <div class="docs__attr-list__swatch color-fsa-primary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-primary</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-primary</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Secondary</h4>
     <div class="docs__attr-list__swatch color-fsa-secondary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-secondary</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-secondary</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Tertiary</h4>
     <div class="docs__attr-list__swatch color-fsa-tertiary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item"><code>$color-fsa-tertiary</code></li>
+      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-tertiary</code></li>
     </ul>
   </li>
 </ul>
@@ -122,6 +122,13 @@ suppress_code_toggle: true
       <li class="docs__attr-list__attr-item"><code>$color-fsa-red</code></li>
     </ul>
   </li>
+  <li class="docs__attr-list__item">
+    <h4 class="docs__sub_style">Yellow</h4>
+    <div class="docs__attr-list__swatch color-fsa-yellow"></div>
+    <ul class="docs__attr-list__attr">
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-yellow</code></li>
+    </ul>
+  </li>
 </ul>
 
 ### Tints and Shades
@@ -143,6 +150,18 @@ suppress_code_toggle: true
       <li class="docs__swatch-list__item color-fsa-red-light"><code>$color-fsa-red-300</code></li>
       <li class="docs__swatch-list__item color-fsa-red-lighter"><code>$color-fsa-red-200</code></li>
       <li class="docs__swatch-list__item color-fsa-red-lightest"><code>$color-fsa-red-100</code></li>
+    </ul>
+  </li>
+  <li class="docs__attr-list__item">
+    <ul class="docs__swatch-list docs__swatch-list--yellow">
+      <li class="docs__swatch-list__item color-fsa-blank">
+        &nbsp;
+        <div class="docs__swatch-list__value" role="presentation">(No dark yellow)</div>
+      </li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-yellow"><code>$color-fsa-yellow</code></li>
+      <li class="docs__swatch-list__item color-fsa-yellow-light"><code>$color-fsa-yellow-300</code></li>
+      <li class="docs__swatch-list__item color-fsa-yellow-lighter"><code>$color-fsa-yellow-200</code></li>
+      <li class="docs__swatch-list__item color-fsa-yellow-lightest"><code>$color-fsa-yellow-100</code></li>
     </ul>
   </li>
 </ul>
