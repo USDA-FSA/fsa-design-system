@@ -21,7 +21,7 @@
         <div class="ds-subcat-list">
           <ul class="ds-subcat-list__list">
             {% for subgroup in group.subcategories %}
-            <li class="ds-subcat-list__list-item">
+            <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
               <a class="ds-subcat-list__link {% if subgroup.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subgroup.subhref | prepend: site.baseurl }}">
                 <span class="ds-subcat-list__text">{{ subgroup.subtitle }}</span>
                 {% if subgroup.img %}

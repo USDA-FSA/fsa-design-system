@@ -34,6 +34,12 @@
       margin-bottom: $size-large;
     }
 
+    &--thirds {
+      @include breakpoint(L) {
+        @include fsa-grid-column-width(4);
+      }
+    }
+
   }
 
   &__link {

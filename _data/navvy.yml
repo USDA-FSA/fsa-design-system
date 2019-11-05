@@ -168,21 +168,6 @@
           subhref: "components/timeline"
           img: "img/subcategories/timeline.png"
 
-    - title: "Footer"
-      subcategories:
-
-        - subtitle: "Footer"
-          subhref: "components/footer"
-          img: "img/subcategories/footer.png"
-
-        - subtitle: "Topper"
-          subhref: "components/topper"
-          img: "img/subcategories/topper.png"
-
-        - subtitle: "Screen ID"
-          subhref: "components/screen-id"
-          img: "img/subcategories/screen-id.png"
-
     - title: "Header"
       subcategories:
 
@@ -197,6 +182,21 @@
         - subtitle: "Top Hat"
           subhref: "components/tophat"
           img: "img/subcategories/tophat.png"
+
+    - title: "Footer"
+      subcategories:
+
+        - subtitle: "Footer"
+          subhref: "components/footer"
+          img: "img/subcategories/footer.png"
+
+        - subtitle: "Topper"
+          subhref: "components/topper"
+          img: "img/subcategories/topper.png"
+
+        - subtitle: "Screen ID"
+          subhref: "components/screen-id"
+          img: "img/subcategories/screen-id.png"
 
 - title: "Grid and Layout"
   href: "grid-and-layout"

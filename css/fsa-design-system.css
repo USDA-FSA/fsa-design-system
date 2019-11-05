@@ -12851,6 +12851,12 @@ pre.highlight .ds-clipboard {
   }
 }
 
+@media (min-width: 54em) {
+  .ds-subcat-list__list-item--thirds {
+    width: 33.3333333333%;
+  }
+}
+
 .ds-subcat-list__link {
   display: block;
   text-decoration: none;
