@@ -207,7 +207,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 
 ### Don't Use
 
-* When its content content or features can be part of the page without complicating the page's intent.
+* When its content or features can be part of the page without complicating the page's intent.
 * When the content or message requires interaction with other parts of the application or screen.
 * When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
 * Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
