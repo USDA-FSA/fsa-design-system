@@ -559,6 +559,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 ## Accessibility
 
 * Note the use of the `aria-live="polite"` attribute, which will alert the User with assistive technologies when they are not performing actions.
+* In general, the Progress component is a visual indicator
 
 ## General Guidance
 
