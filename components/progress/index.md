@@ -8,9 +8,14 @@ custom_js: "progress.js"
 ---
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
 
+A Progress indicator, or Progress bar as it is often called, is an essential component for applications. Not only does a Progress indicator provide trust for the end User, but it also can provide valuable information as well. The general "rule of thumb" is that any process that requires the User to wait more than a second for something to load or finish, should provide a Progress indicator.
+
 ## Variations and Examples
 
+Progress indicators are styled with `class="fsa-progress [fsa-progress--[variation]"`.
+
 ### Indeterminate, with label
+
 <div class="ds-preview">
   <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
     <div class="fsa-progress__details">
@@ -539,11 +544,47 @@ custom_js: "progress.js"
 
 ## Usage
 
-<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
-  <div class="fsa-alert__body">
-    <p class="fsa-alert__text">Documentation in progress.</p>
-  </div>
-</div>
+### Use When
+
+* The system has started an asynchronous process within a feature or section of the application
+* A User should be shown that data or files are in the process of being retrieved, updated, uploading, or deleted from the system.
+
+### Don't Use
+
+* When the application is initially loading and the interface isn't available.
+* When an asychronous process is occuring and the entire application should be unavailable to the User. Instead, use [Splash Component]({{ site.baseurl }}components/splash/).
+* As an animation on individual page controls that are not retrieving, updating, uploading, or deleting data of files from the system
+* On individual page controls if the loading process takes less than one second. 
+
+## Accessibility
+
+* Note the use of the `aria-live="polite"` attribute, which will alert the User with assistive technologies when they are not performing actions.
+
+## General Guidance
+
+* There are numerous instances when a Progress component should be shown, and based on the needs of the User and application, the choice of variations is important.
+
+* Utilize an Indeterminate Progress variation when the about of time is unknown or cannot be accurately approximated.
+
+* Utilize a Determinate variation when the application can provide an accurate representation of the progress of a specific process.
+
+* Applying a Progress component to an individual page control, such as a Text Input, should only be used when the asynchronous process occurs after interacting with that specific page control.
+
+
+## JavaScript Guidance
+
+{% include scripts.about.html %}
+
+### Summary
+
+Some of the JavaScript being used to control the above examples is to mimick the behavior of an asychronous system delay, and the functionality would not been to be used in a real application. 
+
+### Start Progress Animation
+
+* A conditional is being used to scale the the X property of the target.
+* Using `.css('transform','scaleX(.' + newValue + ')')` will scale the Target to the new percentage value (`newValue`) passed in.
+* When the asychronous process ends, `$target.css('transform','scaleX(1)')` is used to set the value to 100%.
+* Additional text-based numerical values can be shown in the labels to correspond with percent complete.
 
 
 ## Related Resources
