@@ -546,7 +546,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 
 ### Use When
 
-* The system has started an asynchronous process within a feature or section of the application
+* The system has started an asynchronous process within a feature or section of the application that is not currently available for interaction.
 * A User should be shown that data or files are in the process of being retrieved, updated, uploading, or deleted from the system.
 
 ### Don't Use
@@ -559,7 +559,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 ## Accessibility
 
 * Note the use of the `aria-live="polite"` attribute, which will alert the User with assistive technologies when they are not performing actions.
-* In general, the Progress component is a visual indicator
+* In general, the Progress component is a visual indicator, so alternative means should be used to communicate application status.
 
 ## General Guidance
 
