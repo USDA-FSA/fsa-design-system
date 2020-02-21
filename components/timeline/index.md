@@ -330,6 +330,8 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 * When adding a Timestamp to the component, always use the `datetime="2015-05-28T09:02:10.517-05:00"` UTC format.
 
+* While the individual variants are intended to be used within a Timeline component to show individual actions or events, a single variant can be used alone.
+
 
 ## Related Resources
 
