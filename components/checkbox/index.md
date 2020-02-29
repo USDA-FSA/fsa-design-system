@@ -256,6 +256,231 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 </div>
 ```
 
+### Solo Example within a [Table]({{ site.baseurl }}components/tables/)
+
+<div class="ds-preview ds-preview--bare">
+  <table class="fsa-table fsa-table--borderless fsa-table--responsive fsa-table--responsive-horizontal">
+    <caption class="sr-only">Inspections</caption>
+    <thead>
+      <tr>
+        <th class="fsa-table__th--sticky fsa-table__th--select">
+          <span>
+            <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-all" id="inpections__select-all" type="checkbox" name="inpections__select-all" value="Select all">
+            <label for="inpections__select-all" title="Select all"><span class="sr-only">Select all</span></label>
+          </span>
+        </th>
+        <th class="fsa-table__th--sticky" aria-sort="ascending">
+          <button type="button" class="fsa-table__sort fsa-table__sort--ascending">Name</button>
+        </th>
+        <th class="fsa-table__th--sticky">
+          <button type="button" class="fsa-table__sort">State</button>
+        </th>
+        <th class="fsa-table__th--sticky">
+          <button type="button" class="fsa-table__sort">County</button>
+        </th>
+        <th class="fsa-table__th--sticky">
+          <button type="button" class="fsa-table__sort">Farm</button>
+        </th>
+        <th class="fsa-table__th--sticky">
+          <button type="button" class="fsa-table__sort">Assignee</button>
+        </th>
+        <th class="fsa-table__th--sticky">
+          <button type="button" class="fsa-table__sort">Due Date</button>
+        </th>
+        <th class="fsa-table__th--sticky">
+          <button type="button" class="fsa-table__sort">Status</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td aria-label="Select">
+          <span>
+            <input disabled="disabled" class="fsa-checkbox fsa-checkbox--solo" id="inpections__select-inspection--06" type="checkbox" name="inpections__select-inspection--06" value="06">
+            <label for="inpections__select-inspection--06"><span class="sr-only">Select this row</span></label>
+          </span>
+        </td>
+        <td aria-label="Inspection Number">
+          <strong>
+            <button type="button" class="fsa-btn fsa-btn--flat">Inspection 06</button>
+          </strong>
+        </td>
+        <td aria-label="State">Kansas</td>
+        <td aria-label="County">Cowley</td>
+        <td aria-label="Farm Number">3510</td>
+        <td aria-label="Assigned to"><a href="link.html">Norm Peterson</a></td>
+        <td aria-label="Due Date">
+          <time datetime="2018-12-11">12/11/2018</time>
+        </td>
+        <td aria-label="Status">
+          <div><span class="fsa-label fsa-label--success">Complete</span></div>
+        </td>
+      </tr>
+      <tr class="fsa-table__row--selected">
+        <td aria-label="Select">
+          <span>
+            <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-row" id="inpections__select-inspection--07" type="checkbox" name="inpections__select-inspection--07" value="07" checked>
+            <label for="inpections__select-inspection--07"><span class="sr-only">Select this row</span></label>
+          </span>
+        </td>
+        <td aria-label="Inspection Number">
+          <strong>
+            <button type="button" class="fsa-btn fsa-btn--flat">Inspection 07</button>
+          </strong>
+        </td>
+        <td aria-label="State">Kansas</td>
+        <td aria-label="County">Johnson</td>
+        <td aria-label="Farm Number">8787</td>
+        <td aria-label="Assigned to"><a href="link.html">Carla Tortelli</a></td>
+        <td aria-label="Due Date">
+          <time datetime="2018-08-05">08/05/2018</time>
+        </td>
+        <td aria-label="Status">
+          <div><span class="fsa-label fsa-label--neutral">Assigned</span></div>
+        </td>
+      </tr>
+      <tr>
+        <td aria-label="Select">
+          <span>
+            <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-row" id="inpections__select-inspection--10" type="checkbox" name="inpections__select-inspection--10" value="10">
+            <label for="inpections__select-inspection--10"><span class="sr-only">Select this row</span></label>
+          </span>
+        </td>
+        <td aria-label="Inspection Number">
+          <strong>
+            <button type="button" class="fsa-btn fsa-btn--flat">Inspection 10</button>
+          </strong>
+        </td>
+        <td aria-label="State">Missouri</td>
+        <td aria-label="County">Jackson</td>
+        <td aria-label="Farm Number">8080</td>
+        <td aria-label="Assigned to"><a href="link.html">Ernie Pantusso</a></td>
+        <td aria-label="Due Date">
+          <time datetime="2018-10-01">10/01/2018</time>
+        </td>
+        <td aria-label="Status">
+          <div><span class="fsa-label fsa-label--alert">Rejected</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var checkboxIndeterminateExampleTable = document.getElementById("inpections__select-all");
+    checkboxIndeterminateExampleTable.indeterminate = true;
+  </script>
+</div>
+```html
+<table class="fsa-table fsa-table--borderless fsa-table--responsive fsa-table--responsive-horizontal">
+  <caption class="sr-only">Inspections</caption>
+  <thead>
+    <tr>
+      <th class="fsa-table__th--sticky fsa-table__th--select">
+        <span>
+          <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-all" id="inpections__select-all" type="checkbox" name="inpections__select-all" value="Select all">
+          <label for="inpections__select-all" title="Select all"><span class="sr-only">Select all</span></label>
+        </span>
+      </th>
+      <th class="fsa-table__th--sticky" aria-sort="ascending">
+        <button type="button" class="fsa-table__sort fsa-table__sort--ascending">Name</button>
+      </th>
+      <th class="fsa-table__th--sticky">
+        <button type="button" class="fsa-table__sort">State</button>
+      </th>
+      <th class="fsa-table__th--sticky">
+        <button type="button" class="fsa-table__sort">County</button>
+      </th>
+      <th class="fsa-table__th--sticky">
+        <button type="button" class="fsa-table__sort">Farm</button>
+      </th>
+      <th class="fsa-table__th--sticky">
+        <button type="button" class="fsa-table__sort">Assignee</button>
+      </th>
+      <th class="fsa-table__th--sticky">
+        <button type="button" class="fsa-table__sort">Due Date</button>
+      </th>
+      <th class="fsa-table__th--sticky">
+        <button type="button" class="fsa-table__sort">Status</button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td aria-label="Select">
+        <span>
+          <input disabled="disabled" class="fsa-checkbox fsa-checkbox--solo" id="inpections__select-inspection--06" type="checkbox" name="inpections__select-inspection--06" value="06">
+          <label for="inpections__select-inspection--06"><span class="sr-only">Select this row</span></label>
+        </span>
+      </td>
+      <td aria-label="Inspection Number">
+        <strong>
+          <button type="button" class="fsa-btn fsa-btn--flat">Inspection 06</button>
+        </strong>
+      </td>
+      <td aria-label="State">Kansas</td>
+      <td aria-label="County">Cowley</td>
+      <td aria-label="Farm Number">3510</td>
+      <td aria-label="Assigned to"><a href="link.html">Norm Peterson</a></td>
+      <td aria-label="Due Date">
+        <time datetime="2018-12-11">12/11/2018</time>
+      </td>
+      <td aria-label="Status">
+        <div><span class="fsa-label fsa-label--success">Complete</span></div>
+      </td>
+    </tr>
+    <tr class="fsa-table__row--selected">
+      <td aria-label="Select">
+        <span>
+          <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-row" id="inpections__select-inspection--07" type="checkbox" name="inpections__select-inspection--07" value="07" checked>
+          <label for="inpections__select-inspection--07"><span class="sr-only">Select this row</span></label>
+        </span>
+      </td>
+      <td aria-label="Inspection Number">
+        <strong>
+          <button type="button" class="fsa-btn fsa-btn--flat">Inspection 07</button>
+        </strong>
+      </td>
+      <td aria-label="State">Kansas</td>
+      <td aria-label="County">Johnson</td>
+      <td aria-label="Farm Number">8787</td>
+      <td aria-label="Assigned to"><a href="link.html">Carla Tortelli</a></td>
+      <td aria-label="Due Date">
+        <time datetime="2018-08-05">08/05/2018</time>
+      </td>
+      <td aria-label="Status">
+        <div><span class="fsa-label fsa-label--neutral">Assigned</span></div>
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="Select">
+        <span>
+          <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-row" id="inpections__select-inspection--10" type="checkbox" name="inpections__select-inspection--10" value="10">
+          <label for="inpections__select-inspection--10"><span class="sr-only">Select this row</span></label>
+        </span>
+      </td>
+      <td aria-label="Inspection Number">
+        <strong>
+          <button type="button" class="fsa-btn fsa-btn--flat">Inspection 10</button>
+        </strong>
+      </td>
+      <td aria-label="State">Missouri</td>
+      <td aria-label="County">Jackson</td>
+      <td aria-label="Farm Number">8080</td>
+      <td aria-label="Assigned to"><a href="link.html">Ernie Pantusso</a></td>
+      <td aria-label="Due Date">
+        <time datetime="2018-10-01">10/01/2018</time>
+      </td>
+      <td aria-label="Status">
+        <div><span class="fsa-label fsa-label--alert">Rejected</span></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<script>
+  var checkboxIndeterminateExampleTable = document.getElementById("inpections__select-all");
+  checkboxIndeterminateExampleTable.indeterminate = true;
+</script>
+```
+
 ## Usage
 
 ### Use When
