@@ -6,7 +6,7 @@ intro: "Use Content Tabs to arrange related information or functionality in a de
 jump_menu: true
 ---
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -45,7 +45,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Default
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -110,7 +110,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Small
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -176,7 +176,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Large (on desktop)
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -242,7 +242,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Justified (on desktop)
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs fsa-content-tabs--justified">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -297,7 +297,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Justified Equal (on desktop)
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -354,7 +354,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <code>&lt;button&gt;</code> element.
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -411,7 +411,7 @@ Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <c
 
 Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.fsa-content-tabs__aside`) is available for contextually relevant content.
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">

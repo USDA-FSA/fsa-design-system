@@ -22,34 +22,22 @@
 
 .ds-preview {
 
-  $component-bgc: $color-fsa-white;
+  $component-bgc: transparent;
+  $component-bw: $size-base;
 
   & {
 
     margin: 1em 0;
-
-    @include breakpoint(S) {
-      border: 1px solid $color-fsa-tertiary-100;
-      border-width: 1px 0;
-      padding: $size-default;
-      margin-left: (-$size-default);
-      margin-right: (-$size-default);
-      background-color: $component-bgc;
-    }
+    border-radius: $size-base;
 
     @include breakpoint(M) {
+      border: $component-bw solid $color-fsa-tertiary-100;
       padding: $size-medium;
       margin-left: 0;
       margin-right: 0;
-      border-width: 1px;
+      border-width: $component-bw;
     }
 
-  }
-
-  &--default-bg {
-    @include breakpoint(S) {
-      background-color: transparent;
-    }
   }
 
   &--overflow-example {
@@ -72,13 +60,13 @@
   }
 
   .highlighter-rouge + & {
-    @include breakpoint(S) {
+    @include breakpoint(M) {
       margin-top: -2em;
     }
   }
 
   + .highlighter-rouge {
-    @include breakpoint(S) {
+    @include breakpoint(M) {
       margin-top: -1em;
     }
   }
@@ -96,19 +84,10 @@
 
   html body.x-ray & {
     @include checkerboard();
-    // border-color: $color-fsa-site-bg;
+    border-color: $color-fsa-site-bg;
     background-color: $color-fsa-site-bg;
-    @include breakpoint(S) {
-      box-shadow:
-        0 0 0 12px $component-bgc inset,
-        0 0 0 13px rgba(0,0,0,.1) inset
-      ;
-    }
     @include breakpoint(M) {
-      box-shadow:
-        0 0 0 24px $component-bgc inset,
-        0 0 0 25px rgba(0,0,0,.1) inset
-      ;
+      box-shadow: 0 0 0 24px $color-fsa-site-bg inset;
     }
     @include x-ray();
   }
@@ -129,7 +108,6 @@ html body.x-ray {
   }
 }
 
-
 // scss-lint:disable QualifyingElement
 .ds-show-da-code div.highlighter-rouge {
   display: block;
@@ -137,7 +115,7 @@ html body.x-ray {
 
 // scss-lint:disable SelectorFormat
 .highlighter-rouge + .docs__utilities__demo {
-  @include breakpoint(S) {
+  @include breakpoint(M) {
     margin-top: -2em;
   }
 }

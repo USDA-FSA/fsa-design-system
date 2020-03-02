@@ -258,7 +258,7 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 
 ### Solo Example within a [Table]({{ site.baseurl }}components/tables/)
 
-<div class="ds-preview ds-preview--bare">
+<div class="ds-preview">
   <table class="fsa-table fsa-table--borderless fsa-table--responsive fsa-table--responsive-horizontal">
     <caption class="sr-only">Inspections</caption>
     <thead>

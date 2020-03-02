@@ -55,7 +55,7 @@ A sample use case: you'd like to adjust a component's [margins](#margins) .
 ```html
 <element class="fsa-box">...</element>
 ```
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-box">
     <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
   </div>
