@@ -13362,6 +13362,20 @@ div.fsa-stepped-tabs__label {
   font-weight: 700;
 }
 
+.docs__rwd-embed {
+  margin-top: 24px;
+  margin-top: 2.4rem;
+}
+
+.docs__rwd-demo-block {
+  text-align: center;
+}
+
+.docs__rwd-embed-container {
+  padding: 24px 12px;
+  padding: 2.4rem 1.2rem;
+}
+
 /**
  * Syntax highlighting styles
  */

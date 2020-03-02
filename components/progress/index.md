@@ -447,18 +447,17 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 </div>
 ```
 
-<h4>Paired with header</h4>
+### Paired with Header
+
 <div class="docs__rwd-demo-block">
-  <p>
+  <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="phone" class="fsa-btn-group__item" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="desktop" class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" target="_blank" title="View in a New Window">New Window</a>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" target="_blank">View in new window</a>
-  </p>
-  <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--desktop" id="rwd-demo_progress">
       <iframe title="Responsive Demo: progress" src="http://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
@@ -554,7 +553,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 * When the application is initially loading and the interface isn't available.
 * When an asychronous process is occuring and the entire application should be unavailable to the User. Instead, use [Splash Component]({{ site.baseurl }}components/splash/).
 * As an animation on individual page controls that are not retrieving, updating, uploading, or deleting data of files from the system
-* On individual page controls if the loading process takes less than one second. 
+* On individual page controls if the loading process takes less than one second.
 
 ## Accessibility
 
@@ -580,7 +579,7 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ### Summary
 
-Some of the JavaScript being used to control the above examples is to mimick the behavior of an asychronous system delay, and the functionality would not been to be used in a real application. 
+Some of the JavaScript being used to control the above examples is to mimick the behavior of an asychronous system delay, and the functionality would not been to be used in a real application.
 
 ### Start Progress Animation
 
