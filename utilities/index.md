@@ -14,7 +14,7 @@ Most include **Responsive** options, enabling you to make targeted alterations a
 
 ## Usage
 
-A sample use case: you'd like to adjust a component's [margins](#margins) .
+A simple example adjusting a component's [margins](#margins). Here's the default rendering of a second-level header (`h2`). Note the amount of spacing above the text.
 
 ```html
 <h2>Second level heading</h2>
@@ -49,6 +49,8 @@ A sample use case: you'd like to adjust a component's [margins](#margins) .
 <div class="docs__utilities__demo fsa-m-b--l">
   <h2 class="fsa-m--none">Second level heading</h2>
 </div>
+
+Below are the complete set of CSS Utilities for overriding or extending an element's or component's visual properties, including **Responsive** scopes to adjust at targeted breakpoints.
 
 ## Box
 
