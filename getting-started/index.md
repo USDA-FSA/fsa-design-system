@@ -13,7 +13,7 @@ It was created and maintained within FPAC's ISSDOB/FBCSS division, and is heavil
 
 ### Release History
 
-Details about each release's significant updates and  compatibility changes are available in our [release history](https://github.com/USDA-FSA/fsa-style/releases).
+Details about each release's significant updates and compatibility changes are available in our [release history](https://github.com/USDA-FSA/fsa-style/releases).
 
 ## Installing or Downloading
 
@@ -137,3 +137,31 @@ All of these designs are also available in various file formats, which are avail
 For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/USDA-FSA/fsa-design-system/blob/gh-pages/CONTRIBUTING.md).
 
 If you have questions or feedback about our contributing workflow, please  [file a GitHub issue](https://github.com/usda=fsa/fsa-style/issues).
+
+## When to Use Design System
+
+With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer. To help formulate an accurate response, we have provided the below mini guide.
+
+### Should our team use the Design System?
+
+- **YES**, if a new application is being developed.
+
+- **YES**, if the existing legacy application is being completely replaced/redeveloped.
+
+- **NO**, if an existing legacy applications has no plans to complete a major Front-end redesign.
+
+- **PROBABLY**, if the existing legacy application will be significantly overhauled visually and/or from a technology perspective.
+
+  - This is a few steps removed from the above “completely replaced.”
+  - What criteria is used to determine “overhaul” requires discussion, weighed against benefit, and priority.
+
+- **MAYBE**, if the existing legacy application has major new features that will be added.
+
+- **POSSIBLY**, if the existing legacy application wishs to utilize aspects of the Design System.
+
+  - Top-down decision carefully discussed and prioritized.
+  - May not necessarily be adding/removing features.
+  - For example, could be solely about as reskinning to be generally cohesive to the Design System (color, typography, spacing).
+  - May likely involve not using most (or any) of the Design System’s CSS Framework (fsa-style); rather, involves referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
+  - Requires a UI skill set and ability to balance UI and front-end decisions.
+
