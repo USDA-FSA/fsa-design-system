@@ -353,8 +353,18 @@ If Sass is not an option, these CSS Utilities will reset list styles.
 
 Most HTML elements and components immediately have an assigned font size, following a deliberate typographical scale. Where appropriate or necessary overriding text size can be done through available **CSS Utilities**.
 
-* **[Utilities > Text Headers]({{ site.baseurl }}utilities/text-headers/)**: `<h1>` – `<h6>` elements have an inherent style, their **semantic level** can vary depending on its context. These CSS Utilities enable you to retain its structural and semantic level while maintaining a meaningful **visual hierarchy**.
-* **[Utilities > Text Size]({{ site.baseurl }}utilities/text-size/)** A complete typographical scale available for selectively overriding text size for non-`hN` elements, e.g. `<span>`, `<p>`, etc.
+* **[Utilities > Text Headers]({{ site.baseurl }}utilities/#text-headers/)**: `<h1>` – `<h6>` elements have an inherent style, their **semantic level** can vary depending on its context. These CSS Utilities enable you to retain its structural and semantic level while maintaining a meaningful **visual hierarchy**.
+* **[Utilities > Text Size]({{ site.baseurl }}utilities/#text-size/)** A complete typographical scale available for selectively overriding text size for non-`hN` elements, e.g. `<span>`, `<p>`, etc.
+
+## Using H Element vs Text Size
+
+It is important to use the `<h>` element within a document and follow HTML Sematic best practices so that Users, Assistive Technologies, and bots understand the information hierachy of the page. Always include an `<h>` element to represent the top-level header on every web page, and it is also recommended to utilize `<h2>` – `<h6>` elements in proper sequence throughout the rest of your text content.
+
+An additional benefit of using semantically correct headers while constructing a web page include search engine optimization. For public facing website that are crawled by engines such as Google, the web crawler better understands and prioritizes sections of your HTML document which improves the overall searchability of your page.
+
+There will be occasions when the use of various sizes of text is appropriate to communicate meaning, context, and create a better experience for the User, but using the `<h>` elements incorrectly, can have very negative affects for User and other technologies. For this reason, the Text Size Utilities allow developers change the size of the text while adhering to sematic best practices.
+
+An example of when to utilize the Text Size Utility is when there is a need to make the text larger and bolder for data within a box for scanability. It should not be sematically correct to utilize the `<h>` element multiple times, or outside of the appropriate information hierachy, so instead utilize `fsa-text--h1`. 
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@m">
@@ -391,7 +401,7 @@ With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size
 
 ## Related Resources
 
-* [Utilities > Text Size]({{ site.baseurl }}utilities/text-size/)
-* [Utilities > Text Alignment]({{ site.baseurl }}utilities/text-alignment/)
-* [Utilities > Text Headers]({{ site.baseurl }}utilities/text-headers/)
+* [Utilities > Text Size]({{ site.baseurl }}utilities/#text-size/)
+* [Utilities > Text Alignment]({{ site.baseurl }}utilities/#text-alignment/)
+* [Utilities > Text Headers]({{ site.baseurl }}utilities/#text-headers/)
 * [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)
