@@ -138,30 +138,34 @@ For complete instructions on how to contribute code, please read [CONTRIBUTING.m
 
 If you have questions or feedback about our contributing workflow, please  [file a GitHub issue](https://github.com/usda=fsa/fsa-style/issues).
 
-## When to Use Design System
+## When should I use it?
 
-With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer. To help formulate an accurate response, we have provided the below mini guide.
+With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
+
+Ideally, all applications would be switched over to the Design System as it provides an efficient and optimized starting point to excellerate the development of your product. Depending on your project, the Design System can be used as intended and provide a complete Frontend design solution or it can be used as a design reference as well. In order to help formulate a more accurate response to the above question, we have provided the below mini guide.
 
 ### Should our team use the Design System?
 
-- **YES**, if a new application is being developed.
+- **YES**, if a new product and/or application is being developed from scratch.
 
 - **YES**, if the existing legacy application is being completely replaced/redeveloped.
 
 - **NO**, if an existing legacy applications has no plans to complete a major Front-end redesign.
 
+- **NO**, if an existing legacy application utilizes technology, that when combined with the Design System, creates an adverse or slow User Experience on legacy devices.
+
 - **PROBABLY**, if the existing legacy application will be significantly overhauled visually and/or from a technology perspective.
 
-  - This is a few steps removed from the above “completely replaced.”
-  - What criteria is used to determine “overhaul” requires discussion, weighed against benefit, and priority.
+  - Many applications can be split into multiple modules, which would allow for new development work using the Design System.
+  - The criteria used to determine “overhaul” requires discussion, weighed against benefit, and priority.
 
 - **MAYBE**, if the existing legacy application has major new features that will be added.
+  
+  - As stated previously, an application can be split into features and/or modules that would allow for the use of the Design System.
+  - Consulting with the FPAC User Experience team can provide in-depth guidance for your specific project.
 
 - **POSSIBLY**, if the existing legacy application wishs to utilize aspects of the Design System.
 
-  - Top-down decision carefully discussed and prioritized.
-  - May not necessarily be adding/removing features.
+  - The applicaiton may not necessarily be adding/removing features, but updates to existing markup and style can be updated to mirror the Design System.
   - For example, could be solely about as reskinning to be generally cohesive to the Design System (color, typography, spacing).
-  - May likely involve not using most (or any) of the Design System’s CSS Framework (fsa-style); rather, involves referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
-  - Requires a UI skill set and ability to balance UI and front-end decisions.
-
+  - The application may likely involve not using most (or any) of the Design System’s CSS Framework [(fsa-style)](https://github.com/USDA-FSA/fsa-style); rather, involves referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
