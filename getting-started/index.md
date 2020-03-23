@@ -146,26 +146,88 @@ Ideally, all applications would be switched over to the Design System as it prov
 
 ### Should our team use the Design System?
 
-- **YES**, if a new product and/or application is being developed from scratch.
-
-- **YES**, if the existing legacy application is being completely replaced/redeveloped.
-
-- **NO**, if an existing legacy applications has no plans to complete a major Front-end redesign.
-
-- **NO**, if an existing legacy application utilizes technology, that when combined with the Design System, creates an adverse or slow User Experience on legacy devices.
-
-- **PROBABLY**, if the existing legacy application will be significantly overhauled visually and/or from a technology perspective.
-
-  - Many applications can be split into multiple modules, which would allow for new development work using the Design System.
-  - The criteria used to determine “overhaul” requires discussion, weighed against benefit, and priority.
-
-- **MAYBE**, if the existing legacy application has major new features that will be added.
-  
-  - As stated previously, an application can be split into features and/or modules that would allow for the use of the Design System.
-  - Consulting with the FPAC User Experience team can provide in-depth guidance for your specific project.
-
-- **POSSIBLY**, if the existing legacy application wishs to utilize aspects of the Design System.
-
-  - The applicaiton may not necessarily be adding/removing features, but updates to existing markup and style can be updated to mirror the Design System.
-  - For example, could be solely about as reskinning to be generally cohesive to the Design System (color, typography, spacing).
-  - The application may likely involve not using most (or any) of the Design System’s CSS Framework [(fsa-style)](https://github.com/USDA-FSA/fsa-style); rather, involves referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
+<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+	<thead>
+		<tr>
+			<th scope="col">Answer</th>
+			<th scope="col">Condition</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>YES</strong>
+			</td>
+			<td aria-label="condition">If a new product and/or application is being developed from scratch.</td>
+		</tr>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>YES</strong>
+			</td>
+			<td aria-label="condition">If the existing legacy application is being completely replaced/redeveloped.</td>
+		</tr>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>NO</strong>
+			</td>
+			<td aria-label="condition">If an existing legacy applications has no plans to complete a major Front-end redesign.</td>
+		</tr>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>NO</strong>
+			</td>
+			<td aria-label="condition">If an existing legacy application utilizes technology, that when combined with the Design System, creates an adverse or slow User Experience on legacy devices.</td>
+		</tr>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>PROBABLY</strong>
+			</td>
+			<td aria-label="condition">
+				If the existing legacy application will be significantly overhauled visually and/or from a technology perspective.
+				<ul>
+					<li>
+						Many applications can be split into multiple modules, which would allow for new development work using the Design System.
+					</li>
+					<li>
+						The criteria used to determine “overhaul” requires discussion, weighed against benefit, and priority.
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>MAYBE</strong>
+			</td>
+			<td aria-label="condition">
+				If the existing legacy application has major new features that will be added.
+				<ul>
+					<li>
+						As stated previously, an application can be split into features and/or modules that would allow for the use of the Design System.
+					</li>
+					<li>
+						Consulting with the FPAC User Experience team can provide in-depth guidance for your specific project.
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td aria-label="answer" scope="row">
+					<strong>POSSIBLY</strong>
+			</td>
+			<td aria-label="condition">
+				If the existing legacy application wishs to utilize aspects of the Design System.
+				<ul>
+					<li>
+						The applicaiton may not necessarily be adding/removing features, but updates to existing markup and style can be updated to mirror the Design System.
+					</li>
+					<li>
+						For example, could be solely about as reskinning to be generally cohesive to the Design System (color, typography, spacing).
+					</li>
+					<li>
+						The application may likely involve not using most (or any) of the Design System’s CSS Framework <a href="https://github.com/USDA-FSA/fsa-style">fsa-style</a> rather, involves referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
