@@ -32,7 +32,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "fsa-style": "^2.4.1",
+    "fsa-style": "^2.4.2",
     "jquery": "^3.0.0"
   },
   "author": "USDA Farm Service and Production, ISSDOB/FBCSS",
