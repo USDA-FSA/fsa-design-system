@@ -12,7 +12,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
 
 ## Example
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-timeline">
     <div class="fsa-timeline__item fsa-timeline__item--system">
       <div class="fsa-timeline__hd">
@@ -196,7 +196,7 @@ Timelines are styled with `class="fsa-timeline"` on the external `<div>` and `cl
 System nodes are styled with `class="fsa-timeline__item--system"`
 
 ### System
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--system">
     <div class="fsa-timeline__hd">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -215,7 +215,7 @@ System nodes are styled with `class="fsa-timeline__item--system"`
 
 User nodes are styled with `class="fsa-timeline__item--user"`
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--user">
     <div class="fsa-timeline__hd">
       <strong><a href="link.html">Jane Doe</a></strong> commented on
@@ -244,7 +244,7 @@ User nodes are styled with `class="fsa-timeline__item--user"`
 
 Editing nodes are styled with `class="fsa-timeline__item--editing"`
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--user fsa-timeline__item--editing">
     <div class="fsa-timeline__hd">
       <label class="fsa-field__label" for="inspectionCommentEditSample--56w6w440"><strong>Jane</strong> is updating comment:</label>
@@ -277,7 +277,7 @@ Editing nodes are styled with `class="fsa-timeline__item--editing"`
 
 Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--add-comment">
     <div class="fsa-timeline__hd">
       <label class="fsa-field__label" for="inspectionCommentField--669"><strong>Todd Stanley</strong> comments:</label>

@@ -256,7 +256,7 @@ Available column proportions are identified via the <code>fsa-grid__<strong>[pro
 
 ## Responsive
 
-Responsive Web Design, originally defined by <a href="http://alistapart.com/article/responsive-web-design/">Ethan Marcotte in A List Apart</a>, **responds to the needs of the users and the devices they're using**. Layout can change based on the size and capabilities of the device. For example, a phone may render content in a single column view, though a tablet might distribute the same content into multiple columns.
+Responsive Web Design, originally defined by <a href="http://alistapart.com/article/responsive-web-design/">Ethan Marcotte in A List Apart</a>, **responds to the needs of the users and the devices they're using**. Layout can change based on the size and capabilities of the device. For example, a phone may render content in a single column view, while screens wider than a tablet could then distribute the same content into multiple columns.
 
 Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via <code>fsa-grid__<strong>[proportion]</strong>@<strong>[breakpoint]</strong></code>.
 

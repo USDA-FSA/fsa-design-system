@@ -116,185 +116,8 @@ All `h1`-`h6` elements have a deliberate size assigned to establish a predictabl
 
 Most elements and components have a deliberate size assigned to them, Utilities are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
 
-## Lists
-
-Further detail available at [Components > Lists]({{ site.baseurl }}components/lists/)
-
-### Unordered List (bullet)
-
-<div class="ds-preview">
-  <ul>
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-  </ul>
-</div>
-```html
-<ul>
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ul>
-```
-
-### Ordered List (numbered)
-
-<div class="ds-preview">
-  <ol>
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-  </ol>
-</div>
-```html
-<ol>
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ol>
-```
-
-### Inline List
-
-<div class="ds-preview">
-  <ul class="fsa-list--inline">
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-  </ul>
-</div>
-```html
-<ul class="fsa-list--inline">
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ul>
-```
-
-### Definition List
-
-<div class="ds-preview">
-  <dl>
-
-    <dt>ACA</dt>
-    <dd>Accredited Certifying Agent</dd>
-    <dd>Authorized to issue an organic certificate to operations that comply with the USDA organic regulations.</dd>
-
-    <dt>ACEP</dt>
-    <dd>Agricultural Conservation Easement Program</dd>
-    <dd>Provides financial and technical assistance to help conserve agricultural lands and wetlands and their related benefits</dd>
-
-    <dt>ACRE</dt>
-    <dd>Average Crop Revenue Election</dd>
-    <dd>Offers producers an alternative to the Direct and Counter-Cyclical Program</dd>
-
-    <dt>ADA</dt>
-    <dd>Americans with Disabilities Act</dd>
-    <dd>Prohibits discrimination against people with disabilities in employment, transportation, public accommodation, communications, and governmental activities</dd>
-
-    <dt>ADAAA</dt>
-    <dd>Americans with Disabilities Act Amendments Act</dd>
-
-  </dl>
-</div>
-```html
-<dl>
-
-  <dt>ACA</dt>
-  <dd>Accredited Certifying Agent</dd>
-  <dd>Authorized to issue an organic certificate to operations that comply with the USDA organic regulations.</dd>
-
-  <dt>ACEP</dt>
-  <dd>Agricultural Conservation Easement Program</dd>
-  <dd>Provides financial and technical assistance to help conserve agricultural lands and wetlands and their related benefits</dd>
-
-  <dt>ACRE</dt>
-  <dd>Average Crop Revenue Election</dd>
-  <dd>Offers producers an alternative to the Direct and Counter-Cyclical Program</dd>
-
-  <dt>ADA</dt>
-  <dd>Americans with Disabilities Act</dd>
-  <dd>Prohibits discrimination against people with disabilities in employment, transportation, public accommodation, communications, and governmental activities</dd>
-
-  <dt>ADAAA</dt>
-  <dd>Americans with Disabilities Act Amendments Act</dd>
-
-</dl>
-```
-
-### Unstyled
-
-#### Sass Mixin
-
-Resets `<ul>` or `<ol>` elements by stripping all style properties, e.g. bullets, numbers, margins, etc.
-
-<div class="ds-preview">
-  <ul class="your-custom-list">
-    <li class="your-custom-list__item">List item one</li>
-    <li class="your-custom-list__item">List item two</li>
-    <li class="your-custom-list__item">List item three</li>
-  </ul>
-</div>
-```scss
-// SCSS
-.your-custom-list {
-
-  @include reset-ul();
-
-  &__item {
-    @include reset-li();
-  }
-
-}
-```
-```html
-<!-- HTML -->
-<ul class="your-custom-list">
-  <li class="your-custom-list__item">List item one</li>
-  <li class="your-custom-list__item">List item two</li>
-  <li class="your-custom-list__item">List item three</li>
-</ul>
-```
-
-#### HTML
-
-If Sass is not an option, these CSS Utilities will reset list styles.
-
-##### Unordered list
-
-<div class="ds-preview">
-  <ul class="fsa-list--unstyled">
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-  </ul>
-</div>
-```html
-<ul class="fsa-list--unstyled">
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ul>
-```
-
-##### Ordered list
-
-<div class="ds-preview">
-  <ol class="fsa-list--unstyled">
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-  </ol>
-</div>
-```html
-<ol class="fsa-list--unstyled">
-  <li>List item one</li>
-  <li>List item two</li>
-  <li>List item three</li>
-</ol>
-```
-
 ## Text Elements
+
 <div class="ds-preview">
   <p>The <a href="#link-to-nowhere">a element</a> and <a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external a element</a></p>
   <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
@@ -351,47 +174,34 @@ If Sass is not an option, these CSS Utilities will reset list styles.
 
 ## Typographical Scale
 
-Most HTML elements and components immediately have an assigned font size, following a deliberate typographical scale. Where appropriate or necessary overriding text size can be done through available **CSS Utilities**.
-
-* **[Utilities > Text Headers]({{ site.baseurl }}utilities/#text-headers/)**: `<h1>` – `<h6>` elements have an inherent style, their **semantic level** can vary depending on its context. These CSS Utilities enable you to retain its structural and semantic level while maintaining a meaningful **visual hierarchy**.
-* **[Utilities > Text Size]({{ site.baseurl }}utilities/#text-size/)** A complete typographical scale available for selectively overriding text size for non-`hN` elements, e.g. `<span>`, `<p>`, etc.
-
-## Using H Element vs Text Size
-
-It is important to use the `<h>` element within a document and follow HTML Sematic best practices so that Users, Assistive Technologies, and bots understand the information hierachy of the page. Always include an `<h>` element to represent the top-level header on every web page, and it is also recommended to utilize `<h2>` – `<h6>` elements in proper sequence throughout the rest of your text content.
-
-An additional benefit of using semantically correct headers while constructing a web page include search engine optimization. For public facing website that are crawled by engines such as Google, the web crawler better understands and prioritizes sections of your HTML document which improves the overall searchability of your page.
-
-There will be occasions when the use of various sizes of text is appropriate to communicate meaning, context, and create a better experience for the User, but using the `<h>` elements incorrectly, can have very negative affects for User and other technologies. For this reason, the Text Size Utilities allow developers change the size of the text while adhering to sematic best practices.
-
-An example of when to utilize the Text Size Utility is when there is a need to make the text larger and bolder for data within a box for scanability. It should not be sematically correct to utilize the `<h>` element multiple times, or outside of the appropriate information hierachy, so instead utilize `fsa-text--h1`. 
-
-<div class="fsa-grid">
-  <div class="fsa-grid__1 fsa-grid__1/2@m">
-    <div class="ds-preview">
-      <h2 class="fsa-text--h1">h2 that looks like an h1</h2>
-      <h2 class="fsa-text--h2">h2 that looks like an h2</h2>
-      <h2 class="fsa-text--h3">h2 that looks like an h3</h2>
-      <h2 class="fsa-text--h4">h2 that looks like an h4</h2>
-      <h2 class="fsa-text--h5">h2 that looks like an h5</h2>
-      <h2 class="fsa-text--h6">h2 that looks like an h6</h2>
-    </div>
-  </div>
-  <div class="fsa-grid__1 fsa-grid__1/2@m">
-    <div class="ds-preview">
-      <div class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--1">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--2">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--3">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--5">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--6">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <div class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-    </div>
-  </div>
+<div class="ds-preview">
+  <div class="fsa-ellipsis fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--1">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--2">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--3">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--5">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--6">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+  <div class="fsa-ellipsis fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
 </div>
+```html
+<div class="fsa-text-size--0">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--1">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--2">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--3">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--5">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--6">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+<div class="fsa-text-size--7">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
+```
 
-### CSS (via Sass)
+### Customizing Font Size
+
+### With CSS Selectors
+
+Most elements and components have a deliberate size assigned to them, Utilities are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
+
+### With a CSS Preprocessor (Sass)
 
 With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
 
@@ -401,7 +211,7 @@ With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size
 
 ## Related Resources
 
-* [Utilities > Text Size]({{ site.baseurl }}utilities/#text-size/)
-* [Utilities > Text Alignment]({{ site.baseurl }}utilities/#text-alignment/)
-* [Utilities > Text Headers]({{ site.baseurl }}utilities/#text-headers/)
-* [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts/)
+* [Utilities > Text Size]({{ site.baseurl }}utilities/#text-size)
+* [Utilities > Text Headers]({{ site.baseurl }}utilities/#text-headers)
+* [Utilities > Text Alignment]({{ site.baseurl }}utilities/#text-alignment)
+* [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts)

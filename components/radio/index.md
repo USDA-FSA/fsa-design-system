@@ -242,7 +242,7 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 
 ### Solo Example within a [Table]({{ site.baseurl }}components/tables/)
 
-<div class="ds-preview ds-preview--bare">
+<div class="ds-preview">
   <table class="fsa-table">
     <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
     <thead>
