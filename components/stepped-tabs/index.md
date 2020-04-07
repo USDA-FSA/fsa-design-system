@@ -17,7 +17,7 @@ jump_menu: true
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
               <span class="fsa-stepped-tabs__text">Billing Information</span>
             </a>
           </li>
@@ -61,7 +61,7 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
               <span class="fsa-stepped-tabs__text">Em ipsum</span>
             </a>
           </li>
@@ -91,7 +91,7 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </a>
         </li>
@@ -125,7 +125,7 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
             </button>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" type="button" aria-current="true">
+            <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" type="button" aria-current="step">
               <span class="fsa-stepped-tabs__text">Em ipsum</span>
             </button>
           </li>
@@ -155,7 +155,7 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
           </button>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" type="button" aria-current="true">
+          <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" type="button" aria-current="step">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </button>
         </li>
@@ -189,7 +189,7 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
           </span>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="true">
+          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="step">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </span>
         </li>
@@ -217,7 +217,7 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
         </span>
       </li>
       <li class="fsa-stepped-tabs__item">
-        <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="true">
+        <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="step">
           <span class="fsa-stepped-tabs__text">Em ipsum</span>
         </span>
       </li>
@@ -249,7 +249,7 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
               <span class="fsa-stepped-tabs__text">Em ipsum</span>
             </a>
           </li>
@@ -279,7 +279,7 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="true">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </a>
         </li>

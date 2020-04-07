@@ -70,7 +70,7 @@ In this example, the last crumb is indeed the current page - though with an alte
         <li class="fsa-breadcrumb__item">
           <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
         </li>
-        <li class="fsa-breadcrumb__item" aria-current="page">
+        <li class="fsa-breadcrumb__item" aria-current="step">
           <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
         </li>
       </ol>
@@ -91,7 +91,7 @@ In this example, the last crumb is indeed the current page - though with an alte
       <li class="fsa-breadcrumb__item">
         <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
       </li>
-      <li class="fsa-breadcrumb__item" aria-current="page">
+      <li class="fsa-breadcrumb__item" aria-current="step">
         <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
       </li>
     </ol>

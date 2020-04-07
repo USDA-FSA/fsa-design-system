@@ -14,7 +14,7 @@ jump_menu: true
           <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 1</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 1</span>
         </li>
         <li class="fsa-pagination__item">
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
@@ -47,7 +47,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
           <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 1</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 1</span>
         </li>
         <li class="fsa-pagination__item">
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
@@ -73,7 +73,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
         <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 1</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 1</span>
       </li>
       <li class="fsa-pagination__item">
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
@@ -111,7 +111,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 55</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 56</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 56</span>
         </li>
         <li class="fsa-pagination__item">
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 57</a>
@@ -146,7 +146,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 55</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 56</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 56</span>
       </li>
       <li class="fsa-pagination__item">
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 57</a>
@@ -184,7 +184,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 119</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 120</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 120</span>
         </li>
         <li class="fsa-pagination__item fsa-pagination__item--next" aria-hidden="true">
           <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></span>
@@ -210,7 +210,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 119</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 120</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 120</span>
       </li>
       <li class="fsa-pagination__item fsa-pagination__item--next" aria-hidden="true">
         <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></span>
@@ -233,7 +233,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 2</span>
         </li>
         <li class="fsa-pagination__item">
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
@@ -262,7 +262,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 2</span>
       </li>
       <li class="fsa-pagination__item">
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
@@ -294,7 +294,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
         </li>
         <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 2</span>
         </li>
         <li class="fsa-pagination__item">
           <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
@@ -323,7 +323,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
       </li>
       <li class="fsa-pagination__item">
-        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="true"><span class="fsa-sr-only">Currently on page</span> 2</span>
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 2</span>
       </li>
       <li class="fsa-pagination__item">
         <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>

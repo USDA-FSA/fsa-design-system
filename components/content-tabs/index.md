@@ -10,7 +10,7 @@ jump_menu: true
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -49,7 +49,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -80,7 +80,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -119,7 +119,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
         </a>
       </li>
@@ -150,7 +150,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
       </a>
     </li>
@@ -185,7 +185,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
         </a>
       </li>
@@ -216,7 +216,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
       </a>
     </li>
@@ -246,7 +246,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
   <div class="fsa-content-tabs fsa-content-tabs--justified">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -272,7 +272,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 <div class="fsa-content-tabs fsa-content-tabs--justified">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -301,7 +301,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
   <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -327,7 +327,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -358,7 +358,7 @@ Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <c
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" type="button">
+        <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" type="button">
           <span class="fsa-content-tabs__label-text">tab 1</span>
         </button>
       </li>
@@ -384,7 +384,7 @@ Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <c
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" type="button">
+      <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" type="button">
         <span class="fsa-content-tabs__label-text">tab 1</span>
       </button>
     </li>
@@ -415,7 +415,7 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -449,7 +449,7 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
