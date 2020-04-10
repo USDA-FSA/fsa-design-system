@@ -155,6 +155,34 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 <h1>Kansas City Royals</h1>
 ```
 
+## Single Item Variation
+
+<div class="ds-preview">
+  <div class="fsa-breadcrumb">
+    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+      <ul class="fsa-breadcrumb__list">
+        <li class="fsa-breadcrumb__item">
+          <a href="#" class="fsa-breadcrumb__link">Level 0</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+```html
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="/" class="fsa-breadcrumb__link">Level 0</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+          <a href="#" class="fsa-breadcrumb__link">Level 1</a>
+        </li>
+    </ol>
+  </nav>
+</div>
+```
+
 ## Usage
 
 ### Use When
