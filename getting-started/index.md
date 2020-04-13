@@ -1,13 +1,13 @@
 ---
 layout: page
 title: "Getting Started"
-intro: "The Design System's CSS Framework, <code>fsa-style</code>, provides plug-and-play HTML and CSS to help you set a new bar for a cohesive user experience across FPAC digital products."
+intro: "The FPAC Design System's CSS Framework, <code>fsa-style</code>, provides plug-and-play HTML and CSS to help you set a new bar for a cohesive user experience across FPAC digital products."
 jump_menu: true
 get_started: true
 suppress_code_toggle: true
 ---
 
-The components and style guide of the Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FPAC product teams who want to create beautiful, easy-to-use, and consistent digitial experiences.
+The components and style guide of the FPAC Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FPAC product teams to create beautiful, easy-to-use, and consistent digitial experiences.
 
 It was created and maintained within FPAC's ISSDOB/FBCSS division, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
 
@@ -75,12 +75,14 @@ Download the latest assets **[fsa-style-{{ site.fsa-style_version }}.zip](https:
 
 #### 1. Visual Index
 
-`index.html` is a Visual Index of this CSS Framework's Visual Language, including basic HTML elements expressed in that style. Viewable at http://usda-fsa.github.io/fsa-style/index.html.
+`index.html` is a Visual Index of this CSS Framework's Visual Language, including basic HTML elements expressed in that style. Also referred to as the "Kitchen Sink" of `fsa-style`, it is viewable as single HTML page at **[http://usda-fsa.github.io/fsa-style/index.html](http://usda-fsa.github.io/fsa-style/index.html)**.
 
 #### 2. Boilerplate
 
-`boilerplate.html` provides a non-designed starting point. It serves as general guidance for the HTML structure most typically required of an FPAC digital product. Viewable at
-[http://usda-fsa.github.io/fsa-style/boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html).
+`boilerplate.html` provides a non-designed starting point. It serves as general guidance for the HTML structure most typically required of an FPAC digital product.
+
+Viewable at
+**[http://usda-fsa.github.io/fsa-style/boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html)**.
 
 #### 3. Manually adding to your project
 
@@ -132,19 +134,13 @@ All of these designs are also available in various file formats, which are avail
 * [EPS](link/to/FSA-Style--EPS.zip)
 * [Visio](link/to/FSA-Style--Sketch.zip) -->
 
-## Contributing
+## When should I use the FPAC Design System?
 
-For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/USDA-FSA/fsa-design-system/blob/gh-pages/CONTRIBUTING.md).
+With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the FPAC Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
 
-If you have questions or feedback about our contributing workflow, please  [file a GitHub issue](https://github.com/usda=fsa/fsa-style/issues).
+Ideally, all products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to excellerate the development of your product. Depending on your project, it can be used as intended and provide a complete Front-end design solution or it can be used as a design reference. In order to help formulate a more accurate response to the above question, we have provided the below mini guide.
 
-## When should I use it?
-
-With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
-
-Ideally, all applications would be switched over to the Design System as it provides an efficient and optimized starting point to excellerate the development of your product. Depending on your project, the Design System can be used as intended and provide a complete Frontend design solution or it can be used as a design reference as well. In order to help formulate a more accurate response to the above question, we have provided the below mini guide.
-
-### Should our team use the Design System?
+### Should our product use the FPAC Design System?
 
 <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
 	<thead>
@@ -231,3 +227,10 @@ Ideally, all applications would be switched over to the Design System as it prov
 		</tr>
 	</tbody>
 </table>
+
+## Contributing
+
+For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/USDA-FSA/fsa-design-system/blob/gh-pages/CONTRIBUTING.md).
+
+If you have questions or feedback about our contributing workflow, please  [file a GitHub issue](https://github.com/usda=fsa/fsa-style/issues).
+
