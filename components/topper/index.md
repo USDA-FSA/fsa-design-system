@@ -2,7 +2,8 @@
 layout: page
 parent: "Components"
 title: "Topper"
-intro: "The Topper component provides a way for a User to return to the top of the page."
+shortName: "component__topper"
+intro: "Provides a way for a User to return to the top of the page."
 jump_menu: true
 ---
 

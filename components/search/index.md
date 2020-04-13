@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Search"
+shortName: "component__search"
 intro: "Allow users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation"
 jump_menu: true
 ---

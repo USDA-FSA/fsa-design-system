@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Stepped Tabs"
+shortName: "component__stepped-tabs"
 intro: "Provide guidance, context, and nagivation to the User while in a stepped process workflow, typically paired with a <strong><a href=\"../stepped-control/\">Stepped Control</a></strong> component."
 jump_menu: true
 ---

@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Splash"
+shortName: "component__splash"
 intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true
 suppress_code_toggle: true
@@ -80,7 +81,7 @@ The intention of a Splash screen is to provide a good first imporession of an ap
 ### Use When
 
 * The application is initially loading data and the interface is not ready for User interactions.
-* An application is between pages (Routes) within an SPA and the interface won't be ready to display content for a number of seconds. 
+* An application is between pages (Routes) within an SPA and the interface won't be ready to display content for a number of seconds.
 
 ### Don't Use
 

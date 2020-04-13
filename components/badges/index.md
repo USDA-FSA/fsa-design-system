@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Badges"
+shortName: "component__badges"
 intro: "Badges are used as indicators of an update or action items that have yet to be completed."
 jump_menu: true
 ---

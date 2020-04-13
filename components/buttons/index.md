@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Buttons"
+shortName: "component__buttons"
 intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
 jump_menu: true
 ---

@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Pagination"
+shortName: "component__pagination"
 intro: "The Pagination Component allows for an optimized way to provide a more consumable structure for large datasets."
 jump_menu: true
 ---

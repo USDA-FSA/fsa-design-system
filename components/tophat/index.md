@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Top Hat"
+shortName: "component__tophat"
 intro: "The Header should include the Top Hat component as an indication of an official government website."
 jump_menu: true
 ---

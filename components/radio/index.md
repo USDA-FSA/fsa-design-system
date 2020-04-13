@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Radio"
+shortName: "component__radio"
 intro: "Radio buttons allow users to see all available choices at once and select exactly one option."
 jump_menu: true
 ---

@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Modal"
+shortName: "component__modal"
 intro: "Use a Modal to gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state."
 jump_menu: true
 title_label: 'Requires JavaScript'

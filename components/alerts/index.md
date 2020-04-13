@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Inline Alerts"
+shortName: "component__alerts"
 intro: "Inline Alerts help to provide inline, page-level messaging to the User. These may be as the result of a user's specific actions or unsolicited messages."
 jump_menu: true
 custom_js: "inline-alert.js"

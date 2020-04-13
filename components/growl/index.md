@@ -2,11 +2,13 @@
 layout: page
 parent: "Components"
 title: "Growl Notification"
+shortName: "component__growl"
 intro: "A Growl Notification surfaces application messaging, providing information about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
 custom_js: "growl-init-demo.js"
 ---
+
 <div class="fsa-whiteout" tabindex="-1" id="fsa-whiteout" aria-hidden="true"></div>
 
 <div class="fsa-growl-container">

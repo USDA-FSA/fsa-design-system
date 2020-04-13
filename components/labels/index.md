@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Labels"
+shortName: "component__labels"
 intro: "Labels are used to draw attention to new, updated, or important content within an application."
 jump_menu: true
 ---

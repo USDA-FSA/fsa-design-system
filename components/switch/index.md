@@ -2,11 +2,12 @@
 layout: page
 parent: "Components"
 title: "Switch"
+shortName: "component__switch"
 intro: "Toggle the state of a single setting, with its corresponding action immediately taking effect."
 jump_menu: true
 ---
 
-A Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should happen immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state. 
+A Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should happen immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
 
 <div class="ds-preview">
   <label class="fsa-switch">
@@ -268,7 +269,7 @@ Using several [CSS Utilities]({{ site.baseurl }}utilities), arrange content in a
 ### Don't Use
 
 * Within an application form as a way to select a between 2 Options. Instead utilize a [Checkbox]({{ site.baseurl }}components/checkbox/).
-* As an alternative for a [Checkbox]({{ site.baseurl }}components/checkbox/) or [Radio]({{ site.baseurl }}components/radio/) within a Form. 
+* As an alternative for a [Checkbox]({{ site.baseurl }}components/checkbox/) or [Radio]({{ site.baseurl }}components/radio/) within a Form.
 
 ## Accessibility
 

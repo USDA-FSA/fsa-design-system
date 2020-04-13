@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Timeline"
+shortName: "component__timeline"
 intro: "List system and user activity chronologically."
 jump_menu: true
 ---

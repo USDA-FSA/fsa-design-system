@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Global Navigation"
+shortName: "component__top-nav"
 intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FPAC applications."
 jump_menu: true
 title_label: 'May Require JavaScript'

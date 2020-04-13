@@ -45,6 +45,14 @@ layout: default
       <p class="fsa-text--lead">{{ page.intro }}</p>
       {% endif %}
 
+      {% if page.shortName %}
+      <h3>
+        Preview
+        <a class="fsa-btn fsa-btn--secondary fsa-btn--small fsa-float--right" href="http://usda-fsa.github.io/fsa-style/#{{ page.shortName }}" target="_blank">View Kitchen Sink</a>
+      </h3>
+      {% endif %}
+
+
       <h2 class="sr-only">Overview</h2>
 
       {{ content }}

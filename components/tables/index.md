@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Tables"
+shortName: "component__tables"
 intro: "Data tables presenting tabular data in columns and rows."
 jump_menu: true
 custom_js: "table-select-demo.js"

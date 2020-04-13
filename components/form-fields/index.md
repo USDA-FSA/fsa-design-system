@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Form Fields"
+shortName: "component__form-fields"
 intro: "Form fields are multifaceted components that allow Developers to create application forms with appropriate instructional and validation features."
 jump_menu: true
 custom_js: ["select-other.js", "datepicker-demo.js"]
