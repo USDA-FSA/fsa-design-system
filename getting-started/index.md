@@ -15,7 +15,10 @@ It was created and maintained within FPAC's ISSDOB/FBCSS division, and is heavil
 
 Details about each release's significant updates and compatibility changes are available in our [release history](https://github.com/USDA-FSA/fsa-style/releases).
 
-## Installing or Downloading
+<!-- ID below enables backwards-compatibility to legacy anchoring -->
+<div id="installing-or-downloading"></div>
+
+## How to use
 
 Two options are available for usage of fsa-style HTML, CSS, Images, and Web Fonts:
 
@@ -105,7 +108,7 @@ Note that `fonts` and `img` must be alongside `css` as the CSS files reference t
 
 Refer to [Using the Boilerplate](#using-the-boilerplate) for further steps.
 
-## Using the Boilerplate
+### Using the Boilerplate
 
 **[boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html)**
 
@@ -134,98 +137,127 @@ All of these designs are also available in various file formats, which are avail
 * [EPS](link/to/FSA-Style--EPS.zip)
 * [Visio](link/to/FSA-Style--Sketch.zip) -->
 
-## When should I use the FPAC Design System?
+## When to use
 
-With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the FPAC Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
+With the nature of application development, and the need to maintain legacy systems, the question often comes up about when to use the FPAC Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
 
-Ideally, all products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to accelerate the development of your product. Depending on your project, it can be used as intended and provide a complete Front-end design solution or it can be used as a design reference. In order to help formulate a more accurate response to the above question, we have provided the below mini guide.
+Ideally, all products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to accelerate the development of your product.
+
+Depending on your product, it can be used as intended and provide a complete Front-end design solution or it can be used as a design reference.
+
+Consult the mini-guide below to determine the relevance of the FPAC Design System to your product.
 
 ### Should our product use the FPAC Design System?
 
 <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
-	<thead>
-		<tr>
-			<th scope="col">Answer</th>
-			<th scope="col">Condition</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>YES</strong>
-			</td>
-			<td aria-label="condition">If a new product and/or application is being developed from scratch.</td>
-		</tr>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>YES</strong>
-			</td>
-			<td aria-label="condition">If the existing legacy application is being completely replaced/redeveloped.</td>
-		</tr>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>NO</strong>
-			</td>
-			<td aria-label="condition">If an existing legacy applications has no plans to complete a major Front-end redesign.</td>
-		</tr>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>NO</strong>
-			</td>
-			<td aria-label="condition">If an existing legacy application utilizes technology, that when combined with the Design System, creates an adverse or slow User Experience on legacy devices.</td>
-		</tr>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>PROBABLY</strong>
-			</td>
-			<td aria-label="condition">
-				If the existing legacy application will be significantly overhauled visually and/or from a technology perspective.
-				<ul>
-					<li>
-						Many applications can be split into multiple modules, which would allow for new development work using the Design System.
-					</li>
-					<li>
-						The criteria used to determine “overhaul” requires discussion, weighed against benefit, and priority.
-					</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>MAYBE</strong>
-			</td>
-			<td aria-label="condition">
-				If the existing legacy application has major new features that will be added.
-				<ul>
-					<li>
-						As stated previously, an application can be split into features and/or modules that would allow for the use of the Design System.
-					</li>
-					<li>
-						Consulting with the FPAC User Experience team can provide in-depth guidance for your specific project.
-					</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td aria-label="answer" scope="row">
-					<strong>POSSIBLY</strong>
-			</td>
-			<td aria-label="condition">
-				If the existing legacy application wishs to utilize aspects of the Design System.
-				<ul>
-					<li>
-						The applicaiton may not necessarily be adding/removing features, but updates to existing markup and style can be updated to mirror the Design System.
-					</li>
-					<li>
-						For example, could be solely about as reskinning to be generally cohesive to the Design System (color, typography, spacing).
-					</li>
-					<li>
-						The application may likely involve not using most (or any) of the Design System’s CSS Framework <a href="https://github.com/USDA-FSA/fsa-style">fsa-style</a> rather, involves referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
-					</li>
-				</ul>
-			</td>
-		</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th scope="col">Answer</th>
+      <th scope="col">Condition</th>
+      <th scope="col">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label fsa-label--success">Yes</span>
+      </td>
+      <td aria-label="condition">If a new product and/or application is being developed from scratch.</td>
+      <td aria-label="notes">
+        <ul class="fsa-m--none">
+          <li>Use the FPAC Design System as your primary design reference for new digital products being explored, designed, and/or developed.</li>
+          <li>The <a href="https://wiki.tools.fsa.usda.gov/display/SPAR/Single+Page+Application+Reference"><abbr title="Single Page Application">SPA</abbr> Tech Stack</a> (Angular) is the current development standard, and the Design System's CSS Framework comes with its build system.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label fsa-label--success">Yes</span>
+      </td>
+      <td aria-label="condition">If the existing legacy application is being completely replaced/redeveloped.</td>
+      <td aria-label="notes">
+        <ul class="fsa-m--none">
+          <li>The FPAC Design System is tech-stack or dev-framework-agnostic, though it does comes bundled into the Angular-based <a href="https://wiki.tools.fsa.usda.gov/display/SPAR/Single+Page+Application+Reference"><abbr title="Single Page Application">SPA</abbr> Tech Stack</a> and its example Reference App.</li>
+          <li>Regardless of development framework or technology platformed employed, refer to the FPAC Design System as your primary design dependency and reference.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label fsa-label--alert">No</span>
+      </td>
+      <td aria-label="condition">If an existing legacy applications has no plans to complete a major Front-end redesign.</td>
+      <td aria-label="notes">
+        <ul class="fsa-m--none">
+          <li>Consult with your product's leadership team to determine.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label fsa-label--alert">No</span>
+      </td>
+      <td aria-label="condition">If an existing legacy application utilizes technology, that when combined with the Design System, creates an adverse or slow User Experience on legacy devices or platforms.</td>
+      <td aria-label="notes"></td>
+    </tr>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label fsa-label--general">Probably</span>
+      </td>
+      <td aria-label="condition">
+        If an existing legacy application will be significantly overhauled visually and/or from a technology perspective.
+      </td>
+      <td aria-label="notes">
+        <ul class="fsa-m--none">
+          <li>
+            Many applications can be split into multiple modules, which would allow for new development work using the Design System.
+          </li>
+          <li>
+            The criteria used to determine “overhaul” requires discussion, weighed against benefit, and priority.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label fsa-label--warning">Maybe</span>
+      </td>
+      <td aria-label="condition">
+        If an existing legacy application has major new features that will be added.
+      </td>
+      <td aria-label="notes">
+        <ul class="fsa-m--none">
+          <li>
+            As stated previously, an application can be split into features and/or modules that would allow for the use of the Design System.
+          </li>
+          <li>
+            Consulting with the FPAC User Experience team can provide in-depth guidance for your specific project.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td aria-label="answer" scope="row">
+        <span class="fsa-label">Possibly</span>
+      </td>
+      <td aria-label="condition">
+        If an existing legacy application wishs to utilize aspects of the Design System.
+      </td>
+      <td aria-label="notes">
+        <ul class="fsa-m--none">
+          <li>
+            The applicaiton may not necessarily be adding/removing features, but updates to existing markup and style can be updated to mirror the Design System.
+          </li>
+          <li>
+            For example, could be solely about as reskinning to be generally cohesive to the Design System (color, typography, spacing).
+          </li>
+          <li>
+            The application may likely involve not using most (or any) of the Design System’s CSS Framework <a href="https://github.com/USDA-FSA/fsa-style">fsa-style</a>; rather, it may just involve referencing the Design System to apply the visual style, e.g. "let's just align to the Typography system."
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 ## Contributing
