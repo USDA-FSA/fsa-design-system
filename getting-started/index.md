@@ -138,7 +138,7 @@ All of these designs are also available in various file formats, which are avail
 
 With the nature of application development, and the need to maintain legecy systems, the question often comes up about when to use the FPAC Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
 
-Ideally, all products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to excellerate the development of your product. Depending on your project, it can be used as intended and provide a complete Front-end design solution or it can be used as a design reference. In order to help formulate a more accurate response to the above question, we have provided the below mini guide.
+Ideally, all products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to accelerate the development of your product. Depending on your project, it can be used as intended and provide a complete Front-end design solution or it can be used as a design reference. In order to help formulate a more accurate response to the above question, we have provided the below mini guide.
 
 ### Should our product use the FPAC Design System?
 
