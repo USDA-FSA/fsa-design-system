@@ -160,28 +160,28 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 <div class="ds-preview">
   <div class="fsa-breadcrumb">
     <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-      <ul class="fsa-breadcrumb__list">
+      <ol class="fsa-breadcrumb__list">
         <li class="fsa-breadcrumb__item">
-          <a href="#" class="fsa-breadcrumb__link">Level 0</a>
+          <a href="/" class="fsa-breadcrumb__link">Home</a>
         </li>
-      </ul>
+      </ol>
     </nav>
   </div>
+  <h1>Sports</h1>
 </div>
 ```html
 <div class="fsa-breadcrumb">
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a href="/" class="fsa-breadcrumb__link">Level 0</a>
+        <a href="/" class="fsa-breadcrumb__link">Home</a>
       </li>
-      <li class="fsa-breadcrumb__item">
-          <a href="#" class="fsa-breadcrumb__link">Level 1</a>
-        </li>
     </ol>
   </nav>
 </div>
+<h1>Sports</h1>
 ```
+
 
 ## Usage
 
