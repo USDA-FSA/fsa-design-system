@@ -3,7 +3,6 @@ layout: page
 parent: "Components"
 intro: "Structure content into concise sementic sections."
 title: "Lists"
-shortName: "component__lists"
 jump_menu: true
 ---
 

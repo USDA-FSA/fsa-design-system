@@ -2,7 +2,6 @@
 layout: page
 parent: "Components"
 title: "Application Header"
-shortName: "component__header-app"
 intro: "The Application Header component provides a prominent way to display the application abbreviation and name."
 jump_menu: true
 ---

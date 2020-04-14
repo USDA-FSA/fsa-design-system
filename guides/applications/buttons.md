@@ -25,20 +25,60 @@ The below buttons are the default variations available for use in the Design Sys
   </p>
 </div>
 
-### Primary
-A primary style shall be applied to a button that represents the top priority action a User might take in a given context. Submitting a form or continuing a stepped process would be considered primary.
-
-### Secondary
-A secondary style shall be applied to buttons that are not top priority, may be viewed as contrary to progress, or the action is relevant for adjacent features and functionality. An example of this would be a button that is labeled "View Producer" that displays data on the same screen without continuing a process.
-
-### Tertiary
-A tertiary style shall be applied only to buttons that perform a **destructive** action. A "Delete" button is a good example of an action that requires the tertiary style.
-
-### Disabled
-The disabled state shall be applied to any buttons unable to be clicked by a User, but should remain present and visible as an action that can be performed once other criteria is met.
-
-### Flat
-In most cases, a button labeled as "Cancel" should be shown with the Flat style which looks similar to a text link. By giving this button very low priority and prominence on the screen, it will not be easily mistaken as an action to take without contemplation from a User. Canceling a process can be destructive in nature, but it does not remove stored data from the database.
+<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+    <thead>
+        <tr>
+            <th>Variation/State</th>
+            <th>Usage</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td aria-label="Variation/State">
+                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary">Primary</button>
+            </td>
+            <td aria-label="Usage"> A primary style shall be applied to a button that represents the <strong>top priority action</strong> a User might take <strong>within a given UI context</strong>. </td>
+            <td aria-label="Example"> Submitting a form or continuing a stepped process would be considered primary. </td>
+        </tr>
+        <tr>
+            <td aria-label="Variation/State">
+                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary">Secondary</button>
+            </td>
+            <td aria-label="Usage"> A secondary style shall be applied to buttons that are <strong>not top priority</strong>, may be viewed as contrary        to progress, or the action is relevant for <strong>adjacent features and functionality</strong>. You may think of this as the <strong>default</strong> button state (despite it's "secondary" name); that is, all buttons are default unless one of the other use cases mentioned on this page come into play. </td>
+            <td aria-label="Example"> A button labeled "View Producer" that displays data on the same screen without continuing a process. </td>
+        </tr>
+        <tr>
+            <td aria-label="Variation/State">
+                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary">Tertiary</button>
+            </td>
+            <td aria-label="Usage"> A tertiary style shall be applied only to buttons that perform a <strong>destructive</strong> action. </td>
+            <td aria-label="Example"> "Delete" or "Remove". </td>
+        </tr>
+        <tr>
+            <td aria-label="Variation/State">
+                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
+            </td>
+            <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
+            <td aria-label="Example">
+                Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code> but its UI presents them as more navigational.
+                <br><br>
+                A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database.
+            </td>
+        </tr>
+        <tr>
+            <td aria-label="Variation/State">
+                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button>
+            </td>
+            <td aria-label="Usage">
+                Communicates when a button isn’t actionable and is deemphasized in a UI.
+            </td>
+            <td aria-label="Example">
+                A button needs to remain present and visible, and becomes actionable once any number of criteria is met.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Size
 
@@ -46,6 +86,46 @@ In most cases, a button labeled as "Cancel" should be shown with the Flat style 
   <button class="fsa-btn fsa-btn--primary" type="button">Default</button>
   <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Small</button>
   <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Large</button>
+</div>
+
+## Display
+
+<div class="ds-preview">
+    <p><button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Full width (aka Block)</button></p>
+    <p><button class="fsa-btn fsa-btn--primary fsa-btn--inline" type="button">Inline (default)</button></p>
+</div>
+
+## Responsive
+
+Several of a button's style properties can be selectively modified across each Media Query breakpoint.
+
+<code>fsa-btn--<strong>[property]@[breakpoint]</strong></code>, where
+<code>property</code> is one of
+<code>small</code>,
+<code>medium</code>,
+<code>large</code>,
+<code>block</code>, or
+<code>inline</code>; and <code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <div class="docs__rwd-embed-container">
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html" target="_blank" title="View in a New Window">New Window</a>
+    </span>
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_buttons">
+      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
 </div>
 
 ## General Guidelines
@@ -58,7 +138,6 @@ In most cases, a button labeled as "Cancel" should be shown with the Flat style 
  * Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
 
 ## Multi-Step Process Guidelines
-
 
  * A **regressive** action shall be left-aligned, followed by right-aligned **progressive** action(s)
  * Back and Next can be used as button labels

@@ -2,7 +2,6 @@
 layout: page
 parent: "Components"
 title: "Splash"
-shortName: "component__splash"
 intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true
 suppress_code_toggle: true

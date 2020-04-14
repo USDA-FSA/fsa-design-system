@@ -7,8 +7,6 @@ intro: "Toggle the state of a single setting, with its corresponding action imme
 jump_menu: true
 ---
 
-A Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should happen immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
-
 <div class="ds-preview">
   <label class="fsa-switch">
     <input type="checkbox" class="fsa-switch__checkbox">
@@ -27,6 +25,7 @@ A Switch component acts as a way to allow the User to toggle between two mutuall
   </script>
 </div>
 
+The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should happen immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
 
 ## Variations
 

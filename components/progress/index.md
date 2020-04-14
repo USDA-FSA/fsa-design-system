@@ -7,9 +7,35 @@ shortName: "component__progress"
 jump_menu: true
 custom_js: "progress.js"
 ---
+
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
 
-A Progress indicator, or Progress bar as it is often called, is an essential component for applications. Not only does a Progress indicator provide trust for the end User, but it also can provide valuable information as well. The general "rule of thumb" is that any process that requires the User to wait more than a second for something to load or finish, should provide a Progress indicator.
+<div class="ds-preview">
+  <div class="fsa-progress" aria-live="polite">
+    <div class="fsa-progress__details fsa-sr-only">
+      <div class="fsa-progress__label">Processing Commodities</div>
+      <div class="fsa-progress__value">4 of 10</div>
+    </div>
+    <div class="fsa-progress__bar" aria-hidden="true">
+      <div class="fsa-progress__primary" style="transform: scaleX(.4)"></div>
+      <div class="fsa-progress__secondary"></div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-progress" aria-live="polite">
+  <div class="fsa-progress__details fsa-sr-only">
+    <div class="fsa-progress__label">Processing Commodities</div>
+    <div class="fsa-progress__value">4 of 10</div>
+  </div>
+  <div class="fsa-progress__bar" aria-hidden="true">
+    <div class="fsa-progress__primary" style="transform: scaleX(.4)"></div>
+    <div class="fsa-progress__secondary"></div>
+  </div>
+</div>
+```
+
+A Progress indicator, or "Progress Bar" as it is often called, is an essential component for applications. Not only does a Progress indicator provide trust for the end User, but it also can provide valuable information as well. The general "rule of thumb" is that any process that requires the User to wait more than a second for something to load or finish, should provide a Progress indicator.
 
 ## Variations and Examples
 

@@ -1,4 +1,4 @@
-- title: "Applications"
+- title: "Overview"
   alt_title: "Applications"
   href: "guides/applications"
 
@@ -13,10 +13,10 @@
 
 - title: "Footer"
   href: "guides/applications/footer"
-  
+
 - title: "Forms"
   href: "guides/applications/forms"
-  
+
 - title: "Form Validation"
   href: "guides/applications/form-validation"
 
@@ -28,10 +28,10 @@
 
 - title: "Navigation"
   href: "guides/applications/navigation"
-  
+
 - title: "Phone Number"
   href: "guides/applications/phone-number"
 
 - title: "Tables"
   href: "guides/applications/tables"
-  
+
