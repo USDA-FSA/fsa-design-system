@@ -11,21 +11,19 @@ The components and style guide of the FPAC Design System follow industry-standar
 
 It was created and maintained within FPAC's ISSDOB/FBCSS division, and is heavily influenced by the [Draft U.S. Web Design System](https://standards.usa.gov/) created and maintained by the wonderful folks at [18F](https://18f.gsa.gov/).
 
-### Release History
-
-Details about each release's significant updates and compatibility changes are available in our [release history](https://github.com/USDA-FSA/fsa-style/releases).
-
 <!-- ID below enables backwards-compatibility to legacy anchoring -->
 <div id="installing-or-downloading"></div>
 
 ## How to use
 
-Two options are available for usage of fsa-style HTML, CSS, Images, and Web Fonts:
+### Using CSS Framework
+
+Two options are available for usage of `fsa-style`'s HTML, CSS, Images, and Web Fonts:
 
 * **[NPM Install](#install-using-npm)**
 * **[Download ZIP](#download-zip)**
 
-### Install using NPM
+#### Install using NPM
 
 If you have `node` installed on your machine, you can use npm to install the Standards. Add `fsa-style`
 to your project’s `package.json` as a dependency:
@@ -70,24 +68,24 @@ node_modules/fsa-style/dist/css/fsa-style.min.css
 
 Lastly, refer to [Using the Boilerplate](#using-the-boilerplate) for basic guidance on HTML structure.
 
-### Download ZIP
+#### Download ZIP
 
 If you don't have Node or the ability to incorporate source files into a build process (Grunt, Gulp, etc), follow these steps to manually use the Design Sytem's CSS Framework, `fsa-style`.
 
 Download the latest assets **[fsa-style-{{ site.fsa-style_version }}.zip](https://github.com/usda-fsa/fsa-style/releases/download/{{ site.fsa-style_version }}/fsa-style-{{ site.fsa-style_version }}.zip)**
 
-#### 1. Visual Index
+##### 1. Visual Index
 
 `index.html` is a Visual Index of this CSS Framework's Visual Language, including basic HTML elements expressed in that style. Also referred to as the "Kitchen Sink" of `fsa-style`, it is viewable as single HTML page at **[http://usda-fsa.github.io/fsa-style/index.html](http://usda-fsa.github.io/fsa-style/index.html)**.
 
-#### 2. Boilerplate
+##### 2. Boilerplate
 
 `boilerplate.html` provides a non-designed starting point. It serves as general guidance for the HTML structure most typically required of an FPAC digital product.
 
 Viewable at
 **[http://usda-fsa.github.io/fsa-style/boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html)**.
 
-#### 3. Manually adding to your project
+##### 3. Manually adding to your project
 
 Add the downloaded ZIP's assets to a relevant place in your code base — likely a directory where you keep third-party libraries:
 
@@ -108,7 +106,7 @@ Note that `fonts` and `img` must be alongside `css` as the CSS files reference t
 
 Refer to [Using the Boilerplate](#using-the-boilerplate) for further steps.
 
-### Using the Boilerplate
+#### Using the Boilerplate
 
 **[boilerplate.html](http://usda-fsa.github.io/fsa-style/boilerplate.html)**
 
@@ -137,6 +135,12 @@ All of these designs are also available in various file formats, which are avail
 * [EPS](link/to/FSA-Style--EPS.zip)
 * [Visio](link/to/FSA-Style--Sketch.zip) -->
 
+### Without CSS Framework
+
+If using the Design System's CSS Framework (`fsa-style`) HTML/CSS won't be utilized, the Design System serves as your product's UI reference. Examples: developed via native technology, e.g. iOS/Andoird; an adopted platform is incompatible with the `fsa-style`'s markup or style.
+
+If nothing else, the Design System is your reference to skin (or theme) your product's User Interface (i.e. [Color]({{ site.baseurl }}visual-style/color/), [Typography]({{ site.baseurl }}visual-style/typography/), [Size and Space]({{ site.baseurl }}visual-style/size-and-space/).) -- regardless of implementation technology.
+
 ## When to use
 
 With the nature of application development, and the need to maintain legacy systems, the question often comes up about when to use the FPAC Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
@@ -147,9 +151,12 @@ Depending on your product, it can be used as intended and provide a complete Fro
 
 Consult the mini-guide below to determine the relevance of the FPAC Design System to your product.
 
-### Should our product use the FPAC Design System?
-
 <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+  <caption>
+    <h3>
+      Should our product use the FPAC Design System?
+    </h3>
+  </caption>
   <thead>
     <tr>
       <th scope="col">Answer</th>
@@ -259,6 +266,14 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
     </tr>
   </tbody>
 </table>
+
+## Release History
+
+Details about each release's significant updates and compatibility changes
+
+* Current Release notes:
+[`fsa-style@{{ site.fsa-style_version }}`](https://github.com/USDA-FSA/fsa-style/releases/tag/{{ site.fsa-style_version }})
+* All Release Notes: [`fsa-style@{{ site.fsa-style_version }} - 0.1.1`](https://github.com/USDA-FSA/fsa-style/releases)
 
 ## Contributing
 
