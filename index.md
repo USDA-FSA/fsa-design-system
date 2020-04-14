@@ -7,6 +7,8 @@ title: Home
 
   <h1 class="fsa-sr-only">Welcome to FPAC's Design System</h1>
 
+
+
   <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
 
   <div class="fsa-grid ds-home-features">
@@ -48,3 +50,52 @@ title: Home
   </div>
 
 </div>
+
+<script>
+
+  const search = {
+
+    url: 'sitemap/index.html',
+    phrase: '',
+    searchArray: [],
+
+    getSource: function( callback ){
+      if (window.XMLHttpRequest){ 
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+          callback(this)
+        }
+        xhr.open( 'GET', this.url, true);
+        xhr.send();
+      }
+    },
+
+    setContent: function(response){
+      let holder = document.createElement('html');
+      holder.innerHTML = response.response
+      let list = [].slice.call(holder.querySelectorAll(".ds-sitemap__link"))
+      this.searchArray = list.map( item => {
+        return {
+          text: item.innerText.trim(),
+          url: item.pathname,
+        }
+      })
+
+      console.log('content',searchArray);
+    },
+
+    doSearch( p ){
+      this.phrase = p;
+    },
+
+
+    init(){
+      this.getSource( this.setContent );
+    }
+
+  };
+
+  search.init();
+  //search.doSearch('logo')
+
+</script>
