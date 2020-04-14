@@ -12830,6 +12830,7 @@ pre.highlight .ds-clipboard {
 }
 
 .ds-header__version {
+  white-space: nowrap;
   color: #b2c9b7;
   font-size: 66%;
 }
@@ -13343,8 +13344,8 @@ pre.highlight .ds-clipboard {
   top: 100%;
   right: 0;
   left: 0;
-  height: 12px;
-  height: 1.2rem;
+  height: 13px;
+  height: 1.3rem;
   background-color: #f7f7f7;
 }
 

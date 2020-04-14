@@ -116,6 +116,7 @@
   }
 
   &__version {
+    white-space: nowrap;
     color: $color-fsa-primary-200;
     font-size: 66%;
   }

@@ -62,7 +62,7 @@
         top: 100%;
         right: 0;
         left: 0;
-        height: $size-default;
+        height: ($size-default + .1rem); // magic number
         background-color: $getting-started-active-color;
       }
 
