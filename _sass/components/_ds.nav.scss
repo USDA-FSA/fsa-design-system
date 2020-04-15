@@ -1,17 +1,23 @@
 
 .ds-nav {
 
-  text-align: left;
+  & {
+    text-align: left;
+  }
 
   &__list {
     @include reset-ul();
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: (-$size-small);
+    @include breakpoint(L) {
+      // margin-left: (-$size-default);
+    }
   }
 
   &__list-item {
 
     @include reset-li();
-    display: inline-block;
-    margin-right: $size-default;
 
     &--active {
       font-weight: bold;
@@ -31,16 +37,21 @@
 
   &__link {
 
-    @include font-size(2);
-    text-decoration: none;
-    color: $color-fsa-white;
+    & {
 
-    @include breakpoint(M) {
-      @include font-size(3);
-    }
+      display: block;
+      @include font-size(2);
+      text-decoration: none;
+      color: $color-fsa-white;
+      padding: ($size-base / 2) $size-small;
 
-    &:hover {
-      text-decoration: underline;
+      @include breakpoint(M) {
+        @include font-size(3);
+      }
+      @include breakpoint(L) {
+        padding: $size-small;
+      }
+
     }
 
     &:active,
@@ -49,7 +60,11 @@
     &:visited {
       color: $color-fsa-white;
     }
-// #1a4b24
+
+    &:hover {
+      text-decoration: underline;
+    }
+
   }
 
 }
