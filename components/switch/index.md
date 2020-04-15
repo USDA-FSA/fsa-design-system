@@ -2,9 +2,11 @@
 layout: page
 parent: "Components"
 title: "Switch"
+shortName: "component__switch"
 intro: "Toggle the state of a single setting, with its corresponding action immediately taking effect."
 jump_menu: true
 ---
+
 <div class="ds-preview">
   <label class="fsa-switch">
     <input type="checkbox" class="fsa-switch__checkbox">
@@ -22,7 +24,12 @@ jump_menu: true
     document.getElementById("switch-indeterminate-example__00").indeterminate = true;
   </script>
 </div>
+
+The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should happen immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
+
 ## Variations
+
+Switch components are styled with `class="fsa-switch` on the `<label>` tag, and using the `class="fsa-switch__checkbox` on the `<input>` tag.
 
 ### Default
 
@@ -54,6 +61,9 @@ jump_menu: true
 ```
 
 ### Indeterminate
+
+The Indeterminate setting can be initiated by setting the `indeterminate` parameter to `true` on the element. For example, you can utilize JavaScript like: `document.getElementById("INPUT_ID_HERE").indeterminate = true;`
+
 <div class="ds-preview">
   <label class="fsa-switch">
     <input type="checkbox" class="fsa-switch__checkbox" id="checkbox-indeterminate-example__01" name="checkbox-indeterminate-example__01">
@@ -250,11 +260,30 @@ Using several [CSS Utilities]({{ site.baseurl }}utilities), arrange content in a
 
 ## Usage
 
-<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
-  <div class="fsa-alert__body">
-    <p class="fsa-alert__text">Documentation in progress.</p>
-  </div>
-</div>
+### Use When
+
+* The Application requires the User to perform a toggle action, and affect the application immediately.
+* A setting within an application needs to be toggled between two different states.
+
+### Don't Use
+
+* Within an application form as a way to select a between 2 Options. Instead utilize a [Checkbox]({{ site.baseurl }}components/checkbox/).
+* As an alternative for a [Checkbox]({{ site.baseurl }}components/checkbox/) or [Radio]({{ site.baseurl }}components/radio/) within a Form.
+
+## Accessibility
+
+Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
+
+* Ensure that you utilize an `<input>` with the appropriate [Checkbox]({{ site.baseurl }}components/checkbox/) setting so that Assistive Technologies can interpret the control.
+
+## General Guidance
+
+* A Switch Component should be used as a control within an application and provide a way to toggle between two states like a household light switch.
+
+* The Switch Component is in use on this page above in the `Show Code` and `X-Ray` toggles, and provides a great example of how it should be used.
+
+* The Indeterminate states is only available before a User has interacted with the Switch Component, and cannot be set to Indeterminate again.
+
 
 ## Related Resources
 

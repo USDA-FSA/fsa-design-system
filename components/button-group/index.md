@@ -2,11 +2,12 @@
 layout: page
 parent: "Components"
 title: "Button Group"
+shortName: "component__button-group"
 intro: "Use button groups as a mechanism to toggle between multiple button actions."
 jump_menu: true
 ---
 
-<div class="ds-preview">
+<div class="ds-preview fsa-m-t--none">
   <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
     <button class="fsa-btn-group__item" type="button">Label</button>
     <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
@@ -116,7 +117,7 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 </span>
 ```
 
-### Example: as `a` element
+### Example: as `<a>` element
 
 Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though depending on their use might be an `<a>` element.
 

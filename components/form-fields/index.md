@@ -2,9 +2,11 @@
 layout: page
 parent: "Components"
 title: "Form Fields"
+shortName: "component__form-fields"
 intro: "Form fields are multifaceted components that allow Developers to create application forms with appropriate instructional and validation features."
 jump_menu: true
-custom_js: "select-other.js"
+custom_js: ["select-other.js", "datepicker-demo.js"]
+title_label: 'JavaScript Included'
 ---
 
 <div class="ds-preview">
@@ -500,6 +502,27 @@ Using [Select Multi]({{ site.baseurl }}components/select-multi/) as core compone
   <span class="fsa-field__help" id="lorem-hshmul6tihsjt-help-4">Instructional message here</span>
 </div>
 ```
+
+### Date Picker
+
+Using [Date Picker]({{ site.baseurl }}components/date-picker/) as core component.
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="date-picker-default">Date of Birth</label>
+    <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-default" aria-describedby="date-picker-default__help" aria-required="true" name="date-picker-default" type="text" value="">
+    <span class="fsa-field__help" id="date-picker-default__help">Example 05/14/1975</span>
+  </div>
+</div>
+
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="date-picker-default">Date of Birth</label>
+  <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-default" aria-describedby="date-picker-default__help" aria-required="true" name="date-picker-default" type="text" value="">
+  <span class="fsa-field__help" id="date-picker-default__help">Example 05/14/1975</span>
+</div>
+```
+
 
 ### Spinbox
 

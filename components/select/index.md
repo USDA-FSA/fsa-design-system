@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Select"
+shortName: "component__select"
 intro: "Sometimes referred to as a “drop down,” the select element allows users to select one option from a list."
 jump_menu: true
 ---

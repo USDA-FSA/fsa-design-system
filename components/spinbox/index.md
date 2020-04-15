@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Spinbox"
+shortName: "component__spinbox"
 intro: "A Spinbox Component provides enhanced controls for a numeric input, designed to expedite data entry."
 jump_menu: true
 title_label: 'Requires JavaScript'
