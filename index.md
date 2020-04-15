@@ -7,9 +7,11 @@ title: Home
 
   <h1 class="fsa-sr-only">Welcome to FPAC's Design System</h1>
 
+  <input class="fsa-input fsa-input--block" id="UNIQUE-ID-ksidjyehdi" type="text" name="search" value="" placeholder="Quick Search">
+  <div id="UNIQUE-ID-ksidjyehdi-results"></div>
 
 
-  <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
+  <p class="fsa-text--lead fsa-m-t--10"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
 
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
@@ -56,7 +58,6 @@ title: Home
   const search = {
 
     url: 'sitemap/index.html',
-    phrase: '',
     searchArray: [],
 
     getSource: function( callback ){
@@ -75,19 +76,20 @@ title: Home
       holder.innerHTML = response.response
       let list = [].slice.call(holder.querySelectorAll(".ds-sitemap__link"))
       this.searchArray = list.map( item => {
-        return {
-          text: item.innerText.trim(),
-          url: item.pathname,
-        }
+        return {text: item.innerText.trim(), url: item.pathname }
       })
-
-      console.log('content',searchArray);
     },
 
     doSearch( p ){
-      this.phrase = p;
+      let list = searchArray.filter( item => {
+        let lowCategory = item.text.toLowerCase()
+        let lowPhrase = p.toLowerCase()
+        if(lowCategory.indexOf( lowPhrase ) > -1) return true
+        else false
+      });
+      // return max 8 results
+      return list.slice(0,7);
     },
-
 
     init(){
       this.getSource( this.setContent );
@@ -96,6 +98,22 @@ title: Home
   };
 
   search.init();
-  //search.doSearch('logo')
+
+  let smartSearch = document.getElementById('UNIQUE-ID-ksidjyehdi');
+  let smartResults = document.getElementById('UNIQUE-ID-ksidjyehdi-results');
+
+  smartSearch.oninput = function(){
+    if(smartSearch.value!=''){
+      let newHTML = '<ul>';
+      let list = search.doSearch( smartSearch.value );
+      list.forEach( item => {
+        newHTML += '<li>'+item.text+' - <a href="'+item.url+'">'+ item.url +'</a></li>'
+      });
+      newHTML += '</ul>';
+      smartResults.innerHTML = newHTML;
+    } else {
+      smartResults.innerHTML = '';
+    }
+  }
 
 </script>
