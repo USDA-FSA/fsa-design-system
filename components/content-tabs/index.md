@@ -2,15 +2,16 @@
 layout: page
 parent: "Components"
 title: "Content Tabs"
+shortName: "component__content-tabs"
 intro: "Use Content Tabs to arrange related information or functionality in a defined area on the same application page."
 jump_menu: true
 ---
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -45,11 +46,11 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Default
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -80,7 +81,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -110,7 +111,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Small
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -119,7 +120,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
         </a>
       </li>
@@ -150,7 +151,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
       </a>
     </li>
@@ -176,7 +177,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Large (on desktop)
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
@@ -185,7 +186,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
         </a>
       </li>
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
         </a>
       </li>
@@ -216,7 +217,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
       </a>
     </li>
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
       </a>
     </li>
@@ -242,11 +243,11 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Justified (on desktop)
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs fsa-content-tabs--justified">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -272,7 +273,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 <div class="fsa-content-tabs fsa-content-tabs--justified">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -297,11 +298,11 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Justified Equal (on desktop)
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -327,7 +328,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -354,11 +355,11 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <code>&lt;button&gt;</code> element.
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" type="button">
+        <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" type="button">
           <span class="fsa-content-tabs__label-text">tab 1</span>
         </button>
       </li>
@@ -384,7 +385,7 @@ Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <c
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" type="button">
+      <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" type="button">
         <span class="fsa-content-tabs__label-text">tab 1</span>
       </button>
     </li>
@@ -411,11 +412,11 @@ Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <c
 
 Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.fsa-content-tabs__aside`) is available for contextually relevant content.
 
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-content-tabs">
     <ul class="fsa-content-tabs__list">
       <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
           <span class="fsa-content-tabs__label-text">Lorem</span>
         </a>
       </li>
@@ -449,7 +450,7 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
-      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="true" href="#link">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
         <span class="fsa-content-tabs__label-text">Lorem</span>
       </a>
     </li>
@@ -485,16 +486,14 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 {% include alert.rwd-rendering.html %}
 
 <div class="docs__rwd-demo-block">
-  <p>
+  <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html" target="_blank" title="View in a New Window">New Window</a>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html" target="_blank">View in new window</a>
-  </p>
-  <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_content-tabs">
       <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>

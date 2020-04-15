@@ -83,7 +83,7 @@ Should the Web Fonts, Source Sans Pro or Merriweather, fail to load for any reas
 
 ## Usage
 
-The font system being used allows for various pairings of fonts that are contemporary and are optimized for readability. When used properly, the Design System will automatically choose a consistent (and correct) font for all elements within the web page. Developers need not explicitly specify the font for any web element. All approved fonts are contained within the custom CSS framework (fsa-style) and should be applied using the appropriate classes. Developers shall not augment or change fonts within the Design System for use within FPAC Applications.
+The font system being used allows for various pairings of fonts that are contemporary and are optimized for readability. When used properly, the Design System will automatically choose a consistent (and correct) font for all elements within the web page. Developers need not explicitly specify the font for any web element. All approved fonts are contained within the custom CSS framework (`fsa-style`) and should be applied using the appropriate classes. Developers shall not augment or change fonts within the Design System for use within FPAC Applications.
 
 ## Related Resources
 

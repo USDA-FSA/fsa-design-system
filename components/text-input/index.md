@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Text Input"
+shortName: "component__text-input"
 intro: "Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted)."
 jump_menu: true
 ---

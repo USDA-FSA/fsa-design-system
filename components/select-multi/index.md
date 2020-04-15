@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Select Multi"
+shortName: "component__select-multi"
 intro: "The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All."
 jump_menu: true
 title_label: 'May require JavaScript'

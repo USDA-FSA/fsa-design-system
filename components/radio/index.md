@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Radio"
+shortName: "component__radio"
 intro: "Radio buttons allow users to see all available choices at once and select exactly one option."
 jump_menu: true
 ---
@@ -237,6 +238,106 @@ Radio states are styled not by a `class`, but depending on their state (primaril
   </ul>
   <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>
 </div>
+```
+
+
+### Solo Example within a [Table]({{ site.baseurl }}components/tables/)
+
+<div class="ds-preview">
+  <table class="fsa-table">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
+    <thead>
+      <tr>
+        <th class="fsa-table__th--sticky fsa-table__th--select">
+          <span>
+            <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--00" type="radio" name="commodities__select-row" value="01" disabled>
+            <label for="commodities__select-row--00"><span class="sr-only">Select this row</span></label>
+          </span>
+        </th>
+        <th scope="col">Commodity</th>
+        <th scope="col" class="fsa-text-align--right">Loan Rate</th>
+        <th scope="col" class="fsa-text-align--right">30-Day Period PCP</th>
+        <th scope="col" class="fsa-text-align--right">Alternative PCP</th>
+        <th scope="col" class="fsa-text-align--right">Effective LDP Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td aria-label="Select">
+          <span>
+            <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--01" type="radio" name="commodities__select-row" value="01">
+            <label for="commodities__select-row--01"><span class="sr-only">Select this row</span></label>
+          </span>
+        </td>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr class="fsa-table__row--selected">
+        <td aria-label="Select">
+          <span>
+            <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--02" type="radio" name="commodities__select-row" value="02" checked>
+            <label for="commodities__select-row--02"><span class="sr-only">Select this row</span></label>
+          </span>
+        </td>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.99</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```html
+<table class="fsa-table">
+  <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
+  <thead>
+    <tr>
+      <th class="fsa-table__th--sticky fsa-table__th--select">
+        <span>
+          <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--00" type="radio" name="commodities__select-row" value="01" disabled>
+          <label for="commodities__select-row--00"><span class="sr-only">Select this row</span></label>
+        </span>
+      </th>
+      <th scope="col">Commodity</th>
+      <th scope="col" class="fsa-text-align--right">Loan Rate</th>
+      <th scope="col" class="fsa-text-align--right">30-Day Period PCP</th>
+      <th scope="col" class="fsa-text-align--right">Alternative PCP</th>
+      <th scope="col" class="fsa-text-align--right">Effective LDP Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td aria-label="Select">
+        <span>
+          <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--01" type="radio" name="commodities__select-row" value="01">
+          <label for="commodities__select-row--01"><span class="sr-only">Select this row</span></label>
+        </span>
+      </td>
+      <td>Barley $/Bushel</td>
+      <td class="fsa-text-align--right">1.75</td>
+      <td class="fsa-text-align--right">3.30</td>
+      <td class="fsa-text-align--right">2.60</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+    <tr class="fsa-table__row--selected">
+      <td aria-label="Select">
+        <span>
+          <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--02" type="radio" name="commodities__select-row" value="02" checked>
+          <label for="commodities__select-row--02"><span class="sr-only">Select this row</span></label>
+        </span>
+      </td>
+      <td>Canola $/Cwt.</td>
+      <td class="fsa-text-align--right">8.94</td>
+      <td class="fsa-text-align--right">15.99</td>
+      <td class="fsa-text-align--right">15.89</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+  </tbody>
+</table>
 ```
 
 ## Usage

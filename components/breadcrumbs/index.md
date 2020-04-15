@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Breadcrumbs"
+shortName: "component__breadcrumbs"
 intro: "Breadcrumbs are a secondary navigation element used to help orient a User within an application, and enable quick access to a parent level."
 jump_menu: true
 ---
@@ -70,7 +71,7 @@ In this example, the last crumb is indeed the current page - though with an alte
         <li class="fsa-breadcrumb__item">
           <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
         </li>
-        <li class="fsa-breadcrumb__item" aria-current="page">
+        <li class="fsa-breadcrumb__item" aria-current="step">
           <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
         </li>
       </ol>
@@ -91,7 +92,7 @@ In this example, the last crumb is indeed the current page - though with an alte
       <li class="fsa-breadcrumb__item">
         <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
       </li>
-      <li class="fsa-breadcrumb__item" aria-current="page">
+      <li class="fsa-breadcrumb__item" aria-current="step">
         <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
       </li>
     </ol>
@@ -154,6 +155,34 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 </div>
 <h1>Kansas City Royals</h1>
 ```
+
+## Single Item Variation
+
+<div class="ds-preview">
+  <div class="fsa-breadcrumb">
+    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+      <ol class="fsa-breadcrumb__list">
+        <li class="fsa-breadcrumb__item">
+          <a href="/" class="fsa-breadcrumb__link">Home</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <h1>Sports</h1>
+</div>
+```html
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="/" class="fsa-breadcrumb__link">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<h1>Sports</h1>
+```
+
 
 ## Usage
 

@@ -2,6 +2,7 @@
 layout: page
 parent: "Components"
 title: "Modal"
+shortName: "component__modal"
 intro: "Use a Modal to gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state."
 jump_menu: true
 title_label: 'Requires JavaScript'
@@ -181,16 +182,14 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 {% include alert.rwd-rendering.html %}
 
 <div class="docs__rwd-demo-block">
-  <p>
+  <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_modal" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="Portrait" aria-selected="true">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_modal" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_modal" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
       <button data-behavior="toggle-rwd-size" data-target="rwd-demo_modal" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__modal.html" target="_blank" title="View in a New Window">New Window</a>
     </span>
-    <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__modal.html" target="_blank">View in new window</a>
-  </p>
-  <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_modal">
       <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__modal.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
@@ -207,7 +206,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 
 ### Don't Use
 
-* When its content content or features can be part of the page without complicating the page's intent.
+* When its content or features can be part of the page without complicating the page's intent.
 * When the content or message requires interaction with other parts of the application or screen.
 * When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
 * Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).

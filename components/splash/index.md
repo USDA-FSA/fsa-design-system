@@ -2,10 +2,12 @@
 layout: page
 parent: "Components"
 title: "Splash"
-intro: "Momentarily display a launch screen while an application loading."
+intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true
 suppress_code_toggle: true
 ---
+
+The intention of a Splash screen is to provide a good first imporession of an application. By providing a visual cue that progress is being made to load the various technologies required to run the application, trust and understanding is gained by the User, creating a better experience.
 
 ## Variations
 
@@ -75,11 +77,26 @@ suppress_code_toggle: true
 
 ## Usage
 
-<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
-  <div class="fsa-alert__body">
-    <p class="fsa-alert__text">Documentation in progress.</p>
-  </div>
-</div>
+### Use When
+
+* The application is initially loading data and the interface is not ready for User interactions.
+* An application is between pages (Routes) within an SPA and the interface won't be ready to display content for a number of seconds.
+
+### Don't Use
+
+* To display loading of individual interface elements while a User has the capability to review or interact with infromation on the screen.
+* In place of [Progress]({{ site.baseurl }}components/progress/) components.
+* The Splash screen to add superfluous or additional information or animation.
+
+## General Guidance
+
+* Take into consideration the resources that are loading in the background, device, and network connectivity of the User.
+* A Splash screen should be used when a longer asynchronous process within an application is running, and the User must not interact with the application.
+* A [Progress]({{ site.baseurl }}components/progress/) component should be used in the majority of cases during the loading of data, to allow for other areas of the application screen to be reviewed.
+
+## Accessibility
+
+* Note the use of the `aria-live="polite"` attribute, which will alert the User with assistive technologies when they are not performing actions.
 
 ## Related Resources
 

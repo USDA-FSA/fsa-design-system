@@ -6,9 +6,13 @@ intro: "List system and user activity chronologically."
 jump_menu: true
 ---
 
-`fsa-timeline`'s structure enables flexible usage of other Design System components. For example, the featured demo below makes sample use of [Labels]({{ site.baseurl }}components/labels/), [Badge]({{ site.baseurl }}components/badges/), [Buttons]({{ site.baseurl }}components/buttons/), [Text Links]({{ site.baseurl }}components/links/), and several [CSS Utilities]({{ site.baseurl }}utilities/).
+The purpose of a Timeline is to show the User a series of actions that have been taken over a period of time. It is a way to chronicle the who, what, when, where, and how of a process, and the `fsa-timeline` component allows for additional features for the User as well. As seen below, variations of the component actions allow the Developer to provide a way to create, update, and delete various actions within the timeline.
 
-<div class="ds-preview ds-preview--default-bg">
+The `fsa-timeline` component's structure enables flexible usage of other Design System components. For example, the featured demo below makes sample use of [Labels]({{ site.baseurl }}components/labels/), [Badge]({{ site.baseurl }}components/badges/), [Buttons]({{ site.baseurl }}components/buttons/), [Text Links]({{ site.baseurl }}components/links/), and several [CSS Utilities]({{ site.baseurl }}utilities/).
+
+## Example
+
+<div class="ds-preview">
   <div class="fsa-timeline">
     <div class="fsa-timeline__item fsa-timeline__item--system">
       <div class="fsa-timeline__hd">
@@ -187,8 +191,12 @@ jump_menu: true
 
 ## Variations
 
+Timelines are styled with `class="fsa-timeline"` on the external `<div>` and `class="fsa-timeline__item [fsa-timeline__item--[variation]"` on internal `<div>`.
+
+System nodes are styled with `class="fsa-timeline__item--system"`
+
 ### System
-<div class="ds-preview ds-preview--default-bg">
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--system">
     <div class="fsa-timeline__hd">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -204,7 +212,10 @@ jump_menu: true
 ```
 
 ### User
-<div class="ds-preview ds-preview--default-bg">
+
+User nodes are styled with `class="fsa-timeline__item--user"`
+
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--user">
     <div class="fsa-timeline__hd">
       <strong><a href="link.html">Jane Doe</a></strong> commented on
@@ -230,7 +241,10 @@ jump_menu: true
 ```
 
 ### Edit comment
-<div class="ds-preview ds-preview--default-bg">
+
+Editing nodes are styled with `class="fsa-timeline__item--editing"`
+
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--user fsa-timeline__item--editing">
     <div class="fsa-timeline__hd">
       <label class="fsa-field__label" for="inspectionCommentEditSample--56w6w440"><strong>Jane</strong> is updating comment:</label>
@@ -260,7 +274,10 @@ jump_menu: true
 ```
 
 ### Add a comment
-<div class="ds-preview ds-preview--default-bg">
+
+Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
+
+<div class="ds-preview">
   <div class="fsa-timeline__item fsa-timeline__item--add-comment">
     <div class="fsa-timeline__hd">
       <label class="fsa-field__label" for="inspectionCommentField--669"><strong>Todd Stanley</strong> comments:</label>
@@ -289,8 +306,37 @@ jump_menu: true
 
 ## Usage
 
-<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
-  <div class="fsa-alert__body">
-    <p class="fsa-alert__text">Documentation in progress.</p>
-  </div>
-</div>
+### Use When
+
+* The application requires providing the User a vertically oriented timeline of events.
+
+* The application requires the ability to create, edit, and delete sequential actions mapped out visually.
+
+### Don't Use
+
+* As an alternative to a bulleted list of text or data.
+* Multiple timelines that are positioned adjacent to each other.
+
+## Accessibility
+
+Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
+
+
+## General Guidance
+
+* The use of a Timeline component within an application will provide a highly visual method to organize system and User events.
+
+* The Timeline component is specialized and should only be used for showing actions and documenting over a period of time.
+
+* When adding a Timestamp to the component, always use the `datetime="2015-05-28T09:02:10.517-05:00"` UTC format.
+
+* While the individual variants are intended to be used within a Timeline component to show individual actions or events, a single variant can be used alone.
+
+
+## Related Resources
+
+* [Badges]({{ site.baseurl }}components/badges/)
+* [Buttons]({{ site.baseurl }}components/buttons/)
+* [CSS Utilities]({{ site.baseurl }}utilities/)
+* [Labels]({{ site.baseurl }}components/labels/)
+* [Text Links]({{ site.baseurl }}components/links/)

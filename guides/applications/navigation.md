@@ -2,24 +2,28 @@
 layout: guide
 parent: "Applications"
 title: "Navigation"
-intro: "FPAC applications shall utilize a global navigation system that complies with the below specifications."
+intro: "FPAC Applications should have cohesive implementation of a global navigation."
 
 ---
 
-## Global Navigation
+* The first navigational item shall direct to the applications entry experience, e.g. Home, Dashboard, etc.
+* Target fewer than 6 navigation categories
+* Navigation dropdowns, sub-lists, or sub-navigation may be available
+* Third-level deep navigation should be avoided
 
-Based on new standards in web design, all FPAC applications should include a "Mega Menu" format paired with a global navigation system that flows from left to right on the application screen. The global navigation should be distinguishable and shall be positioned in a horizontal bar just below the header of the application. Navigation systems located in a left-side or right-side panel shall not be used for FPAC applications.
+The below demonstrates a responsive implementation of a header with Design System components [Tophat]({{ site.baseurl }}components/tophat/), [Application Header]({{ site.baseurl }}components/header-app/), and [Globabl Nav]({{ site.baseurl }}components/top-nav/).
 
-## Navigation Rules
-
-  * A "Home" link shall be available, left justified and as the first option in the global navigation
-  * No more than 6 additional navigation categories shall be used in the global navigation
-  * Navigation dropdowns or sub-lists shall only contain 2 - 9 sub-navigation options
-  * If only 1 navigation is used, it shall link directly to the page or content and not contain a dropdown or sub-navigation
-  * Tertiary navigation shall not be used in FPAC applications due to accessibility concerns.
-
-Below is a sample screenshot of an FPAC application with a multi-column Mega Menu navigation system. This combines [Top Hat]({{ site.baseurl }}fsa-design-system/components/tophat/), [Application Header]({{ site.baseurl }}fsa-design-system/components/header-app/), and [Global Navigation]({{ site.baseurl }}fsa-design-system/components/top-nav/) components - each of which have further variations and examples.
-
-<figure>
-  <a href="{{ site.baseurl }}img/subcategories/applications/mega-menu.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/mega-menu.png" alt="example FPAC application header"></a>
-</figure>
+<div class="docs__rwd-demo-block">
+  <div class="docs__rwd-embed-container">
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="phone" class="fsa-btn-group__item" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="tablet" class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="https://usda-fsa.github.io/fsa-style/boilerplate.html" target="_blank" title="View in a New Window">New Window</a>
+    </span>
+    <div class="docs__rwd-embed docs__rwd-embed--tablet" id="rwd-demo_buttons">
+      <iframe src="https://usda-fsa.github.io/fsa-style/boilerplate.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
