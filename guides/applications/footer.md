@@ -91,12 +91,11 @@ Below is the list of recommended links that may be used on implementations of th
             <td aria-label="URL" scope="row">[Application About Page URL]</td>
             <td aria-label="Application Specific"><span class="fsa-sr-only">No</span></td>
         </tr>
-
         <tr>
             <td aria-label="Category" scope="row">Program Information</td>
             <td aria-label="Label" scope="row">[Application Name] Handbook</td>
             <td aria-label="URL" scope="row">[Application Specific Handbook URL]</td>
-            <td><strong aria-label="yes">&times;</strong></td>
+            <td aria-label="Application Specific"><strong title="Yes" aria-label="yes">&times;</strong></td>
         </tr>
         <tr>
             <td aria-label="Category" scope="row">Agency Guidelines</td>
@@ -104,12 +103,11 @@ Below is the list of recommended links that may be used on implementations of th
             <td aria-label="URL" scope="row">http://fsaintranet.sc.egov.usda.gov/fsa/FSAIntranet_newsroom.html</td>
             <td aria-label="Application Specific"><span class="fsa-sr-only">No</span></td>
         </tr>
-
         <tr>
             <td aria-label="Category" scope="row">Agency Guidelines</td>
             <td aria-label="Label" scope="row">Handbooks</td>
             <td aria-label="URL" scope="row">http://fsaintranet.sc.egov.usda.gov/dam/handbooks/handbooks.asp</td>
-            <td><strong aria-label="yes">&times;</strong></td>
+            <td aria-label="Application Specific"><strong title="Yes" aria-label="yes">&times;</strong></td>
         </tr>
         <tr>
             <td aria-label="Category" scope="row">Agency Guidelines</td>
@@ -151,7 +149,7 @@ Below is the list of recommended links that may be used on implementations of th
             <td aria-label="Category" scope="row">Global</td>
             <td aria-label="Label" scope="row">[Phone Number]</td>
             <td aria-label="URL" scope="row">tel:[Phone Number]</td>
-            <td><strong aria-label="yes">&times;</strong></td>
+            <td aria-label="Application Specific"><strong title="Yes" aria-label="yes">&times;</strong></td>
         </tr>
         <tr>
             <td aria-label="Category" scope="row">Global</td>

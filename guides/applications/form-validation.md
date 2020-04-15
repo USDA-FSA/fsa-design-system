@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Form Validation"
-intro: "Validation and error messaging is an integral part of any Application and efficient workflow for a User. The below guidelines shall be followed."
+intro: "Validation and error messaging is an integral part of any Application and efficient workflow for a User. The below guidelines should be followed."
 
 ---
 

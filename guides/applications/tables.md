@@ -8,7 +8,7 @@ intro: "FPAC applications that require data to be displayed in a tabular format 
 
 ## Tables Guidelines
 
-The Design System uses 3 different types of design style for tabular data, with the intention of being flexible enough to compartmentablize the data without having too much visual noise and weight on the screen. Below you will find the various types of tables that can be used, and an explanation of when to use the specific styles.
+The Design System uses 3 different types of design style for tabular data, with the intention of being flexible enough to compartmentalize the data without having too much visual noise and weight on the screen. Below you will find the various types of tables that can be used, and an explanation of when to use the specific styles.
 
 When using the custom CSS classes provided within the Design System, the structure of the table will shift based on the size of the content within the cell. The horizontal spacing of the largest text string or element will determine the width of each column. A Developer shall not hardcode the width or height of the table or table cells.
 
