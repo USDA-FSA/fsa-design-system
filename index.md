@@ -57,7 +57,7 @@ title: Home
 
   const search = {
 
-    url: 'sitemap/index.html',
+    url: 'http://usda-fsa.github.io/fsa-design-system/sitemap/',
     searchArray: [],
 
     getSource: function( callback ){
@@ -68,6 +68,8 @@ title: Home
         }
         xhr.open( 'GET', this.url, true);
         xhr.send();
+      } else {
+        console.log('no xhr')
       }
     },
 
