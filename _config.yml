@@ -20,7 +20,7 @@ twitter_username: francisrupert
 github_username:  usda-fsa
 permalink: none
 github_repository_url: https://github.com/USDA-FSA/fsa-design-system
-fsa-style_version: 2.4.2
+fsa-style_version: 2.5.0
 
 # Site key assets
 stylesheets:

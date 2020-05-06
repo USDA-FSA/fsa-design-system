@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Footer"
-intro: "The Global Footer Component shall be used across all FPAC applications with standard links along with application specific links."
+intro: "This Global Footer Component may be used for FPAC products with standard links along with application specific links."
 jump_menu: true
 ---
 

@@ -1,11 +1,19 @@
 ---
 layout: page
 parent: "Visual Style"
-title: "Grid and Layout"
+title: "Layout"
 intro: "A 12-column, responsive <strong>Grid System</strong> provides structure for web site and app content."
 jump_menu: true
 suppress_code_toggle: true
 ---
+
+<div class="fsa-alert fsa-alert--info" role="alert">
+  <div class="fsa-alert__body">
+    <h3 class="fsa-alert__heading">New Layout components available</h3>
+    <p class="fsa-alert__text"><code>fsa-style@2.5.0</code> features new <strong>Layout</strong> components. While they are not yet documented, they are available for immediate use.</p>
+    <p class="fsa-alert__text"><a href="http://usda-fsa.github.io/fsa-style/">View Layout components on the Design System's Kitchen Sink</a>.</p>
+  </div>
+</div>
 
 Easily distribute and align content and components with a simple series of containers and columns. As a flexible mobile-first (aka Responsive Web Design) grid system, content can respond to the complete range of viewport widths. For example, it could be 2 columns on a phone while being 4 columns on a desktop.
 
