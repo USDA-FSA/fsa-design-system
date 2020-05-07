@@ -41,6 +41,21 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 <span class="fsa-label">Default Label</span>
 ```
 
+### Dismissable
+
+<div class="ds-preview">
+  <span class="fsa-label fsa-label--dismissable">
+    Label
+    <button class="fsa-label__remove" aria-label="Remove" title="Remove"></button>
+  </span>
+</div>
+```html
+  <span class="fsa-label fsa-label--dismissable">
+    Label
+    <button class="fsa-label__remove" aria-label="Remove" title="Remove"></button>
+  </span>
+```
+
 ### Neutral
 
 <div class="ds-preview">
