@@ -2,9 +2,10 @@
 layout: guide
 parent: "Applications"
 title: "Footer"
-intro: "FPAC applications may utilize the Design System's Footer component. The links in the below table are suggested for all applications. Additional links specific to individual applications may be appended in the appropriate category column."
-
+intro: "FPAC applications may utilize the Design System's Footer component."
 ---
+
+Customized structures, content, and links from your app's footer may be created per your product's requirements.
 
 ## Footer Guidelines
 
@@ -73,7 +74,7 @@ The footer has 4 columns:
 
 ## Footer Links
 
-Below is the list of recommended links that may be used on implementations of the [Design System's Footer component]({{ site.baseurl }}components/footer). Based on the specific application and the Users, some of the below links will not be necessary or applicable.
+Below is the list of recommended links that may be used on implementations of the [Design System's Footer component]({{ site.baseurl }}components/footer). Based on the specific application and the Users, some of the below links may not be necessary or applicable.
 
 <table class="fsa-table fsa-table--responsive">
     <thead>

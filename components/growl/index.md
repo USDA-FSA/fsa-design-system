@@ -71,7 +71,7 @@ custom_js: "growl-init-demo.js"
       <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
     </div>
     <div class="fsa-growl__bd">
-      <p>Would you like to see a <strong>Modal-based example</strong>?</p>
+      <p>Would you like to see a <strong>Modal-based example</strong>, aka "Prompt"?</p>
       <p>
         <button data-behavior="growl-dismiss growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Yes</button>
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">No</button>
