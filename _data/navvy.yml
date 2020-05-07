@@ -198,7 +198,7 @@
           subhref: "components/screen-id"
           img: "img/subcategories/screen-id.png"
 
-- title: "Grid and Layout"
+- title: "Layout"
   href: "grid-and-layout"
 
 - title: "Utilities"

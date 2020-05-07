@@ -12,7 +12,7 @@ jump_menu: true
       <div class="fsa-header-app__primary">
         <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
           <span class="fsa-header-app__app-name">
-            <abbr class="fsa-header-app__app-abbr" title="[Spell out the acronym]">[abbr]</abbr>
+            <abbr class="fsa-header-app__app-abbr">[abbr]</abbr>
             <span class="fsa-header-app__app-full">[app name]</span>
           </span>
         </a>
@@ -32,7 +32,7 @@ jump_menu: true
     <div class="fsa-header-app__primary">
       <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
         <span class="fsa-header-app__app-name">
-          <abbr class="fsa-header-app__app-abbr" title="[Spell out the acronym]">[abbr]</abbr>
+          <abbr class="fsa-header-app__app-abbr">[abbr]</abbr>
           <span class="fsa-header-app__app-full">[app name]</span>
         </span>
       </a>
@@ -43,6 +43,134 @@ jump_menu: true
           <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
         </span>
       </div>
+  </div>
+</div>
+```
+
+## Examples
+
+### Default
+
+<div class="ds-preview">
+  <div class="fsa-header-app">
+    <div class="fsa-header-app__bd">
+      <div class="fsa-header-app__primary">
+        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+          <span class="fsa-header-app__app-name">
+            <abbr class="fsa-header-app__app-abbr">SPAR</abbr>
+            <span class="fsa-header-app__app-full">SPA Reference App</span>
+          </span>
+        </a>
+      </div>
+      <div class="fsa-header-app__secondary">
+        <span class="fsa-header-app__profile">
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-header-app">
+  <div class="fsa-header-app__bd">
+    <div class="fsa-header-app__primary">
+      <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+        <span class="fsa-header-app__app-name">
+          <abbr class="fsa-header-app__app-abbr">SPAR</abbr>
+          <span class="fsa-header-app__app-full">SPA Reference App</span>
+        </span>
+      </a>
+    </div>
+    <div class="fsa-header-app__secondary">
+      <span class="fsa-header-app__profile">
+        <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+        <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+      </span>
+    </div>
+  </div>
+</div>
+```
+
+### No acronym
+
+<div class="ds-preview">
+  <div class="fsa-header-app">
+    <div class="fsa-header-app__bd">
+      <div class="fsa-header-app__primary">
+        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+          <span class="fsa-header-app__app-name">
+            <span class="fsa-header-app__app-full">Design System Boilerplate</span>
+          </span>
+        </a>
+      </div>
+      <div class="fsa-header-app__secondary">
+        <span class="fsa-header-app__profile">
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-header-app">
+  <div class="fsa-header-app__bd">
+    <div class="fsa-header-app__primary">
+      <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+        <span class="fsa-header-app__app-name">
+          <span class="fsa-header-app__app-full">Design System Boilerplate</span>
+        </span>
+      </a>
+    </div>
+    <div class="fsa-header-app__secondary">
+      <span class="fsa-header-app__profile">
+        <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+        <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+      </span>
+    </div>
+  </div>
+</div>
+```
+
+
+### Acronym only
+
+<div class="ds-preview">
+  <div class="fsa-header-app">
+    <div class="fsa-header-app__bd">
+      <div class="fsa-header-app__primary">
+        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+          <span class="fsa-header-app__app-name">
+            <abbr class="fsa-header-app__app-abbr">ABC</abbr>
+          </span>
+        </a>
+      </div>
+      <div class="fsa-header-app__secondary">
+        <span class="fsa-header-app__profile">
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-header-app">
+  <div class="fsa-header-app__bd">
+    <div class="fsa-header-app__primary">
+      <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+        <span class="fsa-header-app__app-name">
+          <abbr class="fsa-header-app__app-abbr">ABC</abbr>
+        </span>
+      </a>
+    </div>
+    <div class="fsa-header-app__secondary">
+      <span class="fsa-header-app__profile">
+        <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+        <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+      </span>
+    </div>
   </div>
 </div>
 ```

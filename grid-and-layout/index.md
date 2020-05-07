@@ -1,11 +1,19 @@
 ---
 layout: page
 parent: "Visual Style"
-title: "Grid and Layout"
+title: "Layout"
 intro: "A 12-column, responsive <strong>Grid System</strong> provides structure for web site and app content."
 jump_menu: true
 suppress_code_toggle: true
 ---
+
+<div class="fsa-alert fsa-alert--info" role="alert">
+  <div class="fsa-alert__body">
+    <h3 class="fsa-alert__heading">New Layout components available</h3>
+    <p class="fsa-alert__text"><code>fsa-style@2.5.0</code> features new <strong>Layout</strong> components. While they are not yet documented, they are available for immediate use.</p>
+    <p class="fsa-alert__text"><a href="http://usda-fsa.github.io/fsa-style/">View Layout components on the Design System's Kitchen Sink</a>.</p>
+  </div>
+</div>
 
 Easily distribute and align content and components with a simple series of containers and columns. As a flexible mobile-first (aka Responsive Web Design) grid system, content can respond to the complete range of viewport widths. For example, it could be 2 columns on a phone while being 4 columns on a desktop.
 
@@ -144,7 +152,7 @@ Each grid column's proportional width is assigned via `fsa-grid__[width]`. For e
 
 ## Grid Column Sizes
 
-Available column proportions are identified via the <code>fsa-grid__<strong>[proportion]</strong></code> selector, where `[proportion]` is one of the values below..
+Available column proportions are identified via the <code>fsa-grid__<strong>[proportion]</strong></code> selector, where `[proportion]` is one of the values below.
 
 <div class="docs__grid-inventory">
   <div class="fsa-grid docs__grid-inventory-item">
@@ -258,7 +266,7 @@ Available column proportions are identified via the <code>fsa-grid__<strong>[pro
 
 Responsive Web Design, originally defined by <a href="http://alistapart.com/article/responsive-web-design/">Ethan Marcotte in A List Apart</a>, **responds to the needs of the users and the devices they're using**. Layout can change based on the size and capabilities of the device. For example, a phone may render content in a single column view, while screens wider than a tablet could then distribute the same content into multiple columns.
 
-Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via <code>fsa-grid__<strong>[proportion]</strong>@<strong>[breakpoint]</strong></code>.
+Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via <code>fsa-grid__<strong>[proportion]</strong>@<strong>[breakpoint]</strong></code> where `[proportion]` is [one of the values documented above](#grid-column-sizes) and `[breakpoint]` is one of `s`, `m`, `l`, or `xl`.
 
 In the below example, each column begins as full-width (<code>fsa-grid__<strong>1/1</strong></code>) by default, and adjusts to 50% (<code>fsa-grid__<strong>1/2</strong>@<strong>m</strong></code>) when the viewport is wider than the `m` breakpoint.
 
