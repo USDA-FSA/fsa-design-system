@@ -1821,7 +1821,8 @@ html body template {
     vertical-align: top;
     text-rendering: auto;
     padding-left: 2.55rem;
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-grid--no-gutter .fsa-grid__grow\@xl, .fsa-grid--no-gutter
   .fsa-grid__auto\@xl {
@@ -1836,7 +1837,8 @@ html body template {
     vertical-align: top;
     text-rendering: auto;
     padding-left: 2.55rem;
-    flex: 0;
+    -ms-flex: 0;
+        flex: 0;
   }
   .fsa-grid--no-gutter .fsa-grid__shrink\@xl {
     padding-left: 0;
@@ -2173,6 +2175,7 @@ p + ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1em;
 }
@@ -2181,6 +2184,7 @@ p + ol {
   display: list-item;
   margin: 0;
   padding: 0;
+  margin-right: 8px;
   margin-right: 0.8rem;
 }
 
@@ -2572,6 +2576,7 @@ img {
   color: #2f2c2a;
   line-height: 1;
   background-color: #fff;
+  padding: 7px 8px 8px;
   padding: 0.7rem 0.8rem 0.8rem;
 }
 
@@ -2633,14 +2638,19 @@ img {
 
 .fsa-input--small,
 .fsa-textarea--small {
+  height: 30px;
   height: 3rem;
+  font-size: 14px;
   font-size: 1.4rem;
 }
 
 .fsa-input--medium,
 .fsa-textarea--medium {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
+  height: 39px;
   height: 3.9rem;
   border: 1px solid #c8c7c6;
   max-width: 100%;
@@ -2648,10 +2658,12 @@ img {
   border-radius: 0;
   box-shadow: none;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 17px;
   font-size: 1.7rem;
   color: #2f2c2a;
   line-height: 1;
   background-color: #fff;
+  padding: 7px 8px 8px;
   padding: 0.7rem 0.8rem 0.8rem;
 }
 
@@ -2665,11 +2677,13 @@ img {
 .fsa-textarea--medium + .fsa-btn-group,
 .fsa-textarea--medium + span.fsa-spinbox,
 .fsa-textarea--medium + .fsa-btn {
+  margin-left: 6px;
   margin-left: 0.6rem;
 }
 
 .fsa-input--medium + .fsa-btn--flat,
 .fsa-textarea--medium + .fsa-btn--flat {
+  margin-left: 12px;
   margin-left: 1.2rem;
 }
 
@@ -2713,8 +2727,11 @@ img {
 
 .fsa-input--large,
 .fsa-textarea--large {
+  height: 48px;
   height: 4.8rem;
+  font-size: 20px;
   font-size: 2rem;
+  padding-left: 12px;
   padding-left: 1.2rem;
 }
 
@@ -2738,7 +2755,9 @@ img {
   }
   .fsa-input--medium\@s,
   .fsa-textarea--medium\@s {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -2826,7 +2845,9 @@ img {
   }
   .fsa-input--medium\@m,
   .fsa-textarea--medium\@m {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -2914,7 +2935,9 @@ img {
   }
   .fsa-input--medium\@l,
   .fsa-textarea--medium\@l {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -3002,7 +3025,9 @@ img {
   }
   .fsa-input--medium\@xl,
   .fsa-textarea--medium\@xl {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -3320,7 +3345,9 @@ img {
 }
 
 [type=file]::-webkit-file-upload-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  font-size: 13px;
   font-size: 1.3rem;
   background-color: #fff;
   border: 0;
@@ -3350,6 +3377,7 @@ img {
 }
 
 .fsa-form-list > * > .fsa-form-list {
+  margin-left: 24px;
   margin-left: 2.4rem;
 }
 
@@ -3722,8 +3750,11 @@ img {
 }
 
 .fsa-select--small {
+  height: 30px;
   height: 3rem;
+  padding-top: 4px;
   padding-top: 0.4rem;
+  font-size: 14px;
   font-size: 1.4rem;
 }
 
@@ -3746,8 +3777,11 @@ img {
 }
 
 .fsa-select--medium {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
+  height: 39px;
   height: 3.9rem;
   border: 1px solid #c8c7c6;
   max-width: 100%;
@@ -3755,18 +3789,22 @@ img {
   border-radius: 0;
   box-shadow: none;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 17px;
   font-size: 1.7rem;
   color: #2f2c2a;
   line-height: 1;
   background-color: #fff;
   background-image: url("../img/arrow-down.svg");
+  background-position: right 13px center;
   background-position: right 1.3rem center;
   background-repeat: no-repeat;
   background-size: 1.3rem;
+  padding: 6px 32px 7px 8px;
   padding: 0.6rem 3.2rem 0.7rem 0.8rem;
   text-overflow: ellipsis;
   vertical-align: middle;
   position: relative;
+  top: -1px;
   top: -.1rem;
 }
 
@@ -3775,10 +3813,12 @@ img {
 .fsa-select--medium + .fsa-btn-group,
 .fsa-select--medium + span.fsa-spinbox,
 .fsa-select--medium + .fsa-btn {
+  margin-left: 6px;
   margin-left: 0.6rem;
 }
 
 .fsa-select--medium + .fsa-btn--flat {
+  margin-left: 12px;
   margin-left: 1.2rem;
 }
 
@@ -3820,8 +3860,11 @@ img {
 }
 
 .fsa-select--large {
+  height: 48px;
   height: 4.8rem;
+  font-size: 20px;
   font-size: 2rem;
+  top: -3px;
   top: -.3rem;
 }
 
@@ -3866,7 +3909,9 @@ img {
 
 @media (min-width: 30.0625em) {
   .fsa-select--medium\@s {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -3979,7 +4024,9 @@ img {
 
 @media (min-width: 37.5em) {
   .fsa-select--medium\@m {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -4092,7 +4139,9 @@ img {
 
 @media (min-width: 54em) {
   .fsa-select--medium\@l {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -4205,7 +4254,9 @@ img {
 
 @media (min-width: 78.75em) {
   .fsa-select--medium\@xl {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline-block;
     height: 3.9rem;
     border: 1px solid #c8c7c6;
@@ -4337,6 +4388,7 @@ img {
 }
 
 .fsa-select[multiple] option {
+  padding: 4px 8px;
   padding: 0.4rem 0.8rem;
 }
 
@@ -4346,6 +4398,7 @@ img {
 }
 
 .fsa-select__other {
+  margin-top: 4px;
   margin-top: 0.4rem;
 }
 
@@ -4708,9 +4761,12 @@ button .fsa-label {
 }
 
 .fsa-label--extra-large {
+  font-size: 20px;
   font-size: 2rem;
   line-height: 1.3;
+  padding-left: 6.75px;
   padding-left: 0.675rem;
+  padding-right: 6.75px;
   padding-right: 0.675rem;
   letter-spacing: initial;
 }
@@ -4722,7 +4778,9 @@ button .fsa-label {
 
 .fsa-label__remove {
   text-align: left;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
   padding: 0;
   border: 0;
@@ -4730,7 +4788,10 @@ button .fsa-label {
   font: inherit;
   line-height: inherit;
   cursor: pointer;
-  user-select: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   width: 1.33em;
   position: absolute;
   top: 0;
@@ -4860,6 +4921,7 @@ button .fsa-badge {
 }
 
 .fsa-badge--extra-large {
+  font-size: 20px;
   font-size: 2rem;
   line-height: 1.3;
   min-width: 36px;
@@ -4889,8 +4951,10 @@ a.fsa-badge:active {
 }
 
 .fsa-level {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .fsa-level--selected, .fsa-level--selected:focus, .fsa-level--selected:visited, .fsa-level--selected:hover {
@@ -4901,41 +4965,52 @@ a.fsa-badge:active {
 
 @media (min-width: 30.0625em) {
   .fsa-level\@s {
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 
 @media (min-width: 37.5em) {
   .fsa-level\@m {
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 
 @media (min-width: 54em) {
   .fsa-level\@l {
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 
 @media (min-width: 78.75em) {
   .fsa-level\@xl {
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 
 .fsa-level > :not(:last-child) {
+  margin-right: 12px;
   margin-right: 1.2rem;
 }
 
 .fsa-level--full {
+  display: -ms-flexbox;
   display: flex;
 }
 
 .fsa-level--inline {
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -4944,86 +5019,107 @@ a.fsa-badge:active {
 }
 
 .fsa-level--no-wrap {
-  flex-wrap: initial;
+  -ms-flex-wrap: initial;
+      flex-wrap: initial;
 }
 
 .fsa-level--wrap {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .fsa-level--align-top {
-  align-items: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .fsa-level--align-middle {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .fsa-level--align-baseline {
-  align-items: baseline;
+  -ms-flex-align: baseline;
+      align-items: baseline;
 }
 
 .fsa-level--align-bottom {
-  align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
 }
 
 .fsa-level--align-stretch {
-  align-items: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .fsa-level--justify-left {
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
 .fsa-level--justify-right {
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .fsa-level--justify-center {
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .fsa-level--justify-between {
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .fsa-level--justify-around {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .fsa-level--grow-auto > * {
-  flex: auto;
+  -ms-flex: auto;
+      flex: auto;
 }
 
 .fsa-level--grow-even > * {
-  flex: 1;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .fsa-level--grow-none > * {
-  flex-grow: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
 }
 
 .fsa-level--gutter-xxs > :not(:last-child) {
+  margin-right: 4px;
   margin-right: 0.4rem;
 }
 
 .fsa-level--gutter-xs > :not(:last-child) {
+  margin-right: 8px;
   margin-right: 0.8rem;
 }
 
 .fsa-level--gutter-s > :not(:last-child) {
+  margin-right: 12px;
   margin-right: 1.2rem;
 }
 
 .fsa-level--gutter-m > :not(:last-child) {
+  margin-right: 24px;
   margin-right: 2.4rem;
 }
 
 .fsa-level--gutter-l > :not(:last-child) {
+  margin-right: 36px;
   margin-right: 3.6rem;
 }
 
 .fsa-level--gutter-xl > :not(:last-child) {
+  margin-right: 48px;
   margin-right: 4.8rem;
 }
 
@@ -5040,39 +5136,50 @@ a.fsa-badge:active {
 }
 
 .fsa-level__item--grow-auto {
-  flex: auto;
+  -ms-flex: auto;
+      flex: auto;
 }
 
 .fsa-level__item--grow-even {
-  flex: 1;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .fsa-level__item--grow-none {
-  flex-grow: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
 }
 
 .fsa-level__item--shrink-none {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .fsa-level__item--align-top {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .fsa-level__item--align-middle {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .fsa-level__item--align-baseline {
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .fsa-level__item--align-bottom {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .fsa-level__item--align-stretch {
-  align-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 .fsa-level__item--split {
@@ -5084,58 +5191,75 @@ a.fsa-badge:active {
     margin-right: 1.2rem;
   }
   .fsa-level--full\@s {
+    display: -ms-flexbox;
     display: flex;
   }
   .fsa-level--inline\@s {
+    display: -ms-inline-flexbox;
     display: inline-flex;
   }
   .fsa-level--none\@s {
     display: initial;
   }
   .fsa-level--no-wrap\@s {
-    flex-wrap: initial;
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
   }
   .fsa-level--wrap\@s {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .fsa-level--align-top\@s {
-    align-items: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
   }
   .fsa-level--align-middle\@s {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .fsa-level--align-baseline\@s {
-    align-items: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
   }
   .fsa-level--align-bottom\@s {
-    align-items: flex-end;
+    -ms-flex-align: end;
+        align-items: flex-end;
   }
   .fsa-level--align-stretch\@s {
-    align-items: stretch;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .fsa-level--justify-left\@s {
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
   .fsa-level--justify-right\@s {
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
   .fsa-level--justify-center\@s {
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .fsa-level--justify-between\@s {
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .fsa-level--justify-around\@s {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .fsa-level--grow-auto\@s > * {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level--grow-even\@s > * {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level--grow-none\@s > * {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level--gutter-xxs\@s > :not(:last-child) {
     margin-right: 0.4rem;
@@ -5165,31 +5289,42 @@ a.fsa-badge:active {
     min-width: 0;
   }
   .fsa-level__item--grow-auto\@s {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level__item--grow-even\@s {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level__item--grow-none\@s {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level__item--shrink-none\@s {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .fsa-level__item--align-top\@s {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .fsa-level__item--align-middle\@s {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .fsa-level__item--align-baseline\@s {
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .fsa-level__item--align-bottom\@s {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .fsa-level__item--align-stretch\@s {
-    align-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
   }
   .fsa-level__item--split\@s {
     margin-left: auto;
@@ -5201,58 +5336,75 @@ a.fsa-badge:active {
     margin-right: 1.2rem;
   }
   .fsa-level--full\@m {
+    display: -ms-flexbox;
     display: flex;
   }
   .fsa-level--inline\@m {
+    display: -ms-inline-flexbox;
     display: inline-flex;
   }
   .fsa-level--none\@m {
     display: initial;
   }
   .fsa-level--no-wrap\@m {
-    flex-wrap: initial;
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
   }
   .fsa-level--wrap\@m {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .fsa-level--align-top\@m {
-    align-items: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
   }
   .fsa-level--align-middle\@m {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .fsa-level--align-baseline\@m {
-    align-items: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
   }
   .fsa-level--align-bottom\@m {
-    align-items: flex-end;
+    -ms-flex-align: end;
+        align-items: flex-end;
   }
   .fsa-level--align-stretch\@m {
-    align-items: stretch;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .fsa-level--justify-left\@m {
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
   .fsa-level--justify-right\@m {
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
   .fsa-level--justify-center\@m {
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .fsa-level--justify-between\@m {
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .fsa-level--justify-around\@m {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .fsa-level--grow-auto\@m > * {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level--grow-even\@m > * {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level--grow-none\@m > * {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level--gutter-xxs\@m > :not(:last-child) {
     margin-right: 0.4rem;
@@ -5282,31 +5434,42 @@ a.fsa-badge:active {
     min-width: 0;
   }
   .fsa-level__item--grow-auto\@m {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level__item--grow-even\@m {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level__item--grow-none\@m {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level__item--shrink-none\@m {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .fsa-level__item--align-top\@m {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .fsa-level__item--align-middle\@m {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .fsa-level__item--align-baseline\@m {
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .fsa-level__item--align-bottom\@m {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .fsa-level__item--align-stretch\@m {
-    align-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
   }
   .fsa-level__item--split\@m {
     margin-left: auto;
@@ -5318,58 +5481,75 @@ a.fsa-badge:active {
     margin-right: 1.2rem;
   }
   .fsa-level--full\@l {
+    display: -ms-flexbox;
     display: flex;
   }
   .fsa-level--inline\@l {
+    display: -ms-inline-flexbox;
     display: inline-flex;
   }
   .fsa-level--none\@l {
     display: initial;
   }
   .fsa-level--no-wrap\@l {
-    flex-wrap: initial;
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
   }
   .fsa-level--wrap\@l {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .fsa-level--align-top\@l {
-    align-items: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
   }
   .fsa-level--align-middle\@l {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .fsa-level--align-baseline\@l {
-    align-items: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
   }
   .fsa-level--align-bottom\@l {
-    align-items: flex-end;
+    -ms-flex-align: end;
+        align-items: flex-end;
   }
   .fsa-level--align-stretch\@l {
-    align-items: stretch;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .fsa-level--justify-left\@l {
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
   .fsa-level--justify-right\@l {
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
   .fsa-level--justify-center\@l {
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .fsa-level--justify-between\@l {
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .fsa-level--justify-around\@l {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .fsa-level--grow-auto\@l > * {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level--grow-even\@l > * {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level--grow-none\@l > * {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level--gutter-xxs\@l > :not(:last-child) {
     margin-right: 0.4rem;
@@ -5399,31 +5579,42 @@ a.fsa-badge:active {
     min-width: 0;
   }
   .fsa-level__item--grow-auto\@l {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level__item--grow-even\@l {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level__item--grow-none\@l {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level__item--shrink-none\@l {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .fsa-level__item--align-top\@l {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .fsa-level__item--align-middle\@l {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .fsa-level__item--align-baseline\@l {
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .fsa-level__item--align-bottom\@l {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .fsa-level__item--align-stretch\@l {
-    align-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
   }
   .fsa-level__item--split\@l {
     margin-left: auto;
@@ -5435,58 +5626,75 @@ a.fsa-badge:active {
     margin-right: 1.2rem;
   }
   .fsa-level--full\@xl {
+    display: -ms-flexbox;
     display: flex;
   }
   .fsa-level--inline\@xl {
+    display: -ms-inline-flexbox;
     display: inline-flex;
   }
   .fsa-level--none\@xl {
     display: initial;
   }
   .fsa-level--no-wrap\@xl {
-    flex-wrap: initial;
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
   }
   .fsa-level--wrap\@xl {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .fsa-level--align-top\@xl {
-    align-items: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
   }
   .fsa-level--align-middle\@xl {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .fsa-level--align-baseline\@xl {
-    align-items: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
   }
   .fsa-level--align-bottom\@xl {
-    align-items: flex-end;
+    -ms-flex-align: end;
+        align-items: flex-end;
   }
   .fsa-level--align-stretch\@xl {
-    align-items: stretch;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .fsa-level--justify-left\@xl {
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
   .fsa-level--justify-right\@xl {
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
   .fsa-level--justify-center\@xl {
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .fsa-level--justify-between\@xl {
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .fsa-level--justify-around\@xl {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .fsa-level--grow-auto\@xl > * {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level--grow-even\@xl > * {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level--grow-none\@xl > * {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level--gutter-xxs\@xl > :not(:last-child) {
     margin-right: 0.4rem;
@@ -5516,31 +5724,42 @@ a.fsa-badge:active {
     min-width: 0;
   }
   .fsa-level__item--grow-auto\@xl {
-    flex: auto;
+    -ms-flex: auto;
+        flex: auto;
   }
   .fsa-level__item--grow-even\@xl {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .fsa-level__item--grow-none\@xl {
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
   }
   .fsa-level__item--shrink-none\@xl {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .fsa-level__item--align-top\@xl {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .fsa-level__item--align-middle\@xl {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .fsa-level__item--align-baseline\@xl {
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .fsa-level__item--align-bottom\@xl {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .fsa-level__item--align-stretch\@xl {
-    align-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
   }
   .fsa-level__item--split\@xl {
     margin-left: auto;
@@ -6023,6 +6242,7 @@ button.fsa-level:visited,
   text-align: left;
   color: #fff;
   max-width: 1224px;
+  padding: 4px 12px;
   padding: 0.4rem 1.2rem;
 }
 
@@ -6145,7 +6365,8 @@ button.fsa-level:visited,
 
 .fsa-header-app__bd {
   display: flex;
-  align-items: baseline;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -6172,6 +6393,7 @@ button.fsa-level:visited,
 }
 
 .fsa-header-app__secondary {
+  font-size: 12px;
   font-size: 1.2rem;
   position: relative;
   display: flex;
@@ -6348,6 +6570,7 @@ button.fsa-level:visited,
   white-space: nowrap;
   word-wrap: normal;
   display: block;
+  max-width: 156px;
   max-width: 15.6rem;
   font-size: 17px;
   font-weight: bold;
@@ -6476,25 +6699,30 @@ button.fsa-level:visited,
   margin: 0;
   padding: 0;
   display: inline-block;
-  flex: auto;
-  flex-basis: 100%;
+  -ms-flex: auto;
+      flex: auto;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 @media (min-width: 320px) {
   .fsa-nav-global__list-item {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
 @media (min-width: 30.0625em) {
   .fsa-nav-global__list-item {
-    flex-basis: 33%;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
   }
 }
 
 @media (min-width: 768px) {
   .fsa-nav-global__list-item {
-    flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 
@@ -7120,6 +7348,7 @@ button.fsa-level:visited,
   color: #494440;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
+  font-size: 30px;
   font-size: 3rem;
   font-weight: 700;
   margin-top: 1em;
@@ -7160,6 +7389,7 @@ h1 + .fsa-modal__title {
   padding: 1em;
   margin-bottom: 1.5em;
   border: 1px solid rgba(0, 0, 0, 0.07);
+  border-left: 4px solid #2f2c2a;
   border-left: 0.4rem solid #2f2c2a;
   background-position: 1rem 2rem;
 }
@@ -7702,7 +7932,8 @@ h1 + .fsa-modal__title {
     max-height: 100%;
     max-height: calc(100vh - 14.4rem);
     top: 20vh;
-    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
   }
 }
 
@@ -7714,6 +7945,7 @@ h1 + .fsa-modal__title {
   pointer-events: all;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.25);
   margin: 1em;
+  padding: 12px;
   padding: 1.2rem;
   background-color: #e1f3f8;
   border: 1px solid #00a6d2;
@@ -7797,6 +8029,7 @@ h1 + .fsa-modal__title {
   color: #494440;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
+  font-size: 20px;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 0;
@@ -8636,6 +8869,7 @@ h1 + .fsa-field {
   color: #494440;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
+  font-size: 20px;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 0;
@@ -8780,6 +9014,7 @@ h1 + .fsa-field {
 .fsa-topper__bd {
   margin-left: auto;
   margin-right: auto;
+  padding: 24px 0;
   padding: 2.4rem 0;
   max-width: 1200px;
 }
@@ -13301,6 +13536,7 @@ html:hover body::before {
 }
 
 .docs__rwd-embed-container {
+  padding: 24px 12px;
   padding: 2.4rem 1.2rem;
   background-color: white;
   border: 1px solid #dbdad9;
@@ -13310,6 +13546,7 @@ html:hover body::before {
   transition: all .23s ease-in-out;
   border: 0.4rem solid #ebebeb;
   margin: auto;
+  margin-top: 24px;
   margin-top: 2.4rem;
   position: relative;
 }

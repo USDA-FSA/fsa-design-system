@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Footer"
-intro: "The Global Footer Component shall be used across all FPAC applications with standard links along with application specific links."
+intro: "This Global Footer Component may be used for FPAC products with standard links along with application specific links."
 jump_menu: true
 ---
 
@@ -34,7 +34,7 @@ jump_menu: true
               <div class="fsa-grid__1/1 fsa-grid__1/3@m">
                 <h3 class="fsa-footer__cat-header">Resources</h3>
                 <ul class="fsa-footer__list">
-                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Inside FSA</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Inside FPAC</a></li>
                   <li class="fsa-footer__list-item"><a href="#" target="_blank">Policies and Links</a></li>
                 </ul>
               </div>
@@ -46,7 +46,7 @@ jump_menu: true
                 <a class="fsa-btn fsa-footer__btn" href="#" target="_blank">Contact Us</a>
               </li>
               <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" aria-label="FSA Telephone Number. 1 800. 5 5 5. 1 2 3 4." target="_blank">1-800-555-1234</a></li>
-              <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
+              <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="https://myfpac.usda.gov/" target="_blank">myFPAC</a></li>
               <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ jump_menu: true
           <div class="fsa-grid__1/1 fsa-grid__1/3@m">
             <h3 class="fsa-footer__cat-header">Resources</h3>
             <ul class="fsa-footer__list">
-              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Inside FSA</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Inside FPAC</a></li>
               <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Policies and Links</a></li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ jump_menu: true
             <a class="fsa-btn fsa-footer__btn" href="link.html" target="_blank">Contact Us</a>
           </li>
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" aria-label="FSA Telephone Number. 1 800. 5 5 5. 1 2 3 4." target="_blank">1-800-555-1234</a></li>
-          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.fsa.usda.gov/" target="_blank">FSA Website</a></li>
+          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="https://myfpac.usda.gov/" target="_blank">myFPAC</a></li>
           <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
         </ul>
       </div>

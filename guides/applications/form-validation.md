@@ -17,6 +17,8 @@ Below are four common themes that should be followed when developing a validatio
 
 ## Example Messaging States
 
+The below are screenshots of example states of the [Form Field component]({{ site.baseurl }}components/form-fields/).
+
 <figure class="fsa-m-b--m">
   <figcaption>Unfocused Form Field State</figcaption>
   <a href="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/error-1.jpg" alt="form field in an unfocused state"></a>
@@ -36,10 +38,12 @@ The themes above have been programmed into the CSS and form components within th
 
 ## Warning Messages
 
-Some applications will require the system to confirm an action taken by a User by showing a Warning or Confirmation message. For actions that are destructive in nature, such as deleting data, Developers shall utilize a Confirmation modal. To find out more information and guidelines on modal windows, [please review the guide here]({{ site.baseurl }}guides/applications/modal/).
+Some applications will require the system to confirm an action taken by a User by displaying a Warning or Confirmation message in the form of a [Modal-based Growl Notification]({{ site.baseurl }}components/growl/) (aka "Prompt").
+
+For actions of destructive in nature, such as deleting data, Developers shall utilize a Confirmation Notification.
 
 <figure class="fsa-m-b--m">
-  <figcaption>Modal Window Confirmation</figcaption>
+  <figcaption>Prompt notification using the <a href="{{ site.baseurl }}components/growl/">Growl Notification Component</a></figcaption>
   <a href="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" target="_blank"><img src="{{ site.baseurl }}img/subcategories/applications/modal-sample2.png" alt="sample Modal Window Confirmation"></a>
 </figure>
 
