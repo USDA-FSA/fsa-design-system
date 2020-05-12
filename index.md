@@ -27,7 +27,7 @@ custom_js: "ds-quick-search.js"
        <button class="ds-quick-find__clear" type="reset" title="Clear" aria-label="Clear"></button>
      </div>
      <ul class="ds-quick-find__output" role="listbox" id="quick-find-results">
-       <li role="option" aria-selected="true" class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
+       <li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
          Components
        </li>
        <li role="option" aria-selected="false" class="ds-quick-find__output-item">
@@ -42,7 +42,7 @@ custom_js: "ds-quick-search.js"
           <mark>Form</mark> Field
         </a>
        </li>
-       <li role="option" aria-selected="false" class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
+       <li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
          Guides
        </li>
        <li role="option" aria-selected="false" class="ds-quick-find__output-item">

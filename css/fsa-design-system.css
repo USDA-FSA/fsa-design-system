@@ -15644,8 +15644,13 @@ pre.highlight .ds-clipboard {
   color: #2f2c2a;
 }
 
-.ds-quick-find__output-link:hover, .ds-quick-find__output-link:focus {
+.ds-quick-find__output-item[aria-selected="true"] .ds-quick-find__output-link, .ds-quick-find__output-link:hover, .ds-quick-find__output-link:focus {
   background-color: #f0f0f0;
+}
+
+.ds-quick-find__output-item[aria-selected="true"] .ds-quick-find__output-link {
+  outline: 3px solid #009afa;
+  outline-offset: -3px;
 }
 
 .ds-quick-find__output-link:focus {

@@ -71,12 +71,21 @@
       text-decoration: none;
       color: $color-fsa-base;
     }
+
+    .ds-quick-find__output-item[aria-selected="true"] &,
     &:hover,
     &:focus {
       background-color: $color-fsa-tertiary-100;
     }
+
+    .ds-quick-find__output-item[aria-selected="true"] & {
+      @include fsa-focus();
+      outline-offset: -3px;
+    }
+
     &:focus {
       outline-offset: -3px;
     }
+
   }
 }
