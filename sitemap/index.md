@@ -1,5 +1,3 @@
-/sitemap/index.md
-
 ---
 layout: category
 title: "Sitemap"
