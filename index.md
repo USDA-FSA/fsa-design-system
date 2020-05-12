@@ -20,10 +20,64 @@ custom_js: "ds-quick-search.js"
     </div>
   </div>
 
-  <div class="fsa-m-b--l">
-   <input class="fsa-input fsa-input--block fsa-input--large" size="35" id="quick-search-id" type="text" name="search" size="48" value="" placeholder="Quick Find">
-   <div id="quick-search-results-id"></div>
-  </div>
+  <form>
+    <div class="ds-quick-find">
+     <div class="ds-quick-find__field">
+       <input class="ds-quick-find__input fsa-input fsa-input--block fsa-input--large" type="text" name="search" value="" placeholder="Quick Find" autocomplete="off" aria-owns="quick-find-results" aria-describedby="quick-find-instructions" aria-expanded="true">
+       <button class="ds-quick-find__clear" type="reset" title="Clear" aria-label="Clear"></button>
+     </div>
+     <ul class="ds-quick-find__output" role="listbox" id="quick-find-results">
+       <li role="option" aria-selected="true" class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
+         Components
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item">
+         <a class="ds-quick-find__output-link" href="{{ site.baseurl }}components/#form-elements">
+           <mark>Form</mark> Elements
+         </a>
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item">
+        <a class="ds-quick-find__output-link" href="{{ site.baseurl }}components/form-fields">
+          <mark>Form</mark> Elements
+          /
+          <mark>Form</mark> Field
+        </a>
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
+         Guides
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item">
+        <a class="ds-quick-find__output-link" href="{{ site.baseurl }}guides/accessibility/forms">
+          Accessibility
+          /
+          <mark>Form</mark>s
+        </a>
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item">
+        <a class="ds-quick-find__output-link" href="{{ site.baseurl }}guides/applications/date-format">
+          Applications
+          /
+          Date <mark>Form</mark>at
+        </a>
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item">
+        <a class="ds-quick-find__output-link" href="{{ site.baseurl }}guides/applications/forms">
+          Applications
+          /
+          <mark>Form</mark>s
+        </a>
+       </li>
+       <li role="option" aria-selected="false" class="ds-quick-find__output-item">
+        <a class="ds-quick-find__output-link" href="{{ site.baseurl }}guides/applications/form-validation">
+          Applications
+          /
+          <mark>Form</mark> Validation
+        </a>
+       </li>
+     </ul>
+     <div class="fsa-sr-only" id="quick-find-instructions">When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.</div>
+     <div aria-live="polite" class="fsa-sr-only">7 results</div>
+    </div>
+  </form>
 
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
