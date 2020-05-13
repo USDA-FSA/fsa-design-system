@@ -204,27 +204,27 @@
 
     - subtitle: "Box"
       subhref: "layout/box"
-      img: "img/subcategories/asdfasdfasdfasdf.png"
+      img: "img/subcategories/box.png"
 
     - subtitle: "Divider"
       subhref: "layout/divider"
-      img: "img/subcategories/asdfasdfasdfasdf.png"
+      img: "img/subcategories/divider.png"
 
     - subtitle: "Grid System"
       subhref: "layout/grid"
-      img: "img/subcategories/asdfasdfasdfasdf.png"
+      img: "img/subcategories/grid.png"
 
     - subtitle: "Level"
       subhref: "layout/level"
-      img: "img/subcategories/asdfasdfasdfasdf.png"
+      img: "img/subcategories/level.png"
 
     - subtitle: "Media Object"
       subhref: "layout/media-object"
-      img: "img/subcategories/asdfasdfasdfasdf.png"
+      img: "img/subcategories/media-objects.png"
 
     - subtitle: "Section"
       subhref: "layout/section"
-      img: "img/subcategories/asdfasdfasdfasdf.png"
+      img: "img/subcategories/section.png"
 
 - title: "Utilities"
   href: "utilities"
