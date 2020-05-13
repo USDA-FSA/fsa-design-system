@@ -200,6 +200,31 @@
 
 - title: "Layout"
   href: "grid-and-layout"
+  subcategories:
+
+    - subtitle: "Box"
+      subhref: "grid-and-layout/box"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Divider"
+      subhref: "grid-and-layout/divider"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Grid System"
+      subhref: "grid-and-layout/grid"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Level"
+      subhref: "grid-and-layout/level"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Media Object"
+      subhref: "grid-and-layout/media-object"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
+
+    - subtitle: "Section"
+      subhref: "grid-and-layout/section"
+      img: "img/subcategories/asdfasdfasdfasdf.png"
 
 - title: "Utilities"
   href: "utilities"
