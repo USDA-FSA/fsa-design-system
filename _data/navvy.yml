@@ -20,7 +20,6 @@
   - subtitle: "Contributing"
     subhref: "getting-started/#contributing"
 
-
 - title: "Visual Style"
   href: "visual-style"
   subcategories:
@@ -226,6 +225,7 @@
     - subtitle: "Media Object"
       subhref: "layout/media-object"
       img: "img/subcategories/media-objects.png"
+      deprecated: 'true'
 
     - subtitle: "Section"
       subhref: "layout/section"
