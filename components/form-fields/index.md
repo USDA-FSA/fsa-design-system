@@ -973,7 +973,7 @@ Additionally, each **core nested component** may have additional selectors to de
 
 ## Column Structure
 
-By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseurl }}grid-and-layout/), you can define a consistant column structure for larger screens, while stacking on smaller screens (e.g. mobile phones).
+By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseurl }}layout/grid/), you can define a consistant column structure for larger screens, while stacking on smaller screens (e.g. mobile phones).
 
 ### Example
 

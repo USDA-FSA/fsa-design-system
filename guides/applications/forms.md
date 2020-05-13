@@ -103,7 +103,7 @@ ___
 
 ### Two Column Example
 
-Using the responsive [Grid System]({{ site.baseurl }}grid-and-layout), the form below is two columns when the viewport is wider than `L` and single column when narrower.
+Using the responsive [Grid System]({{ site.baseurl }}layout/grid/), the form below is two columns when the viewport is wider than `L` and single column when narrower.
 
 <div class="ds-preview">
   <div class="fsa-grid">

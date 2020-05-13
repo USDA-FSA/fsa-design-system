@@ -1767,7 +1767,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ### Don't Use
 
-* For layout, use the [Grid System]({{ site.baseurl }}grid-and-layout/).
+* For layout, use the [Grid System]({{ site.baseurl }}layout/grid/).
 * If the amount of content is simple or brief enough, and depending on its context, consider structuring as an [unordered list]({{ site.baseurl }}visual-style/typography/#unordered-list-bullet), [ordered list]({{ site.baseurl }}visual-style/typography/#ordered-list-numbered), or [definition list]({{ site.baseurl }}visual-style/typography/#definition-list).
 
 ## Accessibility

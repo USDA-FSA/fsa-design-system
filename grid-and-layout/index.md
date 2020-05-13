@@ -1,7 +1,5 @@
 ---
-layout: category
-title: "Layout"
-shortName: "layout"
-jump_menu: true
-intro: ""
+layout: redirect
+redirectURL: "layout/grid/"
+redirectTitle: "Layout > Grid"
 ---

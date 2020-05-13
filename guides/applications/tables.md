@@ -3,7 +3,6 @@ layout: guide
 parent: "Applications"
 title: "Tables"
 intro: "FPAC applications that require data to be displayed in a tabular format shall use the below guidelines to maintain consistency."
-
 ---
 
 ## Tables Guidelines
@@ -12,7 +11,7 @@ The Design System uses 3 different types of design style for tabular data, with 
 
 When using the custom CSS classes provided within the Design System, the structure of the table will shift based on the size of the content within the cell. The horizontal spacing of the largest text string or element will determine the width of each column. A Developer shall not hardcode the width or height of the table or table cells.
 
-__Tables should be used only to display tabular data__, and shall not be used to structure a page or provide a mechanism for layout. Tables used for the purpose of layout are generally not 508 compliant. Developers shall utilize the [Grid System]({{ site.baseurl }}grid-and-layout/) in order to structure their content on a page.
+__Tables should be used only to display tabular data__, and shall not be used to structure a page or provide a mechanism for layout. Tables used for the purpose of layout are generally not 508 compliant. Developers shall utilize the [Grid System]({{ site.baseurl }}layout/grid/) in order to structure their content on a page.
 
 ## Default Table Style
 

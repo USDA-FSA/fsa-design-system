@@ -32,7 +32,7 @@ title: Home
       <p class="ds-home-features__blurb">Common web interactions with reusable and downloadable HTML/CSS.</p>
     </div>
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
-      <a class="ds-home-features__link" href="{{ site.baseurl }}grid-and-layout/">
+      <a class="ds-home-features__link" href="{{ site.baseurl }}layout/">
         <span class="ds-home-features__title">Layout</span>
         <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_grid_2x.png" alt="">
       </a>
