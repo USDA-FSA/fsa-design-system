@@ -1,0 +1,91 @@
+.ds-quick-find {
+  & {
+    position: relative;
+    z-index: 2;
+    margin-bottom: $size-medium;
+    @include breakpoint(L) {
+      width: 44rem;
+    }
+  }
+  &:focus-within {
+    z-index: 99999;
+  }
+  &__input {
+    width: 100%;
+  }
+  &__field {
+    position: relative;
+  }
+  &__clear {
+    @include reset-button();
+    .ds-quick-find__input:placeholder-shown + & {
+      display: none;
+    }
+    width: 48px;
+    border: solid transparent;
+    border-width: 0 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-image: url('#{$image-path}/close.svg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    outline-offset: -3px;
+  }
+  &__output {
+    @include reset-ul();
+    box-shadow: 0 0 $size-default rgba($color: $color-fsa-tertiary, $alpha: .2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid $form-outline-color;
+    background-color: white;
+    z-index: 2;
+    overflow: auto;
+    max-height: 45vh;
+  }
+  &__output-item  {
+    & {
+      @include reset-li();
+      border-bottom: 1px solid $box-border-color;
+    }
+    &--section {
+      @include font-size(1);
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      display: block;
+      padding: ($size-small / 2) $size-default;
+      background-color: $color-fsa-tertiary-200;
+      color: $color-fsa-tertiary;
+    }
+  }
+  &__output-link {
+    &,
+    &:visited {
+      display: block;
+      padding: $size-small $size-default;
+      text-decoration: none;
+      color: $color-fsa-base;
+    }
+
+    .ds-quick-find__output-item[aria-selected="true"] &,
+    &:hover,
+    &:focus {
+      background-color: $color-fsa-tertiary-100;
+    }
+
+    .ds-quick-find__output-item[aria-selected="true"] & {
+      @include fsa-focus();
+      outline-offset: -3px;
+    }
+
+    &:focus {
+      outline-offset: -3px;
+    }
+
+  }
+}

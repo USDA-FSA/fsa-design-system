@@ -14,11 +14,11 @@ intro: ""
           <ul class="ds-sitemap__list">
             {% for group in link.componentgroup %}
               <li class="ds-sitemap__list-item">
-                <a href="{{ site.baseurl }}{{ link.href }}/#{{ group.title | downcase | replace: ' ', '-' }}">{{ group.title }}</a>
+                <a class="ds-sitemap__link" href="{{ site.baseurl }}{{ link.href }}/#{{ group.title | downcase | replace: ' ', '-' }}">{{ group.title }}</a>
                 <ul class="ds-sitemap__list">
                   {% for subgroup in group.subcategories %}
                   <li class="ds-sitemap__list-item">
-                    <a href="{{ subgroup.subhref | prepend: site.baseurl }}">
+                    <a class="ds-sitemap__link" href="{{ subgroup.subhref | prepend: site.baseurl }}">
                       <span>{{ subgroup.subtitle }}</span>
                     </a>
                   </li>
