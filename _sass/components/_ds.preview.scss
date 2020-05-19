@@ -91,7 +91,18 @@
     }
     @include x-ray();
   }
+
+  .docs__utilities__demo {
+    margin: 0;
+    .OUTLINE {
+      outline: 0;
+      background-color: shade($color-fsa-aqua, 65%);
+    }
+  }
+
 }
+
+
 
 html body.x-ray {
   .fsa-modal,

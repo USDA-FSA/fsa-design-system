@@ -14773,6 +14773,15 @@ html body.x-ray .ds-preview * * * * * * * * * {
   background-color: rgba(0, 0, 255, 0.08);
 }
 
+.ds-preview .docs__utilities__demo {
+  margin: 0;
+}
+
+.ds-preview .docs__utilities__demo .OUTLINE {
+  outline: 0;
+  background-color: #003a4a;
+}
+
 html body.x-ray .fsa-modal *,
 html body.x-ray .fsa-growl-container *,
 html body.x-ray .fsa-date-calendar * {
