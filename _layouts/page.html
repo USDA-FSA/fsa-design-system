@@ -6,7 +6,12 @@ layout: default
 
 <div class="ds-page-title">
   <div class="ds-page-title__hd">
-    <h1 class="ds-page-title__hd-text" id="article-title">{{ page.title }}</h1>
+    <h1 class="ds-page-title__hd-text" id="article-title">
+      {{ page.title }}
+    </h1>
+    {% if page.deprecated %}
+    <span class="fsa-label fsa-label--warning">Deprecated</span>
+    {% endif %}
     {% if page.title_label %}
     <a class="fsa-label fsa-label--warning" href="#javascript-guidance">{{ page.title_label }}</a>
     {% endif %}
@@ -46,10 +51,12 @@ layout: default
       {% endif %}
 
       {% if page.shortName %}
-      <h3>
-        Preview
-        <a class="fsa-btn fsa-btn--secondary fsa-btn--small fsa-float--right" href="http://usda-fsa.github.io/fsa-style/#{{ page.shortName }}" target="_blank">View Kitchen Sink</a>
-      </h3>
+        {% unless page.suppress_kitcken_sink %}
+        <h3>
+          Preview
+          <a class="fsa-btn fsa-btn--secondary fsa-btn--small fsa-float--right" href="http://usda-fsa.github.io/fsa-style/#{{ page.shortName }}" target="_blank">View Kitchen Sink</a>
+        </h3>
+        {% endunless %}
       {% endif %}
 
 
