@@ -177,3 +177,8 @@ div.fsa-stepped-tabs__label {
 .docs__rwd-embed-container {
   padding: $size-medium $size-default;
 }
+
+html:hover body::before {
+  // scss-lint:disable ImportantRule
+  display: none !important; // hide breakpoint bar
+}

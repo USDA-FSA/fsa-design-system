@@ -19,7 +19,7 @@ jump_menu: true
 
 ## Variations
 
-While these modifiers are specific to `.fsa-box`, other CSS Utilities and Helpers (e.g. [Margins](#margins)) can be combined for further flexibility.
+While these modifiers are specific to `.fsa-box`, other CSS Utilities and Helpers (e.g. [Padding](#padding)) can be combined for further flexibility.
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/3@m">

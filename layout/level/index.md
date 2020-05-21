@@ -811,14 +811,16 @@ Where `BP` is one of <code title="small">s</code>, <code title="medium">m</code>
 Sample implementations of `fsa-level` and its available variations, combined with multiple other FPAC Design System components.
 
 ### Media Object
-<span class="fsa-float--right@l">
-  Components:
-  <a href="link.html">lorem</a>
-  <a href="link.html">ipsum</a>
-  <a href="link.html">dolor</a>
-  <a href="link.html">sit</a>
-  <a href="link.html">amet</a>
-</span>
+Combines with
+[Text Size Utilities]({{ site.baseurl }}utilities/#text-size),
+[Margin Utilities]({{ site.baseurl }}utilities/#margins),
+and
+[Label]({{ site.baseurl }}components/label/).
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon" role="alert">
+  This example of Level component effectively replaces the <strong>Deprecated</strong> <a href="{{ site.baseurl }}layout/media-object/">Media Object component</a>.
+</div>
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--align-top fsa-level--gutter-m">
     <div class="fsa-level__item--shrink-none">
@@ -851,6 +853,16 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Tiles
+
+Combines Level with
+[Text Size Utilities]({{ site.baseurl }}utilities/#text-size),
+[Text Header Utilities]({{ site.baseurl }}utilities/#text-headers),
+[Padding Utilities]({{ site.baseurl }}utilities/#padding),
+[Margin Utilities]({{ site.baseurl }}utilities/#margins),
+[Box]({{ site.baseurl }}layout/box/),
+and
+[Label]({{ site.baseurl }}components/label/).
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between fsa-level--align-stretch fsa-level--grow-auto">
     <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
@@ -909,6 +921,12 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Page Title paired with actions
+
+Combines with
+[Margin Utilities]({{ site.baseurl }}utilities/#margins),
+and
+[Buttons]({{ site.baseurl }}components/button/).
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between">
     <div>
@@ -935,6 +953,10 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Badge Tiles
+
+Combines with
+[Badges]({{ site.baseurl }}components/badges/).
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
     <div><span class="fsa-badge fsa-badge--large">4</span> Submitted</div>
@@ -957,6 +979,13 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Tile List
+
+Combines with
+[Box]({{ site.baseurl }}layout/box/),
+[Padding Utilities]({{ site.baseurl }}utilities/#padding),
+and
+[Badges]({{ site.baseurl }}components/badges/).
+
 <div class="ds-preview">
   <div class="fsa-box fsa-p--none">
     <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
@@ -1015,6 +1044,14 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Action Bar
+
+Combines Level with
+[Buttons]({{ site.baseurl }}components/buttons),
+[Button Group]({{ site.baseurl }}components/button-group),
+[Text Input]({{ site.baseurl }}components/text-input/),
+and
+[Text Size Utilities]({{ site.baseurl }}utilities/#text-size),
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between fsa-level--align-bottom">
     <div class="fsa-level">
@@ -1065,6 +1102,7 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Product List Item
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between">
     <div class="fsa-level">
@@ -1125,6 +1163,7 @@ Sample implementations of `fsa-level` and its available variations, combined wit
 ```
 
 ### Product List Item
+
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between">
     <div>

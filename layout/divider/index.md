@@ -3,70 +3,149 @@ layout: page
 parent: "Layout"
 title: "Divider"
 shortName: "component__divider"
-intro: "Lorem ipsum"
+intro: ""
 jump_menu: true
 ---
 
 <div class="ds-preview">
-asdf
+  <div class="fsa-divider"></div>
 </div>
 
 ## Variations
 
-```html
-<button class="fsa-btn fsa-btn--[variation]" type="button">Label</button>
-<a class="fsa-btn fsa-btn--[variation]" href="link.html">Label</a>
-```
-
 ### Default
-
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
+  <div class="fsa-divider"></div>
 </div>
 ```html
-<button class="fsa-btn fsa-btn--primary" type="button">Label</button>
+<div class="fsa-divider"></div>
 ```
 
-### Secondary
-
+### Strong
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
+  <div class="fsa-divider fsa-divider--strong"></div>
 </div>
 ```html
-<button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
+<div class="fsa-divider fsa-divider--strong"></div>
 ```
 
-### Flat
-
+### Stronger
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+  <div class="fsa-divider fsa-divider--stronger"></div>
 </div>
 ```html
-<button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+<div class="fsa-divider fsa-divider--stronger"></div>
 ```
 
-### Tertiary
+## Examples
+
+### Segment a raw list of elements
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+  <div class="fsa-divider fsa-divider--strong"></div>
+  Lorem ipsum dolor sit amet
+  <div class="fsa-divider fsa-divider--strong"></div>
+  ElitLabore alias optio nisi
+  <div class="fsa-divider fsa-divider--strong"></div>
+  Voluptate iure officiis ill
+  <div class="fsa-divider fsa-divider--strong"></div>
+  Accusantium quam aspernatur
+  <div class="fsa-divider fsa-divider--strong"></div>
+  Minima alias ratione fugit
+  <div class="fsa-divider fsa-divider--strong"></div>
 </div>
 ```html
-<button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+<div class="fsa-divider fsa-divider--strong"></div>
+Lorem ipsum dolor sit amet
+<div class="fsa-divider fsa-divider--strong"></div>
+ElitLabore alias optio nisi
+<div class="fsa-divider fsa-divider--strong"></div>
+Voluptate iure officiis ill
+<div class="fsa-divider fsa-divider--strong"></div>
+Accusantium quam aspernatur
+<div class="fsa-divider fsa-divider--strong"></div>
+Minima alias ratione fugit
+<div class="fsa-divider fsa-divider--strong"></div>
 ```
 
-## Usage
+### Segment a list
 
-### Use When
+Combines with [Box]({{ site.baseurl }}layout/box/), [Level]({{ site.baseurl }}layout/level/), and [Padding Utilities]({{ site.baseurl }}utilities/#padding).
 
-* asdfasdf
-* asdfasdf
+<div class="ds-preview">
+  <div class="fsa-box fsa-p--none">
+    <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+      Organizations
+      <span class="fsa-badge">1</span>
+    </a>
+    <div class="fsa-divider"></div>
+    <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+      Repositories
+      <span class="fsa-badge">30</span>
+    </a>
+    <div class="fsa-divider"></div>
+    <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+      Issues
+      <span class="fsa-badge">270</span>
+    </a>
+    <div class="fsa-divider"></div>
+    <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+      Milestones
+      <span class="fsa-badge">9</span>
+    </a>
+    <div class="fsa-divider"></div>
+    <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+      Projects
+      <span class="fsa-badge">11</span>
+    </a>
+  </div>
+</div>
+```html
+<div class="fsa-box fsa-p--none">
+  <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    Organizations
+    <span class="fsa-badge">1</span>
+  </a>
+  <div class="fsa-divider"></div>
+  <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    Repositories
+    <span class="fsa-badge">30</span>
+  </a>
+  <div class="fsa-divider"></div>
+  <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    Issues
+    <span class="fsa-badge">270</span>
+  </a>
+  <div class="fsa-divider"></div>
+  <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    Milestones
+    <span class="fsa-badge">9</span>
+  </a>
+  <div class="fsa-divider"></div>
+  <a href="link.html" class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    Projects
+    <span class="fsa-badge">11</span>
+  </a>
+</div>
+```
 
-### Don't Use
+### Add Utility Margins
 
-* asdfasdf
-* asdfasdf
+Selectively combine with [Margin Utilities]({{ site.baseurl }}utilities/#margins).
 
-## General Guidance
-
-* adsf
-* qwer
+<div class="ds-preview">
+  <div class="fsa-divider fsa-m-b--xs"></div>
+  <div class="fsa-divider fsa-m-b--s"></div>
+  <div class="fsa-divider fsa-m-b--m"></div>
+  <div class="fsa-divider fsa-m-b--l"></div>
+  <div class="fsa-divider fsa-m-b--xl"></div>
+  <div class="fsa-divider"></div>
+</div>
+```html
+<div class="fsa-divider fsa-m-b--xs"></div>
+<div class="fsa-divider fsa-m-b--s"></div>
+<div class="fsa-divider fsa-m-b--m"></div>
+<div class="fsa-divider fsa-m-b--l"></div>
+<div class="fsa-divider fsa-m-b--xl"></div>
+<div class="fsa-divider"></div>
+```

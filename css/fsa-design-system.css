@@ -15707,6 +15707,10 @@ div.fsa-stepped-tabs__label {
   padding: 2.4rem 1.2rem;
 }
 
+html:hover body::before {
+  display: none !important;
+}
+
 /**
  * Syntax highlighting styles
  */

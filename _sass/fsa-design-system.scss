@@ -20,8 +20,3 @@
 
 @import 'other/ds.shame';
 @import 'other/syntax-highlighting';
-
-html:hover body::before {
-  // scss-lint:disable ImportantRule
-  display: none !important; // hide breakpoint bar
-}
