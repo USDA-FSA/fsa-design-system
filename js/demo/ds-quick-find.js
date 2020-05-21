@@ -10,6 +10,7 @@ const quickFind = {
   cssClass: '',
   searchArray: [],
   displayCount: 1,
+  prevElem: '',
 
   setSearchProperties: function(){
 
@@ -83,6 +84,8 @@ const quickFind = {
     return function(){
       let q = quickFind;
       if(q.search.value!=''){
+
+        quickFind.search.setAttribute('aria-expanded', 'true');
         
         let newHTML = '<ul class="ds-quick-find__output" role="listbox">';
         let matches = q.doSearch( q.search.value );
@@ -116,7 +119,7 @@ const quickFind = {
 
             if( item.tier == 2){
               if(prevHeader != item.ancestors.header){
-                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
+                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="false">
                               ${item.ancestors.parent}
                             </li>`
               }
@@ -128,7 +131,7 @@ const quickFind = {
                           </>`
             } else {
               if(prevHeader != item.ancestors.header){
-                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
+                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="false">
                               ${item.ancestors.grandParent}
                             </li>`
               }
@@ -148,9 +151,29 @@ const quickFind = {
         q.results.innerHTML = newHTML;
       } else {
         q.results.innerHTML = '';
+        quickFind.search.setAttribute('aria-expanded', 'false');
       }
     }
 
+  },
+
+  runTracking: function(){
+    let prevElem = quickFind.prevElem;
+    quickFind.results.addEventListener('focusin', (event) => {
+      //event.preventDefault();
+      let currElem = document.activeElement;
+      if( quickFind.prevElem ) quickFind.resultsNavFrom( quickFind.prevElem  );
+      if( currElem ) quickFind.resultsNavTo( currElem );
+      quickFind.prevElem = currElem;
+    });
+  },
+
+  resultsNavTo: function( node ){
+    node.parentElement.setAttribute('aria-selected', 'true');
+  },
+
+  resultsNavFrom: function( node ){
+    node.parentElement.setAttribute('aria-selected', 'false');
   },
 
   dedupeArrayOfObjects: function( arr ){
@@ -196,6 +219,7 @@ const quickFind = {
     quickFind.resultsId = resultsId;
     quickFind.displayCount = count ? count : 8;
     quickFind.setSearchProperties();
+    quickFind.runTracking();
   }
 
 };
