@@ -47,6 +47,53 @@ Most page templates likely will use just one `fsa-section--[variation]`, though 
   </div>
 </div>
 
+## Anatomy
+
+```html
+<div class="fsa-section fsa-section[--variation] [fsa-section--fullscreen]">
+  <div class="fsa-section__bd">
+    content
+  </div>
+</div>
+```
+<div class="ds-preview">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__1/2@m">
+      <figure>
+        <a href="{{ site.baseurl }}img/screen-section--structure.png"><img class="ds-screen" src="{{ site.baseurl }}img/screen-section--structure.png" alt=""></a>
+      </figure>
+      <figcaption>Default</figcaption>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__1/2@m">
+      <figure>
+        <a href="{{ site.baseurl }}img/screen-section--structure.png"><img class="ds-screen" src="{{ site.baseurl }}img/screen-section-stacked--structure.png" alt=""></a>
+      </figure>
+      <figcaption>Multiple Variations Stacked</figcaption>
+    </div>
+  </div>
+</div>
+
+<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal fsa-m--none">
+  <caption class="fsa-sr-only">Class Overview</caption>
+  <thead>
+    <th scope="col">Key</th>
+    <th scope="col">Selector</th>
+    <th scope="col">Description</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th aria-label="Key">1</th>
+      <th aria-label="Selector"><code style="white-space: nowrap;">fsa-section</code></th>
+      <td aria-label="Description">Acts as the main building block for most layouts. Typically used as direct child of <code>&lt;body&gt;</code>. Variations available for colors and fullscreen.</td>
+    </tr>
+    <tr>
+      <th aria-label="Key">2</th>
+      <th aria-label="Selector"><code style="white-space: nowrap;">fsa-section__bd</code></th>
+      <td aria-label="Description">Sole child element. Unless modified by fullscreen variation, limits content to a reasonable maximum width.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Variations
 
 View <a href="http://usda-fsa.github.io/fsa-style/sections.html" target="_blank">sections.html</a> and <a href="http://usda-fsa.github.io/fsa-style/boilerplate.html" target="_blank">boilerplate.html</a> examples to view each in full-page in context.
@@ -89,7 +136,7 @@ and
 
 ### Dark
 ```html
-<div class="ds-preview">
+<div class="fsa-section fsa-section--dark">
   <div class="fsa-section__bd">
     Aspernatur voluptatem similique quidem odit laudantium pariatur modi illum officiis recusandae! Dolores odio dicta repellat similique numquam officiis repudiandae corrupti exercitationem consequatur!
   </div>
