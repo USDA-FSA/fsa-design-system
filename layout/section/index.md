@@ -53,6 +53,15 @@ View <a href="http://usda-fsa.github.io/fsa-style/sections.html">sections.html</
 ```
 
 ### Fullscreen
+Likely paired with Fullscreen variations of
+[Tophat]({{ site.baseurl }}components/tophat),
+[Application Header]({{ site.baseurl }}components/header-app),
+[Global Nav]({{ site.baseurl }}components/top-nav),
+[Topper]({{ site.baseurl }}components/topper),
+[Footer]({{ site.baseurl }}components/footer),
+and
+[Screen ID]({{ site.baseurl }}components/screen-id)
+
 ```html
 <div class="fsa-section fsa-section--fullscreen">
   <div class="fsa-section__bd">
