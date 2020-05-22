@@ -510,7 +510,9 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 ## Screenreader only
 
-<p class="fsa-text--lead">Visibly hidden <strong>though announced</strong> to screenreaders within a variety of screen size ranges (i.e. Media Query breakpoints).</p>
+<p class="fsa-text--lead">Visibly hidden <strong>though announced</strong> by assistive technology (e.g. screenreaders) within a variety of screen size ranges (i.e. Media Query breakpoints).</p>
+
+This component must not be used to hide interactive content; for that, defer to [Visibility Utility classes](#visibility).
 
 {% include alert.rwd-rendering.html %}
 
@@ -715,6 +717,8 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 ## Visibility
 
 <p class="fsa-text--lead">Selectively show or hide elements or blocks at a variety of screen sizes (i.e. Media Query breakpoints).</p>
+
+If content should remain accessible to assistive technology (e.g. screenreaders), use [Screenreader only](#screenreader-only) Utility classes.
 
 <div class="fsa-hide@xl">
   <aside>

@@ -8,8 +8,6 @@ jump_menu: true
 title_label: 'Requires JavaScript'
 ---
 
-A Modal will take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
-
 <div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
@@ -47,15 +45,20 @@ A Modal will take over focus, restricting access to other areas of the applicati
 
 ## Behavior
 
+A Modal will take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
+
+Refer to [JavaScript Guidance](#javascript-guidance) for additional behaviorial.
+
 **Trigger sample Modals:**
 
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button>
+<div class="fsa-level fsa-level--justify-even">
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button></span>
+</div>
 
-Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
 ## Variations
 

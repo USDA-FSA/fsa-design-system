@@ -3,7 +3,7 @@ layout: page
 parent: "Layout"
 title: "Divider"
 shortName: "component__divider"
-intro: ""
+intro: "Dividers display visual breaks between content, elements, or components."
 jump_menu: true
 ---
 
