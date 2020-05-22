@@ -811,7 +811,7 @@ Where `BP` is one of <code title="small">s</code>, <code title="medium">m</code>
 Sample implementations of `fsa-level` and its available variations, combined with multiple other FPAC Design System components.
 
 ### Media Object
-Combines with
+Combines Level with
 [Text Size Utilities]({{ site.baseurl }}utilities/#text-size),
 [Margin Utilities]({{ site.baseurl }}utilities/#margins),
 and
@@ -922,7 +922,7 @@ and
 
 ### Page Title paired with actions
 
-Combines with
+Combines Level with
 [Margin Utilities]({{ site.baseurl }}utilities/#margins),
 and
 [Buttons]({{ site.baseurl }}components/button/).
@@ -954,7 +954,7 @@ and
 
 ### Badge Tiles
 
-Combines with
+Combines Level with
 [Badges]({{ site.baseurl }}components/badges/).
 
 <div class="ds-preview">
@@ -980,8 +980,9 @@ Combines with
 
 ### Tile List
 
-Combines with
+Combines Level with
 [Box]({{ site.baseurl }}layout/box/),
+[Divider]({{ site.baseurl }}layout/divider/),
 [Padding Utilities]({{ site.baseurl }}utilities/#padding),
 and
 [Badges]({{ site.baseurl }}components/badges/).
