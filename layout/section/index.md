@@ -10,7 +10,13 @@ suppress_code_toggle: true
 
 Most page templates likely will use just one `fsa-section--[variation]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
 
-View <a href="http://usda-fsa.github.io/fsa-style/sections.html">sections.html</a> example to view in context.
+<aside>
+  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+    <div class="fsa-alert__body">
+      <p class="fsa-alert__text">View <strong><a href="http://usda-fsa.github.io/fsa-style/sections.html" target="_blank">sections.html</a></strong> and <strong><a href="http://usda-fsa.github.io/fsa-style/boilerplate.html" target="_blank">boilerplate.html</a></strong> examples to view each in full-page in context.</p>
+    </div>
+  </div>
+</aside>
 
 <div class="ds-preview">
   <div class="fsa-grid">
@@ -42,6 +48,8 @@ View <a href="http://usda-fsa.github.io/fsa-style/sections.html">sections.html</
 </div>
 
 ## Variations
+
+View <a href="http://usda-fsa.github.io/fsa-style/sections.html" target="_blank">sections.html</a> and <a href="http://usda-fsa.github.io/fsa-style/boilerplate.html" target="_blank">boilerplate.html</a> examples to view each in full-page in context.
 
 ### Default
 ```html
