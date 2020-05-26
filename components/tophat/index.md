@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Top Hat"
-intro: "The Header should include the Top Hat component as an indication of an official government website."
+intro: "Indicates associated USDA agency and organization."
 jump_menu: true
 ---
 
@@ -32,7 +32,7 @@ jump_menu: true
     <div class="fsa-tophat__primary">
       <span class="fsa-tophat__agency">
         <a class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
-          <img role="presentation" class="fsa-tophat__agency-logo" src="img/usda-logo--white.svg" alt="">
+          <img role="presentation" class="fsa-tophat__agency-logo" src="{{ site.baseurl }}img/usda-logo--white.svg" alt="">
           <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
           <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
         </a>
@@ -41,6 +41,57 @@ jump_menu: true
     <div class="fsa-tophat__secondary">
       <span class="fsa-tophat__subagency">
         <a class="fsa-tophat__link" href="//fsa.usda.gov" title="Link to FSA homepage">Farm Production and Conservation</a>
+      </span>
+    </div>
+  </div>
+</div>
+```
+
+## Variations
+
+### Fullscreen
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>Demo:</strong> view on <a href="https://usda-fsa.github.io/fsa-style/boilerplate.html">boilerplate.html</a> and invoke the <strong>Fullscreen Toggle</strong>.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div class="fsa-tophat fsa-tophat--fullscreen">
+    <div class="fsa-tophat__bd">
+      <div class="fsa-tophat__primary">
+        <span class="fsa-tophat__agency">
+          <a class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
+            <img role="presentation" class="fsa-tophat__agency-logo" src="{{ site.baseurl }}img/usda-logo--white.svg" alt="">
+            <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
+            <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
+          </a>
+        </span>
+      </div>
+      <div class="fsa-tophat__secondary">
+        <span class="fsa-tophat__subagency">
+          Farm Production and Conservation
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-tophat fsa-tophat--fullscreen">
+  <div class="fsa-tophat__bd">
+    <div class="fsa-tophat__primary">
+      <span class="fsa-tophat__agency">
+        <a class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
+          <img role="presentation" class="fsa-tophat__agency-logo" src="{{ site.baseurl }}img/usda-logo--white.svg" alt="">
+          <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
+          <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
+        </a>
+      </span>
+    </div>
+    <div class="fsa-tophat__secondary">
+      <span class="fsa-tophat__subagency">
+        Farm Production and Conservation
       </span>
     </div>
   </div>
