@@ -16009,8 +16009,4 @@ html:hover body::before {
 .highlight .il {
   color: #099;
 }
-
-html:hover body::before {
-  display: none !important;
-}
 /*# sourceMappingURL=../_site/css/fsa-design-system.css.map */

@@ -137,6 +137,39 @@ Readonly fields do not have a `class="fsa-input--[variation]"`, instead using th
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
 ```
 
+## Responsive
+
+Selectively override several style properties at each Media Query breakpoint
+
+<code>fsa-select--<strong>[property]@[breakpoint]</strong></code>, where
+<code>property</code> is one of
+<code>small</code>,
+<code>medium</code>,
+<code>large</code>,
+<code>block</code>, or
+<code>inline</code>; and <code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <div class="docs__rwd-embed-container">
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__input.html" target="_blank" title="View in its own browser window">New window</a>
+    </span>
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_input">
+      <iframe title="Responsive Demo: Input element" src="http://usda-fsa.github.io/fsa-style/demo/rwd__input.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Usage
 
 ### Use When
