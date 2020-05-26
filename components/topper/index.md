@@ -23,6 +23,8 @@ jump_menu: true
 
 ## Variations
 
+### Fullscreen
+
 <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
   <div class="fsa-alert__body">
     <p class="fsa-alert__text"><strong>Demo:</strong> view on <a href="https://usda-fsa.github.io/fsa-style/boilerplate.html">boilerplate.html</a> and invoke the <strong>Fullscreen Toggle</strong>.</p>
