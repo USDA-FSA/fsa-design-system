@@ -21,6 +21,29 @@ jump_menu: true
 </div>
 ```
 
+## Variations
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>Demo:</strong> view on <a href="https://usda-fsa.github.io/fsa-style/boilerplate.html">boilerplate.html</a> and invoke the <strong>Fullscreen Toggle</strong>.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div class="fsa-topper fsa-topper--fullscreen">
+    <div class="fsa-topper__bd">
+      <a class="fsa-topper__link" href="#main-content">Return to top</a>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-topper fsa-topper--fullscreen">
+  <div class="fsa-topper__bd">
+    <a class="fsa-topper__link" href="#main-content">Return to top</a>
+  </div>
+</div>
+```
+
 ## Usage
 
 ### Use When
