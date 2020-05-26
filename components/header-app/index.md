@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 title: "Application Header"
-intro: "The Application Header component provides a prominent way to display the application abbreviation and name."
+intro: "The Application Header component provides a prominent way to display the application name."
 jump_menu: true
 ---
 
@@ -28,6 +28,57 @@ jump_menu: true
 </div>
 ```html
 <div class="fsa-header-app">
+  <div class="fsa-header-app__bd">
+    <div class="fsa-header-app__primary">
+      <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+        <span class="fsa-header-app__app-name">
+          <abbr class="fsa-header-app__app-abbr">[abbr]</abbr>
+          <span class="fsa-header-app__app-full">[app name]</span>
+        </span>
+      </a>
+    </div>
+    <div class="fsa-header-app__secondary">
+        <span class="fsa-header-app__profile">
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+        </span>
+      </div>
+  </div>
+</div>
+```
+
+## Variations
+
+### Fullscreen
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>Demo:</strong> view on <a href="https://usda-fsa.github.io/fsa-style/boilerplate.html">boilerplate.html</a> and invoke the <strong>Fullscreen Toggle</strong>.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div class="fsa-header-app fsa-header-app--fullscreen">
+    <div class="fsa-header-app__bd">
+      <div class="fsa-header-app__primary">
+        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
+          <span class="fsa-header-app__app-name">
+            <abbr class="fsa-header-app__app-abbr">[abbr]</abbr>
+            <span class="fsa-header-app__app-full">[app name]</span>
+          </span>
+        </a>
+      </div>
+      <div class="fsa-header-app__secondary">
+        <span class="fsa-header-app__profile">
+          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-header-app fsa-header-app--fullscreen">
   <div class="fsa-header-app__bd">
     <div class="fsa-header-app__primary">
       <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
