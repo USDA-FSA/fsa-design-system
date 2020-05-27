@@ -1632,14 +1632,16 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
   </div>
 </div>
 
-### Use When
-
+{% capture usage_do %}
 * An FPAC Application requires navigation to other areas within the application.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * As any other navigation system that is not located directly below the [Application Header]({{ site.baseurl }}guides/applications/header).
 * As a jump menu that directs Users to content on the same page.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

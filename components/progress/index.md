@@ -570,17 +570,19 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * The system has started an asynchronous process within a feature or section of the application that is not currently available for interaction.
 * A User should be shown that data or files are in the process of being retrieved, updated, uploading, or deleted from the system.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * When the application is initially loading and the interface isn't available.
 * When an asychronous process is occuring and the entire application should be unavailable to the User. Instead, use [Splash Component]({{ site.baseurl }}components/splash/).
 * As an animation on individual page controls that are not retrieving, updating, uploading, or deleting data of files from the system
 * On individual page controls if the loading process takes less than one second.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

@@ -1761,14 +1761,16 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * When you need to display tabular information, such as statistical data.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * For layout, use the [Grid System]({{ site.baseurl }}layout/grid/).
 * If the amount of content is simple or brief enough, and depending on its context, consider structuring as an [unordered list]({{ site.baseurl }}visual-style/typography/#unordered-list-bullet), [ordered list]({{ site.baseurl }}visual-style/typography/#ordered-list-numbered), or [definition list]({{ site.baseurl }}visual-style/typography/#definition-list).
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

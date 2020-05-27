@@ -77,16 +77,18 @@ The intention of a Splash screen is to provide a good first imporession of an ap
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * The application is initially loading data and the interface is not ready for User interactions.
 * An application is between pages (Routes) within an SPA and the interface won't be ready to display content for a number of seconds.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * To display loading of individual interface elements while a User has the capability to review or interact with infromation on the screen.
 * In place of [Progress]({{ site.baseurl }}components/progress/) components.
 * The Splash screen to add superfluous or additional information or animation.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

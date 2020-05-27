@@ -466,15 +466,17 @@ Items "One" and "Four" below are disabled.
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * Muliple options need to be shown to the User at one time, while all options are selectable.
 * The application requires a mechanism to select all or none of the options.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * If the options only allow for one selection, and instead use a list of [Radio Buttons]({{ site.baseurl }}components/radio).
 * If the list of options is very long. Let users type the same information into a [text input]({{ site.baseurl }}components/text-input/) that suggests possible options instead.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

@@ -260,15 +260,17 @@ Using several [CSS Utilities]({{ site.baseurl }}utilities), arrange content in a
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * The Application requires the User to perform a toggle action, and affect the application immediately.
 * A setting within an application needs to be toggled between two different states.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * Within an application form as a way to select a between 2 Options. Instead utilize a [Checkbox]({{ site.baseurl }}components/checkbox/).
 * As an alternative for a [Checkbox]({{ site.baseurl }}components/checkbox/) or [Radio]({{ site.baseurl }}components/radio/) within a Form.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

@@ -320,17 +320,19 @@ Selectively override several style properties at each Media Query breakpoint.
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * Use sparingly — only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * If the list of options is very short. Use [radio buttons]({{ site.baseurl }}components/radio/) instead.
 * If the list of options is very long. Let users type the same information into a [text input]({{ site.baseurl }}components/text-input/) that suggests possible options instead.
 * If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from the select element. Use [checkboxes]({{ site.baseurl }}components/checkbox/) instead.
 * For site navigation.
 * The `multiple` attribute, use the [Select Multi component]({{ site.baseurl }}components/select-multi/) instead.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

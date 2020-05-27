@@ -251,14 +251,16 @@ jump_menu: true
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * An Application is viewable to a internal or public audience.
 * An Application needs to prominently display the application abbreviation, application name, and Username.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * The Application Header component on any area of the page except just below the [Top Hat Component]({{ site.baseurl }}components/tophat/).
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

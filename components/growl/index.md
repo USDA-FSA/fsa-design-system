@@ -370,16 +370,18 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background processes.
 * The application requires a message to appear and have the User take action to dismiss.
 * The application displays non-critical information that won't disrupt a workflow.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * When displaying error messages paired with specific form fields, use [Form Field States]({{ site.baseurl }}components/form-fields/)
 * When displaying messages related to specific components on the current view, consider an [Inline Alert]({{ site.baseurl }}components/alerts/)
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

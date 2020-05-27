@@ -136,19 +136,21 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * The application needs to provide system-level messaging to the user.
 * The application needs to provide real-time inline messaging to the User, in context of components visible on the current view.
 * The application needs to report a general error not related to a User interaction.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * When displaying error messages paired with specific form fields. Use error states provided in [Form Field]({{ site.baseurl }}components/form-fields/) component.
 * The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background process. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * For destructive actions. If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, with an option available for user to confirm or deny. Consider the Modal-based variation of [Growl Notification]({{ site.baseurl }}components/growl/)
 * The application displays non-critical information that won’t disrupt a workflow. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * Too many Alerts at one time as this will confuse the User and push content down the screen.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

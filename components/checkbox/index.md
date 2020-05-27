@@ -484,16 +484,19 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * A user can select any number of choices from a set list.
 * A user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.
 * When users need to see all the available options at a glance.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * If there are too many options to display on a mobile screen.
 * If a user can only select one option from a list (use [radio buttons]({{ site.baseurl }}components/radio/) instead).
+{% endcapture %}
+
+{% include do-dont.html %}
+
 
 ## Accessibility
 

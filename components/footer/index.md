@@ -231,15 +231,17 @@ jump_menu: true
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * An Application requires a global footer within the application.
 * An Application requires additional application specific navigation or links to documentation.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * As as a component that is not anchored to the bottom of the page.
 * As a jump menu that directs Users to content on the same page.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

@@ -119,14 +119,16 @@ jump_menu: true
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * An Application is viewable to a internal or public audience.
 * An Application needs to have a clear indication of an offical government website.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * The Top Hat component on any area of the page except for the first item.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 
