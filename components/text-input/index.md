@@ -172,18 +172,20 @@ Selectively override several style properties at each Media Query breakpoint
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 * When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.
 * When users want to be able to paste in a response.
 * When users need only a single line of entry.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * When the value user enter are limited in amount
 * When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}components/select/), [radio]({{ site.baseurl }}components/radio/), or [checkbox]({{ site.baseurl }}components/checkbox/).
 * When users need to enter multiple lines of content, consider the [textarea]({{ site.baseurl }}components/textarea/) element.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

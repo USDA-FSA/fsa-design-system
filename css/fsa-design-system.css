@@ -14879,6 +14879,69 @@ html body.x-ray .fsa-modal {
   }
 }
 
+.ds-usage {
+  margin: 24px 0;
+  margin: 2.4rem 0;
+}
+
+@media (min-width: 37.5em) {
+  .ds-usage {
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.ds-usage__hd {
+  margin: 0 0 12px;
+  margin: 0 0 1.2rem;
+}
+
+.ds-usage__bd > ul {
+  margin: 0;
+}
+
+.ds-usage__bd > ul > li {
+  margin: 0 0 12px;
+  margin: 0 0 1.2rem;
+}
+
+.ds-usage__bd > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.ds-usage__item {
+  border: 1px solid #dbdad9;
+  border-top: 4px solid;
+  border-top: 0.4rem solid;
+  background-color: #fff;
+  padding: 24px;
+  padding: 2.4rem;
+  -ms-flex: 1;
+      flex: 1;
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.ds-usage__item--do {
+  border-top-color: #236430;
+}
+
+.ds-usage__item--dont {
+  border-top-color: #cd2026;
+}
+
+@media (min-width: 37.5em) {
+  .ds-usage__item--dont {
+    margin-left: 2.4rem;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .ds-usage__item {
+    margin-bottom: 0;
+  }
+}
+
 pre.highlight {
   position: relative;
 }
