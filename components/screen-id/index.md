@@ -61,7 +61,7 @@ jump_menu: true
 ## Usage
 
 {% capture usage_do %}
-* An FPAC Application required the use of a page identifier to help with technical issues.
+* When an FPAC Application requires the use of a page identifier to help with technical issues.
 {% endcapture %}
 
 {% capture usage_dont %}

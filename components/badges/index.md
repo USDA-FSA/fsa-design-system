@@ -179,8 +179,8 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
 ## Usage
 
 {% capture usage_do %}
-* The application requires a notification system with minimal footprint.
-* An application button requires a notification badge within it.
+* If an application requires a notification system with minimal footprint.
+* If an application button requires a notification badge within it.
 {% endcapture %}
 
 {% capture usage_dont %}

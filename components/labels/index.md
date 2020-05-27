@@ -180,7 +180,7 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 ## Usage
 
 {% capture usage_do %}
-* You would like to flag or call attention to content within an application.
+* When an application would like to flag or call attention to content within an application.
 {% endcapture %}
 
 {% capture usage_dont %}

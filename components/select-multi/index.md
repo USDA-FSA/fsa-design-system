@@ -467,8 +467,8 @@ Items "One" and "Four" below are disabled.
 ## Usage
 
 {% capture usage_do %}
-* Muliple options need to be shown to the User at one time, while all options are selectable.
-* The application requires a mechanism to select all or none of the options.
+* When multiple options need to be shown to the User at one time, while all options are selectable.
+* If the application requires a mechanism to select all or none of the options.
 {% endcapture %}
 
 {% capture usage_dont %}

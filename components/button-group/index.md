@@ -141,14 +141,14 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 ## Usage
 
 {% capture usage_do %}
-* You want to consolidate like actions into one condensed component that acts as a toggle between the button options.
-* All actions pertain to the same feature set and contextual functionality of the application.
+* When consolidating like actions into one condensed component acting as a toggle between the button options.
+* If actions pertain to the same feature set and contextual functionality of the application.
 {% endcapture %}
 
 {% capture usage_dont %}
 * When the functionality of the button does not pertain to the feature within the context of the application.
 * If you want to lead users between pages of a website. Use [text links]({{ site.baseurl }}components/links/) instead.
-* Less popular or less important actions may be visually styled as links.
+* If less popular or lower priority actions may be visually styled as links.
 {% endcapture %}
 
 {% include do-dont.html %}

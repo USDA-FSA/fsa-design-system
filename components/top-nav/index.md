@@ -1633,7 +1633,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 </div>
 
 {% capture usage_do %}
-* An FPAC Application requires navigation to other areas within the application.
+* When an FPAC Application requires navigation to other areas within the application.
 {% endcapture %}
 
 {% capture usage_dont %}

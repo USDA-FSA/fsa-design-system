@@ -320,9 +320,9 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 ## Usage
 
 {% capture usage_do %}
-* A form requires a numeric value to be input by the User
-* The User would benefit from incrementing a numeric value by a predefined amount
-* The User would benefit from incrementing a numeric value that uses decimal places
+* When a form field requires a numeric value to be input by the User
+* If the User would benefit from incrementing a numeric value by a predefined amount
+* If the User would benefit from incrementing a numeric value that uses decimal places
 {% endcapture %}
 
 {% capture usage_dont %}

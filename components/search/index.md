@@ -508,7 +508,7 @@ jump_menu: true
 ## Usage
 
 {% capture usage_do %}
-* There's a strong case for supplementing the navigation system and users would benefit from being able to search your site or app.
+* If a strong case exists for supplementing the navigation system and users would benefit from being able to search your site or app.
 {% endcapture %}
 
 {% capture usage_dont %}

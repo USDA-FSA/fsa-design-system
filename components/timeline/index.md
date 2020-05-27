@@ -307,8 +307,8 @@ Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
 ## Usage
 
 {% capture usage_do %}
-* The application requires providing the User a vertically oriented timeline of events.
-* The application requires the ability to create, edit, and delete sequential actions mapped out visually.
+* When the application requires providing the User a vertically oriented timeline of events.
+* When the application requires the ability to create, edit, and delete sequential actions mapped out visually.
 {% endcapture %}
 
 {% capture usage_dont %}

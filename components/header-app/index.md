@@ -252,12 +252,12 @@ jump_menu: true
 ## Usage
 
 {% capture usage_do %}
-* An Application is viewable to a internal or public audience.
-* An Application needs to prominently display the application abbreviation, application name, and Username.
+* When an Application is viewable to a internal or public audience.
+* When an Application needs to prominently display the application abbreviation, application name, and Username.
 {% endcapture %}
 
 {% capture usage_dont %}
-* The Application Header component on any area of the page except just below the [Top Hat Component]({{ site.baseurl }}components/tophat/).
+* On any area of the page except just below the [Top Hat Component]({{ site.baseurl }}components/tophat/).
 {% endcapture %}
 
 {% include do-dont.html %}

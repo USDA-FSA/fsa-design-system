@@ -521,15 +521,14 @@ title_label: 'May Require JavaScript'
 ## Usage
 
 {% capture usage_do %}
-* A process flow requires multiple steps to perform actions
-* Using the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component
-* A process flow would be enriched by a sticky control at the bottom of the screen
-* A Status Message would help to gain context for the User during a stepped process
+* For process flows requiring multiple steps to perform actions
+* While paired with the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component
+* When a process flow would be enriched by a sticky control at the bottom of the screen
+* When a Status Message would help to gain context for the User during a stepped process
 {% endcapture %}
 
 {% capture usage_dont %}
 * As the component to control a singular form or action
-* Buttons with the visual style of a text link
 * At the top of a screen as a means for navigation
 * As a substitute for pagination
 {% endcapture %}

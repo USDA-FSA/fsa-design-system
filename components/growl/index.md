@@ -371,9 +371,9 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 ## Usage
 
 {% capture usage_do %}
-* The application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background processes.
-* The application requires a message to appear and have the User take action to dismiss.
-* The application displays non-critical information that won't disrupt a workflow.
+* When the application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background processes.
+* When the application requires a message to appear and have the User take action to dismiss.
+* When the application displays non-critical information that won't disrupt a workflow.
 {% endcapture %}
 
 {% capture usage_dont %}

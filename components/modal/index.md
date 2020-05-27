@@ -202,17 +202,17 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 ## Usage
 
 {% capture usage_do %}
-* Completing a subtask required by underlying page.
-* You need to isolate a feature or action to gain sole focus of that feature or action.
-* Providing non-essential information related to the underlying page.
+* When completing a subtask required by underlying page.
+* When you need to isolate a feature or action to gain sole focus of that feature or action.
+* When providing non-essential information related to the underlying page.
 {% endcapture %}
 
 {% capture usage_dont %}
 * When its content or features can be part of the page without complicating the page's intent.
 * When the content or message requires interaction with other parts of the application or screen.
 * When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
-* Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
-* A system timeout message is required for an applications, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
+* To communicate brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
+* As a system timeout message, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
 {% endcapture %}
 
 {% include do-dont.html %}

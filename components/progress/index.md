@@ -571,8 +571,8 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 ## Usage
 
 {% capture usage_do %}
-* The system has started an asynchronous process within a feature or section of the application that is not currently available for interaction.
-* A User should be shown that data or files are in the process of being retrieved, updated, uploading, or deleted from the system.
+* When the system has started an asynchronous process within a feature or section of the application that is not currently available for interaction.
+* When a User should be shown that data or files are in the process of being retrieved, updated, uploading, or deleted from the system.
 {% endcapture %}
 
 {% capture usage_dont %}

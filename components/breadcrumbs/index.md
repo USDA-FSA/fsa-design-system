@@ -187,10 +187,10 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 ## Usage
 
 {% capture usage_do %}
-* Displaying hierarchy.
-* The application structure is several levels deep.
-* You want to allow the User to navigate quickly to various levels within the application architecture without using the browser back button.
-* You want to help orient the User and provide contextual awareness within a process or application structure.
+* For communicating hierarchy.
+* When the application structure is several levels deep.
+* When you want to allow the User to navigate quickly to various levels within the application architecture without using the browser back button.
+* When you want to help orient the User and provide contextual awareness within a process or application structure.
 {% endcapture %}
 
 {% capture usage_dont %}

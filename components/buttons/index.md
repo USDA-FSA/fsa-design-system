@@ -149,11 +149,11 @@ Several of a button's style properties can be selectively modified across each M
 ## Usage
 
 {% capture usage_do %}
-* Triggering invokes an action or behavior, such as submitting a form or spawning a Modal. Otherwise, use a [text link]({{ site.baseurl }}components/links/).
+* To trigger an action or behavior, such as submitting a form or spawning a Modal.
 {% endcapture %}
 
 {% capture usage_dont %}
-* To navigate between destinations. Use a [text link]({{ site.baseurl }}components/links/) instead.
+* Avoid using to navigate between destinations, deferring to a [text link]({{ site.baseurl }}components/links/) instead.
 {% endcapture %}
 
 {% include do-dont.html %}

@@ -17,7 +17,7 @@ jump_menu: true
 ## Usage
 
 {% capture usage_do %}
-* Allowing users to navigate between destinations.
+* For allowing users to navigate between destinations.
 {% endcapture %}
 
 {% capture usage_dont %}

@@ -261,8 +261,8 @@ Using several [CSS Utilities]({{ site.baseurl }}utilities), arrange content in a
 ## Usage
 
 {% capture usage_do %}
-* The Application requires the User to perform a toggle action, and affect the application immediately.
-* A setting within an application needs to be toggled between two different states.
+* When an Application requires the User to perform a toggle action, and affect the application immediately.
+* When a setting within an application needs to be toggled between two different states.
 {% endcapture %}
 
 {% capture usage_dont %}
@@ -281,11 +281,8 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 ## General Guidance
 
 * A Switch Component should be used as a control within an application and provide a way to toggle between two states like a household light switch.
-
 * The Switch Component is in use on this page above in the `Show Code` and `X-Ray` toggles, and provides a great example of how it should be used.
-
 * The Indeterminate states is only available before a User has interacted with the Switch Component, and cannot be set to Indeterminate again.
-
 
 ## Related Resources
 

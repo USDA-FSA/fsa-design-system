@@ -232,8 +232,8 @@ jump_menu: true
 ## Usage
 
 {% capture usage_do %}
-* An Application requires a global footer within the application.
-* An Application requires additional application specific navigation or links to documentation.
+* When an Application requires a global footer within the application.
+* When an Application requires additional application specific navigation or links to documentation.
 {% endcapture %}
 
 {% capture usage_dont %}
