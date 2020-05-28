@@ -6,23 +6,9 @@ intro: ""
 
 ---
 
-## General Guidelines
+## UI Pattern
 
- * In general, a single column of input fields is recommended
- * Two column layouts can be used when grouping of form fields requires paired structure
- * Labels shall be top aligned
- * All form elements shall be aligned to the left
- * The use of Placeholders shall not replace Labels
- * Labels shall always be accessible
- * Font and Font weights shall remain consistent
- * Form fields shall each be uniform length and use Design System CSS
- * Form fields shall have enough space for completion of entry
- * Reduce as much visual noise as possible by eliminating unnecessary fields for the task
- * Content groupings should be intuitive and aligned together for better cognitive response
-
-## Single Column vs Multiple Columns
-
-In general, FPAC applications should use a single column layout. There are instances when a two or multi-column layout is appropriate which will be determined based on the complexity and groupings of the form fields.
+In general, FPAC applications should use a single column layout. There are instances when a two or multi-column layout is appropriate as determined based on the complexity and groupings of the form fields and product requirements.
 
 ### Single Column Example
 
