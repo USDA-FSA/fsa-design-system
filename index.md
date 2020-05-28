@@ -20,18 +20,16 @@ custom_js: "ds-quick-find.js"
     </div>
   </div>
 
-  <form>
-    <div class="ds-quick-find">
-      <div class="ds-quick-find__field">
-        <input id="quick-find-id" class="ds-quick-find__input fsa-input fsa-input--block fsa-input--large" type="text" name="search" value="" placeholder="Quick Find" autocomplete="off" aria-owns="quick-find-results-id" aria-describedby="quick-find-instructions" aria-expanded="false">
-        <button class="ds-quick-find__clear" type="reset" title="Clear" aria-label="Clear"></button>
-      </div>
-      <div id="quick-find-results-id">
-      </div>
-      <div class="fsa-sr-only" id="quick-find-instructions">When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.</div>
-      <div aria-live="polite" class="fsa-sr-only">7 results</div>
+  <div class="ds-quick-find">
+    <div class="ds-quick-find__field">
+      <input id="quick-find-id" class="ds-quick-find__input fsa-input fsa-input--block fsa-input--large" type="text" name="search" value="" placeholder="Quick Find" autocomplete="off" aria-owns="quick-find-results-id" aria-describedby="quick-find-instructions" aria-expanded="false">
+      <button id="quick-find-clear-id" class="ds-quick-find__clear" type="reset" title="Clear" aria-label="Clear"></button>
     </div>
-  </form>
+    <div id="quick-find-results-id">
+    </div>
+    <div class="fsa-sr-only" id="quick-find-instructions">When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.</div>
+    <div id="quick-find-results-count-id" aria-live="polite" class="fsa-sr-only">0 results</div>
+  </div>
 
   <div class="fsa-box fsa-level fsa-level--gutter-m fsa-m-b--l fsa-show@l">
     <span><a class="fsa-btn fsa-btn--block fsa-btn--primary" href="getting-started/">Getting Started</a></span>
