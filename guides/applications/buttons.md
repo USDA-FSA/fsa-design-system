@@ -11,151 +11,45 @@ intro: "FPAC applications shall have the same look and feel, along with having a
 The below buttons are the default variations available for use in the Design System. For further details on variations and states, view the [Button Components]({{ site.baseurl }}components/buttons/) component documentation.
 
 <div class="ds-preview">
-  <p>
-      <button class="fsa-btn fsa-btn--primary" type="button">Primary</button>
-      <button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button>
-      <button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button>
-      <button class="fsa-btn fsa-btn--flat" type="button">Flat</button>
+  <p class="fsa-level">
+    <span><button class="fsa-btn fsa-btn--primary" type="button">Primary</button></span>
+    <span><button class="fsa-btn fsa-btn--secondary" type="button">Secondary</button></span>
+    <span><button class="fsa-btn fsa-btn--tertiary" type="button">Tertiary</button></span>
+    <span><button class="fsa-btn fsa-btn--flat" type="button">Flat</button></span>
   </p>
-  <p>
-      <button class="fsa-btn fsa-btn--primary" type="button" disabled>Disabled Primary</button>
-      <button class="fsa-btn fsa-btn--secondary" type="button" disabled>Disabled Secondary</button>
-      <button class="fsa-btn fsa-btn--tertiary" type="button" disabled>Disabled Tertiary</button>
-      <button class="fsa-btn fsa-btn--flat" type="button" disabled>Disabled Flat</button>
+  <p class="fsa-level">
+    <span><button class="fsa-btn fsa-btn--primary" type="button" disabled>Disabled Primary</button></span>
+    <span><button class="fsa-btn fsa-btn--secondary" type="button" disabled>Disabled Secondary</button></span>
+    <span><button class="fsa-btn fsa-btn--tertiary" type="button" disabled>Disabled Tertiary</button></span>
+    <span><button class="fsa-btn fsa-btn--flat" type="button" disabled>Disabled Flat</button></span>
   </p>
 </div>
 
-<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
-    <thead>
-        <tr>
-            <th>Variation/State</th>
-            <th>Usage</th>
-            <th>Example</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td aria-label="Variation/State">
-                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary">Primary</button>
-            </td>
-            <td aria-label="Usage"> A primary style shall be applied to a button that represents the <strong>top priority action</strong> a User might take <strong>within a given UI context</strong>. </td>
-            <td aria-label="Example"> Submitting a form or continuing a stepped process would be considered primary. </td>
-        </tr>
-        <tr>
-            <td aria-label="Variation/State">
-                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary">Secondary</button>
-            </td>
-            <td aria-label="Usage"> A secondary style shall be applied to buttons that are <strong>not top priority</strong>, may be viewed as contrary        to progress, or the action is relevant for <strong>adjacent features and functionality</strong>. You may think of this as the <strong>default</strong> button state (despite it's "secondary" name); that is, all buttons are default unless one of the other use cases mentioned on this page come into play. </td>
-            <td aria-label="Example"> A button labeled "View Producer" that displays data on the same screen without continuing a process. </td>
-        </tr>
-        <tr>
-            <td aria-label="Variation/State">
-                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary">Tertiary</button>
-            </td>
-            <td aria-label="Usage"> A tertiary style shall be applied only to buttons that perform a <strong>destructive</strong> action. </td>
-            <td aria-label="Example"> "Delete" or "Remove". </td>
-        </tr>
-        <tr>
-            <td aria-label="Variation/State">
-                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
-            </td>
-            <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
-            <td aria-label="Example">
-                Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code> but its UI presents them as more navigational.
-                <br><br>
-                A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database.
-            </td>
-        </tr>
-        <tr>
-            <td aria-label="Variation/State">
-                <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button>
-            </td>
-            <td aria-label="Usage">
-                Communicates when a button isn’t actionable and is deemphasized in a UI.
-            </td>
-            <td aria-label="Example">
-                A button needs to remain present and visible, and becomes actionable once any number of criteria is met.
-            </td>
-        </tr>
-    </tbody>
-</table>
+## General Guidance
 
-## Size
+The following guidelines supplement the [Button Component's Guidelines]({{ site.baseurl }}components/buttons/).
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Default</button>
-  <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Small</button>
-  <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Large</button>
-</div>
+### Multi-Step Process
 
-## Display
+View [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/) component for further documentation.
 
-<div class="ds-preview">
-    <p><button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Full width (aka Block)</button></p>
-    <p><button class="fsa-btn fsa-btn--primary fsa-btn--inline" type="button">Inline (default)</button></p>
-</div>
+ * A **regressive** action shall be left-aligned, followed by right-aligned **progressive** action(s).
+ * Back and Next may be used as button labels.
+ * The saving of data or state is implied and clicking the **"Regressive"** button shall not delete data that has been entered.
+ * Save or Submit can be used on the final step.
 
-## Responsive
-
-Several of a button's style properties can be selectively modified across each Media Query breakpoint.
-
-<code>fsa-btn--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
-<code>small</code>,
-<code>medium</code>,
-<code>large</code>,
-<code>block</code>, or
-<code>inline</code>; and <code>breakpoint</code> is one of
-<code title="small">s</code>,
-<code title="medium">m</code>,
-<code title="large">l</code>, or
-<code title="extra large">xl</code>
-
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_buttons" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_buttons">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
-
-## General Guidelines
-
- * All buttons should use an action word to start the label. Eg. "View Details" vs. "Details"
- * A Cancel button shall not be used unless the online form uses a multi-step process
- * A Cancel button shall be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process
- * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes
- * When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variation) or Secondary button
- * Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
-
-## Multi-Step Process Guidelines
-
- * A **regressive** action shall be left-aligned, followed by right-aligned **progressive** action(s)
- * Back and Next can be used as button labels
- * The saving of data or state is implied and clicking the **"Regressive"** button shall not delete data that has been entered
- * Save or Submit can be used on the final step
-
-View [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/) component for documentation.
-
-## Reset and Clear Guidelines
+### Reset and Clear
 
  * Reset is defined as removing all data and returning to the initial state of the application or online form inputs
  * Clear is defined as removing all data from application or online form fields
  * Reset and Clear buttons, if used, shall not be placed near a Primary button such as Next, Submit, or Save
 
-## Which Label to Use?
+### Which Label to Use?
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Submit</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
+<div class="ds-preview fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--primary" type="button">Save</button>
 </div>
 
 Use Submit for a button label when providing data that will not be stored, or if the data is submitted by an anonymous User. Use a Save label when the User is authenticated and will be updating data within a system.
@@ -165,8 +59,10 @@ Use Submit for a button label when providing data that will not be stored, or if
 
  ___
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Search</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
+<div class="ds-preview fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">Search</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--primary" type="button">Submit</button>
 </div>
 
 * **Search** shall be used as the button label when the application is performing a query and returning results.
@@ -174,8 +70,12 @@ Use Submit for a button label when providing data that will not be stored, or if
 
 ___
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Back</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
+<div class="ds-preview fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">Back</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--primary" type="button">Exit</button>
 </div>
 
 * When returning to a previous screen or step, use **Back** as the button label.
@@ -184,18 +84,24 @@ ___
 
 ___
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--primary" type="button">Reload</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
+<div class="ds-preview fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">Refresh</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--primary" type="button">Reload</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
 </div>
 
 * When data or a state in the application has changed, it is recommended to use **Refresh** as a label.
 * The Reload label implies getting more data, while Refresh is a more general and User friendly term.
-* Reset implies clearing data and returning to the initial state of data.
+    * Reset implies clearing data and returning to the initial state of data.
 
 ___
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Cancel</button>
+<div class="ds-preview fsa-level">
+  <button class="fsa-btn fsa-btn--flat" type="button">Cancel</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Cancel</button>
 </div>
 
 * In general, all FPAC applications should use the Flat style for a **Cancel** button.
@@ -203,8 +109,10 @@ ___
 
 ___
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button> <span class="fsa-m-r--xxs fsa-m-l--xxs">vs.</span> <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
+<div class="ds-preview fsa-level">
+  <button class="fsa-btn fsa-btn--tertiary" type="button">Delete</button>
+  <span>vs.</span>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Reset</button>
 </div>
 
 * A button shall use the **Tertiary** style when the action taken has destructive capabilities.
@@ -212,7 +120,7 @@ ___
 
 ___
 
-## Common Button Labels and Functionality
+### Common Button Labels and Functionality
 
 <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
     <thead>
