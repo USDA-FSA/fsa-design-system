@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Modal Window"
-intro: "A Popup window or Modal window is a vital part of many FPAC applications and provides a way for the system to focus solely on the content or a singl action."
+intro: "A Popup window or Modal window is a vital part of many FPAC applications and provides a way for the system to focus solely on the content or a single action."
 
 ---
 

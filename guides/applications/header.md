@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Header"
-intro: "FPAC Applications should have a consistent header and make use of the Design System's header component."
+intro: ""
 
 ---
 

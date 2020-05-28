@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Navigation"
-intro: "FPAC Applications should have cohesive implementation of a global navigation."
+intro: ""
 
 ---
 
