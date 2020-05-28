@@ -1,9 +1,5 @@
 ---
-layout: guide
-parent: "Applications"
-title: "Fonts"
-intro: ""
-
+layout: redirect
+redirectURL: "visual-style/typography/"
+redirectTitle: "Visual Style > Typography"
 ---
-
-[Typography CSS Information]({{ site.baseurl }}visual-style/typography/)

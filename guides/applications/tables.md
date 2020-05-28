@@ -1,8 +1,5 @@
 ---
-layout: guide
-parent: "Applications"
-title: "Tables"
-intro: ""
+layout: redirect
+redirectURL: "components/tables"
+redirectTitle: "Components > Tables"
 ---
-
-[Tables Component]({{ site.baseurl }}components/tables)
