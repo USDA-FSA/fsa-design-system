@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Footer"
-intro: "FPAC applications may utilize the Design System's Footer component."
+intro: ""
 ---
 
 Customized structures, content, and links from your app's footer may be created per your product's requirements.

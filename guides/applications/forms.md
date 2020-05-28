@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Forms"
-intro: "FPAC applications shall adhere to the layout and specifications for forms that are listed below."
+intro: ""
 
 ---
 

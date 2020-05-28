@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Fonts"
-intro: "All FPAC applications shall adhere to the below Typography guidelines in order to maintain consistency throughout all agency applications."
+intro: ""
 
 ---
 

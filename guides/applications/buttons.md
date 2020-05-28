@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Buttons"
-intro: "FPAC applications shall have the same look and feel, along with having a consistent naming convention for the most used buttons. Below you will find guidelines on how to use specific style related to various actions and features where a button is used."
+intro: ""
 
 ---
 

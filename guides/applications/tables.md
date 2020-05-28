@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Tables"
-intro: "FPAC applications that require data to be displayed in a tabular format shall use the below guidelines to maintain consistency."
+intro: ""
 ---
 
 ## Tables Guidelines
