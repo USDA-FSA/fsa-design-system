@@ -60,13 +60,15 @@ jump_menu: true
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When an FPAC Application requires the use of a page identifier to help with technical issues.
+{% endcapture %}
 
-* An FPAC Application required the use of a page identifier to help with technical issues.
-
-### Don't Use
-
+{% capture usage_dont %}
 * As a title bar or other visual or functional purpose.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidelines
 

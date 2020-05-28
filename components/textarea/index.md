@@ -149,18 +149,19 @@ Selectively override several style properties at each Media Query breakpoint.
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 * When using another type of input will make answering more difficult.
 * When users want to be able to paste in a response, particularly longform text.
 * When a [text input]({{ site.baseurl }}components/text-input/) field may not satisfy the amount of text a user could enter; for example, long prose values that may amount to a sentence.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * When users need only enter short form content. Consider the [textarea]({{ site.baseurl }}components/text-input/) element.
 * When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}components/select/), [radio]({{ site.baseurl }}components/radio/), or [checkbox]({{ site.baseurl }}components/checkbox/).
+{% endcapture %}
 
+{% include do-dont.html %}
 
 ## Accessibility
 

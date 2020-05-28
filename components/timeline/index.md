@@ -306,16 +306,17 @@ Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When the application requires providing the User a vertically oriented timeline of events.
+* When the application requires the ability to create, edit, and delete sequential actions mapped out visually.
+{% endcapture %}
 
-* The application requires providing the User a vertically oriented timeline of events.
-
-* The application requires the ability to create, edit, and delete sequential actions mapped out visually.
-
-### Don't Use
-
+{% capture usage_dont %}
 * As an alternative to a bulleted list of text or data.
 * Multiple timelines that are positioned adjacent to each other.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

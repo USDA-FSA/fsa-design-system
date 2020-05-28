@@ -342,17 +342,20 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 
 ## Usage
 
-### Use When
-
-* Users need to select only one option out of a set of mutually exclusive choices.
-* The number of available options can fit onto a mobile screen.
+{% capture usage_do %}
+* When users may only choose a single option out of a set of mutually exclusive choices.
+* If the number of available options can fit onto a mobile screen.
 * In place of [select]({{ site.baseurl }}components/select/) element if there are few enough options (e.g. <=7) and the design can support it.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * Consider [checkbox]({{ site.baseurl }}components/checkbox/) if users may have the option to select more than one.
 * Consider a [select]({{ site.baseurl }}components/select/) if you don’t have enough space to list out all available options.
 * If users should be able to select zero of the options; radio elements are not "uncheckable." A [checkbox]({{ site.baseurl }}components/checkbox/) may be warranted.
+* If there are too many options to display on a single view; consider a [Select]({{ site.baseurl }}components/select/) instead.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

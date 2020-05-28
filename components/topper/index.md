@@ -48,15 +48,17 @@ jump_menu: true
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When an Application page is longer and requires.
+* When an Application requires a quick way to return to the top of the page.
+{% endcapture %}
 
-* An Application page is longer and requires.
-* An Application requires a quick way to return to the top of the page.
+{% capture usage_dont %}
+* As link to another page.
+* For anything other than returning the User to the top of the screen.
+{% endcapture %}
 
-### Don't Use
-
-* The Topper component as link to another page.
-* The Topper component for anything other than returning the User to the top of the screen.
+{% include do-dont.html %}
 
 ## Accessibility
 
