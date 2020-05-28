@@ -2,11 +2,13 @@
 layout: guide
 parent: "Guides"
 title: "Applications"
-intro: "In this section, we will cover general topics and guidelines for FPAC Applications."
+intro: ""
 ---
 
-## Guidelines for Design System Use
-
-The main objective of the Design System is to provide a means for FPAC Product Teams to easily download or install a codebase that has a consistent look and feel baked into the CSS. By following these Guides and working with the associated Components, developers and designer have the ability to very quickly build and maintain applications that look and behave cohesively.
-
-It is not permissable to **directly** update or modify styles within the Design System's CSS Framework, `fsa-style`. Custom styles specific to your product's needs consistent with the Design System's Visual Language shall be stored in a separate file or concatenated together as part of a build system, e.g. Webpack, Grunt, Gulp, or the like.
+<div class="fsa-alert fsa-alert--warning" role="alert">
+  <div class="fsa-alert__body">
+    <h3 class="fsa-alert__heading">Notice</h3>
+    <p class="fsa-alert__text">The <strong>Applications Guide will be removed</strong> in the next release of the FPAC Design System. Its content will be reflected elsewhere at that point.</p>
+    <p class="fsa-alert__text">In the meantime, each of this sections navigation remains available.</p>
+  </div>
+</div>
