@@ -22,8 +22,8 @@ jump_menu: true
 ## Usage
 
 {% capture usage_do %}
-* Small-scale layout tasks control components along a level row.
-* Vertically center two or more adjacent elements or components.
+* For small-scale layout tasks control components along a level row.
+* To vertically center two or more adjacent elements or components.
 {% endcapture %}
 
 {% capture usage_dont %}
