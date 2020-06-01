@@ -21,15 +21,17 @@ jump_menu: true
 
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * Small-scale layout tasks control components along a level row.
 * Vertically center two or more adjacent elements or components.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * For complex or unique arrangements of components. Consider the [Grid System]({{ site.baseurl }}layout/grid/).
 * For large-scale page layout. Consider the [Grid System]({{ site.baseurl }}layout/grid/).
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Structure
 
