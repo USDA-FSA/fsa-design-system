@@ -162,110 +162,127 @@ const qf = {
 
   },
 
+  runEventTracking: function(){
+
+    // Listen for Clear Button click
+    qf.clear.addEventListener('click', qf.handleClearButtonClick);
+
+    // Listen for TAB events associated with Clear button
+    qf.clear.addEventListener('keydown', qf.handleClearButtonKeydown);
+  
+    // Listen for Search Input Focus
+    //qf.search.addEventListener('focusin', qf.handleSearchInputFocus);
+
+
+    // Listen for ESC key when Search Input in focus
+    qf.search.addEventListener('keydown', qf.handleSearchInputKeydown);
+
+    // Listen for Search Results Focus
+    qf.results.addEventListener('focusin', qf.handleResultsFocus); 
+
+    // Listen for Search Results Keydown
+    qf.results.addEventListener('keydown', qf.handleResultsKeydown);
+  },
+
+
+  handleClearButtonClick: function(e){
+    qf.closeResults();
+  },
+
+  handleClearButtonKeydown: function(e){
+    // SHIFT+TAB
+    if(e.keyCode==9 && !(e.shiftKey && e.keyCode==9) ) qf.closeResults();
+    // ENTER
+    if(e.keyCode==13) qf.closeResults();
+  },
+
+  handleSearchInputKeydown: function(e){
+    // ESC
+    if(e.keyCode==27) qf.closeResults()
+    // DOWN ARROW
+    if(e.keyCode==40){
+      e.preventDefault();
+      let el = qf.results.querySelector('a');
+      if(el) el.focus()
+    }  
+  },
+
+
+  handleResultsFocus: function(e){
+    
+    let prevElem = qf.prevElem;
+    let currElem = document.activeElement;
+    if( qf.prevElem ) qf.resultsNavFrom( qf.prevElem  );
+    if( currElem ) qf.resultsNavTo( currElem );
+    qf.prevElem = currElem;
+
+  },
+
+  handleResultsKeydown: function(e){
+
+    let currElem = document.activeElement;
+
+    // Listen for ESC key when results in focus
+    if(e.keyCode==27){ 
+      e.preventDefault();
+      qf.closeResults();
+    }
+    // Listen for DOWN key when results in focus
+    if(e.keyCode==40) {
+      e.preventDefault();
+
+      let nextSib = currElem.parentNode.nextSibling;
+      if(nextSib) {
+        let sibAnchor = nextSib.querySelector('a');
+        if(sibAnchor) {
+          sibAnchor.focus();
+        } else {
+          let cousin = nextSib.nextSibling;
+          if(cousin){
+            let cousinAnchor = cousin.querySelector('a');
+            if(cousinAnchor) cousinAnchor.focus();
+          }
+        }
+      }
+    }
+
+    // Listen for UP key when results in focus
+    if(e.keyCode==38) {
+      e.preventDefault();
+      let prevSib = currElem.parentNode.previousSibling;
+      if(prevSib) {
+        let sibAnchor = prevSib.querySelector('a');
+        if(sibAnchor) {
+          sibAnchor.focus();
+        } else {
+          let cousin = prevSib.previousSibling;
+          if(cousin){
+            let cousinAnchor = cousin.querySelector('a');
+            if(cousinAnchor) cousinAnchor.focus();
+          }
+        }
+      }
+    }
+
+    if(e.keyCode==9){
+      e.preventDefault();
+      // SHIFT+TAB
+      if( e.shiftKey && e.keyCode==9 ){
+        qf.resultsNavFrom( currElem );
+        qf.search.focus();
+      } else {
+        window.location = currElem.href;
+      }
+    }
+
+  },
+
 
   closeResults: function(){
     qf.results.innerHTML = '';
     qf.search.value = '';
     qf.search.setAttribute('aria-expanded', 'false');
     qf.search.focus();
-  },
-
-  runEventTracking: function(){
-
-    // Listen for Clear Button click
-    qf.clear.addEventListener('click', (event) => {
-      qf.closeResults();
-    });
-
-    // Listen for TAB events associated with Clear button
-    qf.clear.addEventListener('focusin', (evt) => { 
-      evt.target.addEventListener('keydown', (evt) => { 
-        // SHIFT+TAB
-        if(evt.keyCode==9 && !(evt.shiftKey && evt.keyCode==9) ) qf.closeResults();
-        // ENTER
-        if(evt.keyCode==13) qf.closeResults();
-      });
-    });
-  
-    // Listen for Search Input Focus
-    qf.search.addEventListener('focusin', (event) => {
-      // Listen for ESC key when Search Input in focus
-      qf.search.addEventListener('keydown', (evt) => { if(evt.keyCode==27) qf.closeResults() });
-
-      qf.search.addEventListener('keydown', (evt) => { 
-        if(evt.keyCode==40){
-          evt.preventDefault();
-          let el = qf.results.querySelector('a');
-          if(el) el.focus()
-        }  
-      });
-    });
-
-
-    // Listen for Search Results Focus
-    let prevElem = qf.prevElem;
-    qf.results.addEventListener('focusin', (event) => {
-      
-      let currElem = document.activeElement;
-      if( qf.prevElem ) qf.resultsNavFrom( qf.prevElem  );
-      if( currElem ) qf.resultsNavTo( currElem );
-      qf.prevElem = currElem;
-
-      qf.results.addEventListener('keydown', (evt) => {
-        // Listen for ESC key when results in focus
-        if(evt.keyCode==27){ 
-          evt.preventDefault();
-          qf.closeResults();
-        }
-        // Listen for DOWN key when results in focus
-        if(evt.keyCode==40) {
-          evt.preventDefault();
-          let nextSib = currElem.parentNode.nextSibling;
-          if(nextSib) {
-            let sibAnchor = nextSib.querySelector('a');
-            if(sibAnchor) {
-              sibAnchor.focus();
-            } else {
-              let cousin = nextSib.nextSibling;
-              if(cousin){
-                let cousinAnchor = cousin.querySelector('a');
-                if(cousinAnchor) cousinAnchor.focus();
-              }
-            }
-          }
-        }
-
-        // Listen for UP key when results in focus
-        if(evt.keyCode==38) {
-          evt.preventDefault();
-          let prevSib = currElem.parentNode.previousSibling;
-          if(prevSib) {
-            let sibAnchor = prevSib.querySelector('a');
-            if(sibAnchor) {
-              sibAnchor.focus();
-            } else {
-              let cousin = prevSib.previousSibling;
-              if(cousin){
-                let cousinAnchor = cousin.querySelector('a');
-                if(cousinAnchor) cousinAnchor.focus();
-              }
-            }
-          }
-        }
-
-        if(evt.keyCode==9){
-          evt.preventDefault();
-          // SHIFT+TAB
-          if( evt.shiftKey && evt.keyCode==9 ){
-            qf.resultsNavFrom( currElem );
-            qf.search.focus();
-          } else {
-            window.location = currElem.href;
-          }
-        }
-      });
-
-    });
   },
 
   resultsNavTo: function( node ){
