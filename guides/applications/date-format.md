@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Date Format"
-intro: "All FPAC applications shall follow the below guidelines when handling date entered into the application."
+intro: ""
 
 ---
 

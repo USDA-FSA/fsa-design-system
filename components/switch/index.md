@@ -115,138 +115,77 @@ The Indeterminate setting can be initiated by setting the `indeterminate` parame
 
 ### Default, label on the right
 <div class="ds-preview">
+  <span class="fsa-level fsa-level--inline">
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-example__wy7" name="switch-example__wy7">
+      <span class="fsa-switch__track"></span>
+    </label>
+    <label for="switch-example__wy7">Label</label>
+  </span>
+</div>
+```html
+<span class="fsa-level fsa-level--inline">
   <label class="fsa-switch">
     <input type="checkbox" class="fsa-switch__checkbox" id="switch-example__wy7" name="switch-example__wy7">
     <span class="fsa-switch__track"></span>
   </label>
-  <label class="fsa-m-l--xs" for="switch-example__wy7">Label</label>
-</div>
-```html
-<label class="fsa-switch">
-  <input type="checkbox" class="fsa-switch__checkbox" id="switch-example__wy7" name="switch-example__wy7">
-  <span class="fsa-switch__track"></span>
-</label>
-<label class="fsa-m-l--xs" for="switch-example__wy7">Label</label>
+  <label for="switch-example__wy7">Label</label>
+</span>
 ```
 
 ### Default, label on the left
 <div class="ds-preview">
-  <label class="fsa-m-r--xs" for="switch-example__hghg7s_1">Label on the left</label>
+  <span class="fsa-level fsa-level--inline">
+    <label for="switch-example__hghg7s_1">Label on the left</label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-example__hghg7s_1" name="switch-example__hghg7s_1">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </span>
+</div>
+```html
+<span class="fsa-level fsa-level--inline">
+  <label for="switch-example__hghg7s_1">Label on the left</label>
   <label class="fsa-switch">
     <input type="checkbox" class="fsa-switch__checkbox" id="switch-example__hghg7s_1" name="switch-example__hghg7s_1">
     <span class="fsa-switch__track"></span>
   </label>
-</div>
-```html
-<label class="fsa-m-r--xs" for="switch-example__hghg7s_1">Label on the left</label>
-<label class="fsa-switch">
-  <input type="checkbox" class="fsa-switch__checkbox" id="switch-example__hghg7s_1" name="switch-example__hghg7s_1">
-  <span class="fsa-switch__track"></span>
-</label>
+</span>
 ```
 
 ### Example
-Using several [CSS Utilities]({{ site.baseurl }}utilities), arrange content in a vertical list and associate a `<label`> with a `.fsa-switch`.
+Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/layout/level), [Padding Utilities]({{ site.baseurl }}/utilities/#padding), and [Divider]({{ site.baseurl }}/layout/divider), arrange content in a vertical list and associate a `<label`> with a `.fsa-switch`.
+
 <div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__1/3@m">
-      <div class="fsa-box fsa-p--s">
-        <div class="fsa-clearfix">
-          <div class="fsa-float--left">
-            <label class="fsa-m-r--xs" for="switch-thing__01">Thing 1</label>
-          </div>
-          <div class="fsa-float--right">
-            <label class="fsa-switch">
-              <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__01" name="switch-thing__01" checked>
-              <span class="fsa-switch__track"></span>
-            </label>
-          </div>
-        </div>
-        <hr class="fsa-m-t--xs fsa-m-b--xs">
-        <div class="fsa-clearfix">
-          <div class="fsa-float--left">
-            <label class="fsa-m-r--xs" for="switch-thing__02">Thing 2</label>
-          </div>
-          <div class="fsa-float--right">
-            <label class="fsa-switch">
-              <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__02" name="switch-thing__02">
-              <span class="fsa-switch__track"></span>
-            </label>
-          </div>
-        </div>
-        <hr class="fsa-m-t--xs fsa-m-b--xs">
-        <div class="fsa-clearfix">
-          <div class="fsa-float--left">
-            <label class="fsa-m-r--xs" for="switch-thing__03">Thing 3</label>
-          </div>
-          <div class="fsa-float--right">
-            <label class="fsa-switch">
-              <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__03" name="switch-thing__03" disabled>
-              <span class="fsa-switch__track"></span>
-            </label>
-          </div>
-        </div>
-        <hr class="fsa-m-t--xs fsa-m-b--xs">
-        <div class="fsa-clearfix">
-          <div class="fsa-float--left">
-            <label class="fsa-m-r--xs" for="switch-thing__04">Thing 4</label>
-          </div>
-          <div class="fsa-float--right">
-            <label class="fsa-switch">
-              <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__04" name="switch-thing__04">
-              <span class="fsa-switch__track"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-```html
-<div class="fsa-grid">
-  <div class="fsa-grid__1 fsa-grid__1/3@m">
-    <div class="fsa-box fsa-p--s">
-      <div class="fsa-clearfix">
-        <div class="fsa-float--left">
-          <label class="fsa-m-r--xs" for="switch-thing__01">Thing 1</label>
-        </div>
-        <div class="fsa-float--right">
+      <div class="fsa-box fsa-p--none">
+        <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+          <label for="switch-thing__01">Thing 1</label>
           <label class="fsa-switch">
-            <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__01" name="switch-thing__01" checked>
+            <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__01" name="switch-thing__01" checked="">
             <span class="fsa-switch__track"></span>
           </label>
         </div>
-      </div>
-      <hr class="fsa-m-t--xs fsa-m-b--xs">
-      <div class="fsa-clearfix">
-        <div class="fsa-float--left">
-          <label class="fsa-m-r--xs" for="switch-thing__02">Thing 2</label>
-        </div>
-        <div class="fsa-float--right">
+        <div class="fsa-divider"></div>
+        <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+          <label for="switch-thing__02">Thing 2</label>
           <label class="fsa-switch">
             <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__02" name="switch-thing__02">
             <span class="fsa-switch__track"></span>
           </label>
         </div>
-      </div>
-      <hr class="fsa-m-t--xs fsa-m-b--xs">
-      <div class="fsa-clearfix">
-        <div class="fsa-float--left">
-          <label class="fsa-m-r--xs" for="switch-thing__03">Thing 3</label>
-        </div>
-        <div class="fsa-float--right">
+        <div class="fsa-divider"></div>
+        <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+          <label for="switch-thing__03">Thing 3</label>
           <label class="fsa-switch">
-            <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__03" name="switch-thing__03" disabled>
+            <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__03" name="switch-thing__03" disabled="">
             <span class="fsa-switch__track"></span>
           </label>
         </div>
-      </div>
-      <hr class="fsa-m-t--xs fsa-m-b--xs">
-      <div class="fsa-clearfix">
-        <div class="fsa-float--left">
-          <label class="fsa-m-r--xs" for="switch-thing__04">Thing 4</label>
-        </div>
-        <div class="fsa-float--right">
+        <div class="fsa-divider"></div>
+        <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+          <label for="switch-thing__04">Thing 4</label>
           <label class="fsa-switch">
             <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__04" name="switch-thing__04">
             <span class="fsa-switch__track"></span>
@@ -256,19 +195,56 @@ Using several [CSS Utilities]({{ site.baseurl }}utilities), arrange content in a
     </div>
   </div>
 </div>
+
+```html
+<div class="fsa-box fsa-p--none">
+  <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    <label for="switch-thing__01">Thing 1</label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__01" name="switch-thing__01" checked="">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </div>
+  <div class="fsa-divider"></div>
+  <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    <label for="switch-thing__02">Thing 2</label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__02" name="switch-thing__02">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </div>
+  <div class="fsa-divider"></div>
+  <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    <label for="switch-thing__03">Thing 3</label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__03" name="switch-thing__03" disabled="">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </div>
+  <div class="fsa-divider"></div>
+  <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
+    <label for="switch-thing__04">Thing 4</label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-thing__04" name="switch-thing__04">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </div>
+</div>
 ```
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When an Application requires the User to perform a toggle action, and affect the application immediately.
+* When a setting within an application needs to be toggled between two different states.
+{% endcapture %}
 
-* The Application requires the User to perform a toggle action, and affect the application immediately.
-* A setting within an application needs to be toggled between two different states.
-
-### Don't Use
-
+{% capture usage_dont %}
 * Within an application form as a way to select a between 2 Options. Instead utilize a [Checkbox]({{ site.baseurl }}components/checkbox/).
 * As an alternative for a [Checkbox]({{ site.baseurl }}components/checkbox/) or [Radio]({{ site.baseurl }}components/radio/) within a Form.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 
@@ -279,11 +255,8 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 ## General Guidance
 
 * A Switch Component should be used as a control within an application and provide a way to toggle between two states like a household light switch.
-
 * The Switch Component is in use on this page above in the `Show Code` and `X-Ray` toggles, and provides a great example of how it should be used.
-
 * The Indeterminate states is only available before a User has interacted with the Switch Component, and cannot be set to Indeterminate again.
-
 
 ## Related Resources
 

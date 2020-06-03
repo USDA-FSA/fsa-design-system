@@ -16,13 +16,15 @@ jump_menu: true
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* For allowing users to navigate between destinations.
+{% endcapture %}
 
-* Allowing users to navigate between destinations.
-
-### Don't Use
-
+{% capture usage_dont %}
 * To trigger an action or behavior. Use a [Button]({{ site.baseurl }}components/buttons/) instead.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

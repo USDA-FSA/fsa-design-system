@@ -419,19 +419,20 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When a process flow requires more than 2 linear steps and/or screens.
+* When a process flow can allow the User to skip multiple steps backwards to previous steps and/or screens.
+* If providing the User with a clear indication of the status within the process is needed.
+{% endcapture %}
 
-* A process flow requires more than 2 linear steps and/or screens.
-* A process flow can allow the User to skip multiple steps backwards to previous steps and/or screens.
-* Providing the User with a clear indication of the status within the process is needed.
-
-### Don't Use
-
+{% capture usage_dont %}
 * As a system of navigation unrelated to a linear stepped process workflow.
 * If the process flow will only have 2 screens and/or steps.
-* The Stepped Tabs Component and allow the User to skip forward using the Stepped Tabs themselves.
 * If the process flow will not go through each steps provided in the tabs to complete the process.
 * As a Breadcrumb. Use [Breadcrumb]({{ site.baseurl }}components/breadcrumb/).
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

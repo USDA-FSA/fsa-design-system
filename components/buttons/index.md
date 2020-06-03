@@ -8,10 +8,12 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+  <div class="fsa-level">
+    <span><button class="fsa-btn fsa-btn--primary" type="button">Label</button></span>
+    <span><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></span>
+    <span><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></span>
+    <span><button class="fsa-btn fsa-btn--flat" type="button">Label</button></span>
+  </div>
 </div>
 
 ## Variations
@@ -82,10 +84,12 @@ Each button variation can be modified with one or multiple states:
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
 <div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button>
-  <button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button>
-  <button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button>
-  <button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button>
+  <div class="fsa-level">
+    <span><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></span>
+    <span><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></span>
+    <span><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></span>
+    <span><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></span>
+  </div>
 </div>
 ```html
 <button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>
@@ -144,13 +148,62 @@ Several of a button's style properties can be selectively modified across each M
 
 ## Usage
 
-### Use When
+<table class="fsa-table fsa-table--responsive">
+  <thead>
+    <tr>
+      <th>Variation/State</th>
+      <th>Usage</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td aria-label="Variation/State">
+        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary">Primary</button>
+      </td>
+      <td aria-label="Usage"> A primary style shall be applied to a button that represents the <strong>top priority action</strong> a User might take <strong>within a given UI context</strong>. </td>
+      <td aria-label="Example"> Submitting a form or continuing a stepped process would be considered primary. </td>
+    </tr>
+    <tr>
+      <td aria-label="Variation/State">
+        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary">Secondary</button>
+      </td>
+      <td aria-label="Usage"> A secondary style shall be applied to buttons that are <strong>not top priority</strong>, may be viewed as contrary to progress, or the action is relevant for <strong>adjacent features and functionality</strong>. You may think of this as the <strong>default</strong> button state (despite it's "secondary" name); that is, all buttons are default unless one of the other use cases mentioned on this page come into play. </td>
+      <td aria-label="Example"> A button labeled "View Producer" that displays data on the same screen without continuing a process. </td>
+    </tr>
+    <tr>
+      <td aria-label="Variation/State">
+        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary">Tertiary</button>
+      </td>
+      <td aria-label="Usage"> A tertiary style shall be applied only to buttons that perform a <strong>destructive</strong> action. </td>
+      <td aria-label="Example"> "Delete" or "Remove". </td>
+    </tr>
+    <tr>
+      <td aria-label="Variation/State">
+        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
+      </td>
+      <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
+      <td aria-label="Example"> Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code> but its UI presents them as more navigational. <br><br> A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database. </td>
+    </tr>
+    <tr>
+      <td aria-label="Variation/State">
+        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button>
+      </td>
+      <td aria-label="Usage"> Communicates when a button isn’t actionable and is deemphasized in a UI. </td>
+      <td aria-label="Example"> A button needs to remain present and visible, and becomes actionable once any number of criteria is met. </td>
+    </tr>
+  </tbody>
+</table>
 
-* Triggering invokes an action or behavior, such as submitting a form or spawning a Modal. Otherwise, use a [text link]({{ site.baseurl }}components/links/).
+{% capture usage_do %}
+* To trigger an action or behavior, such as submitting a form or spawning a Modal.
+{% endcapture %}
 
-### Don't Use
+{% capture usage_dont %}
+* Avoid using to navigate between destinations, deferring to a [text link]({{ site.baseurl }}components/links/) instead.
+{% endcapture %}
 
-* To navigate between destinations. Use a [text link]({{ site.baseurl }}components/links/) instead.
+{% include do-dont.html %}
 
 ## Accessibility
 
@@ -173,7 +226,16 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 * Make the first word of the button’s label an action verb. For example, instead of “Complaint Filing” label the button “File a complaint.”
 * At times, consider adding an icon to signal specific actions (“Download”, “Open in a new window”, etc).
 
+* All buttons should use an action word to start the label. Eg. "View Details" vs. "Details".
+* A Cancel button should not be used unless the online form uses a multi-step process.
+* A Cancel button should be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process.
+* A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes.
+* When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variation) or Secondary button.
+* Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
+
 ## Related Resources
 
 * [Color]({{ site.baseurl }}visual-style/color/)
 * [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
+* [Applications Guide]({{ site.baseurl }}guides/applications/buttons)
+
