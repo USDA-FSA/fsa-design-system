@@ -8,8 +8,6 @@ jump_menu: true
 title_label: 'Requires JavaScript'
 ---
 
-A Modal will take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
-
 <div class="ds-preview">
   <div class="fsa-grid">
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
@@ -47,15 +45,20 @@ A Modal will take over focus, restricting access to other areas of the applicati
 
 ## Behavior
 
+A Modal will take over focus, restricting access to other areas of the application until a user completes a task or dismisses the modal.
+
+Refer to [JavaScript Guidance](#javascript-guidance) for additional behaviorial.
+
 **Trigger sample Modals:**
 
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button>
+<div class="fsa-level fsa-level--justify-even">
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button></span>
+  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button></span>
+</div>
 
-Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
 ## Variations
 
@@ -198,19 +201,21 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When completing a subtask required by underlying page.
+* When you need to isolate a feature or action to gain sole focus of that feature or action.
+* When providing non-essential information related to the underlying page.
+{% endcapture %}
 
-* Completing a subtask required by underlying page.
-* You need to isolate a feature or action to gain sole focus of that feature or action.
-* Providing non-essential information related to the underlying page.
-
-### Don't Use
-
+{% capture usage_dont %}
 * When its content or features can be part of the page without complicating the page's intent.
 * When the content or message requires interaction with other parts of the application or screen.
 * When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
-* Communicating brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
-* A system timeout message is required for an applications, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
+* To communicate brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
+* As a system timeout message, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

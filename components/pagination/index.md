@@ -364,16 +364,18 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When the application requires showing a large set of data that needs to be broken up into more consumable chunks.
+* When the application requires showing search results of information that would extend too far down the page.
+* When the result set should be broken up into groupings of 10 or 20, based on the toal amount of data visible.
+{% endcapture %}
 
-* The application requires showing a large set of data that needs to be broken up into more consumable chunks.
-* The application requires showing search results of information that would extend too far down the page.
-* The result set should be broken up into groupings of 10 or 20, based on the toal amount of data visible.
-
-### Don't Use
-
-* The dataset or search results of an application have a maximum total of 10 or fewer results needing to be displayed.
+{% capture usage_dont %}
+* If the dataset or search results of an application have a maximum total of 20 or fewer results needing to be displayed.
 * As a navigation system for a stepped process, and instead utilize the [Stepped Control Component]({{ site.baseurl }}components/stepped-control).
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

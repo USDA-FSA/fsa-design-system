@@ -319,16 +319,18 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When a form field requires a numeric value to be input by the User
+* If the User would benefit from incrementing a numeric value by a predefined amount
+* If the User would benefit from incrementing a numeric value that uses decimal places
+{% endcapture %}
 
-* A form requires a numeric value to be input by the User
-* The User would benefit from incrementing a numeric value by a predefined amount
-* The User would benefit from incrementing a numeric value that uses decimal places
-
-### Don't Use
-
+{% capture usage_dont %}
 * With non-numeric inputs
 * For input elements designed to select a day, month, or year
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

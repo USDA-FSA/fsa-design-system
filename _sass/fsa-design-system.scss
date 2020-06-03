@@ -8,6 +8,7 @@
 @import 'elements/ds.typography';
 
 @import 'components/ds.preview';
+@import 'components/ds.usage';
 @import 'components/ds.clipboard';
 @import 'components/ds.disclaimer';
 @import 'components/ds.header';
@@ -20,8 +21,3 @@
 
 @import 'other/ds.shame';
 @import 'other/syntax-highlighting';
-
-html:hover body::before {
-  // scss-lint:disable ImportantRule
-  display: none !important; // hide breakpoint bar
-}
