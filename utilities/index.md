@@ -718,7 +718,13 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
 <p class="fsa-text--lead">Selectively show or hide elements or blocks at a variety of screen sizes (i.e. Media Query breakpoints).</p>
 
-If content should remain accessible to assistive technology (e.g. screenreaders), use [Screenreader only](#screenreader-only) Utility classes.
+<aside>
+  <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+    <div class="fsa-alert__body">
+      <p class="fsa-alert__text"><strong>Note:</strong> If content should remain accessible to assistive technology (e.g. screenreaders), use <a href="#screenreader-only">Screenreader only</a> Utility classes.</p>
+    </div>
+  </div>
+</aside>
 
 <div class="fsa-hide@xl">
   <aside>
@@ -733,7 +739,7 @@ If content should remain accessible to assistive technology (e.g. screenreaders)
 ### Show at minimum screen size
 
 <div class="fsa-show@xl">
-  <p class="docs__code-sample"><code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> [size], where [size] is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
+  <p class="docs__code-sample"><code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
   <div class="docs__rwd-demo-block">
     <div class="docs__rwd-embed-container">
       <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -753,7 +759,7 @@ If content should remain accessible to assistive technology (e.g. screenreaders)
 ### Show at only specific screen size
 
 <div class="fsa-show@xl">
-  <p><code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at [size], where [size] is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
+  <p><code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
   <div class="docs__rwd-demo-block">
     <div class="docs__rwd-embed-container">
       <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -773,7 +779,7 @@ If content should remain accessible to assistive technology (e.g. screenreaders)
 ### Hide at minimum screen size
 
 <div class="fsa-show@xl">
-  <p><code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> [size], where [size] is one of <code>s</code>, <code>m</code>, or <code>l</code>. </p>
+  <p><code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>. </p>
   <div class="docs__rwd-demo-block">
     <div class="docs__rwd-embed-container">
       <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -793,7 +799,7 @@ If content should remain accessible to assistive technology (e.g. screenreaders)
 ### Hide at specific screen size
 
 <div class="fsa-show@xl">
-  <p><code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at [size], where [size] is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.</p>
+  <p><code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.</p>
   <div class="docs__rwd-demo-block">
     <div class="docs__rwd-embed-container">
       <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">

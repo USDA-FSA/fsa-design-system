@@ -173,9 +173,3 @@ If a table has text associated with it, ensure the text is programmatically link
 </div>
 
 > **Passes:** This is an example of a complex table, all the cells are associated to their respective headers with the ```headers``` attribute. Most tables don't require this level of complexity.
-
-### Fails
-
-<div class="OUTLINE fsa-p--l fsa-text-size--7 fsa-text-align--center">
-  TODO: examples of <strong>failing tables</strong>.
-</div>
