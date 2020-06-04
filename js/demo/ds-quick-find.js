@@ -169,9 +169,6 @@ const qf = {
 
     // Listen for TAB events associated with Clear button
     qf.clear.addEventListener('keydown', qf.handleClearButtonKeydown);
-  
-    // Listen for Search Input Focus
-    //qf.search.addEventListener('focusin', qf.handleSearchInputFocus);
 
 
     // Listen for ESC key when Search Input in focus
