@@ -27,7 +27,7 @@
     }
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
   }
@@ -40,6 +40,10 @@
     margin-bottom: $size-base;
     // color: inherit;
 
+    .ds-home-features__link:hover & {
+      text-decoration: underline;
+    }
+
     .ds-home-features__link:focus & {
       @include fsa-focus;
     }
@@ -50,6 +54,8 @@
     display: block;
   }
 
-  // &__blurb {  }
+  &__blurb {
+    color: $color-fsa-base;
+  }
 
 }

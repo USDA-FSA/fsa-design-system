@@ -10,7 +10,11 @@
     @include reset-ul();
     margin-top: .5em;
 
-    // &--root {}
+    &--root {
+      @include breakpoint(L) {
+        display: flex;
+      }
+    }
 
     &:not(.ds-sitemap__list--root) {
       margin-left: $branch-width / 2;
@@ -23,7 +27,11 @@
     @include reset-li();
     margin-bottom: .5em;
 
-    // &--root {}
+    &--root {
+      @include breakpoint(XL) {
+        flex: 1;
+      }
+    }
 
     &:not(.ds-sitemap__list-item--root) {
 

@@ -103,6 +103,113 @@ jump_menu: true
 </div>
 ```
 
+## Variations
+
+### Fullscreen
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>Demo:</strong> view on <a href="https://usda-fsa.github.io/fsa-style/boilerplate.html">boilerplate.html</a> and invoke the <strong>Fullscreen Toggle</strong>.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <div style="overflow: hidden">
+    <div class="fsa-footer fsa-footer--fullscreen">
+      <div class="fsa-footer__bd">
+        <div class="fsa-grid">
+          <div class="fsa-footer__primary fsa-grid__1/1 fsa-grid__9/12@l">
+            <div class="fsa-grid">
+              <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+                <h3 class="fsa-footer__cat-header">Program Information</h3>
+                <ul class="fsa-footer__list">
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">About XMPL</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">XMPL - Handbook 1</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">XMPL - Handbook 2</a></li>
+                </ul>
+              </div>
+              <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+                <h3 class="fsa-footer__cat-header">Agency Guidelines</h3>
+                <ul class="fsa-footer__list">
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Publications</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Handbooks</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Notices</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">FFAS Employee Forms</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Software Transmittals</a></li>
+                </ul>
+              </div>
+              <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+                <h3 class="fsa-footer__cat-header">Resources</h3>
+                <ul class="fsa-footer__list">
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Inside FPAC</a></li>
+                  <li class="fsa-footer__list-item"><a href="#" target="_blank">Policies and Links</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fsa-footer__secondary fsa-grid__1/1 fsa-grid__3/12@l">
+            <ul class="fsa-footer__list fsa-footer__secondary-list">
+              <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
+                <a class="fsa-btn fsa-footer__btn" href="#" target="_blank">Contact Us</a>
+              </li>
+              <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" aria-label="FSA Telephone Number. 1 800. 5 5 5. 1 2 3 4." target="_blank">1-800-555-1234</a></li>
+              <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="https://myfpac.usda.gov/" target="_blank">myFPAC</a></li>
+              <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-footer fsa-footer--fullscreen">
+  <div class="fsa-footer__bd">
+    <div class="fsa-grid">
+      <div class="fsa-footer__primary fsa-grid__1/1 fsa-grid__9/12@l">
+        <div class="fsa-grid">
+          <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+            <h3 class="fsa-footer__cat-header">Program Information</h3>
+            <ul class="fsa-footer__list">
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">About XMPL</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">XMPL - Handbook 1</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">XMPL - Handbook 2</a></li>
+            </ul>
+          </div>
+          <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+            <h3 class="fsa-footer__cat-header">Agency Guidelines</h3>
+            <ul class="fsa-footer__list">
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Publications</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Handbooks</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Notices</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">FFAS Employee Forms</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Software Transmittals</a></li>
+            </ul>
+          </div>
+          <div class="fsa-grid__1/1 fsa-grid__1/3@m">
+            <h3 class="fsa-footer__cat-header">Resources</h3>
+            <ul class="fsa-footer__list">
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Inside FPAC</a></li>
+              <li class="fsa-footer__list-item"><a href="link.html" target="_blank">Policies and Links</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="fsa-footer__secondary fsa-grid__1/1 fsa-grid__3/12@l">
+        <ul class="fsa-footer__list fsa-footer__secondary-list">
+          <li class="fsa-footer__list-item fsa-footer__secondary-list-item">
+            <a class="fsa-btn fsa-footer__btn" href="link.html" target="_blank">Contact Us</a>
+          </li>
+          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="tel:+8005551234" aria-label="FSA Telephone Number. 1 800. 5 5 5. 1 2 3 4." target="_blank">1-800-555-1234</a></li>
+          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="https://myfpac.usda.gov/" target="_blank">myFPAC</a></li>
+          <li class="fsa-footer__list-item fsa-footer__secondary-list-item"><a href="//www.usda.gov/" target="_blank">USDA Website</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 ## Responsive
 
 {% include alert.rwd-rendering.html %}
@@ -124,15 +231,17 @@ jump_menu: true
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When an Application requires a global footer within the application.
+* When an Application requires additional application specific navigation or links to documentation.
+{% endcapture %}
 
-* An Application requires a global footer within the application.
-* An Application requires additional application specific navigation or links to documentation.
-
-### Don't Use
-
+{% capture usage_dont %}
 * As as a component that is not anchored to the bottom of the page.
 * As a jump menu that directs Users to content on the same page.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

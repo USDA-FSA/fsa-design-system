@@ -11,7 +11,7 @@ Use relevant photos, graphics, and other visual elements when they clarify what 
 * Be concise: Don’t use numerous or complex images when one or two simple ones will do.
 * Be conscious: Consider how your image choices include or exclude.
 
-## Tips for imagery at FSA
+## Tips for imagery at FPAC
 
 * Group pictures or images of people working together are great additions to posts about events.
 * Screenshots can go a long way in explaining design and user experience techniques in how-to pieces.
