@@ -520,19 +520,20 @@ title_label: 'May Require JavaScript'
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* For process flows requiring multiple steps to perform actions
+* While paired with the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component
+* When a process flow would be enriched by a sticky control at the bottom of the screen
+* When a Status Message would help to gain context for the User during a stepped process
+{% endcapture %}
 
-* A process flow requires multiple steps to perform actions
-* Using the [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/) component
-* A process flow would be enriched by a sticky control at the bottom of the screen
-* A Status Message would help to gain context for the User during a stepped process
-
-### Don't Use
-
+{% capture usage_dont %}
 * As the component to control a singular form or action
-* Buttons with the visual style of a text link
 * At the top of a screen as a means for navigation
 * As a substitute for pagination
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

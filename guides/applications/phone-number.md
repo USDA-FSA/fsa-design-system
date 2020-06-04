@@ -2,7 +2,7 @@
 layout: guide
 parent: "Applications"
 title: "Phone Number"
-intro: "FPAC applications, whether public or private, need to follow a consistant telephone pattern based on industry standards."
+intro: ""
 
 ---
 

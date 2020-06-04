@@ -1,20 +1,24 @@
 - title: "Home"
   href: "index.html"
+  exclude_from_sitemap: true
   # exclude_from_nav: true
 
 - title: "Getting Started"
   href: "getting-started"
   exclude_from_nav: true
-  # subcategories:
-  #
-  #   - subtitle: "Using Assets"
-  #     subhref: "getting-started/using-assets"
-  #
-  #   - subtitle: "Contributing"
-  #     subhref: "getting-started/contributing"
-  #
-  #   - subtitle: "License"
-  #     subhref: "getting-started/license"
+  subcategories:
+
+  - subtitle: "How to use"
+    subhref: "getting-started/#how-to-use"
+
+  - subtitle: "When to use"
+    subhref: "getting-started/#when-to-use"
+
+  - subtitle: "Release History"
+    subhref: "getting-started/#release-history"
+
+  - subtitle: "Contributing"
+    subhref: "getting-started/#contributing"
 
 - title: "Visual Style"
   href: "visual-style"
@@ -199,10 +203,73 @@
           img: "img/subcategories/screen-id.png"
 
 - title: "Layout"
-  href: "grid-and-layout"
+  href: "layout"
+  subcategories:
+
+    - subtitle: "Box"
+      subhref: "layout/box"
+      img: "img/subcategories/box.png"
+
+    - subtitle: "Divider"
+      subhref: "layout/divider"
+      img: "img/subcategories/divider.png"
+
+    - subtitle: "Grid System"
+      subhref: "layout/grid"
+      img: "img/subcategories/grid.png"
+
+    - subtitle: "Level"
+      subhref: "layout/level"
+      img: "img/subcategories/level.png"
+
+    - subtitle: "Media Object"
+      subhref: "layout/media-object"
+      img: "img/subcategories/media-objects.png"
+      deprecated: 'true'
+
+    - subtitle: "Section"
+      subhref: "layout/section"
+      img: "img/subcategories/section.png"
 
 - title: "Utilities"
   href: "utilities"
+  subcategories:
+
+    - subtitle: "Ellipsis"
+      subhref: "utilities/#ellipsis"
+      img: "img/subcategories/ellipsis.png"
+
+    - subtitle: "Floats"
+      subhref: "utilities/#floats"
+      img: "img/subcategories/floats.png"
+
+    - subtitle: "Margins"
+      subhref: "utilities/#margins"
+      img: "img/subcategories/margins.png"
+
+    - subtitle: "Padding"
+      subhref: "utilities/#padding"
+      img: "img/subcategories/padding.png"
+
+    - subtitle: "Screenreader only"
+      subhref: "utilities/#screenreader-only"
+      img: "img/subcategories/screenreader-only.png"
+
+    - subtitle: "Text Alignment"
+      subhref: "utilities/#text-alignment"
+      img: "img/subcategories/text-alignment.png"
+
+    - subtitle: "Text Size"
+      subhref: "utilities/#text-size"
+      img: "img/subcategories/text-size.png"
+
+    - subtitle: "Text Headers"
+      subhref: "utilities/#text-headers"
+      img: "img/subcategories/text-headers.png"
+
+    - subtitle: "Visibility"
+      subhref: "utilities/#visibility"
+      img: "img/subcategories/visibility.png"
 
 - title: "Guides"
   href: "guides"

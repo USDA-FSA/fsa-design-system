@@ -179,13 +179,15 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When an application would like to flag or call attention to content within an application.
+{% endcapture %}
 
-* You would like to flag or call attention to content within an application.
-
-### Don't Use
-
+{% capture usage_dont %}
 * As a button or as any type of navigation.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 
