@@ -2,7 +2,7 @@
   & {
     position: relative;
     z-index: 2;
-    margin-bottom: $size-medium;
+    margin-bottom: $size-large;
     @include breakpoint(L) {
       width: 44rem;
     }

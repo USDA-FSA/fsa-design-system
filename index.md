@@ -31,13 +31,6 @@ custom_js: "ds-quick-find.js"
     <div id="quick-find-results-count-id" aria-live="polite" class="fsa-sr-only">0 results</div>
   </div>
 
-  <div class="fsa-box fsa-level fsa-level--gutter-m fsa-m-b--l fsa-show@l">
-    <span><a class="fsa-btn fsa-btn--block fsa-btn--primary" href="getting-started/">Getting Started</a></span>
-    <span><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="http://usda-fsa.github.io/fsa-style/boilerplate.html">Boilerplate Template</a></span>
-    <span><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="https://codepen.io/pen?template=WNQdJpp">Explore with Codepen</a></span>
-    <span><a class="fsa-btn fsa-btn--block fsa-btn--flat" href="https://github.com/USDA-FSA/fsa-style/releases">Release History</a></span>
-  </div>
-
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
       <a class="ds-home-features__link" href="{{ site.baseurl }}visual-style/">
