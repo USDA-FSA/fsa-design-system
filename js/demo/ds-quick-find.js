@@ -125,7 +125,7 @@ const qf = {
 
             if( item.tier == 2){
               if(prevHeader != item.ancestors.header){
-                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="false">
+                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
                               ${item.ancestors.parent}
                             </li>`
               }
@@ -137,7 +137,7 @@ const qf = {
                           </>`
             } else {
               if(prevHeader != item.ancestors.header){
-                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="false">
+                newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
                               ${item.ancestors.grandParent}
                             </li>`
               }
