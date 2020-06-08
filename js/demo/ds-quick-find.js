@@ -25,7 +25,7 @@ const qf = {
   },
 
   getSource: function( arr, callback ){
-    if (window.XMLHttpRequest){ 
+    if (window.XMLHttpRequest){
       arr.forEach( item => {
         let xhr = new XMLHttpRequest();
         console.log('xhr', xhr)
@@ -92,13 +92,13 @@ const qf = {
       if(q.search.value!=''){
 
         qf.search.setAttribute('aria-expanded', 'true');
-        
+
         let newHTML = '<ul class="ds-quick-find__output" role="listbox">';
         let matches = q.doSearch( q.search.value );
-        
+
         let tier1 = matches.filter( item => item.tier == 1 );
         tier1.sort((a, b) => (a.text < b.text) ? 1 : -1)
-        
+
         let subgroups = matches.filter( item => item.tier > 1 );
         subgroups.sort((a, b) => (a.text > b.text) ? 1 : -1)
         subgroups.sort((a, b) => (a.ancestors.header > b.ancestors.header) ? 1 : -1)
@@ -106,7 +106,7 @@ const qf = {
         let regex = new RegExp(q.search.value, 'gi');
 
         if( tier1.length > 0 ){
-          tier1.forEach( item => { 
+          tier1.forEach( item => {
             let newText = item.text.replace(regex, (str) => '<mark>'+ str + '</mark>');
             newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
                           <a class="ds-quick-find__output-link" href="${item.url}">
@@ -150,7 +150,7 @@ const qf = {
                               ${newText}
                             </a>
                           </li>`
-            }            
+            }
           })
         }
         newHTML += '</ul>';
@@ -175,7 +175,7 @@ const qf = {
     qf.search.addEventListener('keydown', qf.handleSearchInputKeydown);
 
     // Listen for Search Results Focus
-    qf.results.addEventListener('focusin', qf.handleResultsFocus); 
+    qf.results.addEventListener('focusin', qf.handleResultsFocus);
 
     // Listen for Search Results Keydown
     qf.results.addEventListener('keydown', qf.handleResultsKeydown);
@@ -201,12 +201,12 @@ const qf = {
       e.preventDefault();
       let el = qf.results.querySelector('a');
       if(el) el.focus()
-    }  
+    }
   },
 
 
   handleResultsFocus: function(e){
-    
+
     let prevElem = qf.prevElem;
     let currElem = document.activeElement;
     if( qf.prevElem ) qf.resultsNavFrom( qf.prevElem  );
@@ -220,7 +220,7 @@ const qf = {
     let currElem = document.activeElement;
 
     // Listen for ESC key when results in focus
-    if(e.keyCode==27){ 
+    if(e.keyCode==27){
       e.preventDefault();
       qf.closeResults();
     }
@@ -303,17 +303,17 @@ const qf = {
   getClosest: function(elem, selector){
     // Element.matches() polyfill
     if (!Element.prototype.matches) {
-      Element.prototype.matches = 
-          Element.prototype.matchesSelector || 
+      Element.prototype.matches =
+          Element.prototype.matchesSelector ||
           Element.prototype.mozMatchesSelector ||
-          Element.prototype.msMatchesSelector || 
-          Element.prototype.oMatchesSelector || 
+          Element.prototype.msMatchesSelector ||
+          Element.prototype.oMatchesSelector ||
           Element.prototype.webkitMatchesSelector ||
           function(s) {
             var matches = (this.document || this.ownerDocument).querySelectorAll(s),
                 i = matches.length;
             while (--i >= 0 && matches.item(i) !== this) {}
-            return i > -1;            
+            return i > -1;
           };
     }
     // Get the closest matching element
@@ -345,7 +345,7 @@ const qf = {
 */
 qf.init(
   [
-    { 
+    {
       url:'/fsa-design-system/sitemap/',
       //url:'https://usda-fsa.github.io/fsa-design-system/sitemap/',
     }
