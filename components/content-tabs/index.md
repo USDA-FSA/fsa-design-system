@@ -502,17 +502,19 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* When only a few specific pieces of content or functionality are required on the application screen.
+* When the information needs to be displayed in a more compact area on the screen, requires multiple view states, or multiple categories.
+* For switching between various content categories or features creates an optimal on-screen workflow.
+{% endcapture %}
 
-* Only a few specific pieces of content or functionality are required on the application screen.
-* The information needs to be displayed in a more compact area on the screen, requires multiple view states, or multiple categories.
-* Switching between various content categories or features creates an optimal on-screen workflow.
-
-### Don't Use
-
+{% capture usage_dont %}
 * When the number of categories for Tabs extends the Content Tabs too wide. Instead utilize a [Select Menu]({{ site.baseurl }}components/select/) to update content.
-* A set of Content Tabs within another set of Content tabs.
+* A set of Content Tabs within another set of Content tabs (nesting)
 * If the content within the Tabs is minimal and can more easily be assessed on a single scrollable application page.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

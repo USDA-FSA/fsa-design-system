@@ -507,13 +507,15 @@ jump_menu: true
 
 ## Usage
 
-### When to use
+{% capture usage_do %}
+* If a strong case exists for supplementing the navigation system and users would benefit from being able to search your site or app.
+{% endcapture %}
 
-* There's a strong case for supplementing the navigation system and users would benefit from being able to search your site or app.
-
-### Don't use when
-
+{% capture usage_dont %}
 * On single-page or very small sites, you may be able to get away without a search bar.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 

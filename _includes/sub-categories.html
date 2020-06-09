@@ -23,7 +23,9 @@
             {% for subgroup in group.subcategories %}
             <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
               <a class="ds-subcat-list__link {% if subgroup.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subgroup.subhref | prepend: site.baseurl }}">
-                <span class="ds-subcat-list__text">{{ subgroup.subtitle }}</span>
+                <span class="ds-subcat-list__text">
+                  {{ subgroup.subtitle }}
+                </span>
                 {% if subgroup.img %}
                   <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subgroup.img }}" alt="">
                 {% endif %}
@@ -40,7 +42,12 @@
           {% for subpage in link.subcategories %}
           <li class="ds-subcat-list__list-item">
             <a class="ds-subcat-list__link {% if subpage.subtitle == page.title %}ds-subcat-list__list-item--active{% endif %}" href="{{ subpage.subhref | prepend: site.baseurl }}">
-              <span class="ds-subcat-list__text">{{ subpage.subtitle }}</span>
+              <span class="ds-subcat-list__text">
+                {{ subpage.subtitle }}
+                {% if subpage.deprecated %}
+                  <span class="fsa-label fsa-label--warning">Deprecated</span>
+                {% endif %}
+                </span>
               {% if subpage.img %}
                 <img class="ds-subcat-list__img" src="{{ site.baseurl }}{{ subpage.img }}" alt="">
               {% endif %}

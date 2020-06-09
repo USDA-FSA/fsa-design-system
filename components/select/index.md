@@ -285,19 +285,54 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
 </select>
 ```
 
+## Responsive
+
+Selectively override several style properties at each Media Query breakpoint.
+
+<code>fsa-select--<strong>[property]@[breakpoint]</strong></code>, where
+<code>property</code> is one of
+<code>small</code>,
+<code>medium</code>,
+<code>large</code>,
+<code>block</code>, or
+<code>inline</code>, and <code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <div class="docs__rwd-embed-container">
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_select" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_select" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_select" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_select" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__select.html" target="_blank" title="View in its own browser window">New window</a>
+    </span>
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_select">
+      <iframe title="Responsive Demo: Select" src="http://usda-fsa.github.io/fsa-style/demo/rwd__select.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * Use sparingly — only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * If the list of options is very short. Use [radio buttons]({{ site.baseurl }}components/radio/) instead.
 * If the list of options is very long. Let users type the same information into a [text input]({{ site.baseurl }}components/text-input/) that suggests possible options instead.
 * If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from the select element. Use [checkboxes]({{ site.baseurl }}components/checkbox/) instead.
 * For site navigation.
 * The `multiple` attribute, use the [Select Multi component]({{ site.baseurl }}components/select-multi/) instead.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

@@ -79,18 +79,25 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 Though it should be **rarely** necessary, the width of `.fsa-input`* can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
 
 <div class="ds-preview">
-  <input class="fsa-input" size="2" type="text" name="some_name" value="2">
-  <input class="fsa-input" size="5" type="text" name="some_name" value="5">
-  <input class="fsa-input" size="7" type="text" name="some_name" value="7">
-  <input class="fsa-input" size="14" type="text" name="some_name" value="14">
-  <input class="fsa-input" size="29" type="text" name="some_name" value="29">
+  <div class="fsa-level@l">
+    <div>
+      <div class="docs__code-sample"><code>size="<strong>2</strong>"</code></div>
+      <input class="fsa-input" size="2" type="text" name="some_name" value="">
+    </div>
+    <div>
+      <div class="docs__code-sample"><code>size="<strong>14</strong>"</code></div>
+      <input class="fsa-input" size="14" type="text" name="some_name" value="">
+    </div>
+    <div>
+      <div class="docs__code-sample"><code>size="<strong>55</strong>"</code></div>
+      <input class="fsa-input" size="55" type="text" name="some_name" value="">
+    </div>
+  </div>
 </div>
 ```html
-<input class="fsa-input" size="2" type="text" name="some_name" value="2">
-<input class="fsa-input" size="5" type="text" name="some_name" value="5">
-<input class="fsa-input" size="7" type="text" name="some_name" value="7">
-<input class="fsa-input" size="14" type="text" name="some_name" value="14">
-<input class="fsa-input" size="29" type="text" name="some_name" value="29">
+<input class="fsa-input" size="2" type="text" name="some_name" value="">
+<input class="fsa-input" size="14" type="text" name="some_name" value="">
+<input class="fsa-input" size="55" type="text" name="some_name" value="">
 ```
 
 *The default width of an `<input class="fsa-input">` is generally `22` characters, though it can vary from browser to browser. Within a [Field]({{ site.baseurl }}components/form-fields/) it defaults to `100%` of its parent container and rarely should be overridden.
@@ -137,20 +144,55 @@ Readonly fields do not have a `class="fsa-input--[variation]"`, instead using th
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
 ```
 
+## Responsive
+
+Selectively override several style properties at each Media Query breakpoint
+
+<code>fsa-select--<strong>[property]@[breakpoint]</strong></code>, where
+<code>property</code> is one of
+<code>small</code>,
+<code>medium</code>,
+<code>large</code>,
+<code>block</code>, or
+<code>inline</code>; and <code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% include alert.rwd-rendering.html %}
+
+<div class="docs__rwd-demo-block">
+  <div class="docs__rwd-embed-container">
+    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
+      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_input" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
+      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__input.html" target="_blank" title="View in its own browser window">New window</a>
+    </span>
+    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_input">
+      <iframe title="Responsive Demo: Input element" src="http://usda-fsa.github.io/fsa-style/demo/rwd__input.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+    </div>
+  </div>
+</div>
+
 ## Usage
 
-### Use When
-
+{% capture usage_do %}
 * If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 * When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.
 * When users want to be able to paste in a response.
 * When users need only a single line of entry.
+{% endcapture %}
 
-### Don't Use
-
+{% capture usage_dont %}
 * When the value user enter are limited in amount
 * When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}components/select/), [radio]({{ site.baseurl }}components/radio/), or [checkbox]({{ site.baseurl }}components/checkbox/).
 * When users need to enter multiple lines of content, consider the [textarea]({{ site.baseurl }}components/textarea/) element.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

@@ -1,0 +1,43 @@
+{% comment %}
+  !!!!!!
+
+  A "short-code-like" mechanism for automating the "Use When / Don't Use When" portion of "Usage" documentation.
+
+  To customize Do/Don't **title** capture the text on the originating page. For example...
+
+  {% capture usage_do__title %} Do {% endcapture %}
+
+{% endcomment %}
+
+{% if usage_do || usage_dont %}
+<div class="ds-usage">
+  {% if usage_do %}
+  <div class="ds-usage__item ds-usage__item--do">
+    <h3 class="ds-usage__hd">
+      {% if usage_do__title %}
+        {{ usage_do__title }}
+      {% else %}
+        Use
+      {% endif %}
+    </h3>
+    <div class="ds-usage__bd">
+      {{ usage_do | markdownify }}
+    </div>
+  </div>
+  {% endif %}
+  {% if usage_dont %}
+  <div class="ds-usage__item ds-usage__item--dont">
+    <h3 class="ds-usage__hd">
+      {% if usage_dont__title %}
+        {{ usage_dont__title }}
+      {% else %}
+        Don’t Use
+      {% endif %}
+    </h3>
+    <div class="ds-usage__bd">
+      {{ usage_dont | markdownify }}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}

@@ -9,51 +9,6 @@ title_label: 'May Require JavaScript'
 ---
 
 <div class="ds-preview">
-  <div class="fsa-nav-global">
-    <div class="fsa-nav-global__bd">
-      <ul class="fsa-nav-global__list">
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
-            <span class="fsa-nav-global__text">Home</span>
-          </a>
-        </li>
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link" href="link.html">
-            <span class="fsa-nav-global__text">[item]</span>
-          </a>
-        </li>
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link" href="link.html">
-            <span class="fsa-nav-global__text">[item]</span>
-          </a>
-        </li>
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link" href="link.html">
-            <span class="fsa-nav-global__text">[item]</span>
-          </a>
-        </li>
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link" href="link.html">
-            <span class="fsa-nav-global__text">[item]</span>
-          </a>
-        </li>
-        <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link" href="link.html">
-            <span class="fsa-nav-global__text">[item]</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-## Variations
-
-Global Navigation shall use `class="fsa-nav-global"`.
-
-### Default
-
-<div class="ds-preview">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -133,6 +88,99 @@ Global Navigation shall use `class="fsa-nav-global"`.
   </div>
 </nav>
 ```
+
+## Variations
+
+### Fullscreen
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text"><strong>Demo:</strong> view on <a href="https://usda-fsa.github.io/fsa-style/boilerplate.html">boilerplate.html</a> and invoke the <strong>Fullscreen Toggle</strong>.</p>
+  </div>
+</div>
+
+<div class="ds-preview">
+  <nav>
+    <div class="fsa-nav-global fsa-nav-global--fullscreen">
+      <div class="fsa-nav-global__bd">
+        <ul class="fsa-nav-global__list" aria-label="Primary Navigation">
+          <li class="fsa-nav-global__list-item">
+            <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
+              <span class="fsa-nav-global__text">Home</span>
+            </a>
+          </li>
+          <li class="fsa-nav-global__list-item">
+            <a class="fsa-nav-global__link" href="link.html">
+              <span class="fsa-nav-global__text">[item]</span>
+            </a>
+          </li>
+          <li class="fsa-nav-global__list-item">
+            <a class="fsa-nav-global__link" href="link.html">
+              <span class="fsa-nav-global__text">[item]</span>
+            </a>
+          </li>
+          <li class="fsa-nav-global__list-item">
+            <a class="fsa-nav-global__link" href="link.html">
+              <span class="fsa-nav-global__text">[item]</span>
+            </a>
+          </li>
+          <li class="fsa-nav-global__list-item">
+            <a class="fsa-nav-global__link" href="link.html">
+              <span class="fsa-nav-global__text">[item]</span>
+            </a>
+          </li>
+          <li class="fsa-nav-global__list-item">
+            <a class="fsa-nav-global__link" href="link.html">
+              <span class="fsa-nav-global__text">[item]</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+```html
+<nav>
+  <div class="fsa-nav-global fsa-nav-global--fullscreen">
+    <div class="fsa-nav-global__bd">
+      <ul class="fsa-nav-global__list" aria-label="Primary Navigation">
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
+            <span class="fsa-nav-global__text">Home</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+```
+
+## Examples
 
 ### Sub Menus
 
@@ -1304,7 +1352,8 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
   </div>
 </nav>
 ```
-### Example: with Search
+
+### With Search
 
 <div class="ds-preview">
   <nav>
@@ -1421,7 +1470,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 </nav>
 ```
 
-### Example: with Search, scoped
+### With Search, scoped
 
 <div class="ds-preview">
   <nav>
@@ -1583,14 +1632,16 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
   </div>
 </div>
 
-### Use When
+{% capture usage_do %}
+* When an FPAC Application requires navigation to other areas within the application.
+{% endcapture %}
 
-* An FPAC Application requires navigation to other areas within the application.
-
-### Don't Use
-
+{% capture usage_dont %}
 * As any other navigation system that is not located directly below the [Application Header]({{ site.baseurl }}guides/applications/header).
 * As a jump menu that directs Users to content on the same page.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## Accessibility
 

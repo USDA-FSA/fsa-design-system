@@ -186,20 +186,22 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 
 ## Usage
 
-### Use When
+{% capture usage_do %}
+* For communicating hierarchy.
+* When the application structure is several levels deep.
+* When you want to allow the User to navigate quickly to various levels within the application architecture without using the browser back button.
+* When you want to help orient the User and provide contextual awareness within a process or application structure.
+{% endcapture %}
 
-* Displaying hierarchy.
-* The application structure is several levels deep.
-* You want to allow the User to navigate quickly to various levels within the application architecture without using the browser back button.
-* You want to help orient the User and provide contextual awareness within a process or application structure.
-
-### Don't Use
-
+{% capture usage_dont %}
 * In place of [Global Navigation]({{ site.baseurl }}components/top-nav/).
 * To display History.
 * To reflect a multi-step process. Use [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs/).
 * Within the page content as a hyperlink feature.
 * If the application is only one level deep or if the global navigation's first level can be used.
+{% endcapture %}
+
+{% include do-dont.html %}
 
 ## General Guidance
 
