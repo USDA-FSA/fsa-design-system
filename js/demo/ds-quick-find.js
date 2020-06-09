@@ -261,6 +261,7 @@ const qf = {
       }
     }
 
+    // Listen for TAB key when results in focus
     if(e.keyCode==9){
       e.preventDefault();
       // SHIFT+TAB
@@ -268,8 +269,16 @@ const qf = {
         qf.resultsNavFrom( currElem );
         qf.search.focus();
       } else {
-        window.location = currElem.href;
+        // window.location = currElem.href;
+        qf.resultsNavFrom( currElem );
+        qf.clear.focus();
       }
+    }
+
+    // Listen for SPACE key when results in focus
+    if(e.keyCode==32) {
+      e.preventDefault();
+      window.location = currElem.href;
     }
 
   },
