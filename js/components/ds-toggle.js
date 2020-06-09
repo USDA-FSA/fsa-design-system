@@ -1,6 +1,6 @@
 var Storage = require('../utilities/storage');
 
-var ShowCode = (function () {
+var Toggle = (function () {
 
   var key, toggle, toggleId, bodyClass;
 
@@ -51,8 +51,4 @@ var ShowCode = (function () {
 
 })();
 
-ShowCode.init({
-  key: 'show-code',
-  toggleId: 'ds-doc-code-toggle',
-  bodyClass: 'ds-show-da-code'
-})
+module.exports = Toggle;

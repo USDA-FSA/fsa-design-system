@@ -54,7 +54,7 @@ if ($swatchItem.length) { // only run if at least one instance
 
 console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":18}],2:[function(require,module,exports){
+},{"jquery":19}],2:[function(require,module,exports){
 var $ = window.jQuery = require('jquery');
 
 $('body').on('click', '[data-behavior~="toggle-rwd-size"]', function(event) {
@@ -91,7 +91,7 @@ $('body').on('change', '[data-behavior~="toggle-rwd-table"]', function(event) {
 
 console.log('DocsRWD loaded, its JS is NOT to be used for Production, demo purposes only');1
 
-},{"jquery":18}],3:[function(require,module,exports){
+},{"jquery":19}],3:[function(require,module,exports){
 (function (global){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -150,21 +150,66 @@ if (ClipboardJS.isSupported()) {
 console.log('Clipboard Loaded, its JS is NOT to be used for Production, demo purposes only');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/clipboard.js":16,"jquery":18}],4:[function(require,module,exports){
-var Helper = require('../utilities/helper');
+},{"../vendor/clipboard.js":17,"jquery":19}],4:[function(require,module,exports){
+var Storage = require('../utilities/storage');
 
-var _code_toggle = document.querySelectorAll('[data-behavior~="toggle-code-display"]');
+var ShowCode = (function () {
 
-Helper.forEach(_code_toggle, function(index, value) {
+  var key, toggle, toggleId, bodyClass;
 
-  var _el = value;
+  // Toggle ON setter
+  var setOn = function(){
+    document.body.classList.add(bodyClass);
+    setState(true);
+  }
 
-  _el.addEventListener('change', function(e){
-    document.body.classList.toggle('ds-show-da-code');
-  }, false);
+  // Toggle OFF setter
+  var setOff = function(){
+    document.body.classList.remove(bodyClass);
+    setState(false);
+  }
 
-});
-},{"../utilities/helper":15}],5:[function(require,module,exports){
+  // State setter
+  var setState = function(bool){
+    toggle.checked = bool;
+    Storage.setToggleState(key, bool);
+  }
+
+  // Set initial state of page/show code checkbox
+  var setInitialState = function(){ Storage.getToggleState(key) ? setOn() : setOff() }
+
+  var init = function( obj ){
+
+    key = obj.key;
+    toggleId = obj.toggleId;
+    bodyClass = obj.bodyClass;
+
+    // Grab Toggle checkbox on page
+    toggle = document.getElementById(toggleId);
+
+    // check to make sure show code exists on page, then set change handler
+    if(toggle){ 
+      toggle.addEventListener('change', function(e){
+        Storage.getToggleState(key) ? setOff() : setOn()
+      }, false);
+      // delay initialize code so that is runs last on page
+      setTimeout( setInitialState, 200);
+    }
+  }
+
+  //Object Literal Return
+  return {
+    init: init // expects an Object
+  };
+
+})();
+
+ShowCode.init({
+  key: 'show-code',
+  toggleId: 'ds-doc-code-toggle',
+  bodyClass: 'ds-show-da-code'
+})
+},{"../utilities/storage":16}],5:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -230,20 +275,65 @@ if(pageTitle__elements.length){
 console.log('ds-page-title loaded, its JS is NOT to be used for Production, demo purposes only');
 
 },{"../utilities/helper":15}],6:[function(require,module,exports){
-var Helper = require('../utilities/helper');
+var Storage = require('../utilities/storage');
 
-var _code_toggle = document.querySelectorAll('[data-behavior~="toggle-xray"]');
+var Xray = (function () {
 
-Helper.forEach(_code_toggle, function(index, value) {
+  var key, toggle, toggleId, bodyClass;
 
-  var _el = value;
+  // Toggle ON setter
+  var setOn = function(){
+    document.body.classList.add(bodyClass);
+    setState(true);
+  }
 
-  _el.addEventListener('change', function(e){
-    document.body.classList.toggle('x-ray');
-  }, false);
+  // Toggle OFF setter
+  var setOff = function(){
+    document.body.classList.remove(bodyClass);
+    setState(false);
+  }
 
-});
-},{"../utilities/helper":15}],7:[function(require,module,exports){
+  // State setter
+  var setState = function(bool){
+    toggle.checked = bool;
+    Storage.setToggleState(key, bool);
+  }
+
+  // Set initial state of page/show code checkbox
+  var setInitialState = function(){ Storage.getToggleState(key) ? setOn() : setOff() }
+
+  var init = function( obj ){
+
+    key = obj.key;
+    toggleId = obj.toggleId;
+    bodyClass = obj.bodyClass;
+
+    // Grab Toggle checkbox on page
+    toggle = document.getElementById(toggleId);
+
+    // check to make sure show code exists on page, then set change handler
+    if(toggle){ 
+      toggle.addEventListener('change', function(e){
+        Storage.getToggleState(key) ? setOff() : setOn()
+      }, false);
+      // delay initialize code so that is runs last on page
+      setTimeout( setInitialState, 200);
+    }
+  }
+
+  //Object Literal Return
+  return {
+    init: init // expects an Object
+  };
+
+})();
+
+Xray.init({
+  key: 'x-ray-toggle',
+  toggleId: 'ds-doc-xray',
+  bodyClass: 'x-ray'
+})
+},{"../utilities/storage":16}],7:[function(require,module,exports){
 (function (global){
 global.jQuery = require('jquery');
 var $ = global.jQuery;
@@ -292,7 +382,7 @@ jQuery(document).ready(function($){
 //module.exports = Jump;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/jquery.OnePageNav.js":17,"jquery":18}],8:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":18,"jquery":19}],8:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -917,6 +1007,51 @@ var Helper = (function () {
 module.exports = Helper;
 
 },{}],16:[function(require,module,exports){
+var Storage = (function () {
+
+  var defaults = { toggleState: false };
+
+  //PRIVATE METHODS
+
+  var _getStorage = function(key) {
+    return JSON.parse( window.localStorage.getItem(key) );
+  };
+
+  var _setStorage = function( lso ){
+    window.localStorage.setItem( lso.key, JSON.stringify( lso ) );
+  };
+
+  var _getToggleState = function(key){
+    var store = _getStorage(key);
+    var toggleState = false;
+
+    if(store) toggleState = store.toggleState ? store.toggleState : defaults.toggleState;
+    else toggleState = defaults.toggleState;
+
+    return toggleState;
+  };
+
+  var _setToggleState = function(key, val){
+    var lso = { key: key, toggleState: val };
+    return _setStorage(lso)
+  };
+
+  // PUBLIC METHODS
+
+  var getToggleState = function(key){ return _getToggleState(key) }; 
+  var setToggleState = function(key, val){ _setToggleState(key, val) };
+
+  //Object Literal Return
+  return {
+    getToggleState: getToggleState,
+    setToggleState: setToggleState
+  };
+
+})();
+
+module.exports = Storage;
+
+},{}],17:[function(require,module,exports){
 /*!
  * clipboard.js v2.0.4
  * https://zenorocha.github.io/clipboard.js
@@ -1895,7 +2030,7 @@ module.exports = closest;
 /***/ })
 /******/ ]);
 });
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -2120,7 +2255,7 @@ module.exports = closest;
 
 })( jQuery, window , document );
 
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
