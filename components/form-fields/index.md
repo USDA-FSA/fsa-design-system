@@ -1429,6 +1429,24 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
   </tbody>
 </table>
 
+## Form Validation Guidelines
+
+Common themes that should be followed when developing a validation and messaging system that will help to optimize the workflow of a User. This allows for a more positive User Experience when an system or User error has taken place.
+
+1. __Display error messages at the right place__ - Proper error messaging should appear as close as possible to the area of the application where the error has taken place. Always display validation within the context of the action. If an error has occurred, for instance, from a User typing the wrong format of characters into an online form field, the error message shall appear below the form field. Grouping of form error messages at the top or bottom of the form and away from the pertaining form fields shall not be done.
+1. __Display error messages at the right time__ - It is also important for the error message to appear in a timely manner, so that the User is still in the proper mindset for completing the task. Error messages shall appear when the action has been completed. So in the instance of wrong format of characters in an online form field, when the form field loses focus the error message shall appear.
+1. __Use the appropriate color for the message__ - Generally speaking, it is best practice to use the color red, paired with error text messaging to indicated something needs to be corrected to continue. In the case of confirmation or success messaging, the color green, paired with success text messaging should be used. Based on the location and background color of the area of the error, consideration of 508 compliance shall still be used.
+1. __Use clear language and provide an actionable resolution__ - The verbiage used when notifying a User of an error should be easy to understand and provide a way to solve the problem. Even if the error messaging is placed in the right spot at the right time, and in the right color scheme, it serves no purpose if the User does not understand how to correct the problem. FPAC applications shall use [plain language priciples]({{ site.baseurl }}guides/content/plain-language/) when displaying validation messaging.
+
+## General Guidance
+
+* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
+* Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
+* Consider the type of content a user may enter to aid mobile device entry; mobile devices typically surface a keyboard UI attuned to the type. For example, `type="tel"` will surface a [phone keyboard](http://html5doctor.com/html5-forms-input-types/#input-tel).
+* Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
+* Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
+
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
@@ -1438,12 +1456,4 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 * Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form components must have an associated `<label>` with matching `for` attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
 * Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 * Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
-
-## General Guidance
-
-* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
-* Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
-* Consider the type of content a user may enter to aid mobile device entry; mobile devices typically surface a keyboard UI attuned to the type. For example, `type="tel"` will surface a [phone keyboard](http://html5doctor.com/html5-forms-input-types/#input-tel).
-* Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
-* Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
 
