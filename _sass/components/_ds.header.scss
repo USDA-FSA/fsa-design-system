@@ -1,7 +1,9 @@
 .ds-header {
 
-  background-color: $color-fsa-primary;
-  color: $color-fsa-white;
+  & {
+    background-color: $color-fsa-primary;
+    color: $color-fsa-white;
+  }
 
   &__title {
 
@@ -101,7 +103,7 @@
     &:visited,
     &:active,
     &:hover:visited,
-    &:hover, {
+    &:hover {
       color: $color-fsa-white;
     }
 
