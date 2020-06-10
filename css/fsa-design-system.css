@@ -15110,8 +15110,8 @@ pre.highlight .ds-clipboard {
 }
 
 .ds-header__options-item--start {
-  margin-right: 24px;
-  margin-right: 2.4rem;
+  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .ds-header__options-item--github {
@@ -15747,8 +15747,8 @@ pre.highlight .ds-clipboard {
 .ds-icn__github {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 8px;
-  margin-right: 0.8rem;
+  margin-right: 4px;
+  margin-right: 0.4rem;
   width: 24px;
   width: 2.4rem;
   height: 24px;
