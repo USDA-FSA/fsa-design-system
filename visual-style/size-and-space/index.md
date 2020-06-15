@@ -66,7 +66,6 @@ Spacing within the Design System is related to setting default values for CSS pr
 
 The screenshot below demonstrates various sizing variables in an example application.
 
-
 <figure>
   <style>
     .ds-sizing-swatch { display: inline-block; width: 24px; height: 24px; vertical-align: middle; background-color: white; border: 1px solid rgba(73,68,64,0.15); }
@@ -78,7 +77,10 @@ The screenshot below demonstrates various sizing variables in an example applica
       <li><span class="ds-sizing-swatch" title="Purple" style="background-color: #7030a0;"></span> <code>$size-medium</code></li>
     </ul>
   </figcaption>
-  <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank"><img style="border: 1px solid rgba(73,68,64,0.15)" src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Spacing example"></a>
+  <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank">
+    <img hidden src="{{ site.baseurl }}img/subcategories/applications/spacing-example--no-overlay.png" alt="Spacing example">
+    <img src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Spacing example">
+  </a>
 </figure>
 
 ## White Space
