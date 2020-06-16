@@ -1,13 +1,8 @@
-var Helper = require('../utilities/helper');
+var PageToggle = require('./ds-page-toggle')
 
-var _code_toggle = document.querySelectorAll('[data-behavior~="toggle-code-display"]');
-
-Helper.forEach(_code_toggle, function(index, value) {
-
-  var _el = value;
-
-  _el.addEventListener('change', function(e){
-    document.body.classList.toggle('ds-show-da-code');
-  }, false);
-
+var showCode = new PageToggle();
+showCode.init({
+  key: 'show-code',
+  toggleId: 'ds-doc-code-toggle',
+  bodyClass: 'ds-show-da-code'
 });
