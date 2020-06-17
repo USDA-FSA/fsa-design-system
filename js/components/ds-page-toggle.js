@@ -2,7 +2,7 @@ var Storage = require('../utilities/storage');
 
 var PageToggle = function () {
 
-  var key, toggle, toggleId, bodyClass;
+  var key, toggle, toggleState, toggleId, bodyClass, useStorage;
 
   // Toggle ON setter
   var setOn = function(){
@@ -18,29 +18,32 @@ var PageToggle = function () {
 
   // State setter
   var setState = function(bool){
-    toggle.checked = bool;
-    Storage.setToggleState(key, bool);
+    toggle.checked = toggleState = bool;
+    if(useStorage) Storage.setToggleState(key, bool);
   }
 
   // Set initial state of page/show code checkbox
-  var setInitialState = function(){ Storage.getToggleState(key) ? setOn() : setOff() }
+  var setInitialState = function(){ toggleState ? setOn() : setOff() }
 
   var init = function( obj ){
-
     key = obj.key;
     toggleId = obj.toggleId;
     bodyClass = obj.bodyClass;
+    useStorage = obj.useStorage == false ? false : true;
+    toggleState = false;
 
     // Grab Toggle checkbox on page
-    toggle = document.getElementById(toggleId);
+    toggle = document.getElementById(toggleId);    
 
-    // check to make sure show code exists on page, then set change handler
+    // check to make sure toggle exists on page, then set change handler
     if(toggle){ 
-      toggle.addEventListener('change', function(e){
-        Storage.getToggleState(key) ? setOff() : setOn()
-      }, false);
+      if(useStorage) toggleState = Storage.getToggleState(key)
       // delay initialize code so that is runs last on page
       setTimeout( setInitialState, 200);
+
+      toggle.addEventListener('change', function(e){
+        toggleState ? setOff() : setOn()
+      }, false);
     }
   }
 

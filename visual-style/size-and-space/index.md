@@ -66,20 +66,38 @@ Spacing within the Design System is related to setting default values for CSS pr
 
 The screenshot below demonstrates various sizing variables in an example application.
 
+<style>
+  .ds-sizing-swatch { display: inline-block; width: 24px; height: 24px; vertical-align: middle; background-color: white; border: 1px solid rgba(73,68,64,0.15); }
+</style>
 
-<figure>
-  <style>
-    .ds-sizing-swatch { display: inline-block; width: 24px; height: 24px; vertical-align: middle; background-color: white; border: 1px solid rgba(73,68,64,0.15); }
-  </style>
-  <figcaption class="fsa-m-b--s">
-    <ul class="fsa-list--inline">
-      <li><span class="ds-sizing-swatch" title="Pink" style="background-color: #f010d5;"></span> <code>$size-small</code></li>
-      <li><span class="ds-sizing-swatch" title="Yellow" style="background-color: #ffc000;"></span> <code>$size-default</code></li>
-      <li><span class="ds-sizing-swatch" title="Purple" style="background-color: #7030a0;"></span> <code>$size-medium</code></li>
-    </ul>
-  </figcaption>
-  <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank"><img style="border: 1px solid rgba(73,68,64,0.15)" src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Spacing example"></a>
-</figure>
+<div class="fsa-level fsa-level--justify-between fsa-m-b--s">
+  <div class="fsa-level fsa-text-size--2">
+    <span><span class="ds-sizing-swatch" style="background-color: #58288e;"></span> <code>$size-base</code></span>
+    <span><span class="ds-sizing-swatch" style="background-color: #ed1d8b;"></span> <code>$size-small</code></span>
+    <span><span class="ds-sizing-swatch" style="background-color: #ec6623;"></span> <code>$size-default</code></span>
+    <span><span class="ds-sizing-swatch" style="background-color: #00c8bd;"></span> <code>$size-medium</code></span>
+    <span><span class="ds-sizing-swatch" style="background-color: #fed61a;"></span> <code>$size-large</code></span>
+  </div>
+  <span title="Toggle Spacing Overlay">
+    <label class="fsa-switch">
+      <input checked type="checkbox" class="fsa-switch__checkbox" name="toggle-code" id="spacing-toggle-id" data-behavior="toggle-spacing-overlay"><span class="fsa-switch__track"></span>
+    </label>
+    <label class="fsa-p-l--xs" for="ds-docs-spacing-overlay">View Spacing</label>
+  </span>
+</div>
+
+<div id="spacing-toggle-holder-id">
+  <div class="ds-docs-holder__off">
+    <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example--no-overlay.png" target="_blank">
+      <img src="{{ site.baseurl }}img/subcategories/applications/spacing-example--no-overlay.png" alt="Spacing example">
+    </a>
+  </div>
+  <div class="ds-docs-holder__on">
+    <a href="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" target="_blank">
+      <img src="{{ site.baseurl }}img/subcategories/applications/spacing-example.png" alt="Spacing example">
+    </a>
+  </div>
+</div>
 
 ## White Space
 

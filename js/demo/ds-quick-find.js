@@ -29,7 +29,7 @@ if ('serviceWorker' in navigator) {
       if (window.XMLHttpRequest){
         arr.forEach( item => {
           let xhr = new XMLHttpRequest();
-          console.log('xhr', xhr)
+          //console.log('xhr', xhr)
           xhr.onreadystatechange = function(){
             if(xhr.readyState === XMLHttpRequest.DONE) callback(this, item.url);
           }
