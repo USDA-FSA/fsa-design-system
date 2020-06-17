@@ -336,7 +336,7 @@ var Toggle = function () {
     holderClassPrefix = obj.holderClassPrefix;
     useStorage = obj.useStorage == false ? false : true;
     key = obj.toggleId + window.location.href
-    toggleState = false;
+    toggleState = obj.isOnInit == true ? true : false;
 
     // Grab Toggle checkbox on page
     toggle = document.getElementById(obj.toggleId);
@@ -370,8 +370,9 @@ var viewSpacing = new Toggle();
 viewSpacing.init({
   toggleId: 'spacing-toggle-id',
   toggleHolderId: 'spacing-toggle-holder-id',
-  holderClassPrefix: 'ds-docs-holder',
-  useStorage: true
+  holderClassPrefix: 'ds-docs-holder', // 'ds-docs-holder__on' or 'ds-docs-holder__off'
+  isOnInit: false,
+  useStorage: false
 })
 },{"./ds-toggle":7}],9:[function(require,module,exports){
 var PageToggle = require('./ds-page-toggle')

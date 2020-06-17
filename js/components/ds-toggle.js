@@ -51,7 +51,7 @@ var Toggle = function () {
     holderClassPrefix = obj.holderClassPrefix;
     useStorage = obj.useStorage == false ? false : true;
     key = obj.toggleId + window.location.href
-    toggleState = false;
+    toggleState = obj.isOnInit == true ? true : false;
 
     // Grab Toggle checkbox on page
     toggle = document.getElementById(obj.toggleId);
