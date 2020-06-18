@@ -70,7 +70,7 @@ The screenshot below demonstrates various sizing variables in an example applica
   .ds-sizing-swatch { display: inline-block; width: 24px; height: 24px; vertical-align: middle; background-color: white; border: 1px solid rgba(73,68,64,0.15); }
 </style>
 
-<div class="fsa-level fsa-level--justify-between fsa-m-b--s">
+<div class="fsa-level@l fsa-level--justify-between fsa-m-b--s">
   <div class="fsa-level fsa-text-size--2">
     <span><span class="ds-sizing-swatch" style="background-color: #58288e;"></span> <code>$size-base</code></span>
     <span><span class="ds-sizing-swatch" style="background-color: #ed1d8b;"></span> <code>$size-small</code></span>
@@ -80,9 +80,9 @@ The screenshot below demonstrates various sizing variables in an example applica
   </div>
   <span title="Toggle Spacing Overlay">
     <label class="fsa-switch">
-      <input checked type="checkbox" class="fsa-switch__checkbox" name="toggle-code" id="spacing-toggle-id" data-behavior="toggle-spacing-overlay"><span class="fsa-switch__track"></span>
+      <input checked type="checkbox" class="fsa-switch__checkbox" name="toggle-code" id="spacing-toggle-id"><span class="fsa-switch__track"></span>
     </label>
-    <label class="fsa-p-l--xs" for="ds-docs-spacing-overlay">View Spacing</label>
+    <label class="fsa-p-l--xs" for="spacing-toggle-id">View Spacing</label>
   </span>
 </div>
 

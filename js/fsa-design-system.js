@@ -295,13 +295,11 @@ var Toggle = function () {
     var onElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__on');
     var offElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__off');
 
-    Helper.forEach(onElements, function(index, el) { 
-      el.style.visibility = "visible"
-      el.style.display = "inline"
+    Helper.forEach(onElements, function(index, el) {
+      el.removeAttribute('hidden');
     })
-    Helper.forEach(offElements, function(index, el) { 
-      el.style.visibility = "hidden"
-      el.style.display = "none"
+    Helper.forEach(offElements, function(index, el) {
+      el.setAttribute('hidden', '');
     })
     setState(true);
   }
@@ -311,13 +309,11 @@ var Toggle = function () {
     var onElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__on');
     var offElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__off');
 
-    Helper.forEach(onElements, function(index, el) { 
-      el.style.visibility = "hidden"
-      el.style.display = "none"
+    Helper.forEach(onElements, function(index, el) {
+      el.setAttribute('hidden', '');
     })
-    Helper.forEach(offElements, function(index, el) { 
-      el.style.visibility = "visible"
-      el.style.display = "inline"
+    Helper.forEach(offElements, function(index, el) {
+      el.removeAttribute('hidden');
     })
     setState(false);
   }
@@ -340,11 +336,11 @@ var Toggle = function () {
 
     // Grab Toggle checkbox on page
     toggle = document.getElementById(obj.toggleId);
-    // Grab Toggle Holder on page 
-    toggleHolder = document.getElementById(obj.toggleHolderId);  
+    // Grab Toggle Holder on page
+    toggleHolder = document.getElementById(obj.toggleHolderId);
 
     // check to make sure toggle exists on page, then set change handler
-    if(toggle){ 
+    if(toggle){
       if(useStorage) toggleState = Storage.getToggleState(key)
       // delay initialize code so that is runs last on page
       setTimeout( setInitialState, 200);
@@ -371,7 +367,7 @@ viewSpacing.init({
   toggleId: 'spacing-toggle-id',
   toggleHolderId: 'spacing-toggle-holder-id',
   holderClassPrefix: 'ds-docs-holder', // 'ds-docs-holder__on' or 'ds-docs-holder__off'
-  isOnInit: false,
+  isOnInit: true,
   useStorage: false
 })
 },{"./ds-toggle":7}],9:[function(require,module,exports){
