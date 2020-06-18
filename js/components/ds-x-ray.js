@@ -4,5 +4,6 @@ var xray = new PageToggle();
 xray.init({
   key: 'x-ray-toggle',
   toggleId: 'ds-doc-xray',
-  bodyClass: 'x-ray'
+  bodyClass: 'x-ray',
+  useStorage: false
 })

@@ -54,7 +54,7 @@ if ($swatchItem.length) { // only run if at least one instance
 
 console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":20}],2:[function(require,module,exports){
+},{"jquery":22}],2:[function(require,module,exports){
 var $ = window.jQuery = require('jquery');
 
 $('body').on('click', '[data-behavior~="toggle-rwd-size"]', function(event) {
@@ -91,7 +91,7 @@ $('body').on('change', '[data-behavior~="toggle-rwd-table"]', function(event) {
 
 console.log('DocsRWD loaded, its JS is NOT to be used for Production, demo purposes only');1
 
-},{"jquery":20}],3:[function(require,module,exports){
+},{"jquery":22}],3:[function(require,module,exports){
 (function (global){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -150,7 +150,7 @@ if (ClipboardJS.isSupported()) {
 console.log('Clipboard Loaded, its JS is NOT to be used for Production, demo purposes only');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/clipboard.js":18,"jquery":20}],4:[function(require,module,exports){
+},{"../vendor/clipboard.js":20,"jquery":22}],4:[function(require,module,exports){
 var PageToggle = require('./ds-page-toggle')
 
 var showCode = new PageToggle();
@@ -159,7 +159,6 @@ showCode.init({
   toggleId: 'ds-doc-code-toggle',
   bodyClass: 'ds-show-da-code'
 });
-
 },{"./ds-page-toggle":6}],5:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -225,12 +224,12 @@ if(pageTitle__elements.length){
 
 console.log('ds-page-title loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16}],6:[function(require,module,exports){
+},{"../utilities/helper":18}],6:[function(require,module,exports){
 var Storage = require('../utilities/storage');
 
 var PageToggle = function () {
 
-  var key, toggle, toggleId, bodyClass;
+  var key, toggle, toggleState, toggleId, bodyClass, useStorage;
 
   // Toggle ON setter
   var setOn = function(){
@@ -246,29 +245,32 @@ var PageToggle = function () {
 
   // State setter
   var setState = function(bool){
-    toggle.checked = bool;
-    Storage.setToggleState(key, bool);
+    toggle.checked = toggleState = bool;
+    if(useStorage) Storage.setToggleState(key, bool);
   }
 
   // Set initial state of page/show code checkbox
-  var setInitialState = function(){ Storage.getToggleState(key) ? setOn() : setOff() }
+  var setInitialState = function(){ toggleState ? setOn() : setOff() }
 
   var init = function( obj ){
-
     key = obj.key;
     toggleId = obj.toggleId;
     bodyClass = obj.bodyClass;
+    useStorage = obj.useStorage == false ? false : true;
+    toggleState = false;
 
     // Grab Toggle checkbox on page
-    toggle = document.getElementById(toggleId);
+    toggle = document.getElementById(toggleId);    
 
-    // check to make sure show code exists on page, then set change handler
+    // check to make sure toggle exists on page, then set change handler
     if(toggle){ 
-      toggle.addEventListener('change', function(e){
-        Storage.getToggleState(key) ? setOff() : setOn()
-      }, false);
+      if(useStorage) toggleState = Storage.getToggleState(key)
       // delay initialize code so that is runs last on page
       setTimeout( setInitialState, 200);
+
+      toggle.addEventListener('change', function(e){
+        toggleState ? setOff() : setOn()
+      }, false);
     }
   }
 
@@ -280,16 +282,105 @@ var PageToggle = function () {
 };
 
 module.exports = PageToggle;
-},{"../utilities/storage":17}],7:[function(require,module,exports){
+},{"../utilities/storage":19}],7:[function(require,module,exports){
+var Storage = require('../utilities/storage');
+var Helper = require('../utilities/helper');
+
+var Toggle = function () {
+
+  var key, useStorage, toggle, toggleState, toggleHolder, holderClassPrefix;
+
+  // Toggle ON setter
+  var setOn = function(){
+    var onElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__on');
+    var offElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__off');
+
+    Helper.forEach(onElements, function(index, el) {
+      el.removeAttribute('hidden');
+    })
+    Helper.forEach(offElements, function(index, el) {
+      el.setAttribute('hidden', '');
+    })
+    setState(true);
+  }
+
+  // Toggle OFF setter
+  var setOff = function(){
+    var onElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__on');
+    var offElements = toggleHolder.querySelectorAll('.'+ holderClassPrefix + '__off');
+
+    Helper.forEach(onElements, function(index, el) {
+      el.setAttribute('hidden', '');
+    })
+    Helper.forEach(offElements, function(index, el) {
+      el.removeAttribute('hidden');
+    })
+    setState(false);
+  }
+
+  // State setter
+  var setState = function(bool){
+    toggle.checked = toggleState = bool;
+    if(useStorage) Storage.setToggleState(key, bool);
+  }
+
+  // Set initial state of page/show code checkbox
+  var setInitialState = function(){ toggleState ? setOn() : setOff() }
+
+  var init = function( obj ){
+
+    holderClassPrefix = obj.holderClassPrefix;
+    useStorage = obj.useStorage == false ? false : true;
+    key = obj.toggleId + window.location.href
+    toggleState = obj.isOnInit == true ? true : false;
+
+    // Grab Toggle checkbox on page
+    toggle = document.getElementById(obj.toggleId);
+    // Grab Toggle Holder on page
+    toggleHolder = document.getElementById(obj.toggleHolderId);
+
+    // check to make sure toggle exists on page, then set change handler
+    if(toggle){
+      if(useStorage) toggleState = Storage.getToggleState(key)
+      // delay initialize code so that is runs last on page
+      setTimeout( setInitialState, 200);
+
+      toggle.addEventListener('change', function(e){
+        toggleState ? setOff() : setOn()
+      }, false);
+    }
+  }
+
+  //Object Literal Return
+  return {
+    init: init // expects an Object
+  };
+
+};
+
+module.exports = Toggle;
+},{"../utilities/helper":18,"../utilities/storage":19}],8:[function(require,module,exports){
+var Toggle = require('./ds-toggle')
+
+var viewSpacing = new Toggle();
+viewSpacing.init({
+  toggleId: 'spacing-toggle-id',
+  toggleHolderId: 'spacing-toggle-holder-id',
+  holderClassPrefix: 'ds-docs-holder', // 'ds-docs-holder__on' or 'ds-docs-holder__off'
+  isOnInit: true,
+  useStorage: false
+})
+},{"./ds-toggle":7}],9:[function(require,module,exports){
 var PageToggle = require('./ds-page-toggle')
 
 var xray = new PageToggle();
 xray.init({
   key: 'x-ray-toggle',
   toggleId: 'ds-doc-xray',
-  bodyClass: 'x-ray'
+  bodyClass: 'x-ray',
+  useStorage: false
 })
-},{"./ds-page-toggle":6}],8:[function(require,module,exports){
+},{"./ds-page-toggle":6}],10:[function(require,module,exports){
 (function (global){
 global.jQuery = require('jquery');
 var $ = global.jQuery;
@@ -338,7 +429,7 @@ jQuery(document).ready(function($){
 //module.exports = Jump;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/jquery.OnePageNav.js":19,"jquery":20}],9:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":21,"jquery":22}],11:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -468,7 +559,7 @@ function growl__trapTab(e){
 
 console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16,"./fsa-whiteout":14}],10:[function(require,module,exports){
+},{"../utilities/helper":18,"./fsa-whiteout":16}],12:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -591,7 +682,7 @@ function modal__trapTab(e){
 
 console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16,"./fsa-whiteout":14}],11:[function(require,module,exports){
+},{"../utilities/helper":18,"./fsa-whiteout":16}],13:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -683,7 +774,7 @@ selectMulti__setState();
 
 console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16}],12:[function(require,module,exports){
+},{"../utilities/helper":18}],14:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -741,7 +832,7 @@ Helper.forEach(spinbox__triggers, function (index, value) {
 
 console.log('Spinbox loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16}],13:[function(require,module,exports){
+},{"../utilities/helper":18}],15:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -802,7 +893,7 @@ if(steppedControl__elements.length){
 
 console.log('SteppedControl loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16}],14:[function(require,module,exports){
+},{"../utilities/helper":18}],16:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -837,7 +928,7 @@ Helper.forEach(whiteout__dismiss, function (index, value) {
 
 console.log('WhiteoutComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":16}],15:[function(require,module,exports){
+},{"../utilities/helper":18}],17:[function(require,module,exports){
 'use strict';
 
 // fsa-design-system: Doc Specific
@@ -845,6 +936,7 @@ var Jump = require('./components/ds.jump');
 var TitleBar = require('./components/ds-page-title');
 var CodeToggle = require('./components/ds-code-toggle');
 var Xray = require('./components/ds-x-ray');
+var ViewSpacing = require('./components/ds-view-spacing');
 var Clipboard = require('./components/ds-clipboard.js');
 
 // fsa-style: Components
@@ -858,7 +950,7 @@ var Spinbox = require('./components/fsa-spinbox');
 // fsa-style: Docs
 var ColorDocs = require('./components/docs-color');
 var DocsRWD = require('./components/docs-rwd');
-},{"./components/docs-color":1,"./components/docs-rwd":2,"./components/ds-clipboard.js":3,"./components/ds-code-toggle":4,"./components/ds-page-title":5,"./components/ds-x-ray":7,"./components/ds.jump":8,"./components/fsa-growl":9,"./components/fsa-modal":10,"./components/fsa-select-multi":11,"./components/fsa-spinbox":12,"./components/fsa-stepped-control":13}],16:[function(require,module,exports){
+},{"./components/docs-color":1,"./components/docs-rwd":2,"./components/ds-clipboard.js":3,"./components/ds-code-toggle":4,"./components/ds-page-title":5,"./components/ds-view-spacing":8,"./components/ds-x-ray":9,"./components/ds.jump":10,"./components/fsa-growl":11,"./components/fsa-modal":12,"./components/fsa-select-multi":13,"./components/fsa-spinbox":14,"./components/fsa-stepped-control":15}],18:[function(require,module,exports){
 
 var Helper = (function () {
 
@@ -962,7 +1054,7 @@ var Helper = (function () {
 
 module.exports = Helper;
 
-},{}],17:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 var Storage = (function () {
 
   var defaults = { toggleState: false };
@@ -1007,7 +1099,7 @@ var Storage = (function () {
 
 module.exports = Storage;
 
-},{}],18:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 /*!
  * clipboard.js v2.0.4
  * https://zenorocha.github.io/clipboard.js
@@ -1986,7 +2078,7 @@ module.exports = closest;
 /***/ })
 /******/ ]);
 });
-},{}],19:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -2211,7 +2303,7 @@ module.exports = closest;
 
 })( jQuery, window , document );
 
-},{}],20:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -12811,4 +12903,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[15]);
+},{}]},{},[17]);
