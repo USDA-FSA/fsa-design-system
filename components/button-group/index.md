@@ -167,4 +167,5 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## Related Resources
 
+* [Buttons]({{ site.baseurl }}components/buttons)
 * [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

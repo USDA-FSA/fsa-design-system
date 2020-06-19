@@ -51,14 +51,13 @@ Refer to [JavaScript Guidance](#javascript-guidance) for additional behaviorial.
 
 **Trigger sample Modals:**
 
-<div class="fsa-level fsa-level--justify-even">
+<p class="fsa-level@l fsa-level--grow-even">
   <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button></span>
   <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button></span>
   <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button></span>
   <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button></span>
   <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button></span>
-</div>
-
+</p>
 
 ## Variations
 

@@ -286,7 +286,8 @@
     - subtitle: "Front-end"
       subhref: "guides/front-end"
       img: "img/subcategories/front-end.png"
-    - subtitle: "Applications"
-      subhref: "guides/applications"
-      img: "img/subcategories/applications.png"
+
+    # - subtitle: "Applications"
+    #   subhref: "guides/applications"
+    #   img: "img/subcategories/applications.png"
 

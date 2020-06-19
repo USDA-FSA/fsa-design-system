@@ -19,7 +19,15 @@ title_label: 'JavaScript Included'
 
 ## Usage
 
-The **core nested component** of each variation and example can be one of [Text Input]({{ site.baseurl }}components/text-input/), [Textarea]({{ site.baseurl }}components/textarea/), [Checkbox]({{ site.baseurl }}components/checkbox/), [Radio]({{ site.baseurl }}components/radio/), [Select]({{ site.baseurl }}components/select/), [Select Multi]({{ site.baseurl }}components/select-multi/), or [Spinbox]({{ site.baseurl }}components/spinbox/).
+The **core nested component** of each variation and example may be one of
+
+* [Text Input]({{ site.baseurl }}components/text-input/)
+* [Textarea]({{ site.baseurl }}components/textarea/)
+* [Checkbox]({{ site.baseurl }}components/checkbox/)
+* [Radio]({{ site.baseurl }}components/radio/)
+* [Select]({{ site.baseurl }}components/select/)
+* [Select Multi]({{ site.baseurl }}components/select-multi/)
+* [Spinbox]({{ site.baseurl }}components/spinbox/)
 
 Refer to each of their documentation pages for more complete usage guidelines.
 
@@ -893,6 +901,167 @@ A UI Pattern for revealing an additional form field upon selection of an "Other"
 </div>
 ```
 
+### Single Column Example
+
+In general, FPAC applications should use a single column layout. There are instances when a two or multi-column layout is appropriate as determined based on the complexity and groupings of the form fields and product requirements.
+
+<div class="ds-preview">
+  <fieldset>
+    <h3 class="fsa-m-t--none">Customer Name</h3>
+    <div class="fsa-field">
+      <label class="fsa-field__label" id="lorem-radio-field-1">Name Match</label>
+      <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-1">
+        <li>
+          <span>
+            <input class="fsa-radio" id="pumpkin-radio" type="radio" name="fav-pie-zz99" checked>
+            <label for="pumpkin-radio">Starts with</label>
+          </span>
+        </li>
+        <li>
+          <span>
+            <input class="fsa-radio" id="none-radio" type="radio" name="fav-pie-zz99">
+            <label for="none-radio">Exact Match</label>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="fsa-field">
+      <label class="fsa-field__label" for="TheItem2">Last name or Business Name <span class="fsa-field__label-desc">Required</span></label>
+      <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-9" name="TheItem2" type="text" value="">
+      <span class="fsa-field__help" id="lorem-1234-help-9">Example: Doe</span>
+    </div>
+    <div class="fsa-field">
+      <label class="fsa-field__label" for="TheItem2q5">First Name</label>
+      <input class="fsa-input fsa-field__item" id="TheItem2q5" aria-describedby="lorem-1234-help-24369" name="TheItem2q5" type="text" value="">
+      <span class="fsa-field__help" id="lorem-1234-help-24369">Instructional message here</span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <h3 class="fsa-m-t--none">Customer Tax ID</h3>
+    <div class="fsa-field">
+      <label class="fsa-field__label" for="TheItem8">Tax ID <span class="fsa-field__label-desc">Required</span></label>
+      <input class="fsa-input fsa-field__item" id="TheItem8" aria-describedby="lorem-1234-help-8" aria-required="true" name="TheItem8" type="text" value="">
+      <span class="fsa-field__help" id="lorem-1234-help-8">Tax IDs are 8 characters, alphanumeric</span>
+    </div>
+    <div class="fsa-field">
+      <label class="fsa-field__label" id="lorem-radio-field-9852">Tax ID Search Length</label>
+      <ul class="fsa-form-list" aria-labelledby="lorem-radio-field-9852">
+        <li>
+          <span>
+            <input class="fsa-radio" id="sdfa24tgg-radio" type="radio" name="fav-pie-333333gha" checked>
+            <label for="sdfa24tgg-radio">Whole ID</label>
+          </span>
+        </li>
+        <li>
+          <span>
+            <input class="fsa-radio" id="egh5a-radio" type="radio" name="fav-pie-333333gha">
+            <label for="egh5a-radio">Last 4 digits</label>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="fsa-field">
+      <label class="fsa-field__label" for="UNIQUE-ID-h24rg8">Tax ID Type</label>
+      <select class="fsa-select fsa-field__item" id="UNIQUE-ID-h24rg8" name="UNIQUE-ID-h24rg8" aria-describedby="lorem-hshhsjtext-help-4">
+        <option value="SSN" selected>Social Security Number (SSN)</option>
+        <option value="EIN">Employer Identification Number (EIN)</option>
+        <option value="ITIN">Individual Taxpayer Identification Number (ITIN)</option>
+        <option value="ATIN">Taxpayer Identification Number for Pending U.S. Adoptions (ATIN)</option>
+        <option value="PTIN">Preparer Taxpayer Identification Number (PTIN)</option>
+      </select>
+      <span class="fsa-field__help" id="lorem-hshhsjtext-help-4">You may choose a type other than the default, Social Security Number (SSN)</span>
+    </div>
+  </fieldset>
+  <div class="fsa-field">
+    <button type="submit" class="fsa-btn fsa-btn--primary">Search Profiles</button>
+    <button type="button" class="fsa-btn fsa-btn--flat">Cancel</button>
+  </div>
+</div>
+
+### Two Column Example
+
+Using the responsive [Grid System]({{ site.baseurl }}layout/grid/), the form below is two columns when the viewport is wider than `L` and single column when narrower.
+
+<div class="ds-preview">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__1/2@l">
+      <fieldset>
+        <h3 class="fsa-m-t--none">Customer Name</h3>
+        <div class="fsa-field">
+          <label class="fsa-field__label" id="2-column-example__lorem-radio-field-1">Name Match</label>
+          <ul class="fsa-form-list" aria-labelledby="2-column-example__lorem-radio-field-1">
+            <li>
+              <span>
+                <input class="fsa-radio" id="2-column-example__pumpkin-radio" type="radio" name="2-column-example__fav-pie-zz99" checked>
+                <label for="2-column-example__pumpkin-radio">Starts with</label>
+              </span>
+            </li>
+            <li>
+              <span>
+                <input class="fsa-radio" id="2-column-example__none-radio" type="radio" name="2-column-example__fav-pie-zz99">
+                <label for="2-column-example__none-radio">Exact Match</label>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="fsa-field">
+          <label class="fsa-field__label" for="2-column-example__TheItem2">Last name or Business Name <span class="fsa-field__label-desc">Required</span></label>
+          <input class="fsa-input fsa-field__item" id="2-column-example__TheItem2" aria-describedby="2-column-example__lorem-1234-help-9" name="2-column-example__TheItem2" type="text" value="">
+          <span class="fsa-field__help" id="2-column-example__lorem-1234-help-9">Example: Doe</span>
+        </div>
+        <div class="fsa-field">
+          <label class="fsa-field__label" for="2-column-example__TheItem2q5">First Name</label>
+          <input class="fsa-input fsa-field__item" id="2-column-example__TheItem2q5" aria-describedby="2-column-example__lorem-1234-help-24369" name="2-column-example__TheItem2q5" type="text" value="">
+          <span class="fsa-field__help" id="2-column-example__lorem-1234-help-24369">Instructional message here</span>
+        </div>
+      </fieldset>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__1/2@l">
+      <fieldset>
+        <h3 class="fsa-m-t--none">Customer Tax ID</h3>
+        <div class="fsa-field">
+          <label class="fsa-field__label" for="2-column-example__TheItem8">Tax ID <span class="fsa-field__label-desc">Required</span></label>
+          <input class="fsa-input fsa-field__item" id="2-column-example__TheItem8" aria-describedby="2-column-example__lorem-1234-help-8" aria-required="true" name="2-column-example__TheItem8" type="text" value="">
+          <span class="fsa-field__help" id="2-column-example__lorem-1234-help-8">Tax IDs are 8 characters, alphanumeric</span>
+        </div>
+        <div class="fsa-field">
+          <label class="fsa-field__label" id="2-column-example__lorem-radio-field-9852">Tax ID Search Length</label>
+          <ul class="fsa-form-list" aria-labelledby="2-column-example__lorem-radio-field-9852">
+            <li>
+              <span>
+                <input class="fsa-radio" id="2-column-example__sdfa24tgg-radio" type="radio" name="2-column-example__fav-pie-333333gha" checked>
+                <label for="2-column-example__sdfa24tgg-radio">Whole ID</label>
+              </span>
+            </li>
+            <li>
+              <span>
+                <input class="fsa-radio" id="2-column-example__egh5a-radio" type="radio" name="2-column-example__fav-pie-333333gha">
+                <label for="2-column-example__egh5a-radio">Last 4 digits</label>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="fsa-field">
+          <label class="fsa-field__label" for="2-column-example__UNIQUE-ID-h24rg8">Tax ID Type</label>
+          <select class="fsa-select fsa-field__item" id="2-column-example__UNIQUE-ID-h24rg8" name="2-column-example__UNIQUE-ID-h24rg8" aria-describedby="2-column-example__lorem-hshhsjtext-help-4">
+            <option value="SSN" selected>Social Security Number (SSN)</option>
+            <option value="EIN">Employer Identification Number (EIN)</option>
+            <option value="ITIN">Individual Taxpayer Identification Number (ITIN)</option>
+            <option value="ATIN">Taxpayer Identification Number for Pending U.S. Adoptions (ATIN)</option>
+            <option value="PTIN">Preparer Taxpayer Identification Number (PTIN)</option>
+          </select>
+          <span class="fsa-field__help" id="2-column-example__lorem-hshhsjtext-help-4">You may choose a type other than the default, Social Security Number (SSN)</span>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="fsa-field">
+    <button type="submit" class="fsa-btn fsa-btn--primary">Search Profiles</button>
+    <button type="button" class="fsa-btn fsa-btn--flat">Cancel</button>
+  </div>
+</div>
+
+
 ## States
 
 All variations above have error states available by the addition of `fsa-field--error`, and will likely be paired with an `fsa-field__message` to provide clarity to the field's requirements.
@@ -1268,6 +1437,24 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
   </tbody>
 </table>
 
+## Form Validation Guidelines
+
+Common themes that should be followed when developing a validation and messaging system that will help to optimize the workflow of a User. This allows for a more positive User Experience when an system or User error has taken place.
+
+1. __Display error messages at the right place__ - Proper error messaging should appear as close as possible to the area of the application where the error has taken place. Always display validation within the context of the action. If an error has occurred, for instance, from a User typing the wrong format of characters into an online form field, the error message shall appear below the form field. Grouping of form error messages at the top or bottom of the form and away from the pertaining form fields shall not be done.
+1. __Display error messages at the right time__ - It is also important for the error message to appear in a timely manner, so that the User is still in the proper mindset for completing the task. Error messages shall appear when the action has been completed. So in the instance of wrong format of characters in an online form field, when the form field loses focus the error message shall appear.
+1. __Use the appropriate color for the message__ - Generally speaking, it is best practice to use the color red, paired with error text messaging to indicated something needs to be corrected to continue. In the case of confirmation or success messaging, the color green, paired with success text messaging should be used. Based on the location and background color of the area of the error, consideration of 508 compliance shall still be used.
+1. __Use clear language and provide an actionable resolution__ - The verbiage used when notifying a User of an error should be easy to understand and provide a way to solve the problem. Even if the error messaging is placed in the right spot at the right time, and in the right color scheme, it serves no purpose if the User does not understand how to correct the problem. FPAC applications shall use [plain language priciples]({{ site.baseurl }}guides/content/plain-language/) when displaying validation messaging.
+
+## General Guidance
+
+* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
+* Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
+* Consider the type of content a user may enter to aid mobile device entry; mobile devices typically surface a keyboard UI attuned to the type. For example, `type="tel"` will surface a [phone keyboard](http://html5doctor.com/html5-forms-input-types/#input-tel).
+* Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
+* Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
+
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
@@ -1277,12 +1464,4 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 * Do not use the `placeholder` attribute as the sole label for accessibility reasons. Form components must have an associated `<label>` with matching `for` attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.
 * Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
 * Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
-
-## General Guidance
-
-* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
-* Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
-* Consider the type of content a user may enter to aid mobile device entry; mobile devices typically surface a keyboard UI attuned to the type. For example, `type="tel"` will surface a [phone keyboard](http://html5doctor.com/html5-forms-input-types/#input-tel).
-* Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
-* Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
 
