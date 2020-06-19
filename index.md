@@ -13,7 +13,7 @@ custom_js: "ds-quick-find.js"
       <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting a new bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
     </div>
     <div class="fsa-grid__1 fsa-grid__3/12@l">
-      <div class="fsa-level fsa-level--none@l fsa-level--grow-auto">
+      <div class="fsa-level@s fsa-level--none@l fsa-level--grow-auto">
         <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="http://usda-fsa.github.io/fsa-style/boilerplate.html">Boilerplate Template</a></div>
         <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="https://codepen.io/pen?template=WNQdJpp">Explore with Codepen</a></div>
       </div>
