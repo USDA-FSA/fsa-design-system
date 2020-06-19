@@ -164,11 +164,13 @@ custom_js: "growl-init-demo.js"
 
 **Trigger sample Notifications:**
 
-<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Default</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Error</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Warning</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Success</button>
-<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal/Prompt</button>
+<p class="fsa-level@l fsa-level--grow-even">
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Default</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Error</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Warning</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Success</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal/Prompt</button></span>
+</p>
 
 Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
