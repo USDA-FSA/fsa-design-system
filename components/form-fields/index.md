@@ -19,7 +19,15 @@ title_label: 'JavaScript Included'
 
 ## Usage
 
-The **core nested component** of each variation and example can be one of [Text Input]({{ site.baseurl }}components/text-input/), [Textarea]({{ site.baseurl }}components/textarea/), [Checkbox]({{ site.baseurl }}components/checkbox/), [Radio]({{ site.baseurl }}components/radio/), [Select]({{ site.baseurl }}components/select/), [Select Multi]({{ site.baseurl }}components/select-multi/), or [Spinbox]({{ site.baseurl }}components/spinbox/).
+The **core nested component** of each variation and example may be one of
+
+* [Text Input]({{ site.baseurl }}components/text-input/)
+* [Textarea]({{ site.baseurl }}components/textarea/)
+* [Checkbox]({{ site.baseurl }}components/checkbox/)
+* [Radio]({{ site.baseurl }}components/radio/)
+* [Select]({{ site.baseurl }}components/select/)
+* [Select Multi]({{ site.baseurl }}components/select-multi/)
+* [Spinbox]({{ site.baseurl }}components/spinbox/)
 
 Refer to each of their documentation pages for more complete usage guidelines.
 
