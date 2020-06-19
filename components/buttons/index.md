@@ -229,6 +229,12 @@ Several of a button's style properties can be selectively modified across each M
 ## Labeling
 
 <table class="fsa-table fsa-table--responsive">
+  <thead>
+    <tr>
+      <th scope="col">Button Label</th>
+      <th scope="col">Usage</th>
+    </tr>
+  </thead>
   <tr>
     <td aria-label="Label">
       <div style="white-space: nowrap;">
@@ -337,11 +343,9 @@ Several of a button's style properties can be selectively modified across each M
   </tr>
 </table>
 
-
-
 ### Common Button Labels and Functionality
 
-<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+<table class="fsa-table fsa-table--responsive">
   <thead>
     <tr>
       <th scope="col">Button Label</th>
