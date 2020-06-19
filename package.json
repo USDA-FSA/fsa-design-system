@@ -33,7 +33,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "author": "USDA - Farm Production and Conservation (FPAC), ISSDOB/FBCSS",
   "contributors": [
