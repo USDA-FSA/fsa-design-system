@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
   <meta http-equiv="refresh" content="2;url={{ site.baseurl }}{{page.redirectURL}}" />
-
   <body>
-
-    {% include header.html %}
-
+    <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
+      <div class="fsa-progress__details fsa-sr-only">
+        <div class="fsa-progress__label">Redirecting</div>
+      </div>
+      <div class="fsa-progress__bar" aria-hidden="true">
+        <div class="fsa-progress__primary"></div>
+        <div class="fsa-progress__secondary"></div>
+      </div>
+    </div>
     <main id="main-content" tabindex="-1">
       <div class="ds-body">
-        <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-          <div class="fsa-progress__details fsa-sr-only">
-            <div class="fsa-progress__label">Redirecting</div>
-          </div>
-          <div class="fsa-progress__bar" aria-hidden="true">
-            <div class="fsa-progress__primary"></div>
-            <div class="fsa-progress__secondary"></div>
-          </div>
-        </div>
-
         <div class="fsa-alert fsa-alert--info fsa-m--none">
           <div class="fsa-alert__body">
             <h3 class="fsa-alert__heading" aria-hidden="true">Redirecting...</h3>
             <p class="fsa-alert__text">This page or its content has been moved to <strong><a href="{{ site.baseurl }}{{page.redirectURL}}">{{page.redirectTitle}}</a></strong>. Update your bookmarks accordingly.</p>
           </div>
         </div>
-
       </div>
     </main>
-
     {% include foot.html %}
-
   </body>
-
 </html>

@@ -15110,8 +15110,8 @@ pre.highlight .ds-clipboard {
 }
 
 .ds-header__options-item--start {
-  margin-right: 24px;
-  margin-right: 2.4rem;
+  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .ds-header__options-item--github {
@@ -15629,6 +15629,117 @@ pre.highlight .ds-clipboard {
   }
 }
 
+.ds-quick-find {
+  display: none;
+}
+
+@supports (grid-area: auto) {
+  .ds-quick-find {
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 3.6rem;
+  }
+  @media (min-width: 54em) {
+    .ds-quick-find {
+      width: 44rem;
+    }
+  }
+  .ds-quick-find:focus-within {
+    z-index: 99999;
+  }
+  .ds-quick-find__input {
+    width: 100%;
+  }
+  .ds-quick-find__field {
+    position: relative;
+  }
+  .ds-quick-find__clear {
+    text-align: left;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+    width: 48px;
+    border: solid transparent;
+    border-width: 0 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-image: url("../img/close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    outline-offset: -3px;
+  }
+  .ds-quick-find__clear::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  .ds-quick-find__input:placeholder-shown + .ds-quick-find__clear {
+    display: none;
+  }
+  .ds-quick-find__output {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 1.2rem rgba(73, 68, 64, 0.2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c8c7c6;
+    background-color: white;
+    z-index: 2;
+    overflow: auto;
+    max-height: 45vh;
+  }
+  .ds-quick-find__output-item {
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #dbdad9;
+  }
+  .ds-quick-find__output-item--section {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 0.4rem 1.2rem;
+    background-color: #dbdad9;
+    color: #494440;
+  }
+  .ds-quick-find__output-link, .ds-quick-find__output-link:visited {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    color: #2f2c2a;
+  }
+  .ds-quick-find__output-item[aria-selected="true"] .ds-quick-find__output-link, .ds-quick-find__output-link:hover, .ds-quick-find__output-link:focus {
+    background-color: #f0f0f0;
+  }
+  .ds-quick-find__output-item[aria-selected="true"] .ds-quick-find__output-link {
+    outline: 3px solid #009afa;
+    outline-offset: -3px;
+  }
+  .ds-quick-find__output-link:focus {
+    outline-offset: -3px;
+  }
+}
+
 .OUTLINE {
   outline: 1px solid red;
 }
@@ -15636,8 +15747,8 @@ pre.highlight .ds-clipboard {
 .ds-icn__github {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 8px;
-  margin-right: 0.8rem;
+  margin-right: 4px;
+  margin-right: 0.4rem;
   width: 24px;
   width: 2.4rem;
   height: 24px;

@@ -1,13 +1,9 @@
-var Helper = require('../utilities/helper');
+var PageToggle = require('./ds-page-toggle')
 
-var _code_toggle = document.querySelectorAll('[data-behavior~="toggle-xray"]');
-
-Helper.forEach(_code_toggle, function(index, value) {
-
-  var _el = value;
-
-  _el.addEventListener('change', function(e){
-    document.body.classList.toggle('x-ray');
-  }, false);
-
-});
+var xray = new PageToggle();
+xray.init({
+  key: 'x-ray-toggle',
+  toggleId: 'ds-doc-xray',
+  bodyClass: 'x-ray',
+  useStorage: false
+})

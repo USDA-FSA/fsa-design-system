@@ -467,6 +467,7 @@ Items "One" and "Four" below are disabled.
 ## Usage
 
 {% capture usage_do %}
+* In place of the `multiple` attribute of a `<select>` element.
 * When multiple options need to be shown to the User at one time, while all options are selectable.
 * If the application requires a mechanism to select all or none of the options.
 {% endcapture %}

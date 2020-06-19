@@ -488,3 +488,7 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 * Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
 * Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
 * Do not use the `placeholder` attribute in place of a `<label>` element. Its purposes is different: the standard `<label>` describes the role of the form element; that is, it indicates what kind of information is expected. The `placeholder` attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.
+
+## Related Resources
+
+* [Form Fields]({{ site.baseurl }}components/form-fields)

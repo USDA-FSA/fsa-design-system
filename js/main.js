@@ -5,6 +5,7 @@ var Jump = require('./components/ds.jump');
 var TitleBar = require('./components/ds-page-title');
 var CodeToggle = require('./components/ds-code-toggle');
 var Xray = require('./components/ds-x-ray');
+var ViewSpacing = require('./components/ds-view-spacing');
 var Clipboard = require('./components/ds-clipboard.js');
 
 // fsa-style: Components

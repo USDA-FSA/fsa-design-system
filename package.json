@@ -1,7 +1,7 @@
 {
   "name": "fsa-design-system",
   "description": "Open Source Design System for USDA Farm Production and Convervation (FPAC)",
-  "version": "1.15.2",
+  "version": "1.15.3",
   "license": "SEE LICENSE in LICENSE.md",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "grunt-scss-lint": "^0.5.0",
     "grunt-shell": "^1.3.1",
     "load-grunt-tasks": "^3.5.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "pixrem": "^3.0.2",
     "postcss-quantity-queries": "^0.4.0",
     "time-grunt": "^1.4.0"
@@ -35,7 +35,7 @@
   "dependencies": {
     "jquery": "^3.4.1"
   },
-  "author": "USDA Farm Service and Production, ISSDOB/FBCSS",
+  "author": "USDA - Farm Production and Conservation (FPAC), ISSDOB/FBCSS",
   "contributors": [
     "Francis Rupert <France.Rupert@gmail.com> (https://github.com/francisrupert)",
     "Casey Hill <bignamehere@gmail.com> (https://github.com/bignamehere)",
