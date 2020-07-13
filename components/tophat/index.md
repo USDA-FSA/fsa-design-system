@@ -112,7 +112,7 @@ jump_menu: true
       <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" target="_blank" title="View in a New Window">New Window</a>
     </span>
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_top-hat">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>

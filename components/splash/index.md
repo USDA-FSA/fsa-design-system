@@ -27,7 +27,7 @@ The intention of a Splash screen is to provide a good first imporession of an ap
   </div>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--tablet" id="rwd-demo_splash">
-      <iframe title="Responsive Demo: splash" src="http://usda-fsa.github.io/fsa-style/demo/rwd__splash.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+      <iframe title="Responsive Demo: splash" src="https://usda-fsa.github.io/fsa-style/demo/rwd__splash.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>

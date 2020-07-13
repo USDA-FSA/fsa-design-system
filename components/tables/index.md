@@ -1607,7 +1607,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
   </div>
   <div class="docs__rwd-embed-container">
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_table">
-      <iframe src="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__table.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>
