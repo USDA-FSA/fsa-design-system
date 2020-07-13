@@ -486,7 +486,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
       <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" target="_blank" title="View in a New Window">New Window</a>
     </span>
     <div class="docs__rwd-embed docs__rwd-embed--desktop" id="rwd-demo_progress">
-      <iframe title="Responsive Demo: progress" src="http://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+      <iframe title="Responsive Demo: progress" src="https://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>

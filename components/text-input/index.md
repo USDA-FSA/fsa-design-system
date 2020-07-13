@@ -172,7 +172,7 @@ Selectively override several style properties at each Media Query breakpoint
       <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__input.html" target="_blank" title="View in its own browser window">New window</a>
     </span>
     <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_input">
-      <iframe title="Responsive Demo: Input element" src="http://usda-fsa.github.io/fsa-style/demo/rwd__input.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+      <iframe title="Responsive Demo: Input element" src="https://usda-fsa.github.io/fsa-style/demo/rwd__input.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
     </div>
   </div>
 </div>
