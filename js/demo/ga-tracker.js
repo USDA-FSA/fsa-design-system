@@ -22,7 +22,9 @@ if ('serviceWorker' in navigator) {
 
   };
 
- gat.init(
+  console.log('ga',ga)
+
+  gat.init(
     'UA-171509374-1',
     'Quick Find'
   );
