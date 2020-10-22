@@ -7,12 +7,12 @@ if ('serviceWorker' in navigator) {
     
     trackPhrase: function(phrase){
       console.log('GA Track', phrase)
-      ga('send', 'event', gat.trackerName, 'search', phrase );
+      window.ga('send', 'event', gat.trackerName, 'search', phrase );
     },
 
     setupTracker: function(){
-      ga('create', gat.id, 'auto', gat.trackerName );
-      console.log('ga',ga)
+      window.ga('create', gat.id, 'auto', gat.trackerName );
+      console.log('ga',window.ga)
     },
     
     init: function(gaId, trackerName) {
