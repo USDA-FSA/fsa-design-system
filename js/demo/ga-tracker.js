@@ -12,6 +12,7 @@ if ('serviceWorker' in navigator) {
 
     setupTracker: function(){
       ga('create', gat.id, 'auto', gat.trackerName );
+      console.log('ga',ga)
     },
     
     init: function(gaId, trackerName) {
@@ -21,8 +22,6 @@ if ('serviceWorker' in navigator) {
     }
 
   };
-
-  console.log('ga',ga)
 
   gat.init(
     'UA-171509374-1',
