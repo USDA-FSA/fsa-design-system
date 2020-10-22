@@ -110,7 +110,7 @@ if ('serviceWorker' in navigator) {
             tier1.forEach( item => {
               let newText = item.text.replace(regex, (str) => '<mark>'+ str + '</mark>');
               newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                            <a class="ds-quick-find__output-link" href="${item.url}">
+                            <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
                               ${newText}
                             </a>
                           </li>`
@@ -132,7 +132,7 @@ if ('serviceWorker' in navigator) {
                 }
                 prevHeader = item.ancestors.header;
                 newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                              <a class="ds-quick-find__output-link" href="${item.url}">
+                              <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
                                 ${newText}
                               </a>
                             </>`
@@ -145,7 +145,7 @@ if ('serviceWorker' in navigator) {
                 prevHeader = item.ancestors.header;
 
                 newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                              <a class="ds-quick-find__output-link" href="${item.url}">
+                              <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
                                 ${newParentText}
                                 /
                                 ${newText}
@@ -279,11 +279,15 @@ if ('serviceWorker' in navigator) {
       // Listen for SPACE key when results in focus
       if(e.keyCode==32) {
         e.preventDefault();
-        window.location = currElem.href;
+        qf.navigateTo( currElem.href, currElem.innerText );
       }
 
     },
 
+    navigateTo: function( url, phrase ){
+      GoogleTracker.trackPhrase( phrase );
+      window.location.href = url;
+    },
 
     closeResults: function(){
       qf.results.innerHTML = '';
@@ -365,5 +369,7 @@ if ('serviceWorker' in navigator) {
     'quick-find-results-id',
     'quick-find-results-count-id'
   );
+
+  window.QuickFind = qf;
 }
 
