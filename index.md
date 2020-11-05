@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-custom_js: "ds-quick-find.js"
+custom_js: ["ga-tracker.js", "ds-quick-find.js"]
 ---
 
 <div class="ds-article">
