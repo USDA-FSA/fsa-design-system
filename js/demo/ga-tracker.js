@@ -7,6 +7,8 @@ if ('serviceWorker' in navigator) {
     trackedPhrase: '',
     searchCollection: '',
     searchCollectionLimit: 100,
+    searchCollectionPosts: 0,
+    searchCollectionPostLimit: 3,
 
     getSearchCollection: function(){
       return gat.searchCollection;
@@ -21,8 +23,14 @@ if ('serviceWorker' in navigator) {
     },
 
     trackSearchCollection: function(str){
-      if( gat.searchCollection.length < gat.searchCollectionLimit ){
+      if( gat.searchCollection.length <= gat.searchCollectionLimit ){
         gat.searchCollection += ' ~ ' + str;
+      } else {
+        if(gat.searchCollectionPosts <= gat.searchCollectionPostLimit ){
+          gat.searchCollectionPosts++;
+          gat.trackFreeform( gat.searchCollection );
+          gat.searchCollection = ' ~ ' + str;
+        }
       }
     },
 
@@ -32,10 +40,10 @@ if ('serviceWorker' in navigator) {
       });
     },
 
-    trackFreeform: function( coll){
+    trackFreeform: function(coll){
       gtag('event', 'search freeform', {
         'event_category': gat.trackerName,
-        'event_label':coll
+        'event_label': coll
       });
     },
 
