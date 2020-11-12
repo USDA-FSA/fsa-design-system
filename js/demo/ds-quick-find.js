@@ -89,7 +89,6 @@ if ('serviceWorker' in navigator) {
     },
 
     buildSearchCollection: function(str){
-      console.log('str',str)
       let isValid = true;
       // string must be longer than previous string
       if(str.length < qf.prevInputString.length) isValid = false;
@@ -104,7 +103,6 @@ if ('serviceWorker' in navigator) {
       if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
       
       if(isValid){
-        console.log('valid coll string', str)
         GoogleTracker.trackSearchCollection(str);
       }
     },
