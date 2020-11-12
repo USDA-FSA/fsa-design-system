@@ -4,18 +4,57 @@ if ('serviceWorker' in navigator) {
 
     id: '',
     trackerName: '',
+    trackedPhrase: '',
+    searchCollection: '',
+    searchCollectionLimit: 100,
+
+    getSearchCollection: function(){
+      return gat.searchCollection;
+    },
     
     trackPhrase: function(phrase){
-      console.log('GA Track', phrase)
+      gat.trackedPhrase = phrase;
       gtag('event', 'search', {
         'event_category': gat.trackerName,
         'event_label': phrase
       });
     },
+
+    trackSearchCollection: function(str){
+      if( gat.searchCollection.length < gat.searchCollectionLimit ){
+        gat.searchCollection += ' ~ ' + str;
+      }
+    },
+
+    trackSearchAbandon: function(){
+      gtag('event', 'search abandon', {
+        'event_category': gat.trackerName
+      });
+    },
+
+    trackFreeform: function( coll){
+      gtag('event', 'search freeform', {
+        'event_category': gat.trackerName,
+        'event_label':coll
+      });
+    },
+
+    trackLeavePage: function(){
+      if(gat.trackedPhrase == ''){
+        if(gat.searchCollection != ''){
+          gat.trackFreeform( gat.searchCollection );
+          gat.trackSearchAbandon();
+        }
+      }
+    },
     
     init: function(gaId, trackerName) {
       gat.id = gaId;
       gat.trackerName = trackerName;
+      
+      window.addEventListener('beforeunload', function(evt){
+        gat.trackLeavePage();
+      });
     }
 
   };

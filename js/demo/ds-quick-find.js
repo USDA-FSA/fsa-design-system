@@ -14,6 +14,7 @@ if ('serviceWorker' in navigator) {
     searchArray: [],
     displayCount: 1,
     prevElem: '',
+    prevInputString: '',
 
     setSearchProperties: function(){
 
@@ -87,6 +88,27 @@ if ('serviceWorker' in navigator) {
       return listToDisplay;
     },
 
+    buildSearchCollection: function(str){
+      console.log('str',str)
+      let isValid = true;
+      // string must be longer than previous string
+      if(str.length < qf.prevInputString.length) isValid = false;
+      qf.prevInputString = str;
+      // string must be more than 2 characters
+      if(str.length < 3) isValid = false;
+      // if string is not all spaces
+      let patt = /[ ]{2,}/;
+      if( patt.test( str ) ) isValid = false;
+      // if string is not in collection
+      let sc = GoogleTracker.getSearchCollection()
+      if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
+      
+      if(isValid){
+        console.log('valid coll string', str)
+        GoogleTracker.trackSearchCollection(str);
+      }
+    },
+
     searchInput: function(){
       return function(){
         let q = qf;
@@ -96,6 +118,8 @@ if ('serviceWorker' in navigator) {
 
           let newHTML = '<ul class="ds-quick-find__output" role="listbox">';
           let matches = q.doSearch( q.search.value );
+
+          if(matches.length < 1) qf.buildSearchCollection(q.search.value);
 
           let tier1 = matches.filter( item => item.tier == 1 );
           tier1.sort((a, b) => (a.text < b.text) ? 1 : -1)
@@ -294,6 +318,7 @@ if ('serviceWorker' in navigator) {
       qf.search.value = '';
       qf.search.setAttribute('aria-expanded', 'false');
       qf.search.focus();
+      //GoogleTracker.trackSearchAbandon();
     },
 
     resultsNavTo: function( node ){
