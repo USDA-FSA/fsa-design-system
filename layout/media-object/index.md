@@ -12,7 +12,7 @@ deprecated: true
 <div class="fsa-alert fsa-alert--warning">
   <div class="fsa-alert__body">
     <h3 class="fsa-alert__heading">Deprecated</h3>
-    <p class="fsa-text-size--4"><code>fsa-media</code> has been deprecated in favor of the <a href="#component__level"><code>fsa-level</code> layout component</a>. For example, below is an implementation of Media using Level:</p>
+    <p class="fsa-text-size--4"><code>fsa-media</code> has been deprecated in favor of the <a href="{{ site.baseurl }}layout/level"><code>fsa-level</code> Layout component</a>. For example, below is an implementation of Media using Level:</p>
     <div class="fsa-level fsa-level--align-top fsa-level--gutter-m">
       <div>
         <img class="fsa-media__img" src="{{ site.baseurl }}img/100x100.jpg" alt="">
