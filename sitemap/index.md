@@ -10,17 +10,24 @@ intro: ""
       {% for link in site.data.navvy %}
         {% unless link.exclude_from_sitemap %}
         <li class="ds-sitemap__list-item ds-sitemap__list-item--root">
-          <a class="ds-sitemap__link ds-sitemap__link--root js-quick-find--tier1" href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>
+          <a class="ds-sitemap__link ds-sitemap__link--root js-quick-find--tier1" href="{{ site.baseurl }}{{ link.href }}">
+            <span class="ds-sitemap__text">{{ link.title }}</span>
+            <span class="ds-sitemap__keyword" aria-hidden="true">{{ link.keyword }}</span>
+          </a>
           {% if link.componentgroup %}
             <ul class="ds-sitemap__list">
               {% for group in link.componentgroup %}
                 <li class="ds-sitemap__list-item">
-                  <a class="ds-sitemap__link js-quick-find--tier2" href="{{ site.baseurl }}{{ link.href }}/#{{ group.title | downcase | replace: ' ', '-' }}">{{ group.title }}</a>
+                  <a class="ds-sitemap__link js-quick-find--tier2" href="{{ site.baseurl }}{{ link.href }}/#{{ group.title | downcase | replace: ' ', '-' }}">
+                    <span class="ds-sitemap__text">{{ group.title }}</span>
+                    <span class="ds-sitemap__keyword" aria-hidden="true">{{ group.keyword }}</span>
+                  </a>
                   <ul class="ds-sitemap__list">
                     {% for subgroup in group.subcategories %}
                     <li class="ds-sitemap__list-item">
                       <a class="ds-sitemap__link js-quick-find--tier3" href="{{ subgroup.subhref | prepend: site.baseurl }}">
-                        <span>{{ subgroup.subtitle }}</span>
+                        <span class="ds-sitemap__text">{{ subgroup.subtitle }}</span>
+                        <span class="ds-sitemap__keyword" aria-hidden="true">{{ subgroup.keyword }}</span>
                       </a>
                     </li>
                     {% endfor %}
@@ -32,14 +39,18 @@ intro: ""
             <ul class="ds-sitemap__list">
               {% for subpage in link.subcategories %}
                 <li class="ds-sitemap__list-item">
-                  <a class="ds-sitemap__link js-quick-find--tier2" href="{{ site.baseurl }}{{ subpage.subhref }}">{{ subpage.subtitle }}</a>
+                  <a class="ds-sitemap__link js-quick-find--tier2" href="{{ site.baseurl }}{{ subpage.subhref }}">
+                    <span class="ds-sitemap__text">{{ subpage.subtitle }}</span>
+                    <span class="ds-sitemap__keyword" aria-hidden="true">{{ subpage.keyword }}</span>
+                  </a>
                   {% if subpage.subhref contains 'guides/' %}
                     {% assign guide = subpage.subhref | replace:'guides/','guide_' %}
                     <ul class="ds-sitemap__list">
                     {% for article in site.data.[guide] %}
                       <li class="ds-sitemap__list-item">
                         <a class="ds-sitemap__link js-quick-find--tier3" href="{{ article.href | prepend: site.baseurl }}">
-                          {{ article.title }}
+                          <span class="ds-sitemap__text">{{ article.title }}</span>
+                          <span class="ds-sitemap__keyword" aria-hidden="true">{{ article.keyword }}</span>
                         </a>
                       </li>
                     {% endfor %}
