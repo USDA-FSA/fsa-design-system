@@ -65,7 +65,7 @@ title_label: 'May require JavaScript'
 
 ### With output
 
-Combine with [Level]({{ site.baseurl }}components/level/) to arrange Slider with an `<output>` element.
+Combine with [Level]({{ site.baseurl }}components/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
 
 <div class="ds-preview">
   <div class="fsa-level">
@@ -86,7 +86,7 @@ Combine with [Level]({{ site.baseurl }}components/level/) to arrange Slider with
 
 ### With output, Full-width
 
-Combine the `fsa-slider--block` variation with [Level]({{ site.baseurl }}components/level/) to arrange Slider with an `<output>` element.
+Combine the `fsa-slider--block` variation with [Level]({{ site.baseurl }}components/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
 
 <div class="ds-preview">
   <div class="fsa-level">
@@ -102,6 +102,37 @@ Combine the `fsa-slider--block` variation with [Level]({{ site.baseurl }}compone
     <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="9" step="1">
   </span>
   <span><output id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">9</output></span>
+</div>
+```
+
+### Within Field component
+
+Nested within a [Form Field]({{ site.baseurl }}components/form-fields/).
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="lorem-range-1234">Label <span class="fsa-field__label-desc">Required</span></label>
+    <input class="fsa-slider fsa-field__item" id="lorem-range-1234" name="lorem-range-1234" type="range" min="0" max="10" value="3" step="1">
+  </div>
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="lorem-range-7710">Label <span class="fsa-field__label-desc">Required</span></label>
+    <div class="fsa-level">
+      <span class="fsa-level__item--grow-auto">
+        <input class="fsa-slider fsa-field__item" id="lorem-range-7710" name="lorem-range-7710" type="range" min="0" max="100" value="90" step="1">
+      </span>
+      <span><output id="lorem-range-ouput-7710" name="lorem-range-ouput-7710" for="lorem-range-7710">90</output></span>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-range-7710">Label <span class="fsa-field__label-desc">Required</span></label>
+  <div class="fsa-level">
+    <span class="fsa-level__item--grow-auto">
+      <input class="fsa-slider fsa-field__item" id="lorem-range-7710" name="lorem-range-7710" type="range" min="0" max="100" value="90" step="1">
+    </span>
+    <span><output id="lorem-range-ouput-7710" name="lorem-range-ouput-7710" for="lorem-range-7710">90</output></span>
+  </div>
 </div>
 ```
 
