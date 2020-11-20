@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 title: "Slider"
 shortName: "component__slider"
-intro: "The Slider component, also known as Range Input, allows users to choose an approximate number from a range."
+intro: "The Slider component, also known as a Range Input, allows users to choose an approximate number from a range."
 jump_menu: true
 title_label: 'May require JavaScript'
 ---
