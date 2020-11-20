@@ -138,4 +138,14 @@ Nested within a [Form Field]({{ site.baseurl }}components/form-fields/).
 
 ## JavaScript Guidance
 
-Some [example implementations](#examples) of this component can pair with an `<output>` element to reflect its value, however JavaScript will be required to dynamically update its value.
+Some [example implementations](#examples) of this component can pair with an `<output>` element to reflect its value, however JavaScript could be required to surface its approximate value to the user. Below is an example script to reflect the Slider's dynamic updated value:
+
+<div class="ds-preview">
+  <div class="fsa-level">
+    <input oninput="result.value=a.value" class="fsa-slider" id="a" name="a" type="range" min="0" max="100" value="30" step="10">
+    <output aria-live="polite" id="result" name="result" for="a">30</output>
+  </div>
+</div>
+
+{% include scripts.about.html %}
+
