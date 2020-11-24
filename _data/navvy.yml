@@ -40,7 +40,7 @@
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
-- title: "Components"
+- title: "UI Components"
   href: "components"
   componentgroup:
 
@@ -234,6 +234,26 @@
     - subtitle: "Section"
       subhref: "layout/section"
       img: "img/subcategories/section.png"
+
+- title: "UX Patterns"
+  href: "patterns"
+  subcategories:
+
+    - subtitle: "A"
+      subhref: "patters/a"
+      img: "img/subcategories/box.png"
+
+    - subtitle: "B"
+      subhref: "patters/b"
+      img: "img/subcategories/box.png"
+
+    - subtitle: "C"
+      subhref: "patters/c"
+      img: "img/subcategories/box.png"
+
+    - subtitle: "C"
+      subhref: "patters/c"
+      img: "img/subcategories/box.png"
 
 - title: "Utilities"
   href: "utilities"

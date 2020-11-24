@@ -1,7 +1,7 @@
 ---
 layout: componentsLanding
-title: "Components"
+title: "UI Components"
 shortName: "components"
 jump_menu: true
-intro: ""
+intro: "Components are..."
 ---
