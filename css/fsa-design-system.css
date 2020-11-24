@@ -15166,9 +15166,8 @@ html body.x-ray .fsa-modal {
 }
 
 .ds-usage__item {
-  border: 1px solid #dbdad9;
-  border-top: 4px solid;
-  border-top: 0.4rem solid;
+  border-top: 4px solid #dbdad9;
+  border-top: 0.4rem solid #dbdad9;
   background-color: #fff;
   padding: 24px;
   padding: 2.4rem;
@@ -15180,10 +15179,12 @@ html body.x-ray .fsa-modal {
 
 .ds-usage__item--do {
   border-top-color: #236430;
+  background-color: #dee8e0;
 }
 
 .ds-usage__item--dont {
   border-top-color: #cd2026;
+  background-color: #f9e4e5;
 }
 
 @media (min-width: 37.5em) {

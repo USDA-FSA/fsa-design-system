@@ -8,12 +8,12 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <div class="fsa-level">
-    <span><button class="fsa-btn fsa-btn--primary" type="button">Label</button></span>
-    <span><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></span>
-    <span><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></span>
-    <span><button class="fsa-btn fsa-btn--flat" type="button">Label</button></span>
-  </div>
+  <ul class="fsa-level">
+    <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
+    <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
+    <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
+    <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
+  </ul>
 </div>
 
 ## Variations
@@ -84,12 +84,12 @@ Each button variation can be modified with one or multiple states:
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
 <div class="ds-preview">
-  <div class="fsa-level">
-    <span><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></span>
-    <span><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></span>
-    <span><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></span>
-    <span><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></span>
-  </div>
+  <ul class="fsa-level">
+    <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
+    <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
+    <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
+    <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
+  </ul>
 </div>
 ```html
 <button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>

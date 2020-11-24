@@ -8,14 +8,14 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><span class="fsa-label">Default Label</span></span>
-    <span><span class="fsa-label fsa-label--neutral">General Label</span></span>
-    <span><span class="fsa-label fsa-label--general">General Label</span></span>
-    <span><span class="fsa-label fsa-label--alert">Alert Label</span></span>
-    <span><span class="fsa-label fsa-label--warning">Warning Label</span></span>
-    <span><span class="fsa-label fsa-label--success">Success Label</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-label">Default Label</span></li>
+    <li><span class="fsa-label fsa-label--neutral">General Label</span></li>
+    <li><span class="fsa-label fsa-label--general">General Label</span></li>
+    <li><span class="fsa-label fsa-label--alert">Alert Label</span></li>
+    <li><span class="fsa-label fsa-label--warning">Warning Label</span></li>
+    <li><span class="fsa-label fsa-label--success">Success Label</span></li>
+  </ul>
 </div>
 
 ## Variations
@@ -104,45 +104,47 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 ### Large
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><span class="fsa-label fsa-label--large">Large Default</span></span>
-    <span><span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span></span>
-    <span><span class="fsa-label fsa-label--general fsa-label--large">Large General</span></span>
-    <span><span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span></span>
-    <span><span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span></span>
-    <span><span class="fsa-label fsa-label--success fsa-label--large">Large Success</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-label fsa-label--large">Large Default</span></li>
+    <li><span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span></li>
+    <li><span class="fsa-label fsa-label--general fsa-label--large">Large General</span></li>
+    <li><span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span></li>
+    <li><span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span></li>
+    <li><span class="fsa-label fsa-label--success fsa-label--large">Large Success</span></li>
+  </ul>
 </div>
 ```html
-<span class="fsa-label fsa-label--large">Large Default</span>
-<span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span>
-<span class="fsa-label fsa-label--general fsa-label--large">Large General</span>
-<span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span>
-<span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span>
-<span class="fsa-label fsa-label--success fsa-label--large">Large Success</span>
+<ul class="fsa-level">
+  <li><span class="fsa-label fsa-label--large">Large Default</span></li>
+  <li><span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span></li>
+  <li><span class="fsa-label fsa-label--general fsa-label--large">Large General</span></li>
+  <li><span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span></li>
+  <li><span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span></li>
+  <li><span class="fsa-label fsa-label--success fsa-label--large">Large Success</span></li>
+</ul>
 ```
 
 ### Extra Large
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><span class="fsa-label fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--neutral fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--general fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--alert fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--warning fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--success fsa-label--extra-large">Label</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-label fsa-label--extra-large">Label</span></li>
+    <li><span class="fsa-label fsa-label--neutral fsa-label--extra-large">Label</span></li>
+    <li><span class="fsa-label fsa-label--general fsa-label--extra-large">Label</span></li>
+    <li><span class="fsa-label fsa-label--alert fsa-label--extra-large">Label</span></li>
+    <li><span class="fsa-label fsa-label--warning fsa-label--extra-large">Label</span></li>
+    <li><span class="fsa-label fsa-label--success fsa-label--extra-large">Label</span></li>
+  </ul>
 </div>
 ```html
-  <span class="fsa-level">
-    <span><span class="fsa-label fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--neutral fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--general fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--alert fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--warning fsa-label--extra-large">Label</span></span>
-    <span><span class="fsa-label fsa-label--success fsa-label--extra-large">Label</span></span>
-  </span>
+<ul class="fsa-level">
+  <li><span class="fsa-label fsa-label--extra-large">Label</span></li>
+  <li><span class="fsa-label fsa-label--neutral fsa-label--extra-large">Label</span></li>
+  <li><span class="fsa-label fsa-label--general fsa-label--extra-large">Label</span></li>
+  <li><span class="fsa-label fsa-label--alert fsa-label--extra-large">Label</span></li>
+  <li><span class="fsa-label fsa-label--warning fsa-label--extra-large">Label</span></li>
+  <li><span class="fsa-label fsa-label--success fsa-label--extra-large">Label</span></li>
+</ul>
 ```
 
 ### Actionable
@@ -150,31 +152,31 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 Label styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><a class="fsa-label" href="link.html">Anchor</a></span>
-    <span><button class="fsa-label" type="button">Button</button></span>
-    <span><button class="fsa-label" type="button" disabled="disabled">Disabled Button</button></span>
-  </span>
+  <ul class="fsa-level">
+    <li><a class="fsa-label" href="link.html">Anchor</a></li>
+    <li><button class="fsa-label" type="button">Button</button></li>
+    <li><button class="fsa-label" type="button" disabled="disabled">Disabled Button</button></li>
+  </ul>
 </div>
 ```html
-<span class="fsa-level">
-  <span><a class="fsa-label" href="link.html">Anchor</a></span>
-  <span><button class="fsa-label" type="button">Button</button></span>
-  <span><button class="fsa-label" type="button" disabled="disabled">Disabled Button</button></span>
-</span>
+<ul class="fsa-level">
+  <li><a class="fsa-label" href="link.html">Anchor</a></li>
+  <li><button class="fsa-label" type="button">Button</button></li>
+  <li><button class="fsa-label" type="button" disabled="disabled">Disabled Button</button></li>
+</ul>
 ```
 
 ### Example: Dark Background
 
 <div class="ds-preview" style="background-color: #666;">
-  <span class="fsa-level">
-    <span><span class="fsa-label">Default</span></span>
-    <span><span class="fsa-label fsa-label--neutral">General</span></span>
-    <span><span class="fsa-label fsa-label--general">General</span></span>
-    <span><span class="fsa-label fsa-label--alert">Alert</span></span>
-    <span><span class="fsa-label fsa-label--warning">Warning</span></span>
-    <span><span class="fsa-label fsa-label--success">Success</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-label">Default</span></li>
+    <li><span class="fsa-label fsa-label--neutral">General</span></li>
+    <li><span class="fsa-label fsa-label--general">General</span></li>
+    <li><span class="fsa-label fsa-label--alert">Alert</span></li>
+    <li><span class="fsa-label fsa-label--warning">Warning</span></li>
+    <li><span class="fsa-label fsa-label--success">Success</span></li>
+  </ul>
 </div>
 
 ## Usage

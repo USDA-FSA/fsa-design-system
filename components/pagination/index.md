@@ -343,6 +343,63 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 </nav>
 ```
 
+### Example: as `<button>` elements
+
+Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` element, though depending on its use might be an `<button>` element. By that same token, non-actionable items would a `<span>` element.
+
+<div class="ds-preview">
+  <nav aria-label="Pagination">
+    <div class="fsa-pagination" data-current="1" data-total="120">
+      <ul class="fsa-pagination__list">
+        <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
+          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
+        </li>
+        <li class="fsa-pagination__item">
+          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="page"><span class="fsa-sr-only">Currently on page</span> 1</span>
+        </li>
+        <li class="fsa-pagination__item">
+          <button type="button" class="fsa-pagination__label"><span class="fsa-sr-only">Go to page</span> 2</button>
+        </li>
+        <li class="fsa-pagination__item" aria-hidden="true">
+          <span class="fsa-pagination__label">…</span>
+        </li>
+        <li class="fsa-pagination__item">
+          <button type="button" class="fsa-pagination__label"><span class="fsa-sr-only">Go to page</span> 120</button>
+        </li>
+        <li class="fsa-pagination__item fsa-pagination__item--next">
+          <button type="button" class="fsa-pagination__label fsa-pagination__label--next"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+```html
+<nav aria-label="Pagination">
+  <div class="fsa-pagination" data-current="1" data-total="120">
+    <ul class="fsa-pagination__list">
+      <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
+        <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
+      </li>
+      <li class="fsa-pagination__item">
+        <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="page"><span class="fsa-sr-only">Currently on page</span> 1</span>
+      </li>
+      <li class="fsa-pagination__item">
+        <button type="button" class="fsa-pagination__label"><span class="fsa-sr-only">Go to page</span> 2</button>
+      </li>
+      <li class="fsa-pagination__item" aria-hidden="true">
+        <span class="fsa-pagination__label">…</span>
+      </li>
+      <li class="fsa-pagination__item">
+        <button type="button" class="fsa-pagination__label"><span class="fsa-sr-only">Go to page</span> 120</button>
+      </li>
+      <li class="fsa-pagination__item fsa-pagination__item--next">
+        <button type="button" class="fsa-pagination__label fsa-pagination__label--next"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+```
 ## Responsive
 
 {% include alert.rwd-rendering.html %}
