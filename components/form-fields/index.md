@@ -19,15 +19,17 @@ title_label: 'JavaScript Included'
 
 ## Usage
 
-The **core nested component** of each variation and example may be one of
+The **core nested component** of each variation and example include, though not limited to:
 
-* [Text Input]({{ site.baseurl }}components/text-input/)
-* [Textarea]({{ site.baseurl }}components/textarea/)
 * [Checkbox]({{ site.baseurl }}components/checkbox/)
+* [Date Picker]({{ site.baseurl }}components/date-picker/)
 * [Radio]({{ site.baseurl }}components/radio/)
 * [Select]({{ site.baseurl }}components/select/)
 * [Select Multi]({{ site.baseurl }}components/select-multi/)
+* [Slider]({{ site.baseurl }}components/slider/)
 * [Spinbox]({{ site.baseurl }}components/spinbox/)
+* [Text Input]({{ site.baseurl }}components/text-input/)
+* [Textarea]({{ site.baseurl }}components/textarea/)
 
 Refer to each of their documentation pages for more complete usage guidelines.
 
@@ -614,6 +616,33 @@ Using [Spinbox]({{ site.baseurl }}components/spinbox/) as core component.
   <label class="fsa-field__label" for="uploadexample02020">Upload image preview</label>
   <input placeholder="Choosie choose choose something" accept="image/png, image/jpeg, image/gif" multiple class="fsa-input fsa-field__item" id="uploadexample02020" aria-describedby="lorem-1234-02020" aria-required="true" name="uploadexample02020" type="file" value="">
   <span class="fsa-field__help" id="lorem-1234-02020">Accepted file types: PNG, JPG, GIF</span>
+</div>
+```
+
+### Slider
+
+Using the [Slider]({{ site.baseurl }}components/slider/) as core component.
+
+<div class="ds-preview">
+  <div class="fsa-field">
+    <label class="fsa-field__label" for="lorem-range-7710">Label <span class="fsa-field__label-desc">Required</span></label>
+    <div class="fsa-level">
+      <span class="fsa-level__item--grow-auto">
+        <input class="fsa-slider fsa-field__item" id="lorem-range-7710" name="lorem-range-7710" type="range" min="0" max="100" value="90" step="1">
+      </span>
+      <span><output id="lorem-range-ouput-7710" name="lorem-range-ouput-7710" for="lorem-range-7710">90</output></span>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-range-7710">Label <span class="fsa-field__label-desc">Required</span></label>
+  <div class="fsa-level">
+    <span class="fsa-level__item--grow-auto">
+      <input class="fsa-slider fsa-field__item" id="lorem-range-7710" name="lorem-range-7710" type="range" min="0" max="100" value="90" step="1">
+    </span>
+    <span><output id="lorem-range-ouput-7710" name="lorem-range-ouput-7710" for="lorem-range-7710">90</output></span>
+  </div>
 </div>
 ```
 

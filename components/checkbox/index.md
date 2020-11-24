@@ -209,7 +209,7 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 <div class="ds-preview">
   <div class="fsa-field">
     <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
-    <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
+    <ul class="fsa-form-list" aria-describedby="unique-id-lorem--help--1234" aria-labelledby="unique-id-lorem--1234">
       <li>
         <span>
           <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
@@ -229,12 +229,13 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
         </span>
       </li>
     </ul>
+    <span class="fsa-field__help" id="unique-id-lorem--help--1234">Choose the pies you fancy</span>
   </div>
 </div>
 ```html
 <div class="fsa-field">
   <label class="fsa-field__label" id="unique-id-lorem--1234">Pies We Like</label>
-  <ul class="fsa-form-list" aria-labelledby="unique-id-lorem--1234">
+  <ul class="fsa-form-list" aria-describedby="unique-id-lorem--help--1234" aria-labelledby="unique-id-lorem--1234">
     <li>
       <span>
         <input class="fsa-checkbox" id="apple" type="checkbox" name="pie" checked="">
@@ -254,6 +255,63 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
       </span>
     </li>
   </ul>
+  <span class="fsa-field__help" id="unique-id-lorem--help--1234">Choose the pies you fancy</span>
+</div>
+
+```
+
+### Example: within a [Field]({{ site.baseurl }}components/form-fields/), horizontal list
+
+<div class="ds-preview">
+  <div class="fsa-field fsa-field--block">
+    <label class="fsa-field__label" id="unique-id-lorem--7894">Pies We Like</label>
+    <ul class="fsa-level" aria-describedby="unique-id-lorem--help--7894" aria-labelledby="unique-id-lorem--7894">
+      <li>
+        <span>
+          <input class="fsa-checkbox" id="apple--7894" type="checkbox" name="apple--7894" checked="">
+          <label for="apple">Apple</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-checkbox" id="key-lime--7894" type="checkbox" name="key-lime--7894" checked="">
+          <label for="key-lime">Key Lime</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-checkbox" id="pumpkin--7894" type="checkbox" name="pumpkin--7894">
+          <label for="pumpkin">Pumpkin</label>
+        </span>
+      </li>
+    </ul>
+    <span class="fsa-field__help" id="unique-id-lorem--help--7894">Choose the pies you fancy</span>
+  </div>
+</div>
+```html
+<div class="fsa-field fsa-field--block">
+  <label class="fsa-field__label" id="unique-id-lorem--7894">Pies We Like</label>
+  <ul class="fsa-level" aria-describedby="unique-id-lorem--help--7894" aria-labelledby="unique-id-lorem--7894">
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="apple--7894" type="checkbox" name="apple--7894" checked="">
+        <label for="apple">Apple</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="key-lime--7894" type="checkbox" name="key-lime--7894" checked="">
+        <label for="key-lime">Key Lime</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-checkbox" id="pumpkin--7894" type="checkbox" name="pumpkin--7894">
+        <label for="pumpkin">Pumpkin</label>
+      </span>
+    </li>
+  </ul>
+  <span class="fsa-field__help" id="unique-id-lorem--help--7894">Choose the pies you fancy</span>
 </div>
 ```
 

@@ -204,7 +204,7 @@ Radio states are styled not by a `class`, but depending on their state (primaril
         </span>
       </li>
     </ul>
-    <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Helpful message here</span>
+    <span class="fsa-field__help" id="lorem-yyss8cytr2x2x2-help-9">Choose that one special pie</span>
   </div>
 </div>
 ```html
@@ -240,6 +240,72 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 </div>
 ```
 
+### Within a [Field]({{ site.baseurl }}components/form-fields/), horizontal list
+
+<div class="ds-preview">
+  <div class="fsa-field fsa-field--block">
+    <label class="fsa-field__label" id="lorem-radio-field-1--8822">Your Favorite Pie</label>
+    <ul class="fsa-level" aria-labelledby="lorem-radio-field-1--8822" aria-describedby="lorem-radio-field-1-help--8822">
+      <li>
+        <span>
+          <input class="fsa-radio" id="apple-radio--8822" type="radio" name="fav-pie">
+          <label for="apple-radio">Apple</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-radio" id="key-lime-radio--8822" type="radio" name="fav-pie">
+          <label for="key-lime-radio">Key Lime</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-radio" id="pumpkin-radio--8822" type="radio" name="fav-pie">
+          <label for="pumpkin-radio">Pumpkin</label>
+        </span>
+      </li>
+      <li>
+        <span>
+          <input class="fsa-radio" id="none-radio--8822" type="radio" name="fav-pie" checked>
+          <label for="none-radio">None of the above</label>
+        </span>
+      </li>
+    </ul>
+    <span class="fsa-field__help" id="lorem-radio-field-1-help--8822">Choose that one special pie</span>
+  </div>
+</div>
+```html
+<div class="fsa-field fsa-field--block">
+  <label class="fsa-field__label" id="lorem-radio-field-1--8822">Your Favorite Pie</label>
+  <ul class="fsa-level" aria-labelledby="lorem-radio-field-1--8822" aria-describedby="lorem-radio-field-1-help--8822">
+    <li>
+      <span>
+        <input class="fsa-radio" id="apple-radio--8822" type="radio" name="fav-pie">
+        <label for="apple-radio">Apple</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="key-lime-radio--8822" type="radio" name="fav-pie">
+        <label for="key-lime-radio">Key Lime</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="pumpkin-radio--8822" type="radio" name="fav-pie">
+        <label for="pumpkin-radio">Pumpkin</label>
+      </span>
+    </li>
+    <li>
+      <span>
+        <input class="fsa-radio" id="none-radio--8822" type="radio" name="fav-pie" checked>
+        <label for="none-radio">None of the above</label>
+      </span>
+    </li>
+  </ul>
+  <span class="fsa-field__help" id="lorem-radio-field-1-help--8822">Choose that one special pie</span>
+</div>
+```
 
 ### Solo Example within a [Table]({{ site.baseurl }}components/tables/)
 

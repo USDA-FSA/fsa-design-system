@@ -8,14 +8,14 @@ jump_menu: true
 ---
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><span class="fsa-badge">1</span></span>
-    <span><span class="fsa-badge fsa-badge--neutral">8</span></span>
-    <span><span class="fsa-badge fsa-badge--general">11</span></span>
-    <span><span class="fsa-badge fsa-badge--alert">11</span></span>
-    <span><span class="fsa-badge fsa-badge--warning">22</span></span>
-    <span><span class="fsa-badge fsa-badge--success">99+</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-badge">1</span></li>
+    <li><span class="fsa-badge fsa-badge--neutral">8</span></li>
+    <li><span class="fsa-badge fsa-badge--general">11</span></li>
+    <li><span class="fsa-badge fsa-badge--alert">11</span></li>
+    <li><span class="fsa-badge fsa-badge--warning">22</span></li>
+    <li><span class="fsa-badge fsa-badge--success">99+</span></li>
+  </ul>
 </div>
 
 ## Variations
@@ -89,47 +89,47 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ### Large
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><span class="fsa-badge fsa-badge--large">1</span></span>
-    <span><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></span>
-    <span><span class="fsa-badge fsa-badge--large fsa-badge--general">8</span></span>
-    <span><span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span></span>
-    <span><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></span>
-    <span><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-badge fsa-badge--large">1</span></li>
+    <li><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></li>
+    <li><span class="fsa-badge fsa-badge--large fsa-badge--general">8</span></li>
+    <li><span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span></li>
+    <li><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></li>
+    <li><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></li>
+  </ul>
 </div>
 ```html
-<span class="fsa-level">
-  <span><span class="fsa-badge fsa-badge--large">1</span></span>
-  <span><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></span>
-  <span><span class="fsa-badge fsa-badge--large fsa-badge--general">8</span></span>
-  <span><span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span></span>
-  <span><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></span>
-  <span><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></span>
-</span>
+<ul class="fsa-level">
+  <li><span class="fsa-badge fsa-badge--large">1</span></li>
+  <li><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></li>
+  <li><span class="fsa-badge fsa-badge--large fsa-badge--general">8</span></li>
+  <li><span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span></li>
+  <li><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></li>
+  <li><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></li>
+</ul>
 ```
 
 ### Extra Large
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><span class="fsa-badge fsa-badge--extra-large">1</span></span>
-    <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></span>
-    <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span></span>
-    <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span></span>
-    <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></span>
-    <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-badge fsa-badge--extra-large">1</span></li>
+    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></li>
+    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span></li>
+    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span></li>
+    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></li>
+    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></li>
+  </ul>
 </div>
 ```html
-<span class="fsa-level">
-  <span><span class="fsa-badge fsa-badge--extra-large">1</span></span>
-  <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></span>
-  <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span></span>
-  <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span></span>
-  <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></span>
-  <span><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></span>
-</span>
+<ul class="fsa-level">
+  <li><span class="fsa-badge fsa-badge--extra-large">1</span></li>
+  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></li>
+  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span></li>
+  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span></li>
+  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></li>
+  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></li>
+</ul>
 ```
 
 ### Actionable
@@ -137,42 +137,42 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 Badge styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
 
 <div class="ds-preview">
-  <span class="fsa-level">
-    <span><a class="fsa-badge" href="link.html">A</a> Anchor</span>
-    <span><button class="fsa-badge" type="button">B</button> Button</span>
-    <span><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</span>
-  </span>
+  <ul class="fsa-level">
+    <li><a class="fsa-badge" href="link.html">A</a> Anchor</li>
+    <li><button class="fsa-badge" type="button">B</button> Button</li>
+    <li><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</li>
+  </ul>
 </div>
 ```html
-<span class="fsa-level">
-  <span><a class="fsa-badge" href="link.html">A</a> Anchor</span>
-  <span><button class="fsa-badge" type="button">B</button> Button</span>
-  <span><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</span>
-</span>
+<ul class="fsa-level">
+  <li><a class="fsa-badge" href="link.html">A</a> Anchor</li>
+  <li><button class="fsa-badge" type="button">B</button> Button</li>
+  <li><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</li>
+</ul>
 ```
 
 ### Example: Dark Background
 
 <div class="ds-preview" style="background-color: #666;">
-  <span class="fsa-level">
-    <span><span class="fsa-badge">1</span></span>
-    <span><span class="fsa-badge fsa-badge--neutral">8</span></span>
-    <span><span class="fsa-badge fsa-badge--general">11</span></span>
-    <span><span class="fsa-badge fsa-badge--alert">11</span></span>
-    <span><span class="fsa-badge fsa-badge--warning">22</span></span>
-    <span><span class="fsa-badge fsa-badge--success">99+</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-badge">1</span></li>
+    <li><span class="fsa-badge fsa-badge--neutral">8</span></li>
+    <li><span class="fsa-badge fsa-badge--general">11</span></li>
+    <li><span class="fsa-badge fsa-badge--alert">11</span></li>
+    <li><span class="fsa-badge fsa-badge--warning">22</span></li>
+    <li><span class="fsa-badge fsa-badge--success">99+</span></li>
+  </ul>
 </div>
 ```html
 <div style="background-color: #666;">
-  <span class="fsa-level">
-    <span><span class="fsa-badge">1</span></span>
-    <span><span class="fsa-badge fsa-badge--neutral">8</span></span>
-    <span><span class="fsa-badge fsa-badge--general">11</span></span>
-    <span><span class="fsa-badge fsa-badge--alert">11</span></span>
-    <span><span class="fsa-badge fsa-badge--warning">22</span></span>
-    <span><span class="fsa-badge fsa-badge--success">99+</span></span>
-  </span>
+  <ul class="fsa-level">
+    <li><span class="fsa-badge">1</span></li>
+    <li><span class="fsa-badge fsa-badge--neutral">8</span></li>
+    <li><span class="fsa-badge fsa-badge--general">11</span></li>
+    <li><span class="fsa-badge fsa-badge--alert">11</span></li>
+    <li><span class="fsa-badge fsa-badge--warning">22</span></li>
+    <li><span class="fsa-badge fsa-badge--success">99+</span></li>
+  </ul>
 </div>
 ```
 
