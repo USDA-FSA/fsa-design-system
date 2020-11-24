@@ -25,8 +25,7 @@
   &__item {
 
     & {
-      border: 1px solid $box-border-color;
-      border-top: $size-base solid;
+      border-top: $size-base solid $box-border-color;
       background-color: $box-bgcolor-default;
       padding: $box-padding;
       flex: 1;
@@ -35,10 +34,12 @@
 
     &--do {
       border-top-color: $color-fsa-primary;
+      background-color: $color-fsa-primary-100;
     }
 
     &--dont {
       border-top-color: $color-fsa-red;
+      background-color: $color-fsa-red-100;
       @include breakpoint(M) {
         margin-left: $size-medium;
       }

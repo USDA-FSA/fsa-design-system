@@ -83,6 +83,10 @@
           subhref: "components/select-multi"
           img: "img/subcategories/select-multi.png"
 
+        - subtitle: "Slider"
+          subhref: "components/slider"
+          img: "img/subcategories/slider.png"
+
         - subtitle: "Spinbox"
           subhref: "components/spinbox"
           img: "img/subcategories/spinbox.png"
