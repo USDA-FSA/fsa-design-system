@@ -269,7 +269,9 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
 
 ## Browser Support
 
-We’ve designed the design system to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The current major version of the design system (2.0) follows the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means that the design system version 2.0 supports the newest versions of Chrome, Firefox, Safari, Edge, and Internet Explorer 11 and up.
+The FPAC Design System follows the principles of [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) and web standards. Users should be able to access core content and functionality from any browser or operating system, with varying degrees of access to visual and other enhancements — and user interfaces do not have to render identically on every browser.
+
+The current CSS implementation of the FPAC Design System, [fsa-style](), follows the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): it officially supports browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means the newest versions of Chrome, Firefox, Safari, Edge, and Internet Explorer 11 and up.
 
 ## Release History
 
