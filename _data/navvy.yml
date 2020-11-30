@@ -14,6 +14,9 @@
   - subtitle: "When to use"
     subhref: "getting-started/#when-to-use"
 
+  - subtitle: "Browser Support"
+    subhref: "getting-started/#browser-support"
+
   - subtitle: "Release History"
     subhref: "getting-started/#release-history"
 
