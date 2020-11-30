@@ -11,7 +11,8 @@
     margin-top: .5em;
 
     &--root {
-      @include breakpoint(L) {
+      @include breakpoint(XL) {
+        outline: 1px solid orangered;
         display: flex;
       }
     }

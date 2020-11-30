@@ -1,6 +1,6 @@
 ---
 layout: page
-parent: "Layout"
+parent: "Components"
 title: "Divider"
 shortName: "component__divider"
 intro: "Dividers display visual breaks between content, elements, or components."

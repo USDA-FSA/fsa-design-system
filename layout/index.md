@@ -1,6 +1,5 @@
 ---
-layout: category
-title: "Layout"
-shortName: "layout"
-intro: ""
+layout: redirect
+redirectURL: "components/#layout"
+redirectTitle: "Components > Layout"
 ---
