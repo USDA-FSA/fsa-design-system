@@ -71,23 +71,31 @@ if ('serviceWorker' in navigator) {
           text: node.innerText.trim(),
           url: newUrl,
           tier: tier,
-          ancestors: ancestors
+          ancestors: ancestors,
+          keywords: node.dataset.keywords != '' ? node.dataset.keywords : ''
         });
     },
 
     doSearch: function( phrase ){
       let arr = qf.dedupeArrayOfObjects( qf.searchArray );
       let list = arr.filter( item => {
-        let lowCategory = item.text.toLowerCase()
+        let exists = false;
         let lowPhrase = phrase.toLowerCase()
-        if(lowCategory.indexOf( lowPhrase ) > -1) return true
-        else false
+
+        let lowCategory = item.text.toLowerCase()
+        let lowKeywords = item.keywords.toLowerCase()
+
+        if(lowCategory.indexOf( lowPhrase ) > -1) exists = true
+        if(lowKeywords.indexOf( lowPhrase ) > -1) exists = true
+
+        return exists;
       });
       let listToDisplay = list.slice( 0, qf.displayCount-1);
       qf.resultsCount.innerText = listToDisplay.length + ' results';
       return listToDisplay;
     },
 
+    // For Google Analytics Tracking
     buildSearchCollection: function(str){
       let isValid = true;
       // string must be longer than previous string
@@ -106,18 +114,23 @@ if ('serviceWorker' in navigator) {
         GoogleTracker.trackSearchCollection(str);
       }
     },
+    // End
 
     searchInput: function(){
       return function(){
         let q = qf;
         if(q.search.value!=''){
 
+          let keywords = '';
+
           qf.search.setAttribute('aria-expanded', 'true');
 
           let newHTML = '<ul class="ds-quick-find__output" role="listbox">';
           let matches = q.doSearch( q.search.value );
 
+          // For Google Analytics Tracking
           if(matches.length < 1) qf.buildSearchCollection(q.search.value);
+          // End
 
           let tier1 = matches.filter( item => item.tier == 1 );
           tier1.sort((a, b) => (a.text < b.text) ? 1 : -1)
@@ -126,6 +139,7 @@ if ('serviceWorker' in navigator) {
           subgroups.sort((a, b) => (a.text > b.text) ? 1 : -1)
           subgroups.sort((a, b) => (a.ancestors.header > b.ancestors.header) ? 1 : -1)
 
+          // Used for typed string Highlight
           let regex = new RegExp(q.search.value, 'gi');
 
           if( tier1.length > 0 ){
@@ -135,7 +149,8 @@ if ('serviceWorker' in navigator) {
                             <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
                               ${newText}
                             </a>
-                          </li>`
+                          </li>`;
+              keywords += ' ' + item.keywords;
             })
           }
 
@@ -174,8 +189,19 @@ if ('serviceWorker' in navigator) {
                               </a>
                             </li>`
               }
+
+              keywords += ' ' + item.keywords;
+
             })
           }
+
+          if(keywords!=''){
+            newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">Related Keywords</li>`;
+            newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
+                        ${keywords}
+                      </>`;
+          }
+          
           newHTML += '</ul>';
           q.results.innerHTML = newHTML;
         } else {
@@ -192,7 +218,6 @@ if ('serviceWorker' in navigator) {
 
       // Listen for TAB events associated with Clear button
       qf.clear.addEventListener('keydown', qf.handleClearButtonKeydown);
-
 
       // Listen for ESC key when Search Input in focus
       qf.search.addEventListener('keydown', qf.handleSearchInputKeydown);
