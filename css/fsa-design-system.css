@@ -15199,6 +15199,18 @@ html body.x-ray .fsa-modal {
   }
 }
 
+@media (min-width: 54em) {
+  .ds-anatomy__media {
+    border-right: 0;
+  }
+}
+
+@media (min-width: 54em) {
+  .ds-anatomy__markers {
+    width: 250px;
+  }
+}
+
 pre.highlight {
   position: relative;
 }
