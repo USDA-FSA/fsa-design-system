@@ -16,7 +16,7 @@ main {
 
   margin-left: auto;
   margin-right: auto;
-  max-width: ($site-max-width + 24px);
+  max-width: ($site-max-width + 36px);
   padding: $size-default;
 
   @include breakpoint(L) {
@@ -34,7 +34,7 @@ main {
     margin-top: $size-medium;
     margin-left: auto;
     margin-right: auto;
-    max-width: ($site-max-width + 24px);
+    max-width: ($site-max-width + 36px);
     padding: $size-default $size-default $size-large;
   }
 
