@@ -1,0 +1,39 @@
+{% comment %}
+  !!!!!!
+  A "short-code-like" mechanism for populating the "Anatomy"
+{% endcomment %}
+
+  {% if anatomy__image-on and anatomy__image-off %}
+  <span title="Toggle Markers on Screenshot">
+    <label class="fsa-switch">
+      <input checked type="checkbox" class="fsa-switch__checkbox" name="toggle-code" id="annotation-toggle"><span class="fsa-switch__track"></span>
+    </label>
+    <label class="fsa-p-l--xs" for="annotation-toggle">View Markers</label>
+  </span>
+  {% endif %}
+
+  <div class="{% if anatomy__image-on or anatomy__image-off %}ds-anatomy fsa-level@l fsa-level--align-stretch@l fsa-level--gutter-none@l{% endif %}">
+    {% if anatomy__image-on or anatomy__image-off %}
+    <div class="ds-anatomy__media fsa-box@l fsa-box--bg-0" id="annotation-toggle-holder">
+      {% if anatomy__image-off %}
+      <div class="ds-docs-holder__off">
+        <a href="{{ site.baseurl }}img/anatomy/{{ anatomy__image-off }}" target="_blank">
+          <img src="{{ site.baseurl }}img/anatomy/{{ anatomy__image-off }}" alt="">
+        </a>
+      </div>
+      {% endif %}
+      {% if anatomy__image-on %}
+      <div class="ds-docs-holder__on">
+        <a href="{{ site.baseurl }}img/anatomy/{{ anatomy__image-on }}" target="_blank">
+          <img src="{{ site.baseurl }}img/anatomy/{{ anatomy__image-on }}" alt="">
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if anatomy__markers %}
+    <div class="{% if anatomy__image-on or anatomy__image-off %}ds-anatomy__markers fsa-box@l{% endif %}">
+      {{ anatomy__markers | markdownify }}
+    </div>
+    {% endif %}
+  </div>

@@ -12,6 +12,7 @@ suppress_code_toggle: true
 
 ## Anatomy
 
+{% capture anatomy__markers %}
 1. [Buttons]({{ site.baseurl }}components/buttons)
 1. [Table]({{ site.baseurl }}components/tables)
 1. [Checkbox]({{ site.baseurl }}components/checkbox/)
@@ -23,26 +24,12 @@ suppress_code_toggle: true
 1. [Utilities: Padding](utilities/#padding)
 1. [Utilities: Margins](utilities/#margins)
 1. [Utilities: Visibility](utilities/#visibility)
+{% endcapture %}
 
-<span title="Toggle Spacing Overlay">
-  <label class="fsa-switch">
-    <input checked type="checkbox" class="fsa-switch__checkbox" name="toggle-code" id="annotation-toggle"><span class="fsa-switch__track"></span>
-  </label>
-  <label class="fsa-p-l--xs" for="annotation-toggle">View Markers</label>
-</span>
+{% assign anatomy__image-off = "actionbar-table-pagination--off.png" %}
+{% assign anatomy__image-on  = "actionbar-table-pagination--on.png" %}
 
-<div id="annotation-toggle-holder">
-  <div class="ds-docs-holder__off">
-    <a href="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--off.png" target="_blank">
-      <img src="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--off.png" alt="Spacing example">
-    </a>
-  </div>
-  <div class="ds-docs-holder__on">
-    <a href="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--on.png" target="_blank">
-      <img src="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--on.png" alt="Spacing example">
-    </a>
-  </div>
-</div>
+{% include anatomy.html %}
 
 ## Live Preview
 
