@@ -10,7 +10,7 @@ custom_js: "table-select-demo.js"
     <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button></li>
     <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button></li>
   </ul>
-  <div class="fsa-show@m fsa-level fsa-m-t--s fsa-level--grow-auto">
+  <div class="fsa-show@m fsa-level fsa-level--grow-auto">
     <div>
       <label for="lorem_find" class="fsa-text-size--2">Quick Find</label>
       <input type="text" class="fsa-input fsa-input--small fsa-input--block" id="lorem_find">

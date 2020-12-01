@@ -12,16 +12,37 @@ suppress_code_toggle: true
 
 ## Anatomy
 
-1. [Table]({{ site.baseurl }}components/tables)
 1. [Buttons]({{ site.baseurl }}components/buttons)
+1. [Table]({{ site.baseurl }}components/tables)
+1. [Checkbox]({{ site.baseurl }}components/checkbox/)
 1. [Level]({{ site.baseurl }}components/level/)
 1. [Text Input]({{ site.baseurl }}components/text-input/)
+1. [Button Group]({{ site.baseurl }}components/button-group)
 1. [Label]({{ site.baseurl }}components/labels/)
-1. [Checkbox]({{ site.baseurl }}components/checkbox/)
 1. [Pagination]({{ site.baseurl }}components/pagination/)
 1. [Utilities: Padding](utilities/#padding)
 1. [Utilities: Margins](utilities/#margins)
 1. [Utilities: Visibility](utilities/#visibility)
+
+<span title="Toggle Spacing Overlay">
+  <label class="fsa-switch">
+    <input checked type="checkbox" class="fsa-switch__checkbox" name="toggle-code" id="annotation-toggle"><span class="fsa-switch__track"></span>
+  </label>
+  <label class="fsa-p-l--xs" for="annotation-toggle">View Markers</label>
+</span>
+
+<div id="annotation-toggle-holder">
+  <div class="ds-docs-holder__off">
+    <a href="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--off.png" target="_blank">
+      <img src="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--off.png" alt="Spacing example">
+    </a>
+  </div>
+  <div class="ds-docs-holder__on">
+    <a href="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--on.png" target="_blank">
+      <img src="{{ site.baseurl }}img/anatomy/actionbar-table-pagination--on.png" alt="Spacing example">
+    </a>
+  </div>
+</div>
 
 ## Live Preview
 
