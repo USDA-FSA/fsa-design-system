@@ -1,5 +1,5 @@
 ---
 layout: redirect
-redirectURL: "components/leve"
+redirectURL: "components/level"
 redirectTitle: "Components > Level"
 ---
