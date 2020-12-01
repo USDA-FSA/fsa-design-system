@@ -14660,7 +14660,7 @@ main:active, main:focus {
 .ds-body {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1224px;
+  max-width: 1236px;
   padding: 12px;
   padding: 1.2rem;
 }
@@ -14682,7 +14682,7 @@ main:active, main:focus {
   margin-top: 2.4rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1224px;
+  max-width: 1236px;
   padding: 12px 12px 36px;
   padding: 1.2rem 1.2rem 3.6rem;
 }
@@ -15247,7 +15247,7 @@ pre.highlight .ds-clipboard {
 }
 
 .ds-disclaimer__bd {
-  max-width: 1224px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -15298,7 +15298,7 @@ pre.highlight .ds-clipboard {
   font-size: 2.8rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1224px;
+  max-width: 1236px;
   padding-right: 12px;
   padding-right: 1.2rem;
   padding-left: 12px;
@@ -15323,7 +15323,7 @@ pre.highlight .ds-clipboard {
 .ds-header__bd {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1224px;
+  max-width: 1236px;
   padding: 12px;
   padding: 1.2rem;
 }
@@ -16115,6 +16115,7 @@ div.fsa-stepped-tabs__label {
 
 .docs__rwd-embed--desktop {
   width: 1187px;
+  min-height: 50vh;
 }
 
 .docs__grid-inventory .docs__grid-inventory {

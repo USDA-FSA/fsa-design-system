@@ -7,7 +7,7 @@ intro: "Use button groups as a mechanism to toggle between multiple button actio
 jump_menu: true
 ---
 
-<div class="ds-preview fsa-m-t--none">
+<div class="ds-preview">
   <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
     <button class="fsa-btn-group__item" type="button">Label</button>
     <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
