@@ -239,19 +239,19 @@
   subcategories:
 
     - subtitle: "A"
-      subhref: "patters/a"
+      subhref: "patterns/a"
       img: "img/subcategories/box.png"
 
     - subtitle: "B"
-      subhref: "patters/b"
+      subhref: "patterns/b"
       img: "img/subcategories/box.png"
 
     - subtitle: "C"
-      subhref: "patters/c"
+      subhref: "patterns/c"
       img: "img/subcategories/box.png"
 
     - subtitle: "D"
-      subhref: "patters/d"
+      subhref: "patterns/d"
       img: "img/subcategories/box.png"
 
 - title: "Utilities"
