@@ -1,6 +1,12 @@
 .ds-anatomy {
 
-  & {}
+  & {
+    h2[id] + & {
+      margin-top: -15px;
+      border-top: 0;
+    }
+  }
+
 
   &__media {
     @include breakpoint(L) {

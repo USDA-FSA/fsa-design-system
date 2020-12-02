@@ -398,11 +398,9 @@ Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` el
     </ul>
   </div>
 </nav>
-
 ```
-## Responsive
 
-{% include alert.rwd-rendering.html %}
+## Responsive
 
 <div class="docs__rwd-demo-block">
   <div class="docs__rwd-embed-container">
@@ -418,6 +416,8 @@ Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` el
     </div>
   </div>
 </div>
+
+{% include alert.rwd-rendering.html %}
 
 ## Usage
 

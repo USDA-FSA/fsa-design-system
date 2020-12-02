@@ -15202,6 +15202,11 @@ html body.x-ray .fsa-modal {
   }
 }
 
+h2[id] + .ds-anatomy {
+  margin-top: -15px;
+  border-top: 0;
+}
+
 @media (min-width: 54em) {
   .ds-anatomy__media {
     -ms-flex: 1;
@@ -16170,6 +16175,11 @@ div.fsa-stepped-tabs__label {
 
 .docs__rwd-demo-block {
   text-align: center;
+}
+
+h2[id] + .docs__rwd-demo-block {
+  margin-top: -15px;
+  border-top: 0;
 }
 
 .docs__rwd-embed-container {

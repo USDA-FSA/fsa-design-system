@@ -27,8 +27,6 @@ suppress_code_toggle: true
 
 ## Live Demo
 
-{% include alert.rwd-rendering.html %}
-
 <div class="docs__rwd-demo-block">
   <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -44,4 +42,5 @@ suppress_code_toggle: true
   </div>
 </div>
 
+{% include alert.rwd-rendering.html %}
 

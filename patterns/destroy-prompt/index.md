@@ -11,7 +11,7 @@ suppress_code_toggle: false
 title_label: 'Requires JavaScript'
 ---
 
-## Flow Anatomy
+## Interaction Flow
 
 {% assign anatomy__image-off = "destroy-prompt.png" %}
 

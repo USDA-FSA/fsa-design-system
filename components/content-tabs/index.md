@@ -483,8 +483,6 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 
 ## Responsive
 
-{% include alert.rwd-rendering.html %}
-
 <div class="docs__rwd-demo-block">
   <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -499,6 +497,8 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
     </div>
   </div>
 </div>
+
+{% include alert.rwd-rendering.html %}
 
 ## Usage
 
