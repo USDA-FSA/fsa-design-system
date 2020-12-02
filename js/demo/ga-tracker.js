@@ -3,6 +3,7 @@ if ('serviceWorker' in navigator) {
   const gat = {
 
     id: '',
+    onProduction: true,
     trackerName: '',
     trackedPhrase: '',
     searchCollection: '',
@@ -16,10 +17,12 @@ if ('serviceWorker' in navigator) {
     
     trackPhrase: function(phrase){
       gat.trackedPhrase = phrase;
-      gtag('event', 'search', {
-        'event_category': gat.trackerName,
-        'event_label': phrase
-      });
+      if(gat.onProduction){
+        gtag('event', 'search', {
+          'event_category': gat.trackerName,
+          'event_label': phrase
+        });
+      }
     },
 
     trackSearchCollection: function(str){
@@ -35,16 +38,20 @@ if ('serviceWorker' in navigator) {
     },
 
     trackSearchAbandon: function(){
-      gtag('event', 'search abandon', {
-        'event_category': gat.trackerName
-      });
+      if(gat.onProduction){
+        gtag('event', 'search abandon', {
+          'event_category': gat.trackerName
+        });
+      }
     },
 
     trackFreeform: function(coll){
-      gtag('event', 'search freeform', {
-        'event_category': gat.trackerName,
-        'event_label': coll
-      });
+      if(gat.onProduction){
+        gtag('event', 'search freeform', {
+          'event_category': gat.trackerName,
+          'event_label': coll
+        });
+      }
     },
 
     trackLeavePage: function(){
@@ -59,7 +66,7 @@ if ('serviceWorker' in navigator) {
     init: function(gaId, trackerName) {
       gat.id = gaId;
       gat.trackerName = trackerName;
-      
+      gat.onProduction = window.location.href.indexOf('localhost:') > -1 ? false : true;
       window.addEventListener('beforeunload', function(evt){
         gat.trackLeavePage();
       });
@@ -74,4 +81,3 @@ if ('serviceWorker' in navigator) {
 
   window.GoogleTracker = gat;
 }
-
