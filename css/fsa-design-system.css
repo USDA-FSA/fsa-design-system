@@ -14773,6 +14773,9 @@ main:active, main:focus {
     margin-left: auto;
     margin-right: calc(20% + 2.55rem);
   }
+  .ds-page-title--full-width .ds-page-title__ft {
+    margin-right: 0;
+  }
 }
 
 .ds-page-title__ft-item + .ds-page-title__ft-item {
@@ -15201,13 +15204,19 @@ html body.x-ray .fsa-modal {
 
 @media (min-width: 54em) {
   .ds-anatomy__media {
+    -ms-flex: 1;
+        flex: 1;
+    text-align: center;
+  }
+  .ds-anatomy__media:not(:only-child) {
     border-right: 0;
   }
 }
 
 @media (min-width: 54em) {
   .ds-anatomy__markers {
-    width: 250px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
   }
 }
 

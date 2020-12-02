@@ -4,13 +4,17 @@
 
   &__media {
     @include breakpoint(L) {
-      border-right: 0;
+      flex: 1;
+      text-align: center;
+      &:not(:only-child) {
+        border-right: 0;
+      }
     }
   }
 
   &__markers {
     @include breakpoint(L) {
-      width: 250px;
+      flex-basis: 200px;
     }
   }
 

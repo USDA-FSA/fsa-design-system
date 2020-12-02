@@ -250,6 +250,10 @@
       subhref: "patterns/page-title-area"
       img: "img/subcategories/box.png"
 
+    - subtitle: "Destroy Prompt"
+      subhref: "patterns/destroy-prompt"
+      img: "img/subcategories/box.png"
+
 - title: "Utilities"
   href: "utilities"
   subcategories:

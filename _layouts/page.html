@@ -4,7 +4,7 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<div class="ds-page-title">
+<div class="ds-page-title {% if page.full_width %}ds-page-title--full-width{% endif %}">
   <div class="ds-page-title__hd">
     <h1 class="ds-page-title__hd-text" id="article-title">
       {{ page.title }}

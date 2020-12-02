@@ -97,6 +97,8 @@ main {
     }
   }
 
+  &--full-width {}
+
   &__hd {
     @include breakpoint(L) {
       display: flex;
@@ -120,6 +122,9 @@ main {
       padding-left: $size-default;
       margin-left: auto;
       margin-right: calc(20% + #{$fsa-grid-gutter});
+      .ds-page-title--full-width & {
+        margin-right: 0;
+      }
     }
   }
   &__ft-item {
@@ -127,7 +132,6 @@ main {
       margin-left: $size-default;
     }
   }
-
 
 }
 
