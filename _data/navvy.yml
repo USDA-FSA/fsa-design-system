@@ -12,22 +12,22 @@
 
   - subtitle: "How to use"
     subhref: "getting-started/#how-to-use"
-    keyword: "install npm download boilerplate "
+    keyword: "install, npm, download, boilerplate "
 
   - subtitle: "When to use"
     subhref: "getting-started/#when-to-use"
-    keyword: "spa single page application angular"
+    keyword: "spa, single page application, angular"
 
   - subtitle: "Release History"
     subhref: "getting-started/#release-history"
-    keyword: "version notes"
+    keyword: "version, notes"
 
   - subtitle: "Contributing"
     subhref: "getting-started/#contributing"
     keyword: "open source"
 
 - title: "Visual Style"
-  keyword: "style guide visual language"
+  keyword: "style guide, visual language"
   href: "visual-style"
   subcategories:
 
@@ -42,7 +42,7 @@
     - subtitle: "Typography"
       subhref: "visual-style/typography"
       img: "img/subcategories/typography.png"
-      keyword: "web font typeface"
+      keyword: "web font, typeface"
 
     - subtitle: "Size and Spacing Units"
       subhref: "visual-style/size-and-space"
@@ -64,17 +64,17 @@
         - subtitle: "Button Group"
           subhref: "components/button-group"
           img: "img/subcategories/button-group.png"
-          keyword: "scope segment"
+          keyword: "scope, segment"
 
         - subtitle: "Checkbox"
           subhref: "components/checkbox"
           img: "img/subcategories/checkbox.png"
-          keyword: "selection choose"
+          keyword: "selection, choose"
 
         - subtitle: "Date Picker"
           subhref: "components/date-picker"
           img: "img/subcategories/date-picker.png"
-          keyword: "calendar"
+          keyword: "calendar, date selection"
 
         - subtitle: "Form Fields"
           subhref: "components/form-fields"
@@ -93,7 +93,7 @@
         - subtitle: "Select"
           subhref: "components/select"
           img: "img/subcategories/select.png"
-          keyword: "dropdown pulldown menu"
+          keyword: "dropdown, pulldown, menu"
 
         - subtitle: "Select Multi"
           subhref: "components/select-multi"
@@ -107,7 +107,7 @@
         - subtitle: "Stepped Control"
           subhref: "components/stepped-control"
           img: "img/subcategories/stepped-control.png"
-          keyword: "process wizard"
+          keyword: "process, wizard"
 
         - subtitle: "Switch"
           subhref: "components/switch"
@@ -117,12 +117,12 @@
         - subtitle: "Text Input"
           subhref: "components/text-input"
           img: "img/subcategories/text-input.png"
-          keyword: "textbox input text"
+          keyword: "textbox, input, text field"
 
         - subtitle: "Textarea"
           subhref: "components/textarea"
           img: "img/subcategories/textarea.png"
-          keyword: "freeform field"
+          keyword: "freeform, field"
 
     - title: "Feedback"
       keyword: ""
@@ -131,12 +131,12 @@
         - subtitle: "Badges"
           subhref: "components/badges"
           img: "img/subcategories/badges.png"
-          keyword: "pill chip"
+          keyword: "pill, chip"
 
         - subtitle: "Growl Notifications"
           subhref: "components/growl"
           img: "img/subcategories/growl.png"
-          keyword: "toast alert snackbar snack bar banner"
+          keyword: "toast, alert, snackbar, snack bar, banner"
 
         - subtitle: "Inline Alerts"
           subhref: "components/alerts"
@@ -146,17 +146,17 @@
         - subtitle: "Labels"
           subhref: "components/labels"
           img: "img/subcategories/labels.png"
-          keyword: "pill chip"
+          keyword: "pill, chip"
 
         - subtitle: "Modal"
           subhref: "components/modal"
           img: "img/subcategories/modal.png"
-          keyword: "dialog"
+          keyword: "dialog, popup window"
 
         - subtitle: "Progress"
           subhref: "components/progress"
           img: "img/subcategories/progress.png"
-          keyword: "status scroll "
+          keyword: "status, scroll "
 
         - subtitle: "Splash"
           subhref: "components/splash"
@@ -214,7 +214,7 @@
         - subtitle: "Global Nav"
           subhref: "components/top-nav"
           img: "img/subcategories/top-nav.png"
-          keyword: "tab"
+          keyword: "tab, menu"
 
         - subtitle: "Top Hat"
           subhref: "components/tophat"
@@ -245,22 +245,22 @@
     - subtitle: "Box"
       subhref: "layout/box"
       img: "img/subcategories/box.png"
-      keyword: "sheet card"
+      keyword: "sheet, card"
 
     - subtitle: "Divider"
       subhref: "layout/divider"
       img: "img/subcategories/divider.png"
-      keyword: "horizontal rule line border"
+      keyword: "horizontal rule, line, border"
 
     - subtitle: "Grid System"
       subhref: "layout/grid"
       img: "img/subcategories/grid.png"
-      keyword: "responsive rwd"
+      keyword: "responsive, rwd"
 
     - subtitle: "Level"
       subhref: "layout/level"
       img: "img/subcategories/level.png"
-      keyword: "row stack"
+      keyword: "row, stack"
 
     - subtitle: "Media Object"
       subhref: "layout/media-object"
@@ -279,7 +279,7 @@
     - subtitle: "Ellipsis"
       subhref: "utilities/#ellipsis"
       img: "img/subcategories/ellipsis.png"
-      keyword: "dot truncate"
+      keyword: "dot, truncate"
 
     - subtitle: "Floats"
       subhref: "utilities/#floats"
@@ -296,7 +296,7 @@
     - subtitle: "Screenreader only"
       subhref: "utilities/#screenreader-only"
       img: "img/subcategories/screenreader-only.png"
-      keyword: "hidden hide"
+      keyword: "hidden, hide"
 
     - subtitle: "Text Alignment"
       subhref: "utilities/#text-alignment"
@@ -305,17 +305,17 @@
     - subtitle: "Text Size"
       subhref: "utilities/#text-size"
       img: "img/subcategories/text-size.png"
-      keyword: "font-size font size"
+      keyword: "font-size, font size"
 
     - subtitle: "Text Headers"
       subhref: "utilities/#text-headers"
       img: "img/subcategories/text-headers.png"
-      keyword: "font-size font size"
+      keyword: "font-size, font size"
 
     - subtitle: "Visibility"
       subhref: "utilities/#visibility"
       img: "img/subcategories/visibility.png"
-      keyword: "hidden hide"
+      keyword: "hidden, hide"
 
 - title: "Guides"
   keyword: ""
@@ -334,7 +334,7 @@
     - subtitle: "Front-end"
       subhref: "guides/front-end"
       img: "img/subcategories/front-end.png"
-      keyword: "html css scss js javascript"
+      keyword: "html, css, scss, js, javascript"
 
     # - subtitle: "Applications"
     #   subhref: "guides/applications"
