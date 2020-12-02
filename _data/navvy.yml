@@ -246,12 +246,8 @@
       subhref: "patterns/stepped-process"
       img: "img/subcategories/box.png"
 
-    - subtitle: "C"
-      subhref: "patterns/c"
-      img: "img/subcategories/box.png"
-
-    - subtitle: "D"
-      subhref: "patterns/d"
+    - subtitle: "Page Title Area"
+      subhref: "patterns/page-title-area"
       img: "img/subcategories/box.png"
 
 - title: "Utilities"
