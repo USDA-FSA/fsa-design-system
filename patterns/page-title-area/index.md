@@ -17,7 +17,7 @@ suppress_code_toggle: true
 1. [Heading: h1]({{ site.baseurl }}/visual-style/typography/#headings)
 1. [Level]({{ site.baseurl }}/components/level)
 1. [Buttons]({{ site.baseurl }}/components/buttons)
-1. [Utilities: Margin]({{ site.baseurl }}/components/utilities/#margins)
+1. [Utilities: Margin]({{ site.baseurl }}/utilities/#margins)
 {% endcapture %}
 
 {% assign anatomy__image-off = "page-title-area--off.png" %}
