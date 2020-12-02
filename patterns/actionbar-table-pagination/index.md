@@ -1,9 +1,9 @@
 ---
 layout: page
 parent: "Patterns"
-title: "A"
+title: "Action Bar, Table, and Pagination"
 shortName: "pattern__a"
-intro: "Combining an Action Bar, Table, and Pagination"
+intro: "Complement a data table with actions and pagination"
 jump_menu: false
 full_width: true
 suppress_kitcken_sink: true
