@@ -160,56 +160,41 @@ Several of a button's style properties can be selectively modified across each M
 
 <div class="ds-related-card">
   <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/actionbar-table-pagination/">
-    <div class="ds-related-card__type">Pattern</div>
-    <div class="ds-related-card__title">
-      Action Bar, Table, and Pagination
-    </div>
-    <div class="ds-related-card__description">
-      Complement a data table with actions and pagination
-    </div>
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">Action Bar, Table, and Pagination</div>
+    <div class="ds-related-card__description">Complement a data table with actions and pagination</div>
   </a>
   <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/destroy-prompt/">
-    <div class="ds-related-card__type">Pattern</div>
-    <div class="ds-related-card__title">
-      Destroy Prompt
-    </div>
-    <div class="ds-related-card__description">
-      Prompt users to the implications of its action
-    </div>
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">Destroy Prompt</div>
+    <div class="ds-related-card__description">Prompt users to the implications of its action</div>
+  </a>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}components/growl/">
+    <div class="ds-related-card__type">UI Component</div>
+    <div class="ds-related-card__title">Growl Notifications</div>
+    <div class="ds-related-card__description">Surface application messaging, providing information about page-level or out-of-view events.</div>
   </a>
   <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/page-title-area/">
-    <div class="ds-related-card__type">Pattern</div>
-    <div class="ds-related-card__title">
-      Page Title Area
-    </div>
-    <div class="ds-related-card__description">
-      Complement the page title with breadcrumbs and primary actions.
-    </div>
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">Page Title Area</div>
+    <div class="ds-related-card__description">Complement the page title with breadcrumbs and primary actions.</div>
   </a>
   <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
-    <div class="ds-related-card__type">Pattern</div>
-    <div class="ds-related-card__title">
-      Stepped Process
-    </div>
-    <div class="ds-related-card__description">
-      Lead the user through a series of steps or flow.
-    </div>
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">Stepped Process</div>
+    <div class="ds-related-card__description">Lead the user through a series of steps or flow.</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
-    <div class="ds-related-card__type">Pattern</div>
-    <div class="ds-related-card__title">
-      Stepped Process
-    </div>
-    <div class="ds-related-card__description">
-      Lead the user through a series of steps or flow.
-    </div>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}components/stepped-control/">
+    <div class="ds-related-card__type">UI Component</div>
+    <div class="ds-related-card__title">Stepped Control</div>
+    <div class="ds-related-card__description">Anchor a multi-step process with directional actions.</div>
+  </a>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}components/search/">
+    <div class="ds-related-card__type">UI Component</div>
+    <div class="ds-related-card__title">Search</div>
+    <div class="ds-related-card__description">Allow users to search for specific content.</div>
   </a>
 </div>
-
-Search
-Stepped Control
-Growl Notifications
-
 
 <table class="fsa-table fsa-table--responsive">
   <thead>

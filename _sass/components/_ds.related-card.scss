@@ -9,11 +9,12 @@
     @include breakpoint(M) {
       grid-template-columns: repeat(3, 1fr);
     }
-    @include breakpoint(L) {
-      grid-template-columns: repeat(4, 1fr);
-    }
   }
 
+  &__type {
+    @include font-size(1);
+    text-transform: uppercase;
+  }
 
   &__item {
 

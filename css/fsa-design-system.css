@@ -15219,11 +15219,10 @@ html body.x-ray .fsa-modal {
   }
 }
 
-@media (min-width: 54em) {
-  .ds-related-card {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
+.ds-related-card__type {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 .ds-related-card__item {
