@@ -3,7 +3,7 @@ layout: page
 parent: "Patterns"
 title: "Action Bar, Table, and Pagination"
 shortName: "pattern__a"
-intro: "Complement a data table with actions and pagination"
+intro: "Complement a data table with actions and pagination."
 jump_menu: false
 full_width: true
 suppress_kitcken_sink: true

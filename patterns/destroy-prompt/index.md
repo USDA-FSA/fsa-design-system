@@ -3,7 +3,7 @@ layout: page
 parent: "Patterns"
 title: "Destroy Prompt"
 shortName: "pattern__destroy-prompt"
-intro: Use the <a href="/fsa-design-system/components/growl/">Growl Notification</a> component to prompt the user of the implications of its action.
+intro: Use the <a href="/fsa-design-system/components/growl/">Growl Notification</a> component to prompt the user to the implications of its action.
 jump_menu: false
 full_width: true
 suppress_kitcken_sink: true
