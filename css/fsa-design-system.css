@@ -15202,6 +15202,54 @@ html body.x-ray .fsa-modal {
   }
 }
 
+@media (min-width: 30.0625em) {
+  .ds-related-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .ds-related-card {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 54em) {
+  .ds-related-card {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.ds-related-card__item {
+  text-decoration: none;
+}
+
+.ds-related-card__item:link, .ds-related-card__item:visited {
+  color: #2f2c2a !important;
+}
+
+.ds-related-card__item:hover {
+  background-color: #f0f0f0;
+}
+
+.ds-related-card__title {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #0068ad;
+  font-weight: 700;
+}
+
+.ds-related-card__item:hover .ds-related-card__title {
+  text-decoration: underline;
+}
+
 h2[id] + .ds-anatomy {
   margin-top: -15px;
   border-top: 0;

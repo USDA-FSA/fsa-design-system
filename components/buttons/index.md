@@ -158,6 +158,59 @@ Several of a button's style properties can be selectively modified across each M
 
 {% include do-dont.html %}
 
+<div class="ds-related-card">
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/actionbar-table-pagination/">
+    <div class="ds-related-card__type">Pattern</div>
+    <div class="ds-related-card__title">
+      Action Bar, Table, and Pagination
+    </div>
+    <div class="ds-related-card__description">
+      Complement a data table with actions and pagination
+    </div>
+  </a>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/destroy-prompt/">
+    <div class="ds-related-card__type">Pattern</div>
+    <div class="ds-related-card__title">
+      Destroy Prompt
+    </div>
+    <div class="ds-related-card__description">
+      Prompt users to the implications of its action
+    </div>
+  </a>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/page-title-area/">
+    <div class="ds-related-card__type">Pattern</div>
+    <div class="ds-related-card__title">
+      Page Title Area
+    </div>
+    <div class="ds-related-card__description">
+      Complement the page title with breadcrumbs and primary actions.
+    </div>
+  </a>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
+    <div class="ds-related-card__type">Pattern</div>
+    <div class="ds-related-card__title">
+      Stepped Process
+    </div>
+    <div class="ds-related-card__description">
+      Lead the user through a series of steps or flow.
+    </div>
+  </a>
+  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
+    <div class="ds-related-card__type">Pattern</div>
+    <div class="ds-related-card__title">
+      Stepped Process
+    </div>
+    <div class="ds-related-card__description">
+      Lead the user through a series of steps or flow.
+    </div>
+  </a>
+</div>
+
+Search
+Stepped Control
+Growl Notifications
+
+
 <table class="fsa-table fsa-table--responsive">
   <thead>
     <tr>

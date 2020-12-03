@@ -1,0 +1,48 @@
+.ds-related-card {
+
+  & {
+    @include breakpoint(S) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $size-default;
+    }
+    @include breakpoint(M) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint(L) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
+  &__item {
+
+    & {
+      text-decoration: none;
+    }
+
+    &:link,
+    &:visited {
+      color: $color-fsa-base !important;
+    }
+
+    &:hover {
+      background-color: $color-fsa-tertiary-100;
+    }
+  }
+
+  &__title {
+
+    @include font-size(4);
+    color: $color-fsa-link;
+    font-weight: $font-bold;
+
+    .ds-related-card__item:hover & {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__description {}
+
+}
