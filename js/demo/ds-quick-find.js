@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
     searchUrl: '',
     cssClass: '',
     searchArray: [],
-    displayCount: 1,
+    displayCount: 8,
     prevElem: '',
     prevInputString: '',
     keywords: '',
@@ -82,6 +82,7 @@ if ('serviceWorker' in navigator) {
       let arr = qf.dedupeArrayOfObjects( qf.searchArray );
       let lowPhrase = phrase.toLowerCase();
 
+      /*
       let pagesList = arr.filter( item => {
         let lowCategory = item.text.toLowerCase()
         if(lowCategory.indexOf( lowPhrase ) > -1) return true
@@ -98,37 +99,27 @@ if ('serviceWorker' in navigator) {
         })
         return exists;
       })
+      */
 
+      let list = arr.filter( item => {
+        let exists = false;
 
+        let lowCategory = item.text.toLowerCase()
+        let lowKeywords = item.keywords.toLowerCase();
 
+        if(lowCategory.indexOf( lowPhrase ) > -1) exists = true;
+        if(lowKeywords.indexOf( lowPhrase ) > -1) exists = true;
 
-      // DO SOMETHIGN HERE WITH KEYWORDS
+        return exists
+      });
 
-      let listToDisplay = pagesList.slice( 0, qf.displayCount-1);
+      list = qf.dedupeArrayOfObjects(list);
+
+      let listToDisplay = list.slice( 0, qf.displayCount-1);
       qf.resultsCount.innerText = listToDisplay.length + ' results';
       return listToDisplay;
     },
 
-    // For Google Analytics Tracking
-    buildSearchCollection: function(str){
-      let isValid = true;
-      // string must be longer than previous string
-      if(str.length < qf.prevInputString.length) isValid = false;
-      qf.prevInputString = str;
-      // string must be more than 2 characters
-      if(str.length < 3) isValid = false;
-      // if string is not all spaces
-      let patt = /[ ]{2,}/;
-      if( patt.test( str ) ) isValid = false;
-      // if string is not in collection
-      let sc = GoogleTracker.getSearchCollection()
-      if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
-      
-      if(isValid){
-        GoogleTracker.trackSearchCollection(str);
-      }
-    },
-    // End
 
     searchInput: function(){
       return function(){
@@ -139,9 +130,7 @@ if ('serviceWorker' in navigator) {
           let preHTML = '<ul class="ds-quick-find__output" role="listbox">';
 
           // aray of objects
-          let matches = qf.doSearch( qf.search.value );
-
-          // write code that if no results found, search keywords for match
+          let matches = qf.doSearch( qf.search.value );          
 
           // For Google Analytics Tracking
           if(matches.length < 1) qf.buildSearchCollection(qf.search.value);
@@ -169,24 +158,54 @@ if ('serviceWorker' in navigator) {
           
           qf.newHTML = preHTML + qf.newHTML + '</ul>';
           qf.results.innerHTML = qf.newHTML;
+          qf.newHTML = '';
         } else {
           qf.closeResults();
         }
+      
       }
 
     },
 
-    buildTierOne: function(tier){
-      // Used for typed string Highlight
-      let regex = new RegExp(qf.search.value, 'gi');
+    getMatchedPages: function(matchObject){
+      let pages = '';
+      pages = matchObject.text.replace( qf.getSearchRegex(), (str) => '<mark>'+ str + '</mark>');
+      return pages;
+    },
+
+    getKeywords: function(matchObject){
+      let arr = matchObject.keywords.split(',');
+      let arr2 = [];
+      arr.forEach( item => {
+        if( item.indexOf(qf.search.value) > -1 ){
+          arr2.push( item.replace( qf.getSearchRegex(), (str) => '<mark>'+ str + '</mark>') )
+        }
+      })
+      return arr2.length > 1 ? arr2.join(', ') : arr2[0];
+    },
+
+    getSearchRegex: function(){
+      return new RegExp(qf.search.value, 'gi');
+    },
+
+    buildTierOne: function(tier){      
       tier.forEach( item => {
-        let newText = item.text.replace(regex, (str) => '<mark>'+ str + '</mark>');
+        
+        let keywords = qf.getKeywords(item);
+        keywords = keywords ? 'aka. '+ keywords : '';
+        let newText = qf.getMatchedPages(item);
+        
         qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                      <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
-                        ${newText}
-                      </a>
-                    </li>`;
-        qf.keywords += ' ' + item.keywords;
+            <div class="fsa-level fsa-level--justify-between">
+              <span>
+                <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
+                  ${newText}
+                </a>
+              </span>
+              <span class="fsa-m-r--xs fsa-text-size--2">${keywords}</span>
+            </div>
+          </li>`;
+        qf.keywords += ' ' + keywords;
       })
     },
 
@@ -196,8 +215,11 @@ if ('serviceWorker' in navigator) {
       let regex = new RegExp(qf.search.value, 'gi');
       subgroups.forEach( item => {
 
-        let newText = item.text.replace(regex, (str) => '<mark>'+ str + '</mark>');
+        let newText = qf.getMatchedPages(item);
         let newParentText = item.ancestors.parent.replace(regex, (str) => '<mark>'+ str + '</mark>');
+
+        let keywords = qf.getKeywords(item);
+        keywords = keywords ? 'aka. '+ keywords : '';
 
         if( item.tier == 2){
           if(prevHeader != item.ancestors.header){
@@ -207,10 +229,15 @@ if ('serviceWorker' in navigator) {
           }
           prevHeader = item.ancestors.header;
           qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                        <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
-                          ${newText}
-                        </a>
-                      </>`
+              <div class="fsa-level fsa-level--justify-between">
+                <span>
+                  <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
+                    ${newText}
+                  </a>
+                </span>
+                <span class="fsa-m-r--xs fsa-text-size--2">${keywords}</span>
+              </div>
+            </li>`
         } else {
           if(prevHeader != item.ancestors.header){
             qf.newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
@@ -220,17 +247,41 @@ if ('serviceWorker' in navigator) {
           prevHeader = item.ancestors.header;
 
           qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                        <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
-                          ${newParentText}
-                          /
-                          ${newText}
-                        </a>
-                      </li>`
+              <div class="fsa-level fsa-level--justify-between">
+                <span>
+                  <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
+                    ${newParentText} / ${newText}
+                  </a>
+                </span>
+                <span class="fsa-m-r--xs fsa-text-size--2">${keywords}</span>
+              </div>
+            </li>`
         }
 
-        qf.keywords += ' ' + item.keywords;
+        qf.keywords += ' ' + keywords;
       })
     },
+
+    // For Google Analytics Tracking
+    buildSearchCollection: function(str){
+      let isValid = true;
+      // string must be longer than previous string
+      if(str.length < qf.prevInputString.length) isValid = false;
+      qf.prevInputString = str;
+      // string must be more than 2 characters
+      if(str.length < 3) isValid = false;
+      // if string is not all spaces
+      let patt = /[ ]{2,}/;
+      if( patt.test( str ) ) isValid = false;
+      // if string is not in collection
+      let sc = GoogleTracker.getSearchCollection()
+      if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
+      
+      if(isValid){
+        GoogleTracker.trackSearchCollection(str);
+      }
+    },
+    // End
 
     runEventTracking: function(){
       // Listen for Clear Button click
@@ -415,7 +466,7 @@ if ('serviceWorker' in navigator) {
       qf.clearId = clearId;
       qf.resultsId = resultsId;
       qf.resultsCountId = resultsCountId;
-      qf.displayCount = count ? count : 8;
+      qf.displayCount = count != null ? count : qf.displayCount;
       qf.setSearchProperties();
       qf.runEventTracking();
     }
