@@ -177,7 +177,9 @@ if ('serviceWorker' in navigator) {
       let arr = matchObject.keywords.split(',');
       let arr2 = [];
       arr.forEach( item => {
-        if( item.indexOf(qf.search.value) > -1 ){
+        let kw = item.toLowerCase();
+        let phrase = qf.search.value.toLowerCase();
+        if( kw.indexOf(phrase) > -1 ){
           arr2.push( item.replace( qf.getSearchRegex(), (str) => '<mark>'+ str + '</mark>') )
         }
       })
