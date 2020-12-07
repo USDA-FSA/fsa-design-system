@@ -19,7 +19,6 @@ if ('serviceWorker' in navigator) {
     newHTML: '',
 
     setSearchProperties: function(){
-
       qf.search = document.getElementById( qf.inputId );
       qf.clear = document.getElementById( qf.clearId );
       qf.results = document.getElementById( qf.resultsId );
@@ -120,51 +119,52 @@ if ('serviceWorker' in navigator) {
       return listToDisplay;
     },
 
-
     searchInput: function(){
       return function(){
-        if(qf.search.value!=''){
 
-          qf.search.setAttribute('aria-expanded', 'true');
 
-          let preHTML = '<ul class="ds-quick-find__output" role="listbox">';
+        if(qf.search.value!=''){ // isn't empty
+          if(qf.search.value.length > 2){ // run only if 3+ characters
 
-          // aray of objects
-          let matches = qf.doSearch( qf.search.value );          
+            qf.search.setAttribute('aria-expanded', 'true');
 
-          // For Google Analytics Tracking
-          if(matches.length < 1) qf.buildSearchCollection(qf.search.value);
-          // End
+            let preHTML = '<ul class="ds-quick-find__output" role="listbox">';
 
-          let tier1 = matches.filter( item => item.tier == 1 );
-          tier1.sort((a, b) => (a.text < b.text) ? 1 : -1)
+            // aray of objects
+            let matches = qf.doSearch( qf.search.value );
 
-          let subgroups = matches.filter( item => item.tier > 1 );
-          subgroups.sort((a, b) => (a.text > b.text) ? 1 : -1)
-          subgroups.sort((a, b) => (a.ancestors.header > b.ancestors.header) ? 1 : -1)
+            // For Google Analytics Tracking
+            if(matches.length < 1) qf.buildSearchCollection(qf.search.value);
+            // End
 
-          if( tier1.length > 0 ) qf.buildTierOne(tier1);
+            let tier1 = matches.filter( item => item.tier == 1 );
+            tier1.sort((a, b) => (a.text < b.text) ? 1 : -1)
 
-          if( subgroups.length > 0) qf.buildSubgroups(subgroups);
+            let subgroups = matches.filter( item => item.tier > 1 );
+            subgroups.sort((a, b) => (a.text > b.text) ? 1 : -1)
+            subgroups.sort((a, b) => (a.ancestors.header > b.ancestors.header) ? 1 : -1)
 
-          /*
-          if(qf.keywords != ''){
-            preHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">Related Keywords</li>`;
-            preHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-                        ${qf.keywords}
-                      </>`;
+            if( tier1.length > 0 ) qf.buildTierOne(tier1);
+
+            if( subgroups.length > 0) qf.buildSubgroups(subgroups);
+
+            /*
+            if(qf.keywords != ''){
+              preHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">Related Keywords</li>`;
+              preHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
+                          ${qf.keywords}
+                        </>`;
+            }
+            */
+
+            qf.newHTML = preHTML + qf.newHTML + '</ul>';
+            qf.results.innerHTML = qf.newHTML;
+            qf.newHTML = '';
           }
-          */
-          
-          qf.newHTML = preHTML + qf.newHTML + '</ul>';
-          qf.results.innerHTML = qf.newHTML;
-          qf.newHTML = '';
         } else {
           qf.closeResults();
         }
-      
       }
-
     },
 
     getMatchedPages: function(matchObject){
@@ -190,22 +190,18 @@ if ('serviceWorker' in navigator) {
       return new RegExp(qf.search.value, 'gi');
     },
 
-    buildTierOne: function(tier){      
+    buildTierOne: function(tier){
       tier.forEach( item => {
-        
+
         let keywords = qf.getKeywords(item);
-        keywords = keywords ? 'aka. '+ keywords : '';
+        keywords = keywords ? '<span title="Also known as"> ' + keywords + '</span>' : '';
         let newText = qf.getMatchedPages(item);
-        
+
         qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-            <div class="fsa-level fsa-level--justify-between">
-              <span>
-                <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
-                  ${newText}
-                </a>
-              </span>
-              <span class="fsa-m-r--xs fsa-text-size--2">${keywords}</span>
-            </div>
+            <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
+              <span class="ds-quick-find__text">${newText}</span>
+              <span class="ds-quick-find__keyword">${keywords}</span>
+            </a>
           </li>`;
         qf.keywords += ' ' + keywords;
       })
@@ -221,43 +217,35 @@ if ('serviceWorker' in navigator) {
         let newParentText = item.ancestors.parent.replace(regex, (str) => '<mark>'+ str + '</mark>');
 
         let keywords = qf.getKeywords(item);
-        keywords = keywords ? 'aka. '+ keywords : '';
+        keywords = keywords ? '<span title="Also known as"> ' + keywords + '</span>' : '';
 
         if( item.tier == 2){
           if(prevHeader != item.ancestors.header){
             qf.newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
-                          ${item.ancestors.parent}
-                        </li>`
+                             ${item.ancestors.parent}
+                           </li>`
           }
           prevHeader = item.ancestors.header;
           qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-              <div class="fsa-level fsa-level--justify-between">
-                <span>
-                  <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
-                    ${newText}
-                  </a>
-                </span>
-                <span class="fsa-m-r--xs fsa-text-size--2">${keywords}</span>
-              </div>
-            </li>`
+                           <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
+                             <span class="ds-quick-find__text">${newText}</span>
+                             <span class="ds-quick-find__keyword">${keywords}</span>
+                           </a>
+                         </li>`
         } else {
           if(prevHeader != item.ancestors.header){
             qf.newHTML += `<li class="ds-quick-find__output-item ds-quick-find__output-item--section" aria-hidden="true">
-                          ${item.ancestors.grandParent}
-                        </li>`
+                             ${item.ancestors.grandParent}
+                           </li>`
           }
           prevHeader = item.ancestors.header;
 
           qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
-              <div class="fsa-level fsa-level--justify-between">
-                <span>
-                  <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
-                    ${newParentText} / ${newText}
-                  </a>
-                </span>
-                <span class="fsa-m-r--xs fsa-text-size--2">${keywords}</span>
-              </div>
-            </li>`
+                           <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
+                             <span class="ds-quick-find__text">${newParentText} / ${newText}</span>
+                             <span class="ds-quick-find__keyword">${keywords}</span>
+                           </a>
+                         </li>`
         }
 
         qf.keywords += ' ' + keywords;
@@ -278,7 +266,7 @@ if ('serviceWorker' in navigator) {
       // if string is not in collection
       let sc = GoogleTracker.getSearchCollection()
       if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
-      
+
       if(isValid){
         GoogleTracker.trackSearchCollection(str);
       }
@@ -302,7 +290,6 @@ if ('serviceWorker' in navigator) {
       qf.results.addEventListener('keydown', qf.handleResultsKeydown);
     },
 
-
     handleClearButtonClick: function(e){
       qf.closeResults();
     },
@@ -324,7 +311,6 @@ if ('serviceWorker' in navigator) {
         if(el) el.focus()
       }
     },
-
 
     handleResultsFocus: function(e){
 
