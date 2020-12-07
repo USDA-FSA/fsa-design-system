@@ -13,7 +13,7 @@ title_label: 'Requires JavaScript'
 
 ## Interaction Flow
 
-{% assign anatomy__image-off = "destroy-prompt.png" %}
+{% assign anatomy__image-off = "destroy-prompt--animated.gif" %}
 
 {% include anatomy.html %}
 
