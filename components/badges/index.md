@@ -191,6 +191,8 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * Badges should be used for real-time notifications with minimal footprint.

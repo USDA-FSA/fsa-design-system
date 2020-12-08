@@ -517,6 +517,8 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.

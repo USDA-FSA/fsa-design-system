@@ -244,6 +244,8 @@ jump_menu: true
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.

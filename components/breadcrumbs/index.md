@@ -184,7 +184,6 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 <h1>Sports</h1>
 ```
 
-
 ## Usage
 
 {% capture usage_do %}
@@ -203,6 +202,8 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

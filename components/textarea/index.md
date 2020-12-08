@@ -163,6 +163,8 @@ Selectively override several style properties at each Media Query breakpoint.
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

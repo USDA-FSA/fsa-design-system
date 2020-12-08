@@ -60,6 +60,8 @@ jump_menu: true
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Text Links Guide]({{ site.baseurl }}guides/accessibility/links) for overall guidance.

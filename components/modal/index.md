@@ -216,6 +216,8 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 * [Accessibility Timeouts Guide]({{ site.baseurl }}guides/accessibility/timeouts) for system timeout guidance.

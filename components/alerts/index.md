@@ -153,6 +153,8 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * Alerts should be used to help provide contextual guidance and information related to application state, processing, and events.

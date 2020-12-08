@@ -434,6 +434,8 @@ Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` el
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * As seen in the variation above, the number of pages within the dataset dictates the variation that should be applied.

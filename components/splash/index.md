@@ -90,6 +90,8 @@ The intention of a Splash screen is to provide a good first imporession of an ap
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * Take into consideration the resources that are loading in the background, device, and network connectivity of the User.

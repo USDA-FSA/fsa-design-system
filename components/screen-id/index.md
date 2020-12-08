@@ -70,6 +70,8 @@ jump_menu: true
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidelines
 
 * The Screen ID is used by FPAC Technical Support representatives and County Offices to identify areas of FPAC Applications that are having technical issues.

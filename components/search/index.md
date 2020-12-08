@@ -518,6 +518,8 @@ jump_menu: true
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * Allow the search bar to be as wide as possible, ideally allowing approximately 27 characters to be visible without horizontal scrolling. This allows users to enter multiple search terms, decreasing the chances of obscuring some text. The more users can see their search terms, the easier it is to review, verify, and submit their search query.

@@ -6,9 +6,15 @@ title: "Buttons"
 shortName: "component__buttons"
 intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
 relatedItems:
-  - "Growl Notification"
-  - "Text Input"
+  - "Action Bar, Table, and Pagination"
+  - "Button Group"
   - "Destroy Prompt"
+  - "Form Fields"
+  - "Growl Notification"
+  - "Page Title Area"
+  - "Search"
+  - "Stepped Control"
+  - "Stepped Process"
 jump_menu: true
 ---
 
@@ -542,10 +548,5 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## Related Resources
 
-* [Applications Guide]({{ site.baseurl }}guides/applications/buttons)
-* [Form Fields]({{ site.baseurl }}fsa-design-system/components/form-fields/)
-* [Button Group]({{ site.baseurl }}components/button-group)
-* [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/)
-* [Search]({{ site.baseurl }}fsa-design-system/components/search/)
 * [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 * [Color]({{ site.baseurl }}visual-style/color/)

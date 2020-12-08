@@ -33,6 +33,8 @@ jump_menu: true
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Structure
 
 ```html

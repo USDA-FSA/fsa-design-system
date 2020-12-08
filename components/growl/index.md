@@ -386,6 +386,8 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * The control element that triggers the Growl shall utilize an aria-controls parameter that matches the ID of the Growl.

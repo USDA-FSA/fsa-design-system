@@ -5,6 +5,8 @@ type: "UI Component"
 title: "Button Group"
 shortName: "component__button-group"
 intro: "Use button groups as a mechanism to toggle between multiple button actions."
+relatedItems:
+  - "Action Bar, Table, and Pagination"
 jump_menu: true
 ---
 
@@ -153,6 +155,8 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

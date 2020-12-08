@@ -26,6 +26,8 @@ jump_menu: true
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 * Users must be able to tab (via keyboard) to focus through each link.

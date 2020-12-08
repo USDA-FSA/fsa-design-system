@@ -318,6 +318,8 @@ Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

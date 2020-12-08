@@ -434,6 +434,8 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * Typically paired with the [Stepped Control]({{ site.baseurl }}components/stepped-control/) component.

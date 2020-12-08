@@ -332,6 +332,8 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

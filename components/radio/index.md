@@ -423,6 +423,8 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

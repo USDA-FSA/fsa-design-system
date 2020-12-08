@@ -536,6 +536,8 @@ title_label: 'May Require JavaScript'
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * The Stepped Control is used as the standard Component to advance from screen to screen within an application

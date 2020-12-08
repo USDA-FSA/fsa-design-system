@@ -192,6 +192,8 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## General Guidance
 
 * Labels can be used as a call to bring attention or to categorize content.

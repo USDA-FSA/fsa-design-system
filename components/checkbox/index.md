@@ -556,6 +556,8 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

@@ -1772,6 +1772,8 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Tables Guide]({{ site.baseurl }}guides/accessibility/tables) for overall guidance.

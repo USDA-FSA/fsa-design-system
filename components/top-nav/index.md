@@ -1643,6 +1643,8 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility/) for overall guidance.
