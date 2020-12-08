@@ -15216,6 +15216,7 @@ html body.x-ray .fsa-modal {
   .ds-related-card {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
   }
 }
 
@@ -15226,7 +15227,16 @@ html body.x-ray .fsa-modal {
 }
 
 .ds-related-card__item {
+  display: block;
   text-decoration: none;
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 30.0625em) {
+  .ds-related-card__item {
+    margin-bottom: initial;
+  }
 }
 
 .ds-related-card__item:link, .ds-related-card__item:visited {
@@ -15243,10 +15253,21 @@ html body.x-ray .fsa-modal {
   line-height: 1.3;
   color: #0068ad;
   font-weight: 700;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
 }
 
 .ds-related-card__item:hover .ds-related-card__title {
   text-decoration: underline;
+}
+
+.ds-related-card__arr {
+  width: 12px;
+  width: 1.2rem;
+  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 h2[id] + .ds-anatomy {

@@ -159,39 +159,60 @@ Several of a button's style properties can be selectively modified across each M
 {% include do-dont.html %}
 
 <div class="ds-related-card">
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/actionbar-table-pagination/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/actionbar-table-pagination/">
     <div class="ds-related-card__type">UX Pattern</div>
-    <div class="ds-related-card__title">Action Bar, Table, and Pagination</div>
+    <div class="ds-related-card__title">
+      Action Bar, Table, and Pagination
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Complement a data table with actions and pagination</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/destroy-prompt/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/destroy-prompt/">
     <div class="ds-related-card__type">UX Pattern</div>
-    <div class="ds-related-card__title">Destroy Prompt</div>
+    <div class="ds-related-card__title">
+      Destroy Prompt
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Prompt users to the implications of its action</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}components/growl/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}components/growl/">
     <div class="ds-related-card__type">UI Component</div>
-    <div class="ds-related-card__title">Growl Notifications</div>
+    <div class="ds-related-card__title">
+      Growl Notifications
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Surface application messaging, providing information about page-level or out-of-view events.</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/page-title-area/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/page-title-area/">
     <div class="ds-related-card__type">UX Pattern</div>
-    <div class="ds-related-card__title">Page Title Area</div>
+    <div class="ds-related-card__title">
+      Page Title Area
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Complement the page title with breadcrumbs and primary actions.</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
     <div class="ds-related-card__type">UX Pattern</div>
-    <div class="ds-related-card__title">Stepped Process</div>
+    <div class="ds-related-card__title">
+      Stepped Process
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Lead the user through a series of steps or flow.</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}components/stepped-control/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}components/stepped-control/">
     <div class="ds-related-card__type">UI Component</div>
-    <div class="ds-related-card__title">Stepped Control</div>
+    <div class="ds-related-card__title">
+      Stepped Control
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Anchor a multi-step process with directional actions.</div>
   </a>
-  <a class="fsa-box fsa-box--br-1 ds-related-card__item" href="{{ site.baseurl }}components/search/">
+  <a class="ds-related-card__item" href="{{ site.baseurl }}components/search/">
     <div class="ds-related-card__type">UI Component</div>
-    <div class="ds-related-card__title">Search</div>
+    <div class="ds-related-card__title">
+      Search
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
     <div class="ds-related-card__description">Allow users to search for specific content.</div>
   </a>
 </div>

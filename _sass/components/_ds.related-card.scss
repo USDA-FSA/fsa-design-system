@@ -8,6 +8,7 @@
     }
     @include breakpoint(M) {
       grid-template-columns: repeat(3, 1fr);
+      gap: $size-medium;
     }
   }
 
@@ -19,7 +20,12 @@
   &__item {
 
     & {
+      display: block;
       text-decoration: none;
+      margin-bottom: $size-default;
+      @include breakpoint(S) {
+        margin-bottom: initial;
+      }
     }
 
     &:link,
@@ -37,11 +43,18 @@
     @include font-size(4);
     color: $color-fsa-link;
     font-weight: $font-bold;
+    display: flex;
+    align-items: baseline;
 
     .ds-related-card__item:hover & {
       text-decoration: underline;
     }
 
+  }
+
+  &__arr {
+    width: $size-default;
+    margin-left: $size-small;
   }
 
   &__description {}
