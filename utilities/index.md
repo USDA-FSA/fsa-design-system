@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Utilities"
+title: "CSS Utilities"
+type: "Utility"
 intro: "Single-purpose styles typically mapped to a single CSS property and value (e.g. margin)."
 jump_menu: true
 suppress_code_toggle: true

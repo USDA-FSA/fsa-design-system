@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Checkbox"
 shortName: "component__checkbox"
 intro: "A form element enabling the selection of one or more options from a visible list."

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Patterns"
+type: "UX Pattern"
 title: "Stepped Process"
 shortName: "pattern__stepped-process"
 intro: "Lead the user through a series of steps or flow."

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Patterns"
+type: "UX Pattern"
 title: "Action Bar, Table, and Pagination"
 shortName: "pattern__a"
 intro: "Complement a data table with actions and pagination."

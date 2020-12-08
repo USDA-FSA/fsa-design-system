@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Labels"
 shortName: "component__labels"
 intro: "Labels are used to draw attention to new, updated, or important content within an application."

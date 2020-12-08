@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Application Header"
 intro: "The Application Header component provides a prominent way to display the application name."
 jump_menu: true

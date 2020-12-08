@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Grid System"
 intro: "A 12-column, responsive grid system provides structure for components and content."
 jump_menu: true

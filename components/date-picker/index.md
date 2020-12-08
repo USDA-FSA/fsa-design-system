@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Date Picker"
 intro: "The Date Picker augments an Input element or Form Field with the ability to select a date in a Calendar view."
 jump_menu: true

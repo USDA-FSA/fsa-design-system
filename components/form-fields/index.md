@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Form Fields"
 shortName: "component__form-fields"
 intro: "Form fields are multifaceted components that allow Developers to create application forms with appropriate instructional and validation features."

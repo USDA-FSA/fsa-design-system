@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Content Tabs"
 shortName: "component__content-tabs"
 intro: "Use Content Tabs to arrange related information or functionality in a defined area on the same application page."

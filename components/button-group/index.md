@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Button Group"
 shortName: "component__button-group"
 intro: "Use button groups as a mechanism to toggle between multiple button actions."
