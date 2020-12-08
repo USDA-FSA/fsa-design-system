@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Splash"
 intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true

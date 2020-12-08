@@ -1,9 +1,12 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Switch"
 shortName: "component__switch"
 intro: "Toggle the state of a single setting, with its corresponding action immediately taking effect."
+relatedItems:
+  - "Checkbox"
 jump_menu: true
 ---
 
@@ -262,4 +265,5 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## Related Resources
 
-* [Checkbox]({{ site.baseurl }}components/checkbox/)
+{% include related-cards.html %}
+

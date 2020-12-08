@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Text Links"
 intro: "More specifically known as <strong>anchor</strong> elements, text links are the most foundational elements of HTML, allowing user to navigate to a different page or further information."
 jump_menu: true

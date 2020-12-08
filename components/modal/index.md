@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Modal"
 shortName: "component__modal"
 intro: "Use a Modal to gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state."

@@ -9,6 +9,7 @@ jump_menu: true
 custom_js: ["select-other.js", "datepicker-demo.js"]
 relatedItems:
   - "Checkbox"
+  - "Buttons"
   - "Date Picker"
   - "Radio"
   - "Select"
@@ -31,8 +32,6 @@ title_label: 'JavaScript Included'
 ## Usage
 
 {% include do-dont.html %}
-
-The **core nested component** of each variation and example include, though not limited to:
 
 {% include related-cards.html %}
 

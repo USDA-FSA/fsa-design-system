@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Tables"
 shortName: "component__tables"
 intro: "Data tables presenting tabular data in columns and rows."

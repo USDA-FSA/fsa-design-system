@@ -1,9 +1,12 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Spinbox"
 shortName: "component__spinbox"
 intro: "A Spinbox Component provides enhanced controls for a numeric input, designed to expedite data entry."
+relatedItems:
+  - "Form Fields"
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---

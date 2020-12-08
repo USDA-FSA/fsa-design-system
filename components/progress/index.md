@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Progress"
 intro: "Displays an indicator showing the completion progress of a task."
 shortName: "component__progress"

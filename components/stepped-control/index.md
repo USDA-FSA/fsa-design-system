@@ -5,6 +5,10 @@ type: "UI Component"
 title: "Stepped Control"
 shortName: "component__stepped-control"
 intro: "Anchor a multi-step process with directional actions."
+relatedItems:
+  - "Buttons"
+  - "Stepped Process"
+  - "Stepped Tabs"
 jump_menu: true
 title_label: 'May Require JavaScript'
 ---

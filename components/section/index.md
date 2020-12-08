@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Section"
 shortName: "component__section"
 intro: "The Section Layout component can serve as the page's primary container to arrange content, components, and layout. Other than background-color variations, they are not strictly visible in the user interface itself."

@@ -16,7 +16,7 @@ suppress_code_toggle: true
 {% capture anatomy__markers %}
 1. [Buttons]({{ site.baseurl }}components/buttons)
 1. [Table]({{ site.baseurl }}components/tables)
-1. [Checkbox]({{ site.baseurl }}components/checkbox/)
+1. [Checkbox]({{ site.baseurl }}components/checkbox/) or [Radio]({{ site.baseurl }}components/radio/)
 1. [Level]({{ site.baseurl }}components/level/)
 1. [Text Input]({{ site.baseurl }}components/text-input/)
 1. [Button Group]({{ site.baseurl }}components/button-group)

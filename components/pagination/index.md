@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Pagination"
 shortName: "component__pagination"
 intro: "The Pagination Component allows for an optimized way to provide a more consumable structure for large datasets."

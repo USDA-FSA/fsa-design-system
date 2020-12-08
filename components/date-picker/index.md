@@ -6,6 +6,9 @@ title: "Date Picker"
 intro: "The Date Picker augments an Input element or Form Field with the ability to select a date in a Calendar view."
 jump_menu: true
 custom_js: "datepicker-demo.js"
+relatedItems:
+  - "Form Fields"
+  - "Text Input"
 title_label: 'JavaScript Included'
 ---
 
@@ -492,4 +495,4 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 
 ## Related Resources
 
-* [Form Fields]({{ site.baseurl }}components/form-fields)
+{% include related-cards.html %}

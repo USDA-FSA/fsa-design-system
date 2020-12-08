@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Timeline"
 intro: "List system and user activity chronologically."
 jump_menu: true
