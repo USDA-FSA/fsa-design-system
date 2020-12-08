@@ -1,9 +1,10 @@
 ---
 layout: page
 parent: "Patterns"
+type: "UX Pattern"
 title: "Destroy Prompt"
 shortName: "pattern__destroy-prompt"
-intro: Use the <a href="/fsa-design-system/components/growl/">Growl Notification</a> component to prompt the user to the implications of its action.
+intro: Prompt users to the implications of a destructive action.
 jump_menu: false
 full_width: true
 suppress_kitcken_sink: true
@@ -12,6 +13,8 @@ title_label: 'Requires JavaScript'
 ---
 
 ## Interaction Flow
+
+This pattern features multiple variations of the [Growl Notification]({{ site.baseurl }}components/growl/) component.
 
 {% assign anatomy__image-off = "destroy-prompt.png" %}
 
@@ -58,7 +61,7 @@ title_label: 'Requires JavaScript'
 
 ## JavaScript Guidance
 
-Refer to the [Growl Notification component's]({{ site.baseurl }}/components/growl/#javascript-guidance) JavaScript Guidance
+Refer to the [Growl Notification component's]({{ site.baseurl }}/components/growl/#javascript-guidance) JavaScript Guidance.
 
 {% include scripts.about.html %}
 

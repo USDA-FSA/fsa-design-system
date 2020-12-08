@@ -1,0 +1,80 @@
+{% if page.relatedItems %}
+  <div class="ds-related-card">
+    {% for item in page.relatedItems %}
+
+      {% assign target = item %}
+      {% assign pages = site.pages | where: 'title', target %}
+
+      {% for target in pages %}
+        <a class="ds-related-card__item" href="{{ site.baseurl }}{{target.url}}">
+          <div class="ds-related-card__type">{{target.type}}</div>
+          <div class="ds-related-card__title">
+            {{target.title}}
+            <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+          </div>
+          <div class="ds-related-card__description">{{target.intro}}</div>
+        </a>
+      {% endfor %}
+
+    {% endfor %}
+  </div>
+{% endif %}
+
+<div class="ds-related-card" hidden>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/actionbar-table-pagination/">
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">
+      Action Bar, Table, and Pagination
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Complement a data table with actions and pagination</div>
+  </a>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/destroy-prompt/">
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">
+      Destroy Prompt
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Prompt users to the implications of a destructive action</div>
+  </a>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}components/growl/">
+    <div class="ds-related-card__type">UI Component</div>
+    <div class="ds-related-card__title">
+      Growl Notifications
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Surface application messaging, providing information about page-level or out-of-view events.</div>
+  </a>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/page-title-area/">
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">
+      Page Title Area
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Complement the page title with breadcrumbs and primary actions.</div>
+  </a>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}patterns/stepped-process/">
+    <div class="ds-related-card__type">UX Pattern</div>
+    <div class="ds-related-card__title">
+      Stepped Process
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Lead the user through a series of steps or flow.</div>
+  </a>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}components/stepped-control/">
+    <div class="ds-related-card__type">UI Component</div>
+    <div class="ds-related-card__title">
+      Stepped Control
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Anchor a multi-step process with directional actions.</div>
+  </a>
+  <a class="ds-related-card__item" href="{{ site.baseurl }}components/search/">
+    <div class="ds-related-card__type">UI Component</div>
+    <div class="ds-related-card__title">
+      Search
+      <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+    </div>
+    <div class="ds-related-card__description">Allow users to search for specific content.</div>
+  </a>
+</div>

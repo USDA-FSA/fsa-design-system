@@ -15243,10 +15243,6 @@ html body.x-ray .fsa-modal {
   color: #2f2c2a !important;
 }
 
-.ds-related-card__item:hover {
-  background-color: #f0f0f0;
-}
-
 .ds-related-card__title {
   font-size: 20px;
   font-size: 2rem;
