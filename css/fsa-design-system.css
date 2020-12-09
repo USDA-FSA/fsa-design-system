@@ -15204,19 +15204,24 @@ html body.x-ray .fsa-modal {
 
 @media (min-width: 30.0625em) {
   .ds-related-card {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
+    letter-spacing: -.31em;
+    *letter-spacing: normal;
+    *word-spacing: -.43em;
+    text-rendering: optimizespeed;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin-left: -2.55rem;
   }
-}
-
-@media (min-width: 37.5em) {
-  .ds-related-card {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 2.4rem;
+  @supports (display: flex) {
+    .ds-related-card {
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
   }
 }
 
@@ -15229,13 +15234,30 @@ html body.x-ray .fsa-modal {
 .ds-related-card__item {
   display: block;
   text-decoration: none;
-  margin-bottom: 12px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 @media (min-width: 30.0625em) {
   .ds-related-card__item {
-    margin-bottom: initial;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    padding-left: 2.55rem;
+    width: 50%;
+  }
+  .fsa-grid--no-gutter .ds-related-card__item {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .ds-related-card__item {
+    width: 33.3333333333%;
   }
 }
 

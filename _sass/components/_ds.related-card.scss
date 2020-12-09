@@ -1,15 +1,11 @@
 .ds-related-card {
 
   & {
+
     @include breakpoint(S) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: $size-default;
+      @include fsa-grid-row();
     }
-    @include breakpoint(M) {
-      grid-template-columns: repeat(3, 1fr);
-      gap: $size-medium;
-    }
+
   }
 
   &__type {
@@ -22,10 +18,17 @@
     & {
       display: block;
       text-decoration: none;
-      margin-bottom: $size-default;
+      margin-bottom: $size-medium;
+
       @include breakpoint(S) {
-        margin-bottom: initial;
+        @include fsa-grid-column();
+        @include fsa-grid-column-width(6);
       }
+
+      @include breakpoint(M) {
+        @include fsa-grid-column-width(4);
+      }
+
     }
 
     &:link,
