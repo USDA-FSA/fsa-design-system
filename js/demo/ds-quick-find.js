@@ -124,7 +124,7 @@ if ('serviceWorker' in navigator) {
 
 
         if(qf.search.value!=''){ // isn't empty
-          if(qf.search.value.length > 2){ // run only if 3+ characters
+          if(qf.search.value.length > 1){ // run only if at least 2 characters
 
             qf.search.setAttribute('aria-expanded', 'true');
 
@@ -200,7 +200,7 @@ if ('serviceWorker' in navigator) {
         qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
             <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
               <span class="ds-quick-find__text">${newText}</span>
-              <!-- <span class="ds-quick-find__keyword">${keywords}</span> -->
+              <span class="ds-quick-find__keyword">${keywords}</span>
             </a>
           </li>`;
         qf.keywords += ' ' + keywords;
@@ -229,7 +229,7 @@ if ('serviceWorker' in navigator) {
           qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
                            <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
                              <span class="ds-quick-find__text">${newText}</span>
-                             <!-- <span class="ds-quick-find__keyword">${keywords}</span> -->
+                             <span class="ds-quick-find__keyword">${keywords}</span>
                            </a>
                          </li>`
         } else {
@@ -243,7 +243,7 @@ if ('serviceWorker' in navigator) {
           qf.newHTML += `<li role="option" aria-selected="false" class="ds-quick-find__output-item">
                            <a onclick="QuickFind.navigateTo('${item.url}', this.innerText); return false;" class="ds-quick-find__output-link" href="">
                              <span class="ds-quick-find__text">${newParentText} / ${newText}</span>
-                             <!-- <span class="ds-quick-find__keyword">${keywords}</span> -->
+                             <span class="ds-quick-find__keyword">${keywords}</span>
                            </a>
                          </li>`
         }
