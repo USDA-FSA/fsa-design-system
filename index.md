@@ -50,7 +50,7 @@ custom_js: ["ga-tracker.js", "ds-quick-find.js"]
       <a class="ds-home-features__link" href="{{ site.baseurl }}patterns/">
         <span class="ds-home-features__title">UX Patterns</span>
         <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_patterns_2x.png" alt="">
-        <p class="ds-home-features__blurb">Structure and arrange content with Layout components.</p>
+        <p class="ds-home-features__blurb">Repeatable combinations of Design System components for recurring design problems.</p>
       </a>
     </div>
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
