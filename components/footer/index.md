@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Footer"
 intro: "This Global Footer Component may be used for FPAC products with standard links along with application specific links."
 jump_menu: true
@@ -242,6 +243,8 @@ jump_menu: true
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

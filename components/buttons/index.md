@@ -1,9 +1,20 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Buttons"
 shortName: "component__buttons"
 intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
+relatedItems:
+  - "Action Bar with Table"
+  - "Button Group"
+  - "Destroy Prompt"
+  - "Form Fields"
+  - "Growl Notification"
+  - "Page Title Area"
+  - "Search"
+  - "Stepped Control"
+  - "Stepped Process"
 jump_menu: true
 ---
 
@@ -60,7 +71,6 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 ```html
 <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
 ```
-
 
 ## States
 
@@ -157,6 +167,8 @@ Several of a button's style properties can be selectively modified across each M
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 <table class="fsa-table fsa-table--responsive">
   <thead>
@@ -536,10 +548,5 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## Related Resources
 
-* [Applications Guide]({{ site.baseurl }}guides/applications/buttons)
-* [Form Fields]({{ site.baseurl }}fsa-design-system/components/form-fields/)
-* [Button Group]({{ site.baseurl }}components/button-group)
-* [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/)
-* [Search]({{ site.baseurl }}fsa-design-system/components/search/)
 * [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 * [Color]({{ site.baseurl }}visual-style/color/)

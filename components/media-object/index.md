@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Media Object"
 shortName: "component__media-objects"
 intro: "Pair an object (typically an image) with text-based content to one of the sides."

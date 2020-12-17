@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Timeline"
 intro: "List system and user activity chronologically."
 jump_menu: true
@@ -317,6 +318,8 @@ Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

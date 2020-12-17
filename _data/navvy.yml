@@ -238,8 +238,8 @@
   href: "patterns"
   subcategories:
 
-    - subtitle: "Action Bar, Table, Pagination"
-      subhref: "patterns/actionbar-table-pagination"
+    - subtitle: "Action Bar and Table"
+      subhref: "patterns/actionbar-and-table"
       img: "img/subcategories/box.png"
 
     - subtitle: "Stepped Process"

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Level"
 shortName: "component__level"
 intro: "Multi-purpose layout component typically used for simple horizontal arrangement using the CSS Flexbox Model."
@@ -32,6 +33,8 @@ jump_menu: true
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Structure
 

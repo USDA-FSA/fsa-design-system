@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Pagination"
 shortName: "component__pagination"
 intro: "The Pagination Component allows for an optimized way to provide a more consumable structure for large datasets."
@@ -433,6 +434,8 @@ Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` el
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

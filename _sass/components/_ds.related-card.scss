@@ -1,0 +1,62 @@
+.ds-related-card {
+
+  & {
+
+    @include breakpoint(S) {
+      @include fsa-grid-row();
+    }
+
+  }
+
+  &__type {
+    @include font-size(1);
+    text-transform: uppercase;
+  }
+
+  &__item {
+
+    & {
+      display: block;
+      text-decoration: none;
+      margin-bottom: $size-medium;
+
+      @include breakpoint(S) {
+        @include fsa-grid-column();
+        @include fsa-grid-column-width(6);
+      }
+
+      @include breakpoint(M) {
+        @include fsa-grid-column-width(4);
+      }
+
+    }
+
+    &:link,
+    &:visited {
+      color: $color-fsa-base !important;
+    }
+
+  }
+
+  &__title {
+
+    @include font-size(4);
+    color: $color-fsa-link;
+    font-weight: $font-bold;
+    display: flex;
+    align-items: baseline;
+
+    .ds-related-card__item:hover & {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__arr {
+    width: $size-default;
+    margin-left: $size-small;
+  }
+
+  &__description {}
+
+}

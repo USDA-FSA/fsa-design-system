@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Inline Alerts"
 shortName: "component__alerts"
 intro: "Inline Alerts help to provide inline, page-level messaging to the User. These may be as the result of a user's specific actions or unsolicited messages."
@@ -151,6 +152,8 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

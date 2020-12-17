@@ -1,9 +1,14 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Stepped Control"
 shortName: "component__stepped-control"
-intro: "Anchor a multi-step process with directional actions, typically paired with <a href=\"../stepped-tabs/\">Stepped Tabs</a>."
+intro: "Anchor a multi-step process with directional actions."
+relatedItems:
+  - "Buttons"
+  - "Stepped Process"
+  - "Stepped Tabs"
 jump_menu: true
 title_label: 'May Require JavaScript'
 ---
@@ -534,6 +539,8 @@ title_label: 'May Require JavaScript'
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

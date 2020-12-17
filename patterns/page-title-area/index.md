@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Patterns"
+type: "UX Pattern"
 title: "Page Title Area"
 shortName: "pattern__page-title-area"
 intro: "Complement the page title with breadcrumbs and primary actions."

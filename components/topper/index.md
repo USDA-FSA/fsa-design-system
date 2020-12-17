@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Topper"
 intro: "Provides a way for a User to return to the top of the page."
 jump_menu: true
@@ -59,6 +60,8 @@ jump_menu: true
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

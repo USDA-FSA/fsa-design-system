@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Top Hat"
 intro: "Indicates associated USDA agency and organization."
 jump_menu: true
@@ -129,6 +130,8 @@ jump_menu: true
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

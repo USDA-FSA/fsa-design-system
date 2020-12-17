@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Box"
 shortName: "component__box"
 intro: ""
@@ -124,17 +125,9 @@ Selectively override several style properties of `.fsa-box` at each Media Query 
   </div>
 </div>
 
-<!-- ## Usage
+## Usage
 
-### Use When
+<!-- {% include do-dont.html %} -->
 
-asdf
+{% include related-cards.html %}
 
-### Don't Use
-
-qwer
-
-## General Guidance
-
-* asdf
-* asdf -->

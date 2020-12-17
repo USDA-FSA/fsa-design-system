@@ -1,9 +1,12 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Spinbox"
 shortName: "component__spinbox"
 intro: "A Spinbox Component provides enhanced controls for a numeric input, designed to expedite data entry."
+relatedItems:
+  - "Form Fields"
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---
@@ -331,6 +334,8 @@ This example uses `step="100"` `min="-400"` `max="500"` for attributes.
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 
