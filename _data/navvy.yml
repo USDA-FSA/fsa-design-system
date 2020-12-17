@@ -240,19 +240,19 @@
 
     - subtitle: "Action Bar and Table"
       subhref: "patterns/actionbar-and-table"
-      img: "img/subcategories/box.png"
+      img: "img/subcategories/actionbar-and-table.png"
 
     - subtitle: "Stepped Process"
       subhref: "patterns/stepped-process"
-      img: "img/subcategories/box.png"
+      img: "img/subcategories/stepped-process.png"
 
     - subtitle: "Page Title Area"
       subhref: "patterns/page-title-area"
-      img: "img/subcategories/box.png"
+      img: "img/subcategories/page-title-area.png"
 
     - subtitle: "Destroy Prompt"
       subhref: "patterns/destroy-prompt"
-      img: "img/subcategories/box.png"
+      img: "img/subcategories/destroy-prompt.png"
 
 - title: "Utilities"
   href: "utilities"
