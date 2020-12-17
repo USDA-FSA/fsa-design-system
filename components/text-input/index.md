@@ -6,7 +6,7 @@ title: "Text Input"
 shortName: "component__text-input"
 intro: "Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted)."
 relatedItems:
-  - "Action Bar, Table, and Pagination"
+  - "Action Bar with Table"
   - "Form Fields"
   - "Search"
   - "Spinbox"

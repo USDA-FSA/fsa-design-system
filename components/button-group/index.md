@@ -6,7 +6,7 @@ title: "Button Group"
 shortName: "component__button-group"
 intro: "Use button groups as a mechanism to toggle between multiple button actions."
 relatedItems:
-  - "Action Bar, Table, and Pagination"
+  - "Action Bar with Table"
 jump_menu: true
 ---
 

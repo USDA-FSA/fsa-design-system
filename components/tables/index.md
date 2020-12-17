@@ -6,6 +6,9 @@ title: "Tables"
 shortName: "component__tables"
 intro: "Data tables presenting tabular data in columns and rows."
 jump_menu: true
+relatedItems:
+  - "Action Bar with Table"
+  - "Destroy Prompt"
 custom_js: "table-select-demo.js"
 ---
 

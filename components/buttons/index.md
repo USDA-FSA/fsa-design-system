@@ -6,7 +6,7 @@ title: "Buttons"
 shortName: "component__buttons"
 intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
 relatedItems:
-  - "Action Bar, Table, and Pagination"
+  - "Action Bar with Table"
   - "Button Group"
   - "Destroy Prompt"
   - "Form Fields"

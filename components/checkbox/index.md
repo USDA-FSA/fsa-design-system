@@ -7,7 +7,7 @@ shortName: "component__checkbox"
 intro: "A form element enabling the selection of one or more options from a visible list."
 custom_js: "checkbox.js"
 relatedItemsrelatedItems:
-  - "Action Bar, Table, and Pagination"
+  - "Action Bar with Table"
   - "Form Fields"
   - "Select Multi"
 jump_menu: true

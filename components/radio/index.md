@@ -6,7 +6,7 @@ title: "Radio"
 shortName: "component__radio"
 intro: "Radio buttons allow users to see all available choices at once and select exactly one option."
 relatedItems:
-  - "Action Bar, Table, and Pagination"
+  - "Action Bar with Table"
   - "Form Fields"
 jump_menu: true
 ---
