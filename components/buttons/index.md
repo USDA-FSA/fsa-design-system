@@ -18,14 +18,16 @@ relatedItems:
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
-  </ul>
-</div>
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
+</ul>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Variations
 
@@ -38,90 +40,82 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 ### Default
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Secondary
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-```
+{% endcapture %}
 
 ### Flat
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Tertiary
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## States
 
 Each button variation can be modified with one or multiple states:
 
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--[state]" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Full-width
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--block" type="button">Label</button>
-```
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Disabled
 
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
-  </ul>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>
-```
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
+</ul>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Label</button>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--small" type="button">Label</button>
-```
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Label</button>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--large" type="button">Label</button>
-```
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 
