@@ -52,6 +52,8 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
 {% endcapture %}
 
+{% include preview-and-snippet.html %}
+
 ### Flat
 
 {% capture snippet %}
