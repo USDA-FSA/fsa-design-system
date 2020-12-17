@@ -1,13 +1,16 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Button Group"
 shortName: "component__button-group"
 intro: "Use button groups as a mechanism to toggle between multiple button actions."
+relatedItems:
+  - "Action Bar with Table"
 jump_menu: true
 ---
 
-<div class="ds-preview fsa-m-t--none">
+<div class="ds-preview">
   <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
     <button class="fsa-btn-group__item" type="button">Label</button>
     <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
@@ -152,6 +155,8 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

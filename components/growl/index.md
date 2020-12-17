@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Growl Notification"
 shortName: "component__growl"
 intro: "A Growl Notification surfaces application messaging, providing information about page-level or out-of-view events."
@@ -384,6 +385,8 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

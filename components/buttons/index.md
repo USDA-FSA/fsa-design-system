@@ -1,20 +1,33 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Buttons"
 shortName: "component__buttons"
 intro: "Signal key <strong>actions</strong> on a page, form, or dialog."
+relatedItems:
+  - "Action Bar with Table"
+  - "Button Group"
+  - "Destroy Prompt"
+  - "Form Fields"
+  - "Growl Notification"
+  - "Page Title Area"
+  - "Search"
+  - "Stepped Control"
+  - "Stepped Process"
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
-  </ul>
-</div>
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
+</ul>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Variations
 
@@ -27,91 +40,84 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 ### Default
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Secondary
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Flat
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Tertiary
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-</div>
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-```
+{% endcapture %}
 
+{% include preview-and-snippet.html %}
 
 ## States
 
 Each button variation can be modified with one or multiple states:
 
-```html
+{% capture snippet %}
 <button class="fsa-btn fsa-btn--[variation] fsa-btn--[state]" type="button">Label</button>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Full-width
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--block" type="button">Label</button>
-```
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Disabled
 
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
-    <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
-  </ul>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation]" type="button" disabled="disabled">Label</button>
-```
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
+</ul>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Label</button>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--small" type="button">Label</button>
-```
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary fsa-btn--small" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Label</button>
-</div>
-```html
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--large" type="button">Label</button>
-```
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary fsa-btn--large" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 
@@ -157,6 +163,8 @@ Several of a button's style properties can be selectively modified across each M
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 <table class="fsa-table fsa-table--responsive">
   <thead>
@@ -536,10 +544,5 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## Related Resources
 
-* [Applications Guide]({{ site.baseurl }}guides/applications/buttons)
-* [Form Fields]({{ site.baseurl }}fsa-design-system/components/form-fields/)
-* [Button Group]({{ site.baseurl }}components/button-group)
-* [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/)
-* [Search]({{ site.baseurl }}fsa-design-system/components/search/)
 * [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
 * [Color]({{ site.baseurl }}visual-style/color/)

@@ -1,9 +1,12 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Select"
 shortName: "component__select"
 intro: "Sometimes referred to as a “drop down,” the select element allows users to select one option from a list."
+relatedItems:
+  - "Form Fields"
 jump_menu: true
 ---
 
@@ -333,6 +336,8 @@ Selectively override several style properties at each Media Query breakpoint.
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

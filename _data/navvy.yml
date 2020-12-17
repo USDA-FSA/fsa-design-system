@@ -43,7 +43,7 @@
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
-- title: "Components"
+- title: "UI Components"
   href: "components"
   componentgroup:
 
@@ -141,6 +141,34 @@
           subhref: "components/splash"
           img: "img/subcategories/splash.png"
 
+    - title: "Layout"
+      subcategories:
+
+        - subtitle: "Box"
+          subhref: "components/box"
+          img: "img/subcategories/box.png"
+
+        - subtitle: "Divider"
+          subhref: "components/divider"
+          img: "img/subcategories/divider.png"
+
+        - subtitle: "Grid System"
+          subhref: "components/grid"
+          img: "img/subcategories/grid.png"
+
+        - subtitle: "Level"
+          subhref: "components/level"
+          img: "img/subcategories/level.png"
+
+        - subtitle: "Media Object"
+          subhref: "components/media-object"
+          img: "img/subcategories/media-objects.png"
+          deprecated: 'true'
+
+        - subtitle: "Section"
+          subhref: "components/section"
+          img: "img/subcategories/section.png"
+
     - title: "Pivot"
       subcategories:
 
@@ -209,34 +237,25 @@
           subhref: "components/screen-id"
           img: "img/subcategories/screen-id.png"
 
-- title: "Layout"
-  href: "layout"
+- title: "UX Patterns"
+  href: "patterns"
   subcategories:
 
-    - subtitle: "Box"
-      subhref: "layout/box"
-      img: "img/subcategories/box.png"
+    - subtitle: "Action Bar and Table"
+      subhref: "patterns/actionbar-and-table"
+      img: "img/subcategories/actionbar-and-table.png"
 
-    - subtitle: "Divider"
-      subhref: "layout/divider"
-      img: "img/subcategories/divider.png"
+    - subtitle: "Stepped Process"
+      subhref: "patterns/stepped-process"
+      img: "img/subcategories/stepped-process.png"
 
-    - subtitle: "Grid System"
-      subhref: "layout/grid"
-      img: "img/subcategories/grid.png"
+    - subtitle: "Page Title Area"
+      subhref: "patterns/page-title-area"
+      img: "img/subcategories/page-title-area.png"
 
-    - subtitle: "Level"
-      subhref: "layout/level"
-      img: "img/subcategories/level.png"
-
-    - subtitle: "Media Object"
-      subhref: "layout/media-object"
-      img: "img/subcategories/media-objects.png"
-      deprecated: 'true'
-
-    - subtitle: "Section"
-      subhref: "layout/section"
-      img: "img/subcategories/section.png"
+    - subtitle: "Destroy Prompt"
+      subhref: "patterns/destroy-prompt"
+      img: "img/subcategories/destroy-prompt.png"
 
 - title: "Utilities"
   href: "utilities"

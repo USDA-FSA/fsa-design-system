@@ -1,9 +1,15 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Text Input"
 shortName: "component__text-input"
 intro: "Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted)."
+relatedItems:
+  - "Action Bar with Table"
+  - "Form Fields"
+  - "Search"
+  - "Spinbox"
 jump_menu: true
 ---
 
@@ -193,6 +199,8 @@ Selectively override several style properties at each Media Query breakpoint
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

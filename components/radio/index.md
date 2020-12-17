@@ -1,9 +1,13 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Radio"
 shortName: "component__radio"
 intro: "Radio buttons allow users to see all available choices at once and select exactly one option."
+relatedItems:
+  - "Action Bar with Table"
+  - "Form Fields"
 jump_menu: true
 ---
 
@@ -422,6 +426,8 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

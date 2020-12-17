@@ -1,10 +1,15 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Checkbox"
 shortName: "component__checkbox"
 intro: "A form element enabling the selection of one or more options from a visible list."
 custom_js: "checkbox.js"
+relatedItemsrelatedItems:
+  - "Action Bar with Table"
+  - "Form Fields"
+  - "Select Multi"
 jump_menu: true
 ---
 
@@ -555,6 +560,8 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 
 {% include do-dont.html %}
 
+{% include related-cards.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.
@@ -570,7 +577,3 @@ If you customize a checkbox element, ensure they continue to meet the the access
 * Options that are listed vertically are easier to read than those listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which checkbox.
 * Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive promotional email.
 * Make sure selections are adequately spaced for touch screens.
-
-## Related Resources
-
-* [Form Fields]({{ site.baseurl }}components/form-fields)
