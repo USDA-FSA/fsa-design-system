@@ -15840,6 +15840,17 @@ pre.highlight .ds-clipboard {
   text-decoration: none;
 }
 
+.ds-sitemap__keyword {
+  display: block;
+  font-size: 76%;
+  color: #999;
+  background-color: yellow;
+}
+
+.ds-sitemap__keyword:empty {
+  display: none;
+}
+
 .your-custom-list {
   display: block;
   list-style-type: none;
@@ -16053,7 +16064,10 @@ pre.highlight .ds-clipboard {
     color: #494440;
   }
   .ds-quick-find__output-link, .ds-quick-find__output-link:visited {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+        align-items: baseline;
     padding: 0.8rem 1.2rem;
     text-decoration: none;
     color: #2f2c2a;
@@ -16075,6 +16089,14 @@ pre.highlight .ds-clipboard {
   }
   .ds-quick-find__output-link:focus {
     outline-offset: -3px;
+  }
+  .ds-quick-find__text {
+    margin-right: 0.8rem;
+  }
+  .ds-quick-find__keyword {
+    margin-left: auto;
+    font-size: 1.4rem;
+    color: #75716e;
   }
 }
 

@@ -71,7 +71,8 @@
     &__output-link {
       &,
       &:visited {
-        display: block;
+        display: flex;
+        align-items: baseline;
         padding: $size-small $size-default;
         text-decoration: none;
         color: $color-fsa-base;
@@ -92,6 +93,14 @@
         outline-offset: -3px;
       }
 
+    }
+    &__text {
+      margin-right: $size-small;
+    }
+    &__keyword {
+      margin-left: auto;
+      @include font-size(1);
+      color: $color-fsa-tertiary-300;
     }
   }
 }

@@ -77,4 +77,18 @@
 
   }
 
+  &__text {
+  }
+
+  &__keyword {
+    // display: none;
+    display: block;
+    font-size: 76%;
+    color: #999;
+    background-color: yellow;
+    &:empty {
+      display: none;
+    }
+  }
+
 }
