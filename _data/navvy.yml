@@ -1,53 +1,67 @@
 - title: "Home"
+  keyword: ""
   href: "index.html"
   exclude_from_sitemap: true
   # exclude_from_nav: true
 
 - title: "Getting Started"
+  keyword: "USWDS,18F"
   href: "getting-started"
   exclude_from_nav: true
   subcategories:
 
   - subtitle: "How to use"
+    keyword: "Install,NPM,Download,Boilerplate,Code"
     subhref: "getting-started/#how-to-use"
 
   - subtitle: "When to use"
+    keyword: "SPA,Single Page Application,Angular"
     subhref: "getting-started/#when-to-use"
 
   - subtitle: "Browser Support"
+    keyword: "Edge,Chrome,Firefox,IE,Explorer,Progressive Enhancement"
     subhref: "getting-started/#browser-support"
 
   - subtitle: "Release History"
+    keyword: "Version,Notes"
     subhref: "getting-started/#release-history"
 
   - subtitle: "Contributing"
+    keyword: "Open Source"
     subhref: "getting-started/#contributing"
 
 - title: "Visual Style"
+  keyword: "Style Guide,Visual Language,Brand"
   href: "visual-style"
   subcategories:
 
     - subtitle: "Logo"
+      keyword: "Brand"
       subhref: "visual-style/logo"
       img: "img/subcategories/logo.png"
 
     - subtitle: "Color"
+      keyword: "Token,Variables,Swatch"
       subhref: "visual-style/color"
       img: "img/subcategories/color.png"
 
     - subtitle: "Typography"
+      keyword: "Web Font,Fonts"
       subhref: "visual-style/typography"
       img: "img/subcategories/typography.png"
 
     - subtitle: "Size and Spacing Units"
+      keyword: "Space"
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
 - title: "UI Components"
+  keyword: "Widgets"
   href: "components"
   componentgroup:
 
     - title: "Form Elements"
+      keyword: "Controls"
       subcategories:
 
         - subtitle: "Buttons"
@@ -57,85 +71,100 @@
         - subtitle: "Button Group"
           subhref: "components/button-group"
           img: "img/subcategories/button-group.png"
+          keyword: "Scope,Segment"
 
         - subtitle: "Checkbox"
           subhref: "components/checkbox"
           img: "img/subcategories/checkbox.png"
+          keyword: "Selection,Choose,Choice"
 
         - subtitle: "Date Picker"
           subhref: "components/date-picker"
           img: "img/subcategories/date-picker.png"
+          keyword: "Calendar"
 
         - subtitle: "Form Fields"
           subhref: "components/form-fields"
           img: "img/subcategories/form-fields.png"
+          keyword: "File Upload"
 
         - subtitle: "Radio"
           subhref: "components/radio"
           img: "img/subcategories/radio.png"
+          keyword: "Selection,Choose,Choice"
 
         - subtitle: "Search"
           subhref: "components/search"
           img: "img/subcategories/search.png"
+          keyword: "Find"
 
         - subtitle: "Select"
           subhref: "components/select"
           img: "img/subcategories/select.png"
+          keyword: "Dropdown,Pulldown,Menu,Selection,Choose,Choice,Picklist"
 
         - subtitle: "Select Multi"
           subhref: "components/select-multi"
           img: "img/subcategories/select-multi.png"
-
-        - subtitle: "Slider"
-          subhref: "components/slider"
-          img: "img/subcategories/slider.png"
+          keyword: "Selection,Choose,Choice,Combo"
 
         - subtitle: "Spinbox"
           subhref: "components/spinbox"
           img: "img/subcategories/spinbox.png"
+          keyword: "Input,Number"
 
         - subtitle: "Stepped Control"
           subhref: "components/stepped-control"
           img: "img/subcategories/stepped-control.png"
+          keyword: "Process,Wizard"
 
         - subtitle: "Switch"
           subhref: "components/switch"
           img: "img/subcategories/switch.png"
+          keyword: "Toggle"
 
         - subtitle: "Text Input"
           subhref: "components/text-input"
           img: "img/subcategories/text-input.png"
+          keyword: "Textbox,Input"
 
         - subtitle: "Textarea"
           subhref: "components/textarea"
           img: "img/subcategories/textarea.png"
 
     - title: "Feedback"
+      keyword: ""
       subcategories:
 
         - subtitle: "Badges"
           subhref: "components/badges"
           img: "img/subcategories/badges.png"
+          keyword: "Pill,Chip"
 
         - subtitle: "Growl Notifications"
           subhref: "components/growl"
           img: "img/subcategories/growl.png"
+          keyword: "Toast,Alert,Snack Bar,Banner,Prompt"
 
         - subtitle: "Inline Alerts"
           subhref: "components/alerts"
           img: "img/subcategories/alerts.png"
+          keyword: "Notification"
 
         - subtitle: "Labels"
           subhref: "components/labels"
           img: "img/subcategories/labels.png"
+          keyword: "Pill,Chip,Tag"
 
         - subtitle: "Modal"
           subhref: "components/modal"
           img: "img/subcategories/modal.png"
+          keyword: "Dialog,Popup,Prompt"
 
         - subtitle: "Progress"
           subhref: "components/progress"
           img: "img/subcategories/progress.png"
+          keyword: "Status,Scroll,Loading,Processing"
 
         - subtitle: "Splash"
           subhref: "components/splash"
@@ -145,31 +174,38 @@
       subcategories:
 
         - subtitle: "Box"
-          subhref: "components/box"
+          keyword: "Sheet,Card,Frame,Tile"
+          subhref: "layout/box"
           img: "img/subcategories/box.png"
 
         - subtitle: "Divider"
-          subhref: "components/divider"
+          keyword: "Horizontal Rule,Line,Border"
+          subhref: "layout/divider"
           img: "img/subcategories/divider.png"
 
         - subtitle: "Grid System"
-          subhref: "components/grid"
+          keyword: "Responsive,RWD"
+          subhref: "layout/grid"
           img: "img/subcategories/grid.png"
 
         - subtitle: "Level"
-          subhref: "components/level"
+          keyword: "Row,Stack"
+          subhref: "layout/level"
           img: "img/subcategories/level.png"
 
         - subtitle: "Media Object"
-          subhref: "components/media-object"
+          keyword: ""
+          subhref: "layout/media-object"
           img: "img/subcategories/media-objects.png"
           deprecated: 'true'
 
         - subtitle: "Section"
-          subhref: "components/section"
+          keyword: ""
+          subhref: "layout/section"
           img: "img/subcategories/section.png"
 
     - title: "Pivot"
+      keyword: "Navigation"
       subcategories:
 
         - subtitle: "Breadcrumbs"
@@ -183,6 +219,7 @@
         - subtitle: "Links"
           subhref: "components/links"
           img: "img/subcategories/links.png"
+          keyword: "Anchor"
 
         - subtitle: "Pagination"
           subhref: "components/pagination"
@@ -191,23 +228,29 @@
         - subtitle: "Stepped Tabs"
           subhref: "components/stepped-tabs"
           img: "img/subcategories/stepped-tabs.png"
+          keyword: "Process,Wizard,Progress Indicator"
 
     - title: "Tables and Lists"
+      keyword: ""
       subcategories:
 
         - subtitle: "Lists"
           subhref: "components/lists"
           img: "img/subcategories/lists.png"
+          keyword: "Bullets,Numbers"
 
         - subtitle: "Tables"
           subhref: "components/tables"
           img: "img/subcategories/tables.png"
+          keyword: "Tabular,Data"
 
         - subtitle: "Timeline"
           subhref: "components/timeline"
           img: "img/subcategories/timeline.png"
+          keyword: "History,Activity"
 
     - title: "Header"
+      keyword: "Masthead"
       subcategories:
 
         - subtitle: "Application Header"
@@ -217,12 +260,15 @@
         - subtitle: "Global Nav"
           subhref: "components/top-nav"
           img: "img/subcategories/top-nav.png"
+          keyword: "Tab,Menu,Navigation"
 
         - subtitle: "Top Hat"
           subhref: "components/tophat"
           img: "img/subcategories/tophat.png"
+          keyword: "Banner,Logo"
 
     - title: "Footer"
+      keyword: ""
       subcategories:
 
         - subtitle: "Footer"
@@ -258,62 +304,71 @@
       img: "img/subcategories/destroy-prompt.png"
 
 - title: "Utilities"
+  keyword: "helpers,Trumps,Alterations,Overrides,CSS"
   href: "utilities"
   subcategories:
 
     - subtitle: "Ellipsis"
+      keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
       img: "img/subcategories/ellipsis.png"
 
     - subtitle: "Floats"
+      keyword: ""
       subhref: "utilities/#floats"
       img: "img/subcategories/floats.png"
 
     - subtitle: "Margins"
+      keyword: "Space,Size"
       subhref: "utilities/#margins"
       img: "img/subcategories/margins.png"
 
     - subtitle: "Padding"
+      keyword: "Space,Size"
       subhref: "utilities/#padding"
       img: "img/subcategories/padding.png"
 
     - subtitle: "Screenreader only"
+      keyword: "Hidden,Hide"
       subhref: "utilities/#screenreader-only"
       img: "img/subcategories/screenreader-only.png"
 
     - subtitle: "Text Alignment"
+      keyword: "Typography"
       subhref: "utilities/#text-alignment"
       img: "img/subcategories/text-alignment.png"
 
     - subtitle: "Text Size"
+      keyword: "Font Size,Typography"
       subhref: "utilities/#text-size"
       img: "img/subcategories/text-size.png"
 
     - subtitle: "Text Headers"
+      keyword: "Font Size,Typography"
       subhref: "utilities/#text-headers"
       img: "img/subcategories/text-headers.png"
 
     - subtitle: "Visibility"
+      keyword: "Hidden,Hide,Show,Responsive"
       subhref: "utilities/#visibility"
       img: "img/subcategories/visibility.png"
 
 - title: "Guides"
+  keyword: ""
   href: "guides"
   subcategories:
 
     - subtitle: "Accessibility"
+      keyword: "Section 508"
       subhref: "guides/accessibility"
       img: "img/subcategories/accessibility.png"
 
     - subtitle: "Content"
+      keyword: ""
       subhref: "guides/content"
       img: "img/subcategories/content.png"
 
     - subtitle: "Front-end"
+      keyword: "HTML,CSS,SCSS,Sass,JS,JavaScript,Code"
       subhref: "guides/front-end"
       img: "img/subcategories/front-end.png"
-
-    # - subtitle: "Applications"
-    #   subhref: "guides/applications"
-    #   img: "img/subcategories/applications.png"
-

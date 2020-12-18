@@ -12,7 +12,6 @@
 
     &--root {
       @include breakpoint(XL) {
-        outline: 1px solid orangered;
         display: flex;
       }
     }
