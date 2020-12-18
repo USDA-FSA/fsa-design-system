@@ -1,0 +1,27 @@
+.ds-anatomy {
+
+  & {
+    h2[id] + & {
+      margin-top: -15px;
+      border-top: 0;
+    }
+  }
+
+
+  &__media {
+    @include breakpoint(L) {
+      flex: 1;
+      text-align: center;
+      &:not(:only-child) {
+        border-right: 0;
+      }
+    }
+  }
+
+  &__markers {
+    @include breakpoint(L) {
+      flex-basis: 200px;
+    }
+  }
+
+}

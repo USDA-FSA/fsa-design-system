@@ -1,9 +1,12 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Slider"
 shortName: "component__slider"
 intro: "The Slider component, also known as a Range Input, allows users to choose an approximate number from a range."
+relatedItems:
+  - "Form Fields"
 jump_menu: true
 title_label: 'May require JavaScript'
 ---
@@ -155,6 +158,8 @@ Nested within a [Form Field]({{ site.baseurl }}components/form-fields/).
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

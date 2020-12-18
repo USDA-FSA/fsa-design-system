@@ -4,7 +4,7 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<div class="ds-page-title">
+<div class="ds-page-title {% if page.full_width %}ds-page-title--full-width{% endif %}">
   <div class="ds-page-title__hd">
     <h1 class="ds-page-title__hd-text" id="article-title">
       {{ page.title }}
@@ -46,6 +46,8 @@ layout: default
 
     <article class="ds-article">
 
+      <h2 class="sr-only">Overview</h2>
+
       {% if page.intro %}
       <p class="fsa-text--lead">{{ page.intro }}</p>
       {% endif %}
@@ -58,8 +60,6 @@ layout: default
         </div>
         {% endunless %}
       {% endif %}
-
-      <h2 class="sr-only">Overview</h2>
 
       {{ content }}
 

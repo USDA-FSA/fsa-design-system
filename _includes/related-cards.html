@@ -1,0 +1,26 @@
+{% comment %}
+  !!!!!!
+  References "relatedItems" from Front Matter and populates
+{% endcomment %}
+
+{% if page.relatedItems %}
+  <div class="ds-related-card">
+    {% for item in page.relatedItems %}
+
+      {% assign target = item %}
+      {% assign pages = site.pages | where: 'title', target %}
+
+      {% for target in pages %}
+        <a class="ds-related-card__item" href="{{ site.baseurl }}{{target.url}}">
+          <div class="ds-related-card__type">{{target.type}}</div>
+          <div class="ds-related-card__title">
+            {{target.title}}
+            <img class="ds-related-card__arr" src="{{ site.baseurl }}img/chevron-right--link.svg" aria-hidden="true" alt="">
+          </div>
+          <div class="ds-related-card__description">{{target.intro}}</div>
+        </a>
+      {% endfor %}
+
+    {% endfor %}
+  </div>
+{% endif %}

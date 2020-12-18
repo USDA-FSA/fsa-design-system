@@ -1,11 +1,23 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Form Fields"
 shortName: "component__form-fields"
 intro: "Form fields are multifaceted components that allow Developers to create application forms with appropriate instructional and validation features."
 jump_menu: true
 custom_js: ["select-other.js", "datepicker-demo.js"]
+relatedItems:
+  - "Checkbox"
+  - "Buttons"
+  - "Date Picker"
+  - "Radio"
+  - "Select"
+  - "Select Multi"
+  - "Slider"
+  - "Spinbox"
+  - "Text Input"
+  - "Textarea"
 title_label: 'JavaScript Included'
 ---
 
@@ -19,19 +31,9 @@ title_label: 'JavaScript Included'
 
 ## Usage
 
-The **core nested component** of each variation and example include, though not limited to:
+{% include do-dont.html %}
 
-* [Checkbox]({{ site.baseurl }}components/checkbox/)
-* [Date Picker]({{ site.baseurl }}components/date-picker/)
-* [Radio]({{ site.baseurl }}components/radio/)
-* [Select]({{ site.baseurl }}components/select/)
-* [Select Multi]({{ site.baseurl }}components/select-multi/)
-* [Slider]({{ site.baseurl }}components/slider/)
-* [Spinbox]({{ site.baseurl }}components/spinbox/)
-* [Text Input]({{ site.baseurl }}components/text-input/)
-* [Textarea]({{ site.baseurl }}components/textarea/)
-
-Refer to each of their documentation pages for more complete usage guidelines.
+{% include related-cards.html %}
 
 ## Variations and Examples
 

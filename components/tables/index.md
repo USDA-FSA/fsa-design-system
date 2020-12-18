@@ -1,10 +1,14 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Tables"
 shortName: "component__tables"
 intro: "Data tables presenting tabular data in columns and rows."
 jump_menu: true
+relatedItems:
+  - "Action Bar with Table"
+  - "Destroy Prompt"
 custom_js: "table-select-demo.js"
 ---
 
@@ -1771,6 +1775,8 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Modal"
 shortName: "component__modal"
 intro: "Use a Modal to gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state."
@@ -215,6 +216,8 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

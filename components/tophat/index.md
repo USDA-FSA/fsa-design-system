@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Top Hat"
 intro: "Indicates associated USDA agency and organization."
 jump_menu: true
@@ -100,8 +101,6 @@ jump_menu: true
 
 ## Responsive
 
-{% include alert.rwd-rendering.html %}
-
 <div class="docs__rwd-demo-block">
   <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -117,6 +116,8 @@ jump_menu: true
   </div>
 </div>
 
+{% include alert.rwd-rendering.html %}
+
 ## Usage
 
 {% capture usage_do %}
@@ -129,6 +130,8 @@ jump_menu: true
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 
