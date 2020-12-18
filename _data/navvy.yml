@@ -175,33 +175,33 @@
 
         - subtitle: "Box"
           keyword: "Sheet,Card,Frame,Tile"
-          subhref: "layout/box"
+          subhref: "components/box"
           img: "img/subcategories/box.png"
 
         - subtitle: "Divider"
           keyword: "Horizontal Rule,Line,Border"
-          subhref: "layout/divider"
+          subhref: "components/divider"
           img: "img/subcategories/divider.png"
 
         - subtitle: "Grid System"
           keyword: "Responsive,RWD"
-          subhref: "layout/grid"
+          subhref: "components/grid"
           img: "img/subcategories/grid.png"
 
         - subtitle: "Level"
           keyword: "Row,Stack"
-          subhref: "layout/level"
+          subhref: "components/level"
           img: "img/subcategories/level.png"
 
         - subtitle: "Media Object"
           keyword: ""
-          subhref: "layout/media-object"
+          subhref: "components/media-object"
           img: "img/subcategories/media-objects.png"
           deprecated: 'true'
 
         - subtitle: "Section"
           keyword: ""
-          subhref: "layout/section"
+          subhref: "components/section"
           img: "img/subcategories/section.png"
 
     - title: "Pivot"
