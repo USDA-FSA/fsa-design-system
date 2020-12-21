@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Labels"
 shortName: "component__labels"
 intro: "Labels are used to draw attention to new, updated, or important content within an application."
@@ -190,6 +191,8 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Splash"
 intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true
@@ -89,6 +90,8 @@ The intention of a Splash screen is to provide a good first imporession of an ap
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Breadcrumbs"
 shortName: "component__breadcrumbs"
 intro: "Breadcrumbs are a secondary navigation element used to help orient a User within an application, and enable quick access to a parent level."
@@ -183,7 +184,6 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 <h1>Sports</h1>
 ```
 
-
 ## Usage
 
 {% capture usage_do %}
@@ -202,6 +202,8 @@ In this example the immediate parent, *American League*, acts as the last crumb 
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

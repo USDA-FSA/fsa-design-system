@@ -6,6 +6,7 @@ var TitleBar = require('./components/ds-page-title');
 var CodeToggle = require('./components/ds-code-toggle');
 var Xray = require('./components/ds-x-ray');
 var ViewSpacing = require('./components/ds-view-spacing');
+var AnatomyAnnotation = require('./components/ds-anatomy-annotation');
 var Clipboard = require('./components/ds-clipboard.js');
 
 // fsa-style: Components

@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Global Navigation"
 shortName: "component__top-nav"
 intro: "The Global Navigation Component shall be used to create a cohesive User Experience across all FPAC applications."
@@ -1642,6 +1643,8 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

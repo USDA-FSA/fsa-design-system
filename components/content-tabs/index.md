@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Content Tabs"
 shortName: "component__content-tabs"
 intro: "Use Content Tabs to arrange related information or functionality in a defined area on the same application page."
@@ -483,8 +484,6 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 
 ## Responsive
 
-{% include alert.rwd-rendering.html %}
-
 <div class="docs__rwd-demo-block">
   <div class="docs__rwd-embed-container">
     <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
@@ -499,6 +498,8 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
     </div>
   </div>
 </div>
+
+{% include alert.rwd-rendering.html %}
 
 ## Usage
 
@@ -515,6 +516,8 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

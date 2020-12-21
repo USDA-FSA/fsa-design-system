@@ -1,49 +1,7 @@
 .ds-disclaimer {
 
-  background-color: $color-fsa-primary-900;
-  height: auto;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-
   &__bd {
-    max-width: ($site-max-width + 24px);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    color: $color-fsa-white;
-    padding: 0 $size-default;
-  }
-
-  &__stage {
-
-    @include breakpoint(M) {
-      display: block;
-    }
-
-    &--prototype {
-      @include font-size(0);
-      background-color: $color-gold-light;
-      color: $color-fsa-black;
-      padding: 0 $size-base;
-      position: relative;
-      top: -2px;
-    }
-
-  }
-
-  &__us-tog {
-
-    display: none;
-
-    @include breakpoint(S) {
-      display: inline;
-    }
-
-  }
-
-  // scss-lint:disable SelectorFormat
-  .usa-flag_icon {
-    margin-right: $size-small;
+    max-width: ($site-max-width + 36px);
   }
 
 }

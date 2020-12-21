@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Badges"
 shortName: "component__badges"
 intro: "Badges are used as indicators of an update or action items that have yet to be completed."
@@ -189,6 +190,8 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## General Guidance
 

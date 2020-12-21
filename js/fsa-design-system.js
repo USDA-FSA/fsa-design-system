@@ -54,7 +54,7 @@ if ($swatchItem.length) { // only run if at least one instance
 
 console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"jquery":22}],2:[function(require,module,exports){
+},{"jquery":23}],2:[function(require,module,exports){
 var $ = window.jQuery = require('jquery');
 
 $('body').on('click', '[data-behavior~="toggle-rwd-size"]', function(event) {
@@ -91,7 +91,19 @@ $('body').on('change', '[data-behavior~="toggle-rwd-table"]', function(event) {
 
 console.log('DocsRWD loaded, its JS is NOT to be used for Production, demo purposes only');1
 
-},{"jquery":22}],3:[function(require,module,exports){
+},{"jquery":23}],3:[function(require,module,exports){
+var Toggle = require('./ds-toggle')
+
+var anatomyAnnotation = new Toggle();
+
+anatomyAnnotation.init({
+  toggleId: 'annotation-toggle',
+  toggleHolderId: 'annotation-toggle-holder',
+  holderClassPrefix: 'ds-docs-holder', // 'ds-docs-holder__on' or 'ds-docs-holder__off'
+  isOnInit: true,
+  useStorage: false
+})
+},{"./ds-toggle":8}],4:[function(require,module,exports){
 (function (global){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -150,7 +162,7 @@ if (ClipboardJS.isSupported()) {
 console.log('Clipboard Loaded, its JS is NOT to be used for Production, demo purposes only');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/clipboard.js":20,"jquery":22}],4:[function(require,module,exports){
+},{"../vendor/clipboard.js":21,"jquery":23}],5:[function(require,module,exports){
 var PageToggle = require('./ds-page-toggle')
 
 var showCode = new PageToggle();
@@ -159,7 +171,7 @@ showCode.init({
   toggleId: 'ds-doc-code-toggle',
   bodyClass: 'ds-show-da-code'
 });
-},{"./ds-page-toggle":6}],5:[function(require,module,exports){
+},{"./ds-page-toggle":7}],6:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -224,7 +236,7 @@ if(pageTitle__elements.length){
 
 console.log('ds-page-title loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18}],6:[function(require,module,exports){
+},{"../utilities/helper":19}],7:[function(require,module,exports){
 var Storage = require('../utilities/storage');
 
 var PageToggle = function () {
@@ -282,7 +294,7 @@ var PageToggle = function () {
 };
 
 module.exports = PageToggle;
-},{"../utilities/storage":19}],7:[function(require,module,exports){
+},{"../utilities/storage":20}],8:[function(require,module,exports){
 var Storage = require('../utilities/storage');
 var Helper = require('../utilities/helper');
 
@@ -359,7 +371,7 @@ var Toggle = function () {
 };
 
 module.exports = Toggle;
-},{"../utilities/helper":18,"../utilities/storage":19}],8:[function(require,module,exports){
+},{"../utilities/helper":19,"../utilities/storage":20}],9:[function(require,module,exports){
 var Toggle = require('./ds-toggle')
 
 var viewSpacing = new Toggle();
@@ -370,7 +382,7 @@ viewSpacing.init({
   isOnInit: true,
   useStorage: false
 })
-},{"./ds-toggle":7}],9:[function(require,module,exports){
+},{"./ds-toggle":8}],10:[function(require,module,exports){
 var PageToggle = require('./ds-page-toggle')
 
 var xray = new PageToggle();
@@ -380,7 +392,7 @@ xray.init({
   bodyClass: 'x-ray',
   useStorage: false
 })
-},{"./ds-page-toggle":6}],10:[function(require,module,exports){
+},{"./ds-page-toggle":7}],11:[function(require,module,exports){
 (function (global){
 global.jQuery = require('jquery');
 var $ = global.jQuery;
@@ -429,7 +441,7 @@ jQuery(document).ready(function($){
 //module.exports = Jump;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../vendor/jquery.OnePageNav.js":21,"jquery":22}],11:[function(require,module,exports){
+},{"../vendor/jquery.OnePageNav.js":22,"jquery":23}],12:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -559,7 +571,7 @@ function growl__trapTab(e){
 
 console.log('GrowlComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18,"./fsa-whiteout":16}],12:[function(require,module,exports){
+},{"../utilities/helper":19,"./fsa-whiteout":17}],13:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -682,7 +694,7 @@ function modal__trapTab(e){
 
 console.log('ModalComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18,"./fsa-whiteout":16}],13:[function(require,module,exports){
+},{"../utilities/helper":19,"./fsa-whiteout":17}],14:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -774,7 +786,7 @@ selectMulti__setState();
 
 console.log('SelectMultipleComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18}],14:[function(require,module,exports){
+},{"../utilities/helper":19}],15:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -832,7 +844,7 @@ Helper.forEach(spinbox__triggers, function (index, value) {
 
 console.log('Spinbox loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18}],15:[function(require,module,exports){
+},{"../utilities/helper":19}],16:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -893,7 +905,7 @@ if(steppedControl__elements.length){
 
 console.log('SteppedControl loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18}],16:[function(require,module,exports){
+},{"../utilities/helper":19}],17:[function(require,module,exports){
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
 // None of this is production-quality. Do not use for production. Use as inspiration and guidance for yours.
@@ -928,7 +940,7 @@ Helper.forEach(whiteout__dismiss, function (index, value) {
 
 console.log('WhiteoutComponent loaded, its JS is NOT to be used for Production, demo purposes only');
 
-},{"../utilities/helper":18}],17:[function(require,module,exports){
+},{"../utilities/helper":19}],18:[function(require,module,exports){
 'use strict';
 
 // fsa-design-system: Doc Specific
@@ -937,6 +949,7 @@ var TitleBar = require('./components/ds-page-title');
 var CodeToggle = require('./components/ds-code-toggle');
 var Xray = require('./components/ds-x-ray');
 var ViewSpacing = require('./components/ds-view-spacing');
+var AnatomyAnnotation = require('./components/ds-anatomy-annotation');
 var Clipboard = require('./components/ds-clipboard.js');
 
 // fsa-style: Components
@@ -950,7 +963,7 @@ var Spinbox = require('./components/fsa-spinbox');
 // fsa-style: Docs
 var ColorDocs = require('./components/docs-color');
 var DocsRWD = require('./components/docs-rwd');
-},{"./components/docs-color":1,"./components/docs-rwd":2,"./components/ds-clipboard.js":3,"./components/ds-code-toggle":4,"./components/ds-page-title":5,"./components/ds-view-spacing":8,"./components/ds-x-ray":9,"./components/ds.jump":10,"./components/fsa-growl":11,"./components/fsa-modal":12,"./components/fsa-select-multi":13,"./components/fsa-spinbox":14,"./components/fsa-stepped-control":15}],18:[function(require,module,exports){
+},{"./components/docs-color":1,"./components/docs-rwd":2,"./components/ds-anatomy-annotation":3,"./components/ds-clipboard.js":4,"./components/ds-code-toggle":5,"./components/ds-page-title":6,"./components/ds-view-spacing":9,"./components/ds-x-ray":10,"./components/ds.jump":11,"./components/fsa-growl":12,"./components/fsa-modal":13,"./components/fsa-select-multi":14,"./components/fsa-spinbox":15,"./components/fsa-stepped-control":16}],19:[function(require,module,exports){
 
 var Helper = (function () {
 
@@ -1054,7 +1067,7 @@ var Helper = (function () {
 
 module.exports = Helper;
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 var Storage = (function () {
 
   var defaults = { toggleState: false };
@@ -1099,7 +1112,7 @@ var Storage = (function () {
 
 module.exports = Storage;
 
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 /*!
  * clipboard.js v2.0.4
  * https://zenorocha.github.io/clipboard.js
@@ -2078,7 +2091,7 @@ module.exports = closest;
 /***/ })
 /******/ ]);
 });
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -2303,7 +2316,7 @@ module.exports = closest;
 
 })( jQuery, window , document );
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.5.1
  * https://jquery.com/
@@ -13177,4 +13190,4 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
-},{}]},{},[17]);
+},{}]},{},[18]);

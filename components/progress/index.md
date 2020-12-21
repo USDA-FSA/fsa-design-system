@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Progress"
 intro: "Displays an indicator showing the completion progress of a task."
 shortName: "component__progress"
@@ -583,6 +584,8 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

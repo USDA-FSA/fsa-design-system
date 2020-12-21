@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 title: "Textarea"
 shortName: "component__textarea"
 intro: "Textareas can accept any combination of letters, numbers, or symbols - typically longform user entry across multiple lines."
@@ -162,6 +163,8 @@ Selectively override several style properties at each Media Query breakpoint.
 {% endcapture %}
 
 {% include do-dont.html %}
+
+{% include related-cards.html %}
 
 ## Accessibility
 

@@ -1,5 +1,5 @@
 ---
 layout: redirect
-redirectURL: "layout/media-object"
-redirectTitle: "Layout > Media Object"
+redirectURL: "components/media-object"
+redirectTitle: "Components > Media Object"
 ---
