@@ -16187,16 +16187,6 @@ pre.highlight .ds-clipboard {
   left: -999em;
 }
 
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code,
-blockquote code {
-  font-size: inherit;
-}
-
 .fsa-table__sort:hover:not(.fsa-table__sort--descending):not(.fsa-table__sort--ascending):after {
   background-image: url("../img/chevron-up.png");
   background-image: url("../img/chevron-up.svg");
@@ -16206,38 +16196,6 @@ blockquote code {
 span.fsa-stepped-tabs__label,
 div.fsa-stepped-tabs__label {
   cursor: initial;
-}
-
-.color-fsa-page-bg {
-  background-color: #f7f7f7;
-  border: 1px solid #dbdad9;
-}
-
-.color-fsa-white {
-  background-color: #fff;
-  border: 1px solid #dbdad9;
-}
-
-.fsa-grid__demo {
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.docs__rwd-embed--desktop {
-  width: 1187px;
-  min-height: 50vh;
-}
-
-.docs__grid-inventory .docs__grid-inventory {
-  --grid-demo-bgcolor-nest: #bfe9f4;
-  --grid-demo-background-columns-nest: repeating-linear-gradient(
-      to right,
-      var(--grid-demo-bgcolor-nest),
-      var(--grid-demo-bgcolor-nest) var(--grid-demo-column-width),
-      transparent var(--grid-demo-column-width),
-      transparent var(--grid-demo-repeating-width)
-    );
-  background-image: var(--grid-demo-background-columns-nest);
 }
 
 .ds-code-toggle {
