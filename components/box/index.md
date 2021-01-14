@@ -8,15 +8,13 @@ intro: ""
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  <div class="fsa-box">
-    <p>Deserunt db excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
-  </div>
+{% capture snippet %}
+<div class="fsa-box">
+  <p>Deserunt excepturi rem asperiores. Sapiente aliquid, hic natus.</p>
 </div>
+{% endcapture %}
 
-```html
-<element class="fsa-box">...</element>
-```
+{% include preview-and-snippet.html %}
 
 ## Variations
 
