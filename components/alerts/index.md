@@ -24,108 +24,72 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ### Success
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--success" role="alert">
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional success title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-alert fsa-alert--success" role="alert">
   <div class="fsa-alert__body">
     <h3 class="fsa-alert__heading">Optional success title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Warning
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--warning" role="alert">
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional warning title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-alert fsa-alert--warning" role="alert">
   <div class="fsa-alert__body">
     <h3 class="fsa-alert__heading">Optional warning title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Error
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--error" role="alert">
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional error title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-alert fsa-alert--error" role="alert">
   <div class="fsa-alert__body">
     <h3 class="fsa-alert__heading">Optional error title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Info
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--info" role="alert">
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional information title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-alert fsa-alert--info" role="alert">
   <div class="fsa-alert__body">
     <h3 class="fsa-alert__heading">Optional information title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### No icon
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--success fsa-alert--no-icon" role="alert">
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional [type] title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
+{% capture snippet %}
+<div class="fsa-alert fsa-alert--success fsa-alert--no-icon" role="alert">
+  <div class="fsa-alert__body">
+    <h3 class="fsa-alert__heading">Optional [type] title</h3>
+    <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
-```html
-<div class="fsa-alert fsa-alert--[type] fsa-alert--no-icon" role="alert">
-  ....
-</div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Dismissable
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--success" role="alert">
-    <button class="fsa-alert__close" data-behavior="alert-dismiss" type="button" title="Dismiss this message" aria-label="Dismiss this message"></button>
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional success title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing assumenda harum accusamus nemo non iste quia. Nihil ab tenetur ipsa dolore nisi qui molestias assumenda a perferendis maxime sed do eiusmod.</p>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-alert fsa-alert--success" role="alert">
   <button class="fsa-alert__close" data-behavior="alert-dismiss" type="button" title="Dismiss this message" aria-label="Dismiss this message"></button>
   <div class="fsa-alert__body">
@@ -133,7 +97,9 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing assumenda harum accusamus nemo non iste quia. Nihil ab tenetur ipsa dolore nisi qui molestias assumenda a perferendis maxime sed do eiusmod.</p>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 
