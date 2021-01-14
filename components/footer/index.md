@@ -7,6 +7,8 @@ intro: "This Global Footer Component may be used for FPAC products with standard
 jump_menu: true
 ---
 
+These are not required footer structures; rather, they effectively serve as an acceptable UI Pattern for a footer using the Design System styles and parts.
+
 <div class="ds-preview">
   <div style="overflow: hidden">
     <div class="fsa-footer">
