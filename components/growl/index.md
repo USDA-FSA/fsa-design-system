@@ -395,8 +395,6 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 
 ## JavaScript Guidance
 
-{% include scripts.about.html %}
-
 ### Summary
 
 Growl Notifications' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
@@ -413,3 +411,5 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 * Set `aria-hidden` attribute to true
 * Remove `aria-expanded` attribute from element that triggered Growl
 * Set focus to the element that initially triggered the Notification
+
+{% include scripts.about.html %}
