@@ -35,71 +35,55 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 
 ### Default
 
-<div class="ds-preview">
-  <span class="fsa-badge">1</span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-badge">1</span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Neutral
 
-<div class="ds-preview">
-  <span class="fsa-badge fsa-badge--neutral">8</span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-badge fsa-badge--neutral">8</span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### General
 
-<div class="ds-preview">
-  <span class="fsa-badge fsa-badge--general">11</span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-badge fsa-badge--general">11</span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Alert
 
-<div class="ds-preview">
-  <span class="fsa-badge fsa-badge--alert">11</span> Bugs Found
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-badge fsa-badge--alert">11</span> Bugs Found
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Warning
 
-<div class="ds-preview">
-  <span class="fsa-badge fsa-badge--warning">22</span> Issues Recorded
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-badge fsa-badge--warning">22</span> Issues Recorded
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Success
 
-<div class="ds-preview">
-  <span class="fsa-badge fsa-badge--success">99+</span> Feature Updates
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-badge fsa-badge--success">99+</span> Feature Updates
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><span class="fsa-badge fsa-badge--large">1</span></li>
-    <li><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></li>
-    <li><span class="fsa-badge fsa-badge--large fsa-badge--general">8</span></li>
-    <li><span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span></li>
-    <li><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></li>
-    <li><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></li>
-  </ul>
-</div>
-```html
+{% capture snippet %}
 <ul class="fsa-level">
   <li><span class="fsa-badge fsa-badge--large">1</span></li>
   <li><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></li>
@@ -108,21 +92,13 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
   <li><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></li>
   <li><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></li>
 </ul>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Extra Large
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><span class="fsa-badge fsa-badge--extra-large">1</span></li>
-    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></li>
-    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span></li>
-    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span></li>
-    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></li>
-    <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></li>
-  </ul>
-</div>
-```html
+{% capture snippet %}
 <ul class="fsa-level">
   <li><span class="fsa-badge fsa-badge--extra-large">1</span></li>
   <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></li>
@@ -131,26 +107,23 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
   <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></li>
   <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></li>
 </ul>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Actionable
 
 Badge styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
 
-<div class="ds-preview">
-  <ul class="fsa-level">
-    <li><a class="fsa-badge" href="link.html">A</a> Anchor</li>
-    <li><button class="fsa-badge" type="button">B</button> Button</li>
-    <li><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</li>
-  </ul>
-</div>
-```html
+{% capture snippet %}
 <ul class="fsa-level">
   <li><a class="fsa-badge" href="link.html">A</a> Anchor</li>
   <li><button class="fsa-badge" type="button">B</button> Button</li>
   <li><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</li>
 </ul>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Example: Dark Background
 
