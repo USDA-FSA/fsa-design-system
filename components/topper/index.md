@@ -7,20 +7,15 @@ intro: "Provides a way for a User to return to the top of the page."
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  <div class="fsa-topper">
-    <div class="fsa-topper__bd">
-      <a class="fsa-topper__link" href="#main-content">Return to top</a>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-topper">
   <div class="fsa-topper__bd">
     <a class="fsa-topper__link" href="#main-content">Return to top</a>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Variations
 
@@ -32,20 +27,15 @@ jump_menu: true
   </div>
 </div>
 
-<div class="ds-preview">
-  <div class="fsa-topper fsa-topper--fullscreen">
-    <div class="fsa-topper__bd">
-      <a class="fsa-topper__link" href="#main-content">Return to top</a>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-topper fsa-topper--fullscreen">
   <div class="fsa-topper__bd">
     <a class="fsa-topper__link" href="#main-content">Return to top</a>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 
