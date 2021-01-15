@@ -32,24 +32,7 @@ jump_menu: true
 
 ### Default
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-yughsjj6j">Label</label>
-          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-yughsjj6j" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-search__btn" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search" role="search">
     <div class="fsa-search__bd">
@@ -65,28 +48,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Default, with label
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label" for="UNIQUE-ID-yu3h55_">Label</label>
-          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-yu3h55_" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-search__btn" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search" role="search">
     <div class="fsa-search__bd">
@@ -102,28 +70,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Default, with Icon
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-hghhwshd3">Label</label>
-          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-hghhwshd3" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search" role="search">
     <div class="fsa-search__bd">
@@ -139,37 +92,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Default, with Select
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-hghhwdd7803">Label</label>
-          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-hghhwdd7803" type="search" name="search">
-        </div>
-        <div class="fsa-search__entry">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-dfyu65ppj">Label</label>
-          <select class="fsa-select fsa-search__select" name="UNIQUE-NAME-dfyu65ppj" id="UNIQUE-ID-dfyu65ppj">
-            <option value="none" selected="selected">All</option>
-            <option value="asdf">Farms</option>
-            <option value="qwer">States</option>
-            <option value="qwer">Markets</option>
-          </select>
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search" role="search">
     <div class="fsa-search__bd">
@@ -194,37 +123,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Default, with Select and Labels
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label" for="UNIQUE-ID-hg__553">Label</label>
-          <input class="fsa-input fsa-search__input" id="UNIQUE-ID-hg__553" type="search" name="search">
-        </div>
-        <div class="fsa-search__entry">
-          <label class="fsa-search__label" for="UNIQUE-ID-d___999s">Label</label>
-          <select class="fsa-select fsa-search__select" name="UNIQUE-NAME-dfyu65ppj" id="UNIQUE-ID-d___999s">
-            <option value="none" selected="selected">All</option>
-            <option value="asdf">Farms</option>
-            <option value="qwer">States</option>
-            <option value="qwer">Markets</option>
-          </select>
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search" role="search">
     <div class="fsa-search__bd">
@@ -249,28 +154,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search fsa-search--small" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-uusuHSUGJS7">Label</label>
-          <input class="fsa-input fsa-input--small fsa-search__input" id="UNIQUE-ID-uusuHSUGJS7" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-btn--small fsa-search__btn" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search fsa-search--small" role="search">
     <div class="fsa-search__bd">
@@ -286,28 +176,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small, with Icon
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search fsa-search--small" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-5555F555F5t">Label</label>
-          <input class="fsa-input fsa-input--small fsa-search__input" id="UNIQUE-ID-5555F555F5t" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-btn--small fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search fsa-search--small" role="search">
     <div class="fsa-search__bd">
@@ -323,37 +198,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small, with Select
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search fsa-search--small" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-5555F35ggq5t">Label</label>
-          <input class="fsa-input fsa-input--small fsa-search__input" id="UNIQUE-ID-5555F35ggq5t" type="search" name="search">
-        </div>
-        <div class="fsa-search__entry">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-aug1234asdfj">Label</label>
-          <select class="fsa-select fsa-select--small fsa-search__select" name="UNIQUE-NAME-aug1234asdfj" id="UNIQUE-ID-aug1234asdfj">
-            <option value="none" selected="selected">All</option>
-            <option value="asdf">Farms</option>
-            <option value="qwer">States</option>
-            <option value="qwer">Markets</option>
-          </select>
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-btn--small fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search fsa-search--small" role="search">
     <div class="fsa-search__bd">
@@ -378,28 +229,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search fsa-search--large" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-3338hIISH8">Label</label>
-          <input class="fsa-input fsa-input--large fsa-search__input" id="UNIQUE-ID-3338hIISH8" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-btn--large fsa-search__btn" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search fsa-search--large" role="search">
     <div class="fsa-search__bd">
@@ -415,28 +251,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large, with Icon
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search fsa-search--large" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-ttg5555jjJ">Label</label>
-          <input class="fsa-input fsa-input--large fsa-search__input" id="UNIQUE-ID-ttg5555jjJ" type="search" name="search">
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-btn--large fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search fsa-search--large" role="search">
     <div class="fsa-search__bd">
@@ -452,37 +273,13 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large, with Select
 
-<div class="ds-preview">
-  <form action="dest.html">
-    <div class="fsa-search fsa-search--large" role="search">
-      <div class="fsa-search__bd">
-        <div class="fsa-search__entry fsa-search__entry--grow">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-tabczzpJ">Label</label>
-          <input class="fsa-input fsa-input--large fsa-search__input" id="UNIQUE-ID-tabczzpJ" type="search" name="search">
-        </div>
-        <div class="fsa-search__entry">
-          <label class="fsa-search__label fsa-search__label--sr-only" for="UNIQUE-ID-a78q8jt">Label</label>
-          <select class="fsa-select fsa-select--large fsa-search__select" name="UNIQUE-NAME-a78q8jt" id="UNIQUE-ID-a78q8jt">
-            <option value="none" selected="selected">All</option>
-            <option value="asdf">Farms</option>
-            <option value="qwer">States</option>
-            <option value="qwer">Markets</option>
-          </select>
-        </div>
-        <div class="fsa-search__submit">
-          <button class="fsa-btn fsa-btn--large fsa-search__btn fsa-search__btn--icon" type="submit">
-            <span class="fsa-search__text">Search</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-```html
+{% capture snippet %}
 <form action="dest.html">
   <div class="fsa-search fsa-search--large" role="search">
     <div class="fsa-search__bd">
@@ -507,8 +304,9 @@ jump_menu: true
     </div>
   </div>
 </form>
-```
+{% endcapture %}
 
+{% include preview-and-snippet.html %}
 
 ## Usage
 
