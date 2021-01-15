@@ -13,58 +13,49 @@ title_label: 'May require JavaScript'
 
 At its root the Slider component is a native `<input>` form element with an attribute `type` of `range`.
 
-<div class="ds-preview">
-  <input class="fsa-slider" id="lorem-range-2229" name="lorem-range-2229" type="range" min="0" max="100" value="30" step="10">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-slider" id="lorem-range-2229" name="lorem-range-2229" type="range" min="0" max="100" value="30" step="10">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Variations
 
 ### Full-width
 
-<div class="ds-preview">
-  <input class="fsa-slider fsa-slider--block" id="lorem-range-4453" name="lorem-range-4453" type="range" min="0" max="100" value="90" step="10">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-slider fsa-slider--block" id="lorem-range-4453" name="lorem-range-4453" type="range" min="0" max="100" value="90" step="10">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Disabled
 
-<div class="ds-preview">
-  <input class="fsa-slider" id="lorem-range-3309" name="lorem-range-3309" type="range" min="0" max="100" value="40" step="10" disabled="">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-slider" id="lorem-range-3309" name="lorem-range-3309" type="range" min="0" max="100" value="40" step="10" disabled="">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Vertical
 
-<div class="ds-preview">
-  <div class="fsa-slider-vertical">
-    <input class="fsa-slider" id="lorem-range-2229" name="lorem-range-2229" type="range" min="0" max="100" value="30" step="10">
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-slider-vertical">
   <input class="fsa-slider" id="lorem-range-2229" name="lorem-range-2229" type="range" min="0" max="100" value="30" step="10">
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Vertical, Custom Height
 
-<div class="ds-preview">
-  <div class="fsa-slider-vertical" style="--slider-vertical-height: 10rem">
-    <input class="fsa-slider" id="lorem-range-2229" name="lorem-range-2229" type="range" min="0" max="100" value="60" step="10">
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-slider-vertical" style="--slider-vertical-height: 10rem">
   <input class="fsa-slider" id="lorem-range-2229" name="lorem-range-2229" type="range" min="0" max="100" value="60" step="10">
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Examples
 
@@ -72,64 +63,41 @@ At its root the Slider component is a native `<input>` form element with an attr
 
 Combine with [Level]({{ site.baseurl }}layout/level/) layout component to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
 
-<div class="ds-preview">
-  <div class="fsa-level">
-    <span>
-      <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="90" step="10">
-    </span>
-    <span><output aria-live="polite" id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">90</output></span>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-level">
   <span>
     <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="90" step="10">
   </span>
   <span><output aria-live="polite" id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">90</output></span>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### With output, Full-width
 
 Combine the `fsa-slider--block` variation with [Level]({{ site.baseurl }}layout/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
 
-<div class="ds-preview">
-  <div class="fsa-level">
-    <span class="fsa-level__item--grow-auto">
-      <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="10" step="10">
-    </span>
-    <span><output aria-live="polite" id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">10</output></span>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-level">
   <span class="fsa-level__item--grow-auto">
     <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="10" step="10">
   </span>
   <span><output aria-live="polite" id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">10</output></span>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Within Field component
 
 Nested within a [Form Field]({{ site.baseurl }}components/form-fields/).
 
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="lorem-range-1234">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-slider fsa-field__item" id="lorem-range-1234" name="lorem-range-1234" type="range" min="0" max="10" value="3" step="1">
-  </div>
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="lorem-range-7710">Label <span class="fsa-field__label-desc">Required</span></label>
-    <div class="fsa-level">
-      <span class="fsa-level__item--grow-auto">
-        <input class="fsa-slider fsa-field__item" id="lorem-range-7710" name="lorem-range-7710" type="range" min="0" max="10" value="3" step="1">
-      </span>
-      <span><output aria-live="polite" id="lorem-range-ouput-7710" name="lorem-range-ouput-7710" for="lorem-range-7710">90</output></span>
-    </div>
-  </div>
+{% capture snippet %}
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-range-1234">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-slider fsa-field__item" id="lorem-range-1234" name="lorem-range-1234" type="range" min="0" max="10" value="3" step="1">
 </div>
-```html
 <div class="fsa-field">
   <label class="fsa-field__label" for="lorem-range-7710">Label <span class="fsa-field__label-desc">Required</span></label>
   <div class="fsa-level">
@@ -139,7 +107,9 @@ Nested within a [Form Field]({{ site.baseurl }}components/form-fields/).
     <span><output aria-live="polite" id="lorem-range-ouput-7710" name="lorem-range-ouput-7710" for="lorem-range-7710">90</output></span>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 
