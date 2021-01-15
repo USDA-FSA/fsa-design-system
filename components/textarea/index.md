@@ -24,100 +24,87 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 
 ### Default
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea" name="1324hgxi" placeholder="Placeholder"></textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea fsa-textarea--small" name="hj8h23gxi" placeholder="Placeholder"></textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea fsa-textarea--large" name="hj8h2hjkjxi" placeholder="Placeholder"></textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Within a [Field]({{ site.baseurl }}components/form-fields/)
 
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
-    <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
-    <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-field">
   <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
   <textarea class="fsa-textarea fsa-field__item" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
   <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Custom height
 
 `.fsa-textarea` has a default minimum height, modifiable via the `rows` attribute. Each row is approximately the `line-height` of its text. Overall default height may vary between browsers, though it is generally equivalent to `rows="6"`.
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea" name="Name" placeholder="Placeholder" rows="13"></textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea" name="Name" placeholder="Placeholder" rows="13"></textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## States
 
 ### Response: Error
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea fsa-textarea--error" name="hloremjkjxi" placeholder="Placeholder"></textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Response: Positive
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea fsa-textarea--positive" name="hloremipsxi" placeholder="Placeholder"></textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Disabled
 
 Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using the `disabled` attribute.
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Readonly
 
 Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using the `readonly` attribute.
 
-<div class="ds-preview">
-  <textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
-</div>
-```html
+{% capture snippet %}
 <textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 
