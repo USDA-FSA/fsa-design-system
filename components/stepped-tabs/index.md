@@ -39,14 +39,27 @@ jump_menu: true
   </nav>
 </div>
 
-### Step States
+## Anatomy
 
-Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In the above example:
+Each Step can be one of three possible states.
 
-1. **Step 1**: Completed
-1. **Step 2**: Current
-1. **Step 3**: Incomplete / Upcoming / Future
-1. **Step 4**: Incomplete / Upcoming / Future
+```html
+<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--[STATE]" href="link.html">
+  <span class="fsa-stepped-tabs__text">Label</span>
+</a>
+```
+
+{% capture anatomy__markers %}
+
+1. <nobr><code>fsa-stepped-tabs__label<strong>--complete</strong></code></nobr>
+1. <nobr><code>fsa-stepped-tabs__label<strong>--active</strong></code></nobr>
+1. <nobr><code>fsa-stepped-tabs__label<strong>--incomplete</strong></code></nobr>
+
+{% endcapture %}
+
+{% assign anatomy__image-off = "stepped-tabs.png" %}
+
+{% include anatomy.html %}
 
 ## Variations and Examples
 
