@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Radio"
 shortName: "component__radio"
-intro: "Provide a visble list of options and allow exactly one selection."
+intro: "Make a single selection from a visible list of options."
 relatedItems:
   - "Action Bar with Table"
   - "Form Fields"

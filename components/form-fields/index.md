@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Form Fields"
 shortName: "component__form-fields"
-intro: "Provide structured form controls for data entry."
+intro: "Data entry from a variety of structured form controls."
 jump_menu: true
 custom_js: ["select-other.js", "datepicker-demo.js"]
 relatedItems:

@@ -4,10 +4,12 @@ parent: "Components"
 type: "UI Component"
 title: "Select Multi"
 shortName: "component__select-multi"
-intro: "The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All."
+intro: "Make one or more selections from structured scrollable list of otpions."
 jump_menu: true
 title_label: 'May require JavaScript'
 ---
+
+The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All.
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 

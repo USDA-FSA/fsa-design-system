@@ -4,14 +4,14 @@ parent: "Components"
 type: "UI Component"
 title: "Spinbox"
 shortName: "component__spinbox"
-intro: "A Spinbox Component provides enhanced controls for a numeric input, designed to expedite data entry."
+intro: "Quickly and accurately input numeric data with enhanced controls."
 relatedItems:
   - "Form Fields"
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---
 
-Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+ Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-preview">
   <div class="fsa-spinbox">

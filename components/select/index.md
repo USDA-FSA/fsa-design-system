@@ -4,13 +4,13 @@ parent: "Components"
 type: "UI Component"
 title: "Select"
 shortName: "component__select"
-intro: "Sometimes referred to as a “drop down,” the select element allows users to select one option from a list."
+intro: "Select a single option from a list."
 relatedItems:
   - "Form Fields"
 jump_menu: true
 ---
 
-Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+Often referred to as a "drop down" or "pull down" menu, its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-preview">
   <select class="fsa-select" name="Options">
