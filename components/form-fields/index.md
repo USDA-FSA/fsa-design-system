@@ -29,6 +29,60 @@ title_label: 'JavaScript Included'
   </div>
 </div>
 
+## Anatomy
+
+{% assign anatomy__image-on = "form-field--on.png" %}
+
+{% include anatomy.html %}
+```html
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-1234">Email address <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="lorem-1234" name="lorem-1234" aria-describedby="lorem-1234-help-1" aria-required="true" type="email" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-1">This is how people can contact you</span>
+</div>
+```
+
+<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
+  <thead>
+    <th scope="col"><span class="fsa-sr-only">Marker</span></th>
+    <th scope="col">Selector</th>
+    <th scope="col">Description</th>
+    <th scope="col">Required</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th aria-label="Marker" scope="row">1</th>
+      <th aria-label="Selector" scope="row"><nobr><code>fsa-field__label</code></nobr></th>
+      <td aria-label="Description"><div> Provide the standard style and position of the label of the form element </div></td>
+      <td aria-label="Required"><nobr> Yes </nobr></td>
+    </tr>
+    <tr>
+      <th aria-label="Marker" scope="row">2</th>
+      <th aria-label="Selector" scope="row"><nobr><code>fsa-field__label-desc</code></nobr></th>
+      <td aria-label="Description"><div> <span>Paired with <nobr><code>fsa-field__label</code></nobr>, may be used to indicate Required or Optional fields, or omitted.</span> </div></td>
+      <td aria-label="Required"><nobr> No </nobr></td>
+    </tr>
+    <tr>
+      <th aria-label="Marker" scope="row">3</th>
+      <th aria-label="Selector" scope="row"><nobr><code>fsa-field__item</code></nobr></th>
+      <td aria-label="Description"><div> Provides standardized style and position for form elements. Explore <a href="#usage">Usage</a> and <a href="#variations-and-examples">Variations</a> for the variety of form elements available in this space. </div></td>
+      <td aria-label="Required"><nobr> Yes </nobr></td>
+    </tr>
+    <tr>
+      <th aria-label="Marker" scope="row">4</th>
+      <th aria-label="Selector" scope="row"><nobr><code>fsa-field__help</code></nobr></th>
+      <td aria-label="Description"><div> Provides instructional text in a standardized location </div></td>
+      <td aria-label="Required"><nobr> No, though advised </nobr></td>
+    </tr>
+    <tr>
+      <th aria-label="Marker" scope="row">5</th>
+      <th aria-label="Selector" scope="row"><nobr><code>fsa-field__message</code></nobr></th>
+      <td aria-label="Description"><div> Provides validation and error messaging in standardized location, e.g. <a href="#states">Error state</a> </div></td>
+      <td aria-label="Required"><nobr> No, though advised </nobr></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Usage
 
 {% include do-dont.html %}
@@ -883,43 +937,6 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
 </div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
-
-## CSS Class Overview
-
-<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
-  <thead>
-    <th scope="col">Selector</th>
-    <th scope="col">Description</th>
-    <th scope="col">Required</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__label</code></th>
-      <td aria-label="Description">Provide the standard style and position of the label of the form element</td>
-      <td aria-label="Required">Yes</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__label-desc</code></th>
-      <td aria-label="Description"><span>Paired with <code>fsa-field__label</code>, may be used to indicate Required or Optional fields, or omitted.</span></td>
-      <td aria-label="Required">No</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__item</code></th>
-      <td aria-label="Description">Provides standardized style and position for form elements</td>
-      <td aria-label="Required">Yes</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__help</code></th>
-      <td aria-label="Description">Provides instructional text in a standardized location</td>
-      <td aria-label="Required">No, though advised</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__message</code></th>
-      <td aria-label="Description">Provides validation and error messaging in standardized location</td>
-      <td aria-label="Required">No, though advised</td>
-    </tr>
-  </tbody>
-</table>
 
 ## Form Validation Guidelines
 
