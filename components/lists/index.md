@@ -1,6 +1,7 @@
 ---
 layout: page
 parent: "Components"
+type: "UI Component"
 intro: "Structure content into concise sementic sections."
 title: "Lists"
 jump_menu: true

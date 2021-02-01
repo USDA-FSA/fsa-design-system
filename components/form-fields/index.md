@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Form Fields"
 shortName: "component__form-fields"
-intro: "Form fields are multifaceted components that allow Developers to create application forms with appropriate instructional and validation features."
+intro: "Provide structured form controls for data entry."
 jump_menu: true
 custom_js: ["select-other.js", "datepicker-demo.js"]
 relatedItems:
@@ -20,6 +20,8 @@ relatedItems:
   - "Textarea"
 title_label: 'JavaScript Included'
 ---
+
+Create application forms with appropriate instructional and validation features.
 
 <div class="ds-preview">
   <div class="fsa-field">

@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Radio"
 shortName: "component__radio"
-intro: "Radio buttons allow users to see all available choices at once and select exactly one option."
+intro: "Provide a visble list of options and allow exactly one selection."
 relatedItems:
   - "Action Bar with Table"
   - "Form Fields"

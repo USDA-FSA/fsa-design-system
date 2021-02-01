@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Checkbox"
 shortName: "component__checkbox"
-intro: "A form element enabling the selection of one or more options from a visible list."
+intro: "Provide a visble list of options and allow one or more selections."
 custom_js: "checkbox.js"
 relatedItemsrelatedItems:
   - "Action Bar with Table"
