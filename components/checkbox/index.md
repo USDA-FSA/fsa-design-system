@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Checkbox"
 shortName: "component__checkbox"
-intro: "Make one or more options from a set of available values."
+intro: "Choose one or more options from a set of available values."
 custom_js: "checkbox.js"
 relatedItemsrelatedItems:
   - "Action Bar with Table"

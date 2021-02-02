@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Media Object"
 shortName: "component__media-objects"
-intro: "Pair an object (typically an image) with text-based content to one of the sides."
+intro: "Pair an object with text-based content to one of the sides."
 jump_menu: true
 suppress_kitcken_sink: true
 deprecated: true

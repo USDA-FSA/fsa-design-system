@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Topper"
-intro: "Provide access to top of the page from the bottom."
+intro: "Convenient access to top of the page from the bottom."
 jump_menu: true
 ---
 

@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Pagination"
 shortName: "component__pagination"
-intro: "Navigate through split segments of large datasets of content."
+intro: "Navigate through split views of large datasets of content."
 jump_menu: true
 ---
 

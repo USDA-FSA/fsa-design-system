@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Growl Notification"
 shortName: "component__growl"
-intro: "A Growl Notification surfaces application messaging, providing information about page-level or out-of-view events."
+intro: "Surface application messaging about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
 custom_js: "growl-init-demo.js"

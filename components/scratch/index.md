@@ -21,7 +21,7 @@ relatedItems:
   - "Text Input"
   - "Textarea"
   - "Badges"
-  - "Growl Notifications"
+  - "Growl Notification"
   - "Inline Alerts"
   - "Labels"
   - "Modal"

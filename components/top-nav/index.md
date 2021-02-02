@@ -4,12 +4,12 @@ parent: "Components"
 type: "UI Component"
 title: "Global Navigation"
 shortName: "component__top-nav"
-intro: "The Global Navigation Component may be used to create a cohesive User Experience across all FPAC applications."
+intro: "Display a global list of sections, topics, or actions."
 jump_menu: true
 title_label: 'May Require JavaScript'
 ---
 
-This navigation component is not necessarily the required Global Navigation structure; rather, it effectively serves as ready-made UI Pattern implemented with FPAC Design System styles and parts.
+This navigation component is **not** a required Global Navigation structure; rather, it effectively serves as ready-made UI Pattern implemented with FPAC Design System styles and parts.
 
 {% capture snippet %}
 <nav>
