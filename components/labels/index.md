@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Labels"
 shortName: "component__labels"
-intro: "Display complementary labels, such as metadata or filters."
+intro: "Display complementary information such as metadata or filters."
 jump_menu: true
 ---
 

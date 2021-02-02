@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Button Group"
 shortName: "component__button-group"
-intro: "Toggle between multiple button actions."
+intro: "Toggle between mutually exclusive states."
 relatedItems:
   - "Action Bar with Table"
 jump_menu: true

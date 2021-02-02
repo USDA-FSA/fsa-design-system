@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Tables"
 shortName: "component__tables"
-intro: "Data tables presenting tabular data in columns and rows."
+intro: "Present data or content in a tabular format."
 jump_menu: true
 relatedItems:
   - "Action Bar with Table"

@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Pagination"
 shortName: "component__pagination"
-intro: "The Pagination Component allows for an optimized way to provide a more consumable structure for large datasets."
+intro: "Navigate through split segments of large datasets of content."
 jump_menu: true
 ---
 

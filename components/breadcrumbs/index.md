@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Breadcrumbs"
 shortName: "component__breadcrumbs"
-intro: "Breadcrumbs are a secondary navigation element used to help orient a User within an application, and enable quick access to a parent level."
+intro: "Provide hierarchical position within an application, and enable quick access through its levels."
 jump_menu: true
 ---
 

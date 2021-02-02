@@ -2,7 +2,7 @@
 layout: page
 parent: "Components"
 type: "UI Component"
-intro: "Structure content into concise sementic sections."
+intro: "Structure content into concise semantic sections."
 title: "Lists"
 jump_menu: true
 ---

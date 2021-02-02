@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Progress"
-intro: "Displays an indicator showing the completion progress of a task."
+intro: "Display an indicator showing the relative completion of a task or activity."
 shortName: "component__progress"
 jump_menu: true
 custom_js: "progress.js"

@@ -3,11 +3,11 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Footer"
-intro: "This Global Footer Component may be used for FPAC products with standard links along with application specific links."
+intro: "Provide access to related FPAC products or links not directly associated with application."
 jump_menu: true
 ---
 
-These are not required footer structures; rather, they effectively serve as an acceptable UI Pattern for a footer using the Design System styles and parts.
+These are **not** required footer structures; rather, they effectively serve as an acceptable UI Pattern for a footer using the Design System styles and parts.
 
 <div class="ds-preview">
   <div style="overflow: hidden">
