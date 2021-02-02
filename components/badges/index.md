@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Badges"
 shortName: "component__badges"
-intro: "Badges are used as indicators of an update or action items that have yet to be completed."
+intro: "Succinctly display quantified information."
 jump_menu: true
 ---
 
