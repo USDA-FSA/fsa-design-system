@@ -6,7 +6,7 @@ title: "Checkbox"
 shortName: "component__checkbox"
 intro: "Choose one or more options from a set of available values."
 custom_js: "checkbox.js"
-relatedItemsrelatedItems:
+relatedItems:
   - "Action Bar with Table"
   - "Form Fields"
   - "Select Multi"

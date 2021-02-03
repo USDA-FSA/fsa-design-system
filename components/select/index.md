@@ -7,6 +7,8 @@ shortName: "component__select"
 intro: "Select a single option from a list."
 relatedItems:
   - "Form Fields"
+  - "Global Navigation"
+  - "Search"
 jump_menu: true
 ---
 

@@ -6,6 +6,9 @@ title: "Textarea"
 shortName: "component__textarea"
 intro: "Free-form text entry any combination of letters, numbers, or symbols."
 jump_menu: true
+relatedItems:
+  - "Form Fields"
+  - "Timeline"
 ---
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.

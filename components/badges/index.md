@@ -6,6 +6,8 @@ title: "Badges"
 shortName: "component__badges"
 intro: "Succinctly display quantified information."
 jump_menu: true
+relatedItems:
+  - "Timeline"
 ---
 
 <div class="ds-preview">

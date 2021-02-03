@@ -6,6 +6,8 @@ title: "Labels"
 shortName: "component__labels"
 intro: "Display complementary information such as metadata or filters."
 jump_menu: true
+relatedItems:
+  - "Timeline"
 ---
 
 <div class="ds-preview">

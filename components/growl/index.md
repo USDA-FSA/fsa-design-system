@@ -8,6 +8,9 @@ intro: "Surface application messaging about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
 custom_js: "growl-init-demo.js"
+relatedItems:
+  - "Buttons"
+  - "Destroy Prompt"
 ---
 
 <div class="fsa-whiteout" tabindex="-1" id="fsa-whiteout" aria-hidden="true"></div>

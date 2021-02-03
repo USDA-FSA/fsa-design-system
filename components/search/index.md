@@ -9,6 +9,7 @@ relatedItems:
   - "Buttons"
   - "Text Input"
   - "Form Fields"
+  - "Global Navigation"
 jump_menu: true
 ---
 
