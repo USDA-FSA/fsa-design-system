@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Textarea"
 shortName: "component__textarea"
-intro: "Textareas can accept any combination of letters, numbers, or symbols - typically longform user entry across multiple lines."
+intro: "Free-form text entry any combination of letters, numbers, or symbols."
 jump_menu: true
 ---
 

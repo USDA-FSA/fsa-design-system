@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Switch"
 shortName: "component__switch"
-intro: "Toggle the state of a single setting, with its corresponding action immediately taking effect."
+intro: "Toggle the state between two opposing states or options."
 relatedItems:
   - "Checkbox"
 jump_menu: true
@@ -28,7 +28,7 @@ jump_menu: true
   </script>
 </div>
 
-The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should happen immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
+The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should occur immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
 
 ## Variations
 

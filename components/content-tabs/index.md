@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Content Tabs"
 shortName: "component__content-tabs"
-intro: "Use Content Tabs to arrange related information or functionality in a defined area on the same application page."
+intro: "Segment related content of the same parent topic in a defined area."
 jump_menu: true
 ---
 

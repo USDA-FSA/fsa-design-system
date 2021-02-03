@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Date Picker"
-intro: "The Date Picker augments an Input element or Form Field with the ability to select a date in a Calendar view."
+intro: "Choose a valid formatted date."
 jump_menu: true
 custom_js: "datepicker-demo.js"
 relatedItems:
@@ -11,6 +11,8 @@ relatedItems:
   - "Text Input"
 title_label: 'JavaScript Included'
 ---
+
+This extends the [Text Input]({{ site.baseurl }}components/text-input/) or the [Form Fields]({{ site.baseurl }}components/form-fields/) component with the ability to select a valid date from a Calendar view.
 
 <div class="ds-preview">
   <div class="fsa-field">

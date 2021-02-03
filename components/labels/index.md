@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Labels"
 shortName: "component__labels"
-intro: "Labels are used to draw attention to new, updated, or important content within an application."
+intro: "Display complementary information such as metadata or filters."
 jump_menu: true
 ---
 

@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Slider"
 shortName: "component__slider"
-intro: "The Slider component, also known as a Range Input, allows users to choose an approximate number from a range."
+intro: "Choose an approximate number from a range."
 relatedItems:
   - "Form Fields"
 jump_menu: true

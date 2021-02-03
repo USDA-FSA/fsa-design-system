@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Box"
 shortName: "component__box"
-intro: ""
+intro: "Organize a set of content in a standalone object."
 jump_menu: true
 ---
 

@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Screen ID"
-intro: "The Screen ID Component shall be used across all FPAC applications to better identify technical issues."
+intro: "Display a unique ID to each page view."
 jump_menu: true
 ---
 
