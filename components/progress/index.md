@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Progress"
-intro: "Displays an indicator showing the completion progress of a task."
+intro: "Display an indicator showing the relative completion of a task or activity."
 shortName: "component__progress"
 jump_menu: true
 custom_js: "progress.js"
@@ -11,19 +11,7 @@ custom_js: "progress.js"
 
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
 
-<div class="ds-preview">
-  <div class="fsa-progress" aria-live="polite">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Processing Commodities</div>
-      <div class="fsa-progress__value">4 of 10</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary" style="transform: scaleX(.4)"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Processing Commodities</div>
@@ -34,7 +22,9 @@ custom_js: "progress.js"
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 A Progress indicator, or "Progress Bar" as it is often called, is an essential component for applications. Not only does a Progress indicator provide trust for the end User, but it also can provide valuable information as well. The general "rule of thumb" is that any process that requires the User to wait more than a second for something to load or finish, should provide a Progress indicator.
 
@@ -44,44 +34,23 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 
 ### Indeterminate, with label
 
-<div class="ds-preview">
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-    <div class="fsa-progress__details">
-      <div class="fsa-progress__label">Processing Claims</div>
-      <div class="fsa-progress__value">About 10 min</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
+{% capture snippet %}
+<div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
+  <div class="fsa-progress__details">
+    <div class="fsa-progress__label">Processing Claims</div>
+    <div class="fsa-progress__value">About 10 min</div>
+  </div>
+  <div class="fsa-progress__bar" aria-hidden="true">
+    <div class="fsa-progress__primary"></div>
+    <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```html
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-    <div class="fsa-progress__details">
-      <div class="fsa-progress__label">Processing Claims</div>
-      <div class="fsa-progress__value">About 10 min</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Indeterminate, hidden label
-<div class="ds-preview">
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Page loading</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Page loading</div>
@@ -91,23 +60,13 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Determinate, with label/value
 <button type="button" class="fsa-btn fsa-btn--secondary fsa-btn--small" data-behavior="fakeSystemTrackLoop" data-target="showProgressWithLabel">Start Progress Bar</button>
-<div class="ds-preview">
-  <div class="fsa-progress" aria-live="polite" id="showProgressWithLabel">
-    <div class="fsa-progress__details">
-      <div class="fsa-progress__label">Soft Red Winter Wheat</div>
-      <div class="fsa-progress__value">0%</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress" aria-live="polite" id="showProgressWithLabel">
   <div class="fsa-progress__details">
     <div class="fsa-progress__label">Soft Red Winter Wheat</div>
@@ -118,23 +77,14 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 
 ### Determinate, hidden label
 <button type="button" class="fsa-btn fsa-btn--secondary fsa-btn--small" data-behavior="fakeSystemTrackLoop" data-target="showProgress">Start Progress Bar</button>
-<div class="ds-preview">
-  <div class="fsa-progress" aria-live="polite" id="showProgress">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Downloading Terminal Adjustments</div>
-      <div class="fsa-progress__value">0%</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress" aria-live="polite" id="showProgress">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Downloading Terminal Adjustments</div>
@@ -145,23 +95,13 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Determinate, manual demo
 <button type="button" class="fsa-btn fsa-btn--secondary fsa-btn--small" data-behavior="fakeSystemTrackAddition" data-target="showProgressAddition">Increase by 10%</button>
-<div class="ds-preview">
-  <div class="fsa-progress" aria-live="polite">
-    <div class="fsa-progress__details">
-      <div class="fsa-progress__label">Uploading <abbr title="Daily Loan Deficiency Payment Rates">LDP</abbr></div>
-      <div class="fsa-progress__value">10%</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary" id="showProgressAddition" style="transform: scaleX(0.1);"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress" aria-live="polite">
   <div class="fsa-progress__details">
     <div class="fsa-progress__label">Uploading <abbr title="Daily Loan Deficiency Payment Rates">LDP</abbr></div>
@@ -172,22 +112,12 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Determinate, example
-<div class="ds-preview">
-  <div class="fsa-progress" aria-live="polite">
-    <div class="fsa-progress__details">
-      <div class="fsa-progress__label">Processing Commodities</div>
-      <div class="fsa-progress__value">4 of 10</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary" style="transform: scaleX(.4)"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress" aria-live="polite">
   <div class="fsa-progress__details">
     <div class="fsa-progress__label">Processing Commodities</div>
@@ -198,27 +128,12 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Select, inline
-<div class="ds-preview">
-  <div class="fsa-progress-inline">
-    <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-      <div class="fsa-progress__details fsa-sr-only">
-        <div class="fsa-progress__label">Loading tracts</div>
-      </div>
-      <div class="fsa-progress__bar" aria-hidden="true">
-        <div class="fsa-progress__primary"></div>
-        <div class="fsa-progress__secondary"></div>
-      </div>
-    </div>
-    <select name="UNIQUE-ID-WAGS" id="UNIQUE-ID-WAGS" class="fsa-select">
-      <option>Farm 1234</option>
-      <option>Farm 6789</option>
-    </select>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress-inline">
   <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
     <div class="fsa-progress__details fsa-sr-only">
@@ -234,25 +149,12 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <option>Farm 6789</option>
   </select>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Select, block
-<div class="ds-preview">
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Loading counties</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-  <select name="UNIQUE-ID-WAGSYS61" id="UNIQUE-ID-WAGSYS61" class="fsa-select fsa-select--block">
-    <option>California</option>
-    <option>Kansas</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Loading counties</div>
@@ -266,24 +168,13 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
   <option>California</option>
   <option>Kansas</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Input, inline
-<div class="ds-preview">
-  <div class="fsa-progress-inline">
-    <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-      <div class="fsa-progress__details fsa-sr-only">
-        <div class="fsa-progress__label">Calculating age</div>
-      </div>
-      <div class="fsa-progress__bar" aria-hidden="true">
-        <div class="fsa-progress__primary"></div>
-        <div class="fsa-progress__secondary"></div>
-      </div>
-    </div>
-    <input type="text" class="fsa-input" value="05/14/1975">
-  </div>
-</div>
-```html
+
+{% capture snippet %}
 <div class="fsa-progress-inline">
   <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
     <div class="fsa-progress__details fsa-sr-only">
@@ -296,22 +187,13 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
   </div>
   <input type="text" class="fsa-input" value="05/14/1975">
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Input, block
-<div class="ds-preview">
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Loading counties</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-  <input class="fsa-input fsa-input--block" value="California">
-</div>
-```html
+
+{% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Loading counties</div>
@@ -322,70 +204,13 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
   </div>
 </div>
 <input class="fsa-input fsa-input--block" value="California">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Table
 <button type="button" class="fsa-btn fsa-btn--secondary fsa-btn--small" data-behavior="toggleTableProgress">Toggle progress</button>
-<div class="ds-preview">
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite" id="tableProgress">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Loading Commodities</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-  <table class="fsa-table fsa-table--borderless fsa-m-t--none">
-    <thead>
-      <tr>
-        <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
-        <th scope="col" class="fsa-text-align--right" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Loan Rate</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Alternative PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate</button></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Oats $/Bushel</td>
-        <td class="fsa-text-align--right">1.43</td>
-        <td class="fsa-text-align--right">2.97</td>
-        <td class="fsa-text-align--right">1.92</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Barley $/Bushel</td>
-        <td class="fsa-text-align--right">1.75</td>
-        <td class="fsa-text-align--right">3.30</td>
-        <td class="fsa-text-align--right">2.60</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Wheat - Soft Red Winter $/Bushel</td>
-        <td class="fsa-text-align--right">2.42</td>
-        <td class="fsa-text-align--right">4.49</td>
-        <td class="fsa-text-align--right">4.19</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Canola $/Cwt.</td>
-        <td class="fsa-text-align--right">8.94</td>
-        <td class="fsa-text-align--right">15.99</td>
-        <td class="fsa-text-align--right">15.89</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Flaxseed $/Cwt.</td>
-        <td class="fsa-text-align--right">10.13</td>
-        <td class="fsa-text-align--right">15.90</td>
-        <td class="fsa-text-align--right">14.62</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite" id="tableProgress">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Loading Commodities</div>
@@ -443,24 +268,12 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Box
-<div class="ds-preview">
-  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-    <div class="fsa-progress__details fsa-sr-only">
-      <div class="fsa-progress__label">Processing claims</div>
-    </div>
-    <div class="fsa-progress__bar" aria-hidden="true">
-      <div class="fsa-progress__primary"></div>
-      <div class="fsa-progress__secondary"></div>
-    </div>
-  </div>
-  <div class="fsa-box">
-    Ipsum magni blanditiis inve labore hic atque expedita voluptate fuga!
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
     <div class="fsa-progress__label">Processing claims</div>
@@ -473,7 +286,9 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 <div class="fsa-box">
   Ipsum magni blanditiis inve labore hic atque expedita voluptate fuga!
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Paired with Header
 

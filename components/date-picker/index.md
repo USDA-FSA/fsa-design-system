@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Date Picker"
-intro: "The Date Picker augments an Input element or Form Field with the ability to select a date in a Calendar view."
+intro: "Choose a valid formatted date."
 jump_menu: true
 custom_js: "datepicker-demo.js"
 relatedItems:
@@ -11,6 +11,8 @@ relatedItems:
   - "Text Input"
 title_label: 'JavaScript Included'
 ---
+
+This extends the [Text Input]({{ site.baseurl }}components/text-input/) or the [Form Fields]({{ site.baseurl }}components/form-fields/) component with the ability to select a valid date from a Calendar view.
 
 <div class="ds-preview">
   <div class="fsa-field">
@@ -376,45 +378,6 @@ The following list of conversion specifiers are valid for use within the date fo
       <td aria-label="Description">
         <code>%n.%j.%Y</code>
       </td>
-    </tr>
-  </tbody>
-</table>
-
-## CSS Class Overview
-
-The below Overview of CSS Classes are identical to the [Form Fields Component]({{ site.baseurl }}/components/form-fields/), and the Date Picker augments this component by utilizing JavaScript that builds the neccessary CSS at run-time.
-
-<table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
-  <thead>
-    <th scope="col">Selector</th>
-    <th scope="col">Description</th>
-    <th scope="col">Required</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__label</code></th>
-      <td aria-label="Description">Provide the standard style and position of the label of the form element</td>
-      <td aria-label="Required">Yes</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__label-desc</code></th>
-      <td aria-label="Description"><span>Paired with <code>fsa-field__label</code>, may be used to indicate Required or Optional fields, or omitted.</span></td>
-      <td aria-label="Required">No</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__item</code></th>
-      <td aria-label="Description">Provides standardized style and position for form elements</td>
-      <td aria-label="Required">Yes</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__help</code></th>
-      <td aria-label="Description">Provides instructional text in a standardized location</td>
-      <td aria-label="Required">No, though advised</td>
-    </tr>
-    <tr>
-      <th aria-label="Selector" scope="row"><code>fsa-field__message</code></th>
-      <td aria-label="Description">Provides validation and error messaging in standardized location</td>
-      <td aria-label="Required">No, though advised</td>
     </tr>
   </tbody>
 </table>

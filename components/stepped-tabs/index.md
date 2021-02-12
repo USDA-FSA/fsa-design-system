@@ -4,8 +4,10 @@ parent: "Components"
 type: "UI Component"
 title: "Stepped Tabs"
 shortName: "component__stepped-tabs"
-intro: "Provide guidance, context, and navigation to the User while in a stepped process workflow."
+intro: "Provide guidance, context, and navigation through a stepped process or workflow."
 jump_menu: true
+relatedItems:
+  - "Stepped Process"
 ---
 
 <div class="ds-preview">
@@ -39,50 +41,33 @@ jump_menu: true
   </nav>
 </div>
 
-### Step States
+## Anatomy
 
-Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In the above example:
+Each Step can be one of three possible states.
 
-1. **Step 1**: Completed
-1. **Step 2**: Current
-1. **Step 3**: Incomplete / Upcoming / Future
-1. **Step 4**: Incomplete / Upcoming / Future
+```html
+<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--[STATE]" href="link.html">
+  <span class="fsa-stepped-tabs__text">Label</span>
+</a>
+```
+
+{% capture anatomy__markers %}
+
+1. <nobr><code>fsa-stepped-tabs__label<strong>--complete</strong></code></nobr>
+1. <nobr><code>fsa-stepped-tabs__label<strong>--active</strong></code></nobr>
+1. <nobr><code>fsa-stepped-tabs__label<strong>--incomplete</strong></code></nobr>
+
+{% endcapture %}
+
+{% assign anatomy__image-off = "stepped-tabs.png" %}
+
+{% include anatomy.html %}
 
 ## Variations and Examples
 
 ### Default
 
-<div class="ds-preview">
-  <nav aria-label="Breadcrumbs">
-    <div class="fsa-stepped-tabs">
-      <div class="fsa-stepped-tabs__bd">
-        <ol class="fsa-stepped-tabs__list">
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
-              <span class="fsa-stepped-tabs__text">Lor</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
-              <span class="fsa-stepped-tabs__text">Em ipsum</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Dol</span>
-            </span>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
-            </span>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Breadcrumbs">
   <div class="fsa-stepped-tabs">
     <div class="fsa-stepped-tabs__bd">
@@ -111,42 +96,15 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
     </div>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Buttons
 
 **Actionable** steps can be an `<a>` element or `<button>`, depending on how your system is set up.
-<div class="ds-preview">
-  <nav aria-label="Breadcrumbs">
-    <div class="fsa-stepped-tabs">
-      <div class="fsa-stepped-tabs__bd">
-        <ol class="fsa-stepped-tabs__list">
-          <li class="fsa-stepped-tabs__item">
-            <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" type="button">
-              <span class="fsa-stepped-tabs__text">Lor</span>
-            </button>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <button class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" type="button" aria-current="step">
-              <span class="fsa-stepped-tabs__text">Em ipsum</span>
-            </button>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Dol</span>
-            </span>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-              <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
-            </span>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </nav>
-</div>
-```html
+
+{% capture snippet %}
 <nav aria-label="Breadcrumbs">
   <div class="fsa-stepped-tabs">
     <div class="fsa-stepped-tabs__bd">
@@ -175,41 +133,15 @@ Each Step (`fsa-stepped-tabs__label`) can be one of three possible states. In th
     </div>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Actionable: none
 
 Use when user should be **prevented** from using Stepped Tabs as a means of navigation (forward backwards within a process), utilize this variation. Each `fsa-stepped-tabs__label` is a `<span>` instead of an actionable `<a>` or `<button>`.
 
-<div class="ds-preview">
-  <div class="fsa-stepped-tabs">
-    <div class="fsa-stepped-tabs__bd">
-      <ol class="fsa-stepped-tabs__list">
-        <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-            <span class="fsa-stepped-tabs__text">Lor</span>
-          </span>
-        </li>
-        <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="step">
-            <span class="fsa-stepped-tabs__text">Em ipsum</span>
-          </span>
-        </li>
-        <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-            <span class="fsa-stepped-tabs__text">Dol</span>
-          </span>
-        </li>
-        <li class="fsa-stepped-tabs__item">
-          <span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-            <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
-          </span>
-        </li>
-      </ol>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-stepped-tabs">
   <div class="fsa-stepped-tabs__bd">
     <ol class="fsa-stepped-tabs__list">
@@ -236,41 +168,13 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
     </ol>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Actionable: all
 
-<div class="ds-preview">
-  <nav aria-label="Breadcrumbs">
-    <div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-      <div class="fsa-stepped-tabs__bd">
-        <ol class="fsa-stepped-tabs__list">
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
-              <span class="fsa-stepped-tabs__text">Lor</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
-              <span class="fsa-stepped-tabs__text">Em ipsum</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete" href="link.html">
-              <span class="fsa-stepped-tabs__text">Dol</span>
-            </a>
-          </li>
-          <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete" href="link.html">
-              <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
-            </a>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Breadcrumbs">
   <div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
     <div class="fsa-stepped-tabs__bd">
@@ -299,7 +203,9 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
     </div>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Samples
 

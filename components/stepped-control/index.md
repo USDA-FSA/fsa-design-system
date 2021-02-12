@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Stepped Control"
 shortName: "component__stepped-control"
-intro: "Anchor a multi-step process with directional actions."
+intro: "Navigate through a multi-step process with directional actions."
 relatedItems:
   - "Buttons"
   - "Stepped Process"

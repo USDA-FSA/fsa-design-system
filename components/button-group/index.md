@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Button Group"
 shortName: "component__button-group"
-intro: "Use button groups as a mechanism to toggle between multiple button actions."
+intro: "Toggle between mutually exclusive states."
 relatedItems:
   - "Action Bar with Table"
 jump_menu: true
@@ -25,121 +25,83 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 
 ### Default
 
-<div class="ds-preview">
-  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-  </span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
 </span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <span class="fsa-btn-group fsa-btn-group--small" role="group" aria-label="Label describing this group">
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-  </span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-btn-group fsa-btn-group--small" role="group" aria-label="Label describing this group">
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
 </span>
-```
+{% endcapture %}
 
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <span class="fsa-btn-group fsa-btn-group--large" role="group" aria-label="Label describing this group">
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-  </span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-btn-group fsa-btn-group--large" role="group" aria-label="Label describing this group">
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
 </span>
-```
+{% endcapture %}
 
+{% include preview-and-snippet.html %}
 
 ### Block
 
-<div class="ds-preview">
-  <span class="fsa-btn-group fsa-btn-group--block" role="group" aria-label="Label describing this group">
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-  </span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-btn-group fsa-btn-group--block" role="group" aria-label="Label describing this group">
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
 </span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Example: none selected
 
-<div class="ds-preview">
-  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-  <button class="fsa-btn-group__item" type="button">Label one</button>
-  <button class="fsa-btn-group__item" type="button">Label two</button>
-  <button class="fsa-btn-group__item" type="button">Label three</button>
-  <button class="fsa-btn-group__item" type="button">Label fo</button>
-  </span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
   <button class="fsa-btn-group__item" type="button">Label one</button>
   <button class="fsa-btn-group__item" type="button">Label two</button>
   <button class="fsa-btn-group__item" type="button">Label three</button>
   <button class="fsa-btn-group__item" type="button">Label fo</button>
 </span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Example: as `<a>` element
 
 Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though depending on their use might be an `<a>` element.
 
-<div class="ds-preview">
-  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-    <a class="fsa-btn-group__item" href="link.html">Label one</a>
-    <a class="fsa-btn-group__item fsa-btn-group__item--active" href="link.html">Label active</a>
-    <a class="fsa-btn-group__item" href="link.html">Label three</a>
-    <a class="fsa-btn-group__item" href="link.html">Label fo</a>
-  </span>
-</div>
-```html
+{% capture snippet %}
 <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
   <a class="fsa-btn-group__item" href="link.html">Label one</a>
   <a class="fsa-btn-group__item fsa-btn-group__item--active" href="link.html">Label active</a>
   <a class="fsa-btn-group__item" href="link.html">Label three</a>
   <a class="fsa-btn-group__item" href="link.html">Label fo</a>
 </span>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 

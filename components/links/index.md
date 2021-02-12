@@ -3,17 +3,15 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Text Links"
-intro: "More specifically known as <strong>anchor</strong> elements, text links are the most foundational elements of HTML, allowing user to navigate to a different page or further information."
+intro: "Navigate between views with inline text links."
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  This is <a href="http://www.fsa.usda.gov/">text link</a>. And a link that goes to an <a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">external website</a>.
-</div>
-```html
-<a href="http://www.fsa.usda.gov/">Text link</a>
-<a class="usa-external_link" href="http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">FSA Homepage</a>
-```
+{% capture snippet %}
+This is <a href="http://www.fsa.usda.gov/">text link</a>. And a link that goes to an <a class="usa-external_link" href="https://digital.gov/">external website</a>.
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 

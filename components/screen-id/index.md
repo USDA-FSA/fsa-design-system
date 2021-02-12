@@ -3,21 +3,11 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Screen ID"
-intro: "The Screen ID Component shall be used across all FPAC applications to better identify technical issues."
+intro: "Display a unique ID to each page view."
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  <div class="fsa-screen-id">
-    <div class="fsa-screen-id__bd">
-      <dl class="fsa-screen-id__dl">
-        <dt class="fsa-screen-id__dt">Screen ID</dt>
-        <dd class="fsa-screen-id__dd">XYZ-WEB-007</dd>
-      </dl>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-screen-id">
   <div class="fsa-screen-id__bd">
     <dl class="fsa-screen-id__dl">
@@ -26,7 +16,9 @@ jump_menu: true
     </dl>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Variations
 
@@ -38,17 +30,7 @@ jump_menu: true
   </div>
 </div>
 
-<div class="ds-preview">
-  <div class="fsa-screen-id fsa-screen-id--fullscreen">
-    <div class="fsa-screen-id__bd">
-      <dl class="fsa-screen-id__dl">
-        <dt class="fsa-screen-id__dt">Screen ID</dt>
-        <dd class="fsa-screen-id__dd">XYZ-WEB-007</dd>
-      </dl>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-screen-id fsa-screen-id--fullscreen">
   <div class="fsa-screen-id__bd">
     <dl class="fsa-screen-id__dl">
@@ -57,7 +39,9 @@ jump_menu: true
     </dl>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 

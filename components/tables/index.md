@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Tables"
 shortName: "component__tables"
-intro: "Data tables presenting tabular data in columns and rows."
+intro: "Present data or content in a tabular format."
 jump_menu: true
 relatedItems:
   - "Action Bar with Table"
@@ -62,52 +62,7 @@ Multiple modifying options are demonstrated for table rows (`tr`), table header 
 
 ### Default
 
-<div class="ds-preview">
-  <table class="fsa-table">
-    <caption>[Table caption]</caption>
-    <thead>
-      <tr>
-        <th scope="col" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Commodity</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Loan Rate</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Barley $/Bushel</td>
-        <td class="fsa-text-align--right">1.75</td>
-        <td class="fsa-text-align--right">3.30</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Canola $/Cwt.</td>
-        <td class="fsa-text-align--right">8.94</td>
-        <td class="fsa-text-align--right">15.99</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Flaxseed $/Cwt.</td>
-        <td class="fsa-text-align--right">10.13</td>
-        <td class="fsa-text-align--right">15.90</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Oats $/Bushel</td>
-        <td class="fsa-text-align--right">1.43</td>
-        <td class="fsa-text-align--right">2.97</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Wheat - Soft Red Winter $/Bushel</td>
-        <td class="fsa-text-align--right">2.42</td>
-        <td class="fsa-text-align--right">4.49</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table">
   <caption>[Table caption]</caption>
   <thead>
@@ -151,60 +106,15 @@ Multiple modifying options are demonstrated for table rows (`tr`), table header 
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Customize caption
 
 The `<caption>`'s default presentation does not provide a hierarchical context. An `<hN>` element can be nested within to provide a stronger heading structure and clear visual hierarchy while providing stricter access through the `<caption>` element.
 
-<div class="ds-preview">
-  <table class="fsa-table">
-    <caption>
-      <h2>[Table caption as an &lt;h2&gt;]</h2>
-    </caption>
-    <thead>
-      <tr>
-        <th scope="col" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Commodity</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Loan Rate</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Barley $/Bushel</td>
-        <td class="fsa-text-align--right">1.75</td>
-        <td class="fsa-text-align--right">3.30</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Canola $/Cwt.</td>
-        <td class="fsa-text-align--right">8.94</td>
-        <td class="fsa-text-align--right">15.99</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Flaxseed $/Cwt.</td>
-        <td class="fsa-text-align--right">10.13</td>
-        <td class="fsa-text-align--right">15.90</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Oats $/Bushel</td>
-        <td class="fsa-text-align--right">1.43</td>
-        <td class="fsa-text-align--right">2.97</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Wheat - Soft Red Winter $/Bushel</td>
-        <td class="fsa-text-align--right">2.42</td>
-        <td class="fsa-text-align--right">4.49</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table">
   <caption>
     <h2>[Table caption as an &lt;h2&gt;]</h2>
@@ -225,6 +135,24 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
       <td class="fsa-text-align--right">0.00</td>
     </tr>
     <tr>
+      <td>Canola $/Cwt.</td>
+      <td class="fsa-text-align--right">8.94</td>
+      <td class="fsa-text-align--right">15.99</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+    <tr>
+      <td>Flaxseed $/Cwt.</td>
+      <td class="fsa-text-align--right">10.13</td>
+      <td class="fsa-text-align--right">15.90</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+    <tr>
+      <td>Oats $/Bushel</td>
+      <td class="fsa-text-align--right">1.43</td>
+      <td class="fsa-text-align--right">2.97</td>
+      <td class="fsa-text-align--right">0.00</td>
+    </tr>
+    <tr>
       <td>Wheat - Soft Red Winter $/Bushel</td>
       <td class="fsa-text-align--right">2.42</td>
       <td class="fsa-text-align--right">4.49</td>
@@ -232,56 +160,13 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Borderless
 
-<div class="ds-preview">
-  <table class="fsa-table fsa-table--borderless">
-    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
-    <thead>
-      <tr>
-        <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
-        <th scope="col" class="fsa-text-align--right" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Loan Rate</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Oats $/Bushel</td>
-        <td class="fsa-text-align--right">1.43</td>
-        <td class="fsa-text-align--right">2.97</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Barley $/Bushel</td>
-        <td class="fsa-text-align--right">1.75</td>
-        <td class="fsa-text-align--right">3.30</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Wheat - Soft Red Winter $/Bushel</td>
-        <td class="fsa-text-align--right">2.42</td>
-        <td class="fsa-text-align--right">4.49</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Canola $/Cwt.</td>
-        <td class="fsa-text-align--right">8.94</td>
-        <td class="fsa-text-align--right">15.99</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Flaxseed $/Cwt.</td>
-        <td class="fsa-text-align--right">10.13</td>
-        <td class="fsa-text-align--right">15.90</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table fsa-table--borderless">
   <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <thead>
@@ -289,7 +174,6 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
       <th scope="col"><button class="fsa-table__sort" type="button">Commodity</button></th>
       <th scope="col" class="fsa-text-align--right" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Loan Rate</button></th>
       <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-      <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Alternative PCP</button></th>
       <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
     </tr>
   </thead>
@@ -298,97 +182,43 @@ The `<caption>`'s default presentation does not provide a hierarchical context. 
       <td>Oats $/Bushel</td>
       <td class="fsa-text-align--right">1.43</td>
       <td class="fsa-text-align--right">2.97</td>
-      <td class="fsa-text-align--right">1.92</td>
       <td class="fsa-text-align--right">0.00</td>
     </tr>
     <tr>
       <td>Barley $/Bushel</td>
       <td class="fsa-text-align--right">1.75</td>
       <td class="fsa-text-align--right">3.30</td>
-      <td class="fsa-text-align--right">2.60</td>
       <td class="fsa-text-align--right">0.00</td>
     </tr>
     <tr>
       <td>Wheat - Soft Red Winter $/Bushel</td>
       <td class="fsa-text-align--right">2.42</td>
       <td class="fsa-text-align--right">4.49</td>
-      <td class="fsa-text-align--right">4.19</td>
       <td class="fsa-text-align--right">0.00</td>
     </tr>
     <tr>
       <td>Canola $/Cwt.</td>
       <td class="fsa-text-align--right">8.94</td>
       <td class="fsa-text-align--right">15.99</td>
-      <td class="fsa-text-align--right">15.89</td>
       <td class="fsa-text-align--right">0.00</td>
     </tr>
     <tr>
       <td>Flaxseed $/Cwt.</td>
       <td class="fsa-text-align--right">10.13</td>
       <td class="fsa-text-align--right">15.90</td>
-      <td class="fsa-text-align--right">14.62</td>
       <td class="fsa-text-align--right">0.00</td>
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Plain
 
 Omitting the default `class="fsa-table"` outright renders a non-styled table, effectively "resetting" it.
 
-<div class="ds-preview">
-  <table>
-    <caption>[Table caption]</caption>
-    <thead>
-      <tr>
-        <th scope="col" aria-sort="ascending"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Commodity</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Loan Rate</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">30-Day Period PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Alternative PCP</button></th>
-        <th scope="col" class="fsa-text-align--right"><button class="fsa-table__sort" type="button">Effective LDP Rate ($)</button></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Barley $/Bushel</td>
-        <td class="fsa-text-align--right">1.75</td>
-        <td class="fsa-text-align--right">3.30</td>
-        <td class="fsa-text-align--right">2.60</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Canola $/Cwt.</td>
-        <td class="fsa-text-align--right">8.94</td>
-        <td class="fsa-text-align--right">15.99</td>
-        <td class="fsa-text-align--right">15.89</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Flaxseed $/Cwt.</td>
-        <td class="fsa-text-align--right">10.13</td>
-        <td class="fsa-text-align--right">15.90</td>
-        <td class="fsa-text-align--right">14.62</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Oats $/Bushel</td>
-        <td class="fsa-text-align--right">1.43</td>
-        <td class="fsa-text-align--right">2.97</td>
-        <td class="fsa-text-align--right">1.92</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-      <tr>
-        <td>Wheat - Soft Red Winter $/Bushel</td>
-        <td class="fsa-text-align--right">2.42</td>
-        <td class="fsa-text-align--right">4.49</td>
-        <td class="fsa-text-align--right">4.19</td>
-        <td class="fsa-text-align--right">0.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table>
   <caption>[Table caption]</caption>
   <thead>
@@ -438,151 +268,147 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Vertical Align: Middle
 
-<div class="ds-preview">
-  <table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
-    <thead>
-      <tr>
-        <th>Lorem ipsum dolor sit amet consec tetur</th>
-        <th>Lorem</th>
-        <th>Ipsum</th>
-        <th>Dolor</th>
-        <th>Sitaw</th>
-        <th>Ametg</th>
-        <th>Conse</th>
-        <th>Adipi</th>
-        <th>Accus</th>
-        <th>Omnisi</th>
-        <th>Aliqum</th>
-        <th>Rerum odio volupt atibus eligendi</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consec tetur</td>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        <th>Rerum odio volupt atibus eligendi</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consec tetur</td>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        <th>Rerum odio voluptatibus eligendi</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consec tetur</td>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        <th>Rerum odio voluptatibus eligendi</th>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table fsa-table--borderless fsa-table--valign-middle">
-  ...
+  <thead>
+    <tr>
+      <th>Lorem ipsum dolor sit amet consec tetur</th>
+      <th>Lorem</th>
+      <th>Ipsum</th>
+      <th>Dolor</th>
+      <th>Sitaw</th>
+      <th>Ametg</th>
+      <th>Conse</th>
+      <th>Adipi</th>
+      <th>Accus</th>
+      <th>Omnisi</th>
+      <th>Aliqum</th>
+      <th>Rerum odio volupt atibus eligendi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lorem ipsum dolor sit amet consec tetur</td>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Rerum odio volupt atibus eligendi</th>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor sit amet consec tetur</td>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Rerum odio voluptatibus eligendi</th>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor sit amet consec tetur</td>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Rerum odio voluptatibus eligendi</th>
+    </tr>
+  </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Vertical Align: Bottom
 
-<div class="ds-preview">
-  <table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
-    <thead>
-      <tr>
-        <th>Lorem ipsum dolor sit amet consec tetur</th>
-        <th>Lorem</th>
-        <th>Ipsum</th>
-        <th>Dolor</th>
-        <th>Sitaw</th>
-        <th>Ametg</th>
-        <th>Conse</th>
-        <th>Adipi</th>
-        <th>Accus</th>
-        <th>Omnisi</th>
-        <th>Aliqum</th>
-        <th>Rerum odio volupt atibus eligendi</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consec tetur</td>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        <th>Rerum odio volupt atibus eligendi</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consec tetur</td>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        <th>Rerum odio voluptatibus eligendi</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consec tetur</td>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        <th>Rerum odio voluptatibus eligendi</th>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table fsa-table--borderless fsa-table--valign-bottom">
-  ...
+  <thead>
+    <tr>
+      <th>Lorem ipsum dolor sit amet consec tetur</th>
+      <th>Lorem</th>
+      <th>Ipsum</th>
+      <th>Dolor</th>
+      <th>Sitaw</th>
+      <th>Ametg</th>
+      <th>Conse</th>
+      <th>Adipi</th>
+      <th>Accus</th>
+      <th>Omnisi</th>
+      <th>Aliqum</th>
+      <th>Rerum odio volupt atibus eligendi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lorem ipsum dolor sit amet consec tetur</td>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Rerum odio volupt atibus eligendi</th>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor sit amet consec tetur</td>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Rerum odio voluptatibus eligendi</th>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor sit amet consec tetur</td>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Rerum odio voluptatibus eligendi</th>
+    </tr>
+  </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Sticky Header
 <div class="ds-preview ds-preview--bare ds-preview--overflow-example">
@@ -894,20 +720,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     </tbody>
   </table>
 </div>
-```html
-<table class="fsa-table ...">
-  <thead>
-    <tr>
-      ...
-      <th class="fsa-table__th--sticky">top header cell</th>
-      ...
-    </tr>
-  </thead>
-  <tbody>
-    ...
-  </tbody>
-</table>
-```
 
 ### Sticky Footer
 <div class="ds-preview ds-preview--bare ds-preview--overflow-example">
@@ -1144,29 +956,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     </tbody>
   </table>
 </div>
-```html
-<table class="fsa-table ... ">
-  <caption class="sr-only">Terminal Markets: Commodities</caption>
-  <thead>
-    <tr>
-      ...
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      ...
-      <th class="fsa-table__th--sticky-foot" scope="row">Average</th>
-      <td class="fsa-table__th--sticky-foot fsa-text-align--right">6.16</td>
-      ...
-    </tr>
-    <tr>
-    </tr>
-  </tfoot>
-  <tbody>
-    ...
-  </tbody>
-</table>
-```
 
 ### Select Multiple Rows
 
@@ -1419,51 +1208,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     checkboxIndeterminateExampleTable.indeterminate = true;
   </script>
 </div>
-```html
-<table class="fsa-table ... ">
-  <caption>...</caption>
-  <thead>
-    <tr>
-      <th class="fsa-table__th--sticky fsa-table__th--select">
-        <span>
-          <input class="fsa-checkbox fsa-checkbox--solo" id="inpections__select-all" type="checkbox" name="inpections__select-all" value="Select all">
-          <label for="inpections__select-all" title="Select all"><span class="sr-only">Select all</span></label>
-        </span>
-      </th>
-      ...
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td aria-label="Select">
-        <span>
-          <input disabled="disabled" class="fsa-checkbox fsa-checkbox--solo" id="inpections__select-inspection--06" type="checkbox" name="inpections__select-inspection--06" value="06">
-          <label for="inpections__select-inspection--06"><span class="sr-only">Select this row</span></label>
-        </span>
-      </td>
-      ...
-    </tr>
-    <tr class="fsa-table__row--selected">
-      <td aria-label="Select">
-        <span>
-          <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-row" id="inpections__select-inspection--07" type="checkbox" name="inpections__select-inspection--07" value="07" checked>
-          <label for="inpections__select-inspection--07"><span class="sr-only">Select this row</span></label>
-        </span>
-      </td>
-      ...
-    </tr>
-    <tr>
-      <td aria-label="Select">
-        <span>
-          <input class="fsa-checkbox fsa-checkbox--solo" data-behavior="select-table-row" id="inpections__select-inspection--10" type="checkbox" name="inpections__select-inspection--10" value="10">
-          <label for="inpections__select-inspection--10"><span class="sr-only">Select this row</span></label>
-        </span>
-      </td>
-      ...
-    </tr>
-  </tbody>
-</table>
-```
 
 ### Select a Single Row
 
@@ -1554,42 +1298,6 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
     </tbody>
   </table>
 </div>
-```html
-<table class="fsa-table" ... >
-  <caption class="sr-only">...</caption>
-  <thead>
-    <tr>
-      <th class="fsa-table__th--sticky fsa-table__th--select">
-        <span>
-          <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--00" type="radio" name="commodities__select-row" value="01" disabled>
-          <label for="commodities__select-row--00"><span class="sr-only">Select this row</span></label>
-        </span>
-      </th>
-      ...
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td aria-label="Select">
-        <span>
-          <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--01" type="radio" name="commodities__select-row" value="01">
-          <label for="commodities__select-row--01"><span class="sr-only">Select this row</span></label>
-        </span>
-      </td>
-      ...
-    </tr>
-    <tr class="fsa-table__row--selected">
-      <td aria-label="Select">
-        <span>
-          <input class="fsa-radio fsa-radio--solo" data-behavior="select-one-table-row" id="commodities__select-row--02" type="radio" name="commodities__select-row" value="02" checked>
-          <label for="commodities__select-row--02"><span class="sr-only">Select this row</span></label>
-        </span>
-      </td>
-      ...
-    </tr>
-  </tbody>
-</table>
-```
 
 ## Responsive
 
@@ -1625,44 +1333,7 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
 
 {% include alert.rwd-rendering__small.html %}
 
-<div class="ds-preview">
-  <table class="fsa-table fsa-table--responsive">
-    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
-    <thead>
-      <tr>
-        <th scope="col">Commodity</th>
-        <th scope="col" class="fsa-text-align--right">Loan Rate</th>
-        <th scope="col" class="fsa-text-align--right">30-Day Period PCP</th>
-        <th scope="col" class="fsa-text-align--right">Alternative PCP</th>
-        <th scope="col" class="fsa-text-align--right">Effective LDP Rate ($)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td aria-label="Commodity">Barley $/Bushel</td>
-        <td class="fsa-text-align--right" aria-label="Loan Rate">1.75</td>
-        <td class="fsa-text-align--right" aria-label="30-Day Period PCP">3.30</td>
-        <td class="fsa-text-align--right" aria-label="Alternative PCP">2.60</td>
-        <td class="fsa-text-align--right" aria-label="Effective LDP Rate ($)">0.00</td>
-      </tr>
-      <tr>
-        <td aria-label="Commodity">Canola $/Cwt.</td>
-        <td class="fsa-text-align--right" aria-label="Loan Rate">8.94</td>
-        <td class="fsa-text-align--right" aria-label="30-Day Period PCP">15.99</td>
-        <td class="fsa-text-align--right" aria-label="Alternative PCP">15.89</td>
-        <td class="fsa-text-align--right" aria-label="Effective LDP Rate ($)">0.00</td>
-      </tr>
-      <tr>
-        <td aria-label="Commodity">Oats $/Bushel</td>
-        <td class="fsa-text-align--right" aria-label="Loan Rate">1.43</td>
-        <td class="fsa-text-align--right" aria-label="30-Day Period PCP">2.97</td>
-        <td class="fsa-text-align--right" aria-label="Alternative PCP">1.92</td>
-        <td class="fsa-text-align--right" aria-label="Effective LDP Rate ($)">0.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table fsa-table--responsive">
   <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <thead>
@@ -1698,42 +1369,15 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Horizontal
 
 {% include alert.rwd-rendering__small.html %}
 
-<div class="ds-preview">
-  <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
-    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
-    <thead>
-      <tr>
-        <th scope="col"><button class="fsa-table__sort" type="button">Document title</button></th>
-        <th scope="col"><button class="fsa-table__sort" type="button">Description</button></th>
-        <th scope="col" aria-sort="ascending" class="fsa-text-align--right"><button class="fsa-table__sort fsa-table__sort--ascending" type="button">Year</button></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th aria-label="Document title" scope="row">Declaration of Independence</th>
-        <td aria-label="Description">Statement</td>
-        <td aria-label="Year" class="fsa-text-align--right">1776</td>
-      </tr>
-      <tr>
-        <th aria-label="Document title" scope="row">Bill of Rights</th>
-        <td aria-label="Description">The first ten amendments</td>
-        <td aria-label="Year" class="fsa-text-align--right">1791</td>
-      </tr>
-      <tr>
-        <th aria-label="Document title" scope="row">Emancipation Proclamation</th>
-        <td aria-label="Description">Executive order granting freedom to slaves in designated southern states.</td>
-        <td aria-label="Year" class="fsa-text-align--right">1863</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-```html
+{% capture snippet %}
 <table class="fsa-table fsa-table--responsive fsa-table--responsive-horizontal">
   <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
   <thead>
@@ -1761,7 +1405,9 @@ Each table variation above can be made to fit on smaller viewports (i.e. mobile 
     </tr>
   </tbody>
 </table>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Usage
 

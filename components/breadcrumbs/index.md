@@ -4,54 +4,53 @@ parent: "Components"
 type: "UI Component"
 title: "Breadcrumbs"
 shortName: "component__breadcrumbs"
-intro: "Breadcrumbs are a secondary navigation element used to help orient a User within an application, and enable quick access to a parent level."
+intro: "Provide hierarchical position within an application, and enable quick access through its levels."
 jump_menu: true
 ---
 
-<div class="ds-preview">
-  <div class="fsa-breadcrumb">
-    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-      <ul class="fsa-breadcrumb__list">
-        <li class="fsa-breadcrumb__item">
-          <a href="#" class="fsa-breadcrumb__link">Home</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="#" class="fsa-breadcrumb__link">Level 1</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="#" class="fsa-breadcrumb__link">Level 2</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="#" class="fsa-breadcrumb__link">Level 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+{% capture snippet %}
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ul class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="#" class="fsa-breadcrumb__link">Home</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="#" class="fsa-breadcrumb__link">Level 1</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="#" class="fsa-breadcrumb__link">Level 2</a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="#" class="fsa-breadcrumb__link">Level 3</a>
+      </li>
+    </ul>
+  </nav>
 </div>
-```html
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+## Examples
+
+Breadcrumbs are typically paired with the `<h1>` page title. The following examples demonstrate how `fsa-breadcrumb` works in concert with the `<h1>` Page Title.
+
+### Single Item
+
+{% capture snippet %}
 <div class="fsa-breadcrumb">
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
         <a href="/" class="fsa-breadcrumb__link">Home</a>
       </li>
-      <li class="fsa-breadcrumb__item">
-        <a href="/level-1/" class="fsa-breadcrumb__link">Level 1</a>
-      </li>
-      <li class="fsa-breadcrumb__item">
-        <a href="/level-1/level-2/" class="fsa-breadcrumb__link">Level 2</a>
-      </li>
-      <li class="fsa-breadcrumb__item">
-        <a href="/level-1/level-2/level-3" class="fsa-breadcrumb__link">Level 3</a>
-      </li>
     </ol>
   </nav>
 </div>
-```
+<h1>Sports</h1>
+{% endcapture %}
 
-## Examples
-
-Breadcrumbs are typically paired with the `<h1>` page title. The following examples demonstrate how `fsa-breadcrumb` works in concert with the `<h1>` Page Title.
+{% include preview-and-snippet.html %}
 
 ### Reflect current page
 
@@ -59,28 +58,7 @@ Avoid using the same redundant label for the last crumb to reflect the current p
 
 In this example, the last crumb is indeed the current page - though with an alternate text label accurately describing the current page.
 
-<div class="ds-preview">
-  <div class="fsa-breadcrumb">
-    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-      <ol class="fsa-breadcrumb__list">
-        <li class="fsa-breadcrumb__item">
-          <a href="/" class="fsa-breadcrumb__link">Home</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="link.html" class="fsa-breadcrumb__link">Farm Micro Authority</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
-        </li>
-        <li class="fsa-breadcrumb__item" aria-current="step">
-          <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
-        </li>
-      </ol>
-    </nav>
-  </div>
-  <h1>Inspection #1234</h1>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-breadcrumb">
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
@@ -100,7 +78,9 @@ In this example, the last crumb is indeed the current page - though with an alte
   </nav>
 </div>
 <h1>Inspection #1234</h1>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Reflect parent
 
@@ -108,31 +88,7 @@ When an alternate label (to the Page Title) cannot sufficiently describe the cur
 
 In this example the immediate parent, *American League*, acts as the last crumb to the current page, *Kansas City Royals*.
 
-<div class="ds-preview">
-  <div class="fsa-breadcrumb">
-    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-      <ol class="fsa-breadcrumb__list">
-        <li class="fsa-breadcrumb__item">
-          <a href="/" class="fsa-breadcrumb__link">Home</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="link.html" class="fsa-breadcrumb__link">Sports</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="link.html" class="fsa-breadcrumb__link">Baseball</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="link.html" class="fsa-breadcrumb__link">MLB</a>
-        </li>
-        <li class="fsa-breadcrumb__item">
-          <a href="link.html" class="fsa-breadcrumb__link">American League</a>
-        </li>
-      </ol>
-    </nav>
-  </div>
-  <h1>Kansas City Royals</h1>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-breadcrumb">
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
@@ -155,34 +111,9 @@ In this example the immediate parent, *American League*, acts as the last crumb 
   </nav>
 </div>
 <h1>Kansas City Royals</h1>
-```
+{% endcapture %}
 
-## Single Item Variation
-
-<div class="ds-preview">
-  <div class="fsa-breadcrumb">
-    <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-      <ol class="fsa-breadcrumb__list">
-        <li class="fsa-breadcrumb__item">
-          <a href="/" class="fsa-breadcrumb__link">Home</a>
-        </li>
-      </ol>
-    </nav>
-  </div>
-  <h1>Sports</h1>
-</div>
-```html
-<div class="fsa-breadcrumb">
-  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-    <ol class="fsa-breadcrumb__list">
-      <li class="fsa-breadcrumb__item">
-        <a href="/" class="fsa-breadcrumb__link">Home</a>
-      </li>
-    </ol>
-  </nav>
-</div>
-<h1>Sports</h1>
-```
+{% include preview-and-snippet.html %}
 
 ## Usage
 

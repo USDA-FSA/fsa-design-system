@@ -4,12 +4,12 @@ parent: "Components"
 type: "UI Component"
 title: "Section"
 shortName: "component__section"
-intro: "The Section Layout component can serve as the page's primary container to arrange content, components, and layout. Other than background-color variations, they are not strictly visible in the user interface itself."
+intro: "A page's primary container to contain content, components, and layout."
 jump_menu: true
 suppress_code_toggle: true
 ---
 
-Most page templates likely will use just one `fsa-section--[variation]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
+Other than background-color variations, they are not strictly visible in the user interface itself. Most page templates likely will use just one `fsa-section--[variation]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
 
 <aside>
   <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">

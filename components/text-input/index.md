@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Text Input"
 shortName: "component__text-input"
-intro: "Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted)."
+intro: "Enter any combination of letters, numbers, or symbols for form entry."
 relatedItems:
   - "Action Bar with Table"
   - "Form Fields"
@@ -29,82 +29,70 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 ### Default
 
-<div class="ds-preview">
-  <input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Full-width
 
-<div class="ds-preview">
-  <input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input fsa-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Within a [Field]({{ site.baseurl }}components/form-fields/)
 
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="text" value="">
-    <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-field">
   <label class="fsa-field__label" for="TheItem2">Label <span class="fsa-field__label-desc">Required</span></label>
   <input class="fsa-input fsa-field__item" id="TheItem2" aria-describedby="lorem-1234-help-2" aria-required="true" name="TheItem2" type="text" value="">
   <span class="fsa-field__help" id="lorem-1234-help-2">Instructional message here</span>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Customizing Width
 
 Though it should be **rarely** necessary, the width of `.fsa-input`* can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
 
-<div class="ds-preview">
-  <div class="fsa-level@l">
-    <div>
-      <div class="docs__code-sample"><code>size="<strong>2</strong>"</code></div>
-      <input class="fsa-input" size="2" type="text" name="some_name" value="">
-    </div>
-    <div>
-      <div class="docs__code-sample"><code>size="<strong>14</strong>"</code></div>
-      <input class="fsa-input" size="14" type="text" name="some_name" value="">
-    </div>
-    <div>
-      <div class="docs__code-sample"><code>size="<strong>55</strong>"</code></div>
-      <input class="fsa-input" size="55" type="text" name="some_name" value="">
-    </div>
+{% capture snippet %}
+<div class="fsa-level@l">
+  <div>
+    <div class="docs__code-sample"><code>size="<strong>2</strong>"</code></div>
+    <input class="fsa-input" size="2" type="text" name="some_name" value="">
+  </div>
+  <div>
+    <div class="docs__code-sample"><code>size="<strong>14</strong>"</code></div>
+    <input class="fsa-input" size="14" type="text" name="some_name" value="">
+  </div>
+  <div>
+    <div class="docs__code-sample"><code>size="<strong>55</strong>"</code></div>
+    <input class="fsa-input" size="55" type="text" name="some_name" value="">
   </div>
 </div>
-```html
-<input class="fsa-input" size="2" type="text" name="some_name" value="">
-<input class="fsa-input" size="14" type="text" name="some_name" value="">
-<input class="fsa-input" size="55" type="text" name="some_name" value="">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 *The default width of an `<input class="fsa-input">` is generally `22` characters, though it can vary from browser to browser. Within a [Field]({{ site.baseurl }}components/form-fields/) it defaults to `100%` of its parent container and rarely should be overridden.
 
@@ -112,43 +100,39 @@ Though it should be **rarely** necessary, the width of `.fsa-input`* can be over
 
 ### Error
 
-<div class="ds-preview">
-  <input class="fsa-input fsa-input--error" type="text" name="7id" value="Text">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input fsa-input--error" type="text" name="7id" value="Text">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Positive
 
-<div class="ds-preview">
-  <input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input fsa-input--positive" type="text" name="lorem" value="Text">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Disabled
 
 Disabled fields do not have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
 
-<div class="ds-preview">
-  <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
-</div>
-```html
-<p><input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text"></p>
-```
+{% capture snippet %}
+<input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Readonly
 
 Readonly fields do not have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
 
-<div class="ds-preview">
-  <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
-</div>
-```html
+{% capture snippet %}
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 

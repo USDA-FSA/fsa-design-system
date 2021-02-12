@@ -3,9 +3,11 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Application Header"
-intro: "The Application Header component provides a prominent way to display the application name."
+intro: "Display application name and account-level actions."
 jump_menu: true
 ---
+
+This component is **not** a required Global Navigation structure; rather, it effectively serves as a ready-made UI Pattern implemented with FPAC Design System styles and parts.
 
 <div class="ds-preview">
   <div class="fsa-header-app">
@@ -27,26 +29,6 @@ jump_menu: true
     </div>
   </div>
 </div>
-```html
-<div class="fsa-header-app">
-  <div class="fsa-header-app__bd">
-    <div class="fsa-header-app__primary">
-      <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
-        <span class="fsa-header-app__app-name">
-          <abbr class="fsa-header-app__app-abbr">[abbr]</abbr>
-          <span class="fsa-header-app__app-full">[app name]</span>
-        </span>
-      </a>
-    </div>
-    <div class="fsa-header-app__secondary">
-        <span class="fsa-header-app__profile">
-          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
-          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
-        </span>
-      </div>
-  </div>
-</div>
-```
 
 ## Variations
 
@@ -58,27 +40,7 @@ jump_menu: true
   </div>
 </div>
 
-<div class="ds-preview">
-  <div class="fsa-header-app fsa-header-app--fullscreen">
-    <div class="fsa-header-app__bd">
-      <div class="fsa-header-app__primary">
-        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
-          <span class="fsa-header-app__app-name">
-            <abbr class="fsa-header-app__app-abbr">[abbr]</abbr>
-            <span class="fsa-header-app__app-full">[app name]</span>
-          </span>
-        </a>
-      </div>
-      <div class="fsa-header-app__secondary">
-        <span class="fsa-header-app__profile">
-          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
-          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-header-app fsa-header-app--fullscreen">
   <div class="fsa-header-app__bd">
     <div class="fsa-header-app__primary">
@@ -90,40 +52,21 @@ jump_menu: true
       </a>
     </div>
     <div class="fsa-header-app__secondary">
-        <span class="fsa-header-app__profile">
-          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
-          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
-        </span>
-      </div>
+      <span class="fsa-header-app__profile">
+        <span class="fsa-header-app__profile-name">Brandon Reuben</span>
+        <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
+      </span>
+    </div>
   </div>
 </div>
-```
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
 ## Examples
 
 ### Default
 
-<div class="ds-preview">
-  <div class="fsa-header-app">
-    <div class="fsa-header-app__bd">
-      <div class="fsa-header-app__primary">
-        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
-          <span class="fsa-header-app__app-name">
-            <abbr class="fsa-header-app__app-abbr">SPAR</abbr>
-            <span class="fsa-header-app__app-full">SPA Reference App</span>
-          </span>
-        </a>
-      </div>
-      <div class="fsa-header-app__secondary">
-        <span class="fsa-header-app__profile">
-          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
-          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-header-app">
   <div class="fsa-header-app__bd">
     <div class="fsa-header-app__primary">
@@ -142,30 +85,12 @@ jump_menu: true
     </div>
   </div>
 </div>
-```
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
 ### No acronym
 
-<div class="ds-preview">
-  <div class="fsa-header-app">
-    <div class="fsa-header-app__bd">
-      <div class="fsa-header-app__primary">
-        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
-          <span class="fsa-header-app__app-name">
-            <span class="fsa-header-app__app-full">Design System Boilerplate</span>
-          </span>
-        </a>
-      </div>
-      <div class="fsa-header-app__secondary">
-        <span class="fsa-header-app__profile">
-          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
-          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-header-app">
   <div class="fsa-header-app__bd">
     <div class="fsa-header-app__primary">
@@ -183,31 +108,12 @@ jump_menu: true
     </div>
   </div>
 </div>
-```
-
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
 ### Acronym only
 
-<div class="ds-preview">
-  <div class="fsa-header-app">
-    <div class="fsa-header-app__bd">
-      <div class="fsa-header-app__primary">
-        <a class="fsa-header-app__home-link" href="boilerplate.html" title="Link to YAFANS home">
-          <span class="fsa-header-app__app-name">
-            <abbr class="fsa-header-app__app-abbr">ABC</abbr>
-          </span>
-        </a>
-      </div>
-      <div class="fsa-header-app__secondary">
-        <span class="fsa-header-app__profile">
-          <span class="fsa-header-app__profile-name">Brandon Reuben</span>
-          <a href="https://www.eauth.usda.gov/Logout/logoff.asp" class="fsa-header-app__profile-link">Log out</a>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-header-app">
   <div class="fsa-header-app__bd">
     <div class="fsa-header-app__primary">
@@ -225,7 +131,8 @@ jump_menu: true
     </div>
   </div>
 </div>
-```
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
 ## Responsive
 

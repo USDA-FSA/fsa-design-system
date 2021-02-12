@@ -4,13 +4,15 @@ parent: "Components"
 type: "UI Component"
 title: "Select"
 shortName: "component__select"
-intro: "Sometimes referred to as a “drop down,” the select element allows users to select one option from a list."
+intro: "Select a single option from a list."
 relatedItems:
   - "Form Fields"
+  - "Global Navigation"
+  - "Search"
 jump_menu: true
 ---
 
-Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
+Often referred to as a "drop down" or "pull down" menu, its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-preview">
   <select class="fsa-select" name="Options">
@@ -34,16 +36,7 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 
 ### Default
 
-<div class="ds-preview">
-  <select class="fsa-select" name="Options lorem">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select" name="Options lorem">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
@@ -51,20 +44,13 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   <option value="Option D">Option D</option>
   <option value="Option E">Option E</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Full-width
 
-<div class="ds-preview">
-  <select class="fsa-select fsa-select--block" name="Options ipsum">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select fsa-select--block" name="Options ipsum">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
@@ -72,20 +58,13 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   <option value="Option D">Option D</option>
   <option value="Option E">Option E</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <select class="fsa-select fsa-select--small" name="Options dolor">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select fsa-select--small" name="Options dolor">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
@@ -93,20 +72,13 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   <option value="Option D">Option D</option>
   <option value="Option E">Option E</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Large
 
-<div class="ds-preview">
-  <select class="fsa-select fsa-select--large" name="Options sit">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select fsa-select--large" name="Options sit">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
@@ -114,59 +86,15 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   <option value="Option D">Option D</option>
   <option value="Option E">Option E</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Example: opt-group
 
 `<optgroup>` allows for grouping of multiple `<option>` within a `<select>` element.
 
-<div class="ds-preview">
-  <select class="fsa-select" id="lealtad-de-beisbol" name="lealtad-de-beisbol">
-    <optgroup label="American League West">
-      <option value="Houston Astros">Houston Astros</option>
-      <option value="Los Angeles Angels of Anaheim">Los Angeles Angels of Anaheim</option>
-      <option value="Oakland Athletics">Oakland Athletics</option>
-      <option value="Seattle Mariners">Seattle Mariners</option>
-      <option value="Texas Rangers">Texas Rangers</option>
-    </optgroup>
-    <optgroup label="American League East" disabled="" title="Disabled group">
-      <option value="Baltimore Orioles">Baltimore Orioles</option>
-      <option value="Boston Red Sox">Boston Red Sox</option>
-      <option value="New York Yankees">New York Yankees</option>
-      <option value="Tampa Bay Rays">Tampa Bay Rays</option>
-      <option value="Toronto Blue Jays">Toronto Blue Jays</option>
-    </optgroup>
-    <optgroup label="American League Central">
-      <option value="Chicago White Sox">Chicago White Sox</option>
-      <option value="Cleveland Indians">Cleveland Indians</option>
-      <option value="Detroit Tigers">Detroit Tigers</option>
-      <option value="Kansas City Royals">Kansas City Royals</option>
-      <option value="Minnesota Twins">Minnesota Twins</option>
-    </optgroup>
-    <optgroup label="National League East">
-      <option value="Atlanta Braves">Atlanta Braves</option>
-      <option value="Miami Marlins">Miami Marlins</option>
-      <option value="New York Mets">New York Mets</option>
-      <option value="Philadelphia Phillies">Philadelphia Phillies</option>
-      <option value="Washington Nationals">Washington Nationals</option>
-    </optgroup>
-    <optgroup label="National League Central">
-      <option value="Chicago Cubs">Chicago Cubs</option>
-      <option value="Cincinnati Reds">Cincinnati Reds</option>
-      <option value="Milwaukee Brewers">Milwaukee Brewers</option>
-      <option value="Pittsburgh Pirates">Pittsburgh Pirates</option>
-      <option value="St. Louis Cardinals">St. Louis Cardinals</option>
-    </optgroup>
-    <optgroup label="National League West">
-      <option value="Arizona Diamondbacks">Arizona Diamondbacks</option>
-      <option value="Colorado Rockies">Colorado Rockies</option>
-      <option value="Los Angeles Dodgers" selected="selected">Los Angeles Dodgers</option>
-      <option value="San Diego Padres">San Diego Padres</option>
-      <option value="San Francisco Giants">San Francisco Giants</option>
-    </optgroup>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select" id="lealtad-de-beisbol" name="lealtad-de-beisbol">
   <optgroup label="American League West">
     <option value="Houston Astros">Houston Astros</option>
@@ -211,24 +139,13 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
     <option value="San Francisco Giants">San Francisco Giants</option>
   </optgroup>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Within a [Field]({{ site.baseurl }}components/form-fields/)
 
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="UNIQUE-ID-hshhsjtext">Label <span class="fsa-field__label-desc">Required</span></label>
-    <select class="fsa-select fsa-field__item" id="UNIQUE-ID-hshhsjtext" aria-describedby="lorem-hshhsjtext-help-4" aria-required="true" name="UNIQUE-ID-hshhsjtext">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-    <span class="fsa-field__help" id="lorem-hshhsjtext-help-4">Instructional message here</span>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-field">
   <label class="fsa-field__label" for="UNIQUE-ID-hshhsjtext">Label <span class="fsa-field__label-desc">Required</span></label>
   <select class="fsa-select fsa-field__item" id="UNIQUE-ID-hshhsjtext" aria-describedby="lorem-hshhsjtext-help-4" aria-required="true" name="UNIQUE-ID-hshhsjtext">
@@ -240,22 +157,15 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   </select>
   <span class="fsa-field__help" id="lorem-hshhsjtext-help-4">Instructional message here</span>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## States
 
 ### Error
 
-<div class="ds-preview">
-  <select class="fsa-select fsa-select--error" name="Options amet">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select fsa-select--error" name="Options amet">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
@@ -263,22 +173,15 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
   <option value="Option D">Option D</option>
   <option value="Option E">Option E</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Disabled
 
 Disabled select components do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
 
-<div class="ds-preview">
-  <select class="fsa-select" disabled="disabled" name="Options quis">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
-</div>
-```html
+{% capture snippet %}
 <select class="fsa-select" disabled="disabled" name="Options quis">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
@@ -286,7 +189,9 @@ Disabled select components do not have a `class="fsa-select--[variation]"`, inst
   <option value="Option D">Option D</option>
   <option value="Option E">Option E</option>
 </select>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 

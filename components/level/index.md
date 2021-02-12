@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Level"
 shortName: "component__level"
-intro: "Multi-purpose layout component typically used for simple horizontal arrangement using the CSS Flexbox Model."
+intro: "Multi-purpose layout component for simple horizontal arrangement."
 jump_menu: true
 ---
 
@@ -36,14 +36,24 @@ jump_menu: true
 
 {% include related-cards.html %}
 
-## Structure
+## Anatomy
 
 ```html
-<el class="fsa-level"> <!-- Container -->
-  <el [class="fsa-level__item[--modifiers]"]>item</el> <!-- Item -->
+<el class="fsa-level[@BP] [fsa-level[--modifiers[@BP]]]"> <!-- Container -->
+  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
   <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
 </el>
 ```
+
+{% capture anatomy__markers %}
+1. Container
+1. Item
+{% endcapture %}
+
+{% assign anatomy__image-off = "level--off.png" %}
+{% assign anatomy__image-on = "level--on.png" %}
+
+{% include anatomy.html %}
 
 ## Level Container
 

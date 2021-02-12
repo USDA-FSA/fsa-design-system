@@ -4,10 +4,13 @@ parent: "Components"
 type: "UI Component"
 title: "Growl Notification"
 shortName: "component__growl"
-intro: "A Growl Notification surfaces application messaging, providing information about page-level or out-of-view events."
+intro: "Surface application messaging about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
 custom_js: "growl-init-demo.js"
+relatedItems:
+  - "Buttons"
+  - "Destroy Prompt"
 ---
 
 <div class="fsa-whiteout" tabindex="-1" id="fsa-whiteout" aria-hidden="true"></div>
@@ -395,8 +398,6 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
 
 ## JavaScript Guidance
 
-{% include scripts.about.html %}
-
 ### Summary
 
 Growl Notifications' HTML and its content are typically injected into a page when an app requires its use. For the purposes of this demonstration, they already exist (hidden) in the HTML idle until an action calls for its state to change (show).
@@ -413,3 +414,5 @@ Growl Notifications' HTML and its content are typically injected into a page whe
 * Set `aria-hidden` attribute to true
 * Remove `aria-expanded` attribute from element that triggered Growl
 * Set focus to the element that initially triggered the Notification
+
+{% include scripts.about.html %}

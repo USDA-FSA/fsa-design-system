@@ -3,7 +3,7 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Grid System"
-intro: "A 12-column, responsive grid system provides structure for components and content."
+intro: "Responsive and fluid grid system to structure content and objects."
 jump_menu: true
 suppress_code_toggle: true
 ---
