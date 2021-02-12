@@ -7,6 +7,8 @@ intro: "Display application name and account-level actions."
 jump_menu: true
 ---
 
+This component is **not** a required Global Navigation structure; rather, it effectively serves as a ready-made UI Pattern implemented with FPAC Design System styles and parts.
+
 <div class="ds-preview">
   <div class="fsa-header-app">
     <div class="fsa-header-app__bd">

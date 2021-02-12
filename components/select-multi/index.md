@@ -6,6 +6,8 @@ title: "Select Multi"
 shortName: "component__select-multi"
 intro: "Make one or more selections from structured scrollable list of otpions."
 jump_menu: true
+relatedItems:
+  - "Form Fields"
 title_label: 'May require JavaScript'
 ---
 

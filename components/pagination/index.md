@@ -6,6 +6,8 @@ title: "Pagination"
 shortName: "component__pagination"
 intro: "Navigate through split views of large datasets of content."
 jump_menu: true
+relatedItems:
+  - "Action Bar with Table"
 ---
 
 <div class="ds-preview">

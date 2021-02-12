@@ -6,6 +6,8 @@ title: "Stepped Tabs"
 shortName: "component__stepped-tabs"
 intro: "Provide guidance, context, and navigation through a stepped process or workflow."
 jump_menu: true
+relatedItems:
+  - "Stepped Process"
 ---
 
 <div class="ds-preview">
