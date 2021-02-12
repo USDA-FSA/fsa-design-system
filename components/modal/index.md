@@ -4,10 +4,12 @@ parent: "Components"
 type: "UI Component"
 title: "Modal"
 shortName: "component__modal"
-intro: "Use a Modal to gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state."
+intro: "Display layered view above the surface of entire page."
 jump_menu: true
 title_label: 'Requires JavaScript'
 ---
+
+Gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state.
 
 <div class="ds-preview">
   <div class="fsa-grid">

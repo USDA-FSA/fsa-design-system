@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Content Tabs"
 shortName: "component__content-tabs"
-intro: "Use Content Tabs to arrange related information or functionality in a defined area on the same application page."
+intro: "Segment related content of the same parent topic in a defined area."
 jump_menu: true
 ---
 
@@ -38,7 +38,6 @@ jump_menu: true
       </li>
     </ul>
   </div>
-
 </div>
 
 ## Variations
@@ -47,38 +46,7 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
 
 ### Default
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
-          <span class="fsa-content-tabs__label-text">Lorem</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Elit sed do</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -108,42 +76,13 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
     </li>
   </ul>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Small
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--small" href="#link">
-          <span class="fsa-content-tabs__label-text">Lorem</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--small fsa-content-tabs__label--active" aria-current="step" href="#link">
-          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--small" href="#link">
-          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label fsa-content-tabs__label--small" href="#link">
-          <span class="fsa-content-tabs__label-text">Elit sed do</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--small" href="#link">
-          <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -173,43 +112,13 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
     </li>
   </ul>
 </div>
-```
+{% endcapture %}
 
+{% include preview-and-snippet.html %}
 
 ### Large (on desktop)
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--large" href="#link">
-          <span class="fsa-content-tabs__label-text">Lorem</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--large fsa-content-tabs__label--active" aria-current="step" href="#link">
-          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--large" href="#link">
-          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label fsa-content-tabs__label--large" href="#link">
-          <span class="fsa-content-tabs__label-text">Elit sed do</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--large" href="#link">
-          <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -239,38 +148,87 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
     </li>
   </ul>
 </div>
-```
+{% endcapture %}
 
+{% include preview-and-snippet.html %}
+
+### Light Background
+
+{% capture snippet %}
+<div class="fsa-content-tabs fsa-content-tabs--light">
+  <ul class="fsa-content-tabs__list">
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" href="link.html" aria-current="tab">
+        <span class="fsa-content-tabs__label-text">Lorem</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Elit sed do</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
+      </a>
+    </li>
+  </ul>
+  <div class="fsa-content-tabs__aside"></div>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Contrast Background
+
+{% capture snippet %}
+<div class="fsa-content-tabs fsa-content-tabs--contrast">
+  <ul class="fsa-content-tabs__list">
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" href="link.html" aria-current="tab">
+        <span class="fsa-content-tabs__label-text">Lorem</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Elit sed do</span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="link.html">
+        <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
+      </a>
+    </li>
+  </ul>
+  <div class="fsa-content-tabs__aside"></div>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Justified (on desktop)
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs fsa-content-tabs--justified">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
-          <span class="fsa-content-tabs__label-text">Lorem</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Elit sed do</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs fsa-content-tabs--justified">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -295,37 +253,13 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
     </li>
   </ul>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Justified Equal (on desktop)
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
-          <span class="fsa-content-tabs__label-text">Lorem</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Elit sed do</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs fsa-content-tabs--justified-equal">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -350,39 +284,15 @@ Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the a
     </li>
   </ul>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### As Buttons
 
 Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <code>&lt;button&gt;</code> element.
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <button class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" type="button">
-          <span class="fsa-content-tabs__label-text">tab 1</span>
-        </button>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <button class="fsa-content-tabs__label" type="button">
-          <span class="fsa-content-tabs__label-text">tab 2</span>
-        </button>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <button class="fsa-content-tabs__label" type="button">
-          <span class="fsa-content-tabs__label-text">tab 3</span>
-        </button>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <button class="fsa-content-tabs__label" type="button">
-          <span class="fsa-content-tabs__label-text">tab 4</span>
-        </button>
-      </li>
-    </ul>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -407,47 +317,15 @@ Each tab, <code>class="fsa-content-tabs__label"</code>, may occasionally be a <c
     </li>
   </ul>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### With optional aside
 
 Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.fsa-content-tabs__aside`) is available for contextually relevant content.
 
-<div class="ds-preview">
-  <div class="fsa-content-tabs">
-    <ul class="fsa-content-tabs__list">
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
-          <span class="fsa-content-tabs__label-text">Lorem</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Ipsum dolor sit amet</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Consectetur adipiscing</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Elit sed do</span>
-        </a>
-      </li>
-      <li class="fsa-content-tabs__item">
-        <a class="fsa-content-tabs__label" href="#link">
-          <span class="fsa-content-tabs__label-text">Eiusmod tempor</span>
-        </a>
-      </li>
-    </ul>
-    <div class="fsa-content-tabs__aside">
-      <a href="#link-to-nowhere" onclick="alert('A text link is but one example of what can go here.')">Help</a>
-    </div>
-  </div>
-</div>
-```html
+{% capture snippet %}
 <div class="fsa-content-tabs">
   <ul class="fsa-content-tabs__list">
     <li class="fsa-content-tabs__item">
@@ -477,10 +355,12 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
     </li>
   </ul>
   <div class="fsa-content-tabs__aside">
-    <a href="link.html">Help</a>
+    <a href="#link-to-nowhere" onclick="alert('A text link is but one example of what can go here.')">Help</a>
   </div>
 </div>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 

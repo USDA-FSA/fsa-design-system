@@ -4,8 +4,10 @@ parent: "Components"
 type: "UI Component"
 title: "Pagination"
 shortName: "component__pagination"
-intro: "The Pagination Component allows for an optimized way to provide a more consumable structure for large datasets."
+intro: "Navigate through split views of large datasets of content."
 jump_menu: true
+relatedItems:
+  - "Action Bar with Table"
 ---
 
 <div class="ds-preview">
@@ -41,33 +43,7 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
 
 ### Default
 
-<div class="ds-preview">
-  <nav aria-label="Pagination">
-    <div class="fsa-pagination" data-current="1" data-total="120">
-      <ul class="fsa-pagination__list">
-        <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
-          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
-        </li>
-        <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 1</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 2</a>
-        </li>
-        <li class="fsa-pagination__item" aria-hidden="true">
-          <span class="fsa-pagination__label">…</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
-        </li>
-        <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Pagination">
   <div class="fsa-pagination" data-current="1" data-total="120">
     <ul class="fsa-pagination__list">
@@ -92,46 +68,13 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     </ul>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Internal
 
-<div class="ds-preview">
-  <nav aria-label="Pagination">
-    <div class="fsa-pagination" data-current="56" data-total="120">
-      <ul class="fsa-pagination__list">
-        <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
-        </li>
-        <li class="fsa-pagination__item" aria-hidden="true">
-          <span class="fsa-pagination__label">…</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 55</a>
-        </li>
-        <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 56</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 57</a>
-        </li>
-        <li class="fsa-pagination__item" aria-hidden="true">
-          <span class="fsa-pagination__label">…</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 120</a>
-        </li>
-        <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Pagination">
   <div class="fsa-pagination" data-current="56" data-total="120">
     <ul class="fsa-pagination__list">
@@ -165,37 +108,13 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     </ul>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Last
 
-<div class="ds-preview">
-  <nav aria-label="Pagination">
-    <div class="fsa-pagination" data-current="120" data-total="120">
-      <ul class="fsa-pagination__list">
-        <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
-        </li>
-        <li class="fsa-pagination__item" aria-hidden="true">
-          <span class="fsa-pagination__label">…</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 119</a>
-        </li>
-        <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 120</span>
-        </li>
-        <li class="fsa-pagination__item fsa-pagination__item--next" aria-hidden="true">
-          <span class="fsa-pagination__label fsa-pagination__label--next fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></span>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Pagination">
   <div class="fsa-pagination" data-current="120" data-total="120">
     <ul class="fsa-pagination__list">
@@ -220,40 +139,13 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     </ul>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Fewer than 6 pages
 
-<div class="ds-preview">
-  <nav aria-label="Pagination">
-    <div class="fsa-pagination" data-current="2" data-total="5">
-      <ul class="fsa-pagination__list">
-        <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
-        </li>
-        <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 2</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 4</a>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 5</a>
-        </li>
-        <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Pagination">
   <div class="fsa-pagination" data-current="2" data-total="5">
     <ul class="fsa-pagination__list">
@@ -281,40 +173,13 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     </ul>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### 6 or more pages
 
-<div class="ds-preview">
-  <nav aria-label="Pagination">
-    <div class="fsa-pagination" data-current="2" data-total="6">
-      <ul class="fsa-pagination__list">
-        <li class="fsa-pagination__item fsa-pagination__item--previous">
-          <a class="fsa-pagination__label fsa-pagination__label--previous" href="link.html"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></a>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 1</a>
-        </li>
-        <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="step"><span class="fsa-sr-only">Currently on page</span> 2</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 3</a>
-        </li>
-        <li class="fsa-pagination__item" aria-hidden="true">
-          <span class="fsa-pagination__label">…</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <a class="fsa-pagination__label" href="link.html"><span class="fsa-sr-only">Go to page</span> 6</a>
-        </li>
-        <li class="fsa-pagination__item fsa-pagination__item--next">
-          <a class="fsa-pagination__label fsa-pagination__label--next" href="link.html"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Pagination">
   <div class="fsa-pagination" data-current="2" data-total="6">
     <ul class="fsa-pagination__list">
@@ -342,39 +207,15 @@ Pagination Components can be styled using the `fsa-pagination__label--[variation
     </ul>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ### Example: as `<button>` elements
 
 Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` element, though depending on its use might be an `<button>` element. By that same token, non-actionable items would a `<span>` element.
 
-<div class="ds-preview">
-  <nav aria-label="Pagination">
-    <div class="fsa-pagination" data-current="1" data-total="120">
-      <ul class="fsa-pagination__list">
-        <li class="fsa-pagination__item fsa-pagination__item--previous" aria-hidden="true">
-          <span class="fsa-pagination__label fsa-pagination__label--previous fsa-pagination__label--disabled"><span class="fsa-sr-only">Go to</span> Previous <span class="fsa-sr-only">page</span></span>
-        </li>
-        <li class="fsa-pagination__item">
-          <span class="fsa-pagination__label fsa-pagination__label--current" aria-current="page"><span class="fsa-sr-only">Currently on page</span> 1</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <button type="button" class="fsa-pagination__label"><span class="fsa-sr-only">Go to page</span> 2</button>
-        </li>
-        <li class="fsa-pagination__item" aria-hidden="true">
-          <span class="fsa-pagination__label">…</span>
-        </li>
-        <li class="fsa-pagination__item">
-          <button type="button" class="fsa-pagination__label"><span class="fsa-sr-only">Go to page</span> 120</button>
-        </li>
-        <li class="fsa-pagination__item fsa-pagination__item--next">
-          <button type="button" class="fsa-pagination__label fsa-pagination__label--next"><span class="fsa-sr-only">Go to</span> Next <span class="fsa-sr-only">page</span></button>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-```html
+{% capture snippet %}
 <nav aria-label="Pagination">
   <div class="fsa-pagination" data-current="1" data-total="120">
     <ul class="fsa-pagination__list">
@@ -399,7 +240,9 @@ Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` el
     </ul>
   </div>
 </nav>
-```
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 ## Responsive
 
