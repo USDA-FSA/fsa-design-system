@@ -108,6 +108,11 @@
           img: "img/subcategories/select-multi.png"
           keyword: "Selection,Choose,Choice,Combo"
 
+        - subtitle: "Slider"
+          subhref: "components/slider"
+          img: "img/subcategories/slider.png"
+          keyword: "Range"
+
         - subtitle: "Spinbox"
           subhref: "components/spinbox"
           img: "img/subcategories/spinbox.png"
