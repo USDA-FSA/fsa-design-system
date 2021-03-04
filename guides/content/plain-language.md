@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Plain Language"
 intro: "As U.S. government websites are for everyone, the content they contain should be as straightforward as possible."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 One of the best ways to make content clear and usable is to use **plain language**. When we use words people understand, our content is more findable, accessible, and inclusive. [Plain language](http://www.plainlanguage.gov/) is also mandatory for all federal government websites.

@@ -7,6 +7,7 @@ shortName: "component__top-nav"
 intro: "Display a global list of sections, topics, or actions."
 jump_menu: true
 title_label: 'May Require JavaScript'
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 This navigation component is **not** a required Global Navigation structure; rather, it effectively serves as ready-made UI Pattern implemented with FPAC Design System styles and parts.

@@ -3,6 +3,8 @@ layout: guide
 parent: "Accessibility"
 title: "Color and Contrast"
 intro: "There are two aspects to address when it comes to color: contrast and color dependence."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
+
 ---
 
 1. <strong>Color contrast</strong> is the ratio of the foreground color (for most websites, this is often text) and background color.

@@ -10,6 +10,7 @@ relatedItems:
   - "Global Navigation"
   - "Search"
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Often referred to as a "drop down" or "pull down" menu, its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.

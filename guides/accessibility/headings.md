@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Headings"
 intro: "When laying out a page, headings provide a semantic way to layout sections of content."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Heading elements are used by users of Assistive Technology (AT) to navigate a page quickly and to understand the structure of a page. Also see [Landmarks]({{ site.baseurl }}accessibility/landmarks).

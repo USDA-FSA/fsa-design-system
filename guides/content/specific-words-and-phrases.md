@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Specific Words and Phrases"
 intro: "Rules for how we use common words and phrases: the terms in bold show the accepted form (capitalization, hyphenation, punctuation), with the accompanying text detailing usage."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 - **ages**, avoid hyphens in ages unless it clarifies the text. For example, _a group of 10 18-year-old White House tourists_.

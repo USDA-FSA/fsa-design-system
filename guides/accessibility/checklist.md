@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Checklist"
 intro: "This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's divided into three sections of decreasing importance: <strong>A</strong>, <strong>B</strong>, and <strong>C</strong>. For workflow priority based on issue severity, please check and address these issues in the order in which they appear."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 

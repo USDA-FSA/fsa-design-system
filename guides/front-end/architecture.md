@@ -3,6 +3,7 @@ layout: guide
 parent: "Front-end"
 title: "Architecture"
 intro: "The structure of an Application should ."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Agnostic JavaScript

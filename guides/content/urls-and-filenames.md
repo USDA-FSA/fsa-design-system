@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "URLs and Filenames"
 intro: "So users can easily search and find your content, here's how you can provide context when naming digital structures."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Creating URLs

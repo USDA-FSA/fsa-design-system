@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Footer"
 intro: "Provide access to related FPAC products or links not directly associated with application."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 These are **not** required footer structures; rather, they effectively serve as an acceptable UI Pattern for a footer using the Design System styles and parts.

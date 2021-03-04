@@ -5,6 +5,7 @@ title: "Logo"
 intro: ""
 suppress_code_toggle: true
 full_width: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="fsa-grid">

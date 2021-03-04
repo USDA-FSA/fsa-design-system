@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Be Concise"
 intro: "Enhance user engagement and retention through better readability by keeping your content short and specific."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 To keep content understandable, concise, and relevant, it should be:

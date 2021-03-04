@@ -9,6 +9,7 @@ jump_menu: true
 relatedItems:
   - "Form Fields"
   - "Timeline"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.

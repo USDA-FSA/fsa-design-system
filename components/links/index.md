@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Text Links"
 intro: "Navigate between views with inline text links."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}

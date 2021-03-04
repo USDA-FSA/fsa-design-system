@@ -3,6 +3,7 @@ layout: guide
 parent: "Guides"
 title: "Front-end"
 intro: "Introduction to <strong>Front-end</strong> Design and Development"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## What is Front-end?

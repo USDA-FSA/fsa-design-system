@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Resources"
 intro: "The most common tools and tutorials FPAC can use to improve and test accessibility."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Code compliance

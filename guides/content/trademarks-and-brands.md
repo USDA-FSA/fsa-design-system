@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Trademarks and Brands"
 intro: "Careful use of brands and trademarked names is important because the government shouldn’t endorse specific brands or products."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Guidelines for brands and trademarks

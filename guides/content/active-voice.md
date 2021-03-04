@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Active Voice"
 intro: "As our writing should be concise and direct, FPAC prefers the active voice as it supports brevity and makes written content more engaging."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 The active voice helps the reader identify the subject of the sentence. In the following example, the person who submits the form is essential information. Omitting that context leads to a confusing and impersonal sentence.

@@ -3,6 +3,7 @@ layout: guide
 parent: "Front-end"
 title: "CSS Preprocessors"
 intro: "The Design System takes advantage of an automated build system which utilizes Sass."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## What is a CSS Preprocessor

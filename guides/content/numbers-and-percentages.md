@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Numbers, Dates, and Percentages"
 intro: Generally speaking, FPAC follows the guidelines outlined in the <a href="https://www.apstylebook.com">AP Stylebook</a>.
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Numbers

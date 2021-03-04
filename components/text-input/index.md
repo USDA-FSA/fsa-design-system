@@ -11,6 +11,7 @@ relatedItems:
   - "Search"
   - "Spinbox"
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.

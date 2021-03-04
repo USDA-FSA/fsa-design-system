@@ -9,6 +9,7 @@ jump_menu: false
 full_width: true
 suppress_kitcken_sink: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Anatomy

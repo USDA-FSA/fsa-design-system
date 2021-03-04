@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Application Header"
 intro: "Display application name and account-level actions."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 This component is **not** a required Global Navigation structure; rather, it effectively serves as a ready-made UI Pattern implemented with FPAC Design System styles and parts.

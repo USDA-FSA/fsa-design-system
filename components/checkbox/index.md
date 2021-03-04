@@ -5,12 +5,12 @@ type: "UI Component"
 title: "Checkbox"
 shortName: "component__checkbox"
 intro: "Choose one or more options from a set of available values."
-custom_js: "checkbox.js"
 relatedItems:
   - "Action Bar with Table"
   - "Form Fields"
   - "Select Multi"
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "checkbox.js"]
 ---
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.

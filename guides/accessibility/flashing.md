@@ -3,7 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Flashing"
 intro: "As flashing can cause several issues, from seizures to motion sickness, it is strongly considered a very bad idea. If you absolutely must have a flashing element, there are a few critical things to consider."
-custom_js: "flashing.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "flashing.js"]
 ---
 
 ## Testing

@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Training Videos"
 intro: "Accessibility training videos from around the web."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ### Training/Videos

@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Address the User"
 intro: "Content on government sites often makes a direct appeal to the public to get involved or take action."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Address the user as _you_ whenever possible. For example:

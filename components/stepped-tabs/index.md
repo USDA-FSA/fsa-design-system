@@ -8,6 +8,7 @@ intro: "Provide guidance, context, and navigation through a stepped process or w
 jump_menu: true
 relatedItems:
   - "Stepped Process"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

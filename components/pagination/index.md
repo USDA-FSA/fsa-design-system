@@ -8,6 +8,7 @@ intro: "Navigate through split views of large datasets of content."
 jump_menu: true
 relatedItems:
   - "Action Bar with Table"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

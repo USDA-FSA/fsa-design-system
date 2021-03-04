@@ -1,5 +1,6 @@
 ---
 layout: demo
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 <div class="fsa-whiteout" tabindex="-1" id="fsa-whiteout" aria-hidden="true"></div>
 

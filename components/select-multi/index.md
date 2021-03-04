@@ -9,6 +9,7 @@ jump_menu: true
 relatedItems:
   - "Form Fields"
 title_label: 'May require JavaScript'
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All.

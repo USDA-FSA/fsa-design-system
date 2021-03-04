@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Plugins"
 intro: "Plugins provide extended functionality not native to the browser. Common examples include PDF, Flash, Shockwave, Silverlight, and Java."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Anytime a plugin is used on a page, it must be tested for accessibility.

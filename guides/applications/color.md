@@ -3,7 +3,7 @@ layout: guide
 parent: "Applications"
 title: "Color"
 intro: "Introduction text"
-
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Color Guidelines

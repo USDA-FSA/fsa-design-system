@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Voice and Tone"
 intro: "If you’re like many folks, you might not be aware of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. No problem! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## The difference between voice and tone

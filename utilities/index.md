@@ -5,6 +5,7 @@ type: "Utility"
 intro: "Single-purpose styles typically mapped to a single CSS property and value (e.g. margin)."
 jump_menu: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Utilities &ndash; also known as “trumps,” “helper classes,” or “alterations” &ndash; are high-specificity selectors for making very targeted alterations to existing elements or components.

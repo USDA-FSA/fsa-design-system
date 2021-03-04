@@ -8,6 +8,7 @@ intro: "Display complementary information such as metadata or filters."
 jump_menu: true
 relatedItems:
   - "Timeline"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

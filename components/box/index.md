@@ -6,6 +6,7 @@ title: "Box"
 shortName: "component__box"
 intro: "Organize a set of content in a standalone object."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}

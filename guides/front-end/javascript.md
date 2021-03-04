@@ -3,6 +3,7 @@ layout: guide
 parent: "Front-end"
 title: "JavaScript"
 intro: "All FPAC Applications shall utilize agency best practices for JavaScript and Front-end code related issues."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Agnostic JavaScript

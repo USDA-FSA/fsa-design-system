@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Text Properties"
 intro: "Properly identifying the language for your website content ensures Assistive Technology (AT) correctly interacts with your site. AT has great support for a wide variety of foreign languages, but will need to know when the language differs from the page's default."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Testing

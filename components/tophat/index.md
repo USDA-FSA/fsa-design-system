@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Top Hat"
 intro: "Indicate associated USDA agency and organization."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}

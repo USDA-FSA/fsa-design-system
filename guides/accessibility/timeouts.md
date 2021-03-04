@@ -3,7 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Timeouts"
 intro: "If timeouts are used, you must give the user at least 20 seconds to request more time. "
-custom_js: "time-outs.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "time-outs.js"]
 ---
 
 ## Testing

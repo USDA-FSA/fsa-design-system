@@ -6,6 +6,7 @@ title: "Breadcrumbs"
 shortName: "component__breadcrumbs"
 intro: "Provide hierarchical position within an application, and enable quick access through its levels."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}

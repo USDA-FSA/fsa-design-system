@@ -7,6 +7,7 @@ shortName: "component__modal"
 intro: "Display layered view above the surface of entire page."
 jump_menu: true
 title_label: 'Requires JavaScript'
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Gain focus on a specific feature, such as completing a subtask or providing complementary information without losing the context of the page's initial state.

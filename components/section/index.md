@@ -7,6 +7,7 @@ shortName: "component__section"
 intro: "A page's primary container to contain content, components, and layout."
 jump_menu: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Other than background-color variations, they are not strictly visible in the user interface itself. Most page templates likely will use just one `fsa-section--[variation]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.

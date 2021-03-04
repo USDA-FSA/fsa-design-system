@@ -6,7 +6,7 @@ title: "Inline Alerts"
 shortName: "component__alerts"
 intro: "Display contextual assistance or response."
 jump_menu: true
-custom_js: "inline-alert.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "inline-alert.js"]
 ---
 
 <div class="ds-preview">
