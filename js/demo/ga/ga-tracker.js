@@ -23,7 +23,7 @@ if ('serviceWorker' in navigator) {
       let label = target.textContent
       if(!gat.headerList.includes(label)){
          gat.headerList.push(label);
-         gat.sendToGA('Viewed Content', gat.getPageName(), label)
+         gat.sendToGA('Scroll', 'Viewed Content', gat.getPageName() + ' - ' + label)
       }
     },
 
@@ -111,10 +111,10 @@ if ('serviceWorker' in navigator) {
       return pageName;
     },
 
-    sendToGA: function(typ, cat, lab=''){
+    sendToGA: function(typ, cat='', lab=''){
       if(gat.onProduction){
         let eventObject = {};
-        eventObject['event_category'] = cat || gat.trackerName;
+        if(cat!='') eventObject['event_category'] = cat;
         if(lab!='') eventObject['event_label'] = lab;
         gtag('event', typ, eventObject);
         //gtag('event', typ, { 'event_category': cat, 'event_label': lab });
