@@ -1,6 +1,6 @@
 ---
 layout: demo
-custom_js: "table-select-demo.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "table-select-demo.js"]
 ---
 
 <div class="fsa-level@l fsa-level--justify-between fsa-level--align-bottom">

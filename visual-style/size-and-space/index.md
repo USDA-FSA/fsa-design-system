@@ -5,6 +5,7 @@ title: "Size and Space"
 intro: "In FPAC Applications, it is important to understand the value of size and spacing of elements themselves along with the space around the element as well."
 jump_menu: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <ul class="docs__attr-list docs__attr-list--open">

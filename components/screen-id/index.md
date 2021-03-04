@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Screen ID"
 intro: "Display a unique ID to each page view."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}

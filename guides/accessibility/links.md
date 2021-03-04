@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Links and Repetitive Content"
 intro: "Links are commonly used to quickly navigate a site when someone is using Assistive Technology (AT). Often, screen reader users won't read through an entire page to find what they are looking for, they simply move from link to link."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Things become problematic when links only make sense with context. Common link call-to-action language such as 'Click here' or 'Read more' doesn't make sense without visual context. It's important that we inspect FPAC applications and sites for links that lack visual context. While these links can be made more accessible by adding ```title``` or ```ARIA``` attributes, this is not ideal. The ideal method for making such links accessible, is simply by writing contextually descriptive link text from the start.

@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Frames"
 intro: "When using frames, it's important that all content contained in them is accessible."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Testing

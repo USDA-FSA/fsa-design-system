@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Avoid Duplication"
 intro: "Duplicate content produces poor search results, confuses the user, and damages the credibility of our websites."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 If something is written once and links to relevant information easily and well, people are more likely to trust the content. If users can find two similar pieces of content on a subject, they might end up calling a helpline or sending an email to the first address they find because they aren’t sure they have the right information.

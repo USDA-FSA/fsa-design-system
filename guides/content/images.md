@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Images"
 intro: "Images are an excellent way to communicate information."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Use relevant photos, graphics, and other visual elements when they clarify what you're communicating. The same principles we apply to written content apply to images:

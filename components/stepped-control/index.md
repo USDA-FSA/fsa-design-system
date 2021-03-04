@@ -11,6 +11,7 @@ relatedItems:
   - "Stepped Tabs"
 jump_menu: true
 title_label: 'May Require JavaScript'
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

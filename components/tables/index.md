@@ -9,7 +9,7 @@ jump_menu: true
 relatedItems:
   - "Action Bar with Table"
   - "Destroy Prompt"
-custom_js: "table-select-demo.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "table-select-demo.js"]
 ---
 
 Tables are great for displaying tabular data. Minimal visual styling helps surface this information more easily.

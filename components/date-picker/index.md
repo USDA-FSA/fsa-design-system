@@ -5,7 +5,7 @@ type: "UI Component"
 title: "Date Picker"
 intro: "Choose a valid formatted date."
 jump_menu: true
-custom_js: "datepicker-demo.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "datepicker-demo.js"]
 relatedItems:
   - "Form Fields"
   - "Text Input"

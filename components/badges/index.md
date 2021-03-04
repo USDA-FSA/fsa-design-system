@@ -6,6 +6,7 @@ title: "Badges"
 shortName: "component__badges"
 intro: "Succinctly display quantified information."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 relatedItems:
   - "Timeline"
 ---

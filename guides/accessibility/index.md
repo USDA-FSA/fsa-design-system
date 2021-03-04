@@ -3,6 +3,7 @@ layout: guide
 parent: "Guides"
 title: "Accessibility"
 intro: "Why we build accessible digital artifacts at FPAC. "
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Our challenge

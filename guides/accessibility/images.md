@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Images"
 intro: "When using images on a page, for Assistive Technology (AT) to be able to recognize and read it, you must provide an alternate method for that content."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Alternatives can be provided via a `caption`, `alt` attribute, `title` attribute, or `aria-` label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an `alt` or `title` attribute must be provided, even if it is empty.

@@ -9,6 +9,7 @@ relatedItems:
   - "Form Fields"
 jump_menu: true
 title_label: 'May require JavaScript'
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 At its root the Slider component is a native `<input>` form element with an attribute `type` of `range`.

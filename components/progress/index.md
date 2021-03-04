@@ -6,7 +6,7 @@ title: "Progress"
 intro: "Display an indicator showing the relative completion of a task or activity."
 shortName: "component__progress"
 jump_menu: true
-custom_js: "progress.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "progress.js"]
 ---
 
 <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>

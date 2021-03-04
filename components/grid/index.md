@@ -6,6 +6,7 @@ title: "Grid System"
 intro: "Responsive and fluid grid system to structure content and objects."
 jump_menu: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Easily distribute and align content and components with a simple series of containers and columns. As a flexible mobile-first (aka Responsive Web Design) grid system, content can respond to the complete range of viewport widths. For example, it could be 2 columns on a phone while being 4 columns on a desktop.

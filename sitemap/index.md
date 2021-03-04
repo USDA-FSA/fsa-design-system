@@ -2,6 +2,7 @@
 layout: category
 title: "Sitemap"
 intro: ""
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <nav>

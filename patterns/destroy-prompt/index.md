@@ -10,6 +10,7 @@ full_width: true
 suppress_kitcken_sink: true
 suppress_code_toggle: false
 title_label: 'Requires JavaScript'
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Interaction Flow

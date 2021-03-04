@@ -6,7 +6,7 @@ title: "Form Fields"
 shortName: "component__form-fields"
 intro: "Data entry from a variety of structured form controls."
 jump_menu: true
-custom_js: ["select-other.js", "datepicker-demo.js"]
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "select-other.js", "datepicker-demo.js"]
 relatedItems:
   - "Checkbox"
   - "Buttons"

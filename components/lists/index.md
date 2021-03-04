@@ -5,6 +5,7 @@ type: "UI Component"
 intro: "Structure content into concise semantic sections."
 title: "Lists"
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Unordered List (bullet)

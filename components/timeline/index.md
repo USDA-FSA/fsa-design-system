@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Timeline"
 intro: "List system and user activity chronologically."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 The purpose of a Timeline is to show the User a series of actions that have been taken over a period of time. It is a way to chronicle the who, what, when, where, and how of a process, and the `fsa-timeline` component allows for additional features for the User as well. As seen below, variations of the component actions allow the Developer to provide a way to create, update, and delete various actions within the timeline.

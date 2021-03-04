@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Tables"
 intro: "When tables are used to show tabular data, the header cells that relate to the data cells need to be programmatically linked. This makes table navigation for screen readers less painful."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.

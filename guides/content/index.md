@@ -3,6 +3,7 @@ layout: guide
 parent: "Guides"
 title: "Content"
 intro: "This editorial content guide is designed to minimize user frustration by making language on FPAC digital properties more plainspoken and readable."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Introduction

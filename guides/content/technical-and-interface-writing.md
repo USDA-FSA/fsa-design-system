@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Technical and Interface Writing"
 intro: "When we write technical documentation, guides, forms, and interface messages, it’s safe to say that the reader is learning something new or troubleshooting."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 These guidelines will help you write clear, concise instructions, which will provide your reader with the best possible experience.

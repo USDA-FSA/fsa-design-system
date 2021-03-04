@@ -4,6 +4,7 @@ parent: "Visual Style"
 title: "Typography"
 intro: "Clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. "
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Typeface

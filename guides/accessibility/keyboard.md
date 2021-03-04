@@ -3,7 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Keyboard Access"
 intro: "Keyboard access to a website is critical for the usability of your site. All interactions and information that can be accessed with a mouse <strong>must</strong> be accessible with just a keyboard. This doesn't mean everyone who can't use a mouse will use a keyboard, but Assistive Technology (AT) often uses keyboard-like inputs to navigate the web."
-custom_js: "keyboard-trap.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "keyboard-trap.js"]
 ---
 
 ## Testing

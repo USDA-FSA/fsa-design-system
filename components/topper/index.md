@@ -5,6 +5,7 @@ type: "UI Component"
 title: "Topper"
 intro: "Convenient access to top of the page from the bottom."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}

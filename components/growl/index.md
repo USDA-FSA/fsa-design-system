@@ -7,7 +7,7 @@ shortName: "component__growl"
 intro: "Surface application messaging about page-level or out-of-view events."
 jump_menu: true
 title_label: 'Requires JavaScript'
-custom_js: "growl-init-demo.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "growl-init-demo.js"]
 relatedItems:
   - "Buttons"
   - "Destroy Prompt"

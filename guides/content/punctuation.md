@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Punctuation"
 intro: "Understanding punctuation guidelines that promote readability online."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Bulleted lists

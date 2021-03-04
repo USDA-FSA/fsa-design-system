@@ -3,6 +3,7 @@ layout: page
 parent: "Getting Started"
 title: "License"
 intro: "Overview for the <strong>license</strong> to the Design System."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## License

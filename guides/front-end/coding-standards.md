@@ -3,6 +3,7 @@ layout: guide
 parent: "Front-end"
 title: "Coding Standards"
 intro: "While developing FPAC Applications, follow the below standards for best practice Front-end Development."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## HTML Best Practices

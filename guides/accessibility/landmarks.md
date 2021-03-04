@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Landmarks"
 intro: "Proper page layout using landmark elements."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 All elements on a page should be contained in a <a href="https://www.w3.org/TR/wai-aria/roles#landmark_roles">landmark element</a>. This helps users of Assistive Technology (<abbr title="Assistive Technology">AT</abbr>) quickly navigate a page.

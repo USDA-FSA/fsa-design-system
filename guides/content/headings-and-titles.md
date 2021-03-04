@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Headings and Titles"
 intro: "Most people start their search for information with a search engine; but if they can't find your page, they won't read your content."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 To help users find our content, we have to use their vocabulary and keywords, starting with the page title, summary, and first paragraph.

@@ -6,6 +6,7 @@ title: "Divider"
 shortName: "component__divider"
 intro: "Display visual breaks between content, elements, or components."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

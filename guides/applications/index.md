@@ -3,6 +3,7 @@ layout: guide
 parent: "Guides"
 title: "Applications"
 intro: ""
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="fsa-alert fsa-alert--warning" role="alert">

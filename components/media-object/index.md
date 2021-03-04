@@ -8,6 +8,7 @@ intro: "Pair an object with text-based content to one of the sides."
 jump_menu: true
 suppress_kitcken_sink: true
 deprecated: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="fsa-alert fsa-alert--warning">

@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Content Principles"
 intro: "Our five core principles for authoring content at FPAC."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## 1. Start with user needs.

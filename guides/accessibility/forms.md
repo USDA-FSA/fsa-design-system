@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Forms"
 intro: "To make forms accessible, each form element should be associated with its instructions or errors, and everything should be accessible via the keyboard."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Testing

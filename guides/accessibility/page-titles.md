@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Page Titles"
 intro: "Page titles are important as they help users navigate the browser. "
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 This refers to the HTML document's `<title>` element that resides within the `<head>`, and not the page's content heading (i.e., `<h1>`).

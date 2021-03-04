@@ -2169,6 +2169,7 @@ module.exports = closest;
 		},
 
 		adjustNav: function(self, $parent) {
+			//console.log('side nav',self)
 			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
 			$parent.addClass(self.config.currentClass);
 		},

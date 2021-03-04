@@ -6,6 +6,7 @@ title: "Splash"
 intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 The intention of a Splash screen is to provide a good first imporession of an application. By providing a visual cue that progress is being made to load the various technologies required to run the application, trust and understanding is gained by the User, creating a better experience.

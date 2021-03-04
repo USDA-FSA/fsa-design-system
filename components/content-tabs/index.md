@@ -6,6 +6,7 @@ title: "Content Tabs"
 shortName: "component__content-tabs"
 intro: "Segment related content of the same parent topic in a defined area."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

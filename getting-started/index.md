@@ -5,6 +5,7 @@ intro: "The FPAC Design System's CSS Framework, <code>fsa-style</code>, provides
 jump_menu: true
 get_started: true
 suppress_code_toggle: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 The components and style guide of the FPAC Design System follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. They are designed for use by FPAC product teams to create beautiful, easy-to-use, and consistent digitial experiences.

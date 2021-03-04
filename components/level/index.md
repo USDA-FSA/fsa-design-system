@@ -6,6 +6,7 @@ title: "Level"
 shortName: "component__level"
 intro: "Multi-purpose layout component for simple horizontal arrangement."
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">

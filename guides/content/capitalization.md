@@ -3,6 +3,7 @@ layout: guide
 parent: "Content"
 title: "Capitalization"
 intro: "Follow a consistent capitalization scheme."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 Creating trustworthy internal and external communications relies, to a large extent, on the content’s consistency. Inconsistent spellings and capitalizations undermine your narrative authority. We follow these capitalization guidelines:

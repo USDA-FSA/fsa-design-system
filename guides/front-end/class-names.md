@@ -3,6 +3,7 @@ layout: guide
 parent: "Front-end"
 title: "Naming Conventions"
 intro: "The Design System uses specific nomenclature and conventions to enforce a more structured approach to CSS."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Class Naming Best Practices

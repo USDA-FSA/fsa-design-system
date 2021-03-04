@@ -3,6 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "Multimedia"
 intro: "When using multimedia, we must provide means for everyone to consume the media. Multimedia is any content that utilizes audio and video."
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 ## Closed captioning

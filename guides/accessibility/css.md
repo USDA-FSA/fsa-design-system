@@ -3,7 +3,7 @@ layout: guide
 parent: "Accessibility"
 title: "CSS Dependence"
 intro: "CSS dependence just means site shouldn't rely on CSS to be functional or understandable."
-custom_js: "css-dependence.js"
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "css-dependence.js"]
 ---
 
 Often sites will use CSS to load important images for example. This is bad for several reasons. Background images can't be tagged for accessibility and with CSS turned off they aren't shown.

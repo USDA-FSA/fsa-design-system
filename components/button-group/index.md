@@ -8,6 +8,7 @@ intro: "Toggle between mutually exclusive states."
 relatedItems:
   - "Action Bar with Table"
 jump_menu: true
+custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">
