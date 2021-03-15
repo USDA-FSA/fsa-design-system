@@ -50,10 +50,12 @@ const qf = {
 
 };
 
+window.QuickFindTracker = qf;
+
 window.addEventListener('load', (evt)=>{  
   // nothing happening yet
 });
 
 window.addEventListener('beforeunload', function(evt){
-  qf.trackLeavePage();
+  QuickFindTracker.trackLeavePage();
 });

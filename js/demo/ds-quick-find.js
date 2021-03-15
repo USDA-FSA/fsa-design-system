@@ -264,11 +264,11 @@ if ('serviceWorker' in navigator) {
       let patt = /[ ]{2,}/;
       if( patt.test( str ) ) isValid = false;
       // if string is not in collection
-      let sc = GoogleTracker.getSearchCollection()
+      let sc = QuickFindTracker.getSearchCollection()
       if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
 
       if(isValid){
-        GoogleTracker.trackSearchCollection(str);
+        QuickFindTracker.trackSearchCollection(str);
       }
     },
     // End
@@ -391,7 +391,7 @@ if ('serviceWorker' in navigator) {
     },
 
     navigateTo: function( url, phrase ){
-      GoogleTracker.trackPhrase( phrase );
+      QuickFindTracker.trackPhrase( phrase );
       window.location.href = url;
     },
 
@@ -400,7 +400,7 @@ if ('serviceWorker' in navigator) {
       qf.search.value = '';
       qf.search.setAttribute('aria-expanded', 'false');
       qf.search.focus();
-      //GoogleTracker.trackSearchAbandon();
+      //QuickFindTracker.trackSearchAbandon();
     },
 
     resultsNavTo: function( node ){
