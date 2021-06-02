@@ -60,6 +60,15 @@
   href: "components"
   componentgroup:
 
+    - title: "General"
+      keyword: "Icons"
+      subcategories:
+
+        - subtitle: "Icons"
+          subhref: "components/icons"
+          img: "img/subcategories/icons.png"
+          keyword: "Illustration,Image,Symbol"
+
     - title: "Form Elements"
       keyword: "Controls"
       subcategories:
