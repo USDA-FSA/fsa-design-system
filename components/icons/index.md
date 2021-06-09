@@ -218,18 +218,18 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 {% endcapture %}
 
 {% capture usage_dont %}
-**Meaning is ambiguous.** Use icons in a common or conventional way only. If the meaning of an icon is ambiguous by itself, it needs accompanying text.
-**Compensating for page structure.** Icons don’t fix unclear page hierarchy or confusing content organization. Don’t rely on an icon to help draw attention to something important that’s hard to find. Fix the content’s placement first.
-**You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons outside their intended usage for illustrative purposes (like using the “visibility” eye icon to illustrate an actual eye). If you want to use a graphic to enhance your content or explain a more in-depth concept, consider using an illustration instead of an icon.
+* **If meaning is ambiguous.** Use icons in a common or conventional way only. If the meaning of an icon is ambiguous by itself, it needs accompanying text.
+* **To compensate for page structure.** Icons don’t fix unclear page hierarchy or confusing content organization. Don’t rely on an icon to help draw attention to something important that’s hard to find. Fix the content’s placement first.
+* **For illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons outside their intended usage for illustrative purposes (like using the “visibility” eye icon to illustrate an actual eye). If you want to use a graphic to enhance your content or explain a more in-depth concept, consider using an illustration instead of an icon.
 {% endcapture %}
 
 {% include do-dont.html %}
 
 ## General Guidance
 
-**Combine with text.** Users will not always understand the meaning of icons alone. Use icons combined with text to improve usability.
-**Be consistent with icon meaning.** Icons that are used a number of times throughout an application or site must have a consistent meaning and text description throughout. For example, if an icon of a blank piece of paper means “new document” on most screens, the same icon shouldn’t be used elsewhere to mean “reformat document.” Consistency aids users with cognitive disabilities and creates a better user experience for all users.
-**When interactive, combine with other components.** If the icon is part of an interactive element, it should be implemented within another functional component, like as part of a button or list.
+* **Combine with text.** Users will not always understand the meaning of icons alone. Use icons combined with text to improve usability.
+* **Be consistent with icon meaning.** Icons that are used a number of times throughout an application or site must have a consistent meaning and text description throughout. For example, if an icon of a blank piece of paper means “new document” on most screens, the same icon shouldn’t be used elsewhere to mean “reformat document.” Consistency aids users with cognitive disabilities and creates a better user experience for all users.
+* **When interactive, combine with other components.** If the icon is part of an interactive element, it should be implemented within another functional component, like as part of a button or list.
 
 {% include related-cards.html %}
 
