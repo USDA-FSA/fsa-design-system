@@ -460,8 +460,6 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 This component must not be used to hide interactive content; for that, defer to [Visibility Utility classes](#visibility).
 
-{% include alert.rwd-rendering.html %}
-
 ```html
 <element class="fsa-sr-only@[size]">...</element>
 ```
@@ -513,8 +511,6 @@ Where `direction` is one of `left`, `center`, or `right`
 ### Responsive
 
 Adjust text alignment per media query breakpoint.
-
-{% include alert.rwd-rendering.html %}
 
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html{% endcapture %}
 {% include rwd-viewer.html %}
