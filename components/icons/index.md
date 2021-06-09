@@ -38,7 +38,7 @@ relatedItems:
 
 <div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
   <h3 id="ds-icon-find__icon-list-title" aria-live="polite" class="fsa-m--none">Previewing <strong>147 of 994</strong> available icons</h3>
-  <div id="ds-icon-find__icon-list-desc">Click an icon to copy its code snippet</div>
+  <div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300">Click an icon to copy its code snippet</div>
 </div>
 
 <div class="docs__icons" aria-labelledby="ds-icon-find__icon-list-title" aria-describedby="ds-icon-find__icon-list-desc">
