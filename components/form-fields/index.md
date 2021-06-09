@@ -18,7 +18,7 @@ relatedItems:
   - "Spinbox"
   - "Text Input"
   - "Textarea"
-title_label: 'JavaScript Included'
+title_label: 'JavaScript Demo Included'
 ---
 
 Create application forms with appropriate instructional and validation features.

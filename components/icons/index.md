@@ -193,7 +193,7 @@ relatedItems:
 
 ## Responsive
 
-Selectively override several style properties at each Media Query breakpoint.
+Selectively override icon size at each Media Query breakpoint.
 
 <code>fsa-icon--<strong>[size]]@[breakpoint]</strong></code>, where
 <code>breakpoint</code> is one of
@@ -227,9 +227,48 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 
 ## General Guidance
 
+* The entire set of icons (over 900 of them) are available as raw SVGs from <code><a href="https://github.com/USDA-FSA/fsa-style/tree/master/src/img/material-design-icons">/img/material-design-icons/</a></code> of the `fsa-style` dependency or its <a href="https://github.com/USDA-FSA/fsa-style#download-zip">downloadable ZIP</a>.
 * **Combine with text.** Users will not always understand the meaning of icons alone. Use icons combined with text to improve usability.
 * **Be consistent with icon meaning.** Icons that are used a number of times throughout an application or site must have a consistent meaning and text description throughout. For example, if an icon of a blank piece of paper means “new document” on most screens, the same icon shouldn’t be used elsewhere to mean “reformat document.” Consistency aids users with cognitive disabilities and creates a better user experience for all users.
 * **When interactive, combine with other components.** If the icon is part of an interactive element, it should be implemented within another functional component, like as part of a button or list.
+* **Don’t alter icons.** You shouldn’t customize, combine, or change the icons (other than updating the color) due to their license.
+* **Using color in icons.** Icons use `currentColor`, so the color of the icon will inherit from the current foreground color of its parent. Change colors with the [color utility]({{ site.baseurl }}utilities/#color).
+
+## Accessibility
+
+**Hide decorative icons from screen readers.** Use the `aria-hidden="true"` and `role="img"` if the icon is redundant and used solely as visual progressive enhancement.
+
+{% capture snippet %}
+<svg class="fsa-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+**Place icons *inside* links.** If icons accompany a text link, place the icon inside the link to prevent the screen reader from announcing the link twice.
+
+{% capture snippet %}
+<a href="">
+  <div class="fsa-level">
+    <svg class="fsa-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+    <span>Profile</span>
+  </div>
+</a>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+**Provide descriptive text if a standalone icon has semantic meaning.** If you need to expose an icon to screen readers, provide an `aria-labelledby` attribute mapped to accompanying `id` value of a `<title>` element available within the `svg`.
+
+{% capture snippet %}
+<a href="link.html">
+  <svg class="fsa-icon" aria-labelledby="profile-title" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <title id="profile-title">Profile</title>
+    <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+  </svg>
+</a>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
 
 {% include related-cards.html %}
 
