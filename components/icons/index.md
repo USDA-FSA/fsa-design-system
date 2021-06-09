@@ -191,21 +191,45 @@ relatedItems:
   <a class="docs__icons__link" href="{{ site.baseurl }}img/material-design-icons/ic_zoom_out_24px.svg"> <figure class="docs__icons__figure"> <svg class="fsa-icon fsa-icon--size-4" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></svg> </figure> <figcaption class="docs__icons__caption">zoom_out</figcaption> </a>
 </div>
 
-
 ## Responsive
 
-asdf
+Selectively override several style properties at each Media Query breakpoint.
+
+<code>fsa-icon--<strong>[size]]@[breakpoint]</strong></code>, where
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__icons.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Usage
 
-asdf
+Icons are a simple, easily graspable way to add visual emphasis or interest, signal an action, or indicate a feedback state — all while reducing a user’s cognitive load.
 
-<!-- Icons are a simple, easily graspable way to add visual emphasis or interest, signal an action, or indicate a feedback state — all while reducing a user’s cognitive load.
+Using a consistent set of icons helps establish a familiar look and feel across a site or service, while using individual icons consistently establishes a reliable relationship between the image and a specific concept or action. For example, don’t use an envelope icon to indicate email on one page and mailing address on another. Users should be able to trust that a certain icon always means the same thing, no matter where it’s used on your site. It’s important that icons always serve a single functional purpose throughout a site or service.
 
-Using a consistent set of icons helps establish a familiar look and feel across a site or service, while using individual icons consistently establishes a reliable relationship between the image and a specific concept or action. For example, don’t use an envelope icon to indicate email on one page and mailing address on another. Users should be able to trust that a certain icon always means the same thing, no matter where it’s used on your site. It’s important that icons always serve a single functional purpose throughout a site or service. -->
+{% capture usage_do %}
+* **To draw attention to actions.** Icons are helpful when combined with text to inform users about performing an action. The icon should directly relate to the text it accompanies.
+* **To help readers find key information.** Use icons as scannable, easy-to-understand visual indicators for key information like a phone number or email address.
+* **To enhance an actionable target.** Icons make great touch or click targets. Use an icon for common actions like opening a menu or sharing an article.
+{% endcapture %}
 
+{% capture usage_dont %}
+**Meaning is ambiguous.** Use icons in a common or conventional way only. If the meaning of an icon is ambiguous by itself, it needs accompanying text.
+**Compensating for page structure.** Icons don’t fix unclear page hierarchy or confusing content organization. Don’t rely on an icon to help draw attention to something important that’s hard to find. Fix the content’s placement first.
+**You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons outside their intended usage for illustrative purposes (like using the “visibility” eye icon to illustrate an actual eye). If you want to use a graphic to enhance your content or explain a more in-depth concept, consider using an illustration instead of an icon.
+{% endcapture %}
 
-<!-- {% include do-dont.html %} -->
+{% include do-dont.html %}
+
+## General Guidance
+
+**Combine with text.** Users will not always understand the meaning of icons alone. Use icons combined with text to improve usability.
+**Be consistent with icon meaning.** Icons that are used a number of times throughout an application or site must have a consistent meaning and text description throughout. For example, if an icon of a blank piece of paper means “new document” on most screens, the same icon shouldn’t be used elsewhere to mean “reformat document.” Consistency aids users with cognitive disabilities and creates a better user experience for all users.
+**When interactive, combine with other components.** If the icon is part of an interactive element, it should be implemented within another functional component, like as part of a button or list.
 
 {% include related-cards.html %}
 
