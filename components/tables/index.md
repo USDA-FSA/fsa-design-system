@@ -1299,6 +1299,810 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
   </table>
 </div>
 
+### Scrollable
+
+Wrapping a table in a `fsa-table-container--scroll` automatically provides a scrollable region content exceeding its bounds.
+
+{% capture snippet %}
+<div class="fsa-table-container--scroll fsa-border--xxs">
+  <table class="fsa-table fsa-table--borderless">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
+    <thead>
+      <tr>
+        <th scope="col">Commodity</th>
+        <th scope="col" class="fsa-text-align--right">Loan Rate</th>
+        <th scope="col" class="fsa-text-align--right">30-Day Period PCP</th>
+        <th scope="col" class="fsa-text-align--right">Alternative PCP</th>
+        <th scope="col" class="fsa-text-align--right">Effective LDP Rate</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+        <th scope="col" class="fsa-text-align--right">[col]</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">15.99</td>
+        <td class="fsa-text-align--right">15.99</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">14.62</td>
+        <td class="fsa-text-align--right">14.62</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">1.92</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.49</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.49</td>
+        <td class="fsa-text-align--right">4.49</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Scrollable: Custom Height
+
+This example sets a `max-height` of `33vh` (effectively "33% of viewport's height"), forcing a vertical scroll. Accepts most units, e.g. `rem`, `px`, `em`, etc.
+
+{% capture snippet %}
+<div class="fsa-table-container--scroll fsa-border--xxs" style="--custom-table-height: 33vh;">
+  <table class="fsa-table fsa-table--borderless">
+    <caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="fsa-table__th--sticky">Commodity</th>
+        <th scope="col" class="fsa-text-align--right fsa-table__th--sticky">Loan Rate</th>
+        <th scope="col" class="fsa-text-align--right fsa-table__th--sticky">30-Day Period PCP</th>
+        <th scope="col" class="fsa-text-align--right fsa-table__th--sticky">Alternative PCP</th>
+        <th scope="col" class="fsa-text-align--right fsa-table__th--sticky">Effective LDP Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Barley $/Bushel</td>
+        <td class="fsa-text-align--right">3.30</td>
+        <td class="fsa-text-align--right">2.60</td>
+        <td class="fsa-text-align--right">1.75</td>
+        <td class="fsa-text-align--right">3.30</td>
+      </tr>
+      <tr>
+        <td>Canola $/Cwt.</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">8.94</td>
+        <td class="fsa-text-align--right">15.89</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Flaxseed $/Cwt.</td>
+        <td class="fsa-text-align--right">10.13</td>
+        <td class="fsa-text-align--right">15.90</td>
+        <td class="fsa-text-align--right">0.00</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Oats $/Bushel</td>
+        <td class="fsa-text-align--right">1.92</td>
+        <td class="fsa-text-align--right">1.43</td>
+        <td class="fsa-text-align--right">2.97</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+      <tr>
+        <td>Wheat - Soft Red Winter $/Bushel</td>
+        <td class="fsa-text-align--right">2.42</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">4.19</td>
+        <td class="fsa-text-align--right">0.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ## Responsive
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
