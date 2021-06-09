@@ -4,6 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Tables"
 shortName: "component__tables"
+rwdName: "rwd__table"
 intro: "Present data or content in a tabular format."
 jump_menu: true
 relatedItems:
@@ -1303,26 +1304,7 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__bd">
-    <p>
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_table" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      </span>
-      <a class="fsa-m-l--xs fsa-text-size--1 usa-external_link" href="http://usda-fsa.github.io/fsa-style/demo/rwd__table.html" target="_blank">View in new window</a>
-    </p>
-  </div>
-  <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_table">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__table.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% include rwd-viewer.html %}
 
 ### Structure
 

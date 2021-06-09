@@ -4,6 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Level"
 shortName: "component__level"
+rwdName: "rwd__level"
 intro: "Multi-purpose layout component for simple horizontal arrangement."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -805,22 +806,7 @@ Responsive modifiers are available for both Level **Containers** and Level **Ite
 
 Where `BP` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>; and `modifiers` can be one or more of variations documented above in [Level Container](#level-container) and [Level Items](#level-items).
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_level" data-size="phone" class="fsa-btn-group__item" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_level" data-size="phone-big" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_level" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_level" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__level.html" target="_blank" title="View in its own browser window">New window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone-big" id="rwd-demo_level">
-      <iframe title="Responsive Demo: Level" src="https://usda-fsa.github.io/fsa-style/demo/rwd__level.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% include rwd-viewer.html %}
 
 ## Examples
 
