@@ -367,6 +367,7 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 
 At narrower breakpoints Content Tabs may be horizontally scrollable.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html{% endcapture %}
 {% include rwd-viewer.html %}
 

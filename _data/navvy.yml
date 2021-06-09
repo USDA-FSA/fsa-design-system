@@ -203,7 +203,7 @@
           img: "img/subcategories/grid.png"
 
         - subtitle: "Level"
-          keyword: "Row,Stack"
+          keyword: "Row,Stack,Flex"
           subhref: "components/level"
           img: "img/subcategories/level.png"
 

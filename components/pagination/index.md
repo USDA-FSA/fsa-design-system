@@ -249,6 +249,7 @@ Each actionable item, e.g. `fsa-pagination__label`, may typically be an `<a>` el
 
 At narrower breakpoints Pagination will render as two directional buttons, suppressing specific paginated groups.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__pagination.html{% endcapture %}
 {% include rwd-viewer.html %}
 

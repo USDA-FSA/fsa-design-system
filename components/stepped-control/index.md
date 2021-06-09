@@ -511,6 +511,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 At narrower breakpoints the Stepped Control is docked to the bottom of the viewport.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__stepped-control.html{% endcapture %}
 {% include rwd-viewer.html %}
 

@@ -35,5 +35,6 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Live Demo
 
+{% assign rwdSize = "desktop" %}
 {% capture rwdURL %}{{ site.baseurl }}/demo/actionbar-and-table.html{% endcapture %}
 {% include rwd-viewer.html %}

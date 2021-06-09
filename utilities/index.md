@@ -90,6 +90,7 @@ Set overflow of block-level elements to Ellipsis at select media query breakpoin
   <code title="extra large">xl</code>
 </p>
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -165,6 +166,7 @@ aka "clearfix"
 
 Adjust floating presentation per media query breakpoint.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__float.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -309,6 +311,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 Margins can be adjusted per media query breakpoint.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__margins.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -451,6 +454,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 ### Responsive
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__padding.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -466,6 +470,7 @@ This component must not be used to hide interactive content; for that, defer to 
 
 Visibly hide when viewport is *within* a specific range, where `[size]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -512,6 +517,7 @@ Where `direction` is one of `left`, `center`, or `right`
 
 Adjust text alignment per media query breakpoint.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -548,6 +554,7 @@ Text size can be adjusted per media query breakpoint.
 
 <p><code>class="fsa-text-size<strong>--[size]@[breakpoint]</strong>"</code>, where <code>size</code> is one of <code>0</code> - <code>7</code>, and <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code></p>
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -601,6 +608,7 @@ Each of the below examples demonstrate how the visual presentation of a second-l
 
 Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -620,6 +628,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
 <code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -627,6 +636,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
 <code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -634,6 +644,7 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
 <code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -641,5 +652,6 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
 <code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html{% endcapture %}
 {% include rwd-viewer.html %}

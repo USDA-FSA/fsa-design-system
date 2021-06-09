@@ -1303,6 +1303,7 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__table.html{% endcapture %}
 {% include rwd-viewer.html %}
 

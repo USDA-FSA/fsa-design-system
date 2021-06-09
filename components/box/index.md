@@ -86,6 +86,7 @@ Selectively apply the Box style to an element at each Media Query breakpoint, wh
 <element class="fsa-box@[breakpoint]">...</element>
 ```
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__box.html{% endcapture %}
 {% include rwd-viewer.html %}
 
@@ -95,6 +96,7 @@ Selectively override several style properties of `.fsa-box` at each Media Query 
 <element class="fsa-box fsa-box[property]@[breakpoint]">...</element>
 ```
 
+{% assign rwdSize = "phone" %}
 {% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__box-modifiers.html{% endcapture %}
 {% include rwd-viewer.html %}
 
