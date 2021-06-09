@@ -3,7 +3,6 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Top Hat"
-rwdName: "rwd__top-hat"
 intro: "Indicate associated USDA agency and organization."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -67,6 +66,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Responsive
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Level"
 shortName: "component__level"
-rwdName: "rwd__level"
 intro: "Multi-purpose layout component for simple horizontal arrangement."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -806,6 +805,7 @@ Responsive modifiers are available for both Level **Containers** and Level **Ite
 
 Where `BP` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>; and `modifiers` can be one or more of variations documented above in [Level Container](#level-container) and [Level Items](#level-items).
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__level.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Examples

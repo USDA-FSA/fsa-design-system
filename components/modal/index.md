@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Modal"
 shortName: "component__modal"
-rwdName: "rwd__modal"
 intro: "Display layered view above the surface of entire page."
 jump_menu: true
 title_label: 'Requires JavaScript'
@@ -186,6 +185,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 
 ## Responsive
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

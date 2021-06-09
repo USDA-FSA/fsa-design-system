@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Tables"
 shortName: "component__tables"
-rwdName: "rwd__table"
 intro: "Present data or content in a tabular format."
 jump_menu: true
 relatedItems:
@@ -1304,6 +1303,7 @@ Omitting the default `class="fsa-table"` outright renders a non-styled table, ef
 
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__table.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ### Structure

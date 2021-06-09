@@ -3,7 +3,6 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Application Header"
-rwdName: "rwd__header-app"
 intro: "Display application name and account-level actions."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -138,6 +137,7 @@ This component is **not** a required Global Navigation structure; rather, it eff
 
 ## Responsive
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__header-app.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

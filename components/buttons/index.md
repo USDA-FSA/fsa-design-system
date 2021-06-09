@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Buttons"
 shortName: "component__buttons"
-rwdName: "rwd__buttons"
 intro: "Signal key actions on a page, form, or dialog."
 relatedItems:
   - "Action Bar with Table"
@@ -137,6 +136,7 @@ Several of a button's style properties can be selectively modified across each M
 <code title="large">l</code>, or
 <code title="extra large">xl</code>
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

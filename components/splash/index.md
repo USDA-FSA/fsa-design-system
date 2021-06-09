@@ -3,7 +3,6 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Splash"
-rwdName: "rwd__splash"
 intro: "Momentarily display a launch screen while an application is loading."
 jump_menu: true
 suppress_code_toggle: true
@@ -16,6 +15,7 @@ The intention of a Splash screen is to provide a good first imporession of an ap
 
 ### Default
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__splash.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ```html

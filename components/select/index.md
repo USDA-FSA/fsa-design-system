@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Select"
 shortName: "component__select"
-rwdName: "rwd__select"
 intro: "Select a single option from a list."
 relatedItems:
   - "Form Fields"
@@ -211,6 +210,7 @@ Selectively override several style properties at each Media Query breakpoint.
 <code title="large">l</code>, or
 <code title="extra large">xl</code>
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__select.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

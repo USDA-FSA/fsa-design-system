@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Content Tabs"
 shortName: "component__content-tabs"
-rwdName: "rwd__content-tabs"
 intro: "Segment related content of the same parent topic in a defined area."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -368,6 +367,7 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
 
 At narrower breakpoints Content Tabs may be horizontally scrollable.
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

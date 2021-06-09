@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Global Navigation"
 shortName: "component__top-nav"
-rwdName: "rwd__header-nav-global"
 intro: "Display a global list of sections, topics, or actions."
 jump_menu: true
 title_label: 'May Require JavaScript'
@@ -850,6 +849,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 ## Responsive
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__header-nav-global.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

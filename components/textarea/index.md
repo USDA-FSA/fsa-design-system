@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Textarea"
 shortName: "component__textarea"
-rwdName: "rwd__textarea"
 intro: "Free-form text entry any combination of letters, numbers, or symbols."
 jump_menu: true
 relatedItems:
@@ -125,6 +124,7 @@ Selectively override several style properties at each Media Query breakpoint.
 <code title="large">l</code>, or
 <code title="extra large">xl</code>
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__textarea.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

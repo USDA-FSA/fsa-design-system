@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Stepped Control"
 shortName: "component__stepped-control"
-rwdName: "rwd__stepped-control"
 intro: "Navigate through a multi-step process with directional actions."
 relatedItems:
   - "Buttons"
@@ -512,6 +511,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 At narrower breakpoints the Stepped Control is docked to the bottom of the viewport.
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__stepped-control.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

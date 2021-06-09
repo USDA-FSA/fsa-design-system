@@ -3,7 +3,6 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Footer"
-rwdName: "rwd__footer"
 intro: "Provide access to related FPAC products or links not directly associated with application."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -217,6 +216,7 @@ These are **not** required footer structures; rather, they effectively serve as 
 
 ## Responsive
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__footer.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

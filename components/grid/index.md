@@ -3,7 +3,6 @@ layout: page
 parent: "Components"
 type: "UI Component"
 title: "Grid System"
-rwdName: "rwd__grid"
 intro: "Responsive and fluid grid system to structure content and objects."
 jump_menu: true
 suppress_code_toggle: true
@@ -287,6 +286,7 @@ In the below example, each column begins as full-width (<code>fsa-grid__<strong>
 
 ### Demo
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__grid.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 <!-- ### Breakpoints -->

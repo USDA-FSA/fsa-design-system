@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Button Group"
 shortName: "component__button-group"
-rwdName: "rwd__btn-group"
 intro: "Toggle between mutually exclusive states."
 relatedItems:
   - "Action Bar with Table"
@@ -138,6 +137,7 @@ Selectively override several style properties at each Media Query breakpoint.
 <code title="large">l</code>, or
 <code title="extra large">xl</code>
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__btn-group.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Accessibility

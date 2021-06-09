@@ -4,7 +4,6 @@ parent: "Components"
 type: "UI Component"
 title: "Text Input"
 shortName: "component__text-input"
-rwdName: "rwd__input"
 intro: "Enter any combination of letters, numbers, or symbols for form entry."
 relatedItems:
   - "Action Bar with Table"
@@ -152,6 +151,7 @@ Selectively override several style properties at each Media Query breakpoint
 <code title="large">l</code>, or
 <code title="extra large">xl</code>
 
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__input.html{% endcapture %}
 {% include rwd-viewer.html %}
 
 ## Usage

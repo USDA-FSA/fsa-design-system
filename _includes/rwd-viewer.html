@@ -7,8 +7,6 @@
 
 {% include alert.rwd-rendering.html %}
 
-{% capture rwdTarget %}{{page.rwdName}}{% endcapture %}
-
 <div class="docs__rwd-demo-block" data-component>
   <div class="docs__rwd-embed-container">
     <div class="fsa-level fsa-level--justify-center fsa-level--gutter-none" role="group">
@@ -20,7 +18,7 @@
     </div>
     <div class="docs__rwd-embed docs__rwd-embed--phone">
       <button data-behavior="toggle-rwd-close-fullscreen" type="button" class="docs__rwd-embed-close fsa-btn fsa-btn--plain fsa-p--xs fsa-radius--full fsa-color--tertiary fsa-bg--white fsa-bg:hover--tertiary-100 fsa-link:hover--tertiary-900" title="Close" aria-label="Close"><svg class="fsa-icon fsa-icon--size-3" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></button>
-      <iframe title="Responsive Demo: {{page.title}}" src="https://usda-fsa.github.io/fsa-style/demo/{{rwdTarget}}.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true" > </iframe>
+      <iframe title="Responsive Demo: {{page.title}}" src="{{rwdURL}}" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true" > </iframe>
     </div>
   </div>
 </div>
