@@ -136,7 +136,7 @@ Several of a button's style properties can be selectively modified across each M
 <code title="large">l</code>, or
 <code title="extra large">xl</code>
 
-{% include alert.rwd-rendering.html %}
+{% include rwd-viewer.html %}
 
 <div class="docs__rwd-demo-block">
   <div class="docs__rwd-embed-container">
