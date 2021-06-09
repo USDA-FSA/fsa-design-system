@@ -25,6 +25,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
   <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
   <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
+  <li><button class="fsa-btn fsa-btn--plain" type="button">Label</button></li>
 </ul>
 {% endcapture %}
 
@@ -55,6 +56,14 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 {% include preview-and-snippet.html %}
 
+### Tertiary
+
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ### Flat
 
 {% capture snippet %}
@@ -63,10 +72,10 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 {% include preview-and-snippet.html %}
 
-### Tertiary
+### Plain
 
 {% capture snippet %}
-<button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+<button class="fsa-btn fsa-btn--plain" type="button">Label</button>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -147,7 +156,7 @@ Several of a button's style properties can be selectively modified across each M
 {% endcapture %}
 
 {% capture usage_dont %}
-* Avoid using to navigate between destinations, deferring to a [text link]({{ site.baseurl }}components/links/) instead.
+* Avoid using to navigate between destinations, deferring to a [text link]({{ site.baseurl }}components/links/) instead (SPA implementations may be an exception).
 {% endcapture %}
 
 {% include do-dont.html %}
@@ -189,14 +198,25 @@ Several of a button's style properties can be selectively modified across each M
         <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
       </td>
       <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
-      <td aria-label="Example"> Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code> but its UI presents them as more navigational. <br><br> A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database. </td>
+      <td aria-label="Example"> Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code>, but its UI presents them as more navigational. <br><br> A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database. </td>
     </tr>
     <tr>
       <td aria-label="Variation/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button>
+        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain">Plain</button>
+      </td>
+      <td aria-label="Usage">Unsets all style properties, effectively rendering as plain text.</td>
+      <td aria-label="Example">Typically used when designing a custom button, e.g. pairing with CSS Utilities like <a href="{{ site.baseurl }}utilities/#color">Color</a>, <a href="{{ site.baseurl }}utilities/#color-background">Background</a>, <a href="{{ site.baseurl }}utilities/#padding">Padding</a>, etc.</td>
+    </tr>
+    <tr>
+      <td aria-label="Variation/State">
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain" disabled>Disabled</button></div>
       </td>
       <td aria-label="Usage"> Communicates when a button isn’t actionable and is deemphasized in a UI. </td>
-      <td aria-label="Example"> A button needs to remain present and visible, and becomes actionable once any number of criteria is met. </td>
+      <td aria-label="Example"> A button needs to remain present and visible, and becomes actionable only once any number of criteria is met. </td>
     </tr>
   </tbody>
 </table>
@@ -260,7 +280,7 @@ Several of a button's style properties can be selectively modified across each M
       </div>
     </td>
     <td aria-label="Usage">
-      <ul>
+      <ul class="fsa-m--none">
         <li>
           <strong>Search</strong> shall be used as the button label when the application is performing a query and returning results.
         </li>
@@ -281,7 +301,7 @@ Several of a button's style properties can be selectively modified across each M
       </div>
     </td>
     <td aria-label="Usage">
-      <ul>
+      <ul class="fsa-m--none">
         <li>
           When returning to a previous screen or step, use <strong>Back</strong> as the button label.
         </li>
@@ -305,7 +325,7 @@ Several of a button's style properties can be selectively modified across each M
       </div>
     </td>
     <td aria-label="Usage">
-      <ul>
+      <ul class="fsa-m--none">
         <li>
           When data or a state in the application has changed, it is recommended to use <strong>Refresh</strong> as a label.
         </li>
@@ -327,7 +347,7 @@ Several of a button's style properties can be selectively modified across each M
       </div>
     </div></td>
     <td aria-label="Usage">
-      <ul>
+      <ul class="fsa-m--none">
         <li>
           A button shall use the <strong>Tertiary</strong> style when the action taken has destructive capabilities.
         </li>
