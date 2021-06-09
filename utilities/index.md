@@ -81,8 +81,6 @@ Below are the complete set of CSS Utilities for overriding or extending an eleme
 
 Set overflow of block-level elements to Ellipsis at select media query breakpoints.
 
-{% include alert.rwd-rendering.html %}
-
 <p>
   <code>fsa-ellipsis<strong>[--none]@[breakpoint]</strong></code>, where
   <code>breakpoint</code> is one of
@@ -92,20 +90,8 @@ Set overflow of block-level elements to Ellipsis at select media query breakpoin
   <code title="extra large">xl</code>
 </p>
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_ellipsis">
-      <iframe title="Responsive Demo: ellipsis" src="https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Floats
 
@@ -179,22 +165,8 @@ aka "clearfix"
 
 Adjust floating presentation per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__float.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__float.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Margins
 
@@ -337,22 +309,8 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 Margins can be adjusted per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__margins.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_margin">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__margins.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__margins.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Padding
 
@@ -493,22 +451,8 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 ### Responsive
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__padding.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_padding">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__padding.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__padding.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Screenreader only
 
@@ -516,28 +460,14 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 This component must not be used to hide interactive content; for that, defer to [Visibility Utility classes](#visibility).
 
-{% include alert.rwd-rendering.html %}
-
 ```html
 <element class="fsa-sr-only@[size]">...</element>
 ```
 
 Visibly hide when viewport is *within* a specific range, where `[size]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="Portrait" aria-selected="true"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_sr-only">
-      <iframe title="Responsive Demo: sr only" src="https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Text Alignment
 
@@ -582,22 +512,8 @@ Where `direction` is one of `left`, `center`, or `right`
 
 Adjust text alignment per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Text Size
 
@@ -630,24 +546,10 @@ Where `size` is one of `0` - `7`. For reference, the **base** font size is equal
 
 Text size can be adjusted per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
-
 <p><code>class="fsa-text-size<strong>--[size]@[breakpoint]</strong>"</code>, where <code>size</code> is one of <code>0</code> - <code>7</code>, and <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code></p>
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-size">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Text Headers
 
@@ -699,22 +601,8 @@ Each of the below examples demonstrate how the visual presentation of a second-l
 
 Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
-
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-headers">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ## Visibility
 
@@ -728,92 +616,30 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
   </div>
 </aside>
 
-<div class="fsa-hide@xl">
-  <aside>
-    <div class="fsa-alert fsa-alert--warning">
-      <div class="fsa-alert__body">
-        <p class="fsa-alert__text">View this page on a larger screen to view complete Responsive Web Design options.</p>
-      </div>
-    </div>
-  </aside>
-</div>
-
 ### Show at minimum screen size
 
-<div class="fsa-show@xl">
-  <p class="docs__code-sample"><code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--show-min-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+
+{% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ### Show at only specific screen size
 
-<div class="fsa-show@xl">
-  <p><code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--show-at-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ### Hide at minimum screen size
 
-<div class="fsa-show@xl">
-  <p><code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>. </p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--hide-min-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>.
+
+{% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html{% endcapture %}
+{% include rwd-viewer.html %}
 
 ### Hide at specific screen size
 
-<div class="fsa-show@xl">
-  <p><code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.</p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--hide-at-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+
+{% capture rwdURL %}http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html{% endcapture %}
+{% include rwd-viewer.html %}

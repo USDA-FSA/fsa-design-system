@@ -121,6 +121,25 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 
 {% include related-cards.html %}
 
+## Responsive
+
+Selectively override several style properties at each Media Query breakpoint.
+
+<code>fsa-btn-group--<strong>[property]@[breakpoint]</strong></code>, where
+<code>property</code> is one of
+<code>small</code>,
+<code>medium</code>,
+<code>large</code>,
+<code>block</code>, or
+<code>inline</code>; and <code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__btn-group.html{% endcapture %}
+{% include rwd-viewer.html %}
+
 ## Accessibility
 
 Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessibility/forms) for overall guidance.

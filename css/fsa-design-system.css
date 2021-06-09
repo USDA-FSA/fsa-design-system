@@ -22880,6 +22880,10 @@ pre.highlight .ds-clipboard {
   }
 }
 
+.docs__rwd-embed--fullscreen {
+  background-color: white;
+}
+
 @media (min-width: 78.75em) {
   .docs__icons {
     -ms-grid-columns: 1fr [7];
