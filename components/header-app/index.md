@@ -138,7 +138,7 @@ This component is **not** a required Global Navigation structure; rather, it eff
 ## Responsive
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__header-app.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__header-app.html" %}
 {% include rwd-viewer.html %}
 
 ## Usage

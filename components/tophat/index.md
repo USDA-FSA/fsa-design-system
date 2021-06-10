@@ -67,7 +67,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ## Responsive
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" %}
 {% include rwd-viewer.html %}
 
 ## Usage

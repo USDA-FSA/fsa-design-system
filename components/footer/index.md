@@ -217,7 +217,7 @@ These are **not** required footer structures; rather, they effectively serve as 
 ## Responsive
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__footer.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__footer.html" %}
 {% include rwd-viewer.html %}
 
 ## Usage

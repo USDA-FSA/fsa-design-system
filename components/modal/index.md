@@ -186,7 +186,7 @@ Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal 
 ## Responsive
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html" %}
 {% include rwd-viewer.html %}
 
 ## Usage

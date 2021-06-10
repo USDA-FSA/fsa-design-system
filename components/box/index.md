@@ -87,7 +87,7 @@ Selectively apply the Box style to an element at each Media Query breakpoint, wh
 ```
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__box.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__box.html" %}
 {% include rwd-viewer.html %}
 
 Selectively override several style properties of `.fsa-box` at each Media Query breakpoint, where `property` is one of <code title="background-color">bg</code>, <code title="border-width">bw</code>, or <code title="border-radius">br</code>, and where <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>
@@ -97,7 +97,7 @@ Selectively override several style properties of `.fsa-box` at each Media Query 
 ```
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__box-modifiers.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__box-modifiers.html" %}
 {% include rwd-viewer.html %}
 
 {% include related-cards.html %}

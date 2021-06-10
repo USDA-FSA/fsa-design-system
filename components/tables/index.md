@@ -2108,7 +2108,7 @@ This example sets a `max-height` of `33vh` (effectively "33% of viewport's heigh
 Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
 
 {% assign rwdSize = "phone" %}
-{% capture rwdURL %}https://usda-fsa.github.io/fsa-style/demo/rwd__table.html{% endcapture %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__table.html" %}
 {% include rwd-viewer.html %}
 
 ### Structure
