@@ -6,6 +6,53 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  //var MDOfficial = grunt.file.readJSON("https://fonts.google.com/metadata/icons")
+  //var MDOfficial = grunt.file.readJSON("_data/material-icons-list.json");
+  var MDOfficial = grunt.file.readJSON("_data/MDOfficial.json");
+  //MDCategories.forEach(set => { MDIcons = MDIcons.concat(set.icons) });
+  var MDIcons = MDOfficial.icons; //[];
+  
+  // start building icons JSON string
+  var iconsList = '{"icons":[';
+  var iconsStr = ""
+  var count = 0;
+
+  grunt.file.recurse('img/material-design-icons', createFileList);
+
+  function createFileList(abspath, rootdir, subdir, filename){
+    // strip filename of extra details
+    var fn = filename.split("_24px")[0].split("ic_")[1];
+    // search thru official Material Design Icons data for object
+    var newObj = MDIcons.find(obj => obj.name == fn);
+    var iconName, iconTags;
+
+    if(newObj != undefined){
+      // create the display name for the icon
+      iconName = newObj.name.split("_").join(" ");
+      // ensure the keywords list is populated
+      iconTags = String(newObj.tags) == "" ? iconName.split(" ").join(",") : newObj.tags;
+    } else {
+      // Used only for Development/Testing
+      console.log('EXCLUDED ICON:', fn);
+      // create the display name for the icon
+      iconName = fn.split("_").join(" ");
+      // ensure the keywords list is populated
+      iconTags = iconName.split(" ").join(",");
+    };
+    // Used only for Development/Testing
+    count++;
+    //continue building icons JSON string
+    iconsStr = iconsStr + '{"name":"'+String(iconName)+'","svg":"'+String(filename)+'","keywords":"'+String(iconTags)+'"},';
+
+  };
+  // Used only for Development/Testing
+  console.log("ICON COUNT", count)
+
+  // finalize building icons JSON string
+  iconsList = iconsList + iconsStr.slice(0,-1) +']}';
+  // ensure string is in JSON format
+  iconsJson = JSON.parse(JSON.stringify(iconsList));
+  
   // Listing Tasks
   grunt.initConfig({
 
@@ -18,6 +65,18 @@ module.exports = function (grunt) {
       },
       jekyllServe: {
         command: "bundle exec jekyll serve"
+      }
+    },
+
+    'string-replace': {
+      dist: {
+        files: { 'data/icons.json': '_data/icons-blank.json'},
+        options: {
+          replacements: [{
+            pattern: '{}',
+            replacement: iconsJson
+          }]
+        }
       }
     },
 
@@ -64,8 +123,7 @@ module.exports = function (grunt) {
         src: '**',
         cwd: 'node_modules/fsa-style/src/js/vendor',
         dest: 'js/vendor'
-      },
-
+      }
     },
 
     // Lint scss files
@@ -176,8 +234,8 @@ module.exports = function (grunt) {
     // run tasks in parallel
     concurrent: {
       serve: [
-        'build',
-        'watch'
+        'build'
+        //'watch' removed to prevent infinite build issue
       ],
       options: {
         logConcurrentOutput: true
@@ -186,15 +244,20 @@ module.exports = function (grunt) {
 
   });
 
+
+  grunt.loadNpmTasks('grunt-string-replace');
+
   // Register Tasks
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default', ['build', 'string-replace']);
   grunt.registerTask('build', [
     'copy',
     'sass',
     'postcss',
     'browserify',
     'uglify',
+    'string-replace',
     'shell:jekyllServe',
+    'watch' // added to remove infinite build issue
   ]);
   grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');
