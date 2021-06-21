@@ -332,6 +332,11 @@
       subhref: "utilities/#floats"
       img: "img/subcategories/floats.png"
 
+    - subtitle: "Font"
+      keyword: "Typeface, Sans, Bold, Light, Monospace"
+      subhref: "utilities/#font"
+      img: "img/subcategories/font.png"
+
     - subtitle: "Lists"
       keyword: ""
       subhref: "utilities/#lists"

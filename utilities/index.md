@@ -170,6 +170,64 @@ Adjust floating presentation per media query breakpoint.
 {% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__float.html" %}
 {% include rwd-viewer.html %}
 
+## Font
+
+<p class="fsa-text--lead">Selectively Typeface and Weight to text.</p>
+
+```html
+<el class="fsa-font--[VARIATION]">...</el>
+```
+
+Where `variation` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`, or `fsa-font--mono`.
+
+### Variations
+
+### Sans
+
+```html
+<div class="fsa-font--sans">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--sans fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Sans Light
+
+```html
+<div class="fsa-font--sans-light">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--sans-light fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Sans Bold
+
+```html
+<div class="fsa-font--sans-bold">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--sans-bold fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Monospace
+
+```html
+<div class="fsa-font--mono">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--mono fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Responsive
+
+Selectively apply Font at any Media Query breakpoint.
+
+`class="fsa-font--[variation]@[breakpoint]"` where `breakpoint` is one of `s`, `m`, `l`, or `xl`
+
+{% assign rwdSize = "phone" %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__font.html" %}
+{% include rwd-viewer.html %}
+
 ## Lists
 
 <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
