@@ -35,11 +35,6 @@
   href: "visual-style"
   subcategories:
 
-    - subtitle: "Logo"
-      keyword: "Brand"
-      subhref: "visual-style/logo"
-      img: "img/subcategories/logo.png"
-
     - subtitle: "Color"
       keyword: "Token,Variables,Swatch"
       subhref: "visual-style/color"
@@ -54,6 +49,16 @@
       keyword: "Space"
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
+
+    - subtitle: "Shadows"
+      keyword: "Elevation, Depth, Layer, Prominence"
+      subhref: "visual-style/shadows"
+      img: "img/subcategories/shadows.png"
+
+    - subtitle: "Logo"
+      keyword: "Brand"
+      subhref: "visual-style/logo"
+      img: "img/subcategories/logo.png"
 
 - title: "UI Components"
   keyword: "Widgets"

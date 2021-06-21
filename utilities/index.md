@@ -540,6 +540,89 @@ Visibly hide when viewport is *within* a specific range, where `[size]` is one o
 {% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" %}
 {% include rwd-viewer.html %}
 
+## Shadows
+
+Selectively apply [Shadows]({{ site.baseurl }}visual-style/shadows/) to containing blocks.
+
+### Variations
+
+```html
+<el class="fsa-shadow--[VARIATION]">...</el>
+```
+
+Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
+
+### Popout
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--popout"></div>
+</div>
+
+### Overlay
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--overlay"></div>
+</div>
+
+### Raised
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--raised"></div>
+</div>
+
+### None
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--none"></div>
+</div>
+
+### Hover
+
+```html
+<el class="fsa-shadow--:hover--[VARIATION]">...</el>
+```
+
+Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
+
+### Popout
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--popout"></div>
+</div>
+
+### Overlay
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--overlay"></div>
+</div>
+
+### Raised
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--raised"></div>
+</div>
+
+### None
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--none"></div>
+</div>
+
+### Responsive
+
+Selectively apply at any Media Query breakpoint.
+
+<code>class="fsa-shadow-<strong>-[variation]@[breakpoint]</strong>"</code> where
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__shadows.html" %}
+{% include rwd-viewer.html %}
+
 ## Text Alignment
 
 <p class="fsa-text--lead">Selectively align blocks of content.</p>
