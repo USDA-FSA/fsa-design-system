@@ -170,6 +170,14 @@ Adjust floating presentation per media query breakpoint.
 {% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__float.html" %}
 {% include rwd-viewer.html %}
 
+## Lists
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text">Refer to <a href="{{ site.baseurl }}components/lists/">Components / Lists</a>, e.g. <a href="{{ site.baseurl }}components/lists/#explicit">Bullet List</a></p>
+  </div>
+</div>
+
 ## Margins
 
 <p class="fsa-text--lead">Selectively manipulate margins around an element or component. </p>

@@ -332,6 +332,11 @@
       subhref: "utilities/#floats"
       img: "img/subcategories/floats.png"
 
+    - subtitle: "Lists"
+      keyword: ""
+      subhref: "utilities/#lists"
+      img: "img/subcategories/lists.png"
+
     - subtitle: "Margins"
       keyword: "Space,Size"
       subhref: "utilities/#margins"
