@@ -332,6 +332,11 @@
       subhref: "utilities/#border-width"
       img: "img/subcategories/border-width.png"
 
+    - subtitle: "Border Radius"
+      keyword: "Corner,Round"
+      subhref: "utilities/#border-radius"
+      img: "img/subcategories/border-radius.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"

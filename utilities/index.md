@@ -62,7 +62,6 @@ Below are the complete set of CSS Utilities for overriding or extending an eleme
 
 #### All
 ```html
-
 <element class="fsa-border--[SIZE]">...</element>
 ```
 
@@ -226,6 +225,65 @@ Selectively apply Border Width at any Media Query breakpoint.
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
 https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Border Radius
+
+<p class="fsa-text--lead">Selectively add or adjust rounded corners.</p>
+
+### Variations
+
+```html
+<element class="fsa-border-radius--[SIZE]">...</element>
+```
+
+<div class="fsa-grid fsa-m-b--s">
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>none</code>
+    <div class="fsa-radius--none fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>s</code>
+    <div class="fsa-radius--s fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>m</code>
+    <div class="fsa-radius--m fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>l</code>
+    <div class="fsa-radius--l fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+</div>
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>full</code>
+    <div class="fsa-radius--full fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>oval</code>
+    <div class="fsa-radius--oval fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply rounded corners at any Media Query breakpoint.
+
+<p>
+  <code>class="fsa-border-radius--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-radius.html
 {% endcapture %}
 
 {% include rwd-viewer.html %}
