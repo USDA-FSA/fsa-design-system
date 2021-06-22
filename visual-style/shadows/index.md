@@ -22,9 +22,9 @@ relatedItems:
       <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-popout</code></div>
       <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
         box-shadow:<br>
-        &nbsp;&nbsp;0 1.2rem 1.2rem -1.2rem rgb(73 68 64 / 15%),<br>
-        &nbsp;&nbsp;0 2.4rem 3.6rem 0.4rem rgb(73 68 64 / 15%),<br>
-        &nbsp;&nbsp;0 0.8rem 4.8rem 0.8rem rgb(73 68 64 / 15%)<br>
+        &nbsp;&nbsp;0&nbsp;1.2rem&nbsp;1.2rem&nbsp;-1.2rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
+        &nbsp;&nbsp;0&nbsp;2.4rem&nbsp;3.6rem&nbsp;&nbsp;&nbsp;.4rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
+        &nbsp;&nbsp;0&nbsp;&nbsp;.8rem&nbsp;4.8rem&nbsp;&nbsp;&nbsp;.8rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15)<br>
         ;
         </code></div>
     </div>
@@ -34,9 +34,9 @@ relatedItems:
       <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-overlay</code></div>
       <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
         box-shadow:<br>
-        &nbsp;&nbsp;0 0.4rem 0.4rem -0.4rem rgb(73 68 64 / 15%),<br>
-        &nbsp;&nbsp;0 0.8rem 1.2rem 0.2rem rgb(73 68 64 / 15%),<br>
-        &nbsp;&nbsp;0 0.4rem 1.2rem 0.2rem rgb(73 68 64 / 15%)<br>
+        &nbsp;&nbsp;0&nbsp;.4rem&nbsp;&nbsp;.4rem&nbsp;-.4rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
+        &nbsp;&nbsp;0&nbsp;.8rem&nbsp;1.2rem&nbsp;&nbsp;.2rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
+        &nbsp;&nbsp;0&nbsp;.4rem&nbsp;1.2rem&nbsp;&nbsp;.2rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15)<br>
         ;
         </code></div>
     </div>
@@ -46,9 +46,9 @@ relatedItems:
       <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-raised</code></div>
       <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
         box-shadow:<br>
-        &nbsp;&nbsp;0 0.2rem 0.4rem -0.4rem rgb(73 68 64 / 15%),<br>
-        &nbsp;&nbsp;0 0.4rem 0.4rem 0 rgb(73 68 64 / 15%),<br>
-        &nbsp;&nbsp;0 0.2rem 1.2rem 0 rgb(73 68 64 / 15%)<br>
+        &nbsp;&nbsp;0&nbsp;.2rem&nbsp;&nbsp;.4rem&nbsp;-.4rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
+        &nbsp;&nbsp;0&nbsp;.4rem&nbsp;&nbsp;.4rem&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
+        &nbsp;&nbsp;0&nbsp;.2rem&nbsp;1.2rem&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15)<br>
         ;
         </code></div>
     </div>
@@ -81,7 +81,7 @@ relatedItems:
 
 Refer to [CSS Utilities / Shadows]({{ site.baseurl }}utilities/#shadows) to selectively apply shadows to content blocks.
 
-### Example
+#### Example
 
 ```html
 <div class="fsa-m--m fsa-p--m fsa-bg--white fsa-shadow--raised fsa-text-align--center">Raised</div>
@@ -92,22 +92,22 @@ Refer to [CSS Utilities / Shadows]({{ site.baseurl }}utilities/#shadows) to sele
 
 ### Sass
 
-`fsa-style` has each shadow in the form of <abbr title="Syntatically Awesome Stylesheets">Sass</abbr> variables (tokens)
-
-#### Variables
+`fsa-style` has each shadow in the form of <abbr title="Syntatically Awesome Stylesheets">Sass</abbr> variables (tokens).
 
 ```scss
+// fsa-style/src/stylesheets/core/_fsa.variables.scss
+
 $shadow-size-popout
 $shadow-size-overlay
 $shadow-size-raised
 $shadow-size-none
 ```
 
-#### Applying with SCSS
-
 ```scss
+// Applying with SCSS
+
 .custom-component {
-  box-shadow: [SHADOW_VARIABLE];
+  box-shadow: $shadow-size-[TYPE];
 }
 ```
 
