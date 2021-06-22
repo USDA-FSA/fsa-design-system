@@ -337,6 +337,11 @@
       subhref: "utilities/#border-radius"
       img: "img/subcategories/border-radius.png"
 
+    - subtitle: "Border Between"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke,Segment,Column,Row"
+      subhref: "utilities/#border-between"
+      img: "img/subcategories/border-between.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
