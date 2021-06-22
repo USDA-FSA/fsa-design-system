@@ -57,7 +57,11 @@ relatedItems:
 
 ## Elevation
 
-<div class="fsa-box fsa-p--xl fsa-text-align--center fsa-text-size--6 fsa-color--tertiary-200 fsa-bg--tertiary-100">Coming...</div>
+<div class="ds-preview">
+  <figure class="fsa-text-align--center">
+    <img src="/fsa-design-system/img/elevation.png" alt="Visualization of Shadows' elevation">
+  </figure>
+</div>
 
 ## Usage
 
@@ -84,7 +88,7 @@ Refer to [CSS Utilities / Shadows]({{ site.baseurl }}utilities/#shadows) to sele
 #### Example
 
 ```html
-<div class="fsa-m--m fsa-p--m fsa-bg--white fsa-shadow--raised fsa-text-align--center">Raised</div>
+<div class="fsa-shadow--raised">Raised</div>
 ```
 <div class="ds-preview">
   <div class="fsa-m--m fsa-p--m fsa-bg--white fsa-shadow--raised fsa-text-align--center">Raised</div>
