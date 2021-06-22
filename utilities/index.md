@@ -54,6 +54,182 @@ A simple example adjusting a component's [margins](#margins). Here's the default
 
 Below are the complete set of CSS Utilities for overriding or extending an element's or component's visual properties, including **Responsive** scopes to adjust at targeted breakpoints.
 
+## Border Width
+
+<p class="fsa-text--lead">Selectively add or adjust border thickness.</p>
+
+### Variations
+
+#### All
+```html
+
+<element class="fsa-border--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--l"><code>l</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--custom" style="--custom-border-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Top
+
+```html
+<element class="fsa-border-top--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--l"><code>l</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--custom" style="--custom-border-top-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Right
+
+```html
+<element class="fsa-border-right--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--l"><code>l</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--custom" style="--custom-border-right-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Bottom
+
+```html
+<element class="fsa-border-bottom--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--l"><code>custom</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--custom" style="--custom-border-bottom-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Left
+
+```html
+<element class="fsa-border-left--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--l"><code>custom</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--custom" style="--custom-border-left-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Border Width at any Media Query breakpoint.
+
+<p>
+  <code>class="fsa-border--<strong>[variation]@[breakpoint]</strong>"</code>
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
 ## Ellipsis
 
 <p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
@@ -178,7 +354,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__float.html
 
 ## Font
 
-<p class="fsa-text--lead">Selectively Typeface and Weight to text.</p>
+<p class="fsa-text--lead">Selectively apply Typeface and Weight to text.</p>
 
 ```html
 <el class="fsa-font--[VARIATION]">...</el>

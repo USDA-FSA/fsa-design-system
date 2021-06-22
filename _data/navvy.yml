@@ -327,6 +327,11 @@
   href: "utilities"
   subcategories:
 
+    - subtitle: "Border Width"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke"
+      subhref: "utilities/#border-width"
+      img: "img/subcategories/border-width.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
