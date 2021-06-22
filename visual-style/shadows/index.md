@@ -2,7 +2,7 @@
 layout: page
 parent: "Visual Style"
 title: "Shadows"
-intro: "[Intro]"
+intro: "Distinguish content blocks with an Elevation system to convey proximity, prominence, and visual depth."
 jump_menu: true
 suppress_code_toggle: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
@@ -14,57 +14,43 @@ relatedItems:
   - "Stepped Control"
 ---
 
-<div class="ds-preview">
-  <div class="fsa-level@l fsa-level--grow-auto fsa-level--align-top fsa-level--gutter-xl@l fsa-m--m">
-    <div class="fsa-p--xl fsa-bg--white fsa-shadow--popout"></div>
-    <div class="fsa-p--xl fsa-bg--white fsa-shadow--overlay"></div>
-    <div class="fsa-p--xl fsa-bg--white fsa-shadow--raised"></div>
-  </div>
-</div>
-
 ## Types
 
-### Popout
-
 <div class="ds-preview">
-  <div class="fsa-level fsa-level--grow-auto fsa-m--m fsa-level--gutter-xl">
-    <div>
-      <h4 class="docs__sub_style fsa-m-t--none">Resting</h4>
-      <div class="fsa-p--xl fsa-bg--white fsa-shadow--popout"></div>
-    </div>
-    <div>
-      <h4 class="docs__sub_style fsa-m-t--none">Hover</h4>
-      <div class="fsa-p--xl fsa-bg--white fsa-shadow:hover--popout"></div>
+  <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--popout">
+    <div class="fsa-grid">
+      <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-popout</code></div>
+      <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
+        box-shadow:<br>
+        &nbsp;&nbsp;0 1.2rem 1.2rem -1.2rem rgb(73 68 64 / 15%),<br>
+        &nbsp;&nbsp;0 2.4rem 3.6rem 0.4rem rgb(73 68 64 / 15%),<br>
+        &nbsp;&nbsp;0 0.8rem 4.8rem 0.8rem rgb(73 68 64 / 15%)<br>
+        ;
+        </code></div>
     </div>
   </div>
-</div>
-
-### Overlay
-
-<div class="ds-preview">
-  <div class="fsa-level fsa-level--grow-auto fsa-m--m fsa-level--gutter-xl">
-    <div>
-      <h4 class="docs__sub_style fsa-m-t--none">Resting</h4>
-      <div class="fsa-p--xl fsa-bg--white fsa-shadow--overlay"></div>
-    </div>
-    <div>
-      <h4 class="docs__sub_style fsa-m-t--none">Hover</h4>
-      <div class="fsa-p--xl fsa-bg--white fsa-shadow:hover--overlay"></div>
+  <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--overlay">
+    <div class="fsa-grid">
+      <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-overlay</code></div>
+      <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
+        box-shadow:<br>
+        &nbsp;&nbsp;0 0.4rem 0.4rem -0.4rem rgb(73 68 64 / 15%),<br>
+        &nbsp;&nbsp;0 0.8rem 1.2rem 0.2rem rgb(73 68 64 / 15%),<br>
+        &nbsp;&nbsp;0 0.4rem 1.2rem 0.2rem rgb(73 68 64 / 15%)<br>
+        ;
+        </code></div>
     </div>
   </div>
-</div>
-
-### Raised
-
-<div class="ds-preview">
-  <div class="fsa-level fsa-level--grow-auto fsa-m--m fsa-level--gutter-xl">
-    <div>
-      <h4 class="docs__sub_style fsa-m-t--none">Resting</h4>
-      <div class="fsa-p--xl fsa-bg--white fsa-shadow--raised"></div>
-    </div>
-    <div>
-      <h4 class="docs__sub_style fsa-m-t--none">Hover</h4>
-      <div class="fsa-p--xl fsa-bg--white fsa-shadow:hover--raised"></div>
+  <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--raised">
+    <div class="fsa-grid">
+      <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-raised</code></div>
+      <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
+        box-shadow:<br>
+        &nbsp;&nbsp;0 0.2rem 0.4rem -0.4rem rgb(73 68 64 / 15%),<br>
+        &nbsp;&nbsp;0 0.4rem 0.4rem 0 rgb(73 68 64 / 15%),<br>
+        &nbsp;&nbsp;0 0.2rem 1.2rem 0 rgb(73 68 64 / 15%)<br>
+        ;
+        </code></div>
     </div>
   </div>
 </div>
@@ -75,6 +61,7 @@ relatedItems:
 
 ## Usage
 
+<!--
 {% capture usage_do %}
 * do item
 * do item
@@ -88,10 +75,20 @@ relatedItems:
 {% endcapture %}
 
 {% include do-dont.html %}
+-->
 
-### CSS Utilities
+### CSS Classes
 
-<div class="fsa-box fsa-p--xl fsa-text-align--center fsa-text-size--6 fsa-color--tertiary-200 fsa-bg--tertiary-100">Coming...</div>
+Refer to [CSS Utilities / Shadows]({{ site.baseurl }}utilities/#shadows) to selectively apply shadows to content blocks.
+
+### Example
+
+```html
+<div class="fsa-m--m fsa-p--m fsa-bg--white fsa-shadow--raised fsa-text-align--center">Raised</div>
+```
+<div class="ds-preview">
+  <div class="fsa-m--m fsa-p--m fsa-bg--white fsa-shadow--raised fsa-text-align--center">Raised</div>
+</div>
 
 ### Sass
 
