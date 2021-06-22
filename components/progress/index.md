@@ -292,20 +292,12 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 
 ### Paired with Header
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="phone" class="fsa-btn-group__item" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_progress" data-size="desktop" class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--desktop" id="rwd-demo_progress">
-      <iframe title="Responsive Demo: progress" src="https://usda-fsa.github.io/fsa-style/demo/rwd__progress.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% assign rwdSize = "desktop" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__progress.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ### Paired with Modal
 <button class="fsa-btn fsa-btn--small fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-yshtgj77" aria-expanded="false" type="button">Open a Modal</button>
