@@ -203,7 +203,10 @@ Selectively override icon size at each Media Query breakpoint.
 <code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "http://usda-fsa.github.io/fsa-style/demo/rwd__icons.html" %}
+{% capture rwdURL %}
+http://usda-fsa.github.io/fsa-style/demo/rwd__icons.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ## Usage

@@ -287,7 +287,10 @@ In the below example, each column begins as full-width (<code>fsa-grid__<strong>
 ### Demo
 
 {% assign rwdSize = "tablet" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__grid.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__grid.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 <!-- ### Breakpoints -->

@@ -12,7 +12,10 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 The intention of a Splash screen is to provide a good first imporession of an application. By providing a visual cue that progress is being made to load the various technologies required to run the application, trust and understanding is gained by the User, creating a better experience.
 
 {% assign rwdSize = "tablet" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__splash.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__splash.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ```html

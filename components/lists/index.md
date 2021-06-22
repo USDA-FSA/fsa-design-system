@@ -218,7 +218,10 @@ Selectively apply List styles at any Media Query breakpoint.
 <code>class="fsa-list--<strong>[variation]@[breakpoint]</strong>"</code> where `variation` is one of `bullet`, `number`, `inline`, or `unstyled`, and `breakpoint` is one of `s`, `m`, `l`, or `xl`.
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__lists.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__lists.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ## Sass Mixin

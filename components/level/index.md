@@ -806,7 +806,10 @@ Responsive modifiers are available for both Level **Containers** and Level **Ite
 Where `BP` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>; and `modifiers` can be one or more of variations documented above in [Level Container](#level-container) and [Level Items](#level-items).
 
 {% assign rwdSize = "phone-big" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__level.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__level.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ## Examples

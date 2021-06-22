@@ -146,7 +146,10 @@ Several of a button's style properties can be selectively modified across each M
 <code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ## Usage

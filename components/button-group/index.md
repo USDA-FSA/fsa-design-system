@@ -138,7 +138,10 @@ Selectively override several style properties at each Media Query breakpoint.
 <code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__btn-group.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__btn-group.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ## Accessibility

@@ -26,5 +26,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ## Live Demo
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "{{ site.baseurl }}/demo/stepped-process.html" %}
+{% capture rwdURL %}
+{{ site.baseurl }}/demo/stepped-process.html
+{% endcapture %}
 {% include rwd-viewer.html %}

@@ -30,5 +30,8 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ## Live Demo
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "{{ site.baseurl }}/demo/page-title-area.html" %}
+{% capture rwdURL %}
+{{ site.baseurl }}/demo/page-title-area.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}

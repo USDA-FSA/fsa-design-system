@@ -850,7 +850,10 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ## Responsive
 
 {% assign rwdSize = "phone" %}
-{% assign rwdURL = "https://usda-fsa.github.io/fsa-style/demo/rwd__header-nav-global.html" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__header-nav-global.html
+{% endcapture %}
+
 {% include rwd-viewer.html %}
 
 ## Usage
