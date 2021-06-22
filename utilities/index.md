@@ -552,25 +552,25 @@ Selectively apply [Shadows]({{ site.baseurl }}visual-style/shadows/) to containi
 
 Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 
-### Popout
+#### Popout
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--popout"></div>
 </div>
 
-### Overlay
+#### Overlay
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--overlay"></div>
 </div>
 
-### Raised
+#### Raised
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--raised"></div>
 </div>
 
-### None
+#### None
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--none"></div>
@@ -584,25 +584,25 @@ Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 
 Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 
-### Popout
+#### Popout
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--popout"></div>
 </div>
 
-### Overlay
+#### Overlay
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--overlay"></div>
 </div>
 
-### Raised
+#### Raised
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--raised"></div>
 </div>
 
-### None
+#### None
 
 <div class="ds-preview">
   <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--none"></div>
@@ -612,7 +612,7 @@ Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 
 Selectively apply at any Media Query breakpoint.
 
-<code>class="fsa-shadow-<strong>-[variation]@[breakpoint]</strong>"</code> where
+<code>class="fsa-shadow--<strong>[variation]@[breakpoint]</strong>"</code> where
 <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
