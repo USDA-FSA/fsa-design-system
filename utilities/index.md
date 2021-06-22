@@ -288,6 +288,163 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-radius.html
 
 {% include rwd-viewer.html %}
 
+
+## Border Between
+
+<p class="fsa-text--lead">Selectively add or adjust borders <strong>between</strong> blocks of content.</p>
+
+### Direction
+
+#### Vertical
+
+```html
+<element class="fsa-border-between-vertical--[SIZE]">
+  <el>1</el>
+  <!-- border appears here -->
+  <el>2</el>
+  <!-- border appears here -->
+  <el>3</el>
+</element>
+```
+
+<div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+#### Horizontal
+
+```html
+<element class="fsa-border-between-horizontal--[SIZE]">
+  <el>1</el>
+  <!-- border appears here -->
+  <el>2</el>
+  <!-- border appears here -->
+  <el>3</el>
+</element>
+```
+
+<div class="fsa-border-between-horizontal--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+### Size
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>none</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--none">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>xxs</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>xs</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>s</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--s">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>m</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--m">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>l</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--l">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>custom</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--custom">
+      <div style="--custom-border-between-vertical: 32px;" class="fsa-text-align--center">1</div>
+      <div style="--custom-border-between-vertical: 32px;" class="fsa-text-align--center">2</div>
+      <div style="--custom-border-between-vertical: 32px;" class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+</div>
+
+### Examples
+
+#### Vertical, combined with [Border Width](#border-width)
+
+```html
+<div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs fsa-border--xxs">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+<div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs fsa-border--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+#### Horizontal, combined with [Border Width](#border-width)
+
+```html
+<div class="fsa-border-between-horizontal--xxs fsa-border--xxs">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+<div class="fsa-border-between-horizontal--xxs fsa-border--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+### Responsive
+
+Selectively apply at any Media Query breakpoint.
+
+<p>
+  <code>class="fsa-border-between-[DIRECTION]--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+
 ## Ellipsis
 
 <p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
