@@ -1128,6 +1128,161 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__text-color.html
 
 {% include rwd-viewer.html %}
 
+## Color: Text Link
+
+<p class="fsa-text--lead">Selectively add or adjust text link colors</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-link-color" name="demo-background-link-color" data-target="demo-background-target-link-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-link-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-link-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--primary-900">fsa-link--primary-900</a></div>
+      <div><a href="link.html" class="fsa-link--primary">fsa-link--primary</a></div>
+      <div><a href="link.html" class="fsa-link--primary-300">fsa-link--primary-300</a></div>
+      <div><a href="link.html" class="fsa-link--primary-200">fsa-link--primary-200</a></div>
+      <div><a href="link.html" class="fsa-link--primary-100">fsa-link--primary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--secondary-900">fsa-link--secondary-900</a></div>
+      <div><a href="link.html" class="fsa-link--secondary">fsa-link--secondary</a></div>
+      <div><a href="link.html" class="fsa-link--secondary-300">fsa-link--secondary-300</a></div>
+      <div><a href="link.html" class="fsa-link--secondary-200">fsa-link--secondary-200</a></div>
+      <div><a href="link.html" class="fsa-link--secondary-100">fsa-link--secondary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--tertiary-900">fsa-link--tertiary-900</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary">fsa-link--tertiary</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary-300">fsa-link--tertiary-300</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary-200">fsa-link--tertiary-200</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary-100">fsa-link--tertiary-100</a></div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--aqua-900">fsa-link--aqua-900</a></div>
+      <div><a href="link.html" class="fsa-link--aqua">fsa-link--aqua</a></div>
+      <div><a href="link.html" class="fsa-link--aqua-300">fsa-link--aqua-300</a></div>
+      <div><a href="link.html" class="fsa-link--aqua-200">fsa-link--aqua-200</a></div>
+      <div><a href="link.html" class="fsa-link--aqua-100">fsa-link--aqua-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--red-900">fsa-link--red-900</a></div>
+      <div><a href="link.html" class="fsa-link--red">fsa-link--red</a></div>
+      <div><a href="link.html" class="fsa-link--red-300">fsa-link--red-300</a></div>
+      <div><a href="link.html" class="fsa-link--red-200">fsa-link--red-200</a></div>
+      <div><a href="link.html" class="fsa-link--red-100">fsa-link--red-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>&nbsp;</div>
+      <div><a href="link.html" class="fsa-link--yellow">fsa-link--yellow</a></div>
+      <div><a href="link.html" class="fsa-link--yellow-300">fsa-link--yellow-300</a></div>
+      <div><a href="link.html" class="fsa-link--yellow-200">fsa-link--yellow-200</a></div>
+      <div><a href="link.html" class="fsa-link--yellow-100">fsa-link--yellow-100</a></div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html">default</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--black">fsa-link--black</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--white">fsa-link--white</a></div>
+    </div>
+  </div>
+  <h4>Hover: Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--primary-900">fsa-link<strong>:hover</strong>--primary-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary">fsa-link<strong>:hover</strong>--primary</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary-300">fsa-link<strong>:hover</strong>--primary-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary-200">fsa-link<strong>:hover</strong>--primary-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary-100">fsa-link<strong>:hover</strong>--primary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--secondary-900">fsa-link<strong>:hover</strong>--secondary-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary">fsa-link<strong>:hover</strong>--secondary</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary-300">fsa-link<strong>:hover</strong>--secondary-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary-200">fsa-link<strong>:hover</strong>--secondary-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary-100">fsa-link<strong>:hover</strong>--secondary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--tertiary-900">fsa-link<strong>:hover</strong>--tertiary-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary">fsa-link<strong>:hover</strong>--tertiary</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary-300">fsa-link<strong>:hover</strong>--tertiary-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary-200">fsa-link<strong>:hover</strong>--tertiary-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary-100">fsa-link<strong>:hover</strong>--tertiary-100</a></div>
+    </div>
+  </div>
+  <h4>Hover: Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--aqua-900">fsa-link<strong>:hover</strong>--aqua-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua">fsa-link<strong>:hover</strong>--aqua</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua-300">fsa-link<strong>:hover</strong>--aqua-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua-200">fsa-link<strong>:hover</strong>--aqua-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua-100">fsa-link<strong>:hover</strong>--aqua-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--red-900">fsa-link<strong>:hover</strong>--red-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red">fsa-link<strong>:hover</strong>--red</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red-300">fsa-link<strong>:hover</strong>--red-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red-200">fsa-link<strong>:hover</strong>--red-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red-100">fsa-link<strong>:hover</strong>--red-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>&nbsp;</div>
+      <div><a href="link.html" class="fsa-link:hover--yellow">fsa-link<strong>:hover</strong>--yellow</a></div>
+      <div><a href="link.html" class="fsa-link:hover--yellow-300">fsa-link<strong>:hover</strong>--yellow-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--yellow-200">fsa-link<strong>:hover</strong>--yellow-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--yellow-100">fsa-link<strong>:hover</strong>--yellow-100</a></div>
+    </div>
+  </div>
+  <h4>Hover: Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html">default</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--black">fsa-link<strong>:hover</strong>--black</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--white">fsa-link<strong>:hover</strong>--white</a></div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Link Colors at any Media Query breakpoint.
+
+<code>class="fsa-link<strong>[:hover]--[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__link-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
 ## Ellipsis
 
 <p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
