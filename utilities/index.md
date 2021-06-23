@@ -459,7 +459,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
 </div>
 
 <div class="docs__color-utilities" id="demo-background-target-border-color">
-  <h4 class="docs__sub_style fsa-m-t--none">Core</h4>
+  <h4 class="fsa-m-t--none">Core</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--primary-900">fsa-border--primary-900</div>
@@ -483,7 +483,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-100">fsa-border--tertiary-100</div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Accent</h4>
+  <h4>Accent</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--aqua-900">fsa-border--aqua-900</div>
@@ -507,7 +507,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--yellow-100">fsa-border--yellow-100</div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Other</h4>
+  <h4>Other</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--black">fsa-border--black</div>
@@ -519,7 +519,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--transparent">fsa-border--transparent</div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Hover: Core</h4>
+  <h4>Hover: Core</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--primary-900">fsa-border<strong>:hover</strong>--primary-900</div>
@@ -543,7 +543,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--tertiary-100">fsa-border<strong>:hover</strong>--tertiary-100</div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Hover: Accent</h4>
+  <h4>Hover: Accent</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--aqua-900">fsa-border<strong>:hover</strong>--aqua-900</div>
@@ -567,7 +567,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--yellow-100">fsa-border<strong>:hover</strong>--yellow-100</div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Hover: Other</h4>
+  <h4>Hover: Other</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--black">fsa-border<strong>:hover</strong>--black</div>
@@ -595,6 +595,231 @@ Selectively apply Border Colors at any Media Query breakpoint.
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
 https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Border Between
+
+<p class="fsa-text--lead">Selectively add or adjust border colors <strong>between</strong> blocks of content.</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-border-between-color" name="demo-background-border-between-color" data-target="demo-background-target-border-between-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-border-between-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-border-between-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+  </div>
+  <h4 class="docs__sub_style">Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-m-b--s">
+        <div>&nbsp;</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+  </div>
+  <h4 class="docs__sub_style">Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--black fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--white fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--transparent fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Border Between Color at any Media Query breakpoint.
+
+<code>class="fsa-border-between-<strong>[direction]--[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
 {% endcapture %}
 
 {% include rwd-viewer.html %}

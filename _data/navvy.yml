@@ -347,6 +347,11 @@
       subhref: "utilities/#color-border"
       img: "img/subcategories/color-border.png"
 
+    - subtitle: "Color: Border Between"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke,Segment,Column,Row"
+      subhref: "utilities/#color-border-between"
+      img: "img/subcategories/color-border-between.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
