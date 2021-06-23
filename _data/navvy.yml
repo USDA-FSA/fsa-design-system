@@ -362,6 +362,11 @@
       subhref: "utilities/#color-foreground"
       img: "img/subcategories/color-foreground.png"
 
+    - subtitle: "Color: Text Link"
+      keyword: "Text,Typography,Font,Anchor"
+      subhref: "utilities/#color-text-link"
+      img: "img/subcategories/color-text-link.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
