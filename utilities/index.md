@@ -1470,9 +1470,62 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__font.html
 
 <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
   <div class="fsa-alert__body">
-    <p class="fsa-alert__text">Refer to <a href="{{ site.baseurl }}components/lists/">Components / Lists</a>, e.g. <a href="{{ site.baseurl }}components/lists/#explicit">Bullet List</a></p>
+    <p class="fsa-alert__text">Refer to <a href="{{ site.baseurl }}components/lists/">Components / Lists</a> for a variety of Lists</p>
   </div>
 </div>
+
+## Link Color
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text">Refer to <a href="#color-text-link">Color: Text Link</a></p>
+  </div>
+</div>
+
+## Link Display
+
+<p class="fsa-text--lead">Selectively adjust display property of links.</p>
+
+### Options
+
+<div class="docs__color-utilities" id="demo-background-target-link-display">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Default <span class="fsa-font--sans">(Inline)</span></h4>
+      <a style="outline: 1px dashed #999;" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Inline <span class="fsa-font--sans">(Override / Explicit)</span></h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--inline" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Inline-block</h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--inline-block" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Block <span class="fsa-font--sans">(full-width)</span></h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--block" href="link.html">Text link</a>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Link display properties at any Media Query breakpoint.
+
+<code>class="fsa-link--<strong>[variation]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__link-display.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Margins
 

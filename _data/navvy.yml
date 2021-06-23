@@ -367,6 +367,11 @@
       subhref: "utilities/#color-text-link"
       img: "img/subcategories/color-text-link.png"
 
+    - subtitle: "Color: Text Link"
+      keyword: "Text,Typography,Font,Anchor"
+      subhref: "utilities/#color-text-link"
+      img: "img/subcategories/color-text-link.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
@@ -382,10 +387,10 @@
       subhref: "utilities/#font"
       img: "img/subcategories/font.png"
 
-    - subtitle: "Lists"
-      keyword: ""
-      subhref: "utilities/#lists"
-      img: "img/subcategories/lists.png"
+    - subtitle: "Link Display"
+      keyword: "block,inline,inline-block"
+      subhref: "utilities/#link-display"
+      img: "img/subcategories/link-display.png"
 
     - subtitle: "Margins"
       keyword: "Space,Size"
