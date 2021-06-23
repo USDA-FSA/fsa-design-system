@@ -1527,6 +1527,61 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-display.html
 
 {% include rwd-viewer.html %}
 
+## Link Underline
+
+<p class="fsa-text--lead">Selectively add or remove underlines for Text Links.</p>
+
+### Options
+
+<div class="docs__color-utilities" id="demo-background-target-link-underline">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Default</h4>
+      <a href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Underline <span class="fsa-font--sans">(Override / Explicit)</span></h4>
+      <a class="fsa-link--underline" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">No Underline</h4>
+      <a class="fsa-link--underline-none" href="link.html">Text link</a>
+    </div>
+  </div>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4>Default</h4>
+      <a href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4>Hover: Underline <span class="fsa-font--sans">(Override / Explicit)</span></h4>
+      <a class="fsa-link:hover--underline" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4>Hover: No Underline</h4>
+      <a class="fsa-link:hover--underline-none" href="link.html">Text link</a>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Link underlines at any Media Query breakpoint
+
+<code>class="fsa-link<strong>[:hover]--[variation]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__link-underline.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
 ## Margins
 
 <p class="fsa-text--lead">Selectively manipulate margins around an element or component. </p>

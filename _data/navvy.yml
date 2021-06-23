@@ -392,6 +392,11 @@
       subhref: "utilities/#link-display"
       img: "img/subcategories/link-display.png"
 
+    - subtitle: "Link Underline"
+      keyword: "Text,Typography,Font,Anchor,Text Decoration"
+      subhref: "utilities/#link-underline"
+      img: "img/subcategories/link-underline.png"
+
     - subtitle: "Margins"
       keyword: "Space,Size"
       subhref: "utilities/#margins"
