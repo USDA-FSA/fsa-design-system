@@ -19,8 +19,8 @@ relatedItems:
 <div class="ds-preview">
   <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--popout">
     <div class="fsa-grid">
-      <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-popout</code></div>
-      <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
+      <div class="fsa-grid__1 fsa-grid__4/12@xl"><strong>Sass</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">$shadow-size-popout</code></div>
+      <div class="fsa-grid__1 fsa-grid__8/12@xl"><strong>CSS</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">
         box-shadow:<br>
         &nbsp;&nbsp;0&nbsp;1.2rem&nbsp;1.2rem&nbsp;-1.2rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
         &nbsp;&nbsp;0&nbsp;2.4rem&nbsp;3.6rem&nbsp;&nbsp;&nbsp;.4rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
@@ -31,8 +31,8 @@ relatedItems:
   </div>
   <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--overlay">
     <div class="fsa-grid">
-      <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-overlay</code></div>
-      <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
+      <div class="fsa-grid__1 fsa-grid__4/12@xl"><strong>Sass</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">$shadow-size-overlay</code></div>
+      <div class="fsa-grid__1 fsa-grid__8/12@xl"><strong>CSS</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">
         box-shadow:<br>
         &nbsp;&nbsp;0&nbsp;.4rem&nbsp;&nbsp;.4rem&nbsp;-.4rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
         &nbsp;&nbsp;0&nbsp;.8rem&nbsp;1.2rem&nbsp;&nbsp;.2rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
@@ -43,8 +43,8 @@ relatedItems:
   </div>
   <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--raised">
     <div class="fsa-grid">
-      <div class="fsa-grid__1 fsa-grid__4/12@m"><strong>Sass</strong><br><code class="fsa-bg--transparent">$shadow-size-raised</code></div>
-      <div class="fsa-grid__1 fsa-grid__8/12@m"><strong>CSS</strong><br><code class="fsa-bg--transparent">
+      <div class="fsa-grid__1 fsa-grid__4/12@xl"><strong>Sass</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">$shadow-size-raised</code></div>
+      <div class="fsa-grid__1 fsa-grid__8/12@xl"><strong>CSS</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">
         box-shadow:<br>
         &nbsp;&nbsp;0&nbsp;.2rem&nbsp;&nbsp;.4rem&nbsp;-.4rem&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
         &nbsp;&nbsp;0&nbsp;.4rem&nbsp;&nbsp;.4rem&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(73,&nbsp;68,&nbsp;64,&nbsp;.15),<br>
@@ -57,9 +57,13 @@ relatedItems:
 
 ## Elevation
 
+
 <div class="ds-preview">
   <figure class="fsa-text-align--center">
-    <img src="/fsa-design-system/img/elevation.png" alt="Visualization of Shadows' elevation">
+    <picture>
+      <source srcset="/fsa-design-system/img/elevation.png" media="(min-width: 37.5em)" />
+      <img src="/fsa-design-system/img/elevation--small.png" alt="Visualization of Shadows' elevation">
+    </picture>
   </figure>
 </div>
 
