@@ -1033,6 +1033,101 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
 
 {% include rwd-viewer.html %}
 
+## Color: Foreground
+
+<p class="fsa-text--lead">Selectively add or adjust foreground (text) colors</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-text-color" name="demo-background-text-color" data-target="demo-background-target-text-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-text-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-text-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--primary-900">fsa-color--primary-900</div>
+      <div class="fsa-color--primary">fsa-color--primary</div>
+      <div class="fsa-color--primary-300">fsa-color--primary-300</div>
+      <div class="fsa-color--primary-200">fsa-color--primary-200</div>
+      <div class="fsa-color--primary-100">fsa-color--primary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--secondary-900">fsa-color--secondary-900</div>
+      <div class="fsa-color--secondary">fsa-color--secondary</div>
+      <div class="fsa-color--secondary-300">fsa-color--secondary-300</div>
+      <div class="fsa-color--secondary-200">fsa-color--secondary-200</div>
+      <div class="fsa-color--secondary-100">fsa-color--secondary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--tertiary-900">fsa-color--tertiary-900</div>
+      <div class="fsa-color--tertiary">fsa-color--tertiary</div>
+      <div class="fsa-color--tertiary-300">fsa-color--tertiary-300</div>
+      <div class="fsa-color--tertiary-200">fsa-color--tertiary-200</div>
+      <div class="fsa-color--tertiary-100">fsa-color--tertiary-100</div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--aqua-900">fsa-color--aqua-900</div>
+      <div class="fsa-color--aqua">fsa-color--aqua</div>
+      <div class="fsa-color--aqua-300">fsa-color--aqua-300</div>
+      <div class="fsa-color--aqua-200">fsa-color--aqua-200</div>
+      <div class="fsa-color--aqua-100">fsa-color--aqua-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--red-900">fsa-color--red-900</div>
+      <div class="fsa-color--red">fsa-color--red</div>
+      <div class="fsa-color--red-300">fsa-color--red-300</div>
+      <div class="fsa-color--red-200">fsa-color--red-200</div>
+      <div class="fsa-color--red-100">fsa-color--red-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>&nbsp;</div>
+      <div class="fsa-color--yellow">fsa-color--yellow</div>
+      <div class="fsa-color--yellow-300">fsa-color--yellow-300</div>
+      <div class="fsa-color--yellow-200">fsa-color--yellow-200</div>
+      <div class="fsa-color--yellow-100">fsa-color--yellow-100</div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>default</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--black">fsa-color--black</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--white">fsa-color--white</div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Text Colors at any Media Query breakpoint.
+
+<code>class="fsa-color--<strong>[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__text-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
 ## Ellipsis
 
 <p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
