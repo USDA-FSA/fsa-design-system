@@ -698,7 +698,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
       </div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Accent</h4>
+  <h4>Accent</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-900 fsa-m-b--s">
@@ -780,7 +780,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
       </div>
     </div>
   </div>
-  <h4 class="docs__sub_style">Other</h4>
+  <h4>Other</h4>
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__auto@m">
       <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--black fsa-m-b--s">
@@ -811,6 +811,215 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
 Selectively apply Border Between Color at any Media Query breakpoint.
 
 <code>class="fsa-border-between-<strong>[direction]--[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Background
+
+<p class="fsa-text--lead">Selectively add or adjust background colors</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-bg" name="demo-background-bg" data-target="demo-background-target-bg" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-bg">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-bg">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--primary-900">
+        <div class="fsa-color--white">fsa-bg--primary-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--primary">
+        <div class="fsa-color--white">fsa-bg--primary</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--primary-300">
+        <div class="fsa-color--white">fsa-bg--primary-300</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--primary-200">fsa-bg--primary-200</div>
+      <div class="fsa-p--xs fsa-bg--primary-100">fsa-bg--primary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--secondary-900">
+        <div class="fsa-color--white">fsa-bg--secondary-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--secondary">
+        <div class="fsa-color--white">fsa-bg--secondary</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--secondary-300">
+        <div class="fsa-color--white">fsa-bg--secondary-300</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--secondary-200">fsa-bg--secondary-200</div>
+      <div class="fsa-p--xs fsa-bg--secondary-100">fsa-bg--secondary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--tertiary-900">
+        <div class="fsa-color--white">fsa-bg--tertiary-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--tertiary">
+        <div class="fsa-color--white">fsa-bg--tertiary</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--tertiary-300">
+        <div class="fsa-color--white">fsa-bg--tertiary-300</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--tertiary-200">fsa-bg--tertiary-200</div>
+      <div class="fsa-p--xs fsa-bg--tertiary-100">fsa-bg--tertiary-100</div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--aqua-900">
+        <div class="fsa-color--white">fsa-bg--aqua-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--aqua">
+        <div class="fsa-color--white">fsa-bg--aqua</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--aqua-300">fsa-bg--aqua-300</div>
+      <div class="fsa-p--xs fsa-bg--aqua-200">fsa-bg--aqua-200</div>
+      <div class="fsa-p--xs fsa-bg--aqua-100">fsa-bg--aqua-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--red-900">
+        <div class="fsa-color--white">fsa-bg--red-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--red">
+        <div class="fsa-color--white">fsa-bg--red</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--red-300">fsa-bg--red-300</div>
+      <div class="fsa-p--xs fsa-bg--red-200">fsa-bg--red-200</div>
+      <div class="fsa-p--xs fsa-bg--red-100">fsa-bg--red-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs">&nbsp;</div>
+      <div class="fsa-p--xs fsa-bg--yellow">fsa-bg--yellow</div>
+      <div class="fsa-p--xs fsa-bg--yellow-300">fsa-bg--yellow-300</div>
+      <div class="fsa-p--xs fsa-bg--yellow-200">fsa-bg--yellow-200</div>
+      <div class="fsa-p--xs fsa-bg--yellow-100">fsa-bg--yellow-100</div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--black">
+        <div class="fsa-color--white">fsa-bg--black</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--white">fsa-bg--white</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--base">fsa-bg--base</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--transparent">fsa-bg--transparent</div>
+    </div>
+  </div>
+  <h4>Hover: Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--primary-900">fsa-bg<strong>:hover</strong>--primary-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary">fsa-bg<strong>:hover</strong>--primary</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary-300">fsa-bg<strong>:hover</strong>--primary-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary-200">fsa-bg<strong>:hover</strong>--primary-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary-100">fsa-bg<strong>:hover</strong>--primary-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--secondary-900">fsa-bg<strong>:hover</strong>--secondary-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary">fsa-bg<strong>:hover</strong>--secondary</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary-300">fsa-bg<strong>:hover</strong>--secondary-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary-200">fsa-bg<strong>:hover</strong>--secondary-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary-100">fsa-bg<strong>:hover</strong>--secondary-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-900">fsa-bg<strong>:hover</strong>--tertiary-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary">fsa-bg<strong>:hover</strong>--tertiary</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-300">fsa-bg<strong>:hover</strong>--tertiary-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-200">fsa-bg<strong>:hover</strong>--tertiary-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-100">fsa-bg<strong>:hover</strong>--tertiary-100</div>
+      </div>
+    </div>
+  </div>
+  <h4>Hover: Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--aqua-900">fsa-bg<strong>:hover</strong>--aqua-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua">fsa-bg<strong>:hover</strong>--aqua</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua-300">fsa-bg<strong>:hover</strong>--aqua-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua-200">fsa-bg<strong>:hover</strong>--aqua-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua-100">fsa-bg<strong>:hover</strong>--aqua-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--red-900">fsa-bg<strong>:hover</strong>--red-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--red">fsa-bg<strong>:hover</strong>--red</div>
+        <div class="fsa-p--xs fsa-bg:hover--red-300">fsa-bg<strong>:hover</strong>--red-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--red-200">fsa-bg<strong>:hover</strong>--red-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--red-100">fsa-bg<strong>:hover</strong>--red-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs">&nbsp;</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow">fsa-bg<strong>:hover</strong>--yellow</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow-300">fsa-bg<strong>:hover</strong>--yellow-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow-200">fsa-bg<strong>:hover</strong>--yellow-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow-100">fsa-bg<strong>:hover</strong>--yellow-100</div>
+      </div>
+    </div>
+  </div>
+  <h4>Hover: Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--black">fsa-bg<strong>:hover</strong>--black</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--white">fsa-bg<strong>:hover</strong>--white</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--base">fsa-bg<strong>:hover</strong>--base</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--transparent">fsa-bg<strong>:hover</strong>--transparent</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Background Colors at any Media Query breakpoint.
+
+<code>class="fsa-bg[:hover]--<strong>[color]@[breakpoint]</strong>"</code>
 <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,

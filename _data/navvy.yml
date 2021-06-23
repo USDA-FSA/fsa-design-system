@@ -352,6 +352,11 @@
       subhref: "utilities/#color-border-between"
       img: "img/subcategories/color-border-between.png"
 
+    - subtitle: "Color: Background"
+      keyword: "Container,Box"
+      subhref: "utilities/#color-background"
+      img: "img/subcategories/color-background.png"
+
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
       subhref: "utilities/#ellipsis"
