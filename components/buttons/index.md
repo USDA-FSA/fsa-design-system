@@ -11,6 +11,7 @@ relatedItems:
   - "Destroy Prompt"
   - "Form Fields"
   - "Growl Notification"
+  - "Icons"
   - "Page Title Area"
   - "Search"
   - "Stepped Control"
@@ -128,6 +129,126 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
+
+## Icons
+
+[Icons]({{ site.baseurl }}components/icons/) can be used to heighten or clarify the button's action. There may be acceptable uses where a label may be visually hidden (i.e. using a [Screenreader-only CSS Utility]({{ site.baseurl }}utilities/#screenreader-only)) and/or paired with an `aria-label` attribute, though Product Teams should use icon-only buttons cautiously.
+
+### Medium
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--primary" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+    Save
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--secondary" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+    Download
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--tertiary" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
+    Remove
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--flat" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
+    Edit
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--plain" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
+    Print
+  </button></li>
+</ul>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Small
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--small fsa-btn--primary" type="button">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+    Save
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+    Download
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--small fsa-btn--tertiary" type="button">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
+    Remove
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
+    Edit
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--small fsa-btn--plain" type="button">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
+    Print
+  </button></li>
+</ul>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Large
+{% capture snippet %}
+<ul class="fsa-level">
+  <li><button class="fsa-btn fsa-btn--large fsa-btn--primary" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+    Save
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--large fsa-btn--secondary" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+    Download
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--large fsa-btn--tertiary" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
+    Remove
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--large fsa-btn--flat" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
+    Edit
+  </button></li>
+  <li><button class="fsa-btn fsa-btn--large fsa-btn--plain" type="button">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
+    Print
+  </button></li>
+</ul>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Directional
+
+Use an icon on the right if the button's implicit action conveys a forward progression.
+
+{% capture snippet %}
+<button class="fsa-btn fsa-btn--primary" type="button">
+  Continue
+  <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+</button>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Custom
+
+Combine the `fsa-btn--plain` variant with **Utilities** such as [Text Color]({{ site.baseurl }}utilities/#color-foreground) and [Background Color]({{ site.baseurl }}utilities/#color-background).
+
+{% capture snippet %}
+<div class="fsa-level fsa-level--wrap">
+  <div>
+    <button type="button" class="fsa-btn fsa-btn--plain fsa-p--s fsa-radius--full fsa-bg--tertiary-100 fsa-color--tertiary fsa-link:hover--primary fsa-bg:hover--primary-100" title="Vote Up" aria-label="Vote Up">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path></svg>
+    </button>
+  </div>
+  <div>
+    <button type="button" class="fsa-btn fsa-btn--plain fsa-p--s fsa-radius--full fsa-bg--tertiary-100 fsa-color--tertiary fsa-link:hover--red fsa-bg:hover--red-100" title="Vote Down" aria-label="Vote Down">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </button>
+  </div>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 
 ## Responsive
 
