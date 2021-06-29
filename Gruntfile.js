@@ -6,11 +6,10 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
-  //var MDOfficial = grunt.file.readJSON("https://fonts.google.com/metadata/icons")
-  //var MDOfficial = grunt.file.readJSON("_data/material-icons-list.json");
+  // URL to JSON is located here "https://fonts.google.com/metadata/icons"
   var MDOfficial = grunt.file.readJSON("_data/MDOfficial.json");
-  //MDCategories.forEach(set => { MDIcons = MDIcons.concat(set.icons) });
-  var MDIcons = MDOfficial.icons; //[];
+  var FPACIconsList = grunt.file.readJSON("_data/fpac-material-icons-list.json");
+  var MDIcons = MDOfficial.icons;
   
   // start building icons JSON string
   var iconsList = '{"icons":[';
@@ -19,30 +18,36 @@ module.exports = function (grunt) {
 
   grunt.file.recurse('img/material-design-icons', createFileList);
 
-  function createFileList(abspath, rootdir, subdir, filename){
-    // strip filename of extra details
-    var fn = filename.split("_24px")[0].split("ic_")[1];
+  function createFileList(abspath, rootdir, subdir, fileName){
+    // strip fileName of extra details
+    var fn = fileName.split("_24px")[0].split("ic_")[1];
     // search thru official Material Design Icons data for object
     var newObj = MDIcons.find(obj => obj.name == fn);
     var iconName, iconTags;
+    var svg = grunt.file.read(String( abspath ));
+    // Clearn svg string of characters that cause JSON parsing errors
+    svg = svg.replace(/[\n\r]+/g,'');
+    svg = svg.replace(/\s\s+/g, ' ');
+    svg = svg.replace(/"/g, "'");
+
+    // Assign truthy value if icon is FPAC Design System default
+    var showDS = FPACIconsList.icons.some( item => item.fileName === fileName );
 
     if(newObj != undefined){
       // create the display name for the icon
       iconName = newObj.name.split("_").join(" ");
       // ensure the keywords list is populated
-      iconTags = String(newObj.tags) == "" ? iconName.split(" ").join(",") : newObj.tags;
+      iconTags = String(newObj.tags) == "" ? iconName.split("_").join(",") : newObj.tags;
     } else {
-      // Used only for Development/Testing
-      console.log('EXCLUDED ICON:', fn);
       // create the display name for the icon
       iconName = fn.split("_").join(" ");
       // ensure the keywords list is populated
-      iconTags = iconName.split(" ").join(",");
+      iconTags = iconName.split("_").join(",");
     };
     // Used only for Development/Testing
     count++;
     //continue building icons JSON string
-    iconsStr = iconsStr + '{"name":"'+String(iconName)+'","svg":"'+String(filename)+'","keywords":"'+String(iconTags)+'"},';
+    iconsStr = iconsStr + '{"name":"'+String(iconName)+'","fileName":"'+String(fileName)+'","keywords":"'+String(iconTags)+'","svg":"'+String(svg)+'","showDS":"'+showDS+'"},';
 
   };
   // Used only for Development/Testing
@@ -55,7 +60,6 @@ module.exports = function (grunt) {
   
   // Listing Tasks
   grunt.initConfig({
-
     pkg: grunt.file.readJSON('package.json'),
 
     // shell commands for use in Grunt tasks
