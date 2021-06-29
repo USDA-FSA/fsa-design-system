@@ -6,11 +6,14 @@ title: "Global Navigation"
 shortName: "component__top-nav"
 intro: "Display a global list of sections, topics, or actions."
 jump_menu: true
+relatedItems:
+  - "Application Header"
+  - "Top Hat"
 title_label: 'May Require JavaScript'
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-This navigation component is **not** a required Global Navigation structure; rather, it effectively serves as ready-made UI Pattern implemented with FPAC Design System styles and parts.
+This navigation component isn't necessarily a required Global Navigation structure; rather, it effectively serves as ready-made UI Pattern implemented with FPAC Design System styles and parts.
 
 {% capture snippet %}
 <nav>
@@ -106,6 +109,70 @@ This navigation component is **not** a required Global Navigation structure; rat
 </nav>
 {% endcapture %}
 
+{% include preview-and-snippet.html %}
+
+## Icons
+
+[Icons]({{ site.baseurl }}components/icons/) can be used to heighten or clarify Navigation items.
+
+{% capture snippet %}
+<nav>
+  <div class="fsa-nav-global">
+    <div class="fsa-nav-global__bd">
+      <ul class="fsa-nav-global__list" aria-label="Primary Navigation" id="primary-navigation-07">
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
+            <span class="fsa-nav-global__text">
+              <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"></path></svg>
+              Dashboard
+            </span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">
+              <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.49 2 2 6.49 2 12s4.49 10 10 10h8c1.1 0 2-.9 2-2v-8c0-5.51-4.49-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+              Inspections
+            </span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">
+              <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg>
+              Inspectors
+            </span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">
+              <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></svg>
+              Recent
+            </span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">
+              <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></svg>
+              Settings
+            </span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">
+              <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+              About
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endcapture %}
 {% include preview-and-snippet.html %}
 
 ## Examples
