@@ -104,6 +104,7 @@ if ('serviceWorker' in navigator) {
         if(icf.search.value!=''){ // isn't empty
           if(icf.search.value.length > 1){ // run only if at least 2 characters
 
+            // Is this needed for 508?
             //icf.search.setAttribute('aria-expanded', 'true');
 
             // aray of objects
@@ -276,7 +277,6 @@ if ('serviceWorker' in navigator) {
   icf.init(
     [
       {
-        //url:'/fsa-design-system/sitemap/',
         url:'/fsa-design-system/data/icons.json',
       }
     ],
