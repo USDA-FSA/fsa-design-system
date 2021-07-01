@@ -22880,13 +22880,6 @@ pre.highlight .ds-clipboard {
   }
 }
 
-@media (min-width: 78.75em) {
-  .docs__icons {
-    -ms-grid-columns: 1fr [7];
-    grid-template-columns: repeat(7, 1fr);
-  }
-}
-
 .OUTLINE {
   outline: 1px solid red;
 }
