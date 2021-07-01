@@ -22996,6 +22996,109 @@ html:hover body::before {
   display: none !important;
 }
 
+.docs__icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 30.0625em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 37.5em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 54em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 78.75em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.docs__icons__link img {
+  background-color: pink;
+}
+
+.docs__icons__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 24px 8px;
+  padding: 2.4rem 0.8rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.docs__icons__link:visited {
+  color: inherit;
+}
+
+.docs__icons__link:hover {
+  color: #0068ad;
+  background-color: #dee5ef;
+}
+
+.docs__icons__link--clicked img {
+  background-color: pink;
+}
+
+.docs__icons__link--clicked {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 24px 8px;
+  padding: 2.4rem 0.8rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  background-color: #dee8e0;
+}
+
+.docs__icons__caption {
+  margin-top: 8px;
+  margin-top: 0.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.docs__icons__caption--clicked {
+  text-align: center;
+  padding: 8px;
+  padding: 0.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #236430;
+}
+
 /**
  * Syntax highlighting styles
  */

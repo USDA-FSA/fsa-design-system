@@ -133,7 +133,7 @@ if ('serviceWorker' in navigator) {
             // aray of objects
             let matches = qf.doSearch( qf.search.value );
 
-            // For Google Analytics Tracking
+            // For Google Analytics Tracking - Track what is NOT Found
             if(matches.length < 1) qf.buildSearchCollection(qf.search.value);
             // End
 

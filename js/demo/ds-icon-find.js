@@ -15,6 +15,9 @@ if ('serviceWorker' in navigator) {
     displayCount: 0,
     displayLimit: 0,
     showDefault: true,
+    prevInputString: '',
+    clickedIconsArray: [],
+    clickedIconDelay: 3000,
 
     setSearchProperties: function(){
       icf.search = document.getElementById( icf.inputId );
@@ -56,7 +59,7 @@ if ('serviceWorker' in navigator) {
         // add FSA Style specific parameters
         let svg = String(item.svg).split('<svg ').join('<svg class="fsa-icon fsa-icon--size-4" aria-hidden="true" focusable="false" role="img"');
         let kw = String(item.keywords).split(',').join(', ');
-        newHTML += `<a id="${item.fileName}" title="${kw}" class="docs__icons__link" href="/fsa-design-system/img/material-design-icons/${item.fileName}"> <figure class="docs__icons__figure">${svg}</figure></figure> <figcaption class='docs__icons__caption'>${item.name}</figcaption> </a>`;
+        newHTML += `<a onclick="event.preventDefault(); IconFinder.copyToClipboard(this,'${item.name}');" id="${item.fileName}" title="${kw}" class="docs__icons__link" href="/fsa-design-system/img/material-design-icons/${item.fileName}"> <figure class="docs__icons__figure">${svg}</figure></figure> <figcaption class='docs__icons__caption'>${item.name}</figcaption> </a>`;
       });
       icf.buildIconsHolder(newHTML);
       icf.buildCountHolder(`Previewing <strong>${icf.displayCount} of ${icf.iconsCount}</strong> available icons`);
@@ -110,8 +113,8 @@ if ('serviceWorker' in navigator) {
             // aray of objects
             let matches = icf.doSearch( icf.search.value );
 
-            // For Google Analytics Tracking
-            //if(matches.length < 1) icf.buildSearchCollection(icf.search.value);
+            // For Google Analytics Tracking - Track what is NOT Found
+            if(matches.length < 1) icf.buildSearchCollection(icf.search.value);
             // End
 
             // Put matches in ABC order            
@@ -125,102 +128,39 @@ if ('serviceWorker' in navigator) {
       }
     },
 
-    handleSearchInputKeydown: function(e){
-      // ESC
-      if(e.keyCode==27) icf.closeResults()
-      // DOWN ARROW
-      if(e.keyCode==40){
-        e.preventDefault();
-        let el = icf.results.querySelector('a');
-        if(el) el.focus()
-      }
+    copyToClipboard: function(el, iconName){
+      // take all SVGs and turn Nodelist into an array
+      var svgs = [...el.querySelectorAll('svg')];
+      // grab the HTML string value of the object SVGElement
+      var svg = svgs[0].outerHTML;
+      var data = [new ClipboardItem({ "text/plain": new Blob([svg], { type: "text/plain" }) })];
+      navigator.clipboard.write(data).then(function() {
+        console.log("Copied ["+iconName+"] SVG to clipboard successfully!");
+        // track in GA what was copied
+        IconFinderTracker.trackSelected( iconName );
+        icf.setClickedStyle(el);
+      }, function() {
+        console.error("Unable to write to clipboard.");
+      });
     },
 
-    handleResultsFocus: function(e){
-
-      let prevElem = icf.prevElem;
-      let currElem = document.activeElement;
-      if( icf.prevElem ) icf.resultsNavFrom( icf.prevElem  );
-      if( currElem ) icf.resultsNavTo( currElem );
-      icf.prevElem = currElem;
-
+    setClickedStyle: function(el){
+      icf.clickedIconsArray.push({
+        prevHTML: el.innerHTML,
+        el: el
+      })
+      el.classList.add('docs__icons__link--clicked');
+      el.classList.remove('docs__icons__link');
+      el.innerHTML = `<span class="docs__icons__caption--clicked">Icon SVG copied to Clipboard</span>`;
+      window.setTimeout(icf.resetIcon, icf.clickedIconDelay);
     },
 
-    handleResultsKeydown: function(e){
-
-      let currElem = document.activeElement;
-
-      // Listen for ESC key when results in focus
-      if(e.keyCode==27){
-        e.preventDefault();
-        icf.closeResults();
-      }
-      // Listen for DOWN key when results in focus
-      if(e.keyCode==40) {
-        e.preventDefault();
-
-        let nextSib = currElem.parentNode.nextSibling;
-        if(nextSib) {
-          let sibAnchor = nextSib.querySelector('a');
-          if(sibAnchor) {
-            sibAnchor.focus();
-          } else {
-            let cousin = nextSib.nextSibling;
-            if(cousin){
-              let cousinAnchor = cousin.querySelector('a');
-              if(cousinAnchor) cousinAnchor.focus();
-            }
-          }
-        }
-      }
-
-      // Listen for UP key when results in focus
-      if(e.keyCode==38) {
-        e.preventDefault();
-        let prevSib = currElem.parentNode.previousSibling;
-        if(prevSib) {
-          let sibAnchor = prevSib.querySelector('a');
-          if(sibAnchor) {
-            sibAnchor.focus();
-          } else {
-            let cousin = prevSib.previousSibling;
-            if(cousin){
-              let cousinAnchor = cousin.querySelector('a');
-              if(cousinAnchor) cousinAnchor.focus();
-            }
-          }
-        }
-      }
-
-      // Listen for TAB key when results in focus
-      if(e.keyCode==9){
-        e.preventDefault();
-        // SHIFT+TAB
-        if( e.shiftKey && e.keyCode==9 ){
-          icf.resultsNavFrom( currElem );
-          icf.search.focus();
-        } else {
-          // window.location = currElem.href;
-          icf.resultsNavFrom( currElem );
-          icf.clear.focus();
-        }
-      }
-
-      // Listen for SPACE key when results in focus
-      if(e.keyCode==32) {
-        e.preventDefault();
-        icf.navigateTo( currElem.href, currElem.innerText );
-      }
-
-    },
-
-
-    resultsNavTo: function( node ){
-      node.parentElement.setAttribute('aria-selected', 'true');
-    },
-
-    resultsNavFrom: function( node ){
-      node.parentElement.setAttribute('aria-selected', 'false');
+    resetIcon: function(){
+      let icons = icf.clickedIconsArray.forEach( (icon) => {
+        icon.el.innerHTML = icon.prevHTML;
+        icon.el.classList.remove('docs__icons__link--clicked');
+        icon.el.classList.add('docs__icons__link');
+      })
     },
 
     // A very expensive method, use sparingly
@@ -261,6 +201,27 @@ if ('serviceWorker' in navigator) {
       return null;
     },
 
+    // For Google Analytics Tracking
+    buildSearchCollection: function(str){
+      let isValid = true;
+      // string must be longer than previous string
+      if(str.length < icf.prevInputString.length) isValid = false;
+      icf.prevInputString = str;
+      // string must be more than 2 characters
+      if(str.length < 3) isValid = false;
+      // if string is not all spaces
+      let patt = /[ ]{2,}/;
+      if( patt.test( str ) ) isValid = false;
+      // if string is not in collection
+      let sc = IconFinderTracker.getSearchCollection()
+      if(sc.indexOf( '~ '+ str +' ~' ) > -1) isValid = false;
+
+      if(isValid){
+        IconFinderTracker.trackSearchCollection(str);
+      }
+    },
+    // End
+
     init: function( arr, inputId, displayId, countId) {
       icf.iconsUrlsArray = arr;
       icf.inputId = inputId;
@@ -285,6 +246,5 @@ if ('serviceWorker' in navigator) {
     'ds-icon-find__icon-list-title-id'
   );
 
-  window.IconFind = icf;
+  window.IconFinder = icf;
 }
-

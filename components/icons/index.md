@@ -6,7 +6,7 @@ title: "Icons"
 shortName: "component__icons"
 intro: "Visually communicate meaning, actions, status, or feedback."
 jump_menu: true
-custom_js: ["ga/ga-tracker.js", "ga/generic.js", "ds-icon-find.js"]
+custom_js: ["ga/ga-tracker.js", "ga/generic.js", "ga/icon-finder.js", "ds-icon-find.js"]
 relatedItems:
   - "item"
   - "item"

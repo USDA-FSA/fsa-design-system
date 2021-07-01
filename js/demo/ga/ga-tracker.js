@@ -129,7 +129,7 @@ if ('serviceWorker' in navigator) {
     
     init: function(gaId) {
       gat.id = gaId;
-      gat.onProduction = window.location.href.indexOf('localhost:') > -1 ? false : true;
+      gat.onProduction = ((window.location.href.indexOf('localhost:') > -1) || (window.location.href.indexOf('127.0.0.1:') > -1)) ? false : true;
     }
 
   };
