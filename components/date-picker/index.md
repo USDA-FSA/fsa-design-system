@@ -16,7 +16,7 @@ This extends the [Text Input]({{ site.baseurl }}components/text-input/) or the [
 
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="date-picker-default">Date of Birth</label>
+    <label class="fsa-field__label" for="date-picker-default">Start Date</label>
     <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-default" aria-describedby="date-picker-default__help" aria-required="true" name="date-picker-default" type="text" value="">
     <span class="fsa-field__help" id="date-picker-default__help">Example 05/14/1975</span>
   </div>
@@ -30,7 +30,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="date-picker-basic">Date of Birth</label>
+  <label class="fsa-field__label" for="date-picker-basic">Start Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-basic" aria-describedby="date-picker-basic__help" aria-required="true" name="date-picker-basic" type="text" value="">
   <span class="fsa-field__help" id="date-picker-basic__help">Example 05/14/1975</span>
 </div>
@@ -48,7 +48,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 
 <div class="ds-preview">
   <div class="fsa-field fsa-field--block">
-    <label class="fsa-field__label" for="date-picker-block">Date of Birth</label>
+    <label class="fsa-field__label" for="date-picker-block">Start Date</label>
     <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
     <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
   </div>
@@ -56,7 +56,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 
 ```html
 <div class="fsa-field fsa-field--block">
-  <label class="fsa-field__label" for="date-picker-block">Date of Birth</label>
+  <label class="fsa-field__label" for="date-picker-block">Start Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
   <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
 </div>
@@ -74,7 +74,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 
 <div class="ds-preview">
   <div class="fsa-field">
-    <label class="fsa-field__label" for="date-picker-disabled">Date of Birth</label>
+    <label class="fsa-field__label" for="date-picker-disabled">Start Date</label>
     <input placeholder="mm/dd/yyyy" disabled class="fsa-input fsa-field__item" id="date-picker-disabled" aria-describedby="date-picker-disabled__help" aria-required="true" name="date-picker-disabled" type="text" value="">
     <span class="fsa-field__help" id="date-picker-disabled__help">Example 05/14/1975</span>
   </div>
@@ -82,7 +82,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 
 ```html
 <div class="fsa-field">
-  <label class="fsa-field__label" for="date-picker-disabled">Date of Birth</label>
+  <label class="fsa-field__label" for="date-picker-disabled">Start Date</label>
   <input placeholder="mm/dd/yyyy" disabled class="fsa-input fsa-field__item" id="date-picker-disabled" aria-describedby="date-picker-disabled__help" aria-required="true" name="date-picker-disabled" type="text" value="">
   <span class="fsa-field__help" id="date-picker-disabled__help">Example 05/14/1975</span>
 </div>

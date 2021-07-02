@@ -348,6 +348,8 @@ To prompt users before further action or operation may proceed.
 
 More often displayed as `fsa-growl--error`, though other style variations (e.g. Default, Warning, Success) may be contextually appropriate.
 
+<button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Prompt</button>
+
 <div class="ds-preview">
   <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
 </div>
@@ -368,6 +370,53 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
       <p>
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
+      </p>
+    </div>
+  </div>
+</div>
+```
+
+### Icons
+
+[Icons]({{ site.baseurl }}components/icons/) can optionally be used to used to heighten or clarify each Notification message.
+
+<div class="ds-preview">
+  <div style="max-width: 340px;">
+    <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-2345thsdfmofa" aria-hidden="false" tabindex="0" role="dialog">
+      <div class="fsa-growl__hd">
+        <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
+        <h2 class="fsa-growl__title">
+          <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+          </svg>
+          With optional icon
+        </h2>
+      </div>
+      <div class="fsa-growl__bd">
+        <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
+        <p>
+          <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+```html
+<div class="fsa-growl-container">
+  <div class="fsa-growl fsa-growl--success" id="UNIQUE-ID-2345thsdfmofa" aria-hidden="false" tabindex="0" role="dialog">
+    <div class="fsa-growl__hd">
+      <button class="fsa-growl__close" data-behavior="growl-dismiss" type="button" title="Close Notification" aria-label="Close Notification"></button>
+      <h2 class="fsa-growl__title">
+        <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+        </svg>
+        With optional icon
+      </h2>
+    </div>
+    <div class="fsa-growl__bd">
+      <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
+      <p>
+        <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
       </p>
     </div>
   </div>

@@ -1,10 +1,3 @@
-@media (min-width: 78.75em) {
-  .docs__icons {
-    -ms-grid-columns:(1fr)[7];
-    grid-template-columns: repeat(7, 1fr)
-  }
-}
-
 // scss-lint:disable SelectorFormat
 .OUTLINE {
   outline: 1px solid red;
@@ -118,25 +111,7 @@ div.fsa-stepped-tabs__label {
 
 }
 
-.docs__rwd-embed {
-  margin-top: $size-medium;
-}
-
-.docs__rwd-demo-block {
-  text-align: center;
-  h2[id] + & {
-    margin-top: -15px;
-    border-top: 0;
-  }
-}
-
-.docs__rwd-embed-container {
-  padding: $size-medium $size-default;
-}
-
 html:hover body::before {
   // scss-lint:disable ImportantRule
   display: none !important; // hide breakpoint bar
 }
-
-

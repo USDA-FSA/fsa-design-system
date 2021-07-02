@@ -5,6 +5,9 @@ type: "UI Component"
 title: "Top Hat"
 intro: "Indicate associated USDA agency and organization."
 jump_menu: true
+relatedItems:
+  - "Application Header"
+  - "Global Navigation"
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
@@ -62,6 +65,34 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 </div>
 {% endcapture %}
 
+{% include preview-and-snippet.html %}
+
+### Custom
+
+Selectively combine with CSS Utilities, such as [Background COlors]({{ site.baseurl }}utilities/#color-background).
+
+`class="fsa-bg--secondary-900"`
+
+{% capture snippet %}
+<div class="fsa-tophat fsa-bg--secondary-900">
+  <div class="fsa-tophat__bd">
+    <div class="fsa-tophat__primary">
+      <span class="fsa-tophat__agency">
+        <a onclick="trackLink('USDA Homepage','Header Top Hat')" class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
+          <img role="presentation" class="fsa-tophat__agency-logo" src="img/usda-logo--white.svg" alt="">
+          <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
+          <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
+        </a>
+      </span>
+    </div>
+    <div class="fsa-tophat__secondary">
+      <span class="fsa-tophat__subagency">
+        Farm Production and Conservation
+      </span>
+    </div>
+  </div>
+</div>
+{% endcapture %}
 {% include preview-and-snippet.html %}
 
 ## Responsive

@@ -50,7 +50,53 @@ Breadcrumbs are typically paired with the `<h1>` page title. The following examp
 </div>
 <h1>Sports</h1>
 {% endcapture %}
+{% include preview-and-snippet.html %}
 
+### Icons
+
+Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or clarify each Breadcrumb item.
+
+{% capture snippet %}
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <a href="link/to/level-0/" class="fsa-breadcrumb__link">
+          <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+          </svg>
+          Home
+        </a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link/to/level-0/level-1/" class="fsa-breadcrumb__link">
+          <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+          </svg>
+          Folder
+        </a>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <a href="link/to/level-0/level-1/level-2/" class="fsa-breadcrumb__link">
+          <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+          </svg>
+          Folder
+        </a>
+      </li>
+      <li class="fsa-breadcrumb__item" aria-current="page">
+        <a href="link/to/level-0/level-1/level-2/level-3/" class="fsa-breadcrumb__link">
+          <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z"></path>
+          </svg>
+          New Document
+        </a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<h1>Untitled Document</h1>
+{% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Reflect current page

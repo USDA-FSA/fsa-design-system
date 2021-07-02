@@ -106,6 +106,30 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
+### Multi-part
+
+{% capture snippet %}
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-dob__month">Date of Birth</label>
+  <div class="fsa-level">
+    <div>
+      <input size="1" class="fsa-input fsa-field__item" id="lorem-dob__month" name="lorem-dob__month" aria-describedby="lorem-dob__help" aria-required="true" type="text" value="">
+      <label class="fsa-field__label fsa-text-size--2" for="lorem-dob__month">Month</label>
+    </div>
+    <div>
+      <input size="1" class="fsa-input fsa-field__item" id="lorem-dob__day" name="lorem-dob__day" aria-describedby="lorem-dob__help" aria-required="true" type="text" value="">
+      <label class="fsa-field__label fsa-text-size--2" for="lorem-dob__day">Day</label>
+    </div>
+    <div>
+      <input size="3" class="fsa-input fsa-field__item" id="lorem-dob__year" name="lorem-dob__year" aria-describedby="lorem-dob__help" aria-required="true" type="text" value="">
+      <label class="fsa-field__label fsa-text-size--2" for="lorem-dob__day">Year</label>
+    </div>
+  </div>
+  <span class="fsa-field__help" id="lorem-dob__help">Example: 05 14 1981</span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
 ### Text, Full Width
 
 {% capture snippet %}
@@ -371,7 +395,7 @@ Using [Date Picker]({{ site.baseurl }}components/date-picker/) as core component
 
 {% capture snippet %}
 <div class="fsa-field">
-  <label class="fsa-field__label" for="date-picker-default">Date of Birth</label>
+  <label class="fsa-field__label" for="date-picker-default">Start Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-default" aria-describedby="date-picker-default__help" aria-required="true" name="date-picker-default" type="text" value="">
   <span class="fsa-field__help" id="date-picker-default__help">Example 05/14/1975</span>
 </div>
@@ -770,7 +794,7 @@ Additionally, each **core nested component** may have additional selectors to de
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
-### Error, specific field in row
+### Error, specific column
 
 {% capture snippet %}
 <div class="fsa-field fsa-field--columns fsa-field--error">
@@ -798,6 +822,33 @@ Additionally, each **core nested component** may have additional selectors to de
 </div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
+
+### Error, multi-part
+
+{% capture snippet %}
+<div class="fsa-field fsa-field--error">
+  <label class="fsa-field__label" for="ipsum-dob__month">Date of Birth</label>
+  <div class="fsa-level">
+    <div>
+      <input size="1" class="fsa-input fsa-field__item" id="ipsum-dob__month" name="ipsum-dob__month" aria-describedby="ipsum-dob__help" aria-required="true" type="text" value="05">
+      <label class="fsa-field__label fsa-text-size--2" for="ipsum-dob__month">Month</label>
+    </div>
+    <div>
+      <input size="1" class="fsa-input fsa-input--error fsa-field__item" id="ipsum-dob__day" name="ipsum-dob__day" aria-describedby="ipsum-dob__help ipsum-dob__error-1" aria-required="true" type="text" value="32">
+      <label class="fsa-field__label fsa-text-size--2" for="ipsum-dob__day">Day</label>
+    </div>
+    <div>
+      <input size="3" class="fsa-input fsa-input--error fsa-field__item" id="ipsum-dob__year" name="ipsum-dob__year" aria-describedby="ipsum-dob__help ipsum-dob__error-2" aria-required="true" type="text" value="">
+      <label class="fsa-field__label fsa-text-size--2" for="ipsum-dob__day">Year</label>
+    </div>
+  </div>
+  <span class="fsa-field__help" id="ipsum-dob__help">Example: 05 14 1981</span>
+  <span class="fsa-field__message" id="ipsum-dob__error-1" role="alert">"32" is an invalid day</span>
+  <span class="fsa-field__message" id="ipsum-dob__error-2" role="alert">Year is required</span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
 
 ## Column Structure
 

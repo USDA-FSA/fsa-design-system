@@ -72,7 +72,7 @@
         - subtitle: "Icons"
           subhref: "components/icons"
           img: "img/subcategories/icons.png"
-          keyword: "Illustration,Image,Symbol"
+          keyword: "Illustration,Image,Symbol,Shape"
 
     - title: "Form Elements"
       keyword: "Controls"
@@ -130,7 +130,7 @@
         - subtitle: "Spinbox"
           subhref: "components/spinbox"
           img: "img/subcategories/spinbox.png"
-          keyword: "Input,Number"
+          keyword: "Input,Number,Stepper"
 
         - subtitle: "Stepped Control"
           subhref: "components/stepped-control"
