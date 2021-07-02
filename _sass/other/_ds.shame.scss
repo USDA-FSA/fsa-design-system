@@ -111,25 +111,7 @@ div.fsa-stepped-tabs__label {
 
 }
 
-.docs__rwd-embed {
-  margin-top: $size-medium;
-}
-
-.docs__rwd-demo-block {
-  text-align: center;
-  h2[id] + & {
-    margin-top: -15px;
-    border-top: 0;
-  }
-}
-
-.docs__rwd-embed-container {
-  padding: $size-medium $size-default;
-}
-
 html:hover body::before {
   // scss-lint:disable ImportantRule
   display: none !important; // hide breakpoint bar
 }
-
-
