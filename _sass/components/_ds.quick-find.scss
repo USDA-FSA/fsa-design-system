@@ -7,8 +7,9 @@
       display: block;
       position: relative;
       z-index: 2;
-      margin-bottom: $size-large;
+      margin-bottom: $size-medium;
       @include breakpoint(L) {
+        margin-bottom: $size-large;
         width: 44rem;
       }
     }

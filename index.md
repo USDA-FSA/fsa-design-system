@@ -11,9 +11,19 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__8/12@l fsa-grid__9/12@xl">
       <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting the bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
+      <div class="ds-quick-find">
+        <div class="ds-quick-find__field">
+          <input id="quick-find-id" class="ds-quick-find__input fsa-input fsa-input--block fsa-input--large" type="text" name="search" value="" placeholder="Quick Find" autocomplete="off" aria-owns="quick-find-results-id" aria-describedby="quick-find-instructions" aria-expanded="false" aria-autocomplete="list">
+          <button id="quick-find-clear-id" class="ds-quick-find__clear" type="reset" title="Clear" aria-label="Clear"></button>
+        </div>
+        <div id="quick-find-results-id">
+        </div>
+        <div class="fsa-sr-only" id="quick-find-instructions">When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.</div>
+        <div id="quick-find-results-count-id" aria-live="polite" class="fsa-sr-only">0 results</div>
+      </div>
     </div>
     <div class="fsa-grid__1 fsa-grid__4/12@l fsa-grid__3/12@xl">
-      <div class="fsa-level@s fsa-level--none@l fsa-level--grow-auto">
+      <div class="fsa-level@s fsa-level--none@l fsa-level--grow-auto fsa-m-b--s">
         <div class="fsa-m-b--s">
           <a href="http://usda-fsa.github.io/fsa-style/boilerplate.html" class="fsa-btn fsa-btn--secondary fsa-btn--block">
             <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -40,17 +50,6 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
     </div>
   </div>
 
-  <div class="ds-quick-find">
-    <div class="ds-quick-find__field">
-      <input id="quick-find-id" class="ds-quick-find__input fsa-input fsa-input--block fsa-input--large" type="text" name="search" value="" placeholder="Quick Find" autocomplete="off" aria-owns="quick-find-results-id" aria-describedby="quick-find-instructions" aria-expanded="false" aria-autocomplete="list">
-      <button id="quick-find-clear-id" class="ds-quick-find__clear" type="reset" title="Clear" aria-label="Clear"></button>
-    </div>
-    <div id="quick-find-results-id">
-    </div>
-    <div class="fsa-sr-only" id="quick-find-instructions">When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.</div>
-    <div id="quick-find-results-count-id" aria-live="polite" class="fsa-sr-only">0 results</div>
-  </div>
-
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
       <a class="ds-home-features__link" href="{{ site.baseurl }}visual-style/">
@@ -70,7 +69,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
       <a class="ds-home-features__link" href="{{ site.baseurl }}patterns/">
         <span class="ds-home-features__title">UX Patterns</span>
         <img class="ds-home-features__img" src="{{ site.baseurl }}img/home/homepage_illustrations_patterns_2x.png" alt="">
-        <p class="ds-home-features__blurb">Repeatable combinations of Design System components for recurring design problems.</p>
+        <p class="ds-home-features__blurb">Repeatable combinations of Design System components for recurring design solutions.</p>
       </a>
     </div>
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">

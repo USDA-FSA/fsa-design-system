@@ -22782,10 +22782,11 @@ pre.highlight .ds-clipboard {
     display: block;
     position: relative;
     z-index: 2;
-    margin-bottom: 3.6rem;
+    margin-bottom: 2.4rem;
   }
   @media (min-width: 54em) {
     .ds-quick-find {
+      margin-bottom: 3.6rem;
       width: 44rem;
     }
   }
