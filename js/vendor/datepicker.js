@@ -3065,7 +3065,7 @@ var datePickerController = (function datePickerController() {
       pt, part;
 
 
-    console.log("attempting to parse " + fmt + " from string " + str)
+    //console.log("attempting to parse " + fmt + " from string " + str)
 
     loopLabel: for (pt = 0; pt < len; pt++) {
       part = parts[pt];
@@ -3074,7 +3074,7 @@ var datePickerController = (function datePickerController() {
         continue loopLabel;
       };
 
-      console.log(pt + ": parsing " + part + " from string " + str)
+      //console.log(pt + ": parsing " + part + " from string " + str)
 
       if (str.length == 0) {
         break;
@@ -3095,7 +3095,7 @@ var datePickerController = (function datePickerController() {
           if (str.search(/^(3[01]|[12][0-9]|0[1-9])/) != -1) {
             d = str.substr(0, 2);
             str = str.substr(2);
-            console.log("d and str: " + d + " " + str)
+            //console.log("d and str: " + d + " " + str)
             break;
           } else {
             return false;
@@ -3197,7 +3197,9 @@ var datePickerController = (function datePickerController() {
 
         case "y": // A two digit representation of a year
           if (str.search(/^(0[0-9]|[1-9][0-9])/) != -1) {
-            y = str.substr(0, 2);
+            // CDH - the original string manipulation cause a bug in a YYYY that accidently gets used for Leap Year
+            //y = str.substr(0, 2);
+            y = str.slice(-2);
             y = +y < 50 ? '20' + String(y) : '19' + String(y);
             str = str.substr(2);
             break;
@@ -3210,7 +3212,7 @@ var datePickerController = (function datePickerController() {
       };
     };
 
-    console.log("parse end, dmy: " + d + ", " + m + ", " + y)
+    //console.log("parse end, dmy: " + d + ", " + m + ", " + y)
 
     if ((dp && d === false) || (mp && m === false) || (yp && y === false)) {
       return false;
