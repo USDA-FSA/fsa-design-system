@@ -32,19 +32,19 @@ relatedItems:
 
 ## Find an Icon
 
-<div class="fsa-field">
+<div class="fsa-sr-only" aria-live="polite">Loading icons...</div>
+
+<div aria-hidden="true" class="fsa-field">
   <label class="fsa-field__label fsa-sr-only" for="ds-icon-find">Find an Icon</label>
   <span class="docs__shimmer"><input disabled class="fsa-input fsa-input--large fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2"></span>
 </div>
 
-<div class="fsa-sr-only" aria-live="polite">Loading icons...</div>
-
-<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline" aria-hidden="true">
+<div aria-hidden="true" class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
   <h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none"><span class="docs__shimmer">Previewing <strong>147 of 994</strong> available icons</span></h3>
   <div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300"><span class="docs__shimmer">Click an icon to copy its code snippet</span></div>
 </div>
 
-<div id="ds-icon-find-results-id" class="docs__icons docs__icons--loading" aria-labelledby="ds-icon-find__icon-list-title" aria-describedby="ds-icon-find__icon-list-desc" aria-hidden="true">
+<div aria-hidden="true" id="ds-icon-find-results-id" class="docs__icons docs__icons--loading" aria-labelledby="ds-icon-find__icon-list-title" aria-describedby="ds-icon-find__icon-list-desc">
   <a class="docs__icons__link" href="/fsa-design-system/img/material-design-icons/ic_stop_24px.svg"><figure class="docs__icons__figure"><span class="docs__shimmer"><svg class="fsa-icon fsa-icon--size-4" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 6h12v12H6z"></path></svg></span></figure><figcaption class="docs__icons__caption"><span class="docs__shimmer">icon_name</span></figcaption></a>
   <a class="docs__icons__link" href="/fsa-design-system/img/material-design-icons/ic_stop_24px.svg"><figure class="docs__icons__figure"><span class="docs__shimmer"><svg class="fsa-icon fsa-icon--size-4" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 6h12v12H6z"></path></svg></span></figure><figcaption class="docs__icons__caption"><span class="docs__shimmer">icon_name</span></figcaption></a>
   <a class="docs__icons__link" href="/fsa-design-system/img/material-design-icons/ic_stop_24px.svg"><figure class="docs__icons__figure"><span class="docs__shimmer"><svg class="fsa-icon fsa-icon--size-4" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 6h12v12H6z"></path></svg></span></figure><figcaption class="docs__icons__caption"><span class="docs__shimmer">icon_name</span></figcaption></a>
