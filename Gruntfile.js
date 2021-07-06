@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   var MDOfficial = grunt.file.readJSON("_data/MDOfficial.json");
   var FPACIconsList = grunt.file.readJSON("_data/fpac-material-icons-list.json");
   var MDIcons = MDOfficial.icons;
-  
+
   // start building icons JSON string
   var iconsList = '{"icons":[';
   var iconsStr = ""
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
   iconsList = iconsList + iconsStr.slice(0,-1) +']}';
   // ensure string is in JSON format
   iconsJson = JSON.parse(JSON.stringify(iconsList));
-  
+
   // Listing Tasks
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -238,8 +238,8 @@ module.exports = function (grunt) {
     // run tasks in parallel
     concurrent: {
       serve: [
-        'build'
-        //'watch' removed to prevent infinite build issue
+        'build',
+        'watch'
       ],
       options: {
         logConcurrentOutput: true
@@ -260,8 +260,7 @@ module.exports = function (grunt) {
     'browserify',
     'uglify',
     'string-replace',
-    'shell:jekyllServe',
-    'watch' // added to remove infinite build issue
+    'shell:jekyllServe'
   ]);
   grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');

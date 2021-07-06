@@ -22996,11 +22996,47 @@ html:hover body::before {
   display: none !important;
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.docs__shimmer {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: shimmer;
+  background-color: #dbdad9;
+  background: linear-gradient(to right, #e6e6e6 0%, #dbdad9 20%, #e6e6e6 45%);
+  background-size: 800px 104px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.docs__shimmer > * {
+  opacity: 0;
+}
+
 .docs__icons {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+}
+
+.docs__icons--loading {
+  pointer-events: none;
 }
 
 @media (min-width: 30.0625em) {
@@ -23029,6 +23065,14 @@ html:hover body::before {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
   }
+}
+
+.docs__icons--loading {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .docs__icons__link img {
