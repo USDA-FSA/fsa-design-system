@@ -139,10 +139,43 @@ html:hover body::before {
   display: none !important; // hide breakpoint bar
 }
 
+@keyframes shimmer {
+  0%{ background-position: -468px 0; }
+  100%{ background-position: 468px 0; }
+}
+
+.docs__shimmer {
+  & {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: shimmer;
+    background-color: $color-fsa-tertiary-200;
+    background: linear-gradient(
+      to right,
+      shade($color-fsa-tertiary-100, 4%) 00%,
+      $color-fsa-tertiary-200            20%,
+      shade($color-fsa-tertiary-100, 4%) 45%
+    );
+    background-size: 800px 104px;
+    display: inline-flex;
+    color: transparent;
+    user-select: none;
+    pointer-events: none;
+  }
+  & > * {
+    opacity: 0;
+  }
+}
+
 .docs__icons {
   & {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    &--loading {
+      pointer-events: none;
+    }
     @include breakpoint(S) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -155,6 +188,10 @@ html:hover body::before {
     @include breakpoint(XL) {
       grid-template-columns: repeat(7, 1fr);
     }
+  }
+  &--loading {
+    user-select: none;
+    pointer-events: none;
   }
   & > * {
   }
@@ -188,13 +225,15 @@ html:hover body::before {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;  
+      align-items: center;
       padding: $size-medium $size-small;
       color: inherit;
       text-decoration: none;
       border-radius: $radius-s;
       background-color: $color-fsa-primary-100;
-    }    
+    }
+  }
+  &__figure {
   }
   &__caption {
     margin-top: $size-small;
