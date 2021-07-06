@@ -39,7 +39,7 @@ relatedItems:
 
 <div class="fsa-sr-only" aria-live="polite">Loading icons...</div>
 
-<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
+<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline" aria-hidden="true">
   <h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none"><span class="docs__shimmer">Previewing <strong>147 of 994</strong> available icons</span></h3>
   <div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300"><span class="docs__shimmer">Click an icon to copy its code snippet</span></div>
 </div>
