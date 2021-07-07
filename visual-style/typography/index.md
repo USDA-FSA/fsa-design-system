@@ -173,4 +173,3 @@ With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size
 * [Utilities > Text Size]({{ site.baseurl }}utilities/#text-size)
 * [Utilities > Text Headers]({{ site.baseurl }}utilities/#text-headers)
 * [Utilities > Text Alignment]({{ site.baseurl }}utilities/#text-alignment)
-* [Fonts and Typography Guide]({{ site.baseurl }}guides/applications/fonts)
