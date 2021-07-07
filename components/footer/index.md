@@ -249,4 +249,4 @@ Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility
 ## General Guidance
 
 * The first column of the Global Footer is used for application-specific links to supplemental content, such as Handbooks.
-* The links in the remaining columns are standard and shall be included in all FPAC Applications. [See Footer Guide for more information.]({{ site.baseurl }}guides/applications/footer)
+* The links in the remaining columns are generally common and may be included

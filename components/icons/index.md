@@ -310,7 +310,7 @@ Many available components have Icon options
 
 {% include preview-and-snippet.html %}
 
-**Place icons *inside* links.** If icons accompany a text link, place the icon inside the link to prevent the screen reader from announcing the link twice.
+**Place icons *inside* links.** If icons accompany a text link, place the icon inside the link (often as part of [Level component]({{ site.baseurl }}layout/level/)) to prevent the screen reader from announcing the link twice.
 
 {% capture snippet %}
 <a href="">
