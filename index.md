@@ -16,6 +16,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
       <div class="fsa-level@s fsa-level--none@l fsa-level--grow-auto">
         <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="http://usda-fsa.github.io/fsa-style/boilerplate.html">Boilerplate Template</a></div>
         <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="https://codepen.io/pen?template=WNQdJpp">Explore with Codepen</a></div>
+        <div class="fsa-m-b--s"><span disabled="" class="fsa-btn fsa-btn--block fsa-btn--secondary" href="#figma-assets">Figma Assets <small style="font-weight: normal;">Coming soon</small></span></div>
       </div>
     </div>
   </div>
