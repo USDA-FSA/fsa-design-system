@@ -18,6 +18,10 @@
     keyword: "SPA,Single Page Application,Angular"
     subhref: "getting-started/#when-to-use"
 
+  - subtitle: "UI Kit"
+    keyword: "figma,stencils"
+    subhref: "getting-started/#ui-kit"
+
   - subtitle: "Browser Support"
     keyword: "Edge,Chrome,Firefox,IE,Explorer,Progressive Enhancement"
     subhref: "getting-started/#browser-support"
