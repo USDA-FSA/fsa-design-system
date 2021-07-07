@@ -10,10 +10,12 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% capture snippet %}
 <div class="fsa-topper">
-  <div class="fsa-topper__bd">
-    <a class="fsa-topper__link" href="#main-content">Return to top</a>
+    <div class="fsa-topper__bd">
+      <a class="fsa-topper__link" href="#main-content">
+        <span class="fsa-topper__icon"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg></span> Return to top
+      </a>
+    </div>
   </div>
-</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -31,7 +33,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 {% capture snippet %}
 <div class="fsa-topper fsa-topper--fullscreen">
   <div class="fsa-topper__bd">
-    <a class="fsa-topper__link" href="#main-content">Return to top</a>
+    <a class="fsa-topper__link" href="#main-content">
+      <span class="fsa-topper__icon"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg></span> Return to top
+    </a>
   </div>
 </div>
 {% endcapture %}
