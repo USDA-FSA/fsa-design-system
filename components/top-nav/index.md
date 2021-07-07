@@ -328,10 +328,10 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 {% include preview-and-snippet.html %}
 
-### Sub Menus: expanded, single list
+### Sub Menus: expanded, single list, optional group title
 
 {% capture snippet %}
-<div style="padding-bottom: 360px">
+<div style="padding-bottom: 420px">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -349,14 +349,18 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
             <div class="fsa-nav-global__sub-menu" id="UNIQUE-ID-1234098" aria-hidden="false">
 
-              <div class="fsa-nav-global__sub-menu-bd">
-                <ul class="fsa-nav-global__sub-menu-list" aria-labelledby="UNIQUE-ID-455Zs5s5">
+              <div class="fsa-nav-global__sub-menu-bd" aria-labelledby="UNIQUE-ID-455Zs5s5">
+                <h3 class="fsa-nav-global__sub-menu-title" id="UNIQUE-ID-55ga">Group Title</h3>
+                <ul class="fsa-nav-global__sub-menu-list" aria-labelledby="UNIQUE-ID-55ga">
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Overview</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Reporting Configuration</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Investment Placement</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Burden Investment</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Performance Management</a></li>
-                  <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Budgetery Max Funding</a></li>
+                </ul>
+                <h3 class="fsa-nav-global__sub-menu-title" id="UNIQUE-ID-55gaasdf">Group Title</h3>
+                <ul class="fsa-nav-global__sub-menu-list" aria-labelledby="UNIQUE-ID-55gaasdf">
+                  <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Overview</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Premium Exposure Drive</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Technology Plans</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
