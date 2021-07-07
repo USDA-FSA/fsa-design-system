@@ -31,7 +31,6 @@
 
     @include breakpoint(L) {
       @include fsa-grid-column-width(3);
-      margin-bottom: $size-large;
     }
 
     &--thirds {
