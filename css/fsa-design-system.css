@@ -22128,14 +22128,20 @@ pre.highlight .ds-clipboard {
   top: 0.8rem;
 }
 
+.ds-clipboard__btn {
+  text-decoration: none;
+}
+
 .ds-clipboard__success {
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
   position: absolute;
   right: calc(100% + 0.8rem);
-  top: 4px;
-  top: 0.4rem;
+  top: 3px;
+  top: 0.3rem;
+  color: #2f2c2a;
   animation: clipboardConfirm 2.3s ease-in-out forwards;
 }
 

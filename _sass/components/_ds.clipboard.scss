@@ -12,14 +12,18 @@ pre.highlight {
   }
 
   // scss-lint:disable EmptyRule
-  &__btn {}
+  &__btn {
+    text-decoration: none;
+  }
 
   &__success {
-    font-size: $font-size-2;
+    font-size: $font-size-1;
     font-family: $font-base;
+    font-weight: $font-bold;
     position: absolute;
     right: calc(100% + #{$size-small});
-    top: $size-base;
+    top: $size-base - .1rem;
+    color: $color-fsa-base;
     animation: clipboardConfirm 2.3s ease-in-out forwards;
   }
 
