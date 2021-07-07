@@ -14,10 +14,10 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
     </div>
     <div class="fsa-grid__1 fsa-grid__3/12@l">
       <div class="fsa-level@s fsa-level--none@l fsa-level--grow-auto">
-        <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="http://usda-fsa.github.io/fsa-style/boilerplate.html">Boilerplate Template</a></div>
-        <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="https://codepen.io/pen?template=WNQdJpp">Explore with Codepen</a></div>
-        <div class="fsa-m-b--s"><span disabled="" class="fsa-btn fsa-btn--block fsa-btn--secondary" href="#figma-assets">Figma Assets <small style="font-weight: normal;">Coming soon</small></span></div>
-      </div>
+        <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="http://usda-fsa.github.io/fsa-style/boilerplate.html"><span class="fsa-show@m">Boilerplate</span> Template</a></div>
+        <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="https://codepen.io/pen?template=WNQdJpp"><span class="fsa-show@m">Explore with</span> Codepen</a></div>
+        <div class="fsa-m-b--s"><a class="fsa-btn fsa-btn--block fsa-btn--secondary" href="https://www.figma.com/community/file/994660481391659106/USDA-%7C-FPAC-Design-System">Figma UI Kit <span class="fsa-show@m fsa-label fsa-label--warning fsa-m-l--xs">Alpha</span></a></div>
+      </div>      
     </div>
   </div>
 
