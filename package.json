@@ -47,6 +47,6 @@
   },
   "scripts": {
     "install-dep": "bundle install && npm install",
-    "start": "grunt concurrent:serve"
+    "start": "grunt build"
   }
 }

@@ -77,7 +77,7 @@ if ('serviceWorker' in navigator) {
       var arr = icf.iconsArray.filter( item => item.showDS == "true" ? true : false);
       return arr;
     },
-
+ 
     doSearch: function( phrase ){
       let arr = icf.iconsArray;
       let lowPhrase = phrase.toLowerCase();
@@ -126,6 +126,11 @@ if ('serviceWorker' in navigator) {
           icf.buildIcons( icf.getDefaultIcons() );
         }
       }
+    },
+
+    filterIcons: function(cat){
+      var arr = icf.iconsArray.filter( item => item.category == cat ? true : false);
+      return arr;
     },
 
     copyToClipboard: function(el, iconName){

@@ -235,11 +235,11 @@ module.exports = function (grunt) {
       }
     },
 
-    // run tasks in parallel
+    // run tasks in parallel --- "start": "grunt concurrent:serve"
     concurrent: {
       serve: [
-        'build'
-        //'watch' removed to prevent infinite build issue
+        'shell:jekyllServe',
+        'watch'
       ],
       options: {
         logConcurrentOutput: true
@@ -260,8 +260,7 @@ module.exports = function (grunt) {
     'browserify',
     'uglify',
     'string-replace',
-    'shell:jekyllServe',
-    'watch' // added to remove infinite build issue
+    'concurrent:serve'
   ]);
   grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');
