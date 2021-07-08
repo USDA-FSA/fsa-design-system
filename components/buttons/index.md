@@ -41,7 +41,7 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 <a class="fsa-btn fsa-btn--[variation]" href="link.html">Label</a>
 ```
 
-### Default
+### Primary
 
 {% capture snippet %}
 <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
