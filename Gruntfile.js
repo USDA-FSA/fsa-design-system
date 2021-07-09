@@ -13,12 +13,16 @@ module.exports = function (grunt) {
   
   // start building icons JSON string
   var iconsList = '{"icons":[';
-  var iconsStr = ""
+  var iconsStr = "";
+  var hasRun = false;
+  var cats = [];
   var count = 0;
 
   grunt.file.recurse('img/material-design-icons', createFileList);
 
   function createFileList(abspath, rootdir, subdir, fileName){
+    var cat = '';
+    var pop = '';
     // strip fileName of extra details
     var fn = fileName.split("_24px")[0].split("ic_")[1];
     // search thru official Material Design Icons data for object
@@ -38,6 +42,9 @@ module.exports = function (grunt) {
       iconName = newObj.name.split("_").join(" ");
       // ensure the keywords list is populated
       iconTags = String(newObj.tags) == "" ? iconName.split("_").join(",") : newObj.tags;
+      cat = newObj.categories.toString();
+      cats.push( cat );
+      pop = newObj.popularity;
     } else {
       // create the display name for the icon
       iconName = fn.split("_").join(" ");
@@ -47,16 +54,30 @@ module.exports = function (grunt) {
     // Used only for Development/Testing
     count++;
     //continue building icons JSON string
-    iconsStr = iconsStr + '{"name":"'+String(iconName)+'","fileName":"'+String(fileName)+'","keywords":"'+String(iconTags)+'","svg":"'+String(svg)+'","showDS":"'+showDS+'"},';
-
+    iconsStr += '{"name":"'+String(iconName)+'",';
+    iconsStr += '"fileName":"'+String(fileName)+'",';
+    iconsStr += '"category":"'+String(cat)+'",';
+    iconsStr += '"popularity":"'+String(pop)+'",';
+    iconsStr += '"keywords":"'+String(iconTags)+'",'
+    iconsStr += '"svg":"'+String(svg)+'",';
+    iconsStr += '"showDS":"'+showDS+'"},';
+    
   };
-  // Used only for Development/Testing
-  console.log("ICON COUNT", count)
-
-  // finalize building icons JSON string
-  iconsList = iconsList + iconsStr.slice(0,-1) +']}';
-  // ensure string is in JSON format
-  iconsJson = JSON.parse(JSON.stringify(iconsList));
+  if(!hasRun) {
+    hasRun = true;
+    // Used only for Development/Testing
+    console.log("ICON COUNT", count);
+    // finalize building icons JSON string
+    iconsList += iconsStr.slice(0,-1) +'],';
+    // Add Categories List to JSON file and finalize string
+    var catsArray = [...new Set(cats)];
+    var catsString = '"';
+    catsArray.forEach(item => { catsString += String(item + '","') });
+    catsString = catsString.slice(0,-2);
+    iconsList += '"categories":['+ catsString +']}';
+    // ensure string is in JSON format
+    iconsJson = JSON.parse(JSON.stringify(iconsList));
+  }
   
   // Listing Tasks
   grunt.initConfig({
@@ -260,7 +281,8 @@ module.exports = function (grunt) {
     'browserify',
     'uglify',
     'string-replace',
-    'concurrent:serve'
+    'shell:jekyllServe',
+    'watch'
   ]);
   grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');

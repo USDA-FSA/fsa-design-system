@@ -8,6 +8,8 @@ if ('serviceWorker' in navigator) {
     resultsCountId: '',
     search: '',
     results: '',
+    filterId: '',
+    filterCategories: [],
     resultsCount: '',
     iconsUrlsArray: [],
     iconsArray: [],
@@ -18,6 +20,8 @@ if ('serviceWorker' in navigator) {
     prevInputString: '',
     clickedIconsArray: [],
     clickedIconDelay: 3000,
+    popularThreshold: 25000,
+    filterDefault: '',
 
     setSearchProperties: function(){
       icf.search = document.getElementById( icf.inputId );
@@ -45,11 +49,13 @@ if ('serviceWorker' in navigator) {
 
     getContent: function(res){
       var json = JSON.parse(res.response);
+      icf.filterCategories = json.categories;
       icf.iconsArray = icf.iconsArray.concat(json.icons);
       icf.iconsArray = icf.dedupeArrayOfObjects(icf.iconsArray);
       icf.iconsCount = icf.iconsArray.length;
       icf.iconsArray.sort( (a,b) => a.name - b.name );
       icf.buildIcons( icf.getDefaultIcons() );
+      icf.buildFilter();
     },
 
     buildIcons: function(arr){
@@ -59,7 +65,11 @@ if ('serviceWorker' in navigator) {
         // add FSA Style specific parameters
         let svg = String(item.svg).split('<svg ').join('<svg class="fsa-icon fsa-icon--size-4" aria-hidden="true" focusable="false" role="img"');
         let kw = String(item.keywords).split(',').join(', ');
-        newHTML += `<a onclick="event.preventDefault(); IconFinder.copyToClipboard(this,'${item.name}');" id="${item.fileName}" title="${kw}" class="docs__icons__link" href="/fsa-design-system/img/material-design-icons/${item.fileName}"> <figure class="docs__icons__figure">${svg}</figure></figure> <figcaption class='docs__icons__caption'>${item.name}</figcaption> </a>`;
+        newHTML += `<a onclick="event.preventDefault(); IconFinder.copyToClipboard(this,'${item.name}');" `;
+        newHTML += `id="${item.fileName}" title="${kw}" class="docs__icons__link" `;
+        newHTML += `href="/fsa-design-system/img/material-design-icons/${item.fileName}"> `;
+        newHTML += `<figure class="docs__icons__figure">${svg}</figure></figure> `;
+        newHTML += `<figcaption class='docs__icons__caption'>${item.name}</figcaption> </a>`;
       });
       icf.buildIconsHolder(newHTML);
       icf.buildCountHolder(`Previewing <strong>${icf.displayCount} of ${icf.iconsCount}</strong> available icons`);
@@ -71,6 +81,17 @@ if ('serviceWorker' in navigator) {
 
     buildCountHolder: function(txt){
       icf.resultsCount.innerHTML = txt;
+    },
+
+    buildFilter: function(){
+      var filter = document.getElementById( icf.filterId );
+      icf.filterCategories.forEach( item => {
+        var option = document.createElement("option");
+        option.value = item;
+        option.text = item.charAt(0).toUpperCase() + item.slice(1);
+        filter.appendChild(option);
+      });
+      icf.filterDefault = filter.value;
     },
 
     getDefaultIcons: function(){
@@ -106,10 +127,6 @@ if ('serviceWorker' in navigator) {
 
         if(icf.search.value!=''){ // isn't empty
           if(icf.search.value.length > 1){ // run only if at least 2 characters
-
-            // Is this needed for 508?
-            //icf.search.setAttribute('aria-expanded', 'true');
-
             // aray of objects
             let matches = icf.doSearch( icf.search.value );
 
@@ -120,7 +137,10 @@ if ('serviceWorker' in navigator) {
             // Put matches in ABC order            
             matches.sort( (a,b) => a.name - b.name );
 
-            if( matches.length > 0 ) icf.buildIcons(matches);
+            if( matches.length > 0 ) {
+              icf.buildIcons(matches);
+              document.getElementById( icf.filterId ).value = icf.filterDefault;
+            }
           }
         } else {
           icf.buildIcons( icf.getDefaultIcons() );
@@ -128,8 +148,30 @@ if ('serviceWorker' in navigator) {
       }
     },
 
+    setCategory: function(sel){
+      var cat = sel.value;
+      
+      if(cat!=""){
+        if(cat == "popular"){
+          icf.buildIcons( icf.getPopularIcons(icf.popularThreshold) );
+        } else {
+          icf.buildIcons( icf.filterIcons(cat) );
+        }
+        IconFinderTracker.trackCategory( cat );
+      } else {
+        icf.buildIcons( icf.getDefaultIcons() );
+        IconFinderTracker.trackCategory('Reset to Default');
+      }
+      icf.search.value = '';
+    },
+
     filterIcons: function(cat){
       var arr = icf.iconsArray.filter( item => item.category == cat ? true : false);
+      return arr;
+    },
+
+    getPopularIcons: function(threshold){
+      var arr = icf.iconsArray.filter( item => parseInt( item.popularity ) > threshold ? true : false);
       return arr;
     },
 
@@ -227,11 +269,12 @@ if ('serviceWorker' in navigator) {
     },
     // End
 
-    init: function( arr, inputId, displayId, countId) {
+    init: function( arr, inputId, displayId, countId, filterId) {
       icf.iconsUrlsArray = arr;
       icf.inputId = inputId;
       icf.displayId = displayId;
-      icf.resultsCountId = countId
+      icf.resultsCountId = countId;
+      icf.filterId = filterId;
       icf.setSearchProperties();
     }
 
@@ -248,7 +291,8 @@ if ('serviceWorker' in navigator) {
     ],
     'ds-icon-find',
     'ds-icon-find-results-id',
-    'ds-icon-find__icon-list-title-id'
+    'ds-icon-find__icon-list-title-id',
+    'ds-icon-filter'
   );
 
   window.IconFinder = icf;

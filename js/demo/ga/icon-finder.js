@@ -16,6 +16,10 @@ const icfTracker = {
     GoogleTracker.sendToGA('Icon Clicked', icfTracker.trackerName, iconName);
   },
 
+  trackCategory: function(catSelected){
+    GoogleTracker.sendToGA('Category Selected', icfTracker.trackerName, catSelected);
+  },
+
   trackSearchCollection: function(str){
     if( icfTracker.searchCollection.length <= icfTracker.searchCollectionLimit ){
       icfTracker.searchCollection += ' ~ ' + str;
