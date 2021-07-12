@@ -20,7 +20,7 @@ if ('serviceWorker' in navigator) {
     prevInputString: '',
     clickedIconsArray: [],
     clickedIconDelay: 3000,
-    popularThreshold: 25000,
+    popularThreshold: 42,
     filterDefault: '',
 
     setSearchProperties: function(){
