@@ -31,33 +31,27 @@ relatedItems:
 {% include preview-and-snippet.html %}
 
 ## Find an Icon
-<div class="fsa-level fsa-level--justify-between">
+<div class="fsa-level@m fsa-level--justify-between@m">
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-find">Find an Icon</label>
     <input class="fsa-input fsa-input--large fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
   </div>
-  <div class="fsa-field">
-    <label class="fsa-field__label fsa-sr-only" for="ds-icon-filter">Filter Icons</label>
-    <select onchange="IconFinder.setCategory(this)" data-most-popular="49" class="fsa-select fsa-field__item" id="ds-icon-filter" aria-describedby="ds-icon-filter-help" aria-required="true" name="ds-icon-filter">
-      <option value="" selected="selected">Select a Category</option>
+  <div class="fsa-field fsa-level@m fsa-p-t--xs@m">
+    <label class="fsa-field__label fsa-sr-only@s-only" for="ds-icon-filter">Category:</label>
+    <select onchange="IconFinder.setCategory(this)" data-most-popular="50" class="fsa-select fsa-select--large fsa-field__item" id="ds-icon-filter" aria-describedby="ds-icon-filter-help" aria-required="true" name="ds-icon-filter">
+      <option value="" selected="selected">All</option>
       <option value="popular">Most Popular</option>
     </select>
   </div>
 </div>
 
-<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
-  <h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none">
+<div class="fsa-level@m fsa-level--justify-between@m fsa-level--align-baseline@m">
+  <h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m-t--none fsa-m-b--none">
     <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-      <div class="fsa-progress__details">
-        <div class="fsa-progress__label">Loading icons... please wait.</div>
-      </div>
-      <div class="fsa-progress__bar" aria-hidden="true">
-        <div class="fsa-progress__primary"></div>
-        <div class="fsa-progress__secondary"></div>
-      </div>
+      <div class="fsa-progress__details"> <div class="fsa-progress__label">Loading icons... please wait.</div> </div>
+      <div class="fsa-progress__bar" aria-hidden="true"> <div class="fsa-progress__primary"></div> <div class="fsa-progress__secondary"></div> </div>
     </div>
   </h3>
-  
   <div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300">Click an icon to copy its code snippet</div>
 </div>
 
