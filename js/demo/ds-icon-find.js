@@ -85,6 +85,7 @@ if ('serviceWorker' in navigator) {
 
     buildFilter: function(){
       var filter = document.getElementById( icf.filterId );
+      icf.popularThreshold = parseInt( filter.dataset.mostPopular );
       icf.filterCategories.forEach( item => {
         var option = document.createElement("option");
         option.value = item;
@@ -171,7 +172,14 @@ if ('serviceWorker' in navigator) {
     },
 
     getPopularIcons: function(threshold){
-      var arr = icf.iconsArray.filter( item => parseInt( item.popularity ) > threshold ? true : false);
+      // Use if you want the actual popularity value to be used as the threshold - Higher value = more popular
+      //var arr = icf.iconsArray.filter( item => parseInt( item.popularity ) > threshold ? true : false);
+
+      // Use if you want to the Top X to be used as a threshold
+      icf.iconsArray.sort((a,b)=>{
+        return  b.popularity - a.popularity;
+      });
+      var arr = icf.iconsArray.slice(0,threshold);
       return arr;
     },
 

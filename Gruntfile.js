@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 
   function createFileList(abspath, rootdir, subdir, fileName){
     var cat = '';
-    var pop = '';
+    var pop = '1';
     // strip fileName of extra details
     var fn = fileName.split("_24px")[0].split("ic_")[1];
     // search thru official Material Design Icons data for object
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
       iconTags = String(newObj.tags) == "" ? iconName.split("_").join(",") : newObj.tags;
       cat = newObj.categories.toString();
       cats.push( cat );
-      pop = newObj.popularity;
+      pop = parseInt( newObj.popularity ) > 0 ? newObj.popularity : '1';
     } else {
       // create the display name for the icon
       iconName = fn.split("_").join(" ");

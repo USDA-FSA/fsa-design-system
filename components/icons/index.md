@@ -38,7 +38,7 @@ relatedItems:
   </div>
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-filter">Filter Icons</label>
-    <select onchange="IconFinder.setCategory(this)" class="fsa-select fsa-field__item" id="ds-icon-filter" aria-describedby="ds-icon-filter-help" aria-required="true" name="ds-icon-filter">
+    <select onchange="IconFinder.setCategory(this)" data-most-popular="49" class="fsa-select fsa-field__item" id="ds-icon-filter" aria-describedby="ds-icon-filter-help" aria-required="true" name="ds-icon-filter">
       <option value="" selected="selected">Select a Category</option>
       <option value="popular">Most Popular</option>
     </select>
