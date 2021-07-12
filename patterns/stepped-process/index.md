@@ -16,7 +16,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% capture anatomy__markers %}
 1. [Stepped Tabs]({{ site.baseurl }}components/stepped-tabs)
+1. [Icons]({{ site.baseurl }}components/icons)
 1. [Stepped Control]({{ site.baseurl }}components/stepped-control)
+1. [Buttons]({{ site.baseurl }}components/buttons)
 {% endcapture %}
 
 {% assign anatomy__image-off = "stepped-process.png" %}
@@ -25,7 +27,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Live Demo
 
-{% assign rwdSize = "phone" %}
+{% assign rwdSize = "phone-big" %}
 {% capture rwdURL %}
 {{ site.baseurl }}/demo/stepped-process.html
 {% endcapture %}
