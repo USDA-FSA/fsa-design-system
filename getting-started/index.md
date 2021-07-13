@@ -155,7 +155,7 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
   <tbody>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label fsa-label--success">Yes</span>
+        <span class="fsa-label fsa-label--success fsa-label--large">Yes</span>
       </td>
       <td aria-label="condition">If a new product and/or application is being developed from scratch.</td>
       <td aria-label="notes">
@@ -169,7 +169,7 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
     </tr>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label fsa-label--success">Yes</span>
+        <span class="fsa-label fsa-label--success fsa-label--large">Yes</span>
       </td>
       <td aria-label="condition">If the existing legacy application is being completely replaced/redeveloped.</td>
       <td aria-label="notes">
@@ -183,7 +183,7 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
     </tr>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label fsa-label--alert">No</span>
+        <span class="fsa-label fsa-label--alert fsa-label--large">No</span>
       </td>
       <td aria-label="condition">If an existing legacy applications has no plans to complete a major Front-end redesign.</td>
       <td aria-label="notes">
@@ -196,14 +196,14 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
     </tr>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label fsa-label--alert">No</span>
+        <span class="fsa-label fsa-label--alert fsa-label--large">No</span>
       </td>
       <td aria-label="condition">If an existing legacy application utilizes technology, that when combined with the Design System, creates an adverse or slow User Experience on legacy devices or platforms.</td>
       <td aria-label="notes"></td>
     </tr>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label fsa-label--general">Probably</span>
+        <span class="fsa-label fsa-label--general fsa-label--large">Probably</span>
       </td>
       <td aria-label="condition">
         If an existing legacy application will be significantly overhauled visually and/or from a technology perspective.
@@ -219,7 +219,7 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
     </tr>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label fsa-label--warning">Maybe</span>
+        <span class="fsa-label fsa-label--warning fsa-label--large">Maybe</span>
       </td>
       <td aria-label="condition">
         If an existing legacy application has major new features that will be added.

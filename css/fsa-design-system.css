@@ -22888,22 +22888,6 @@ pre.highlight .ds-clipboard {
   }
 }
 
-.OUTLINE {
-  outline: 1px solid red;
-}
-
-.ds-icn__github {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 4px;
-  margin-right: 0.4rem;
-  width: 24px;
-  width: 2.4rem;
-  height: 24px;
-  height: 2.4rem;
-  margin-top: -2px;
-}
-
 .ds-btn--start {
   background-color: #1a4b24;
   color: #fff;
@@ -22915,7 +22899,7 @@ pre.highlight .ds-clipboard {
 
 .ds-btn--start:hover:not([disabled]), .ds-btn--start:focus:not([disabled]), .ds-btn--start:active:not([disabled]) {
   color: #fff;
-  background-color: #0e2914;
+  background-color: #14381b;
 }
 
 .ds-btn--start.is-active {
@@ -22924,6 +22908,7 @@ pre.highlight .ds-clipboard {
   border-bottom-right-radius: 0;
   color: #2f2c2a;
   position: relative;
+  pointer-events: none;
 }
 
 .ds-btn--start.is-active:after {
@@ -22976,6 +22961,10 @@ div.fsa-stepped-tabs__label {
 
 html:hover body::before {
   display: none !important;
+}
+
+.OUTLINE {
+  outline: 1px solid red;
 }
 
 /**
