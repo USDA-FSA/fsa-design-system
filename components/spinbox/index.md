@@ -92,6 +92,22 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% include preview-and-snippet.html %}
 
+### Inline
+
+{% capture snippet %}
+<span class="fsa-spinbox fsa-spinbox--inline">
+  <span class="fsa-spinbox__number">
+    <input class="fsa-input fsa-spinbox__input" id="lorem-ipsum-amount__6657" name="lorem-ipsum-amount" type="number" value="10">
+  </span>
+  <span class="fsa-spinbox__actions" aria-hidden="true">
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+  </span>
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ### Step Value (`step="5"`)
 
 The Spinbox Component allows for incrementing of data by utilizing the `step=""` attribute of the `input` element.
