@@ -1,0 +1,445 @@
+{
+  "icons":[
+    {
+      "fileName": "ic_accessibility_new_24px.svg"
+    },
+    {
+      "fileName": "ic_account_box_24px.svg"
+    },
+    {
+      "fileName": "ic_account_circle_24px.svg"
+    },
+    {
+      "fileName": "ic_add_24px.svg"
+    },
+    {
+      "fileName": "ic_add_circle_24px.svg"
+    },
+    {
+      "fileName": "ic_alarm_24px.svg"
+    },
+    {
+      "fileName": "ic_announcement_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_back_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_downward_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_drop_down_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_drop_up_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_left_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_right_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_forward_24px.svg"
+    },
+    {
+      "fileName": "ic_arrow_upward_24px.svg"
+    },
+    {
+      "fileName": "ic_attach_file_24px.svg"
+    },
+    {
+      "fileName": "ic_attach_money_24px.svg"
+    },
+    {
+      "fileName": "ic_autorenew_24px.svg"
+    },
+    {
+      "fileName": "ic_bookmark_24px.svg"
+    },
+    {
+      "fileName": "ic_build_24px.svg"
+    },
+    {
+      "fileName": "ic_calendar_today_24px.svg"
+    },
+    {
+      "fileName": "ic_cancel_24px.svg"
+    },
+    {
+      "fileName": "ic_chat_24px.svg"
+    },
+    {
+      "fileName": "ic_check_24px.svg"
+    },
+    {
+      "fileName": "ic_check_circle_24px.svg"
+    },
+    {
+      "fileName": "ic_close_24px.svg"
+    },
+    {
+      "fileName": "ic_closed_caption_24px.svg"
+    },
+    {
+      "fileName": "ic_closed_caption_off_24px.svg"
+    },
+    {
+      "fileName": "ic_cloud_24px.svg"
+    },
+    {
+      "fileName": "ic_code_24px.svg"
+    },
+    {
+      "fileName": "ic_comment_24px.svg"
+    },
+    {
+      "fileName": "ic_contact_page_24px.svg"
+    },
+    {
+      "fileName": "ic_content_copy_24px.svg"
+    },
+    {
+      "fileName": "ic_coronavirus_24px.svg"
+    },
+    {
+      "fileName": "ic_credit_card_24px.svg"
+    },
+    {
+      "fileName": "ic_delete_24px.svg"
+    },
+    {
+      "fileName": "ic_do_not_disturb_24px.svg"
+    },
+    {
+      "fileName": "ic_drag_handle_24px.svg"
+    },
+    {
+      "fileName": "ic_edit_24px.svg"
+    },
+    {
+      "fileName": "ic_error_24px.svg"
+    },
+    {
+      "fileName": "ic_event_24px.svg"
+    },
+    {
+      "fileName": "ic_expand_less_24px.svg"
+    },
+    {
+      "fileName": "ic_expand_more_24px.svg"
+    },
+    {
+      "fileName": "ic_fast_forward_24px.svg"
+    },
+    {
+      "fileName": "ic_fast_rewind_24px.svg"
+    },
+    {
+      "fileName": "ic_favorite_24px.svg"
+    },
+    {
+      "fileName": "ic_favorite_border_24px.svg"
+    },
+    {
+      "fileName": "ic_file_download_24px.svg"
+    },
+    {
+      "fileName": "ic_file_present_24px.svg"
+    },
+    {
+      "fileName": "ic_file_upload_24px.svg"
+    },
+    {
+      "fileName": "ic_filter_alt_24px.svg"
+    },
+    {
+      "fileName": "ic_filter_list_24px.svg"
+    },
+    {
+      "fileName": "ic_first_page_24px.svg"
+    },
+    {
+      "fileName": "ic_flag_24px.svg"
+    },
+    {
+      "fileName": "ic_folder_24px.svg"
+    },
+    {
+      "fileName": "ic_folder_open_24px.svg"
+    },
+    {
+      "fileName": "ic_format_quote_24px.svg"
+    },
+    {
+      "fileName": "ic_format_size_24px.svg"
+    },
+    {
+      "fileName": "ic_forum_24px.svg"
+    },
+    {
+      "fileName": "ic_github_24px.svg"
+    },
+    {
+      "fileName": "ic_grid_view_24px.svg"
+    },
+    {
+      "fileName": "ic_group_add_24px.svg"
+    },
+    {
+      "fileName": "ic_groups_24px.svg"
+    },
+    {
+      "fileName": "ic_hearing_24px.svg"
+    },
+    {
+      "fileName": "ic_help_24px.svg"
+    },
+    {
+      "fileName": "ic_highlight_off_24px.svg"
+    },
+    {
+      "fileName": "ic_history_24px.svg"
+    },
+    {
+      "fileName": "ic_home_24px.svg"
+    },
+    {
+      "fileName": "ic_identification_24px.svg"
+    },
+    {
+      "fileName": "ic_image_24px.svg"
+    },
+    {
+      "fileName": "ic_info_24px.svg"
+    },
+    {
+      "fileName": "ic_insights_24px.svg"
+    },
+    {
+      "fileName": "ic_keyboard_24px.svg"
+    },
+    {
+      "fileName": "ic_label_24px.svg"
+    },
+    {
+      "fileName": "ic_language_24px.svg"
+    },
+    {
+      "fileName": "ic_last_page_24px.svg"
+    },
+    {
+      "fileName": "ic_launch_24px.svg"
+    },
+    {
+      "fileName": "ic_layers_24px.svg"
+    },
+    {
+      "fileName": "ic_link_24px.svg"
+    },
+    {
+      "fileName": "ic_link_off_24px.svg"
+    },
+    {
+      "fileName": "ic_list_24px.svg"
+    },
+    {
+      "fileName": "ic_local_cafe_24px.svg"
+    },
+    {
+      "fileName": "ic_local_gas_station_24px.svg"
+    },
+    {
+      "fileName": "ic_local_grocery_store_24px.svg"
+    },
+    {
+      "fileName": "ic_location_on_24px.svg"
+    },
+    {
+      "fileName": "ic_lock_24px.svg"
+    },
+    {
+      "fileName": "ic_lock_open_24px.svg"
+    },
+    {
+      "fileName": "ic_loop_24px.svg"
+    },
+    {
+      "fileName": "ic_mail_24px.svg"
+    },
+    {
+      "fileName": "ic_menu_24px.svg"
+    },
+    {
+      "fileName": "ic_more_horiz_24px.svg"
+    },
+    {
+      "fileName": "ic_more_vert_24px.svg"
+    },
+    {
+      "fileName": "ic_my_location_24px.svg"
+    },
+    {
+      "fileName": "ic_navigate_before_24px.svg"
+    },
+    {
+      "fileName": "ic_navigate_next_24px.svg"
+    },
+    {
+      "fileName": "ic_navigate_far_before_24px.svg"
+    },
+    {
+      "fileName": "ic_navigate_far_next_24px.svg"
+    },
+    {
+      "fileName": "ic_near_me_24px.svg"
+    },
+    {
+      "fileName": "ic_notifications_24px.svg"
+    },
+    {
+      "fileName": "ic_notifications_active_24px.svg"
+    },
+    {
+      "fileName": "ic_notifications_none_24px.svg"
+    },
+    {
+      "fileName": "ic_notifications_off_24px.svg"
+    },
+    {
+      "fileName": "ic_people_24px.svg"
+    },
+    {
+      "fileName": "ic_person_24px.svg"
+    },
+    {
+      "fileName": "ic_phone_24px.svg"
+    },
+    {
+      "fileName": "ic_photo_camera_24px.svg"
+    },
+    {
+      "fileName": "ic_print_24px.svg"
+    },
+    {
+      "fileName": "ic_priority_high_24px.svg"
+    },
+    {
+      "fileName": "ic_push_pin_24px.svg"
+    },
+    {
+      "fileName": "ic_remove_24px.svg"
+    },
+    {
+      "fileName": "ic_remove_circle_24px.svg"
+    },
+    {
+      "fileName": "ic_report_24px.svg"
+    },
+    {
+      "fileName": "ic_rss_feed_24px.svg"
+    },
+    {
+      "fileName": "ic_save_alt_24px.svg"
+    },
+    {
+      "fileName": "ic_schedule_24px.svg"
+    },
+    {
+      "fileName": "ic_search_24px.svg"
+    },
+    {
+      "fileName": "ic_security_24px.svg"
+    },
+    {
+      "fileName": "ic_send_24px.svg"
+    },
+    {
+      "fileName": "ic_settings_24px.svg"
+    },
+    {
+      "fileName": "ic_share_24px.svg"
+    },
+    {
+      "fileName": "ic_shield_24px.svg"
+    },
+    {
+      "fileName": "ic_sort_arrow_24px.svg"
+    },
+    {
+      "fileName": "ic_spellcheck_24px.svg"
+    },
+    {
+      "fileName": "ic_star_24px.svg"
+    },
+    {
+      "fileName": "ic_star_half_24px.svg"
+    },
+    {
+      "fileName": "ic_star_outline_24px.svg"
+    },
+    {
+      "fileName": "ic_text_fields_24px.svg"
+    },
+    {
+      "fileName": "ic_thumb_down_24px.svg"
+    },
+    {
+      "fileName": "ic_thumb_up_24px.svg"
+    },
+    {
+      "fileName": "ic_timer_24px.svg"
+    },
+    {
+      "fileName": "ic_trending_down_24px.svg"
+    },
+    {
+      "fileName": "ic_trending_up_24px.svg"
+    },
+    {
+      "fileName": "ic_undo_24px.svg"
+    },
+    {
+      "fileName": "ic_unfold_less_24px.svg"
+    },
+    {
+      "fileName": "ic_unfold_more_24px.svg"
+    },
+    {
+      "fileName": "ic_update_24px.svg"
+    },
+    {
+      "fileName": "ic_upload_file_24px.svg"
+    },
+    {
+      "fileName": "ic_verified_user_24px.svg"
+    },
+    {
+      "fileName": "ic_visibility_24px.svg"
+    },
+    {
+      "fileName": "ic_visibility_off_24px.svg"
+    },
+    {
+      "fileName": "ic_volume_off_24px.svg"
+    },
+    {
+      "fileName": "ic_warning_24px.svg"
+    },
+    {
+      "fileName": "ic_wifi_24px.svg"
+    },
+    {
+      "fileName": "ic_work_24px.svg"
+    },
+    {
+      "fileName": "ic_zoom_in_24px.svg"
+    },
+    {
+      "fileName": "ic_zoom_out_map_24px.svg"
+    },
+    {
+      "fileName": "ic_zoom_out_24px.svg"
+    }
+  ]
+}

@@ -6,9 +6,81 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  // URL to JSON is located here "https://fonts.google.com/metadata/icons"
+  var MDOfficial = grunt.file.readJSON("_data/MDOfficial.json");
+  var FPACIconsList = grunt.file.readJSON("_data/fpac-material-icons-list.json");
+  var MDIcons = MDOfficial.icons;
+  
+  // start building icons JSON string
+  var iconsList = '{"icons":[';
+  var iconsStr = "";
+  var hasRun = false;
+  var cats = [];
+  var count = 0;
+
+  grunt.file.recurse('img/material-design-icons', createFileList);
+
+  function createFileList(abspath, rootdir, subdir, fileName){
+    var cat = '';
+    var pop = '1';
+    // strip fileName of extra details
+    var fn = fileName.split("_24px")[0].split("ic_")[1];
+    // search thru official Material Design Icons data for object
+    var newObj = MDIcons.find(obj => obj.name == fn);
+    var iconName, iconTags;
+    var svg = grunt.file.read(String( abspath ));
+    // Clearn svg string of characters that cause JSON parsing errors
+    svg = svg.replace(/[\n\r]+/g,'');
+    svg = svg.replace(/\s\s+/g, ' ');
+    svg = svg.replace(/"/g, "'");
+
+    // Assign truthy value if icon is FPAC Design System default
+    var showDS = FPACIconsList.icons.some( item => item.fileName === fileName );
+
+    if(newObj != undefined){
+      // create the display name for the icon
+      iconName = newObj.name.split("_").join(" ");
+      // ensure the keywords list is populated
+      iconTags = String(newObj.tags) == "" ? iconName.split("_").join(",") : newObj.tags;
+      cat = newObj.categories.toString();
+      cats.push( cat );
+      pop = parseInt( newObj.popularity ) > 0 ? newObj.popularity : '1';
+    } else {
+      // create the display name for the icon
+      iconName = fn.split("_").join(" ");
+      // ensure the keywords list is populated
+      iconTags = iconName.split("_").join(",");
+    };
+    // Used only for Development/Testing
+    count++;
+    //continue building icons JSON string
+    iconsStr += '{"name":"'+String(iconName)+'",';
+    iconsStr += '"fileName":"'+String(fileName)+'",';
+    iconsStr += '"category":"'+String(cat)+'",';
+    iconsStr += '"popularity":"'+String(pop)+'",';
+    iconsStr += '"keywords":"'+String(iconTags)+'",'
+    iconsStr += '"svg":"'+String(svg)+'",';
+    iconsStr += '"showDS":"'+showDS+'"},';
+    
+  };
+  if(!hasRun) {
+    hasRun = true;
+    // Used only for Development/Testing
+    console.log("ICON COUNT", count);
+    // finalize building icons JSON string
+    iconsList += iconsStr.slice(0,-1) +'],';
+    // Add Categories List to JSON file and finalize string
+    var catsArray = [...new Set(cats)];
+    var catsString = '"';
+    catsArray.forEach(item => { catsString += String(item + '","') });
+    catsString = catsString.slice(0,-2);
+    iconsList += '"categories":['+ catsString +']}';
+    // ensure string is in JSON format
+    iconsJson = JSON.parse(JSON.stringify(iconsList));
+  }
+  
   // Listing Tasks
   grunt.initConfig({
-
     pkg: grunt.file.readJSON('package.json'),
 
     // shell commands for use in Grunt tasks
@@ -18,6 +90,18 @@ module.exports = function (grunt) {
       },
       jekyllServe: {
         command: "bundle exec jekyll serve"
+      }
+    },
+
+    'string-replace': {
+      dist: {
+        files: { 'data/icons.json': '_data/icons-blank.json'},
+        options: {
+          replacements: [{
+            pattern: '{}',
+            replacement: iconsJson
+          }]
+        }
       }
     },
 
@@ -64,8 +148,7 @@ module.exports = function (grunt) {
         src: '**',
         cwd: 'node_modules/fsa-style/src/js/vendor',
         dest: 'js/vendor'
-      },
-
+      }
     },
 
     // Lint scss files
@@ -173,10 +256,10 @@ module.exports = function (grunt) {
       }
     },
 
-    // run tasks in parallel
+    // run tasks in parallel --- "start": "grunt concurrent:serve"
     concurrent: {
       serve: [
-        'build',
+        'shell:jekyllServe',
         'watch'
       ],
       options: {
@@ -186,15 +269,20 @@ module.exports = function (grunt) {
 
   });
 
+
+  grunt.loadNpmTasks('grunt-string-replace');
+
   // Register Tasks
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default', ['build', 'string-replace']);
   grunt.registerTask('build', [
     'copy',
     'sass',
     'postcss',
     'browserify',
     'uglify',
+    'string-replace',
     'shell:jekyllServe',
+    'watch'
   ]);
   grunt.registerTask('server', ['shell:jekyllServe']);
   grunt.registerTask('lint', 'scsslint');

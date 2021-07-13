@@ -835,34 +835,34 @@ dfn {
   margin-top: 1.5em;
 }
 
-/*---
-TITLE:
-DEPTH Mixin
-
-DESCRIPTION:
-Use this mixin to debug nested DOM levels
-
-USAGE:
-```scss
-.depth {
-  // root gets bg
-  @include depth;
-
-  // root does *NOT* get bg
-  &--no-root {
-    @include depth(false);
-  }
-}
-```
-
-```html
-<div class="depth">
-  <div class="depth__child">
-    <div class="depth__grandchild"></div>
-  </div>
-  <div class="depth__child"></div>
-</div>
-```
+/*---
+TITLE:
+DEPTH Mixin
+
+DESCRIPTION:
+Use this mixin to debug nested DOM levels
+
+USAGE:
+```scss
+.depth {
+  // root gets bg
+  @include depth;
+
+  // root does *NOT* get bg
+  &--no-root {
+    @include depth(false);
+  }
+}
+```
+
+```html
+<div class="depth">
+  <div class="depth__child">
+    <div class="depth__grandchild"></div>
+  </div>
+  <div class="depth__child"></div>
+</div>
+```
 */
 html body [depth] *, html body
 .depth * {
@@ -1027,19 +1027,19 @@ html body [depth]--no-root * * * * * * * * *, html body
   background-color: rgba(0, 0, 255, 0.08);
 }
 
-/*---
-TITLE:
-outline
-
-DESCRIPTION:
-Use this class to merely outline something
-
-USAGE:
-```html
-<div class="existing-thing outline"></div>
-...OR...
-<div class="existing-thing" outline></div>
-```
+/*---
+TITLE:
+outline
+
+DESCRIPTION:
+Use this class to merely outline something
+
+USAGE:
+```html
+<div class="existing-thing outline"></div>
+...OR...
+<div class="existing-thing" outline></div>
+```
 */
 [outline],
 .outline {
@@ -20361,12 +20361,12 @@ html:hover body::before {
   --grid-demo-repeating-width: calc(100% / var(--grid-demo-columns));
   --grid-demo-column-width: calc((100% / var(--grid-demo-columns)) - var(--grid-demo-gutter));
   --grid-demo-background-width: calc(100% + var(--grid-demo-gutter));
-  --grid-demo-background-columns: repeating-linear-gradient(
-    to right,
-    var(--grid-demo-bgcolor),
-    var(--grid-demo-bgcolor) var(--grid-demo-column-width),
-    transparent var(--grid-demo-column-width),
-    transparent var(--grid-demo-repeating-width)
+  --grid-demo-background-columns: repeating-linear-gradient(
+    to right,
+    var(--grid-demo-bgcolor),
+    var(--grid-demo-bgcolor) var(--grid-demo-column-width),
+    transparent var(--grid-demo-column-width),
+    transparent var(--grid-demo-repeating-width)
   );
 }
 
@@ -20992,12 +20992,12 @@ html:hover body::before {
 
 .docs__grid-inventory .docs__grid-inventory {
   --grid-demo-bgcolor-nest: #bfe9f4;
-  --grid-demo-background-columns-nest: repeating-linear-gradient(
-        to right,
-        var(--grid-demo-bgcolor-nest),
-        var(--grid-demo-bgcolor-nest) var(--grid-demo-column-width),
-        transparent var(--grid-demo-column-width),
-        transparent var(--grid-demo-repeating-width)
+  --grid-demo-background-columns-nest: repeating-linear-gradient(
+        to right,
+        var(--grid-demo-bgcolor-nest),
+        var(--grid-demo-bgcolor-nest) var(--grid-demo-column-width),
+        transparent var(--grid-demo-column-width),
+        transparent var(--grid-demo-repeating-width)
       );
   background-image: var(--grid-demo-background-columns-nest);
 }
@@ -22963,12 +22963,111 @@ html:hover body::before {
   display: none !important;
 }
 
-.OUTLINE {
-  outline: 1px solid red;
+.docs__icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-/**
- * Syntax highlighting styles
+@media (min-width: 30.0625em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 37.5em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 54em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 78.75em) {
+  .docs__icons {
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.docs__icons__link img {
+  background-color: pink;
+}
+
+.docs__icons__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 24px 8px;
+  padding: 2.4rem 0.8rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.docs__icons__link:visited {
+  color: inherit;
+}
+
+.docs__icons__link:hover {
+  color: #0068ad;
+  background-color: #dee5ef;
+}
+
+.docs__icons__link--clicked img {
+  background-color: pink;
+}
+
+.docs__icons__link--clicked {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 24px 8px;
+  padding: 2.4rem 0.8rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  background-color: #dee8e0;
+}
+
+.docs__icons__caption {
+  margin-top: 8px;
+  margin-top: 0.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.docs__icons__caption--clicked {
+  text-align: center;
+  padding: 8px;
+  padding: 0.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #236430;
+}
+
+/**
+ * Syntax highlighting styles
  */
 .highlighter-rouge + .highlighter-rouge {
   margin-top: -2em;
@@ -23264,5 +23363,5 @@ html:hover body::before {
 
 .highlight .il {
   color: #099;
-}
+}
 /*# sourceMappingURL=../_site/css/fsa-design-system.css.map */

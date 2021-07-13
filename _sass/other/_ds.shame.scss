@@ -2,3 +2,203 @@
 .OUTLINE {
   outline: 1px solid red;
 }
+
+.ds-icn {
+  &__github {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: $size-base;
+    width: $size-medium;
+    height: $size-medium;
+    margin-top: -2px;
+  }
+}
+
+.ds-btn {
+
+  $button-download        : $color-fsa-primary-900;
+  $button-download-text   : $button-text;
+  $button-download-hover  : shade($button-download, 25%);
+  $button-download-active : shade($button-download, 45%);
+
+  &--start {
+
+    background-color: $button-download;
+    color: $button-download-text;
+
+    &:visited {
+      color: $button-download-text;
+    }
+
+    // &:hover {
+    //   color: $button-download-text;
+    // }
+
+    // &:hover:not([disabled]) {
+    //   background-color: $button-download-hover;
+    // }
+
+    &:hover:not([disabled]),
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $button-download-text;
+      background-color: $button-download-active;
+    }
+
+    &.is-active {
+
+      $getting-started-active-color: $color-fsa-site-bg;
+
+      background-color: $getting-started-active-color;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      color: $color-fsa-base;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        height: ($size-default + .1rem); // magic number
+        background-color: $getting-started-active-color;
+      }
+
+      &:focus:after,
+      &:hover:after {
+        background-color: $button-download-hover;
+      }
+
+    }
+
+  }
+
+}
+
+.ds-screen {
+  border: 1px solid $color-fsa-tertiary-200;
+  box-shadow: 0 0 $size-base transparentize($color-fsa-tertiary-200, .1);
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+// This isn't broken in fsa-style, but is with Ruby-based Sass, which strips out the :not() rule
+.fsa-table__sort:hover:not(.fsa-table__sort--descending, .fsa-table__sort--ascending):after {
+  background-image: url('#{$image-path}/chevron-up.png');
+  background-image: url('#{$image-path}/chevron-up.svg');
+  opacity: .4;
+}
+
+// This isn't broken in fsa-style, but for is with Ruby-based Sass
+// scss-lint:disable QualifyingElement
+span.fsa-stepped-tabs__label,
+div.fsa-stepped-tabs__label {
+  cursor: initial;
+}
+
+.ds-code-toggle {
+
+  padding-right: $size-default;
+  padding-left: $size-default;
+
+  label {
+    margin-right: 0;
+    font-weight: $font-bold;
+  }
+
+}
+
+.docs__rwd-embed {
+  margin-top: $size-medium;
+}
+
+.docs__rwd-demo-block {
+  text-align: center;
+  h2[id] + & {
+    margin-top: -15px;
+    border-top: 0;
+  }
+}
+
+.docs__rwd-embed-container {
+  padding: $size-medium $size-default;
+}
+
+html:hover body::before {
+  // scss-lint:disable ImportantRule
+  display: none !important; // hide breakpoint bar
+}
+
+.docs__icons {
+  & {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include breakpoint(S) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint(M) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include breakpoint(L) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @include breakpoint(XL) {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  & > * {
+  }
+  &__link {
+    img {
+      background-color: pink;
+    }
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: $size-medium $size-small;
+      color: inherit;
+      text-decoration: none;
+      border-radius: $radius-s;
+    }
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      color: $color-fsa-link;
+      background-color: $color-fsa-secondary-100;
+    }
+  }
+  &__link--clicked {
+    img {
+      background-color: pink;
+    }
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+      padding: $size-medium $size-small;
+      color: inherit;
+      text-decoration: none;
+      border-radius: $radius-s;
+      background-color: $color-fsa-primary-100;
+    }    
+  }
+  &__caption {
+    margin-top: $size-small;
+    font-size: $font-size-2;
+    line-height: 1;
+  }
+  &__caption--clicked {
+      text-align: center;
+      padding: $size-small;
+      font-size: $font-size-2;
+      line-height: 1;
+      color: $color-fsa-primary;
+  }
+}
