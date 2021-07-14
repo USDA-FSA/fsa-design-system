@@ -3,11 +3,6 @@
   outline: 1px solid red;
 }
 
-html:hover body::before {
-  // scss-lint:disable ImportantRule
-  display: none !important; // hide breakpoint bar
-}
-
 .docs__icons {
   & {
     display: grid;

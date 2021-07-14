@@ -22991,10 +22991,6 @@ html:hover body::before {
   outline: 1px solid red;
 }
 
-html:hover body::before {
-  display: none !important;
-}
-
 .docs__icons {
   display: -ms-grid;
   display: grid;
