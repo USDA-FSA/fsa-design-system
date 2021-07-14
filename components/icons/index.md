@@ -53,6 +53,12 @@ relatedItems:
   </div>
 </div>
 
+<!-- used to populate JSON into textarea
+<div>
+  <textarea id="thejson" class="fsa-textarea fsa-textarea--small" name="Name" placeholder="Placeholder"></textarea>
+</div>
+-->
+
 <div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
   <h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none">
     <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
