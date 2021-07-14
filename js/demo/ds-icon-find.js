@@ -72,7 +72,7 @@ if ('serviceWorker' in navigator) {
         newHTML += `<figcaption class='docs__icons__caption'>${item.name}</figcaption> </a>`;
       });
       icf.buildIconsHolder(newHTML);
-      icf.buildCountHolder(`<span class="fsa-level fsa-level--justify-between fsa-level--align-baseline"><span>Previewing <strong>${icf.displayCount} of ${icf.iconsCount}</strong> available icons</span> <span id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300 fsa-font--sans fsa-text-size--3">Click an icon to copy its code snippet</span></span>`);
+      icf.buildCountHolder(`<div class="fsa-level@m fsa-level--justify-between@m fsa-level--align-baseline@m"><div aria-live="polite">Previewing <strong>${icf.displayCount} of ${icf.iconsCount}</strong> available icons</div><div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300 fsa-font--sans fsa-text-size--3">Click an icon to copy its code snippet</div></div>`);
     },
 
     buildIconsHolder: function(newHTML){
@@ -205,8 +205,7 @@ if ('serviceWorker' in navigator) {
         el: el
       })
       el.classList.add('docs__icons__link--clicked');
-      el.classList.remove('docs__icons__link');
-      el.innerHTML = `<span class="docs__icons__caption--clicked">Icon SVG copied to Clipboard</span>`;
+      el.innerHTML = `<span class="fsa-level fsa-level--align-top fsa-level--gutter-xs"><span><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg></span><span style="flex:0;">Copied to Clipboard</span></span>`;
       window.setTimeout(icf.resetIcon, icf.clickedIconDelay);
     },
 
@@ -214,7 +213,6 @@ if ('serviceWorker' in navigator) {
       let icons = icf.clickedIconsArray.forEach( (icon) => {
         icon.el.innerHTML = icon.prevHTML;
         icon.el.classList.remove('docs__icons__link--clicked');
-        icon.el.classList.add('docs__icons__link');
       })
     },
 

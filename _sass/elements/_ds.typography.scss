@@ -11,6 +11,7 @@ h2[id] {
         display: block;
         height: $fudge-amount;
         margin: (-$fudge-amount) 0 0;
+        pointer-events: none;
       }
     }
 

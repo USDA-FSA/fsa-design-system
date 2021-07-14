@@ -39,7 +39,7 @@ relatedItems:
 {% include preview-and-snippet.html %}
 
 ## Find an Icon
-<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
+<div class="fsa-level@m fsa-level--justify-between@m fsa-level--align-baseline@m">
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-find">Find an Icon</label>
     <input class="fsa-input fsa-input--large fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
@@ -53,7 +53,7 @@ relatedItems:
   </div>
 </div>
 
-<h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none">
+<h3 id="ds-icon-find__icon-list-title-id" class="fsa-m-t--none">
   <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
     <div class="fsa-progress__details">
       <div class="fsa-progress__label">Loading icons...</div>
