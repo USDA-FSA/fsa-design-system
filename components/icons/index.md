@@ -39,7 +39,7 @@ relatedItems:
 {% include preview-and-snippet.html %}
 
 ## Find an Icon
-<div class="fsa-level fsa-level--justify-between">
+<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-find">Find an Icon</label>
     <input class="fsa-input fsa-input--large fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
@@ -53,21 +53,17 @@ relatedItems:
   </div>
 </div>
 
-<div class="fsa-level fsa-level--justify-between fsa-level--align-baseline">
-  <h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none">
-    <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
-      <div class="fsa-progress__details">
-        <div class="fsa-progress__label">Loading icons... please wait.</div>
-      </div>
-      <div class="fsa-progress__bar" aria-hidden="true">
-        <div class="fsa-progress__primary"></div>
-        <div class="fsa-progress__secondary"></div>
-      </div>
+<h3 id="ds-icon-find__icon-list-title-id" aria-live="polite" class="fsa-m--none">
+  <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
+    <div class="fsa-progress__details">
+      <div class="fsa-progress__label">Loading icons...</div>
     </div>
-  </h3>
-  
-  <div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300">Click an icon to copy its code snippet</div>
-</div>
+    <div class="fsa-progress__bar" aria-hidden="true">
+      <div class="fsa-progress__primary"></div>
+      <div class="fsa-progress__secondary"></div>
+    </div>
+  </div>
+</h3>
 
 <div id="ds-icon-find-results-id" class="docs__icons" aria-labelledby="ds-icon-find__icon-list-title" aria-describedby="ds-icon-find__icon-list-desc">
 <!-- Icons will display here dynamically. -->

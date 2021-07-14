@@ -72,7 +72,7 @@ if ('serviceWorker' in navigator) {
         newHTML += `<figcaption class='docs__icons__caption'>${item.name}</figcaption> </a>`;
       });
       icf.buildIconsHolder(newHTML);
-      icf.buildCountHolder(`Previewing <strong>${icf.displayCount} of ${icf.iconsCount}</strong> available icons`);
+      icf.buildCountHolder(`<span class="fsa-level fsa-level--justify-between fsa-level--align-baseline"><span>Previewing <strong>${icf.displayCount} of ${icf.iconsCount}</strong> available icons</span> <span id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300 fsa-font--sans fsa-text-size--3">Click an icon to copy its code snippet</span></span>`);
     },
 
     buildIconsHolder: function(newHTML){
@@ -99,7 +99,7 @@ if ('serviceWorker' in navigator) {
       var arr = icf.iconsArray.filter( item => item.showDS == "true" ? true : false);
       return arr;
     },
- 
+
     doSearch: function( phrase ){
       let arr = icf.iconsArray;
       let lowPhrase = phrase.toLowerCase();
@@ -135,7 +135,7 @@ if ('serviceWorker' in navigator) {
             if(matches.length < 1) icf.buildSearchCollection(icf.search.value);
             // End
 
-            // Put matches in ABC order            
+            // Put matches in ABC order
             matches.sort( (a,b) => a.name - b.name );
 
             if( matches.length > 0 ) {
@@ -151,7 +151,7 @@ if ('serviceWorker' in navigator) {
 
     setCategory: function(sel){
       var cat = sel.value;
-      
+
       if(cat!=""){
         if(cat == "popular"){
           icf.buildIcons( icf.getPopularIcons(icf.popularThreshold) );
