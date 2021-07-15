@@ -785,6 +785,54 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 
 {% include preview-and-snippet.html %}
 
+### With Aside
+
+{% capture snippet %}
+<nav>
+  <div class="fsa-nav-global">
+    <div class="fsa-nav-global__bd">
+      <ul class="fsa-nav-global__list" aria-label="Primary Navigation" id="primary-navigation-99">
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link fsa-nav-global__link--active" href="link.html">
+            <span class="fsa-nav-global__text">Home</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+        <li class="fsa-nav-global__list-item">
+          <a class="fsa-nav-global__link" href="link.html">
+            <span class="fsa-nav-global__text">[item]</span>
+          </a>
+        </li>
+      </ul>
+      <div class="fsa-nav-global__aside">
+        Optional aside
+      </div>
+    </div>
+  </div>
+</nav>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ### With Search
 
 {% capture snippet %}
