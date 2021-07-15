@@ -39,14 +39,14 @@ relatedItems:
 {% include preview-and-snippet.html %}
 
 ## Find an Icon
-<div class="fsa-level@m fsa-level--justify-between@m fsa-level--align-baseline@m">
+<div class="fsa-level fsa-level--justify-between">
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-find">Find an Icon</label>
-    <input class="fsa-input fsa-input--large fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
+    <input class="fsa-input fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
   </div>
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-filter">Filter Icons</label>
-    <select onchange="IconFinder.setCategory(this)" data-most-popular="49" class="fsa-select fsa-select--large fsa-field__item" id="ds-icon-filter" aria-describedby="ds-icon-filter-help" aria-required="true" name="ds-icon-filter">
+    <select onchange="IconFinder.setCategory(this)" data-most-popular="49" class="fsa-select fsa-field__item" id="ds-icon-filter" aria-describedby="ds-icon-filter-help" aria-required="true" name="ds-icon-filter">
       <option value="" selected="selected">Select a Category</option>
       <option value="popular">Most Popular</option>
     </select>
