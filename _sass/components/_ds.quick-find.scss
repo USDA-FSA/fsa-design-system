@@ -53,6 +53,9 @@
       z-index: 2;
       overflow: auto;
       max-height: 45vh;
+      &:empty {
+        display: none;
+      }
     }
     &__output-item  {
       & {

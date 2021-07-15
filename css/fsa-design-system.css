@@ -22638,6 +22638,9 @@ pre.highlight .ds-clipboard {
     overflow: auto;
     max-height: 45vh;
   }
+  .ds-quick-find__output:empty {
+    display: none;
+  }
   .ds-quick-find__output-item {
     display: list-item;
     margin: 0;
