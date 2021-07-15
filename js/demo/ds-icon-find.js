@@ -127,7 +127,7 @@ if ('serviceWorker' in navigator) {
       return function(){
 
         if(icf.search.value!=''){ // isn't empty
-          if(icf.search.value.length > 1){ // run only if at least 2 characters
+          if(icf.search.value.length > 2){ // run only if at least 3 characters
             // aray of objects
             let matches = icf.doSearch( icf.search.value );
 
@@ -188,8 +188,7 @@ if ('serviceWorker' in navigator) {
       var svgs = [...el.querySelectorAll('svg')];
       // grab the HTML string value of the object SVGElement
       var svg = svgs[0].outerHTML;
-      var data = [new ClipboardItem({ "text/plain": new Blob([svg], { type: "text/plain" }) })];
-      navigator.clipboard.write(data).then(function() {
+      navigator.clipboard.writeText(svg).then(function() {
         console.log("Copied ["+iconName+"] SVG to clipboard successfully!");
         // track in GA what was copied
         IconFinderTracker.trackSelected( iconName );
