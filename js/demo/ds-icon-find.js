@@ -180,6 +180,20 @@ if ('serviceWorker' in navigator) {
         return  b.popularity - a.popularity;
       });
       var arr = icf.iconsArray.slice(0,threshold);
+      /*
+      Uncomment this out to populate the textarea with JSON 
+
+      var val = `{
+        "icons":[`
+      arr.forEach((item)=>{
+        val += `{
+          "fileName": "${item.fileName}"
+        },`
+      })
+      val += `]
+    }`
+      document.getElementById('thejson').value = val;
+      */
       return arr;
     },
 
