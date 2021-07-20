@@ -51,4 +51,12 @@ if ($swatchItem.length) { // only run if at least one instance
   });
 }
 
+$('body').on('change', '[data-behavior~="toggle-demo-background"]', function(event) {
+
+  var $self = $(this);
+  var $target = $('#' + $self.data('target'));
+  $target.toggleClass('fsa-bg--tertiary-900');
+
+})
+
 console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');

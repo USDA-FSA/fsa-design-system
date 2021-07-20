@@ -54,6 +54,1235 @@ A simple example adjusting a component's [margins](#margins). Here's the default
 
 Below are the complete set of CSS Utilities for overriding or extending an element's or component's visual properties, including **Responsive** scopes to adjust at targeted breakpoints.
 
+## Border Width
+
+<p class="fsa-text--lead">Selectively add or adjust border thickness.</p>
+
+### Variations
+
+#### All
+```html
+<element class="fsa-border--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--l"><code>l</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border--custom" style="--custom-border-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Top
+
+```html
+<element class="fsa-border-top--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--l"><code>l</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-top--custom" style="--custom-border-top-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Right
+
+```html
+<element class="fsa-border-right--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--l"><code>l</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-right--custom" style="--custom-border-right-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Bottom
+
+```html
+<element class="fsa-border-bottom--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--l"><code>custom</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-bottom--custom" style="--custom-border-bottom-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+#### Left
+
+```html
+<element class="fsa-border-left--[SIZE]">...</element>
+```
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--none"><code>none</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--xxs"><code>xxs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--xs"><code>xs</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--s"><code>s</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--m"><code>m</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--l"><code>custom</code></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__auto@m">
+    <div class="fsa-bg--white fsa-p--xs fsa-border-left--custom" style="--custom-border-left-width: 32px"><code>custom</code></div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Border Width at any Media Query breakpoint.
+
+<p>
+  <code>class="fsa-border--<strong>[variation]@[breakpoint]</strong>"</code>
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Border Radius
+
+<p class="fsa-text--lead">Selectively add or adjust rounded corners.</p>
+
+### Variations
+
+```html
+<element class="fsa-border-radius--[SIZE]">...</element>
+```
+
+<div class="fsa-grid fsa-m-b--s">
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>none</code>
+    <div class="fsa-radius--none fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>s</code>
+    <div class="fsa-radius--s fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>m</code>
+    <div class="fsa-radius--m fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>l</code>
+    <div class="fsa-radius--l fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+</div>
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>full</code>
+    <div class="fsa-radius--full fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/4@m">
+    <code>oval</code>
+    <div class="fsa-radius--oval fsa-bg--aqua-900 fsa-color--aqua-100 fsa-p--l"></div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply rounded corners at any Media Query breakpoint.
+
+<p>
+  <code>class="fsa-border-radius--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-radius.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+
+## Border Between
+
+<p class="fsa-text--lead">Selectively add or adjust borders <strong>between</strong> blocks of content.</p>
+
+### Direction
+
+#### Vertical
+
+```html
+<element class="fsa-border-between-vertical--[SIZE]">
+  <el>1</el>
+  <!-- border appears here -->
+  <el>2</el>
+  <!-- border appears here -->
+  <el>3</el>
+</element>
+```
+
+<div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+#### Horizontal
+
+```html
+<element class="fsa-border-between-horizontal--[SIZE]">
+  <el>1</el>
+  <!-- border appears here -->
+  <el>2</el>
+  <!-- border appears here -->
+  <el>3</el>
+</element>
+```
+
+<div class="fsa-border-between-horizontal--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+### Size
+
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>none</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--none">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>xxs</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>xs</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>s</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--s">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>m</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--m">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>l</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--l">
+      <div class="fsa-text-align--center">1</div>
+      <div class="fsa-text-align--center">2</div>
+      <div class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+  <div class="fsa-grid__1 fsa-grid__1/3@m">
+    <code>custom</code>
+    <div class="fsa-m-b--s fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--custom">
+      <div style="--custom-border-between-vertical: 32px;" class="fsa-text-align--center">1</div>
+      <div style="--custom-border-between-vertical: 32px;" class="fsa-text-align--center">2</div>
+      <div style="--custom-border-between-vertical: 32px;" class="fsa-text-align--center">3</div>
+    </div>
+  </div>
+</div>
+
+### Examples
+
+#### Vertical, combined with [Border Width](#border-width)
+
+```html
+<div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs fsa-border--xxs">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+<div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xxs fsa-border--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+#### Horizontal, combined with [Border Width](#border-width)
+
+```html
+<div class="fsa-border-between-horizontal--xxs fsa-border--xxs">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+<div class="fsa-border-between-horizontal--xxs fsa-border--xxs">
+  <div class="fsa-text-align--center fsa-text-size--6">1</div>
+  <div class="fsa-text-align--center fsa-text-size--6">2</div>
+  <div class="fsa-text-align--center fsa-text-size--6">3</div>
+</div>
+
+### Responsive
+
+Selectively apply at any Media Query breakpoint.
+
+<p>
+  <code>class="fsa-border-between-[DIRECTION]--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
+  <code>breakpoint</code> is one of
+  <code title="small">s</code>,
+  <code title="medium">m</code>,
+  <code title="large">l</code>, or
+  <code title="extra large">xl</code>
+</p>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Border
+
+<p class="fsa-text--lead">Selectively add or adjust border colors.</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-border-color" name="demo-background-border-color" data-target="demo-background-target-border-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-border-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-border-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--primary-900">fsa-border--primary-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--primary">fsa-border--primary</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--primary-300">fsa-border--primary-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--primary-200">fsa-border--primary-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--primary-100">fsa-border--primary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--secondary-900">fsa-border--secondary-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--secondary">fsa-border--secondary</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--secondary-300">fsa-border--secondary-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--secondary-200">fsa-border--secondary-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--secondary-100">fsa-border--secondary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-900">fsa-border--tertiary-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary">fsa-border--tertiary</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-300">fsa-border--tertiary-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200">fsa-border--tertiary-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-100">fsa-border--tertiary-100</div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--aqua-900">fsa-border--aqua-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--aqua">fsa-border--aqua</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--aqua-300">fsa-border--aqua-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--aqua-200">fsa-border--aqua-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--aqua-100">fsa-border--aqua-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--red-900">fsa-border--red-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--red">fsa-border--red</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--red-300">fsa-border--red-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--red-200">fsa-border--red-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--red-100">fsa-border--red-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--transparent">&nbsp;</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--yellow">fsa-border--yellow</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--yellow-300">fsa-border--yellow-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--yellow-200">fsa-border--yellow-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--yellow-100">fsa-border--yellow-100</div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--black">fsa-border--black</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--white">fsa-border--white</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--transparent">fsa-border--transparent</div>
+    </div>
+  </div>
+  <h4>Hover: Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--primary-900">fsa-border<strong>:hover</strong>--primary-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--primary">fsa-border<strong>:hover</strong>--primary</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--primary-300">fsa-border<strong>:hover</strong>--primary-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--primary-200">fsa-border<strong>:hover</strong>--primary-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--primary-100">fsa-border<strong>:hover</strong>--primary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--secondary-900">fsa-border<strong>:hover</strong>--secondary-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--secondary">fsa-border<strong>:hover</strong>--secondary</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--secondary-300">fsa-border<strong>:hover</strong>--secondary-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--secondary-200">fsa-border<strong>:hover</strong>--secondary-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--secondary-100">fsa-border<strong>:hover</strong>--secondary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--tertiary-900">fsa-border<strong>:hover</strong>--tertiary-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--tertiary">fsa-border<strong>:hover</strong>--tertiary</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--tertiary-300">fsa-border<strong>:hover</strong>--tertiary-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--tertiary-200">fsa-border<strong>:hover</strong>--tertiary-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--tertiary-100">fsa-border<strong>:hover</strong>--tertiary-100</div>
+    </div>
+  </div>
+  <h4>Hover: Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--aqua-900">fsa-border<strong>:hover</strong>--aqua-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--aqua">fsa-border<strong>:hover</strong>--aqua</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--aqua-300">fsa-border<strong>:hover</strong>--aqua-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--aqua-200">fsa-border<strong>:hover</strong>--aqua-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--aqua-100">fsa-border<strong>:hover</strong>--aqua-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--red-900">fsa-border<strong>:hover</strong>--red-900</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--red">fsa-border<strong>:hover</strong>--red</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--red-300">fsa-border<strong>:hover</strong>--red-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--red-200">fsa-border<strong>:hover</strong>--red-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--red-100">fsa-border<strong>:hover</strong>--red-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--transparent  fsa-border:hover--transparent">&nbsp;</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--yellow">fsa-border<strong>:hover</strong>--yellow</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--yellow-300">fsa-border<strong>:hover</strong>--yellow-300</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--yellow-200">fsa-border<strong>:hover</strong>--yellow-200</div>
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--yellow-100">fsa-border<strong>:hover</strong>--yellow-100</div>
+    </div>
+  </div>
+  <h4>Hover: Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--black">fsa-border<strong>:hover</strong>--black</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--white">fsa-border<strong>:hover</strong>--white</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-m-b--s fsa-border--xs fsa-border--tertiary-200 fsa-border:hover--transparent">fsa-border<strong>:hover</strong>--transparent</div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Border Colors at any Media Query breakpoint.
+
+<code>class="fsa-border--<strong>[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Border Between
+
+<p class="fsa-text--lead">Selectively add or adjust border colors <strong>between</strong> blocks of content.</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-border-between-color" name="demo-background-border-between-color" data-target="demo-background-target-border-between-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-border-between-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-border-between-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--primary-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--secondary-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--tertiary-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--aqua-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-900 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--red-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-m-b--s">
+        <div>&nbsp;</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow-300 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow-200 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--yellow-100 fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--black fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--white fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-level fsa-level--grow-even fsa-level--align-stretch fsa-border-between-vertical--xs fsa-border-between-vertical--transparent fsa-m-b--s">
+        <div class="fsa-text-align--center">1</div>
+        <div class="fsa-text-align--center">2</div>
+        <div class="fsa-text-align--center">3</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Border Between Color at any Media Query breakpoint.
+
+<code>class="fsa-border-between-<strong>[direction]--[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Background
+
+<p class="fsa-text--lead">Selectively add or adjust background colors</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-bg" name="demo-background-bg" data-target="demo-background-target-bg" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-bg">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-bg">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--primary-900">
+        <div class="fsa-color--white">fsa-bg--primary-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--primary">
+        <div class="fsa-color--white">fsa-bg--primary</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--primary-300">
+        <div class="fsa-color--white">fsa-bg--primary-300</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--primary-200">fsa-bg--primary-200</div>
+      <div class="fsa-p--xs fsa-bg--primary-100">fsa-bg--primary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--secondary-900">
+        <div class="fsa-color--white">fsa-bg--secondary-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--secondary">
+        <div class="fsa-color--white">fsa-bg--secondary</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--secondary-300">
+        <div class="fsa-color--white">fsa-bg--secondary-300</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--secondary-200">fsa-bg--secondary-200</div>
+      <div class="fsa-p--xs fsa-bg--secondary-100">fsa-bg--secondary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--tertiary-900">
+        <div class="fsa-color--white">fsa-bg--tertiary-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--tertiary">
+        <div class="fsa-color--white">fsa-bg--tertiary</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--tertiary-300">
+        <div class="fsa-color--white">fsa-bg--tertiary-300</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--tertiary-200">fsa-bg--tertiary-200</div>
+      <div class="fsa-p--xs fsa-bg--tertiary-100">fsa-bg--tertiary-100</div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--aqua-900">
+        <div class="fsa-color--white">fsa-bg--aqua-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--aqua">
+        <div class="fsa-color--white">fsa-bg--aqua</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--aqua-300">fsa-bg--aqua-300</div>
+      <div class="fsa-p--xs fsa-bg--aqua-200">fsa-bg--aqua-200</div>
+      <div class="fsa-p--xs fsa-bg--aqua-100">fsa-bg--aqua-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--red-900">
+        <div class="fsa-color--white">fsa-bg--red-900</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--red">
+        <div class="fsa-color--white">fsa-bg--red</div>
+      </div>
+      <div class="fsa-p--xs fsa-bg--red-300">fsa-bg--red-300</div>
+      <div class="fsa-p--xs fsa-bg--red-200">fsa-bg--red-200</div>
+      <div class="fsa-p--xs fsa-bg--red-100">fsa-bg--red-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs">&nbsp;</div>
+      <div class="fsa-p--xs fsa-bg--yellow">fsa-bg--yellow</div>
+      <div class="fsa-p--xs fsa-bg--yellow-300">fsa-bg--yellow-300</div>
+      <div class="fsa-p--xs fsa-bg--yellow-200">fsa-bg--yellow-200</div>
+      <div class="fsa-p--xs fsa-bg--yellow-100">fsa-bg--yellow-100</div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--black">
+        <div class="fsa-color--white">fsa-bg--black</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--white">fsa-bg--white</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--base">fsa-bg--base</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-p--xs fsa-bg--transparent">fsa-bg--transparent</div>
+    </div>
+  </div>
+  <h4>Hover: Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--primary-900">fsa-bg<strong>:hover</strong>--primary-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary">fsa-bg<strong>:hover</strong>--primary</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary-300">fsa-bg<strong>:hover</strong>--primary-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary-200">fsa-bg<strong>:hover</strong>--primary-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--primary-100">fsa-bg<strong>:hover</strong>--primary-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--secondary-900">fsa-bg<strong>:hover</strong>--secondary-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary">fsa-bg<strong>:hover</strong>--secondary</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary-300">fsa-bg<strong>:hover</strong>--secondary-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary-200">fsa-bg<strong>:hover</strong>--secondary-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--secondary-100">fsa-bg<strong>:hover</strong>--secondary-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-900">fsa-bg<strong>:hover</strong>--tertiary-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary">fsa-bg<strong>:hover</strong>--tertiary</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-300">fsa-bg<strong>:hover</strong>--tertiary-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-200">fsa-bg<strong>:hover</strong>--tertiary-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--tertiary-100">fsa-bg<strong>:hover</strong>--tertiary-100</div>
+      </div>
+    </div>
+  </div>
+  <h4>Hover: Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--aqua-900">fsa-bg<strong>:hover</strong>--aqua-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua">fsa-bg<strong>:hover</strong>--aqua</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua-300">fsa-bg<strong>:hover</strong>--aqua-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua-200">fsa-bg<strong>:hover</strong>--aqua-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--aqua-100">fsa-bg<strong>:hover</strong>--aqua-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--red-900">fsa-bg<strong>:hover</strong>--red-900</div>
+        <div class="fsa-p--xs fsa-bg:hover--red">fsa-bg<strong>:hover</strong>--red</div>
+        <div class="fsa-p--xs fsa-bg:hover--red-300">fsa-bg<strong>:hover</strong>--red-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--red-200">fsa-bg<strong>:hover</strong>--red-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--red-100">fsa-bg<strong>:hover</strong>--red-100</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs">&nbsp;</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow">fsa-bg<strong>:hover</strong>--yellow</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow-300">fsa-bg<strong>:hover</strong>--yellow-300</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow-200">fsa-bg<strong>:hover</strong>--yellow-200</div>
+        <div class="fsa-p--xs fsa-bg:hover--yellow-100">fsa-bg<strong>:hover</strong>--yellow-100</div>
+      </div>
+    </div>
+  </div>
+  <h4>Hover: Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--black">fsa-bg<strong>:hover</strong>--black</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--white">fsa-bg<strong>:hover</strong>--white</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--base">fsa-bg<strong>:hover</strong>--base</div>
+      </div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-border--xxs fsa-border-between-horizontal--xxs">
+        <div class="fsa-p--xs fsa-bg:hover--transparent">fsa-bg<strong>:hover</strong>--transparent</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Background Colors at any Media Query breakpoint.
+
+<code>class="fsa-bg[:hover]--<strong>[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Foreground
+
+<p class="fsa-text--lead">Selectively add or adjust foreground (text) colors</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-text-color" name="demo-background-text-color" data-target="demo-background-target-text-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-text-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-text-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--primary-900">fsa-color--primary-900</div>
+      <div class="fsa-color--primary">fsa-color--primary</div>
+      <div class="fsa-color--primary-300">fsa-color--primary-300</div>
+      <div class="fsa-color--primary-200">fsa-color--primary-200</div>
+      <div class="fsa-color--primary-100">fsa-color--primary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--secondary-900">fsa-color--secondary-900</div>
+      <div class="fsa-color--secondary">fsa-color--secondary</div>
+      <div class="fsa-color--secondary-300">fsa-color--secondary-300</div>
+      <div class="fsa-color--secondary-200">fsa-color--secondary-200</div>
+      <div class="fsa-color--secondary-100">fsa-color--secondary-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--tertiary-900">fsa-color--tertiary-900</div>
+      <div class="fsa-color--tertiary">fsa-color--tertiary</div>
+      <div class="fsa-color--tertiary-300">fsa-color--tertiary-300</div>
+      <div class="fsa-color--tertiary-200">fsa-color--tertiary-200</div>
+      <div class="fsa-color--tertiary-100">fsa-color--tertiary-100</div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--aqua-900">fsa-color--aqua-900</div>
+      <div class="fsa-color--aqua">fsa-color--aqua</div>
+      <div class="fsa-color--aqua-300">fsa-color--aqua-300</div>
+      <div class="fsa-color--aqua-200">fsa-color--aqua-200</div>
+      <div class="fsa-color--aqua-100">fsa-color--aqua-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--red-900">fsa-color--red-900</div>
+      <div class="fsa-color--red">fsa-color--red</div>
+      <div class="fsa-color--red-300">fsa-color--red-300</div>
+      <div class="fsa-color--red-200">fsa-color--red-200</div>
+      <div class="fsa-color--red-100">fsa-color--red-100</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>&nbsp;</div>
+      <div class="fsa-color--yellow">fsa-color--yellow</div>
+      <div class="fsa-color--yellow-300">fsa-color--yellow-300</div>
+      <div class="fsa-color--yellow-200">fsa-color--yellow-200</div>
+      <div class="fsa-color--yellow-100">fsa-color--yellow-100</div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>default</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--black">fsa-color--black</div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div class="fsa-color--white">fsa-color--white</div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Text Colors at any Media Query breakpoint.
+
+<code>class="fsa-color--<strong>[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__text-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Color: Text Link
+
+<p class="fsa-text--lead">Selectively add or adjust text link colors</p>
+
+### Options
+
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="demo-background-link-color" name="demo-background-link-color" data-target="demo-background-target-link-color" data-behavior="toggle-demo-background">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label for="demo-background-link-color">Dark Background</label>
+</div>
+
+<div class="docs__color-utilities" id="demo-background-target-link-color">
+  <h4 class="fsa-m-t--none">Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--primary-900">fsa-link--primary-900</a></div>
+      <div><a href="link.html" class="fsa-link--primary">fsa-link--primary</a></div>
+      <div><a href="link.html" class="fsa-link--primary-300">fsa-link--primary-300</a></div>
+      <div><a href="link.html" class="fsa-link--primary-200">fsa-link--primary-200</a></div>
+      <div><a href="link.html" class="fsa-link--primary-100">fsa-link--primary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--secondary-900">fsa-link--secondary-900</a></div>
+      <div><a href="link.html" class="fsa-link--secondary">fsa-link--secondary</a></div>
+      <div><a href="link.html" class="fsa-link--secondary-300">fsa-link--secondary-300</a></div>
+      <div><a href="link.html" class="fsa-link--secondary-200">fsa-link--secondary-200</a></div>
+      <div><a href="link.html" class="fsa-link--secondary-100">fsa-link--secondary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--tertiary-900">fsa-link--tertiary-900</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary">fsa-link--tertiary</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary-300">fsa-link--tertiary-300</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary-200">fsa-link--tertiary-200</a></div>
+      <div><a href="link.html" class="fsa-link--tertiary-100">fsa-link--tertiary-100</a></div>
+    </div>
+  </div>
+  <h4>Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--aqua-900">fsa-link--aqua-900</a></div>
+      <div><a href="link.html" class="fsa-link--aqua">fsa-link--aqua</a></div>
+      <div><a href="link.html" class="fsa-link--aqua-300">fsa-link--aqua-300</a></div>
+      <div><a href="link.html" class="fsa-link--aqua-200">fsa-link--aqua-200</a></div>
+      <div><a href="link.html" class="fsa-link--aqua-100">fsa-link--aqua-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--red-900">fsa-link--red-900</a></div>
+      <div><a href="link.html" class="fsa-link--red">fsa-link--red</a></div>
+      <div><a href="link.html" class="fsa-link--red-300">fsa-link--red-300</a></div>
+      <div><a href="link.html" class="fsa-link--red-200">fsa-link--red-200</a></div>
+      <div><a href="link.html" class="fsa-link--red-100">fsa-link--red-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>&nbsp;</div>
+      <div><a href="link.html" class="fsa-link--yellow">fsa-link--yellow</a></div>
+      <div><a href="link.html" class="fsa-link--yellow-300">fsa-link--yellow-300</a></div>
+      <div><a href="link.html" class="fsa-link--yellow-200">fsa-link--yellow-200</a></div>
+      <div><a href="link.html" class="fsa-link--yellow-100">fsa-link--yellow-100</a></div>
+    </div>
+  </div>
+  <h4>Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html">default</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--black">fsa-link--black</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link--white">fsa-link--white</a></div>
+    </div>
+  </div>
+  <h4>Hover: Core</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--primary-900">fsa-link<strong>:hover</strong>--primary-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary">fsa-link<strong>:hover</strong>--primary</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary-300">fsa-link<strong>:hover</strong>--primary-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary-200">fsa-link<strong>:hover</strong>--primary-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--primary-100">fsa-link<strong>:hover</strong>--primary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--secondary-900">fsa-link<strong>:hover</strong>--secondary-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary">fsa-link<strong>:hover</strong>--secondary</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary-300">fsa-link<strong>:hover</strong>--secondary-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary-200">fsa-link<strong>:hover</strong>--secondary-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--secondary-100">fsa-link<strong>:hover</strong>--secondary-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--tertiary-900">fsa-link<strong>:hover</strong>--tertiary-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary">fsa-link<strong>:hover</strong>--tertiary</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary-300">fsa-link<strong>:hover</strong>--tertiary-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary-200">fsa-link<strong>:hover</strong>--tertiary-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--tertiary-100">fsa-link<strong>:hover</strong>--tertiary-100</a></div>
+    </div>
+  </div>
+  <h4>Hover: Accent</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--aqua-900">fsa-link<strong>:hover</strong>--aqua-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua">fsa-link<strong>:hover</strong>--aqua</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua-300">fsa-link<strong>:hover</strong>--aqua-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua-200">fsa-link<strong>:hover</strong>--aqua-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--aqua-100">fsa-link<strong>:hover</strong>--aqua-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--red-900">fsa-link<strong>:hover</strong>--red-900</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red">fsa-link<strong>:hover</strong>--red</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red-300">fsa-link<strong>:hover</strong>--red-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red-200">fsa-link<strong>:hover</strong>--red-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--red-100">fsa-link<strong>:hover</strong>--red-100</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div>&nbsp;</div>
+      <div><a href="link.html" class="fsa-link:hover--yellow">fsa-link<strong>:hover</strong>--yellow</a></div>
+      <div><a href="link.html" class="fsa-link:hover--yellow-300">fsa-link<strong>:hover</strong>--yellow-300</a></div>
+      <div><a href="link.html" class="fsa-link:hover--yellow-200">fsa-link<strong>:hover</strong>--yellow-200</a></div>
+      <div><a href="link.html" class="fsa-link:hover--yellow-100">fsa-link<strong>:hover</strong>--yellow-100</a></div>
+    </div>
+  </div>
+  <h4>Hover: Other</h4>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html">default</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--black">fsa-link<strong>:hover</strong>--black</a></div>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <div><a href="link.html" class="fsa-link:hover--white">fsa-link<strong>:hover</strong>--white</a></div>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Link Colors at any Media Query breakpoint.
+
+<code>class="fsa-link<strong>[:hover]--[color]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__link-color.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
 ## Ellipsis
 
 <p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
@@ -81,8 +1310,6 @@ Below are the complete set of CSS Utilities for overriding or extending an eleme
 
 Set overflow of block-level elements to Ellipsis at select media query breakpoints.
 
-{% include alert.rwd-rendering.html %}
-
 <p>
   <code>fsa-ellipsis<strong>[--none]@[breakpoint]</strong></code>, where
   <code>breakpoint</code> is one of
@@ -92,20 +1319,12 @@ Set overflow of block-level elements to Ellipsis at select media query breakpoin
   <code title="extra large">xl</code>
 </p>
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_ellipsis" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_ellipsis">
-      <iframe title="Responsive Demo: ellipsis" src="https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Floats
 
@@ -179,22 +1398,189 @@ aka "clearfix"
 
 Adjust floating presentation per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__float.html
+{% endcapture %}
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_float" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__float.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_float">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__float.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+{% include rwd-viewer.html %}
+
+## Font
+
+<p class="fsa-text--lead">Selectively apply Typeface and Weight to text.</p>
+
+```html
+<el class="fsa-font--[VARIATION]">...</el>
+```
+
+Where `variation` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`, or `fsa-font--mono`.
+
+### Variations
+
+### Sans
+
+```html
+<div class="fsa-font--sans">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--sans fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Sans Light
+
+```html
+<div class="fsa-font--sans-light">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--sans-light fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Sans Bold
+
+```html
+<div class="fsa-font--sans-bold">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--sans-bold fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Monospace
+
+```html
+<div class="fsa-font--mono">Lorem ipsum dolor sit amet.</div>
+```
+<div class="ds-preview">
+  <div class="fsa-font--mono fsa-text-size--5">Lorem ipsum dolor sit amet.</div>
+</div>
+
+### Responsive
+
+Selectively apply Font at any Media Query breakpoint.
+
+`class="fsa-font--[variation]@[breakpoint]"` where `breakpoint` is one of `s`, `m`, `l`, or `xl`
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__font.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Lists
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text">Refer to <a href="{{ site.baseurl }}components/lists/">Components / Lists</a> for a variety of Lists</p>
+  </div>
+</div>
+
+## Link Color
+
+<div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
+  <div class="fsa-alert__body">
+    <p class="fsa-alert__text">Refer to <a href="#color-text-link">Color: Text Link</a></p>
+  </div>
+</div>
+
+## Link Display
+
+<p class="fsa-text--lead">Selectively adjust display property of links.</p>
+
+### Options
+
+<div class="docs__color-utilities" id="demo-background-target-link-display">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Default <span class="fsa-font--sans">(Inline)</span></h4>
+      <a style="outline: 1px dashed #999;" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Inline <span class="fsa-font--sans">(Override / Explicit)</span></h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--inline" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Inline-block</h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--inline-block" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Block <span class="fsa-font--sans">(full-width)</span></h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--block" href="link.html">Text link</a>
     </div>
   </div>
 </div>
+
+### Responsive
+
+Selectively apply Link display properties at any Media Query breakpoint.
+
+<code>class="fsa-link--<strong>[variation]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__link-display.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Link Underline
+
+<p class="fsa-text--lead">Selectively add or remove underlines for Text Links.</p>
+
+### Options
+
+<div class="docs__color-utilities" id="demo-background-target-link-underline">
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Default</h4>
+      <a href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">Underline <span class="fsa-font--sans">(Override / Explicit)</span></h4>
+      <a class="fsa-link--underline" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4 class="fsa-m-t--none">No Underline</h4>
+      <a class="fsa-link--underline-none" href="link.html">Text link</a>
+    </div>
+  </div>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4>Default</h4>
+      <a href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4>Hover: Underline <span class="fsa-font--sans">(Override / Explicit)</span></h4>
+      <a class="fsa-link:hover--underline" href="link.html">Text link</a>
+    </div>
+    <div class="fsa-grid__1 fsa-grid__auto@m">
+      <h4>Hover: No Underline</h4>
+      <a class="fsa-link:hover--underline-none" href="link.html">Text link</a>
+    </div>
+  </div>
+</div>
+
+### Responsive
+
+Selectively apply Link underlines at any Media Query breakpoint
+
+<code>class="fsa-link<strong>[:hover]--[variation]@[breakpoint]</strong>"</code>
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__link-underline.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Margins
 
@@ -337,22 +1723,12 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 Margins can be adjusted per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__margins.html
+{% endcapture %}
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_margin" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__margins.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_margin">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__margins.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% include rwd-viewer.html %}
 
 ## Padding
 
@@ -493,22 +1869,12 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 ### Responsive
 
-{% include alert.rwd-rendering.html %}
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__padding.html
+{% endcapture %}
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_padding" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__padding.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_padding">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__padding.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% include rwd-viewer.html %}
 
 ## Screenreader only
 
@@ -516,28 +1882,104 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 
 This component must not be used to hide interactive content; for that, defer to [Visibility Utility classes](#visibility).
 
-{% include alert.rwd-rendering.html %}
-
 ```html
 <element class="fsa-sr-only@[size]">...</element>
 ```
 
 Visibly hide when viewport is *within* a specific range, where `[size]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="Portrait" aria-selected="true"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_sr-only" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_sr-only">
-      <iframe title="Responsive Demo: sr only" src="https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
+
+## Shadows
+
+Selectively apply [Shadows]({{ site.baseurl }}visual-style/shadows/) to containing blocks.
+
+### Variations
+
+```html
+<el class="fsa-shadow--[VARIATION]">...</el>
+```
+
+Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
+
+#### Popout
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--popout"></div>
 </div>
+
+#### Overlay
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--overlay"></div>
+</div>
+
+#### Raised
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--raised"></div>
+</div>
+
+#### None
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow--none"></div>
+</div>
+
+### Hover
+
+```html
+<el class="fsa-shadow--:hover--[VARIATION]">...</el>
+```
+
+Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
+
+#### Popout
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--popout"></div>
+</div>
+
+#### Overlay
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--overlay"></div>
+</div>
+
+#### Raised
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--raised"></div>
+</div>
+
+#### None
+
+<div class="ds-preview">
+  <div class="fsa-m--l fsa-p--xl fsa-bg--white fsa-shadow:hover--none"></div>
+</div>
+
+### Responsive
+
+Selectively apply at any Media Query breakpoint.
+
+<code>class="fsa-shadow--<strong>[variation]@[breakpoint]</strong>"</code> where
+<code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__shadows.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Text Alignment
 
@@ -582,22 +2024,12 @@ Where `direction` is one of `left`, `center`, or `right`
 
 Adjust text alignment per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html
+{% endcapture %}
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-align" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-align">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__text-align.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% include rwd-viewer.html %}
 
 ## Text Size
 
@@ -630,24 +2062,14 @@ Where `size` is one of `0` - `7`. For reference, the **base** font size is equal
 
 Text size can be adjusted per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
-
 <p><code>class="fsa-text-size<strong>--[size]@[breakpoint]</strong>"</code>, where <code>size</code> is one of <code>0</code> - <code>7</code>, and <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code></p>
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-size">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Text Headers
 
@@ -699,22 +2121,12 @@ Each of the below examples demonstrate how the visual presentation of a second-l
 
 Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
 
-{% include alert.rwd-rendering.html %}
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html
+{% endcapture %}
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_text-headers" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_text-headers">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% include rwd-viewer.html %}
 
 ## Visibility
 
@@ -728,92 +2140,46 @@ Adjust <code>h<em>n</em></code> element text size per media query breakpoint.
   </div>
 </aside>
 
-<div class="fsa-hide@xl">
-  <aside>
-    <div class="fsa-alert fsa-alert--warning">
-      <div class="fsa-alert__body">
-        <p class="fsa-alert__text">View this page on a larger screen to view complete Responsive Web Design options.</p>
-      </div>
-    </div>
-  </aside>
-</div>
-
 ### Show at minimum screen size
 
-<div class="fsa-show@xl">
-  <p class="docs__code-sample"><code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-min-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--show-min-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ### Show at only specific screen size
 
-<div class="fsa-show@xl">
-  <p><code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>. </p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--show-at-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--show-at-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ### Hide at minimum screen size
 
-<div class="fsa-show@xl">
-  <p><code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>. </p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-min-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--hide-min-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>.
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ### Hide at specific screen size
 
-<div class="fsa-show@xl">
-  <p><code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.</p>
-  <div class="docs__rwd-demo-block">
-    <div class="docs__rwd-embed-container">
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_vis--hide-at-screen-size" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-        <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html" target="_blank" title="View in a New Window">New Window</a>
-      </span>
-      <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_vis--hide-at-screen-size">
-        <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-at-screen-size.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}

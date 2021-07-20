@@ -1,7 +1,7 @@
 {
   "name": "fsa-design-system",
   "description": "Open Source Design System for USDA Farm Production and Convervation (FPAC)",
-  "version": "1.17.2",
+  "version": "1.18.0",
   "license": "SEE LICENSE in LICENSE.md",
   "repository": {
     "type": "git",
@@ -10,8 +10,8 @@
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "cssnano": "^3.7.7",
-    "fsa-style": "^2.5.3",
-    "grunt": "^1.0.4",
+    "fsa-style": "^2.6.0",
+    "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.0.0",
     "grunt-browserify": "^5.0.0",
     "grunt-build-control": "^0.7.1",
@@ -21,7 +21,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-postcss": "^0.8.0",
+    "grunt-postcss": "^0.9.0",
     "grunt-prettify": "^0.4.0",
     "grunt-sass": "^2.1.0",
     "grunt-scss-lint": "^0.5.0",
@@ -33,6 +33,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
+    "grunt-string-replace": "^1.3.1",
     "jquery": "^3.5.1"
   },
   "author": "USDA - Farm Production and Conservation (FPAC), ISSDOB/FBCSS",
@@ -46,6 +47,6 @@
   },
   "scripts": {
     "install-dep": "bundle install && npm install",
-    "start": "grunt concurrent:serve"
+    "start": "grunt build"
   }
 }

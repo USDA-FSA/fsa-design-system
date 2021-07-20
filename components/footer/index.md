@@ -216,22 +216,12 @@ These are **not** required footer structures; rather, they effectively serve as 
 
 ## Responsive
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_footer" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__footer.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_footer">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__footer.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__footer.html
+{% endcapture %}
 
-{% include alert.rwd-rendering.html %}
+{% include rwd-viewer.html %}
 
 ## Usage
 
@@ -259,4 +249,4 @@ Always refer to the [Accessibility Guide]({{ site.baseurl }}guides/accessibility
 ## General Guidance
 
 * The first column of the Global Footer is used for application-specific links to supplemental content, such as Handbooks.
-* The links in the remaining columns are standard and shall be included in all FPAC Applications. [See Footer Guide for more information.]({{ site.baseurl }}guides/applications/footer)
+* The links in the remaining columns are generally common and may be included

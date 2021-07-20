@@ -18,6 +18,10 @@
     keyword: "SPA,Single Page Application,Angular"
     subhref: "getting-started/#when-to-use"
 
+  - subtitle: "UI Kit"
+    keyword: "figma,stencils"
+    subhref: "getting-started/#ui-kit"
+
   - subtitle: "Browser Support"
     keyword: "Edge,Chrome,Firefox,IE,Explorer,Progressive Enhancement"
     subhref: "getting-started/#browser-support"
@@ -35,11 +39,6 @@
   href: "visual-style"
   subcategories:
 
-    - subtitle: "Logo"
-      keyword: "Brand"
-      subhref: "visual-style/logo"
-      img: "img/subcategories/logo.png"
-
     - subtitle: "Color"
       keyword: "Token,Variables,Swatch"
       subhref: "visual-style/color"
@@ -55,10 +54,29 @@
       subhref: "visual-style/size-and-space"
       img: "img/subcategories/size-and-space.png"
 
+    - subtitle: "Shadows"
+      keyword: "Elevation, Depth, Layer, Prominence"
+      subhref: "visual-style/shadows"
+      img: "img/subcategories/shadows.png"
+
+    - subtitle: "Logo"
+      keyword: "Brand"
+      subhref: "visual-style/logo"
+      img: "img/subcategories/logo.png"
+
 - title: "UI Components"
   keyword: "Widgets"
   href: "components"
   componentgroup:
+
+    - title: "General"
+      keyword: "Icons"
+      subcategories:
+
+        - subtitle: "Icons"
+          subhref: "components/icons"
+          img: "img/subcategories/icons.png"
+          keyword: "Illustration,Image,Symbol,Shape"
 
     - title: "Form Elements"
       keyword: "Controls"
@@ -116,7 +134,7 @@
         - subtitle: "Spinbox"
           subhref: "components/spinbox"
           img: "img/subcategories/spinbox.png"
-          keyword: "Input,Number"
+          keyword: "Input,Number,Stepper"
 
         - subtitle: "Stepped Control"
           subhref: "components/stepped-control"
@@ -194,7 +212,7 @@
           img: "img/subcategories/grid.png"
 
         - subtitle: "Level"
-          keyword: "Row,Stack"
+          keyword: "Row,Stack,Flex"
           subhref: "components/level"
           img: "img/subcategories/level.png"
 
@@ -295,23 +313,72 @@
     - subtitle: "Action Bar and Table"
       subhref: "patterns/actionbar-and-table"
       img: "img/subcategories/actionbar-and-table.png"
+      keyword: "Tabular,Data,Collection"
 
     - subtitle: "Stepped Process"
       subhref: "patterns/stepped-process"
       img: "img/subcategories/stepped-process.png"
+      keyword: "Wizard"
 
     - subtitle: "Page Title Area"
       subhref: "patterns/page-title-area"
       img: "img/subcategories/page-title-area.png"
+      keyword: "Header"
 
     - subtitle: "Destroy Prompt"
       subhref: "patterns/destroy-prompt"
       img: "img/subcategories/destroy-prompt.png"
+      keyword: "Notification,Prompt,Modal"
 
 - title: "Utilities"
   keyword: "helpers,Trumps,Alterations,Overrides,CSS"
   href: "utilities"
   subcategories:
+
+    - subtitle: "Border Width"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke"
+      subhref: "utilities/#border-width"
+      img: "img/subcategories/border-width.png"
+
+    - subtitle: "Border Radius"
+      keyword: "Corner,Round"
+      subhref: "utilities/#border-radius"
+      img: "img/subcategories/border-radius.png"
+
+    - subtitle: "Border Between"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke,Segment,Column,Row"
+      subhref: "utilities/#border-between"
+      img: "img/subcategories/border-between.png"
+
+    - subtitle: "Color: Border"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke,Segment,Column,Row"
+      subhref: "utilities/#color-border"
+      img: "img/subcategories/color-border.png"
+
+    - subtitle: "Color: Border Between"
+      keyword: "Outline,Container,Thickness,Line,Rule,Box,Stroke,Segment,Column,Row"
+      subhref: "utilities/#color-border-between"
+      img: "img/subcategories/color-border-between.png"
+
+    - subtitle: "Color: Background"
+      keyword: "Container,Box"
+      subhref: "utilities/#color-background"
+      img: "img/subcategories/color-background.png"
+
+    - subtitle: "Color: Foreground"
+      keyword: "Text,Typography,Font"
+      subhref: "utilities/#color-foreground"
+      img: "img/subcategories/color-foreground.png"
+
+    - subtitle: "Color: Text Link"
+      keyword: "Text,Typography,Font,Anchor"
+      subhref: "utilities/#color-text-link"
+      img: "img/subcategories/color-text-link.png"
+
+    - subtitle: "Color: Text Link"
+      keyword: "Text,Typography,Font,Anchor"
+      subhref: "utilities/#color-text-link"
+      img: "img/subcategories/color-text-link.png"
 
     - subtitle: "Ellipsis"
       keyword: "Dot dot dot,Truncate,..."
@@ -322,6 +389,21 @@
       keyword: ""
       subhref: "utilities/#floats"
       img: "img/subcategories/floats.png"
+
+    - subtitle: "Font"
+      keyword: "Typeface, Sans, Bold, Light, Monospace"
+      subhref: "utilities/#font"
+      img: "img/subcategories/font.png"
+
+    - subtitle: "Link Display"
+      keyword: "block,inline,inline-block"
+      subhref: "utilities/#link-display"
+      img: "img/subcategories/link-display.png"
+
+    - subtitle: "Link Underline"
+      keyword: "Text,Typography,Font,Anchor,Text Decoration"
+      subhref: "utilities/#link-underline"
+      img: "img/subcategories/link-underline.png"
 
     - subtitle: "Margins"
       keyword: "Space,Size"

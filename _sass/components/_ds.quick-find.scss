@@ -7,8 +7,9 @@
       display: block;
       position: relative;
       z-index: 2;
-      margin-bottom: $size-large;
+      margin-bottom: $size-medium;
       @include breakpoint(L) {
+        margin-bottom: $size-large;
         width: 44rem;
       }
     }
@@ -52,6 +53,9 @@
       z-index: 2;
       overflow: auto;
       max-height: 45vh;
+      &:empty {
+        display: none;
+      }
     }
     &__output-item  {
       & {

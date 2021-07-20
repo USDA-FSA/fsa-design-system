@@ -284,24 +284,14 @@ In the below example, each column begins as full-width (<code>fsa-grid__<strong>
   </div>
 </div>
 
-{% include alert.rwd-rendering.html %}
-
 ### Demo
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="phone" class="fsa-btn-group__item" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_grid" data-size="desktop" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" aria-selected="true">Desktop</button>
-      <a class="fsa-btn-group__item" target="_blank">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--desktop" id="rwd-demo_grid">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__grid.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
+{% assign rwdSize = "tablet" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__grid.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 <!-- ### Breakpoints -->
 

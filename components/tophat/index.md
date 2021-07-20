@@ -5,6 +5,9 @@ type: "UI Component"
 title: "Top Hat"
 intro: "Indicate associated USDA agency and organization."
 jump_menu: true
+relatedItems:
+  - "Application Header"
+  - "Global Navigation"
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
@@ -64,24 +67,42 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% include preview-and-snippet.html %}
 
-## Responsive
+### Custom
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_top-hat" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_top-hat" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_top-hat" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_top-hat" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_top-hat">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
+Selectively combine with CSS Utilities, such as [Background COlors]({{ site.baseurl }}utilities/#color-background).
+
+`class="fsa-bg--secondary-900"`
+
+{% capture snippet %}
+<div class="fsa-tophat fsa-bg--secondary-900">
+  <div class="fsa-tophat__bd">
+    <div class="fsa-tophat__primary">
+      <span class="fsa-tophat__agency">
+        <a onclick="trackLink('USDA Homepage','Header Top Hat')" class="fsa-tophat__link" href="//usda.gov" title="Link to USDA homepage">
+          <img role="presentation" class="fsa-tophat__agency-logo" src="img/usda-logo--white.svg" alt="">
+          <abbr class="fsa-tophat__agency-abbr" title="United States Department of Agriculture">USDA</abbr>
+          <span class="fsa-tophat__agency-fullname">United States Department of Agriculture</span>
+        </a>
+      </span>
+    </div>
+    <div class="fsa-tophat__secondary">
+      <span class="fsa-tophat__subagency">
+        Farm Production and Conservation
+      </span>
     </div>
   </div>
 </div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
-{% include alert.rwd-rendering.html %}
+## Responsive
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__top-hat.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Usage
 

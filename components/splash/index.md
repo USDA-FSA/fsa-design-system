@@ -11,28 +11,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 The intention of a Splash screen is to provide a good first imporession of an application. By providing a visual cue that progress is being made to load the various technologies required to run the application, trust and understanding is gained by the User, creating a better experience.
 
-## Variations
+{% assign rwdSize = "tablet" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__splash.html
+{% endcapture %}
 
-### Default
+{% include rwd-viewer.html %}
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__bd">
-    <p>
-      <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_splash" data-size="phone" class="fsa-btn-group__item" aria-selected="true" type="button" title="Portrait"><span class="sr-only">Portrait</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_splash" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape"><span class="sr-only">Landscape</span> Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_splash" data-size="tablet" class="fsa-btn-group__item fsa-btn-group__item--active" type="button">Tablet</button>
-        <button data-behavior="toggle-rwd-size" data-target="rwd-demo_splash" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      </span>
-      <a class="fsa-m-l--xs fsa-text-size--1" href="http://usda-fsa.github.io/fsa-style/demo/rwd__splash.html" target="_blank">View in new window</a>
-    </p>
-  </div>
-  <div class="docs__rwd-embed-container">
-    <div class="docs__rwd-embed docs__rwd-embed--tablet" id="rwd-demo_splash">
-      <iframe title="Responsive Demo: splash" src="https://usda-fsa.github.io/fsa-style/demo/rwd__splash.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
-  </div>
-</div>
 ```html
 <div class="fsa-splash">
   <div class="fsa-splash__hd">

@@ -13,7 +13,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <ul class="docs__attr-list">
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Text</h4>
-    <div class="docs__attr-list__swatch color-fsa-tertiary-dark"></div>
+    <div class="docs__attr-list__swatch fsa-bg--tertiary-900"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-base</code></li>
     </ul>
@@ -27,21 +27,21 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Link, Hover</h4>
-    <div class="docs__attr-list__swatch color-fsa-link-hover"></div>
+    <div class="docs__attr-list__swatch fsa-bg--secondary-900"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-link-hover</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Background</h4>
-    <div class="docs__attr-list__swatch color-fsa-page-bg"></div>
+    <div class="docs__attr-list__swatch fsa-bg--base" style="border: 1px dashed #DBDAD9;"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-site-bg</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">White</h4>
-    <div class="docs__attr-list__swatch color-fsa-white"></div>
+    <div class="docs__attr-list__swatch fsa-bg--white"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-white</code></li>
     </ul>
@@ -53,23 +53,23 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <ul class="docs__attr-list">
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Primary</h4>
-    <div class="docs__attr-list__swatch color-fsa-primary"></div>
+    <div class="docs__attr-list__swatch fsa-bg--primary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-primary</code></li>
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-primary</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Secondary</h4>
-    <div class="docs__attr-list__swatch color-fsa-secondary"></div>
+    <div class="docs__attr-list__swatch fsa-bg--secondary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-secondary</code></li>
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-secondary</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Tertiary</h4>
-    <div class="docs__attr-list__swatch color-fsa-tertiary"></div>
+    <div class="docs__attr-list__swatch fsa-bg--tertiary"></div>
     <ul class="docs__attr-list__attr">
-      <li class="docs__attr-list__attr-item" title="Sass Variable"><code>$color-fsa-tertiary</code></li>
+      <li class="docs__attr-list__attr-item"><code>$color-fsa-tertiary</code></li>
     </ul>
   </li>
 </ul>
@@ -79,29 +79,29 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <ul class="docs__attr-list">
   <li class="docs__attr-list__item">
     <ul class="docs__swatch-list docs__swatch-list--primary">
-      <li class="docs__swatch-list__item color-fsa-primary-dark"><code>$color-fsa-primary-900</code></li>
-      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-primary"><code>$color-fsa-primary</code></li>
-      <li class="docs__swatch-list__item color-fsa-primary-light"><code>$color-fsa-primary-300</code></li>
-      <li class="docs__swatch-list__item color-fsa-primary-lighter"><code>$color-fsa-primary-200</code></li>
-      <li class="docs__swatch-list__item color-fsa-primary-lightest"><code>$color-fsa-primary-100</code></li>
+      <li class="docs__swatch-list__item fsa-bg--primary-900"><code>$color-fsa-primary-900</code></li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main fsa-bg--primary"><code>$color-fsa-primary</code></li>
+      <li class="docs__swatch-list__item fsa-bg--primary-300"><code>$color-fsa-primary-300</code></li>
+      <li class="docs__swatch-list__item fsa-bg--primary-200"><code class="fsa-color--tertiary-900">$color-fsa-primary-200</code></li>
+      <li class="docs__swatch-list__item fsa-bg--primary-100"><code class="fsa-color--tertiary-900">$color-fsa-primary-100</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <ul class="docs__swatch-list docs__swatch-list--secondary">
-      <li class="docs__swatch-list__item color-fsa-secondary-dark"><code>$color-fsa-secondary-900</code></li>
-      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-secondary"><code>$color-fsa-secondary</code></li>
-      <li class="docs__swatch-list__item color-fsa-secondary-light"><code>$color-fsa-secondary-300</code></li>
-      <li class="docs__swatch-list__item color-fsa-secondary-lighter"><code>$color-fsa-secondary-200</code></li>
-      <li class="docs__swatch-list__item color-fsa-secondary-lightest"><code>$color-fsa-secondary-100</code></li>
+      <li class="docs__swatch-list__item fsa-bg--secondary-900"><code>$color-fsa-secondary-900</code></li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main fsa-bg--secondary"><code>$color-fsa-secondary</code></li>
+      <li class="docs__swatch-list__item fsa-bg--secondary-300"><code>$color-fsa-secondary-300</code></li>
+      <li class="docs__swatch-list__item fsa-bg--secondary-200"><code class="fsa-color--tertiary-900">$color-fsa-secondary-200</code></li>
+      <li class="docs__swatch-list__item fsa-bg--secondary-100"><code class="fsa-color--tertiary-900">$color-fsa-secondary-100</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <ul class="docs__swatch-list docs__swatch-list--tertiary">
-      <li class="docs__swatch-list__item color-fsa-tertiary-dark"><code>$color-fsa-tertiary-900</code></li>
-      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-tertiary"><code>$color-fsa-tertiary</code></li>
-      <li class="docs__swatch-list__item color-fsa-tertiary-light"><code>$color-fsa-tertiary-300</code></li>
-      <li class="docs__swatch-list__item color-fsa-tertiary-lighter"><code>$color-fsa-tertiary-200</code></li>
-      <li class="docs__swatch-list__item color-fsa-tertiary-lightest"><code>$color-fsa-tertiary-100</code></li>
+      <li class="docs__swatch-list__item fsa-bg--tertiary-900"><code>$color-fsa-tertiary-900</code></li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main fsa-bg--tertiary"><code>$color-fsa-tertiary</code></li>
+      <li class="docs__swatch-list__item fsa-bg--tertiary-300"><code>$color-fsa-tertiary-300</code></li>
+      <li class="docs__swatch-list__item fsa-bg--tertiary-200"><code class="fsa-color--tertiary-900">$color-fsa-tertiary-200</code></li>
+      <li class="docs__swatch-list__item fsa-bg--tertiary-100"><code class="fsa-color--tertiary-900">$color-fsa-tertiary-100</code></li>
     </ul>
   </li>
 </ul>
@@ -111,21 +111,21 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <ul class="docs__attr-list">
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Aqua</h4>
-    <div class="docs__attr-list__swatch color-fsa-aqua"></div>
+    <div class="docs__attr-list__swatch fsa-bg--aqua"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item"><code>$color-fsa-aqua</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Red</h4>
-    <div class="docs__attr-list__swatch color-fsa-red"></div>
+    <div class="docs__attr-list__swatch fsa-bg--red"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item"><code>$color-fsa-red</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <h4 class="docs__sub_style">Yellow</h4>
-    <div class="docs__attr-list__swatch color-fsa-yellow"></div>
+    <div class="docs__attr-list__swatch fsa-bg--yellow"></div>
     <ul class="docs__attr-list__attr">
       <li class="docs__attr-list__attr-item"><code>$color-fsa-yellow</code></li>
     </ul>
@@ -137,32 +137,32 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <ul class="docs__attr-list">
   <li class="docs__attr-list__item">
     <ul class="docs__swatch-list docs__swatch-list--aqua">
-      <li class="docs__swatch-list__item color-fsa-aqua-dark"><code>$color-fsa-aqua-900</code></li>
-      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-aqua"><code>$color-fsa-aqua</code></li>
-      <li class="docs__swatch-list__item color-fsa-aqua-light"><code>$color-fsa-aqua-300</code></li>
-      <li class="docs__swatch-list__item color-fsa-aqua-lighter"><code>$color-fsa-aqua-200</code></li>
-      <li class="docs__swatch-list__item color-fsa-aqua-lightest"><code>$color-fsa-aqua-100</code></li>
+      <li class="docs__swatch-list__item fsa-bg--aqua-900"><code>$color-fsa-aqua-900</code></li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main fsa-bg--aqua"><code>$color-fsa-aqua</code></li>
+      <li class="docs__swatch-list__item fsa-bg--aqua-300"><code class="fsa-color--tertiary-900">$color-fsa-aqua-300</code></li>
+      <li class="docs__swatch-list__item fsa-bg--aqua-200"><code class="fsa-color--tertiary-900">$color-fsa-aqua-200</code></li>
+      <li class="docs__swatch-list__item fsa-bg--aqua-100"><code class="fsa-color--tertiary-900">$color-fsa-aqua-100</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <ul class="docs__swatch-list docs__swatch-list--red">
-      <li class="docs__swatch-list__item color-fsa-red-dark"><code>$color-fsa-red-900</code></li>
-      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-red"><code>$color-fsa-red</code></li>
-      <li class="docs__swatch-list__item color-fsa-red-light"><code>$color-fsa-red-300</code></li>
-      <li class="docs__swatch-list__item color-fsa-red-lighter"><code>$color-fsa-red-200</code></li>
-      <li class="docs__swatch-list__item color-fsa-red-lightest"><code>$color-fsa-red-100</code></li>
+      <li class="docs__swatch-list__item fsa-bg--red-900"><code>$color-fsa-red-900</code></li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main fsa-bg--red"><code>$color-fsa-red</code></li>
+      <li class="docs__swatch-list__item fsa-bg--red-300"><code class="fsa-color--tertiary-900">$color-fsa-red-300</code></li>
+      <li class="docs__swatch-list__item fsa-bg--red-200"><code class="fsa-color--tertiary-900">$color-fsa-red-200</code></li>
+      <li class="docs__swatch-list__item fsa-bg--red-100"><code class="fsa-color--tertiary-900">$color-fsa-red-100</code></li>
     </ul>
   </li>
   <li class="docs__attr-list__item">
     <ul class="docs__swatch-list docs__swatch-list--yellow">
-      <li class="docs__swatch-list__item color-fsa-blank">
+      <li class="docs__swatch-list__item color-fsa-blank" style="border: 1px dashed #DBDAD9;">
         &nbsp;
-        <div class="docs__swatch-list__value" role="presentation">(No dark yellow)</div>
+        <div class="docs__swatch-list__value fsa-color--tertiary-300" role="presentation">(No dark yellow)</div>
       </li>
-      <li class="docs__swatch-list__item docs__swatch-list__item--main color-fsa-yellow"><code>$color-fsa-yellow</code></li>
-      <li class="docs__swatch-list__item color-fsa-yellow-light"><code>$color-fsa-yellow-300</code></li>
-      <li class="docs__swatch-list__item color-fsa-yellow-lighter"><code>$color-fsa-yellow-200</code></li>
-      <li class="docs__swatch-list__item color-fsa-yellow-lightest"><code>$color-fsa-yellow-100</code></li>
+      <li class="docs__swatch-list__item docs__swatch-list__item--main fsa-bg--yellow"><code class="fsa-color--tertiary-900">$color-fsa-yellow</code></li>
+      <li class="docs__swatch-list__item fsa-bg--yellow-300"><code class="fsa-color--tertiary-900">$color-fsa-yellow-300</code></li>
+      <li class="docs__swatch-list__item fsa-bg--yellow-200"><code class="fsa-color--tertiary-900">$color-fsa-yellow-200</code></li>
+      <li class="docs__swatch-list__item fsa-bg--yellow-100"><code class="fsa-color--tertiary-900">$color-fsa-yellow-100</code></li>
     </ul>
   </li>
 </ul>

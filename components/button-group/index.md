@@ -96,7 +96,7 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 {% capture snippet %}
 <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
   <a class="fsa-btn-group__item" href="link.html">Label one</a>
-  <a class="fsa-btn-group__item fsa-btn-group__item--active" href="link.html">Label active</a>
+  <a class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" href="link.html">Label active</a>
   <a class="fsa-btn-group__item" href="link.html">Label three</a>
   <a class="fsa-btn-group__item" href="link.html">Label fo</a>
 </span>
@@ -120,6 +120,126 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 {% include do-dont.html %}
 
 {% include related-cards.html %}
+
+## Icons
+
+[Icons]({{ site.baseurl }}components/icons/) can be used to heighten or clarify Button Groups actions.
+
+### Medium
+{% capture snippet %}
+<span class="fsa-btn-group" role="group" aria-label="Label describing this group">
+  <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="View by Grid" aria-selected="true">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path></svg>
+    List
+  </button>
+  <button class="fsa-btn-group__item" type="button" title="View by List">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"></path></g></svg>
+    Grid
+  </button>
+  <button class="fsa-btn-group__item" type="button" title="View by Calendar">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M8,11H4V6h4V11z M14,11h-4V6h4V11z M20,11h-4V6h4V11z M8,18H4v-5h4V18z M14,18h-4v-5h4V18z M20,18h-4v-5h4V18z"></path></g></svg>
+    Calendar
+  </button>
+</span>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Small
+{% capture snippet %}
+<span class="fsa-btn-group fsa-btn-group--small" role="group" aria-label="Label describing this group">
+  <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="View by Grid" aria-selected="true">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path></svg>
+    List
+  </button>
+  <button class="fsa-btn-group__item" type="button" title="View by List">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"></path></g></svg>
+    Grid
+  </button>
+  <button class="fsa-btn-group__item" type="button" title="View by Calendar">
+    <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M8,11H4V6h4V11z M14,11h-4V6h4V11z M20,11h-4V6h4V11z M8,18H4v-5h4V18z M14,18h-4v-5h4V18z M20,18h-4v-5h4V18z"></path></g></svg>
+    Calendar
+  </button>
+</span>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Large
+{% capture snippet %}
+<span class="fsa-btn-group fsa-btn-group--large" role="group" aria-label="Label describing this group">
+  <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="View by Grid" aria-selected="true">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path></svg>
+    List
+  </button>
+  <button class="fsa-btn-group__item" type="button" title="View by List">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"></path></g></svg>
+    Grid
+  </button>
+  <button class="fsa-btn-group__item" type="button" title="View by Calendar">
+    <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M8,11H4V6h4V11z M14,11h-4V6h4V11z M20,11h-4V6h4V11z M8,18H4v-5h4V18z M14,18h-4v-5h4V18z M20,18h-4v-5h4V18z"></path></g></svg>
+    Calendar
+  </button>
+</span>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Icon only
+
+There may be acceptable uses where a label may be visually hidden (i.e. using a [Screenreader-only CSS Utility]({{ site.baseurl }}utilities/#screenreader-only)) and/or paired with an `aria-label` attribute, though Product Teams should use icon-only buttons cautiously.
+
+{% capture snippet %}
+<div class="fsa-m-b--s">
+  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item fsa-btn-group__item--active" type="button" title="View by Grid" aria-selected="true">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path></svg>
+      <span class="fsa-sr-only">View by Grid</span>
+    </button>
+    <button class="fsa-btn-group__item" type="button" title="View by List">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill-rule="evenodd"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"></path></g></svg>
+      <span class="fsa-sr-only">View by List</span>
+    </button>
+    <button class="fsa-btn-group__item" type="button" title="View by Calendar">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M8,11H4V6h4V11z M14,11h-4V6h4V11z M20,11h-4V6h4V11z M8,18H4v-5h4V18z M14,18h-4v-5h4V18z M20,18h-4v-5h4V18z"></path></g></svg>
+      <span class="fsa-sr-only">View by Calendar</span>
+    </button>
+  </span>
+</div>
+<div>
+  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
+    <button class="fsa-btn-group__item fsa-p-l--s fsa-p-r--s" type="button" title="View Previous">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>
+      <span class="fsa-sr-only">View Previous</span>
+    </button>
+    <button class="fsa-btn-group__item fsa-p-l--s fsa-p-r--s" type="button" title="View Next">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path></svg>
+      <span class="fsa-sr-only">View Next</span>
+    </button>
+  </span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+## Responsive
+
+Selectively override several style properties at each Media Query breakpoint.
+
+<code>fsa-btn-group--<strong>[property]@[breakpoint]</strong></code>, where
+<code>property</code> is one of
+<code>small</code>,
+<code>medium</code>,
+<code>large</code>,
+<code>block</code>, or
+<code>inline</code>; and <code>breakpoint</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__btn-group.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Accessibility
 

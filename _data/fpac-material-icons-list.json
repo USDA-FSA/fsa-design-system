@@ -1,0 +1,251 @@
+{
+  "icons":[
+    {
+      "fileName": "ic_close_24px.svg",
+      "order": "010"
+    },{
+      "fileName": "ic_cancel_24px.svg",
+      "order": "020"
+    },{
+      "fileName": "ic_check_24px.svg",
+      "order": "030"
+    },{
+      "fileName": "ic_check_circle_outline_24px.svg",
+      "order": "040"
+    },{
+      "fileName": "ic_expand_more_24px.svg",
+      "order": "050"
+    },{
+      "fileName": "ic_expand_less_24px.svg",
+      "order": "060"
+    },{
+      "fileName": "ic_navigate_next_24px.svg",
+      "order": "070"
+    },{
+      "fileName": "ic_navigate_before_24px.svg",
+      "order": "080"
+    },{
+      "fileName": "ic_navigate_far_before_24px.svg",
+      "order": "090"
+    },{
+      "fileName": "ic_navigate_far_next_24px.svg",
+      "order": "100"
+    },{
+      "fileName": "ic_arrow_back_24px.svg",
+      "order": "110"
+    },{
+      "fileName": "ic_arrow_forward_24px.svg",
+      "order": "120"
+    },{
+      "fileName": "ic_arrow_downward_24px.svg",
+      "order": "130"
+    },{
+      "fileName": "ic_settings_24px.svg",
+      "order": "140"
+    },{
+      "fileName": "ic_note_add_24px.svg",
+      "order": "150"
+    },{
+      "fileName": "ic_summarize_24px.svg",
+      "order": "160"
+    },{
+      "fileName": "ic_note_24px.svg",
+      "order": "170"
+    },{
+      "fileName": "ic_dashboard_24px.svg",
+      "order": "180"
+    },{
+      "fileName": "ic_account_circle_24px.svg",
+      "order": "190"
+    },{
+      "fileName": "ic_account_box_24px.svg",
+      "order": "200"
+    },{
+      "fileName": "ic_info_24px.svg",
+      "order": "210"
+    },{
+      "fileName": "ic_warning_24px.svg",
+      "order": "220"
+    },{
+      "fileName": "ic_help_24px.svg",
+      "order": "230"
+    },{
+      "fileName": "ic_help_outline_24px.svg",
+      "order": "240"
+    },{
+      "fileName": "ic_lock_24px.svg",
+      "order": "250"
+    },{
+      "fileName": "ic_lock_open_24px.svg",
+      "order": "260"
+    },{
+      "fileName": "ic_add_24px.svg",
+      "order": "270"
+    },{
+      "fileName": "ic_add_circle_24px.svg",
+      "order": "280"
+    },{
+      "fileName": "ic_add_circle_outline_24px.svg",
+      "order": "290"
+    },{
+      "fileName": "ic_add_box_24px.svg",
+      "order": "300"
+    },{
+      "fileName": "ic_delete_24px.svg",
+      "order": "310"
+    },{
+      "fileName": "ic_remove_24px.svg",
+      "order": "320"
+    },{
+      "fileName": "ic_remove_circle_24px.svg",
+      "order": "330"
+    },{
+      "fileName": "ic_save_24px.svg",
+      "order": "340"
+    },{
+      "fileName": "ic_save_alt_24px.svg",
+      "order": "350"
+    },{
+      "fileName": "ic_person_24px.svg",
+      "order": "360"
+    },{
+      "fileName": "ic_person_add_24px.svg",
+      "order": "370"
+    },{
+      "fileName": "ic_group_24px.svg",
+      "order": "380"
+    },{
+      "fileName": "ic_group_add_24px.svg",
+      "order": "390"
+    },{
+      "fileName": "ic_groups_24px.svg",
+      "order": "400"
+    },{
+      "fileName": "ic_notifications_24px.svg",
+      "order": "410"
+    },{
+      "fileName": "ic_filter_alt_24px.svg",
+      "order": "420"
+    },{
+      "fileName": "ic_filter_list_24px.svg",
+      "order": "430"
+    },{
+      "fileName": "ic_list_24px.svg",
+      "order": "440"
+    },{
+      "fileName": "ic_menu_24px.svg",
+      "order": "450"
+    },{
+      "fileName": "ic_content_copy_24px.svg",
+      "order": "460"
+    },{
+      "fileName": "ic_print_24px.svg",
+      "order": "470"
+    },{
+      "fileName": "ic_view_list_24px.svg",
+      "order": "480"
+    },{
+      "fileName": "ic_grid_view_24px.svg",
+      "order": "490"
+    },{
+      "fileName": "ic_calendar_today_24px.svg",
+      "order": "500"
+    },{
+      "fileName": "ic_link_24px.svg",
+      "order": "510"
+    },{
+      "fileName": "ic_history_24px.svg",
+      "order": "520"
+    },{
+      "fileName": "ic_refresh_24px.svg",
+      "order": "530"
+    },{
+      "fileName": "ic_folder_24px.svg",
+      "order": "540"
+    },{
+      "fileName": "ic_folder_open_24px.svg",
+      "order": "550"
+    },{
+      "fileName": "ic_mail_24px.svg",
+      "order": "560"
+    },{
+      "fileName": "ic_code_24px.svg",
+      "order": "570"
+    },{
+      "fileName": "ic_file_download_24px.svg",
+      "order": "580"
+    },{
+      "fileName": "ic_file_upload_24px.svg",
+      "order": "590"
+    },{
+      "fileName": "ic_upload_file_24px.svg",
+      "order": "600"
+    },{
+      "fileName": "ic_drive_file_move_24px.svg",
+      "order": "610"
+    },{
+      "fileName": "ic_label_24px.svg",
+      "order": "620"
+    },{
+      "fileName": "ic_cloud_24px.svg",
+      "order": "630"
+    },{
+      "fileName": "ic_undo_24px.svg",
+      "order": "640"
+    },{
+      "fileName": "ic_thumb_up_24px.svg",
+      "order": "650"
+    },{
+      "fileName": "ic_thumb_down_24px.svg",
+      "order": "660"
+    },{
+      "fileName": "ic_comment_24px.svg",
+      "order": "670"
+    },{
+      "fileName": "ic_zoom_in_24px.svg",
+      "order": "680"
+    },{
+      "fileName": "ic_zoom_out_24px.svg",
+      "order": "690"
+    },{
+      "fileName": "ic_zoom_out_map_24px.svg",
+      "order": "700"
+    },{
+      "fileName": "ic_favorite_24px.svg",
+      "order": "710"
+    },{
+      "fileName": "ic_favorite_border_24px.svg",
+      "order": "720"
+    },{
+      "fileName": "ic_security_24px.svg",
+      "order": "730"
+    },{
+      "fileName": "ic_place_24px.svg",
+      "order": "740"
+    },{
+      "fileName": "ic_credit_card_24px.svg",
+      "order": "750"
+    },{
+      "fileName": "ic_closed_caption_24px.svg",
+      "order": "760"
+    },{
+      "fileName": "ic_closed_caption_off_24px.svg",
+      "order": "770"
+    },{
+      "fileName": "ic_visibility_24px.svg",
+      "order": "780"
+    },{
+      "fileName": "ic_more_horiz_24px.svg",
+      "order": "790"
+    },{
+      "fileName": "ic_more_vert_24px.svg",
+      "order": "800"
+    },{
+      "fileName": "ic_play_arrow_24px.svg",
+      "order": "810"
+    },{
+      "fileName": "ic_phone_24px.svg",
+      "order": "820"
+    }
+  ]
+}

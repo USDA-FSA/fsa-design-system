@@ -52,6 +52,14 @@ if ($swatchItem.length) { // only run if at least one instance
   });
 }
 
+$('body').on('change', '[data-behavior~="toggle-demo-background"]', function(event) {
+
+  var $self = $(this);
+  var $target = $('#' + $self.data('target'));
+  $target.toggleClass('fsa-bg--tertiary-900');
+
+})
+
 console.log('DocsColor loaded, its JS is NOT to be used for Production, demo purposes only');
 
 },{"jquery":23}],2:[function(require,module,exports){
@@ -60,21 +68,50 @@ var $ = window.jQuery = require('jquery');
 $('body').on('click', '[data-behavior~="toggle-rwd-size"]', function(event) {
 
   var $self = $(this);
-  var $target = $('#' + $self.attr('data-target'));
   var $newClass = $self.data('size');
   var $component = $self.closest('[data-component]');
+  var $target = $component.find('.docs__rwd-embed');
 
   $target
-    .removeClass('docs__rwd-embed--phone docs__rwd-embed--phone-big docs__rwd-embed--tablet docs__rwd-embed--desktop')
+    .removeClass('docs__rwd-embed--phone docs__rwd-embed--phone-big docs__rwd-embed--tablet docs__rwd-embed--desktop docs__rwd-embed--fullscreen')
     .addClass('docs__rwd-embed--' + $newClass)
   ;
 
   $self
-    .addClass('fsa-btn-group__item--active')
+    .removeClass('fsa-bg:hover--tertiary-100')
+    .addClass('fsa-bg--secondary-100')
     .attr('aria-selected', true)
     .siblings()
-    .removeClass('fsa-btn-group__item--active')
+    .removeClass('fsa-bg--secondary-100')
     .removeAttr('aria-selected')
+    .addClass('fsa-bg:hover--tertiary-100')
+  ;
+
+  if ($self.attr('data-size') === 'fullscreen') {
+    $self
+      .closest('.docs__rwd-embed-container')
+      .find('[data-behavior="toggle-rwd-close-fullscreen"')
+      .focus()
+    ;
+  }
+
+})
+
+$('body').on('click', '[data-behavior~="toggle-rwd-close-fullscreen"]', function(event) {
+
+  var $self = $(this);
+  var $target = $self.closest('.docs__rwd-embed');
+  var $targetComponent = $target.closest('.docs__rwd-demo-block');
+
+  $target
+    .removeClass('docs__rwd-embed--fullscreen')
+    .addClass('docs__rwd-embed--desktop')
+  ;
+
+  $targetComponent
+    .find('[data-size="phone"')
+    .focus()
+    .click()
   ;
 
 })
@@ -129,7 +166,7 @@ if (ClipboardJS.isSupported()) {
   });
 
   $('pre.highlight')
-    .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--secondary fsa-btn--small ds-clipboard__btn" title="Copy code to clipboard" data-behavior="copy-code">Copy</button></div>')
+    .append('<div class="ds-clipboard"><button class="fsa-btn fsa-btn--flat fsa-btn--small ds-clipboard__btn fsa-link--underline-none" title="Copy code to clipboard" data-behavior="copy-code"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg> Copy</button></div>')
   ;
 
   var clipboardardee = new ClipboardJS('[data-behavior~="copy-code"]', {

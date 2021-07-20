@@ -356,31 +356,87 @@ Parallel to the list of tabs (`.fsa-content-tabs__list`), an optional region (`.
     </li>
   </ul>
   <div class="fsa-content-tabs__aside">
-    <a href="#link-to-nowhere" onclick="alert('A text link is but one example of what can go here.')">Help</a>
+    <a href="#link-to-nowhere" onclick="alert('A text link is but one example of what can go here.')" class="fsa-text-align--right">
+      <span class="fsa-level fsa-level--inline fsa-level--gutter-xxs">
+        <span><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg></span>
+        <span>Help</span>
+      </span>
+    </a>
   </div>
 </div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
 
-## Responsive
+## Icons
 
-<div class="docs__rwd-demo-block">
-  <div class="docs__rwd-embed-container">
-    <span class="fsa-btn-group fsa-btn-group--small" role="group" data-component="">
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="phone" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" title="Portrait">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--portrait"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="phone-big" class="fsa-btn-group__item" type="button" title="Landscape">Phone <span class="docs__rwd-demo-icon docs__rwd-demo-icon--landscape"></span></button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="tablet" class="fsa-btn-group__item" type="button">Tablet</button>
-      <button data-behavior="toggle-rwd-size" data-target="rwd-demo_content-tabs" data-size="desktop" class="fsa-btn-group__item" type="button">Desktop</button>
-      <a class="fsa-btn-group__item" href="http://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html" target="_blank" title="View in a New Window">New Window</a>
-    </span>
-    <div class="docs__rwd-embed docs__rwd-embed--phone" id="rwd-demo_content-tabs">
-      <iframe src="https://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html" class="docs__rwd-iframe" allowtransparency="true" frameborder="0" scrolling="yes" allowfullscreen="true"> </iframe>
-    </div>
+Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or clarify each Tab.
+
+{% capture snippet %}
+<div class="fsa-content-tabs">
+  <ul class="fsa-content-tabs__list">
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">
+          <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></svg>
+          Account
+        </span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label fsa-content-tabs__label--active" aria-current="step" href="#link">
+        <span class="fsa-content-tabs__label-text">
+          <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg>
+          Notifications
+        </span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">
+          <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path></svg>
+          Security
+        </span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">
+          <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+          Permissions
+        </span>
+      </a>
+    </li>
+    <li class="fsa-content-tabs__item">
+      <a class="fsa-content-tabs__label" href="#link">
+        <span class="fsa-content-tabs__label-text">
+          No icon
+        </span>
+      </a>
+    </li>
+  </ul>
+  <div class="fsa-content-tabs__aside">
+    <a href="#link-to-nowhere" onclick="alert('A text link is but one example of what can go here.')" class="fsa-text-align--right">
+      <span class="fsa-level fsa-level--inline fsa-level--gutter-xxs">
+        <span><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg></span>
+        <span>Help</span>
+      </span>
+    </a>
   </div>
 </div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
-{% include alert.rwd-rendering.html %}
+## Responsive
+
+At narrower breakpoints Content Tabs may be horizontally scrollable.
+
+{% assign rwdSize = "phone" %}
+{% capture rwdURL %}
+https://usda-fsa.github.io/fsa-style/demo/rwd__content-tabs.html
+{% endcapture %}
+
+{% include rwd-viewer.html %}
 
 ## Usage
 
