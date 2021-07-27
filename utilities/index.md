@@ -293,7 +293,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-radius.html
 
 <p class="fsa-text--lead">Selectively add or adjust borders <strong>between</strong> blocks of content.</p>
 
-### Direction
+### Orientation
 
 #### Vertical
 
@@ -429,7 +429,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-radius.html
 Selectively apply at any Media Query breakpoint.
 
 <p>
-  <code>class="fsa-border-between-[DIRECTION]--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
+  <code>class="fsa-border-between-[ORIENTATION]--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
   <code>breakpoint</code> is one of
   <code title="small">s</code>,
   <code title="medium">m</code>,
@@ -810,7 +810,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
 
 Selectively apply Border Between Color at any Media Query breakpoint.
 
-<code>class="fsa-border-between-<strong>[direction]--[color]@[breakpoint]</strong>"</code>
+<code>class="fsa-border-between-<strong>[ORIENTATION]--[color]@[breakpoint]</strong>"</code>
 <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
