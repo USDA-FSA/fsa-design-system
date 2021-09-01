@@ -21435,10 +21435,7 @@ main:active, main:focus {
 
 .ds-home-features__link {
   text-decoration: none;
-}
-
-.ds-home-features__link:focus {
-  outline: none;
+  display: block;
 }
 
 .ds-home-features__link:hover {

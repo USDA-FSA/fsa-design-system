@@ -21,10 +21,7 @@
   &__link {
 
     text-decoration: none;
-
-    &:focus {
-      outline: none;
-    }
+    display: block;
 
     &:hover {
       text-decoration: none;
