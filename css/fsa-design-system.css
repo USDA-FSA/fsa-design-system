@@ -22622,8 +22622,10 @@ pre.highlight .ds-clipboard {
   }
 }
 
-.ds-jump {
-  margin-top: 1.5em;
+@media (min-width: 54em) {
+  .ds-jump {
+    margin-top: 3.6rem;
+  }
 }
 
 @media (min-width: 54em) {
