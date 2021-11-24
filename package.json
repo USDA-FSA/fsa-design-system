@@ -10,7 +10,7 @@
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "cssnano": "^3.7.7",
-    "fsa-style": "^2.6.0",
+    "fsa-style": "^2.7.0-RC1",
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.0.0",
     "grunt-browserify": "^5.0.0",

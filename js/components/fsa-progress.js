@@ -51,7 +51,7 @@ $('body').on('click', '[data-behavior~="fakeSystemTrackLoop"]', function(event) 
   const $targetBar = $target.find('.fsa-progress__primary');
   const $targetValue = $target.find('.fsa-progress__value');
 
-  $self.css('visibility','hidden');
+  $self.attr('disabled', true);
   $targetBar.css('transform','scaleX(.03)');
   $targetValue.html('3%');
 
@@ -72,7 +72,7 @@ $('body').on('click', '[data-behavior~="fakeSystemTrackLoop"]', function(event) 
   setTimeout(function(){
     $targetValue.html('100%');
     $targetBar.css('transform','scaleX(1)');
-    $self.removeAttr('style');
+    $self.removeAttr('disabled');
 
     $('#UNIQUE-ID-ttfrancbra').attr('aria-hidden', 'false');
 
