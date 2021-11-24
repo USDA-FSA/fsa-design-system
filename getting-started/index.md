@@ -162,7 +162,7 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
         <div class="fsa-text-align--left">
           <ul class="fsa-m--none">
             <li>Use the FPAC Design System as your primary design reference for new digital products being explored, designed, and/or developed.</li>
-            <li>The <a href="https://wiki.tools.fsa.usda.gov/display/SPAR/Single+Page+Application+Reference"><abbr title="Single Page Application">SPA</abbr> Tech Stack</a> (Angular) is the current development standard, and the Design System's CSS Framework comes with its build system.</li>
+            <li>The <a href="https://confluence.fpac.usda.gov/display/SPAR/Single+Page+Application+Reference"><abbr title="Single Page Application">SPA</abbr> Tech Stack</a> (Angular) is the current development standard, and the Design System's CSS Framework comes with its build system.</li>
           </ul>
         </div>
       </td>
@@ -235,7 +235,7 @@ Consult the mini-guide below to determine the relevance of the FPAC Design Syste
     </tr>
     <tr>
       <td aria-label="answer" scope="row">
-        <span class="fsa-label">Possibly</span>
+        <span class="fsa-label fsa-label--large">Possibly</span>
       </td>
       <td aria-label="condition">
         If an existing legacy application wishs to utilize aspects of the Design System.
