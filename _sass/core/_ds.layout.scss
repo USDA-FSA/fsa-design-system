@@ -116,7 +116,7 @@ main {
   &__ft {
     display: flex;
     align-items: center;
-    margin-top: .5em;
+    margin-top: $size-small;
     @include breakpoint(L) {
       margin-top: 0;
       padding-left: $size-default;

@@ -21651,7 +21651,8 @@ main:active, main:focus {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  margin-top: .5em;
+  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 
 @media (min-width: 54em) {
@@ -21737,7 +21738,8 @@ main:active, main:focus {
 }
 
 .ds-home-features__item {
-  margin-bottom: 1em;
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .ds-home-features__link {
