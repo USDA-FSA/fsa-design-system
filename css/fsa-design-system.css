@@ -21801,7 +21801,8 @@ main:active, main:focus {
 }
 
 .ds-preview {
-  margin: 1em 0;
+  margin: 12px 0;
+  margin: 1.2rem 0;
   border-radius: 0.4rem;
 }
 
@@ -21834,13 +21835,13 @@ main:active, main:focus {
 
 @media (min-width: 37.5em) {
   .highlighter-rouge + .ds-preview {
-    margin-top: -2em;
+    margin-top: -3.6rem;
   }
 }
 
 @media (min-width: 37.5em) {
   .ds-preview + .highlighter-rouge {
-    margin-top: -1em;
+    margin-top: -1.2rem;
   }
 }
 
@@ -22023,7 +22024,7 @@ html body.x-ray .fsa-modal {
 
 @media (min-width: 37.5em) {
   .highlighter-rouge + .docs__utilities__demo {
-    margin-top: -2em;
+    margin-top: -3.6rem;
   }
 }
 
