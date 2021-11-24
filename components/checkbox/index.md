@@ -17,30 +17,30 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 {% capture snippet %}
 <ul class="fsa-form-list" aria-label="Example display of the 4 checkbox states">
-  <li>
-    <span>
-      <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
-      <label for="apple-pie">Apple Pie</label>
-    </span>
-  </li>
-  <li>
-    <span>
-      <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
-      <label for="key-lime-pie">Key Lime Pie</label>
-    </span>
-  </li>
-  <li>
-    <span>
-      <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
-      <label for="raspberry-pie">Raspberry Pie</label>
-    </span>
-  </li>
-  <li>
-    <span>
-      <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
-      <label for="moms-apple-pie">Mom's Apple Pie</label>
-    </span>
-  </li>
+
+  <span>
+    <input class="fsa-checkbox" id="apple-pie" type="checkbox" name="pies" value="apple-pie" checked="">
+    <label for="apple-pie">Apple Pie</label>
+  </span>
+
+
+  <span>
+    <input class="fsa-checkbox" id="key-lime-pie" type="checkbox" name="pies" value="key-lime-pie">
+    <label for="key-lime-pie">Key Lime Pie</label>
+  </span>
+
+
+  <span>
+    <input class="fsa-checkbox" id="raspberry-pie" type="checkbox" name="pies" disabled="">
+    <label for="raspberry-pie">Raspberry Pie</label>
+  </span>
+
+
+  <span>
+    <input class="fsa-checkbox" id="moms-apple-pie" type="checkbox" name="pies" value="moms-apple-pie" checked="checked" disabled="disabled">
+    <label for="moms-apple-pie">Mom's Apple Pie</label>
+  </span>
+
 </ul>
 {% endcapture %}
 
@@ -180,26 +180,20 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 {% capture snippet %}
 <div class="fsa-field fsa-field--block">
   <label class="fsa-field__label" id="unique-id-lorem--2258">Pies We Like</label>
-  <ul class="fsa-level" aria-describedby="unique-id-lorem--help--2258" aria-labelledby="unique-id-lorem--2258">
-    <li>
-      <span>
-        <input class="fsa-checkbox" id="apple--2341" type="checkbox" name="apple--2341" checked="">
-        <label for="apple--2341">Apple</label>
-      </span>
-    </li>
-    <li>
-      <span>
-        <input class="fsa-checkbox" id="key-lime--4552" type="checkbox" name="key-lime--4552" checked="">
-        <label for="key-lime--4552">Key Lime</label>
-      </span>
-    </li>
-    <li>
-      <span>
-        <input class="fsa-checkbox" id="pumpkin--2269" type="checkbox" name="pumpkin--2269">
-        <label for="pumpkin--2269">Pumpkin</label>
-      </span>
-    </li>
-  </ul>
+  <div class="fsa-level" aria-describedby="unique-id-lorem--help--2258" aria-labelledby="unique-id-lorem--2258">
+    <span>
+      <input class="fsa-checkbox" id="apple--2341" type="checkbox" name="apple--2341" checked="">
+      <label for="apple--2341">Apple</label>
+    </span>
+    <span>
+      <input class="fsa-checkbox" id="key-lime--4552" type="checkbox" name="key-lime--4552" checked="">
+      <label for="key-lime--4552">Key Lime</label>
+    </span>
+    <span>
+      <input class="fsa-checkbox" id="pumpkin--2269" type="checkbox" name="pumpkin--2269">
+      <label for="pumpkin--2269">Pumpkin</label>
+    </span>
+  </div>
   <span class="fsa-field__help" id="unique-id-lorem--help--2258">Choose the pies you fancy</span>
 </div>
 {% endcapture %}
