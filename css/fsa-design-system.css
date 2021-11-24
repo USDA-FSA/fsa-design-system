@@ -22154,6 +22154,10 @@ html body.x-ray .fsa-modal {
   color: #2f2c2a !important;
 }
 
+.ds-related-card__item:focus {
+  outline: 0 !important;
+}
+
 .ds-related-card__title {
   font-size: 20px;
   font-size: 2rem;
@@ -22165,6 +22169,11 @@ html body.x-ray .fsa-modal {
   display: flex;
   -ms-flex-align: baseline;
       align-items: baseline;
+}
+
+.ds-related-card__item:focus-visible .ds-related-card__title {
+  outline: 3px solid #009afa;
+  outline-offset: 3px;
 }
 
 .ds-related-card__item:hover .ds-related-card__title {
