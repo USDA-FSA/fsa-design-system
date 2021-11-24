@@ -22274,7 +22274,8 @@ pre.highlight .ds-clipboard {
   padding-left: 12px;
   padding-left: 1.2rem;
   font-weight: 300;
-  padding-top: 1.5em;
+  padding-top: 68px;
+  padding-top: 6.8rem;
 }
 
 @media (min-width: 37.5em) {
@@ -22683,7 +22684,8 @@ pre.highlight .ds-clipboard {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: .5em;
+  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 
 @media (min-width: 78.75em) {
@@ -22702,7 +22704,8 @@ pre.highlight .ds-clipboard {
   display: list-item;
   margin: 0;
   padding: 0;
-  margin-bottom: .5em;
+  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 @media (min-width: 78.75em) {
@@ -22726,7 +22729,8 @@ pre.highlight .ds-clipboard {
   position: absolute;
   left: 0;
   top: 0;
-  bottom: -.6em;
+  bottom: -8px;
+  bottom: -0.8rem;
 }
 
 .ds-sitemap__list-item:not(.ds-sitemap__list-item--root)::after {
@@ -22736,12 +22740,14 @@ pre.highlight .ds-clipboard {
   border-bottom: 1px solid #75716e;
   position: absolute;
   left: 0;
-  top: 0.8em;
+  top: 12px;
+  top: 1.2rem;
 }
 
 .ds-sitemap__list-item:not(.ds-sitemap__list-item--root):last-child::before {
   bottom: auto;
-  height: 0.8em;
+  height: 12px;
+  height: 1.2rem;
 }
 
 .ds-sitemap__link--root {

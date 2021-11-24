@@ -15,7 +15,7 @@
     padding-right: $size-default;
     padding-left: $size-default;
     font-weight: $font-light;
-    padding-top: 1.5em;
+    padding-top: ($size-base * 17);
 
     @include breakpoint(M) {
       @include font-size(6);
