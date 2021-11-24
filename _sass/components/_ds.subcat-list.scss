@@ -7,7 +7,7 @@
   &__list {
 
     @include reset-ul();
-    margin-top: 2em;
+    margin-top: $size-medium;
 
     @include breakpoint(S) {
       @include fsa-grid-row();

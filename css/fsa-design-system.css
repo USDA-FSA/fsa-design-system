@@ -22388,7 +22388,8 @@ pre.highlight .ds-clipboard {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: 2em;
+  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 @media (min-width: 30.0625em) {
