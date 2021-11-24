@@ -346,7 +346,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__progress.html
           </div>
         </div>
       </p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cancel Encryption</button>
       </p>
     </div>

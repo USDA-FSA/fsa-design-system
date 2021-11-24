@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Badges"
 shortName: "component__badges"
-intro: "Succinctly display quantified information."
+intro: "Succinctly display quantifiable information."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 relatedItems:

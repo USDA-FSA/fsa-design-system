@@ -23,7 +23,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>You're probably just fine.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
       </p>
     </div>
@@ -36,7 +36,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -50,7 +50,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -64,7 +64,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -76,7 +76,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>Would you like to see a <strong>Modal-based example</strong>, aka "Prompt"?</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Yes</button>
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">No</button>
       </p>
@@ -88,7 +88,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>You can have more than one when/if necessary.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cool</button>
       </p>
     </div>
@@ -100,7 +100,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>You've viewing a sample of a <strong>Growl Notification</strong>.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK, thanks</button>
       </p>
     </div>
@@ -115,7 +115,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -195,7 +195,7 @@ For events of lower relative importance, or for generic use.
       </div>
       <div class="fsa-growl__bd">
         <p>You're probably just fine.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
         </p>
       </div>
@@ -211,7 +211,7 @@ For events of lower relative importance, or for generic use.
     </div>
     <div class="fsa-growl__bd">
       <p>You're probably just fine.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
       </p>
     </div>
@@ -233,7 +233,7 @@ When things go wrong.
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
         <p>And another line here for kicks.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
           <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
         </p>
@@ -251,7 +251,7 @@ When things go wrong.
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -274,7 +274,7 @@ For events that require user attention.
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
         <p>And another line here for kicks.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
           <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
         </p>
@@ -292,7 +292,7 @@ For events that require user attention.
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -315,7 +315,7 @@ For reporting of a successful end of an operation or action.
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
         <p>And another line here for kicks.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
           <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
         </p>
@@ -333,7 +333,7 @@ For reporting of a successful end of an operation or action.
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -367,7 +367,7 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -394,7 +394,7 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
       </div>
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         </p>
       </div>

@@ -74,7 +74,7 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 ### Customizing Width
 
-Though it should be **rarely** necessary, the width of `.fsa-input`* can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
+Though it should be **rarely** necessary, the width of `.fsa-input` can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
 
 {% capture snippet %}
 <div class="fsa-level@l">

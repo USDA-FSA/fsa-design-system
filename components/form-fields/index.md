@@ -122,7 +122,7 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
     </div>
     <div>
       <input size="3" class="fsa-input fsa-field__item" id="lorem-dob__year" name="lorem-dob__year" aria-describedby="lorem-dob__help" aria-required="true" type="text" value="">
-      <label class="fsa-field__label fsa-text-size--2" for="lorem-dob__day">Year</label>
+      <label class="fsa-field__label fsa-text-size--2" for="lorem-dob__year">Year</label>
     </div>
   </div>
   <span class="fsa-field__help" id="lorem-dob__help">Example: 05 14 1981</span>
@@ -143,7 +143,7 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
 
 ### Text, Custom Width
 
-The width of `.fsa-field`'s use of `.fsa-input` defaults to the full width of its parent container (i.e. `.fsa-field`). Though it should be **rarely** necessary, its can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
+The width of `.fsa-field`'s use of `.fsa-input` defaults to the full width of its parent container (i.e. `.fsa-field`). Though it should be **rarely** necessary, it can be overridden with the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
 
 {% capture snippet %}
 <div class="fsa-field">
@@ -685,7 +685,7 @@ In general, FPAC applications should use a single column layout. There are insta
     <span class="fsa-field__help" id="lorem-hshhsjtext-help-4">You may choose a type other than the default, Social Security Number (SSN)</span>
   </div>
 </fieldset>
-<div class="fsa-field">
+<div class="fsa-field fsa-level">
   <button type="submit" class="fsa-btn fsa-btn--primary">Search Profiles</button>
   <button type="button" class="fsa-btn fsa-btn--flat">Cancel</button>
 </div>
@@ -769,7 +769,7 @@ Using the responsive [Grid System]({{ site.baseurl }}layout/grid/), the form bel
     </fieldset>
   </div>
 </div>
-<div class="fsa-field">
+<div class="fsa-field fsa-level">
   <button type="submit" class="fsa-btn fsa-btn--primary">Search Profiles</button>
   <button type="button" class="fsa-btn fsa-btn--flat">Cancel</button>
 </div>
@@ -839,7 +839,7 @@ Additionally, each **core nested component** may have additional selectors to de
     </div>
     <div>
       <input size="3" class="fsa-input fsa-input--error fsa-field__item" id="ipsum-dob__year" name="ipsum-dob__year" aria-describedby="ipsum-dob__help ipsum-dob__error-2" aria-required="true" type="text" value="">
-      <label class="fsa-field__label fsa-text-size--2" for="ipsum-dob__day">Year</label>
+      <label class="fsa-field__label fsa-text-size--2" for="ipsum-dob__year">Year</label>
     </div>
   </div>
   <span class="fsa-field__help" id="ipsum-dob__help">Example: 05 14 1981</span>

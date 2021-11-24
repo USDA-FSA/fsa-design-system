@@ -12,18 +12,20 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">
-  <label class="fsa-switch">
-    <input type="checkbox" class="fsa-switch__checkbox">
-    <span class="fsa-switch__track"></span>
-  </label>
-  <label class="fsa-switch">
-    <input checked type="checkbox" class="fsa-switch__checkbox">
-    <span class="fsa-switch__track"></span>
-  </label>
-  <label class="fsa-switch">
-    <input type="checkbox" class="fsa-switch__checkbox" id="switch-indeterminate-example__00">
-    <span class="fsa-switch__track"></span>
-  </label>
+  <div class="fsa-level">
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox">
+      <span class="fsa-switch__track"></span>
+    </label>
+    <label class="fsa-switch">
+      <input checked type="checkbox" class="fsa-switch__checkbox">
+      <span class="fsa-switch__track"></span>
+    </label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-indeterminate-example__00">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </div>
   <script>
     document.getElementById("switch-indeterminate-example__00").indeterminate = true;
   </script>
