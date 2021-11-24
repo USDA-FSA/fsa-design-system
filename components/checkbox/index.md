@@ -179,28 +179,28 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 
 {% capture snippet %}
 <div class="fsa-field fsa-field--block">
-  <label class="fsa-field__label" id="unique-id-lorem--7894">Pies We Like</label>
-  <ul class="fsa-level" aria-describedby="unique-id-lorem--help--7894" aria-labelledby="unique-id-lorem--7894">
+  <label class="fsa-field__label" id="unique-id-lorem--2258">Pies We Like</label>
+  <ul class="fsa-level" aria-describedby="unique-id-lorem--help--2258" aria-labelledby="unique-id-lorem--2258">
     <li>
       <span>
-        <input class="fsa-checkbox" id="apple--7894" type="checkbox" name="apple--7894" checked="">
-        <label for="apple">Apple</label>
+        <input class="fsa-checkbox" id="apple--2341" type="checkbox" name="apple--2341" checked="">
+        <label for="apple--2341">Apple</label>
       </span>
     </li>
     <li>
       <span>
-        <input class="fsa-checkbox" id="key-lime--7894" type="checkbox" name="key-lime--7894" checked="">
-        <label for="key-lime">Key Lime</label>
+        <input class="fsa-checkbox" id="key-lime--4552" type="checkbox" name="key-lime--4552" checked="">
+        <label for="key-lime--4552">Key Lime</label>
       </span>
     </li>
     <li>
       <span>
-        <input class="fsa-checkbox" id="pumpkin--7894" type="checkbox" name="pumpkin--7894">
-        <label for="pumpkin">Pumpkin</label>
+        <input class="fsa-checkbox" id="pumpkin--2269" type="checkbox" name="pumpkin--2269">
+        <label for="pumpkin--2269">Pumpkin</label>
       </span>
     </li>
   </ul>
-  <span class="fsa-field__help" id="unique-id-lorem--help--7894">Choose the pies you fancy</span>
+  <span class="fsa-field__help" id="unique-id-lorem--help--2258">Choose the pies you fancy</span>
 </div>
 {% endcapture %}
 
