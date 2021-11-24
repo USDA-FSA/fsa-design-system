@@ -65,7 +65,6 @@
     @include font-size(4);
     display: block;
     font-weight: $font-bold;
-    margin-bottom: $size-base;
 
     .ds-subcat-list__link:focus & {
       @include fsa-focus;

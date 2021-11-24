@@ -23,7 +23,7 @@
   &__item {
 
     @include reset-li();
-    margin-bottom: $size-small;
+    margin-bottom: $size-base;
 
     @include breakpoint(L) {
       padding-left: $size-small;

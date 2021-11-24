@@ -34,7 +34,6 @@
     @include font-size(4);
     display: block;
     font-weight: $font-bold;
-    margin-bottom: $size-base;
     // color: inherit;
 
     .ds-home-features__link:hover & {
