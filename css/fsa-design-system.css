@@ -21592,13 +21592,13 @@ main:active, main:focus {
   .ds-article > blockquote {
     font-size: 2rem;
     line-height: 3.6rem;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.4rem;
   }
 }
 
 @media (min-width: 54em) {
   .ds-article > blockquote + blockquote {
-    margin-top: -1em;
+    margin-top: -1.2rem;
   }
 }
 

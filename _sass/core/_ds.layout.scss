@@ -61,12 +61,12 @@ main {
 
     @include breakpoint(L) {
       @include font-size(4);
-      margin-bottom: 1.5em;
+      margin-bottom: $size-medium;
     }
 
     + blockquote {
       @include breakpoint(L) {
-        margin-top: -1em;
+        margin-top: -$size-default;
       }
     }
 
