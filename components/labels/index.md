@@ -12,14 +12,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">
-  <ul class="fsa-level">
-    <li><span class="fsa-label">Default Label</span></li>
-    <li><span class="fsa-label fsa-label--neutral">General Label</span></li>
-    <li><span class="fsa-label fsa-label--general">General Label</span></li>
-    <li><span class="fsa-label fsa-label--alert">Alert Label</span></li>
-    <li><span class="fsa-label fsa-label--warning">Warning Label</span></li>
-    <li><span class="fsa-label fsa-label--success">Success Label</span></li>
-  </ul>
+  <div class="fsa-level">
+    <span class="fsa-label">Default Label</span>
+    <span class="fsa-label fsa-label--neutral">General Label</span>
+    <span class="fsa-label fsa-label--general">General Label</span>
+    <span class="fsa-label fsa-label--alert">Alert Label</span>
+    <span class="fsa-label fsa-label--warning">Warning Label</span>
+    <span class="fsa-label fsa-label--success">Success Label</span>
+  </div>
 </div>
 
 ## Variations
@@ -91,28 +91,28 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 ### Large
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><span class="fsa-label fsa-label--large">Large Default</span></li>
-  <li><span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span></li>
-  <li><span class="fsa-label fsa-label--general fsa-label--large">Large General</span></li>
-  <li><span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span></li>
-  <li><span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span></li>
-  <li><span class="fsa-label fsa-label--success fsa-label--large">Large Success</span></li>
-</ul>
+<div class="fsa-level">
+  <span class="fsa-label fsa-label--large">Large Default</span>
+  <span class="fsa-label fsa-label--neutral fsa-label--large">Large Neutral</span>
+  <span class="fsa-label fsa-label--general fsa-label--large">Large General</span>
+  <span class="fsa-label fsa-label--alert fsa-label--large">Large Alert</span>
+  <span class="fsa-label fsa-label--warning fsa-label--large">Large Warning</span>
+  <span class="fsa-label fsa-label--success fsa-label--large">Large Success</span>
+</div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Extra Large
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><span class="fsa-label fsa-label--extra-large">Label</span></li>
-  <li><span class="fsa-label fsa-label--neutral fsa-label--extra-large">Label</span></li>
-  <li><span class="fsa-label fsa-label--general fsa-label--extra-large">Label</span></li>
-  <li><span class="fsa-label fsa-label--alert fsa-label--extra-large">Label</span></li>
-  <li><span class="fsa-label fsa-label--warning fsa-label--extra-large">Label</span></li>
-  <li><span class="fsa-label fsa-label--success fsa-label--extra-large">Label</span></li>
-</ul>
+<div class="fsa-level">
+  <span class="fsa-label fsa-label--extra-large">Label</span>
+  <span class="fsa-label fsa-label--neutral fsa-label--extra-large">Label</span>
+  <span class="fsa-label fsa-label--general fsa-label--extra-large">Label</span>
+  <span class="fsa-label fsa-label--alert fsa-label--extra-large">Label</span>
+  <span class="fsa-label fsa-label--warning fsa-label--extra-large">Label</span>
+  <span class="fsa-label fsa-label--success fsa-label--extra-large">Label</span>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -122,25 +122,25 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 Label styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><a class="fsa-label" href="link.html">Anchor</a></li>
-  <li><button class="fsa-label" type="button">Button</button></li>
-  <li><button class="fsa-label" type="button" disabled="disabled">Disabled Button</button></li>
-</ul>
+<div class="fsa-level">
+  <a class="fsa-label" href="link.html">Anchor</a>
+  <button class="fsa-label" type="button">Button</button>
+  <button class="fsa-label" type="button" disabled="disabled">Disabled Button</button>
+</div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Example: Dark Background
 
-<div class="ds-preview" style="background-color: #666;">
-  <ul class="fsa-level">
-    <li><span class="fsa-label">Default</span></li>
-    <li><span class="fsa-label fsa-label--neutral">General</span></li>
-    <li><span class="fsa-label fsa-label--general">General</span></li>
-    <li><span class="fsa-label fsa-label--alert">Alert</span></li>
-    <li><span class="fsa-label fsa-label--warning">Warning</span></li>
-    <li><span class="fsa-label fsa-label--success">Success</span></li>
-  </ul>
+<div class="ds-preview fsa-bg--tertiary-300">
+  <div class="fsa-level">
+    <span class="fsa-label">Default</span>
+    <span class="fsa-label fsa-label--neutral">General</span>
+    <span class="fsa-label fsa-label--general">General</span>
+    <span class="fsa-label fsa-label--alert">Alert</span>
+    <span class="fsa-label fsa-label--warning">Warning</span>
+    <span class="fsa-label fsa-label--success">Success</span>
+  </div>
 </div>
 
 ## Usage

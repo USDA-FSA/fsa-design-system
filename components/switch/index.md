@@ -77,18 +77,20 @@ The Indeterminate setting can be initiated by setting the `indeterminate` parame
 
 ### Disabled
 {% capture snippet %}
-<label class="fsa-switch">
-  <input disabled type="checkbox" class="fsa-switch__checkbox">
-  <span class="fsa-switch__track"></span>
-</label>
-<label class="fsa-switch">
-  <input checked disabled type="checkbox" class="fsa-switch__checkbox">
-  <span class="fsa-switch__track"></span>
-</label>
-<label class="fsa-switch">
-  <input type="checkbox" class="fsa-switch__checkbox" id="checkbox-indeterminate-example__02" disabled>
-  <span class="fsa-switch__track"></span>
-</label>
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input disabled type="checkbox" class="fsa-switch__checkbox">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label class="fsa-switch">
+    <input checked disabled type="checkbox" class="fsa-switch__checkbox">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="checkbox-indeterminate-example__02" disabled>
+    <span class="fsa-switch__track"></span>
+  </label>
+</div>
 <script>
   document.getElementById("checkbox-indeterminate-example__02").indeterminate = true;
 </script>

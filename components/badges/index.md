@@ -12,14 +12,14 @@ relatedItems:
 ---
 
 <div class="ds-preview">
-  <ul class="fsa-level">
-    <li><span class="fsa-badge">1</span></li>
-    <li><span class="fsa-badge fsa-badge--neutral">8</span></li>
-    <li><span class="fsa-badge fsa-badge--general">11</span></li>
-    <li><span class="fsa-badge fsa-badge--alert">11</span></li>
-    <li><span class="fsa-badge fsa-badge--warning">22</span></li>
-    <li><span class="fsa-badge fsa-badge--success">99+</span></li>
-  </ul>
+  <div class="fsa-level">
+    <span class="fsa-badge">1</span>
+    <span class="fsa-badge fsa-badge--neutral">8</span>
+    <span class="fsa-badge fsa-badge--general">11</span>
+    <span class="fsa-badge fsa-badge--alert">11</span>
+    <span class="fsa-badge fsa-badge--warning">22</span>
+    <span class="fsa-badge fsa-badge--success">99+</span>
+  </div>
 </div>
 
 ## Variations
@@ -87,14 +87,14 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ### Large
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><span class="fsa-badge fsa-badge--large">1</span></li>
-  <li><span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span></li>
-  <li><span class="fsa-badge fsa-badge--large fsa-badge--general">8</span></li>
-  <li><span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span></li>
-  <li><span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span></li>
-  <li><span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span></li>
-</ul>
+<div class="fsa-level">
+  <span class="fsa-badge fsa-badge--large">1</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--neutral">8</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--general">8</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--alert">11</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--warning">22</span>
+  <span class="fsa-badge fsa-badge--large fsa-badge--success">99+</span>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -102,14 +102,14 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ### Extra Large
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><span class="fsa-badge fsa-badge--extra-large">1</span></li>
-  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span></li>
-  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span></li>
-  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span></li>
-  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span></li>
-  <li><span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span></li>
-</ul>
+<div class="fsa-level">
+  <span class="fsa-badge fsa-badge--extra-large">1</span>
+  <span class="fsa-badge fsa-badge--extra-large fsa-badge--neutral">8</span>
+  <span class="fsa-badge fsa-badge--extra-large fsa-badge--general">8</span>
+  <span class="fsa-badge fsa-badge--extra-large fsa-badge--alert">11</span>
+  <span class="fsa-badge fsa-badge--extra-large fsa-badge--warning">22</span>
+  <span class="fsa-badge fsa-badge--extra-large fsa-badge--success">99+</span>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -119,11 +119,11 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 Badge styles can be applied to nearly any HTML element, defaulting to non-actionable `<span>` elements as shown above. Below are `<a>` and `<button>` elements:
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><a class="fsa-badge" href="link.html">A</a> Anchor</li>
-  <li><button class="fsa-badge" type="button">B</button> Button</li>
-  <li><button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled</li>
-</ul>
+<div class="fsa-level">
+  <a class="fsa-badge" href="link.html">A</a> Anchor
+  <button class="fsa-badge" type="button">B</button> Button
+  <button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -131,25 +131,25 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
 ### Example: Dark Background
 
 <div class="ds-preview" style="background-color: #666;">
-  <ul class="fsa-level">
-    <li><span class="fsa-badge">1</span></li>
-    <li><span class="fsa-badge fsa-badge--neutral">8</span></li>
-    <li><span class="fsa-badge fsa-badge--general">11</span></li>
-    <li><span class="fsa-badge fsa-badge--alert">11</span></li>
-    <li><span class="fsa-badge fsa-badge--warning">22</span></li>
-    <li><span class="fsa-badge fsa-badge--success">99+</span></li>
-  </ul>
+  <div class="fsa-level">
+    <span class="fsa-badge">1</span>
+    <span class="fsa-badge fsa-badge--neutral">8</span>
+    <span class="fsa-badge fsa-badge--general">11</span>
+    <span class="fsa-badge fsa-badge--alert">11</span>
+    <span class="fsa-badge fsa-badge--warning">22</span>
+    <span class="fsa-badge fsa-badge--success">99+</span>
+  </div>
 </div>
 ```html
 <div style="background-color: #666;">
-  <ul class="fsa-level">
-    <li><span class="fsa-badge">1</span></li>
-    <li><span class="fsa-badge fsa-badge--neutral">8</span></li>
-    <li><span class="fsa-badge fsa-badge--general">11</span></li>
-    <li><span class="fsa-badge fsa-badge--alert">11</span></li>
-    <li><span class="fsa-badge fsa-badge--warning">22</span></li>
-    <li><span class="fsa-badge fsa-badge--success">99+</span></li>
-  </ul>
+  <div class="fsa-level">
+    <span class="fsa-badge">1</span>
+    <span class="fsa-badge fsa-badge--neutral">8</span>
+    <span class="fsa-badge fsa-badge--general">11</span>
+    <span class="fsa-badge fsa-badge--alert">11</span>
+    <span class="fsa-badge fsa-badge--warning">22</span>
+    <span class="fsa-badge fsa-badge--success">99+</span>
+  </div>
 </div>
 ```
 
