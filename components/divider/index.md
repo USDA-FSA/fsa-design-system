@@ -4,7 +4,7 @@ parent: "Components"
 type: "UI Component"
 title: "Divider"
 shortName: "component__divider"
-intro: "Display visual breaks between content, elements, or components."
+intro: "Display thematic breaks between content, elements, or components."
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
