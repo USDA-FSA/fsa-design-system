@@ -22273,6 +22273,7 @@ pre.highlight .ds-clipboard {
 .ds-header__title {
   font-size: 30px;
   font-size: 3rem;
+  line-height: 1;
   margin-left: auto;
   margin-right: auto;
   max-width: 1236px;
@@ -22289,6 +22290,7 @@ pre.highlight .ds-clipboard {
   .ds-header__title {
     font-size: 4.4rem;
     line-height: 5.2rem;
+    line-height: 1;
   }
 }
 
@@ -22308,8 +22310,12 @@ pre.highlight .ds-clipboard {
 
 @media (min-width: 54em) {
   .ds-header__bd {
-    width: 100%;
-    display: table;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 
@@ -22320,7 +22326,7 @@ pre.highlight .ds-clipboard {
 
 @media (min-width: 54em) {
   .ds-header__nav {
-    display: table-cell;
+    margin-bottom: 0;
   }
 }
 
