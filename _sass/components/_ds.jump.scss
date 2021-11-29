@@ -24,7 +24,7 @@
     margin-bottom: $size-base;
 
     @include breakpoint(L) {
-      padding-left: $size-small;
+      padding-left: $size-default;
       border-left: $size-base solid transparent;
       transition: border .115s ease-in-out;
     }
