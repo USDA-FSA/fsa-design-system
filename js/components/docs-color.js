@@ -56,6 +56,7 @@ $('body').on('change', '[data-behavior~="toggle-demo-background"]', function(eve
   var $self = $(this);
   var $target = $('#' + $self.data('target'));
   $target.toggleClass('fsa-bg--tertiary-900');
+  $target.toggleClass('fsa-color--tertiary-100');
 
 })
 
