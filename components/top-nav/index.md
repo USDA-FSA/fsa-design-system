@@ -331,7 +331,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ### Sub Menus: expanded, single list, optional group title
 
 {% capture snippet %}
-<div style="padding-bottom: 420px">
+<div style="padding-bottom: 460px">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -486,7 +486,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ### Sub Menus: expanded, single list, multi-column
 
 {% capture snippet %}
-<div style="padding-bottom: 250px;">
+<div style="padding-bottom: 240px;">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -637,7 +637,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ### Sub Menus: expanded, grouped lists
 
 {% capture snippet %}
-<div style="padding-bottom: 335px;">
+<div style="padding-bottom: 370px;">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">

@@ -22191,7 +22191,8 @@ html body.x-ray .fsa-modal {
 }
 
 h2[id] + .ds-anatomy {
-  margin-top: -15px;
+  margin-top: -12px;
+  margin-top: -1.2rem;
   border-top: 0;
 }
 

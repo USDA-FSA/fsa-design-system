@@ -2,7 +2,7 @@
 
   & {
     h2[id] + & {
-      margin-top: -15px;
+      margin-top: -$size-default;
       border-top: 0;
     }
   }
