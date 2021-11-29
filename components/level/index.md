@@ -966,22 +966,22 @@ Combines Level with
 
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
-    <span class="fsa-badge fsa-badge--large">4</span> Submitted
-    <span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> Approved
-    <span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> Assigned
-    <span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> In&nbsp;Progress
-    <span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> Completed
-    <span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> Rejected
+    <span><span class="fsa-badge fsa-badge--large">4</span> <span>Submitted</span></span>
+    <span><span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> <span>Approved</span></span>
+    <span><span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> <span>Assigned</span></span>
+    <span><span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> <span>In&nbsp;Progress</span></span>
+    <span><span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> <span>Completed</span></span>
+    <span><span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> <span>Rejected</span></span>
   </div>
 </div>
 ```html
 <div class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
-  <span class="fsa-badge fsa-badge--large">4</span> Submitted
-  <span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> Approved
-  <span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> Assigned
-  <span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> In&nbsp;Progress
-  <span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> Completed
-  <span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> Rejected
+  <span><span class="fsa-badge fsa-badge--large">4</span> <span>Submitted</span></span>
+  <span><span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> <span>Approved</span></span>
+  <span><span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> <span>Assigned</span></span>
+  <span><span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> <span>In&nbsp;Progress</span></span>
+  <span><span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> <span>Completed</span></span>
+  <span><span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> <span>Rejected</span></span>
 </div>
 ```
 
@@ -989,33 +989,29 @@ Combines Level with
 
 Combines Level with
 [Box]({{ site.baseurl }}layout/box/),
-[Divider]({{ site.baseurl }}layout/divider/),
 [Padding Utilities]({{ site.baseurl }}utilities/#padding),
+[Border Between Utility]({{ site.baseurl }}utilities/#border-between),
 and
 [Badges]({{ site.baseurl }}components/badges/).
 
 <div class="ds-preview">
-  <div class="fsa-box fsa-p--none">
+  <div class="fsa-box fsa-p--none fsa-border-between-horizontal--xxs">
     <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
       Organizations
       <span class="fsa-badge">1</span>
     </div>
-    <div class="fsa-divider"></div>
     <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
       Repositories
       <span class="fsa-badge">30</span>
     </div>
-    <div class="fsa-divider"></div>
     <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
       Issues
       <span class="fsa-badge">270</span>
     </div>
-    <div class="fsa-divider"></div>
     <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
       Milestones
       <span class="fsa-badge">9</span>
     </div>
-    <div class="fsa-divider"></div>
     <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
       Projects
       <span class="fsa-badge">11</span>
@@ -1023,27 +1019,23 @@ and
   </div>
 </div>
 ```html
-<div class="fsa-box fsa-p--none">
+<div class="fsa-box fsa-p--none fsa-border-between-horizontal--xxs">
   <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
     Organizations
     <span class="fsa-badge">1</span>
   </div>
-  <div class="fsa-divider"></div>
   <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
     Repositories
     <span class="fsa-badge">30</span>
   </div>
-  <div class="fsa-divider"></div>
   <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
     Issues
     <span class="fsa-badge">270</span>
   </div>
-  <div class="fsa-divider"></div>
   <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
     Milestones
     <span class="fsa-badge">9</span>
   </div>
-  <div class="fsa-divider"></div>
   <div class="fsa-level fsa-level--gutter-m fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
     Projects
     <span class="fsa-badge">11</span>

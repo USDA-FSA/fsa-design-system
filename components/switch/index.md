@@ -127,12 +127,12 @@ The Indeterminate setting can be initiated by setting the `indeterminate` parame
 {% include preview-and-snippet.html %}
 
 ### Example
-Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/layout/level), [Padding Utilities]({{ site.baseurl }}/utilities/#padding), and [Divider]({{ site.baseurl }}/layout/divider), arrange content in a vertical list and associate a `<label`> with a `.fsa-switch`.
+Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/layout/level), [Padding Utility]({{ site.baseurl }}/utilities/#padding), and [Border Between Utility]({{ site.baseurl }}/utilities/#border-between) arrange content in a vertical list and associate a `<label`> with a `.fsa-switch`.
 
 {% capture snippet %}
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/3@m">
-    <div class="fsa-box fsa-p--none">
+    <div class="fsa-box fsa-p--none fsa-border-between-horizontal--xxs">
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__01">Thing 1</label>
         <label class="fsa-switch">
@@ -140,7 +140,6 @@ Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/l
           <span class="fsa-switch__track"></span>
         </label>
       </div>
-      <div class="fsa-divider"></div>
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__02">Thing 2</label>
         <label class="fsa-switch">
@@ -148,7 +147,6 @@ Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/l
           <span class="fsa-switch__track"></span>
         </label>
       </div>
-      <div class="fsa-divider"></div>
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__03">Thing 3</label>
         <label class="fsa-switch">
@@ -156,7 +154,6 @@ Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/l
           <span class="fsa-switch__track"></span>
         </label>
       </div>
-      <div class="fsa-divider"></div>
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__04">Thing 4</label>
         <label class="fsa-switch">
