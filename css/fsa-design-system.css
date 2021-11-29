@@ -21790,6 +21790,8 @@ main:active, main:focus {
 }
 
 .ds-article h2[id] {
+  margin-top: 24px;
+  margin-top: 2.4rem;
   border-bottom: 2px solid #75716e;
 }
 

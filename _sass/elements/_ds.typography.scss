@@ -2,6 +2,7 @@
 h2[id] {
   .ds-article & {
 
+    margin-top: $size-medium;
     border-bottom: 2px solid $color-fsa-tertiary-300;
 
     &:before {
