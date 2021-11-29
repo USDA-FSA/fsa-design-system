@@ -21553,7 +21553,7 @@ main:active, main:focus {
 
 @media (min-width: 54em) {
   .ds-body {
-    margin-top: 3.6rem;
+    margin-top: 2.4rem;
   }
 }
 
@@ -21653,10 +21653,13 @@ main:active, main:focus {
       align-items: center;
   margin-top: 8px;
   margin-top: 0.8rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 @media (min-width: 54em) {
   .ds-page-title__ft {
+    margin-bottom: 0;
     margin-top: 0;
     padding-left: 1.2rem;
     margin-left: auto;
@@ -22268,8 +22271,8 @@ pre.highlight .ds-clipboard {
 }
 
 .ds-header__title {
-  font-size: 28px;
-  font-size: 2.8rem;
+  font-size: 30px;
+  font-size: 3rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 1236px;
@@ -22651,12 +22654,11 @@ pre.highlight .ds-clipboard {
   display: list-item;
   margin: 0;
   padding: 0;
-  margin-bottom: 4px;
-  margin-bottom: 0.4rem;
 }
 
 @media (min-width: 54em) {
   .ds-jump__item {
+    margin-bottom: 0.4rem;
     padding-left: 1.2rem;
     border-left: 0.4rem solid transparent;
     transition: border .115s ease-in-out;
@@ -22899,6 +22901,7 @@ pre.highlight .ds-clipboard {
     display: block;
     position: relative;
     z-index: 2;
+    margin-top: 2.4rem;
     margin-bottom: 2.4rem;
   }
   @media (min-width: 54em) {

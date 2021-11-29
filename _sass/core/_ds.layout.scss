@@ -20,7 +20,7 @@ main {
   padding: $size-default;
 
   @include breakpoint(L) {
-    margin-top: $size-large;
+    margin-top: $size-medium;
   }
 
 }
@@ -117,7 +117,9 @@ main {
     display: flex;
     align-items: center;
     margin-top: $size-small;
+    margin-bottom: $size-small;
     @include breakpoint(L) {
+      margin-bottom: 0;
       margin-top: 0;
       padding-left: $size-default;
       margin-left: auto;
