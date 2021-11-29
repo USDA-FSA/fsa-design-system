@@ -21,13 +21,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--plain" type="button">Label</button></li>
-</ul>
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--plain" type="button">Label</button>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -104,12 +104,12 @@ Each button variation can be modified with one or multiple states:
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
-</ul>
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -136,82 +136,82 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 
 ### Medium
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--primary" type="button">
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
     Save
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--secondary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--secondary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Download
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--tertiary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
     Remove
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--flat" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--flat" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
     Edit
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--plain" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--plain" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
     Print
-  </button></li>
-</ul>
+  </button>
+</div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Small
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--primary" type="button">
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--small fsa-btn--primary" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
     Save
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Download
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--tertiary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--tertiary" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
     Remove
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
     Edit
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--plain" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--plain" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
     Print
-  </button></li>
-</ul>
+  </button>
+</div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Large
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--primary" type="button">
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--large fsa-btn--primary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
     Save
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--secondary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--secondary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Download
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--tertiary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--tertiary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
     Remove
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--flat" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--flat" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
     Edit
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--plain" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--plain" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
     Print
-  </button></li>
-</ul>
+  </button>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
