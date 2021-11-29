@@ -871,60 +871,60 @@ and
 [Label]({{ site.baseurl }}components/label/).
 
 <div class="ds-preview">
-  <ul class="fsa-level fsa-level--justify-between fsa-level--align-stretch fsa-level--grow-auto">
-    <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+  <div class="fsa-level fsa-level--justify-between fsa-level--align-stretch fsa-level--grow-auto">
+    <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
       <div class="fsa-text--h6">Status</div>
       <div class="fsa-text-size--4">
         <span class="fsa-label fsa-label--large fsa-label--warning">In&nbsp;Progress</span>
       </div>
-    </li>
-    <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+    </div>
+    <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
       <div class="fsa-text--h6">Location</div>
       <div class="fsa-text-size--4">
         <div title="Johnson County, Missouri">Johnson, <abbr title="Missouri">MO</abbr></div>
       </div>
-    </li>
-    <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+    </div>
+    <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
       <div class="fsa-text--h6">Operator</div>
       <div class="fsa-text-size--4">Buchman Seed and Feed</div>
-    </li>
-    <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+    </div>
+    <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
       <div class="fsa-text--h6">Producer ID</div>
       <div class="fsa-text-size--4">66061</div>
-    </li>
-    <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+    </div>
+    <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
       <div class="fsa-text--h6">Farms</div>
       <div class="fsa-text-size--4">17</div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
 ```html
-<ul class="fsa-level fsa-level--justify-between fsa-level--align-stretch fsa-level--grow-auto">
-  <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+<div class="fsa-level fsa-level--justify-between fsa-level--align-stretch fsa-level--grow-auto">
+  <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
     <div class="fsa-text--h6">Status</div>
     <div class="fsa-text-size--4">
       <span class="fsa-label fsa-label--large fsa-label--warning">In&nbsp;Progress</span>
     </div>
-  </li>
-  <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+  </div>
+  <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
     <div class="fsa-text--h6">Location</div>
     <div class="fsa-text-size--4">
       <div title="Johnson County, Missouri">Johnson, <abbr title="Missouri">MO</abbr></div>
     </div>
-  </li>
-  <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+  </div>
+  <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
     <div class="fsa-text--h6">Operator</div>
     <div class="fsa-text-size--4">Buchman Seed and Feed</div>
-  </li>
-  <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+  </div>
+  <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
     <div class="fsa-text--h6">Producer ID</div>
     <div class="fsa-text-size--4">66061</div>
-  </li>
-  <li class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
+  </div>
+  <div class="fsa-box fsa-box--bw-0 fsa-box--br-2 fsa-p--s">
     <div class="fsa-text--h6">Farms</div>
     <div class="fsa-text-size--4">17</div>
-  </li>
-</ul>
+  </div>
+</div>
 ```
 
 ### Page Title paired with actions
@@ -965,24 +965,24 @@ Combines Level with
 [Badges]({{ site.baseurl }}components/badges/).
 
 <div class="ds-preview">
-  <ul class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
-    <li><span class="fsa-badge fsa-badge--large">4</span> Submitted</li>
-    <li><span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> Approved</li>
-    <li><span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> Assigned</li>
-    <li><span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> In&nbsp;Progress</li>
-    <li><span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> Completed </li>
-    <li><span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> Rejected</li>
-  </ul>
+  <div class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
+    <span class="fsa-badge fsa-badge--large">4</span> Submitted
+    <span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> Approved
+    <span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> Assigned
+    <span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> In&nbsp;Progress
+    <span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> Completed
+    <span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> Rejected
+  </div>
 </div>
 ```html
-<ul class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
-  <li><span class="fsa-badge fsa-badge--large">4</span> Submitted</li>
-  <li><span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> Approved</li>
-  <li><span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> Assigned</li>
-  <li><span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> In&nbsp;Progress</li>
-  <li><span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> Completed </li>
-  <li><span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> Rejected</li>
-</ul>
+<div class="fsa-level fsa-level--justify-between fsa-level--gutter-xs">
+  <span class="fsa-badge fsa-badge--large">4</span> Submitted
+  <span class="fsa-badge fsa-badge--neutral fsa-badge--large">1</span> Approved
+  <span class="fsa-badge fsa-badge--general fsa-badge--large">2</span> Assigned
+  <span class="fsa-badge fsa-badge--warning fsa-badge--large">3</span> In&nbsp;Progress
+  <span class="fsa-badge fsa-badge--success fsa-badge--large">2</span> Completed
+  <span class="fsa-badge fsa-badge--alert fsa-badge--large">0</span> Rejected
+</div>
 ```
 
 ### Tile List
@@ -1062,12 +1062,12 @@ and
 
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between fsa-level--align-bottom">
-    <ul class="fsa-level">
-      <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled>Edit</button></li>
-      <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Assign</button></li>
-      <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button></li>
-      <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button></li>
-    </ul>
+    <div class="fsa-level">
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled>Edit</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Assign</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button>
+    </div>
     <div class="fsa-level">
       <div>
         <label for="lorem_find" class="fsa-text-size--2">Quick Find</label>
@@ -1086,12 +1086,12 @@ and
 </div>
 ```html
 <div class="fsa-level fsa-level--justify-between fsa-level--align-bottom">
-  <ul class="fsa-level">
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled>Edit</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Assign</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button></li>
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button></li>
-  </ul>
+  <div class="fsa-level">
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled>Edit</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Assign</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button>
+  </div>
   <div class="fsa-level">
     <div>
       <label for="lorem_find" class="fsa-text-size--2">Quick Find</label>
