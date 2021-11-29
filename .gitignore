@@ -8,5 +8,6 @@ npm-debug.log
 .ugly
 .bundle/
 _sass/lib/fsa-style
+scratch.md
 
 \.vscode/
