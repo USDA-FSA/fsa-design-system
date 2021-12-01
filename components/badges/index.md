@@ -22,7 +22,7 @@ relatedItems:
   </div>
 </div>
 
-## Variations
+## Variants
 
 Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 
@@ -162,7 +162,7 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
 
 {% capture usage_dont %}
 * Within text paragraphs to indicate something other than a notification.
-* With color as the only indicator of variation as this is not Accessible.
+* With color as the only indicator of variant as this is not Accessible.
 {% endcapture %}
 
 {% include do-dont.html %}

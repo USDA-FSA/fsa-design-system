@@ -22,7 +22,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
 </div>
 
-## Variations
+## Variants
 
 Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 
@@ -31,9 +31,9 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 * **Navigate somewhere**: use an `<a>` elment.
 
 ```html
-<span class="fsa-label fsa-label--[variation]">Label</span>
-<button class="fsa-label fsa-label--[variation]" type="button">Label</button>
-<a class="fsa-label fsa-label--[variation]" href="link.html">Label</a>
+<span class="fsa-label fsa-label--[variant]">Label</span>
+<button class="fsa-label fsa-label--[variant]" type="button">Label</button>
+<a class="fsa-label fsa-label--[variant]" href="link.html">Label</a>
 ```
 
 ### Default

@@ -20,7 +20,7 @@ At its root the Slider component is a native `<input>` form element with an attr
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 ### Full-width
 
@@ -77,7 +77,7 @@ Combine with [Level]({{ site.baseurl }}layout/level/) layout component to arrang
 
 ### With output, Full-width
 
-Combine the `fsa-slider--block` variation with [Level]({{ site.baseurl }}layout/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
+Combine the `fsa-slider--block` variant with [Level]({{ site.baseurl }}layout/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
 
 {% capture snippet %}
 <div class="fsa-level">

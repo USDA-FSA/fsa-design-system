@@ -15,7 +15,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Interaction Flow
 
-This pattern features multiple variations of the [Growl Notification]({{ site.baseurl }}components/growl/) component.
+This pattern features multiple variants of the [Growl Notification]({{ site.baseurl }}components/growl/) component.
 {% assign anatomy__image-off = "destroy-prompt--animated.gif" %}
 
 {% include anatomy.html %}

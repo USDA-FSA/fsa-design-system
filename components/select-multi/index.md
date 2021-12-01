@@ -59,7 +59,7 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
   </div>
 </div>
 
-## Variations
+## Variants
 
 ### Default
 

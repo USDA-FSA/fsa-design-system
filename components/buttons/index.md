@@ -32,13 +32,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
-Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[variation]`.
+Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[variant]`.
 
 ```html
-<button class="fsa-btn fsa-btn--[variation]" type="button">Label</button>
-<a class="fsa-btn fsa-btn--[variation]" href="link.html">Label</a>
+<button class="fsa-btn fsa-btn--[variant]" type="button">Label</button>
+<a class="fsa-btn fsa-btn--[variant]" href="link.html">Label</a>
 ```
 
 ### Primary
@@ -83,10 +83,10 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 ## States
 
-Each button variation can be modified with one or multiple states:
+Each button variant can be modified with one or multiple states:
 
 {% capture snippet %}
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--[state]" type="button">Label</button>
+<button class="fsa-btn fsa-btn--[variant] fsa-btn--[state]" type="button">Label</button>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -290,49 +290,49 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 <table class="fsa-table fsa-table--responsive">
   <thead>
     <tr>
-      <th>Variation/State</th>
+      <th>Variant/State</th>
       <th>Usage</th>
       <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td aria-label="Variation/State">
+      <td aria-label="Variant/State">
         <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary">Primary</button>
       </td>
       <td aria-label="Usage"> A primary style shall be applied to a button that represents the <strong>top priority action</strong> a User might take <strong>within a given UI context</strong>. </td>
       <td aria-label="Example"> Submitting a form or continuing a stepped process would be considered primary. </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
+      <td aria-label="Variant/State">
         <button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary">Secondary</button>
       </td>
       <td aria-label="Usage"> A secondary style shall be applied to buttons that are <strong>not top priority</strong>, may be viewed as contrary to progress, or the action is relevant for <strong>adjacent features and functionality</strong>. You may think of this as the <strong>default</strong> button state (despite it's "secondary" name); that is, all buttons are default unless one of the other use cases mentioned on this page come into play. </td>
       <td aria-label="Example"> A button labeled "View Producer" that displays data on the same screen without continuing a process. </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
+      <td aria-label="Variant/State">
         <button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary">Tertiary</button>
       </td>
       <td aria-label="Usage"> A tertiary style shall be applied only to buttons that perform a <strong>destructive</strong> action. </td>
       <td aria-label="Example"> "Delete" or "Remove". </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
+      <td aria-label="Variant/State">
         <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
       </td>
       <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
       <td aria-label="Example"> Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code>, but its UI presents them as more navigational. <br><br> A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database. </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
+      <td aria-label="Variant/State">
         <button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain">Plain</button>
       </td>
       <td aria-label="Usage">Unsets all style properties, effectively rendering as plain text.</td>
       <td aria-label="Example">Typically used when designing a custom button, e.g. pairing with CSS Utilities like <a href="{{ site.baseurl }}utilities/#color">Color</a>, <a href="{{ site.baseurl }}utilities/#color-background">Background</a>, <a href="{{ site.baseurl }}utilities/#padding">Padding</a>, etc.</td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
+      <td aria-label="Variant/State">
         <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button></div>
         <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary" disabled>Disabled</button></div>
         <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary" disabled>Disabled</button></div>
@@ -352,7 +352,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 * For `<button>` elements, `type` attribute is required, and will most likely be `type="button"`. Use `type="submit"` to submit a `<form>`. Omitting `type` attribute will default to `type="submit"`.
 * Generally, use primary buttons for actions that go to the next step and use secondary buttons for actions that happen on the current page.
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.
-* Make sure buttons look clickable — use color variations to distinguish static, hover and active states.
+* Make sure buttons look clickable — use color variants to distinguish static, hover and active states.
 * Avoid using too many buttons on a page.
 * Use sentence case for button labels, e.g. "Sign up" instead of "Sign Up".
 * Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “Download,” “View” or “Sign up”).
@@ -363,7 +363,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 * A Cancel button should not be used unless the online form uses a multi-step process.
 * A Cancel button should be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process.
 * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes.
-* When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variation) or Secondary button.
+* When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variant) or Secondary button.
 * Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
 
 ## Labeling

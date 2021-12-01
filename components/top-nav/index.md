@@ -58,7 +58,7 @@ This navigation component isn't necessarily a required Global Navigation structu
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 ### Fullscreen
 

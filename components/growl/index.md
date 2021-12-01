@@ -127,37 +127,37 @@ relatedItems:
   <div class="fsa-grid">
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--default.png" alt="Growl screen: default variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--default.png" alt="Growl screen: default variant">
         <figcaption>Default</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--error.png" alt="Growl screen: error variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--error.png" alt="Growl screen: error variant">
         <figcaption>Error</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--warning.png" alt="Growl screen: warning variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--warning.png" alt="Growl screen: warning variant">
         <figcaption>Warning</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--success.png" alt="Growl screen: success variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--success.png" alt="Growl screen: success variant">
         <figcaption>Success</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variant">
         <figcaption>Modal / Prompt</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--all.png" alt="Growl screen: all variations">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--all.png" alt="Growl screen: all variants">
         <figcaption>Multiple viewable</figcaption>
       </figure>
     </div>
@@ -178,9 +178,9 @@ relatedItems:
 
 Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
-## Variations
+## Variants
 
-Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
+Growl Notifications are styled with `class="fsa-growl fsa-growl--[variant]"`.
 
 ### Default
 
@@ -346,12 +346,12 @@ For reporting of a successful end of an operation or action.
 
 To prompt users before further action or operation may proceed.
 
-More often displayed as `fsa-growl--error`, though other style variations (e.g. Default, Warning, Success) may be contextually appropriate.
+More often displayed as `fsa-growl--error`, though other style variants (e.g. Default, Warning, Success) may be contextually appropriate.
 
 <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Prompt</button>
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variant">
 </div>
 ```html
 <!-- PLACE JUST BELOW BODY START TAG AT THE BEGINNING OF DOCUMENT -->

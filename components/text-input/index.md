@@ -20,12 +20,12 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
   <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text">
 </div>
 
-## Variations
+## Variants
 
-The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variation]`.
+The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variant]`.
 
 ```html
-<input class="fsa-input fsa-input--[variation]" type="text" name="some_name" value="">
+<input class="fsa-input fsa-input--[variant]" type="text" name="some_name" value="">
 ```
 
 ### Default
@@ -117,7 +117,7 @@ Though it should be **rarely** necessary, the width of `.fsa-input` can be overr
 
 ### Disabled
 
-Disabled fields do not have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-input--[variant]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
@@ -127,7 +127,7 @@ Disabled fields do not have a `class="fsa-input--[variation]"`, instead using th
 
 ### Readonly
 
-Readonly fields do not have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-input--[variant]"`, instead using the `readonly` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">

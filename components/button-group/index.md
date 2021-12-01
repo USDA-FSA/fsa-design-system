@@ -20,9 +20,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </span>
 </div>
 
-## Variations and Examples
+## Variants and Examples
 
-Button groups are wrapped in a `<span>` tag and always start with `class="fsa-btn-group"`, modifiable with one or multiple `fsa-btn-group--[variation]`.
+Button groups are wrapped in a `<span>` tag and always start with `class="fsa-btn-group"`, modifiable with one or multiple `fsa-btn-group--[variant]`.
 
 ### Default
 

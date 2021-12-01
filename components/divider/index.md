@@ -13,7 +13,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <div class="fsa-divider"></div>
 </div>
 
-## Variations
+## Variants
 
 ### Default
 

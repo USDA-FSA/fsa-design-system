@@ -30,7 +30,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
 </div>
 
-## Variations
+## Variants
 
 ### Default
 
@@ -341,7 +341,7 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 * Inherits accessibility guidelines for [Text Inputs]({{ site.baseurl }}components/text-input/#accessibility) and [Buttons]({{ site.baseurl }}components/buttons/#accessibility).
 * Ensure `role="search"` is part of overall container.
 * Always include a `<label>`. If visually hiding it, ensure it is properly labeled and can be announced by screen readers, i.e. via `fsa-search__label--sr-only`.
-* Always include the word "search" inside the <code>&lt;button&gt;</code> element for screen readers, particularly if using an [Icon variation](#default-with-icon).
+* Always include the word "search" inside the <code>&lt;button&gt;</code> element for screen readers, particularly if using an [Icon variant](#default-with-icon).
 
 
 

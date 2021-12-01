@@ -67,7 +67,7 @@ Create application forms with appropriate instructional and validation features.
     <tr>
       <th aria-label="Marker" scope="row">3</th>
       <th aria-label="Selector" scope="row"><nobr><code>fsa-field__item</code></nobr></th>
-      <td aria-label="Description"><div> Provides standardized style and position for form elements. Explore <a href="#usage">Usage</a> and <a href="#variations-and-examples">Variations</a> for the variety of form elements available in this space. </div></td>
+      <td aria-label="Description"><div> Provides standardized style and position for form elements. Explore <a href="#usage">Usage</a> and <a href="#variants-and-examples">Variants</a> for the variety of form elements available in this space. </div></td>
       <td aria-label="Required"><nobr> Yes </nobr></td>
     </tr>
     <tr>
@@ -91,7 +91,7 @@ Create application forms with appropriate instructional and validation features.
 
 {% include related-cards.html %}
 
-## Variations and Examples
+## Variants and Examples
 
 ### Text
 
@@ -778,7 +778,7 @@ Using the responsive [Grid System]({{ site.baseurl }}layout/grid/), the form bel
 
 ## States
 
-All variations above have error states available by the addition of `fsa-field--error`, and will likely be paired with an `fsa-field__message` to provide clarity to the field's requirements.
+All variants above have error states available by the addition of `fsa-field--error`, and will likely be paired with an `fsa-field__message` to provide clarity to the field's requirements.
 
 Additionally, each **core nested component** may have additional selectors to denote an error state, e.g. `fsa-textarea--error`.
 

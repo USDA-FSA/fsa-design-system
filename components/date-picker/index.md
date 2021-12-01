@@ -22,7 +22,7 @@ This extends the [Text Input]({{ site.baseurl }}components/text-input/) or the [
   </div>
 </div>
 
-## Variations and Examples
+## Variants and Examples
 
 The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}components/text-input/) component or the [Form Fields]({{ site.baseurl }}components/form-fields/) component. To instantiate an instance of the Date Picker, you pass in the Input element's ID and select a display format. The Date display format options are listed below under [Date Formatting Options](#date-formatting-options).
 

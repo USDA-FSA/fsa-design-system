@@ -58,7 +58,7 @@ Below are the complete set of CSS Utilities for overriding or extending an eleme
 
 <p class="fsa-text--lead">Selectively add or adjust border thickness.</p>
 
-### Variations
+### Variants
 
 #### All
 ```html
@@ -214,7 +214,7 @@ Below are the complete set of CSS Utilities for overriding or extending an eleme
 Selectively apply Border Width at any Media Query breakpoint.
 
 <p>
-  <code>class="fsa-border--<strong>[variation]@[breakpoint]</strong>"</code>
+  <code>class="fsa-border--<strong>[variant]@[breakpoint]</strong>"</code>
   <code>breakpoint</code> is one of
   <code title="small">s</code>,
   <code title="medium">m</code>,
@@ -233,7 +233,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
 
 <p class="fsa-text--lead">Selectively add or adjust rounded corners.</p>
 
-### Variations
+### Variants
 
 ```html
 <element class="fsa-border-radius--[SIZE]">...</element>
@@ -1287,10 +1287,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-color.html
 
 <p class="fsa-text--lead">Selectively truncate text overflow with an ellipsis.</p>
 
-### Variations
+### Variants
 
 ```html
-<element class="fsa-ellipsis[--variation]">...</element>
+<element class="fsa-ellipsis[--variant]">...</element>
 ```
 
 <div class="fsa-grid">
@@ -1330,7 +1330,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html
 
 <p class="fsa-text--lead">Selectively adjust floating behavior of elements or components.</p>
 
-### Variations
+### Variants
 
 ```html
 <el class="fsa-float--[direction]">...</el>
@@ -1413,9 +1413,9 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__float.html
 <el class="fsa-font--[VARIATION]">...</el>
 ```
 
-Where `variation` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`, or `fsa-font--mono`.
+Where `variant` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`, or `fsa-font--mono`.
 
-### Variations
+### Variants
 
 ### Sans
 
@@ -1457,7 +1457,7 @@ Where `variation` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold
 
 Selectively apply Font at any Media Query breakpoint.
 
-`class="fsa-font--[variation]@[breakpoint]"` where `breakpoint` is one of `s`, `m`, `l`, or `xl`
+`class="fsa-font--[variant]@[breakpoint]"` where `breakpoint` is one of `s`, `m`, `l`, or `xl`
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -1513,7 +1513,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__font.html
 
 Selectively apply Link display properties at any Media Query breakpoint.
 
-<code>class="fsa-link--<strong>[variation]@[breakpoint]</strong>"</code>
+<code>class="fsa-link--<strong>[variant]@[breakpoint]</strong>"</code>
 <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
@@ -1568,7 +1568,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-display.html
 
 Selectively apply Link underlines at any Media Query breakpoint
 
-<code>class="fsa-link<strong>[:hover]--[variation]@[breakpoint]</strong>"</code>
+<code>class="fsa-link<strong>[:hover]--[variant]@[breakpoint]</strong>"</code>
 <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
@@ -1594,7 +1594,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 * `[side]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
 * `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
-### Variations
+### Variants
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
@@ -1742,7 +1742,7 @@ Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ 
 * `[side]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
 * `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
-### Variations
+### Variants
 
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/4@m">
@@ -1899,7 +1899,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__sr-only.html
 
 Selectively apply [Shadows]({{ site.baseurl }}visual-style/shadows/) to containing blocks.
 
-### Variations
+### Variants
 
 ```html
 <el class="fsa-shadow--[VARIATION]">...</el>
@@ -1967,7 +1967,7 @@ Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 
 Selectively apply at any Media Query breakpoint.
 
-<code>class="fsa-shadow--<strong>[variation]@[breakpoint]</strong>"</code> where
+<code>class="fsa-shadow--<strong>[variant]@[breakpoint]</strong>"</code> where
 <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
@@ -1991,7 +1991,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__shadows.html
 
 Where `direction` is one of `left`, `center`, or `right`
 
-### Variations
+### Variants
 
 #### Right
 
@@ -2047,7 +2047,7 @@ Text Size utility classes follow's the system's **vertical rythym** &ndash; [Typ
 
 Where `size` is one of `0` - `7`. For reference, the **base** font size is equal to `3`.
 
-### Variations
+### Variants
 
 <p class="fsa-ellipsis fsa-text-size--0">National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
 <p class="fsa-ellipsis fsa-text-size--1">National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</p>
@@ -2083,7 +2083,7 @@ While `h1` – `h6` elements have a hierarchical style assigned, sometimes the h
 
 Where `size` is one of `h1`, `h2`, `h3`, `h4`, `h5`, or `h6`.
 
-### Variations
+### Variants
 
 Each of the below examples demonstrate how the visual presentation of a second-level heading (`<h2>`) has been overridden.
 

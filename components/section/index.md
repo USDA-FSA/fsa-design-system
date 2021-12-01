@@ -10,7 +10,7 @@ suppress_code_toggle: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-Other than background-color variations, they are not strictly visible in the user interface itself. Most page templates likely will use just one `fsa-section--[variation]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
+Other than background-color variants, they are not strictly visible in the user interface itself. Most page templates likely will use just one `fsa-section--[variant]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
 
 <aside>
   <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">
@@ -31,7 +31,7 @@ Other than background-color variations, they are not strictly visible in the use
     <div class="fsa-grid__1 fsa-grid__1/2@m">
       <figure class="fsa-m-b--m">
         <img class="ds-screen" src="{{ site.baseurl }}img/screen-section--stacked-default.png" alt="Section compononent screenshot: stacked, default">
-        <figcaption>Multiple Variations</figcaption>
+        <figcaption>Multiple Variants</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1 fsa-grid__1/2@m">
@@ -42,8 +42,8 @@ Other than background-color variations, they are not strictly visible in the use
     </div>
     <div class="fsa-grid__1 fsa-grid__1/2@m">
       <figure class="fsa-m-b--m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-section--stacked-fullscreen.png" alt="Section compononent screenshot: Multiple Variations, Fullscreen">
-        <figcaption>Multiple Variations, Fullscreen</figcaption>
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-section--stacked-fullscreen.png" alt="Section compononent screenshot: Multiple Variants, Fullscreen">
+        <figcaption>Multiple Variants, Fullscreen</figcaption>
       </figure>
     </div>
   </div>
@@ -52,7 +52,7 @@ Other than background-color variations, they are not strictly visible in the use
 ## Anatomy
 
 ```html
-<div class="fsa-section fsa-section[--variation] [fsa-section--fullscreen]">
+<div class="fsa-section fsa-section[--variant] [fsa-section--fullscreen]">
   <div class="fsa-section__bd">
     content
   </div>
@@ -70,7 +70,7 @@ Other than background-color variations, they are not strictly visible in the use
       <figure>
         <a href="{{ site.baseurl }}img/screen-section--structure.png"><img class="ds-screen" src="{{ site.baseurl }}img/screen-section-stacked--structure.png" alt=""></a>
       </figure>
-      <figcaption>Multiple Variations Stacked</figcaption>
+      <figcaption>Multiple Variants Stacked</figcaption>
     </div>
   </div>
 </div>
@@ -86,17 +86,17 @@ Other than background-color variations, they are not strictly visible in the use
     <tr>
       <th aria-label="Key">1</th>
       <th aria-label="Selector"><code style="white-space: nowrap;">fsa-section</code></th>
-      <td aria-label="Description">Acts as the main building block for most layouts. Typically used as direct child of <code>&lt;body&gt;</code>. Variations available for colors and fullscreen.</td>
+      <td aria-label="Description">Acts as the main building block for most layouts. Typically used as direct child of <code>&lt;body&gt;</code>. Variants available for colors and fullscreen.</td>
     </tr>
     <tr>
       <th aria-label="Key">2</th>
       <th aria-label="Selector"><code style="white-space: nowrap;">fsa-section__bd</code></th>
-      <td aria-label="Description">Sole child element. Unless modified by fullscreen variation, limits content to a reasonable maximum width.</td>
+      <td aria-label="Description">Sole child element. Unless modified by fullscreen variant, limits content to a reasonable maximum width.</td>
     </tr>
   </tbody>
 </table>
 
-## Variations
+## Variants
 
 View <a href="http://usda-fsa.github.io/fsa-style/sections.html" target="_blank">sections.html</a> and <a href="http://usda-fsa.github.io/fsa-style/boilerplate.html" target="_blank">boilerplate.html</a> examples to view each in full-page in context.
 
@@ -110,7 +110,7 @@ View <a href="http://usda-fsa.github.io/fsa-style/sections.html" target="_blank"
 ```
 
 ### Fullscreen
-Likely paired with Fullscreen variations of
+Likely paired with Fullscreen variants of
 [Tophat]({{ site.baseurl }}components/tophat),
 [Application Header]({{ site.baseurl }}components/header-app),
 [Global Nav]({{ site.baseurl }}components/top-nav),

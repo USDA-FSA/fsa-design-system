@@ -41,9 +41,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
 </div>
 
-## Variations
+## Variants
 
-Content Tabs can be styled using `fsa-content-tabs__label--[variation]` on the archor tag class.
+Content Tabs can be styled using `fsa-content-tabs__label--[variant]` on the archor tag class.
 
 ### Default
 

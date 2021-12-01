@@ -64,7 +64,7 @@ Each Step can be one of three possible states.
 
 {% include anatomy.html %}
 
-## Variations and Examples
+## Variants and Examples
 
 ### Default
 
@@ -140,7 +140,7 @@ Each Step can be one of three possible states.
 
 ### Actionable: none
 
-Use when user should be **prevented** from using Stepped Tabs as a means of navigation (forward backwards within a process), utilize this variation. Each `fsa-stepped-tabs__label` is a `<span>` instead of an actionable `<a>` or `<button>`.
+Use when user should be **prevented** from using Stepped Tabs as a means of navigation (forward backwards within a process), utilize this variant. Each `fsa-stepped-tabs__label` is a `<span>` instead of an actionable `<a>` or `<button>`.
 
 {% capture snippet %}
 <div class="fsa-stepped-tabs">
@@ -446,7 +446,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
 
 * Typically paired with the [Stepped Control]({{ site.baseurl }}components/stepped-control/) component.
 * Ensure that all of the appropriate states of the tab are used in accordance with the instructions above.
-* If the User will not be able to proceed forward or go backwards within a process, utilize the `Actionable: none` variation.
+* If the User will not be able to proceed forward or go backwards within a process, utilize the `Actionable: none` variant.
 * Icons before the text within a tab can enhance the understanding about where the User is within a process flow.
 
 ## Accessibility

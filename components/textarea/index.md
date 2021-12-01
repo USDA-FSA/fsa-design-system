@@ -18,12 +18,12 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
   <textarea class="fsa-textarea" name="Name" placeholder="Placeholder">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 </div>
 
-## Variations
+## Variants
 
-The style for `<textarea>` components always start with `class="fsa-textarea"`, modifiable with one or multiple `fsa-textarea--[variation]`.
+The style for `<textarea>` components always start with `class="fsa-textarea"`, modifiable with one or multiple `fsa-textarea--[variant]`.
 
 ```html
-<textarea class="fsa-textarea fsa-textarea--[variation]" name="Name" placeholder="Placeholder"></textarea>
+<textarea class="fsa-textarea fsa-textarea--[variant]" name="Name" placeholder="Placeholder"></textarea>
 ```
 
 ### Default
@@ -92,7 +92,7 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 
 ### Disabled
 
-Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-textarea--[variant]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
@@ -102,7 +102,7 @@ Disabled fields do not have a `class="fsa-textarea--[variation]"`, instead using
 
 ### Readonly
 
-Readonly fields do not have a `class="fsa-textarea--[variation]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-textarea--[variant]"`, instead using the `readonly` attribute.
 
 {% capture snippet %}
 <textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>

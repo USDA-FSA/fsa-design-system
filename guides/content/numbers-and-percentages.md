@@ -16,7 +16,7 @@ In titles, subheadings, and interface labels, we use numerals instead of spellin
 
 ## Phone Number Guidelines
 
-FPAC applications shall follow the E.123 International Telecommunications Union sector ITU-T. In order to have the widest amount of flexibility and to make sure applications do not use proprietary methodology, the below listed guidelines shall be followed. Variations of the accepted formats by a User are also listed below.
+FPAC applications shall follow the E.123 International Telecommunications Union sector ITU-T. In order to have the widest amount of flexibility and to make sure applications do not use proprietary methodology, the below listed guidelines shall be followed. Variants of the accepted formats by a User are also listed below.
 
 <table class="fsa-table">
 <thead>
@@ -37,7 +37,7 @@ FPAC applications shall follow the E.123 International Telecommunications Union 
   </tbody>
 </table>
 
-### Acceptable National Variations
+### Acceptable National Variants
 
 FPAC applications requiring a User to input a telephone number shall accept the below formats. The system will automatically convert the number to (555) 555-5555 format to be stored in the database.
 

@@ -31,9 +31,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </script>
 </div>
 
-The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should occur immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
+The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should occur immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variant, which allows for an initial "unselected" state.
 
-## Variations
+## Variants
 
 Switch components are styled with `class="fsa-switch` on the `<label>` tag, and using the `class="fsa-switch__checkbox` on the `<input>` tag.
 

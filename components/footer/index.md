@@ -107,7 +107,7 @@ These are **not** required footer structures; rather, they effectively serve as 
 </div>
 ```
 
-## Variations
+## Variants
 
 ### Fullscreen
 

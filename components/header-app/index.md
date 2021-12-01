@@ -44,7 +44,7 @@ This component isn't necessarily a required Global Navigation structure; rather,
   </div>
 </div>
 
-## Variations
+## Variants
 
 ### Fullscreen
 

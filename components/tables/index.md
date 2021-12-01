@@ -48,14 +48,14 @@ Tables are great for displaying tabular data. Minimal visual styling helps surfa
   </table>
 </div>
 
-## Variations and Examples
+## Variants and Examples
 
-Styled `<table>` components use `class="fsa-table"`, with several modifications available with `fsa-table--[variation]`.
+Styled `<table>` components use `class="fsa-table"`, with several modifications available with `fsa-table--[variant]`.
 
 Multiple modifying options are demonstrated for table rows (`tr`), table header cells (`th`), and table body cells (`td`) &ndash; along with sample use of other Design System components.
 
 ```html
-<table class="fsa-table fsa-table--[variation]">
+<table class="fsa-table fsa-table--[variant]">
   ...
 </table>
 ```
@@ -2105,7 +2105,7 @@ This example sets a `max-height` of `33vh` (effectively "33% of viewport's heigh
 
 ## Responsive
 
-Each table variation above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variations.
+Each table variant above can be made to fit on smaller viewports (i.e. mobile phones) via `class="fsa-table--responsive"` or `class="fsa-table--responsive fsa-table--responsive-horizontal"`. In addition to the previewed images below, view this page on a smaller device (Phone, Tablet, etc) to view the below Responsive variants.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -2116,7 +2116,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__table.html
 
 ### Structure
 
-* Responsive table styles are identical at the smaller breakpoints regardless of initial variation used.
+* Responsive table styles are identical at the smaller breakpoints regardless of initial variant used.
 * The key to Responsive Tables is the use of the `aria-label` attribute on each data data cell, e.g. `<td aria-label="Commodity">...</td>` to replicate each column header (`th`).
 
 ### Default
