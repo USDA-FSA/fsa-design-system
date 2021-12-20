@@ -20,17 +20,93 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-{% capture snippet %}
-<div class="fsa-level">
-  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
-  <button class="fsa-btn fsa-btn--plain" type="button">Label</button>
+<div class="ds-combinator">
+  <div class="ds-combinator__preview">
+    <button class="fsa-btn fsa-btn--primary" type="button">
+      <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></svg>
+      Label
+    </button>
+  </div>
+  <div class="ds-combinator__control">
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" for="combinatorType">Type</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType">
+        <option value="fsa-btn--primary" selected="selected">Primary</option>
+        <option value="fsa-btn--secondary">Secondary</option>
+        <option value="fsa-btn--tertiary">Tertiary</option>
+        <option value="fsa-btn--flat">Flat</option>
+        <option value="fsa-btn--plain">Plain</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" for="combinatorSize">Size</label>
+      <div class="fsa-field__item">
+        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" id="combinatorSize">
+          <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--small">Small</button>
+          <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" data-value="fsa-btn--medium">Medium</button>
+          <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--large">Large</button>
+        </span>
+      </div>
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorIcon">Icon</label>
+      <div class="fsa-field__item">
+        <ul class="fsa-form-list fsa-text-size--2" aria-labelledby="combinatorIcon">
+          <li>
+            <span class="fsa-level fsa-level--inline">
+              <label class="fsa-switch">
+                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconLeft" name="combinatorIconLeft" checked>
+                <span class="fsa-switch__track"></span>
+              </label>
+              <label for="combinatorIconLeft">Left</label>
+            </span>
+          </li>
+          <li>
+            <span class="fsa-level fsa-level--inline">
+              <label class="fsa-switch">
+                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconRight" name="combinatorIconRight">
+                <span class="fsa-switch__track"></span>
+              </label>
+              <label for="combinatorIconRight">Right</label>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorState">State</label>
+      <div class="fsa-field__item">
+        <ul class="fsa-form-list fsa-text-size--2" aria-labelledby="combinatorState">
+          <li>
+            <span class="fsa-level fsa-level--inline">
+              <label class="fsa-switch">
+                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorStateDisabled" name="combinatorStateDisabled">
+                <span class="fsa-switch__track"></span>
+              </label>
+              <label for="combinatorStateDisabled">Disabled</label>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorConstraint">Constraint</label>
+      <div class="fsa-field__item">
+        <ul class="fsa-form-list fsa-text-size--2" aria-labelledby="combinatorConstraint">
+          <li>
+            <span class="fsa-level fsa-level--inline">
+              <label class="fsa-switch">
+                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorStateDisabled" name="combinatorStateDisabled">
+                <span class="fsa-switch__track"></span>
+              </label>
+              <label for="combinatorStateDisabled">Fill</label>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-{% endcapture %}
-
-{% include preview-and-snippet.html %}
 
 ## Variants
 

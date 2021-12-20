@@ -1,0 +1,35 @@
+.ds-combinator {
+
+  $component-bgc: transparent;
+  $component-bw: $size-base;
+
+  & {
+    display: flex;
+    margin: $size-default 0;
+    border: $component-bw solid $color-fsa-tertiary-100;
+  }
+
+  &__preview {
+    flex: 1;
+    display: flex;
+    border-radius: $size-base;
+    padding: $size-medium;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__control {
+    border-left: $component-bw solid $color-fsa-tertiary-100;
+    flex-basis: 220px;
+    background-color: $color-fsa-white;
+    padding: $size-medium;
+  }
+
+  &__item {
+    margin-bottom: $size-default;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}

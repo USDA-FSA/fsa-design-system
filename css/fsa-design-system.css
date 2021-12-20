@@ -22200,6 +22200,48 @@ html body.x-ray .fsa-modal {
   }
 }
 
+.ds-combinator {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12px 0;
+  margin: 1.2rem 0;
+  border: 4px solid #f0f0f0;
+  border: 0.4rem solid #f0f0f0;
+}
+
+.ds-combinator__preview {
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.4rem;
+  padding: 24px;
+  padding: 2.4rem;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.ds-combinator__control {
+  border-left: 4px solid #f0f0f0;
+  border-left: 0.4rem solid #f0f0f0;
+  -ms-flex-preferred-size: 220px;
+      flex-basis: 220px;
+  background-color: #fff;
+  padding: 24px;
+  padding: 2.4rem;
+}
+
+.ds-combinator__item {
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.ds-combinator__item:last-child {
+  margin-bottom: 0;
+}
+
 .ds-usage {
   margin: 24px 0;
   margin: 2.4rem 0;
