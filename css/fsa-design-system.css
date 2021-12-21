@@ -22225,7 +22225,7 @@ html body.x-ray .fsa-modal {
   padding: 2.4rem;
 }
 
-@media (min-width: 54em) {
+@media (min-width: 78.75em) {
   .ds-combinator__props {
     display: block;
   }

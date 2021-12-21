@@ -22,7 +22,7 @@
 
   &__props {
     display: none;
-    @include breakpoint(L) {
+    @include breakpoint(XL) {
       display: block;
     }
     border-right: $component-bw solid $color-fsa-tertiary-100;
