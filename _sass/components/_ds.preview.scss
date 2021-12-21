@@ -120,6 +120,7 @@ html body.x-ray {
 }
 
 // scss-lint:disable QualifyingElement
+.ds-combinator div.highlighter-rouge,
 .ds-show-da-code div.highlighter-rouge {
   display: block;
 }
