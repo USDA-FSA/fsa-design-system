@@ -24,16 +24,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorElement">Element</label>
-      <div class="fsa-field__item">
-        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labelledby="combinatorElement">
-          <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" data-value="fsa-btn--medium">Button</button>
-          <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--large">Anchor</button>
-        </span>
-      </div>
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorElement">Element</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorElement" name="combinatorElement">
+        <option value="fsa-btn--primary" selected="selected">Button</option>
+        <option value="fsa-btn--plain">Anchor</option>
+      </select>
     </div>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" for="combinatorType">Type</label>
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorType">Type</label>
       <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType">
         <option value="fsa-btn--primary" selected="selected">Primary</option>
         <option value="fsa-btn--secondary">Secondary</option>
@@ -43,71 +41,40 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       </select>
     </div>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorSize">Size</label>
-      <div class="fsa-field__item">
-        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labelledby="combinatorSize">
-          <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--small">Small</button>
-          <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" data-value="fsa-btn--medium">Medium</button>
-          <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--large">Large</button>
-        </span>
-      </div>
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize">
+        <option value="fsa-btn--plain">Small</option>
+        <option value="fsa-btn--primary" selected="selected">Medium</option>
+        <option value="fsa-btn--plain">Large</option>
+      </select>
     </div>
-    <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorConstraint">Constraint</label>
-      <div class="fsa-field__item">
-        <ul class="fsa-form-list fsa-text-size--2" aria-labelledby="combinatorConstraint">
-          <li>
-            <span class="fsa-level fsa-level--inline">
-              <label class="fsa-switch">
-                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorStateDisabled" name="combinatorStateDisabled">
-                <span class="fsa-switch__track"></span>
-              </label>
-              <label for="combinatorStateDisabled">Fill</label>
-            </span>
-          </li>
-        </ul>
-      </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill">
+        <span class="fsa-switch__track"></span>
+      </label>
     </div>
-    <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorIcon">Icon</label>
-      <div class="fsa-field__item">
-        <ul class="fsa-form-list fsa-text-size--2" aria-labelledby="combinatorIcon">
-          <li>
-            <span class="fsa-level fsa-level--inline">
-              <label class="fsa-switch">
-                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconLeft" name="combinatorIconLeft" checked>
-                <span class="fsa-switch__track"></span>
-              </label>
-              <label for="combinatorIconLeft">Left</label>
-            </span>
-          </li>
-          <li>
-            <span class="fsa-level fsa-level--inline">
-              <label class="fsa-switch">
-                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconRight" name="combinatorIconRight">
-                <span class="fsa-switch__track"></span>
-              </label>
-              <label for="combinatorIconRight">Right</label>
-            </span>
-          </li>
-        </ul>
-      </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconLeft">Icon Left</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconLeft" name="combinatorIconLeft" checked>
+        <span class="fsa-switch__track"></span>
+      </label>
     </div>
-    <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorState">State</label>
-      <div class="fsa-field__item">
-        <ul class="fsa-form-list fsa-text-size--2" aria-labelledby="combinatorState">
-          <li>
-            <span class="fsa-level fsa-level--inline">
-              <label class="fsa-switch">
-                <input type="checkbox" class="fsa-switch__checkbox" id="combinatorStateDisabled" name="combinatorStateDisabled">
-                <span class="fsa-switch__track"></span>
-              </label>
-              <label for="combinatorStateDisabled">Disabled</label>
-            </span>
-          </li>
-        </ul>
-      </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconRight">Icon Right</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconRight" name="combinatorIconRight">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled">
+        <span class="fsa-switch__track"></span>
+      </label>
     </div>
   </div>
   <div class="ds-combinator__preview">

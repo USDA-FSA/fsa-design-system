@@ -51,10 +51,23 @@
   }
 
   &__item {
-    margin-bottom: $size-default;
     &:last-child {
       margin-bottom: 0;
     }
+    &--inline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      :not(.ds-combinator__item--inline) + & {
+        // pixel-pushing magic numbers, sue me
+        margin-top: $size-default + ($size-base / 2);
+      }
+    }
+  }
+
+  &__label {
+    margin: 0;
   }
 
 }

@@ -22312,13 +22312,27 @@ html body.x-ray .ds-combinator__preview * * * * * * * * * {
   background-color: rgba(0, 0, 255, 0.08);
 }
 
-.ds-combinator__item {
-  margin-bottom: 12px;
-  margin-bottom: 1.2rem;
-}
-
 .ds-combinator__item:last-child {
   margin-bottom: 0;
+}
+
+.ds-combinator__item--inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 8px;
+}
+
+:not(.ds-combinator__item--inline) + .ds-combinator__item--inline {
+  margin-top: 14px;
+  margin-top: 1.4rem;
+}
+
+.ds-combinator__label {
+  margin: 0;
 }
 
 .ds-usage {
