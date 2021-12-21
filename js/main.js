@@ -1,6 +1,7 @@
 'use strict';
 
 // fsa-design-system: Doc Specific
+var Jump = require('./components/ds.combinator');
 var Jump = require('./components/ds.jump');
 var TitleBar = require('./components/ds-page-title');
 var CodeToggle = require('./components/ds-code-toggle');
