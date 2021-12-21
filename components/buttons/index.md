@@ -24,6 +24,15 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorElement">Element</label>
+      <div class="fsa-field__item">
+        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labelledby="combinatorElement">
+          <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" data-value="fsa-btn--medium">Button</button>
+          <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--large">Anchor</button>
+        </span>
+      </div>
+    </div>
+    <div class="fsa-field ds-combinator__item">
       <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" for="combinatorType">Type</label>
       <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType">
         <option value="fsa-btn--primary" selected="selected">Primary</option>
@@ -34,9 +43,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       </select>
     </div>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" for="combinatorSize">Size</label>
+      <label class="fsa-field__label fsa-text--h6 fsa-m-t--none" id="combinatorSize">Size</label>
       <div class="fsa-field__item">
-        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" id="combinatorSize">
+        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labelledby="combinatorSize">
           <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--small">Small</button>
           <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button" data-value="fsa-btn--medium">Medium</button>
           <button class="fsa-btn-group__item" type="button" data-value="fsa-btn--large">Large</button>
