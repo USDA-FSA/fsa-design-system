@@ -178,7 +178,7 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
 ### Example: within a [Field]({{ site.baseurl }}components/form-fields/), horizontal list
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" id="unique-id-lorem--2258">Pies We Like</label>
   <div class="fsa-level" aria-describedby="unique-id-lorem--help--2258" aria-labelledby="unique-id-lorem--2258">
     <span>

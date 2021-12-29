@@ -36,10 +36,10 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 {% include preview-and-snippet.html %}
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
+<input class="fsa-input fsa-input--fill" type="text" name="155tj" value="Text" placeholder="Placeholder">
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -144,7 +144,7 @@ Selectively override several style properties at each Media Query breakpoint
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>; and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,

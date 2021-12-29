@@ -153,7 +153,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variant
 
 {% include preview-and-snippet.html %}
 
-### Paired with Select, block
+### Paired with Select, Fill Variant
 {% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
@@ -164,7 +164,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variant
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-<select name="UNIQUE-ID-WAGSYS61" id="UNIQUE-ID-WAGSYS61" class="fsa-select fsa-select--block">
+<select name="UNIQUE-ID-WAGSYS61" id="UNIQUE-ID-WAGSYS61" class="fsa-select fsa-select--fill">
   <option>California</option>
   <option>Kansas</option>
 </select>
@@ -191,7 +191,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variant
 
 {% include preview-and-snippet.html %}
 
-### Paired with Input, block
+### Paired with Input, Fill Variant
 
 {% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
@@ -203,7 +203,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variant
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-<input class="fsa-input fsa-input--block" value="California">
+<input class="fsa-input fsa-input--fill" value="California">
 {% endcapture %}
 
 {% include preview-and-snippet.html %}

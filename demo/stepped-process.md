@@ -53,7 +53,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
   <div class="fsa-stepped-control fsa-stepped-control--sticky">
     <div class="fsa-stepped-control__bd">
-      <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
       </div>
       <div class="fsa-stepped-control__list">

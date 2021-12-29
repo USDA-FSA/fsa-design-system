@@ -1503,8 +1503,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__font.html
       <a style="outline: 1px dashed #999;" class="fsa-link--inline-block" href="link.html">Text link</a>
     </div>
     <div class="fsa-grid__1 fsa-grid__auto@m">
-      <h4 class="fsa-m-t--none">Block <span class="fsa-font--sans">(full-width)</span></h4>
-      <a style="outline: 1px dashed #999;" class="fsa-link--block" href="link.html">Text link</a>
+      <h4 class="fsa-m-t--none">Fill</h4>
+      <a style="outline: 1px dashed #999;" class="fsa-link--fill" href="link.html">Text link</a>
     </div>
   </div>
 </div>

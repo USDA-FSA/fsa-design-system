@@ -63,10 +63,10 @@ Button groups are wrapped in a `<span>` tag and always start with `class="fsa-bt
 
 {% include preview-and-snippet.html %}
 
-### Block
+### FIll
 
 {% capture snippet %}
-<span class="fsa-btn-group fsa-btn-group--block" role="group" aria-label="Label describing this group">
+<span class="fsa-btn-group fsa-btn-group--fill" role="group" aria-label="Label describing this group">
   <button class="fsa-btn-group__item" type="button">Label</button>
   <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
   <button class="fsa-btn-group__item" type="button">Label</button>
@@ -227,7 +227,7 @@ Selectively override several style properties at each Media Query breakpoint.
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>; and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
