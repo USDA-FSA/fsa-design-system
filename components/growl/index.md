@@ -23,7 +23,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>You're probably just fine.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
       </p>
     </div>
@@ -36,7 +36,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -50,7 +50,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -64,7 +64,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -76,7 +76,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>Would you like to see a <strong>Modal-based example</strong>, aka "Prompt"?</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Yes</button>
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">No</button>
       </p>
@@ -88,7 +88,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>You can have more than one when/if necessary.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cool</button>
       </p>
     </div>
@@ -100,7 +100,7 @@ relatedItems:
     </div>
     <div class="fsa-growl__bd">
       <p>You've viewing a sample of a <strong>Growl Notification</strong>.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK, thanks</button>
       </p>
     </div>
@@ -115,7 +115,7 @@ relatedItems:
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -127,37 +127,37 @@ relatedItems:
   <div class="fsa-grid">
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--default.png" alt="Growl screen: default variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--default.png" alt="Growl screen: default variant">
         <figcaption>Default</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--error.png" alt="Growl screen: error variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--error.png" alt="Growl screen: error variant">
         <figcaption>Error</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--warning.png" alt="Growl screen: warning variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--warning.png" alt="Growl screen: warning variant">
         <figcaption>Warning</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--success.png" alt="Growl screen: success variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--success.png" alt="Growl screen: success variant">
         <figcaption>Success</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variant">
         <figcaption>Modal / Prompt</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--all.png" alt="Growl screen: all variations">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--all.png" alt="Growl screen: all variants">
         <figcaption>Multiple viewable</figcaption>
       </figure>
     </div>
@@ -169,18 +169,18 @@ relatedItems:
 **Trigger sample Notifications:**
 
 <p class="fsa-level@l fsa-level--grow-even">
-  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Default</button></span>
-  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Error</button></span>
-  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Warning</button></span>
-  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Success</button></span>
-  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--block" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal/Prompt</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--fill" data-behavior="growl-show" aria-controls="UNIQUE-ID-AC598060D7502E9E" aria-expanded="false" type="button">Default</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--fill" data-behavior="growl-show" aria-controls="UNIQUE-ID-832353AD65DB511B" aria-expanded="false" type="button">Error</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--fill" data-behavior="growl-show" aria-controls="UNIQUE-ID-BC33C95AA75A8E1C" aria-expanded="false" type="button">Warning</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--fill" data-behavior="growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" type="button">Success</button></span>
+  <span><button class="fsa-btn fsa-btn--secondary fsa-btn--fill" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Modal/Prompt</button></span>
 </p>
 
 Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
-## Variations
+## Variants
 
-Growl Notifications are styled with `class="fsa-growl fsa-growl--[variation]"`.
+Growl Notifications are styled with `class="fsa-growl fsa-growl--[variant]"`.
 
 ### Default
 
@@ -195,7 +195,7 @@ For events of lower relative importance, or for generic use.
       </div>
       <div class="fsa-growl__bd">
         <p>You're probably just fine.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
         </p>
       </div>
@@ -211,7 +211,7 @@ For events of lower relative importance, or for generic use.
     </div>
     <div class="fsa-growl__bd">
       <p>You're probably just fine.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">OK</button>
       </p>
     </div>
@@ -233,7 +233,7 @@ When things go wrong.
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
         <p>And another line here for kicks.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
           <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
         </p>
@@ -251,7 +251,7 @@ When things go wrong.
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -274,7 +274,7 @@ For events that require user attention.
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
         <p>And another line here for kicks.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
           <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
         </p>
@@ -292,7 +292,7 @@ For events that require user attention.
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -315,7 +315,7 @@ For reporting of a successful end of an operation or action.
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
         <p>And another line here for kicks.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
           <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
         </p>
@@ -333,7 +333,7 @@ For reporting of a successful end of an operation or action.
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -346,12 +346,12 @@ For reporting of a successful end of an operation or action.
 
 To prompt users before further action or operation may proceed.
 
-More often displayed as `fsa-growl--error`, though other style variations (e.g. Default, Warning, Success) may be contextually appropriate.
+More often displayed as `fsa-growl--error`, though other style variants (e.g. Default, Warning, Success) may be contextually appropriate.
 
 <button class="fsa-btn fsa-btn--secondary" data-behavior="growl-show whiteout-show" aria-controls="UNIQUE-ID-9469E21387FAF609" aria-expanded="false" type="button">Open Prompt</button>
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-growl--modal.png" alt="Growl screen: modal variant">
 </div>
 ```html
 <!-- PLACE JUST BELOW BODY START TAG AT THE BEGINNING OF DOCUMENT -->
@@ -367,7 +367,7 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         <a class="fsa-btn fsa-btn--small fsa-btn--secondary" href="link.html">Button link</a>
       </p>
@@ -394,7 +394,7 @@ More often displayed as `fsa-growl--error`, though other style variations (e.g. 
       </div>
       <div class="fsa-growl__bd">
         <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
-        <p>
+        <p class="fsa-level">
           <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
         </p>
       </div>

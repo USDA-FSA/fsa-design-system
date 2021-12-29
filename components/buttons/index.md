@@ -21,24 +21,24 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--primary" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--secondary" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--tertiary" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--flat" type="button">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--plain" type="button">Label</button></li>
-</ul>
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--flat" type="button">Label</button>
+  <button class="fsa-btn fsa-btn--plain" type="button">Label</button>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
-Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[variation]`.
+Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[variant]`.
 
 ```html
-<button class="fsa-btn fsa-btn--[variation]" type="button">Label</button>
-<a class="fsa-btn fsa-btn--[variation]" href="link.html">Label</a>
+<button class="fsa-btn fsa-btn--[variant]" type="button">Label</button>
+<a class="fsa-btn fsa-btn--[variant]" href="link.html">Label</a>
 ```
 
 ### Primary
@@ -83,18 +83,18 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 
 ## States
 
-Each button variation can be modified with one or multiple states:
+Each button variant can be modified with one or multiple states:
 
 {% capture snippet %}
-<button class="fsa-btn fsa-btn--[variation] fsa-btn--[state]" type="button">Label</button>
+<button class="fsa-btn fsa-btn--[variant] fsa-btn--[state]" type="button">Label</button>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
+<button class="fsa-btn fsa-btn--primary fsa-btn--fill" type="button">Label</button>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -104,12 +104,12 @@ Each button variation can be modified with one or multiple states:
 Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button></li>
-  <li><button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button></li>
-</ul>
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--secondary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button" disabled="disabled">Label</button>
+  <button class="fsa-btn fsa-btn--flat" type="button" disabled="disabled">Label</button>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -136,82 +136,82 @@ Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `di
 
 ### Medium
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--primary" type="button">
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--primary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
     Save
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--secondary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--secondary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Download
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--tertiary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--tertiary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
     Remove
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--flat" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--flat" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
     Edit
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--plain" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--plain" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
     Print
-  </button></li>
-</ul>
+  </button>
+</div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Small
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--primary" type="button">
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--small fsa-btn--primary" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
     Save
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Download
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--tertiary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--tertiary" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
     Remove
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
     Edit
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--small fsa-btn--plain" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--small fsa-btn--plain" type="button">
     <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
     Print
-  </button></li>
-</ul>
+  </button>
+</div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
 ### Large
 {% capture snippet %}
-<ul class="fsa-level">
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--primary" type="button">
+<div class="fsa-level">
+  <button class="fsa-btn fsa-btn--large fsa-btn--primary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
     Save
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--secondary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--secondary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Download
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--tertiary" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--tertiary" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg>
     Remove
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--flat" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--flat" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
     Edit
-  </button></li>
-  <li><button class="fsa-btn fsa-btn--large fsa-btn--plain" type="button">
+  </button>
+  <button class="fsa-btn fsa-btn--large fsa-btn--plain" type="button">
     <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
     Print
-  </button></li>
-</ul>
+  </button>
+</div>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -259,7 +259,7 @@ Several of a button's style properties can be selectively modified across each M
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>; and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
@@ -290,54 +290,54 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 <table class="fsa-table fsa-table--responsive">
   <thead>
     <tr>
-      <th>Variation/State</th>
+      <th>Variant/State</th>
       <th>Usage</th>
       <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td aria-label="Variation/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary">Primary</button>
+      <td aria-label="Variant/State">
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--primary">Primary</button>
       </td>
       <td aria-label="Usage"> A primary style shall be applied to a button that represents the <strong>top priority action</strong> a User might take <strong>within a given UI context</strong>. </td>
       <td aria-label="Example"> Submitting a form or continuing a stepped process would be considered primary. </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary">Secondary</button>
+      <td aria-label="Variant/State">
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--secondary">Secondary</button>
       </td>
       <td aria-label="Usage"> A secondary style shall be applied to buttons that are <strong>not top priority</strong>, may be viewed as contrary to progress, or the action is relevant for <strong>adjacent features and functionality</strong>. You may think of this as the <strong>default</strong> button state (despite it's "secondary" name); that is, all buttons are default unless one of the other use cases mentioned on this page come into play. </td>
       <td aria-label="Example"> A button labeled "View Producer" that displays data on the same screen without continuing a process. </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary">Tertiary</button>
+      <td aria-label="Variant/State">
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--tertiary">Tertiary</button>
       </td>
       <td aria-label="Usage"> A tertiary style shall be applied only to buttons that perform a <strong>destructive</strong> action. </td>
       <td aria-label="Example"> "Delete" or "Remove". </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
+      <td aria-label="Variant/State">
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--flat">Flat</button>
       </td>
       <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
       <td aria-label="Example"> Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code>, but its UI presents them as more navigational. <br><br> A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database. </td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain">Plain</button>
+      <td aria-label="Variant/State">
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--plain">Plain</button>
       </td>
       <td aria-label="Usage">Unsets all style properties, effectively rendering as plain text.</td>
       <td aria-label="Example">Typically used when designing a custom button, e.g. pairing with CSS Utilities like <a href="{{ site.baseurl }}utilities/#color">Color</a>, <a href="{{ site.baseurl }}utilities/#color-background">Background</a>, <a href="{{ site.baseurl }}utilities/#padding">Padding</a>, etc.</td>
     </tr>
     <tr>
-      <td aria-label="Variation/State">
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain" disabled>Disabled</button></div>
+      <td aria-label="Variant/State">
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--primary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--secondary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--tertiary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--flat" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--plain" disabled>Disabled</button></div>
       </td>
       <td aria-label="Usage"> Communicates when a button isn’t actionable and is deemphasized in a UI. </td>
       <td aria-label="Example"> A button needs to remain present and visible, and becomes actionable only once any number of criteria is met. </td>
@@ -352,7 +352,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 * For `<button>` elements, `type` attribute is required, and will most likely be `type="button"`. Use `type="submit"` to submit a `<form>`. Omitting `type` attribute will default to `type="submit"`.
 * Generally, use primary buttons for actions that go to the next step and use secondary buttons for actions that happen on the current page.
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.
-* Make sure buttons look clickable — use color variations to distinguish static, hover and active states.
+* Make sure buttons look clickable — use color variants to distinguish static, hover and active states.
 * Avoid using too many buttons on a page.
 * Use sentence case for button labels, e.g. "Sign up" instead of "Sign Up".
 * Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “Download,” “View” or “Sign up”).
@@ -363,7 +363,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 * A Cancel button should not be used unless the online form uses a multi-step process.
 * A Cancel button should be used in a Multi-step or multiple screen process so the User feels safe that they are aborting a process.
 * A Cancel or Close button action shall clear the contents of the online form for security/privacy purposes.
-* When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variation) or Secondary button.
+* When used, the Cancel button should appear as a link (i.e. `fsa-btn--flat` variant) or Secondary button.
 * Buttons shall align to the left with primary or progressive/affirmative action on left, and secondary or regressive/dismissive action on right.
 
 ## Labeling

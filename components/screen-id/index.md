@@ -21,7 +21,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 ### Fullscreen
 

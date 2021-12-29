@@ -396,7 +396,7 @@
       img: "img/subcategories/font.png"
 
     - subtitle: "Link Display"
-      keyword: "block,inline,inline-block"
+      keyword: "block,inline,inline-block,fill"
       subhref: "utilities/#link-display"
       img: "img/subcategories/link-display.png"
 

@@ -25,12 +25,12 @@ Often referred to as a "drop down" or "pull down" menu, its most common usage is
   </select>
 </div>
 
-## Variations
+## Variants
 
-The style for `<select>` components always start with `class="fsa-select"`, modifiable with one or multiple `fsa-select--[variation]`.
+The style for `<select>` components always start with `class="fsa-select"`, modifiable with one or multiple `fsa-select--[variant]`.
 
 ```html
-<select class="fsa-select fsa-select--[variation]" name="Options">
+<select class="fsa-select fsa-select--[variant]" name="Options">
   ...
 </select>
 ```
@@ -49,10 +49,10 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 
 {% include preview-and-snippet.html %}
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<select class="fsa-select fsa-select--block" name="Options ipsum">
+<select class="fsa-select fsa-select--fill" name="Options ipsum">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
   <option value="Option C">Option C</option>
@@ -180,7 +180,7 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 
 ### Disabled
 
-Disabled select components do not have a `class="fsa-select--[variation]"`, instead using the `disabled` attribute.
+Disabled select components do not have a `class="fsa-select--[variant]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <select class="fsa-select" disabled="disabled" name="Options quis">
@@ -203,7 +203,7 @@ Selectively override several style properties at each Media Query breakpoint.
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>, and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,

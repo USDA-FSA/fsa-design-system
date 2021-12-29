@@ -7,18 +7,19 @@
 
   &__title {
 
-    // @include font-size(6);
-    font-size: 2.8rem;
+    font-size: $font-size-5;
+    line-height: $line-height-flat;
     margin-left: auto;
     margin-right: auto;
     max-width: ($site-max-width + 36px);
     padding-right: $size-default;
     padding-left: $size-default;
     font-weight: $font-light;
-    padding-top: 1.5em;
+    padding-top: ($size-base * 17);
 
     @include breakpoint(M) {
       @include font-size(6);
+      line-height: $line-height-flat;
     }
 
     @include breakpoint(L) {
@@ -34,8 +35,9 @@
     padding: $size-default;
 
     @include breakpoint(L) {
-      width: 100%;
-      display: table;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
     }
 
   }
@@ -45,7 +47,7 @@
     margin-bottom: $size-default;
 
     @include breakpoint(L) {
-      display: table-cell;
+      margin-bottom: 0;
     }
 
   }

@@ -58,7 +58,7 @@ This navigation component isn't necessarily a required Global Navigation structu
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 ### Fullscreen
 
@@ -210,7 +210,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                 <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Premium Exposure Drive</a></li>
                 <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Technology Plans</a></li>
                 <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
               </ul>
             </div>
 
@@ -249,7 +248,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Burden Investment</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Performance Management</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                  <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                 </ul>
               </div>
               <div class="fsa-nav-global__sub-menu-group">
@@ -331,7 +329,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ### Sub Menus: expanded, single list, optional group title
 
 {% capture snippet %}
-<div style="padding-bottom: 420px">
+<div style="padding-bottom: 460px">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -364,7 +362,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Premium Exposure Drive</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Technology Plans</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                  <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                 </ul>
               </div>
 
@@ -403,7 +400,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Burden Investment</a></li>
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Performance Management</a></li>
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                    <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                   </ul>
                 </div>
                 <div class="fsa-nav-global__sub-menu-group">
@@ -486,7 +482,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ### Sub Menus: expanded, single list, multi-column
 
 {% capture snippet %}
-<div style="padding-bottom: 250px;">
+<div style="padding-bottom: 240px;">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -515,7 +511,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Premium Exposure Drive</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Technology Plans</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                  <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                 </ul>
               </div>
 
@@ -554,7 +549,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Burden Investment</a></li>
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Performance Management</a></li>
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                    <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                   </ul>
                 </div>
                 <div class="fsa-nav-global__sub-menu-group">
@@ -637,7 +631,7 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
 ### Sub Menus: expanded, grouped lists
 
 {% capture snippet %}
-<div style="padding-bottom: 335px;">
+<div style="padding-bottom: 370px;">
   <nav>
     <div class="fsa-nav-global">
       <div class="fsa-nav-global__bd">
@@ -666,7 +660,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Premium Exposure Drive</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Technology Plans</a></li>
                   <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                  <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                 </ul>
               </div>
 
@@ -705,7 +698,6 @@ Expanding upon the menu, utilize the sub menus with `class="fsa-nav-global__sub-
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Burden Investment</a></li>
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Performance Management</a></li>
                     <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Drive Texture Mechanics</a></li>
-                    <li class="fsa-nav-global__sub-menu-item"><a class="fsa-nav-global__sub-menu-link" href="link.html">Unilateral Placement Shifting</a></li>
                   </ul>
                 </div>
                 <div class="fsa-nav-global__sub-menu-group">

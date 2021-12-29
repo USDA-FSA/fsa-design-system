@@ -37,7 +37,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
 </div>
 
-## Variations and Examples
+## Variants and Examples
 
 ### Default
 
@@ -275,7 +275,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <div class="ds-preview">
   <div class="fsa-stepped-control">
     <div class="fsa-stepped-control__bd">
-      <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
       </div>
       <div class="fsa-stepped-control__list">
@@ -297,7 +297,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ```html
 <div class="fsa-stepped-control">
   <div class="fsa-stepped-control__bd">
-    <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+    <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
       <strong>5</strong> of <strong>10</strong> Commodities are complete
     </div>
     <div class="fsa-stepped-control__list">
@@ -322,7 +322,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <div class="ds-preview">
   <div class="fsa-stepped-control">
     <div class="fsa-stepped-control__bd">
-      <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
       </div>
       <div class="fsa-stepped-control__list">
@@ -349,7 +349,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ```html
 <div class="fsa-stepped-control">
   <div class="fsa-stepped-control__bd">
-    <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+    <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
       <strong>5</strong> of <strong>10</strong> Commodities are complete
     </div>
     <div class="fsa-stepped-control__list">
@@ -378,7 +378,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 <div class="ds-preview">
   <div class="DEMO-STICKY-STEPPED-CONTROL">
-    <p>This <code>&lt;div class="DEMO-STICKY-STEPPED-CONTROL"&gt;</code> container provides the <strong>boundary</strong> by which the <code>fsa-stepped-control<strong>--sticky</strong></code> variation determines when to stick.</p>
+    <p>This <code>&lt;div class="DEMO-STICKY-STEPPED-CONTROL"&gt;</code> container provides the <strong>boundary</strong> by which the <code>fsa-stepped-control<strong>--sticky</strong></code> variant determines when to stick.</p>
     <p>Consectetur sit dolorum iste doloribus laudantium eaque itaque unde ipsa. Tempora non accusamus nihil aut, perferendis nesciunt earum dolor laborum necessitatibus reprehenderit.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores, unde aperiam, nemo harum sed repellendus veniam voluptas cupiditate porro facilis voluptates ipsam, sapiente illum odit possimus debitis est. Necessitatibus.</p>
     <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
@@ -415,7 +415,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 <div class="ds-preview">
   <div class="DEMO-STICKY-STEPPED-CONTROL">
-    <p>This <code>&lt;div class="DEMO-STICKY-STEPPED-CONTROL"&gt;</code> container provides the <strong>boundary</strong> by which the <code>fsa-stepped-control<strong>--sticky</strong></code> variation determines when to stick.</p>
+    <p>This <code>&lt;div class="DEMO-STICKY-STEPPED-CONTROL"&gt;</code> container provides the <strong>boundary</strong> by which the <code>fsa-stepped-control<strong>--sticky</strong></code> variant determines when to stick.</p>
     <p>Consectetur sit dolorum iste doloribus laudantium eaque itaque unde ipsa. Tempora non accusamus nihil aut, perferendis nesciunt earum dolor laborum necessitatibus reprehenderit.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores, unde aperiam, nemo harum sed repellendus veniam voluptas cupiditate porro facilis voluptates ipsam, sapiente illum odit possimus debitis est. Necessitatibus.</p>
     <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
@@ -478,7 +478,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
     <div class="fsa-stepped-control fsa-stepped-control--sticky">
       <div class="fsa-stepped-control__bd">
-        <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+        <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
           <strong>5</strong> of <strong>10</strong> Commodities are complete
         </div>
         <div class="fsa-stepped-control__list">
@@ -540,8 +540,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__stepped-control.html
 ## General Guidance
 
 * The Stepped Control is used as the standard Component to advance from screen to screen within an application
-* In most cases, the Stepped Control with sticky variation should be used, as it keeps the navigation controls on the screen for the User
-* Variations of the Stepped Control should be used to enhance the User Experience by providing additional context that might be missing for the User.
+* In most cases, the Stepped Control with sticky variant should be used, as it keeps the navigation controls on the screen for the User
+* Variants of the Stepped Control should be used to enhance the User Experience by providing additional context that might be missing for the User.
 
 ## JavaScript Guidance
 
@@ -549,7 +549,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__stepped-control.html
 
 ### Summary
 
-The JavaScript for the Sticky Stepped Control performs a number of calculations based on the position of the component in relation to the top of the screen. JavaScript is not required for the non-sticky variations of the Stepped Control component. The Component Update Events list below should trigger the change of the Sticky variant of the component.
+The JavaScript for the Sticky Stepped Control performs a number of calculations based on the position of the component in relation to the top of the screen. JavaScript is not required for the non-sticky variants of the Stepped Control component. The Component Update Events list below should trigger the change of the Sticky variant of the component.
 
 ### Component Update
 

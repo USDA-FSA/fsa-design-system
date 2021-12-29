@@ -17,7 +17,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 While these modifiers are specific to `.fsa-box`, other CSS Utilities and Helpers (e.g. [Padding](#padding)) can be combined for further flexibility.
 

@@ -45,9 +45,9 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
-`class="fsa-radio fsa-radio--[variation]"`
+`class="fsa-radio fsa-radio--[variant]"`
 
 ### Default
 
@@ -160,35 +160,27 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 ### Within a [Field]({{ site.baseurl }}components/form-fields/), horizontal list
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
-  <label class="fsa-field__label" id="lorem-radio-field-1--8822">Your Favorite Pie</label>
-  <ul class="fsa-level" aria-labelledby="lorem-radio-field-1--8822" aria-describedby="lorem-radio-field-1-help--8822">
-    <li>
-      <span>
-        <input class="fsa-radio" id="apple-radio--8822" type="radio" name="fav-pie">
-        <label for="apple-radio">Apple</label>
-      </span>
-    </li>
-    <li>
-      <span>
-        <input class="fsa-radio" id="key-lime-radio--8822" type="radio" name="fav-pie">
-        <label for="key-lime-radio">Key Lime</label>
-      </span>
-    </li>
-    <li>
-      <span>
-        <input class="fsa-radio" id="pumpkin-radio--8822" type="radio" name="fav-pie">
-        <label for="pumpkin-radio">Pumpkin</label>
-      </span>
-    </li>
-    <li>
-      <span>
-        <input class="fsa-radio" id="none-radio--8822" type="radio" name="fav-pie" checked>
-        <label for="none-radio">None of the above</label>
-      </span>
-    </li>
-  </ul>
-  <span class="fsa-field__help" id="lorem-radio-field-1-help--8822">Choose that one special pie</span>
+<div class="fsa-field fsa-field--fill">
+  <label class="fsa-field__label" id="lorem-radio-field-1--3380">Your Favorite Pie</label>
+  <div class="fsa-level" aria-labelledby="lorem-radio-field-1--3380" aria-describedby="lorem-radio-field-1-help--3380">
+    <span>
+      <input class="fsa-radio" id="apple-radio--3380" type="radio" name="fav-pie">
+      <label for="apple-radio--3380">Apple</label>
+    </span>
+    <span>
+      <input class="fsa-radio" id="key-lime-radio--3380" type="radio" name="fav-pie">
+      <label for="key-lime-radio--3380">Key Lime</label>
+    </span>
+    <span>
+      <input class="fsa-radio" id="pumpkin-radio--3380" type="radio" name="fav-pie">
+      <label for="pumpkin-radio--3380">Pumpkin</label>
+    </span>
+    <span>
+      <input class="fsa-radio" id="none-radio--3380" type="radio" name="fav-pie" checked>
+      <label for="none-radio--3380">None of the above</label>
+    </span>
+  </div>
+  <span class="fsa-field__help" id="lorem-radio-field-1-help--3380">Choose that one special pie</span>
 </div>
 {% endcapture %}
 

@@ -28,9 +28,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "progress.js"]
 
 A Progress indicator, or "Progress Bar" as it is often called, is an essential component for applications. Not only does a Progress indicator provide trust for the end User, but it also can provide valuable information as well. The general "rule of thumb" is that any process that requires the User to wait more than a second for something to load or finish, should provide a Progress indicator.
 
-## Variations and Examples
+## Variants and Examples
 
-Progress indicators are styled with `class="fsa-progress [fsa-progress--[variation]"`.
+Progress indicators are styled with `class="fsa-progress [fsa-progress--[variant]"`.
 
 ### Indeterminate, with label
 
@@ -153,7 +153,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 
 {% include preview-and-snippet.html %}
 
-### Paired with Select, block
+### Paired with Select, Fill Variant
 {% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
   <div class="fsa-progress__details fsa-sr-only">
@@ -164,7 +164,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-<select name="UNIQUE-ID-WAGSYS61" id="UNIQUE-ID-WAGSYS61" class="fsa-select fsa-select--block">
+<select name="UNIQUE-ID-WAGSYS61" id="UNIQUE-ID-WAGSYS61" class="fsa-select fsa-select--fill">
   <option>California</option>
   <option>Kansas</option>
 </select>
@@ -191,7 +191,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
 
 {% include preview-and-snippet.html %}
 
-### Paired with Input, block
+### Paired with Input, Fill Variant
 
 {% capture snippet %}
 <div class="fsa-progress fsa-progress--indeterminate" aria-live="polite">
@@ -203,7 +203,7 @@ Progress indicators are styled with `class="fsa-progress [fsa-progress--[variati
     <div class="fsa-progress__secondary"></div>
   </div>
 </div>
-<input class="fsa-input fsa-input--block" value="California">
+<input class="fsa-input fsa-input--fill" value="California">
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -346,7 +346,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__progress.html
           </div>
         </div>
       </p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cancel Encryption</button>
       </p>
     </div>
@@ -403,11 +403,11 @@ Always refer to the [Accessibility Forms Guide]({{ site.baseurl }}guides/accessi
 
 ## General Guidance
 
-* There are numerous instances when a Progress component should be shown, and based on the needs of the User and application, the choice of variations is important.
+* There are numerous instances when a Progress component should be shown, and based on the needs of the User and application, the choice of variants is important.
 
-* Utilize an Indeterminate Progress variation when the about of time is unknown or cannot be accurately approximated.
+* Utilize an Indeterminate Progress variant when the about of time is unknown or cannot be accurately approximated.
 
-* Utilize a Determinate variation when the application can provide an accurate representation of the progress of a specific process.
+* Utilize a Determinate variant when the application can provide an accurate representation of the progress of a specific process.
 
 * Applying a Progress component to an individual page control, such as a Text Input, should only be used when the asynchronous process occurs after interacting with that specific page control.
 

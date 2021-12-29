@@ -16,31 +16,31 @@ Gain focus on a specific feature, such as completing a subtask or providing comp
   <div class="fsa-grid">
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--default.png" alt="Modal screen: Default variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--default.png" alt="Modal screen: Default variant">
         <figcaption>Default</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--small.png" alt="Modal screen: Small variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--small.png" alt="Modal screen: Small variant">
         <figcaption>Small</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--large.png" alt="Modal screen: Large variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--large.png" alt="Modal screen: Large variant">
         <figcaption>Large</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--fullscreen.png" alt="Modal screen: Fullscreen variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--fullscreen.png" alt="Modal screen: Fullscreen variant">
         <figcaption>Fullscreen</figcaption>
       </figure>
     </div>
     <div class="fsa-grid__1/2 fsa-grid__1/3@m">
       <figure class="fsa-m-b--s fsa-m-b--m@m fsa-m-b--none@l">
-        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--top.png" alt="Modal screen: Top variation">
+        <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--top.png" alt="Modal screen: Top variant">
         <figcaption>Top</figcaption>
       </figure>
     </div>
@@ -56,21 +56,21 @@ Refer to [JavaScript Guidance](#javascript-guidance) for additional behaviorial.
 **Trigger sample Modals:**
 
 <p class="fsa-level@l fsa-level--grow-even">
-  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button></span>
-  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button></span>
-  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button></span>
-  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button></span>
-  <span><button class="fsa-btn fsa-btn--block fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button></span>
+  <span><button class="fsa-btn fsa-btn--fill fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-GGFD36765SSSGH" aria-expanded="false" type="button">Default</button></span>
+  <span><button class="fsa-btn fsa-btn--fill fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF9J99DIS" aria-expanded="false" type="button">Small</button></span>
+  <span><button class="fsa-btn fsa-btn--fill fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23458CF77S77S7" aria-expanded="false" type="button">Large</button></span>
+  <span><button class="fsa-btn fsa-btn--fill fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-23451CF80S77S9" aria-expanded="false" type="button">Fullscreen</button></span>
+  <span><button class="fsa-btn fsa-btn--fill fsa-btn--secondary" data-behavior="open-modal" aria-controls="UNIQUE-ID-2345SFGER99786" aria-expanded="false" type="button">Top</button></span>
 </p>
 
-## Variations
+## Variants
 
-Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
+Modals are styled with `class="fsa-modal [fsa-modal--[variant]]"`.
 
 ### Default
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--default.png" alt="Modal screen: Default variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--default.png" alt="Modal screen: Default variant">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-GGFD36765SSSGH" class="fsa-modal" role="dialog" aria-hidden="true">
@@ -92,7 +92,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 ### Small
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--small.png" alt="Modal screen: Small variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--small.png" alt="Modal screen: Small variant">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23458CF9J99DIS" class="fsa-modal fsa-modal--small" role="dialog" aria-hidden="true">
@@ -115,7 +115,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 ### Large
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--large.png" alt="Modal screen: Large variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--large.png" alt="Modal screen: Large variant">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23458CF77S77S7" class="fsa-modal fsa-modal--large" role="dialog" aria-hidden="true">
@@ -137,7 +137,7 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 ### Fullscreen
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--fullscreen.png" alt="Modal screen: Fullscreen variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--fullscreen.png" alt="Modal screen: Fullscreen variant">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-23451CF80S77S9" class="fsa-modal fsa-modal--fullscreen" role="dialog" aria-hidden="true">
@@ -158,10 +158,10 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variation]]"`.
 
 ### Top
 
-Can be appended to Default, Small, and Large variations; e.g. `class="fsa-modal fsa-modal--small fsa-modal--top"`.
+Can be appended to Default, Small, and Large variants; e.g. `class="fsa-modal fsa-modal--small fsa-modal--top"`.
 
 <div class="ds-preview">
-  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--top.png" alt="Modal screen: Top variation">
+  <img class="ds-screen" src="{{ site.baseurl }}img/screen-modal--top.png" alt="Modal screen: Top variant">
 </div>
 ```html
 <div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
@@ -203,9 +203,9 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
 {% capture usage_dont %}
 * When its content or features can be part of the page without complicating the page's intent.
 * When the content or message requires interaction with other parts of the application or screen.
-* When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
+* When requiring a user to confirm an action, use [Growl Notification's "Modal-based" variant]({{ site.baseurl }}components/growl/).
 * To communicate brief responses or status changes, use a [Growl Notification]({{ site.baseurl }}components/growl/).
-* As a system timeout message, use [Growl Notification's "Modal-based" variation]({{ site.baseurl }}components/growl/).
+* As a system timeout message, use [Growl Notification's "Modal-based" variant]({{ site.baseurl }}components/growl/).
 {% endcapture %}
 
 {% include do-dont.html %}
@@ -215,7 +215,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
 ## Accessibility
 
 * [Accessibility Timeouts Guide]({{ site.baseurl }}guides/accessibility/timeouts) for system timeout guidance.
-* Note `aria` and `role` attributes in use by component variations and examples.
+* Note `aria` and `role` attributes in use by component variants and examples.
 * Managing focus:
   * Trap focus inside to the Modal using JavaScript when displayed.
   * Dismissing Modal returns focus to originating element, e.g. the button or link that initially spawned the Modal's display.

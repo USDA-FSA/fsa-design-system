@@ -36,6 +36,10 @@
       color: $color-fsa-base !important;
     }
 
+    &:focus {
+      outline: 0 !important;
+    }
+
   }
 
   &__title {
@@ -45,6 +49,11 @@
     font-weight: $font-bold;
     display: flex;
     align-items: baseline;
+
+    .ds-related-card__item:focus-visible & {
+      outline: 3px solid $form-focus-color;
+      outline-offset: 3px;
+    }
 
     .ds-related-card__item:hover & {
       text-decoration: underline;

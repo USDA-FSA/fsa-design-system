@@ -4,20 +4,20 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "table-select-demo.js"]
 ---
 
 <div class="fsa-level@l fsa-level--justify-between fsa-level--align-bottom">
-  <ul class="fsa-level fsa-level--grow-auto fsa-m-b--s fsa-m-b--none@l">
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled=""><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg> <span class="fsa-sr-only@xs-only">Edit</span></button></li>
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"/></svg> <span class="fsa-sr-only@xs-only">Assign</span></button></li>
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 12v-3h-4v-4h4V8l5 5-5 5z"/></svg> <span class="fsa-sr-only@xs-only">Move</span></button></li>
-    <li><button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/></svg> <span class="fsa-sr-only@xs-only">Label</span></button></li>
-  </ul>
+  <div class="fsa-level fsa-level--grow-auto fsa-m-b--s fsa-m-b--none@l">
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button" disabled=""><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg> <span class="fsa-sr-only@xs-only">Edit</span></button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"/></svg> <span class="fsa-sr-only@xs-only">Assign</span></button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 12v-3h-4v-4h4V8l5 5-5 5z"/></svg> <span class="fsa-sr-only@xs-only">Move</span></button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button"><svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/></svg> <span class="fsa-sr-only@xs-only">Label</span></button>
+  </div>
   <div class="fsa-show@m fsa-level fsa-level--grow-auto">
     <div>
       <label for="lorem_find" class="fsa-text-size--2">Quick Find</label>
-      <input type="text" class="fsa-input fsa-input--small fsa-input--block" id="lorem_find">
+      <input type="text" class="fsa-input fsa-input--small fsa-input--fill" id="lorem_find">
     </div>
     <div>
       <span class="fsa-text-size--2" id="lorem_timeframe">Timeframe</span>
-      <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labeledby="lorem_timeframe">
+      <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--fill" role="group" aria-labeledby="lorem_timeframe">
         <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Today</button>
         <button class="fsa-btn-group__item" type="button">This Week</button>
         <button class="fsa-btn-group__item" type="button">This Year</button>

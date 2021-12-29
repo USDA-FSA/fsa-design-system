@@ -8,7 +8,7 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-The purpose of a Timeline is to show the User a series of actions that have been taken over a period of time. It is a way to chronicle the who, what, when, where, and how of a process, and the `fsa-timeline` component allows for additional features for the User as well. As seen below, variations of the component actions allow the Developer to provide a way to create, update, and delete various actions within the timeline.
+The purpose of a Timeline is to show the User a series of actions that have been taken over a period of time. It is a way to chronicle the who, what, when, where, and how of a process, and the `fsa-timeline` component allows for additional features for the User as well. As seen below, variants of the component actions allow the Developer to provide a way to create, update, and delete various actions within the timeline.
 
 The `fsa-timeline` component's structure enables flexible usage of other Design System components. For example, the featured demo below makes sample use of [Labels]({{ site.baseurl }}components/labels/), [Badge]({{ site.baseurl }}components/badges/), [Buttons]({{ site.baseurl }}components/buttons/), [Text Links]({{ site.baseurl }}components/links/), and several [CSS Utilities]({{ site.baseurl }}utilities/).
 
@@ -44,7 +44,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
     <div class="fsa-timeline__hd">
       <strong><a href="link.html">Jane Doe</a></strong> commented on
       <time datetime="2015-05-28T09:02:10.517-05:00">Wednesday, 04/05/2015 5:10 PM</time>
-      <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('See **.fsa-timeline__item--editing** example.')">Edit</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Likely use a **Prompt** Notification variation.')">Delete</button> </span>
+      <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('See **.fsa-timeline__item--editing** example.')">Edit</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Likely use a **Prompt** Notification variant.')">Delete</button> </span>
     </div>
     <div class="fsa-timeline__bd">
       The inspection request identifies this site enrolled in three Land Use programs. While technically possible, it is quite rare and needs to be verified.
@@ -61,7 +61,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
     <div class="fsa-timeline__hd">
       <strong><a href="link.html">Todd Stanley</a></strong> commented on
       <time datetime="2015-05-28T09:02:10.517-05:00">Thursday, 05/28/2015 7:02 AM</time>
-      <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('See **.fsa-timeline__item--editing** example.')">Edit</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Likely use a **Prompt** Notification variation.')">Delete</button> </span>
+      <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('See **.fsa-timeline__item--editing** example.')">Edit</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Likely use a **Prompt** Notification variant.')">Delete</button> </span>
     </div>
     <div class="fsa-timeline__bd">
       On my way to the site now.
@@ -127,9 +127,9 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
     </div>
     <div class="fsa-timeline__bd">
       <div class="fsa-m-b--s">
-        <textarea class="fsa-textarea fsa-textarea--block" id="inspectionCommentField--104" name="inspectionCommentField"></textarea>
+        <textarea class="fsa-textarea fsa-textarea--fill" id="inspectionCommentField--104" name="inspectionCommentField"></textarea>
       </div>
-      <button class="fsa-btn fsa-btn--primary" type="submit">Add Comment</button>
+      <div class="fsa-level"><button class="fsa-btn fsa-btn--primary" type="submit">Add Comment</button></div>
     </div>
   </div>
 </div>
@@ -137,7 +137,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 ### System
 
@@ -186,10 +186,12 @@ Editing nodes are styled with `class="fsa-timeline__item--editing"`
   </div>
   <div class="fsa-timeline__bd">
     <div class="fsa-m-b--s">
-      <textarea class="fsa-textarea fsa-textarea--block" id="inspectionCommentEditSample--56w6w440" name="inspectionCommentEditSample--56w6w440"></textarea>
+      <textarea class="fsa-textarea fsa-textarea--fill" id="inspectionCommentEditSample--56w6w440" name="inspectionCommentEditSample--56w6w440"></textarea>
     </div>
-    <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="submit" onclick="alert('1. Repaint this fsa-timeline__item to original state with updated content.\n\n2. Growl Notification noting success.')">Update Comment</button>
-    <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Revert to last saved comment. No prompt necessary.')">Cancel</button>
+    <div class="fsa-level">
+      <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="submit" onclick="alert('1. Repaint this fsa-timeline__item to original state with updated content.\n\n2. Growl Notification noting success.')">Update Comment</button>
+      <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Revert to last saved comment. No prompt necessary.')">Cancel</button>
+    </div>
   </div>
 </div>
 {% endcapture %}
@@ -207,9 +209,9 @@ Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
   </div>
   <div class="fsa-timeline__bd">
     <div class="fsa-m-b--s">
-      <textarea class="fsa-textarea fsa-textarea--block" id="inspectionCommentField--669" name="inspectionCommentField"></textarea>
+      <textarea class="fsa-textarea fsa-textarea--fill" id="inspectionCommentField--669" name="inspectionCommentField"></textarea>
     </div>
-    <button class="fsa-btn fsa-btn--primary" type="submit">Add Comment</button>
+    <div class="fsa-level"><button class="fsa-btn fsa-btn--primary" type="submit">Add Comment</button></div>
   </div>
 </div>
 {% endcapture %}

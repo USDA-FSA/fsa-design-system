@@ -26,7 +26,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
 </div>
 
-## Variations
+## Variants
 
 ### Default
 

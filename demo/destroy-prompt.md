@@ -13,7 +13,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <div class="fsa-growl__bd">
       <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>
       </p>
     </div>
@@ -27,7 +27,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     </div>
     <div class="fsa-growl__bd">
       <p>You are about to <strong>Delete an Inspection</strong>. This will affect <strong>4</strong> Inspectors.</p>
-      <p>
+      <p class="fsa-level">
         <button data-behavior="growl-dismiss whiteout-dismiss growl-show" aria-controls="UNIQUE-ID-8A386E512C033F57" aria-expanded="false" class="fsa-btn fsa-btn--small fsa-btn--tertiary" type="button">Delete</button>
         <button data-behavior="growl-dismiss whiteout-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Cancel</button>
       </p>

@@ -18,9 +18,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "inline-alert.js"]
   </div>
 </div>
 
-## Variations
+## Variants
 
-Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
+Variants are styled with `class="fsa-alert fsa-alert--[type]"`.
 
 ### Success
 
@@ -112,7 +112,7 @@ Variations are styled with `class="fsa-alert fsa-alert--[type]"`.
 {% capture usage_dont %}
 * When displaying error messages paired with specific form fields. Use error states provided in [Form Field]({{ site.baseurl }}components/form-fields/) component.
 * If the application needs to provide real-time messaging to the User about a page-level event, out-of-view event, or background process. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
-* For destructive actions. If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, with an option available for user to confirm or deny. Consider the Modal-based variation of [Growl Notification]({{ site.baseurl }}components/growl/)
+* For destructive actions. If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, with an option available for user to confirm or deny. Consider the Modal-based variant of [Growl Notification]({{ site.baseurl }}components/growl/)
 * When the application displays non-critical information that won’t disrupt a workflow. Use a [Growl Notification]({{ site.baseurl }}components/growl/).
 * Too many Alerts at one time as this will confuse the User and push content down the screen.
 {% endcapture %}

@@ -2,13 +2,13 @@
 
   $branch-color: $color-fsa-tertiary-300;
   $branch-width: $size-medium;
-  $branch-height: .8em;
+  $branch-height: $size-default;
   $branch-thickness: 1px;
 
   &__list {
 
     @include reset-ul();
-    margin-top: .5em;
+    margin-top: $size-small;
 
     &--root {
       @include breakpoint(XL) {
@@ -25,7 +25,7 @@
   &__list-item {
 
     @include reset-li();
-    margin-bottom: .5em;
+    margin-bottom: $size-small;
 
     &--root {
       @include breakpoint(XL) {
@@ -45,7 +45,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        bottom: -.6em;
+        bottom: -$size-small;
       }
 
       &::after {

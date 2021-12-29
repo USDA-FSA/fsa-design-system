@@ -12,26 +12,28 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-preview">
-  <label class="fsa-switch">
-    <input type="checkbox" class="fsa-switch__checkbox">
-    <span class="fsa-switch__track"></span>
-  </label>
-  <label class="fsa-switch">
-    <input checked type="checkbox" class="fsa-switch__checkbox">
-    <span class="fsa-switch__track"></span>
-  </label>
-  <label class="fsa-switch">
-    <input type="checkbox" class="fsa-switch__checkbox" id="switch-indeterminate-example__00">
-    <span class="fsa-switch__track"></span>
-  </label>
+  <div class="fsa-level">
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox">
+      <span class="fsa-switch__track"></span>
+    </label>
+    <label class="fsa-switch">
+      <input checked type="checkbox" class="fsa-switch__checkbox">
+      <span class="fsa-switch__track"></span>
+    </label>
+    <label class="fsa-switch">
+      <input type="checkbox" class="fsa-switch__checkbox" id="switch-indeterminate-example__00">
+      <span class="fsa-switch__track"></span>
+    </label>
+  </div>
   <script>
     document.getElementById("switch-indeterminate-example__00").indeterminate = true;
   </script>
 </div>
 
-The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should occur immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variation, which allows for an initial "unselected" state.
+The Switch component acts as a way to allow the User to toggle between two mutually exclusive options. A Switch behaves similarly to a [Checkbox]({{ site.baseurl }}components/checkbox/) component, but the affect on the system should occur immediately. One aspect of the Switch component that provides an additional state is the Inderterminate variant, which allows for an initial "unselected" state.
 
-## Variations
+## Variants
 
 Switch components are styled with `class="fsa-switch` on the `<label>` tag, and using the `class="fsa-switch__checkbox` on the `<input>` tag.
 
@@ -75,18 +77,20 @@ The Indeterminate setting can be initiated by setting the `indeterminate` parame
 
 ### Disabled
 {% capture snippet %}
-<label class="fsa-switch">
-  <input disabled type="checkbox" class="fsa-switch__checkbox">
-  <span class="fsa-switch__track"></span>
-</label>
-<label class="fsa-switch">
-  <input checked disabled type="checkbox" class="fsa-switch__checkbox">
-  <span class="fsa-switch__track"></span>
-</label>
-<label class="fsa-switch">
-  <input type="checkbox" class="fsa-switch__checkbox" id="checkbox-indeterminate-example__02" disabled>
-  <span class="fsa-switch__track"></span>
-</label>
+<div class="fsa-level">
+  <label class="fsa-switch">
+    <input disabled type="checkbox" class="fsa-switch__checkbox">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label class="fsa-switch">
+    <input checked disabled type="checkbox" class="fsa-switch__checkbox">
+    <span class="fsa-switch__track"></span>
+  </label>
+  <label class="fsa-switch">
+    <input type="checkbox" class="fsa-switch__checkbox" id="checkbox-indeterminate-example__02" disabled>
+    <span class="fsa-switch__track"></span>
+  </label>
+</div>
 <script>
   document.getElementById("checkbox-indeterminate-example__02").indeterminate = true;
 </script>
@@ -123,12 +127,12 @@ The Indeterminate setting can be initiated by setting the `indeterminate` parame
 {% include preview-and-snippet.html %}
 
 ### Example
-Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/layout/level), [Padding Utilities]({{ site.baseurl }}/utilities/#padding), and [Divider]({{ site.baseurl }}/layout/divider), arrange content in a vertical list and associate a `<label`> with a `.fsa-switch`.
+Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/layout/level), [Padding Utility]({{ site.baseurl }}/utilities/#padding), and [Border Between Utility]({{ site.baseurl }}/utilities/#border-between) arrange content in a vertical list and associate a `<label`> with a `.fsa-switch`.
 
 {% capture snippet %}
 <div class="fsa-grid">
   <div class="fsa-grid__1 fsa-grid__1/3@m">
-    <div class="fsa-box fsa-p--none">
+    <div class="fsa-box fsa-p--none fsa-border-between-horizontal--xxs">
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__01">Thing 1</label>
         <label class="fsa-switch">
@@ -136,7 +140,6 @@ Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/l
           <span class="fsa-switch__track"></span>
         </label>
       </div>
-      <div class="fsa-divider"></div>
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__02">Thing 2</label>
         <label class="fsa-switch">
@@ -144,7 +147,6 @@ Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/l
           <span class="fsa-switch__track"></span>
         </label>
       </div>
-      <div class="fsa-divider"></div>
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__03">Thing 3</label>
         <label class="fsa-switch">
@@ -152,7 +154,6 @@ Combined with [Box]({{ site.baseurl }}/layout/box), [Level]({{ site.baseurl }}/l
           <span class="fsa-switch__track"></span>
         </label>
       </div>
-      <div class="fsa-divider"></div>
       <div class="fsa-level fsa-level--justify-between fsa-p--xs fsa-p-l--s fsa-p-r--s">
         <label for="switch-thing__04">Thing 4</label>
         <label class="fsa-switch">

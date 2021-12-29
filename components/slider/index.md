@@ -20,12 +20,12 @@ At its root the Slider component is a native `<input>` form element with an attr
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<input class="fsa-slider fsa-slider--block" id="lorem-range-4453" name="lorem-range-4453" type="range" min="0" max="100" value="90" step="10">
+<input class="fsa-slider fsa-slider--fill" id="lorem-range-4453" name="lorem-range-4453" type="range" min="0" max="100" value="90" step="10">
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -67,7 +67,7 @@ Combine with [Level]({{ site.baseurl }}layout/level/) layout component to arrang
 {% capture snippet %}
 <div class="fsa-level">
   <span>
-    <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="90" step="10">
+    <input class="fsa-slider fsa-slider--fill" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="90" step="10">
   </span>
   <span><output aria-live="polite" id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">90</output></span>
 </div>
@@ -75,14 +75,14 @@ Combine with [Level]({{ site.baseurl }}layout/level/) layout component to arrang
 
 {% include preview-and-snippet.html %}
 
-### With output, Full-width
+### With output, Fill
 
-Combine the `fsa-slider--block` variation with [Level]({{ site.baseurl }}layout/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
+Combine the `fsa-slider--fill` variant with [Level]({{ site.baseurl }}layout/level/) to arrange Slider with an `<output>` element (note [JavaScript guidance](#javascript-guidance)).
 
 {% capture snippet %}
 <div class="fsa-level">
   <span class="fsa-level__item--grow-auto">
-    <input class="fsa-slider fsa-slider--block" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="10" step="10">
+    <input class="fsa-slider fsa-slider--fill" id="lorem-range-4672" name="lorem-range-4672" type="range" min="0" max="100" value="10" step="10">
   </span>
   <span><output aria-live="polite" id="lorem-range-ouput-6789" name="lorem-range-ouput-6789" for="lorem-range-4672">10</output></span>
 </div>

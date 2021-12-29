@@ -215,7 +215,7 @@ Where `type` attribute is one of <code title="lowercase letters">a</code>, <code
 
 Selectively apply List styles at any Media Query breakpoint.
 
-<code>class="fsa-list--<strong>[variation]@[breakpoint]</strong>"</code> where `variation` is one of `bullet`, `number`, `inline`, or `unstyled`, and `breakpoint` is one of `s`, `m`, `l`, or `xl`.
+<code>class="fsa-list--<strong>[variant]@[breakpoint]</strong>"</code> where `variant` is one of `bullet`, `number`, `inline`, or `unstyled`, and `breakpoint` is one of `s`, `m`, `l`, or `xl`.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}

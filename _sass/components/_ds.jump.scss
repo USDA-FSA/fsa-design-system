@@ -3,30 +3,28 @@
 
 .ds-jump {
 
-  margin-top: 1.5em;
+  @include breakpoint(L) {
+    margin-top: $size-large;
+  }
 
   // scss-lint:disable SelectorFormat
   .ds-jump--stuck & {
-
     @include breakpoint(L) {
       margin-top: 0;
     }
-
   }
 
   &__list {
-
     @include reset-ul();
-
   }
 
   &__item {
 
     @include reset-li();
-    margin-bottom: $size-small;
 
     @include breakpoint(L) {
-      padding-left: $size-small;
+      margin-bottom: $size-base;
+      padding-left: $size-default;
       border-left: $size-base solid transparent;
       transition: border .115s ease-in-out;
     }

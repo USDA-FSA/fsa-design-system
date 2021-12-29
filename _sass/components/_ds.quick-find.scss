@@ -2,11 +2,13 @@
   display: none; // Hide if browser doesn't support (e.g. <=IE11)
 }
 @supports (grid-area: auto) {
+  $closeButtonWidth: ($size-base * 12);
   .ds-quick-find {
     & {
       display: block;
       position: relative;
       z-index: 2;
+      margin-top: $size-medium;
       margin-bottom: $size-medium;
       @include breakpoint(L) {
         margin-bottom: $size-large;
@@ -18,6 +20,7 @@
     }
     &__input {
       width: 100%;
+      padding-right: $closeButtonWidth + $size-base;
     }
     &__field {
       position: relative;
@@ -27,18 +30,17 @@
       .ds-quick-find__input:placeholder-shown + & {
         display: none;
       }
-      width: 48px;
-      border: solid transparent;
-      border-width: 0 12px;
+      width: $closeButtonWidth;
+      border-left: 1px solid $form-outline-color;
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
       text-align: center;
-      background-image: url('#{$image-path}/close.svg');;
+      background-color: $color-fsa-tertiary-100;
+      background-image: url("#{$image-path}/material-design-icons/ic_close_24px.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 48%;
       outline-offset: -3px;
     }
     &__output {

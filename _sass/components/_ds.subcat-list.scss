@@ -7,7 +7,7 @@
   &__list {
 
     @include reset-ul();
-    margin-top: 2em;
+    margin-top: $size-medium;
 
     @include breakpoint(S) {
       @include fsa-grid-row();
@@ -65,7 +65,6 @@
     @include font-size(4);
     display: block;
     font-weight: $font-bold;
-    margin-bottom: $size-base;
 
     .ds-subcat-list__link:focus & {
       @include fsa-focus;

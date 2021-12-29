@@ -38,9 +38,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </nav>
 </div>
 
-## Variations and Examples
+## Variants and Examples
 
-Pagination Components can be styled using the `fsa-pagination__label--[variation]` class on Unordered Lists.
+Pagination Components can be styled using the `fsa-pagination__label--[variant]` class on Unordered Lists.
 
 ### Default
 
@@ -275,7 +275,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__pagination.html
 
 ## General Guidance
 
-* As seen in the variation above, the number of pages within the dataset dictates the variation that should be applied.
+* As seen in the variant above, the number of pages within the dataset dictates the variant that should be applied.
 * A maximum total of five numbers should be visible at any given time for desktop screens, which the very first number and last number always being shown.
 * When six or more pages are available, an ellipsis (`...`) shall be used to indicate the existence of available pages not shown.
 * When the first page is in view, the first page button shall be selected and the `Previous` button shall be disabled.

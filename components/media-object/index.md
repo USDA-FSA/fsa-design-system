@@ -41,7 +41,7 @@ Media Objects are a very quick and easy way to pair visual references to text-ba
 
 {% include preview-and-snippet.html %}
 
-## Variations
+## Variants
 
 ### Default
 

@@ -20,12 +20,12 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
   <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text">
 </div>
 
-## Variations
+## Variants
 
-The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variation]`.
+The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variant]`.
 
 ```html
-<input class="fsa-input fsa-input--[variation]" type="text" name="some_name" value="">
+<input class="fsa-input fsa-input--[variant]" type="text" name="some_name" value="">
 ```
 
 ### Default
@@ -36,10 +36,10 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 {% include preview-and-snippet.html %}
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<input class="fsa-input fsa-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder">
+<input class="fsa-input fsa-input--fill" type="text" name="155tj" value="Text" placeholder="Placeholder">
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -74,7 +74,7 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 ### Customizing Width
 
-Though it should be **rarely** necessary, the width of `.fsa-input`* can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
+Though it should be **rarely** necessary, the width of `.fsa-input` can be overridden by using the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
 
 {% capture snippet %}
 <div class="fsa-level@l">
@@ -117,7 +117,7 @@ Though it should be **rarely** necessary, the width of `.fsa-input`* can be over
 
 ### Disabled
 
-Disabled fields do not have a `class="fsa-input--[variation]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-input--[variant]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
@@ -127,7 +127,7 @@ Disabled fields do not have a `class="fsa-input--[variation]"`, instead using th
 
 ### Readonly
 
-Readonly fields do not have a `class="fsa-input--[variation]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-input--[variant]"`, instead using the `readonly` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
@@ -144,7 +144,7 @@ Selectively override several style properties at each Media Query breakpoint
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>; and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
