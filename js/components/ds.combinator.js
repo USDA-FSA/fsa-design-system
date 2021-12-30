@@ -40,4 +40,17 @@ $('body').on('change', '[data-behavior~="combinator-toggle-attr"]', function(eve
 
 })
 
+$('body').on('change', '[data-behavior~="combinator-toggle-icon"]', function(event) {
+
+  var $self = $(this);
+  var $iconTarget = $('#' + $self.attr('data-icon-target'));
+
+  if($iconTarget.attr('hidden')) {
+    $iconTarget.removeAttr('hidden');
+  } else {
+    $iconTarget.attr('hidden', true);
+  }
+
+})
+
 // combinator-select

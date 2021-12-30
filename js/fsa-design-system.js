@@ -473,6 +473,19 @@ $('body').on('change', '[data-behavior~="combinator-toggle-attr"]', function(eve
 
 })
 
+$('body').on('change', '[data-behavior~="combinator-toggle-icon"]', function(event) {
+
+  var $self = $(this);
+  var $iconTarget = $('#' + $self.attr('data-icon-target'));
+
+  if($iconTarget.attr('hidden')) {
+    $iconTarget.removeAttr('hidden');
+  } else {
+    $iconTarget.attr('hidden', true);
+  }
+
+})
+
 // combinator-select
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"jquery":24}],12:[function(require,module,exports){
