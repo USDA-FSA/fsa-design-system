@@ -275,7 +275,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <div class="ds-preview">
   <div class="fsa-stepped-control">
     <div class="fsa-stepped-control__bd">
-      <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
       </div>
       <div class="fsa-stepped-control__list">
@@ -297,7 +297,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ```html
 <div class="fsa-stepped-control">
   <div class="fsa-stepped-control__bd">
-    <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+    <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
       <strong>5</strong> of <strong>10</strong> Commodities are complete
     </div>
     <div class="fsa-stepped-control__list">
@@ -322,7 +322,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 <div class="ds-preview">
   <div class="fsa-stepped-control">
     <div class="fsa-stepped-control__bd">
-      <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+      <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
         <strong>5</strong> of <strong>10</strong> Commodities are complete
       </div>
       <div class="fsa-stepped-control__list">
@@ -349,7 +349,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ```html
 <div class="fsa-stepped-control">
   <div class="fsa-stepped-control__bd">
-    <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+    <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
       <strong>5</strong> of <strong>10</strong> Commodities are complete
     </div>
     <div class="fsa-stepped-control__list">
@@ -478,7 +478,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <p>Ducimus architecto ipsa iusto aliquid deserunt commodi dolore, magnam cumque dolorum modi placeat nulla ea veniam suscipit, dolorem voluptas consequuntur repellendus non.</p>
     <div class="fsa-stepped-control fsa-stepped-control--sticky">
       <div class="fsa-stepped-control__bd">
-        <div class="fsa-stepped-control__message fsa-stepped-control__message--block" role="status">
+        <div class="fsa-stepped-control__message fsa-stepped-control__message--fill" role="status">
           <strong>5</strong> of <strong>10</strong> Commodities are complete
         </div>
         <div class="fsa-stepped-control__list">

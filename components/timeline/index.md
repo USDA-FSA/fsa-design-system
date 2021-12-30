@@ -127,7 +127,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
     </div>
     <div class="fsa-timeline__bd">
       <div class="fsa-m-b--s">
-        <textarea class="fsa-textarea fsa-textarea--block" id="inspectionCommentField--104" name="inspectionCommentField"></textarea>
+        <textarea class="fsa-textarea fsa-textarea--fill" id="inspectionCommentField--104" name="inspectionCommentField"></textarea>
       </div>
       <div class="fsa-level"><button class="fsa-btn fsa-btn--primary" type="submit">Add Comment</button></div>
     </div>
@@ -186,7 +186,7 @@ Editing nodes are styled with `class="fsa-timeline__item--editing"`
   </div>
   <div class="fsa-timeline__bd">
     <div class="fsa-m-b--s">
-      <textarea class="fsa-textarea fsa-textarea--block" id="inspectionCommentEditSample--56w6w440" name="inspectionCommentEditSample--56w6w440"></textarea>
+      <textarea class="fsa-textarea fsa-textarea--fill" id="inspectionCommentEditSample--56w6w440" name="inspectionCommentEditSample--56w6w440"></textarea>
     </div>
     <div class="fsa-level">
       <button class="fsa-btn fsa-btn--primary fsa-btn--small" type="submit" onclick="alert('1. Repaint this fsa-timeline__item to original state with updated content.\n\n2. Growl Notification noting success.')">Update Comment</button>
@@ -209,7 +209,7 @@ Add Comment nodes are styled with `class="fsa-timeline__item--add-comment"`
   </div>
   <div class="fsa-timeline__bd">
     <div class="fsa-m-b--s">
-      <textarea class="fsa-textarea fsa-textarea--block" id="inspectionCommentField--669" name="inspectionCommentField"></textarea>
+      <textarea class="fsa-textarea fsa-textarea--fill" id="inspectionCommentField--669" name="inspectionCommentField"></textarea>
     </div>
     <div class="fsa-level"><button class="fsa-btn fsa-btn--primary" type="submit">Add Comment</button></div>
   </div>

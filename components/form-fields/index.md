@@ -130,10 +130,10 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
-### Text, Full Width
+### Text, Fill Variant
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" for="TheItem5">Label <span class="fsa-field__label-desc">Required</span></label>
   <input class="fsa-input fsa-field__item" id="TheItem5" aria-describedby="lorem-1234-help-5" aria-required="true" name="TheItem5" type="text" value="">
   <span class="fsa-field__help" id="lorem-1234-help-5">Instructional message here</span>
@@ -143,7 +143,7 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
 
 ### Text, Custom Width
 
-The width of `.fsa-field`'s use of `.fsa-input` defaults to the full width of its parent container (i.e. `.fsa-field`). Though it should be **rarely** necessary, it can be overridden with the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
+The width of `.fsa-field`'s use of `.fsa-input` defaults to fill the bounds its parent container (i.e. `.fsa-field`). Though it should be **rarely** necessary, it can be overridden with the `size` attribute, which specifies the width of the `input` in number of characters. From a display perspective, one character is equivalent to `1em` (approximately `17px` wide at default font size).
 
 {% capture snippet %}
 <div class="fsa-field">
@@ -152,7 +152,7 @@ The width of `.fsa-field`'s use of `.fsa-input` defaults to the full width of it
 </div>
 <div class="fsa-field">
   <label class="fsa-field__label" for="lorem-6719">Label</label>
-  <input class="fsa-input fsa-input--block fsa-field__item" id="lorem-6719" name="lorem-6719" type="text" value="" size="14">
+  <input class="fsa-input fsa-input--fill fsa-field__item" id="lorem-6719" name="lorem-6719" type="text" value="" size="14">
 </div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
@@ -170,10 +170,10 @@ Using [Textarea]({{ site.baseurl }}components/textarea/) as core component.
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
-### Textarea, Full Width
+### Textarea, Fill
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" for="UNIQUE-ID-yyss88xx22x2x2">Label <span class="fsa-field__label-desc">Required</span></label>
   <textarea class="fsa-textarea fsa-field__item fsa-field__item--" placeholder="Placeholder" id="UNIQUE-ID-yyss88xx22x2x2" aria-describedby="lorem-yyss88xx22x2x2-help-4" aria-required="true" name="UNIQUE-ID-yyss88xx22x2x2"></textarea>
   <span class="fsa-field__help" id="lorem-yyss88xx22x2x2-help-4">Instructional message here</span>
@@ -270,10 +270,10 @@ Using [Select]({{ site.baseurl }}components/select/) as core component.
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
-### Select, Full Width
+### Select, Fill Variant
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" for="UNIQUE-ID-ssrrppou9">Label <span class="fsa-field__label-desc">Required</span></label>
   <select class="fsa-select fsa-field__item" id="UNIQUE-ID-ssrrppou9" aria-describedby="lorem-ssrrppou9-help-4" aria-required="true" name="UNIQUE-ID-ssrrppou9">
     <option value="Option A" selected="selected">Option A</option>
@@ -339,10 +339,10 @@ Using [Select Multi]({{ site.baseurl }}components/select-multi/) as core compone
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
-### Select Multi, Full Width
+### Select Multi, Fill Variant
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" for="UNIQUE-ID-hshmul6tihsjt">Label</label>
   <div class="fsa-select-multi fsa-field__item">
     <ul class="fsa-select-multi__list" id="UNIQUE-ID-hshmul6tihsjt" aria-describedby="lorem-hshmul6tihsjt-help-4">
@@ -423,10 +423,10 @@ Using [Spinbox]({{ site.baseurl }}components/spinbox/) as core component.
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
-### Spinbox, Full Width
+### Spinbox, Fill Variant
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" for="UNIQUE-ID-spinsawsqz">Label</label>
   <div class="fsa-spinbox fsa-field__item">
     <div class="fsa-spinbox__number">
@@ -509,7 +509,7 @@ A UI Pattern for revealing an additional form field upon selection of an "Other"
         <input class="fsa-radio" id="none-radio-33aa" type="radio" name="fav-pie">
         <label for="none-radio-33aa">Other</label>
         <div class="fsa-radio__other">
-          <input class="fsa-input fsa-input--block" type="text" name="loremasdfas" value="" placeholder="e.g. Strawberry" aria-label="Other Favorite Pie">
+          <input class="fsa-input fsa-input--fill" type="text" name="loremasdfas" value="" placeholder="e.g. Strawberry" aria-label="Other Favorite Pie">
         </div>
       </div>
     </li>
@@ -546,7 +546,7 @@ A UI Pattern for revealing an additional form field upon selection of an "Other"
       <input class="fsa-checkbox" id="other-pie_2-eezz" type="checkbox" name="boat-pie_2-eezz" value="other-pie_2-eezz">
       <label for="other-pie_2-eezz">Other</label>
       <div class="fsa-checkbox__other">
-        <input class="fsa-input fsa-input--block" type="text" name="-eezz-eezz-eezz-eezz" value="" placeholder="e.g. Strawberry" aria-label="Other Fruit Pie you like" id="other-pie_9-eezz">
+        <input class="fsa-input fsa-input--fill" type="text" name="-eezz-eezz-eezz-eezz" value="" placeholder="e.g. Strawberry" aria-label="Other Fruit Pie you like" id="other-pie_9-eezz">
       </div>
     </li>
   </ul>
@@ -607,7 +607,7 @@ A UI Pattern for revealing an additional form field upon selection of an "Other"
     <option value="other">Other</option>
   </select>
   <div class="fsa-select__other" id="select-other-target" aria-hidden="true" hidden>
-    <input class="fsa-input fsa-input--block" type="text" name="asdfasdf" value="" aria-label="Other team name">
+    <input class="fsa-input fsa-input--fill" type="text" name="asdfasdf" value="" aria-label="Other team name">
   </div>
   <span class="fsa-field__help">Where does your loyalty lie?</span>
 </div>
@@ -865,7 +865,7 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
 </div>
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block fsa-field--columns">
+<div class="fsa-field fsa-field--fill fsa-field--columns">
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__3/12@s">
       <div class="fsa-field__column">
@@ -894,7 +894,7 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
     </div>
   </div>
 </div>
-<div class="fsa-field fsa-field--block fsa-field--columns">
+<div class="fsa-field fsa-field--fill fsa-field--columns">
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__3/12@s">
       <div class="fsa-field__column">
@@ -929,7 +929,7 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
 ### Error, specific row and column
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block fsa-field--columns fsa-field--error">
+<div class="fsa-field fsa-field--fill fsa-field--columns fsa-field--error">
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__3/12@s">
       <div class="fsa-field__column">
@@ -959,7 +959,7 @@ By using `fsa-field--columns` paired with use of the [Grid System]({{ site.baseu
     </div>
   </div>
 </div>
-<div class="fsa-field fsa-field--block fsa-field--columns">
+<div class="fsa-field fsa-field--fill fsa-field--columns">
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__3/12@s">
       <div class="fsa-field__column">

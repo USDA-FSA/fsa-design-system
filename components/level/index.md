@@ -39,13 +39,6 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Anatomy
 
-```html
-<el class="fsa-level[@BP] [fsa-level[--modifiers[@BP]]]"> <!-- Container -->
-  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
-  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
-</el>
-```
-
 {% capture anatomy__markers %}
 1. Container
 1. Item
@@ -55,6 +48,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 {% assign anatomy__image-on = "level--on.png" %}
 
 {% include anatomy.html %}
+
+```html
+<el class="fsa-level[@BP] [fsa-level[--modifiers[@BP]]]"> <!-- Container -->
+  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
+  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
+</el>
+```
+
 
 ## Level Container
 
@@ -106,7 +107,7 @@ Text
 text
 ```
 
-#### Full (default)
+#### Full (default / override)
 <div class="ds-preview">
   <div class="docs__utilities__demo fsa-level-demo">
     <div class="fsa-level fsa-level--full">
@@ -1055,19 +1056,19 @@ and
 <div class="ds-preview">
   <div class="fsa-level fsa-level--justify-between fsa-level--align-bottom">
     <div class="fsa-level">
-      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled>Edit</button>
-      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Assign</button>
-      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button>
-      <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button" disabled>Edit</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button">Assign</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button">Move to</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button">Label</button>
     </div>
     <div class="fsa-level">
       <div>
         <label for="lorem_find" class="fsa-text-size--2">Quick Find</label>
-        <input type="text" class="fsa-input fsa-input--small fsa-input--block" id="lorem_find">
+        <input type="text" class="fsa-input fsa-input--small fsa-input--fill" id="lorem_find">
       </div>
       <div>
         <span class="fsa-text-size--2" id="lorem_timeframe">Timeframe</span>
-        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labeledby="lorem_timeframe">
+        <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--fill" role="group" aria-labeledby="lorem_timeframe">
           <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Today</button>
           <button class="fsa-btn-group__item" type="button">This Week</button>
           <button class="fsa-btn-group__item" type="button">This Year</button>
@@ -1079,19 +1080,19 @@ and
 ```html
 <div class="fsa-level fsa-level--justify-between fsa-level--align-bottom">
   <div class="fsa-level">
-    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button" disabled>Edit</button>
-    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Assign</button>
-    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Move to</button>
-    <button class="fsa-btn fsa-btn--secondary fsa-btn--block fsa-btn--small" type="button">Label</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button" disabled>Edit</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button">Assign</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button">Move to</button>
+    <button class="fsa-btn fsa-btn--secondary fsa-btn--fill fsa-btn--small" type="button">Label</button>
   </div>
   <div class="fsa-level">
     <div>
       <label for="lorem_find" class="fsa-text-size--2">Quick Find</label>
-      <input type="text" class="fsa-input fsa-input--small fsa-input--block" id="lorem_find">
+      <input type="text" class="fsa-input fsa-input--small fsa-input--fill" id="lorem_find">
     </div>
     <div>
       <span class="fsa-text-size--2" id="lorem_timeframe">Timeframe</span>
-      <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--block" role="group" aria-labeledby="lorem_timeframe">
+      <span class="fsa-btn-group fsa-btn-group--small fsa-btn-group--fill" role="group" aria-labeledby="lorem_timeframe">
         <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Today</button>
         <button class="fsa-btn-group__item" type="button">This Week</button>
         <button class="fsa-btn-group__item" type="button">This Year</button>
@@ -1124,10 +1125,10 @@ and
     </div>
     <div>
       <div class="fsa-m-b--s">
-        <button class="fsa-btn fsa-btn--secondary fsa-btn--block" type="button">Add</button>
+        <button class="fsa-btn fsa-btn--secondary fsa-btn--fill" type="button">Add</button>
       </div>
       <div>
-        <button class="fsa-btn fsa-btn--tertiary fsa-btn--block" type="button">Remove</button>
+        <button class="fsa-btn fsa-btn--tertiary fsa-btn--fill" type="button">Remove</button>
       </div>
     </div>
   </div>
@@ -1153,10 +1154,10 @@ and
   </div>
   <div>
     <div class="fsa-m-b--s">
-      <button class="fsa-btn fsa-btn--secondary fsa-btn--block" type="button">Add</button>
+      <button class="fsa-btn fsa-btn--secondary fsa-btn--fill" type="button">Add</button>
     </div>
     <div>
-      <button class="fsa-btn fsa-btn--tertiary fsa-btn--block" type="button">Remove</button>
+      <button class="fsa-btn fsa-btn--tertiary fsa-btn--fill" type="button">Remove</button>
     </div>
   </div>
 </div>

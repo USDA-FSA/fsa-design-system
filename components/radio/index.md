@@ -160,7 +160,7 @@ Radio states are styled not by a `class`, but depending on their state (primaril
 ### Within a [Field]({{ site.baseurl }}components/form-fields/), horizontal list
 
 {% capture snippet %}
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" id="lorem-radio-field-1--3380">Your Favorite Pie</label>
   <div class="fsa-level" aria-labelledby="lorem-radio-field-1--3380" aria-describedby="lorem-radio-field-1-help--3380">
     <span>

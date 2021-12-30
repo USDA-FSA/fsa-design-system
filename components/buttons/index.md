@@ -157,10 +157,10 @@ Each button variant can be modified with one or multiple states:
 
 {% include preview-and-snippet.html %}
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<button class="fsa-btn fsa-btn--primary fsa-btn--block" type="button">Label</button>
+<button class="fsa-btn fsa-btn--primary fsa-btn--fill" type="button">Label</button>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -325,7 +325,7 @@ Several of a button's style properties can be selectively modified across each M
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>; and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
@@ -364,46 +364,46 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
   <tbody>
     <tr>
       <td aria-label="Variant/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary">Primary</button>
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--primary">Primary</button>
       </td>
       <td aria-label="Usage"> A primary style shall be applied to a button that represents the <strong>top priority action</strong> a User might take <strong>within a given UI context</strong>. </td>
       <td aria-label="Example"> Submitting a form or continuing a stepped process would be considered primary. </td>
     </tr>
     <tr>
       <td aria-label="Variant/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary">Secondary</button>
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--secondary">Secondary</button>
       </td>
       <td aria-label="Usage"> A secondary style shall be applied to buttons that are <strong>not top priority</strong>, may be viewed as contrary to progress, or the action is relevant for <strong>adjacent features and functionality</strong>. You may think of this as the <strong>default</strong> button state (despite it's "secondary" name); that is, all buttons are default unless one of the other use cases mentioned on this page come into play. </td>
       <td aria-label="Example"> A button labeled "View Producer" that displays data on the same screen without continuing a process. </td>
     </tr>
     <tr>
       <td aria-label="Variant/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary">Tertiary</button>
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--tertiary">Tertiary</button>
       </td>
       <td aria-label="Usage"> A tertiary style shall be applied only to buttons that perform a <strong>destructive</strong> action. </td>
       <td aria-label="Example"> "Delete" or "Remove". </td>
     </tr>
     <tr>
       <td aria-label="Variant/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat">Flat</button>
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--flat">Flat</button>
       </td>
       <td aria-label="Usage"> Identical in visual nature to a text link (<code>&lt;a&gt;</code>), this treatment is reserved for items of the <strong> least importance </strong> or deserves no strong prominence.<br><br>Using this style ensures the button will not be easily mistaken as an action to take without contemplation from a User. </td>
       <td aria-label="Example"> Single Page Application architecture (e.g. Angular, React, Vue, etc) often have text links that are technically a &lt;<code>button&gt;</code>, but its UI presents them as more navigational. <br><br> A "Cancel" button. By giving this button very low priority and prominence on the screen. While canceling a process may be destructive in nature, it does not remove stored data from the database. </td>
     </tr>
     <tr>
       <td aria-label="Variant/State">
-        <button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain">Plain</button>
+        <button type="button" class="fsa-btn fsa-btn--fill fsa-btn--plain">Plain</button>
       </td>
       <td aria-label="Usage">Unsets all style properties, effectively rendering as plain text.</td>
       <td aria-label="Example">Typically used when designing a custom button, e.g. pairing with CSS Utilities like <a href="{{ site.baseurl }}utilities/#color">Color</a>, <a href="{{ site.baseurl }}utilities/#color-background">Background</a>, <a href="{{ site.baseurl }}utilities/#padding">Padding</a>, etc.</td>
     </tr>
     <tr>
       <td aria-label="Variant/State">
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--primary" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--secondary" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--tertiary" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--flat" disabled>Disabled</button></div>
-        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--block fsa-btn--plain" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--primary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--secondary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--tertiary" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--flat" disabled>Disabled</button></div>
+        <div class="fsa-m-b--s"><button type="button" class="fsa-btn fsa-btn--fill fsa-btn--plain" disabled>Disabled</button></div>
       </td>
       <td aria-label="Usage"> Communicates when a button isn’t actionable and is deemphasized in a UI. </td>
       <td aria-label="Example"> A button needs to remain present and visible, and becomes actionable only once any number of criteria is met. </td>

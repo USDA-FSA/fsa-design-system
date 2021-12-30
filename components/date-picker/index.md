@@ -44,10 +44,10 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 </script>
 ```
 
-### Block Example
+### Fill Example
 
 <div class="ds-preview">
-  <div class="fsa-field fsa-field--block">
+  <div class="fsa-field fsa-field--fill">
     <label class="fsa-field__label" for="date-picker-block">Start Date</label>
     <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
     <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>
@@ -55,7 +55,7 @@ The Date Picker can be used with either a basic [Text Input]({{ site.baseurl }}c
 </div>
 
 ```html
-<div class="fsa-field fsa-field--block">
+<div class="fsa-field fsa-field--fill">
   <label class="fsa-field__label" for="date-picker-block">Start Date</label>
   <input placeholder="mm/dd/yyyy" class="fsa-input fsa-field__item" id="date-picker-block" aria-describedby="date-picker-block__help" aria-required="true" name="date-picker-block" type="text" value="">
   <span class="fsa-field__help" id="date-picker-block__help">Example 05/14/1975</span>

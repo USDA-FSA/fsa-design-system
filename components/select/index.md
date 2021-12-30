@@ -49,10 +49,10 @@ The style for `<select>` components always start with `class="fsa-select"`, modi
 
 {% include preview-and-snippet.html %}
 
-### Full-width
+### Fill
 
 {% capture snippet %}
-<select class="fsa-select fsa-select--block" name="Options ipsum">
+<select class="fsa-select fsa-select--fill" name="Options ipsum">
   <option value="Option A" selected="selected">Option A</option>
   <option value="Option B">Option B</option>
   <option value="Option C">Option C</option>
@@ -203,7 +203,7 @@ Selectively override several style properties at each Media Query breakpoint.
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
-<code>block</code>, or
+<code>fill</code>, or
 <code>inline</code>, and <code>breakpoint</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
