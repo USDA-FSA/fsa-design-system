@@ -20,20 +20,21 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-<style>
-  .asdf {
-    outline: 10px solid red;
-  }
-</style>
-
 <div class="ds-combinator">
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorElement">Element</label>
-      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorElement" name="combinatorElement">
-        <option value="fsa-btn--primary" selected="selected">Button</option>
-        <option value="fsa-btn--plain">Anchor</option>
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorText">Text</label>
+      <input class="fsa-input fsa-input--small fsa-field__item" id="TheItem2" id="combinatorText" name="combinatorText" value="Label" data-behavior="combinator-custom-text">
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorType">Type</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType" data-behavior="combinator-select" data-remove="fsa-btn--primary fsa-btn--secondary fsa-btn--tertiary fsa-btn--flat fsa-btn--plain">
+        <option value="fsa-btn--primary" selected="selected">Primary</option>
+        <option value="fsa-btn--secondary">Secondary</option>
+        <option value="fsa-btn--tertiary">Tertiary</option>
+        <option value="fsa-btn--flat">Flat</option>
+        <option value="fsa-btn--plain">Plain</option>
       </select>
     </div>
     <div class="fsa-field ds-combinator__item">
@@ -76,6 +77,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconOnly">Icon Only</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconOnly" name="combinatorIconOnly" data-behavior="combinator-toggle-icon-only" data-label-target="combinatorTextLabel">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
       <label class="fsa-switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled" data-behavior="combinator-toggle-attr" value="disabled">
@@ -87,7 +95,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <h3 class="fsa-sr-only">Props Demo</h3>
     <button class="fsa-btn fsa-btn--primary" type="button" id="combinatorTarget">
       <svg hidden id="combinatorIconSampleLeft" class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></svg>
-      Label
+      <span id="combinatorTextLabel">Label</span>
       <svg hidden id="combinatorIconSampleRight" class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></svg>
     </button>
   </div>
