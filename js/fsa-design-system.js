@@ -437,10 +437,10 @@ window.$ = $;
 
 $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(event) {
 
-  var $self = $(this);
-  var $target = $('#combinatorTextLabel');
+  const $self = $(this);
+  const $target = $('#combinatorTextLabel');
 
-  var $newLabel = this.value;
+  const $newLabel = this.value;
 
   console.log($newLabel);
 
@@ -450,10 +450,10 @@ $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(even
 
 $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
 
-  var $self = $(this);
-  var $target = $('#combinatorTarget');
-  var $removals = $self.attr('data-remove');
-  var $iconTarget = $target.find('.fsa-icon');
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+  const $removals = $self.attr('data-remove');
+  const $iconTarget = $target.find('.fsa-icon');
 
   console.log('Need to account for icon sizes. IOW, there were will nested instances that need to be toggled, inserted, etc.');
 
@@ -478,8 +478,8 @@ $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
 
 $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(event) {
 
-  var $self = $(this);
-  var $target = $('#combinatorTarget');
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
 
   $target.toggleClass($self.val());
 
@@ -487,9 +487,9 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
 
 $('body').on('change', '[data-behavior~="combinator-toggle-attr"]', function(event) {
 
-  var $self = $(this);
-  var $target = $('#combinatorTarget');
-  var $attr = $self.val();
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+  const $attr = $self.val();
 
   if($target.attr($attr)) {
     $target.removeAttr($attr);
@@ -501,9 +501,9 @@ $('body').on('change', '[data-behavior~="combinator-toggle-attr"]', function(eve
 
 $('body').on('change', '[data-behavior~="combinator-toggle-icon"]', function(event) {
 
-  var $self = $(this);
-  var $target = $('#combinatorTarget');
-  var $iconTarget = $('#' + $self.attr('data-icon-target'));
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+  const $iconTarget = $('#' + $self.attr('data-icon-target'));
 
   if($iconTarget.attr('hidden')) {
     $iconTarget.removeAttr('hidden');
@@ -527,19 +527,50 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon"]', function(eve
 
 $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', function(event) {
 
-  var $self = $(this);
-  var $target = $('#combinatorTarget');
-  var $targetLabel = $('#' + $self.attr('data-label-target'));
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+  const $targetLabel = $('#' + $self.attr('data-label-target'));
+  const $iconLeft = $('#combinatorIconSampleLeft');
+  const $iconRight = $('#combinatorIconSampleRight');
+  const $textLabel = $('#combinatorTextLabel').text();
 
   if($targetLabel.attr('hidden')) {
+
+    $iconLeft.attr('hidden', true);
+    $iconRight.attr('hidden', true);
+
+    $target.removeAttr('aria-label');
+    $target.removeAttr('title');
     $targetLabel.removeAttr('hidden');
+    $('#combinatorIconLeft')
+      .prop('checked', false)
+      .prop('disabled', false)
+    ;
+    $('#combinatorIconRight')
+      .prop('checked', false)
+      .prop('disabled', false)
+    ;
   } else {
+
+    $iconLeft.removeAttr('hidden');
+    $iconRight.attr('hidden', true);
+
+    $target.attr('aria-label', $textLabel);
+    $target.attr('title', $textLabel);
     $targetLabel.attr('hidden', true);
+    $('#combinatorIconLeft')
+      .prop('checked', true)
+      .prop('disabled', true)
+    ;
+    $('#combinatorIconRight')
+      .prop('checked', false)
+      .prop('disabled', true)
+    ;
   }
+
 
 })
 
-// combinator-select
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"jquery":24}],12:[function(require,module,exports){
 (function (global){
