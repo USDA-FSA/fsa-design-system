@@ -22537,8 +22537,8 @@ pre.highlight {
 
 pre.highlight .ds-clipboard {
   position: absolute;
-  right: 8px;
-  right: 0.8rem;
+  right: 12px;
+  right: 1.2rem;
   top: 8px;
   top: 0.8rem;
 }

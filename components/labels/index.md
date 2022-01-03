@@ -22,6 +22,58 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
 </div>
 
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorText">Text</label>
+      <input class="fsa-input fsa-input--small fsa-field__item" id="TheItem2" id="combinatorText" name="combinatorText" value="Label" data-behavior="combinator-custom-text">
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorType">Type</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType" data-behavior="combinator-select" data-remove="fsa-label--neutral fsa-label--general fsa-label--alert fsa-label--warning fsa-label--success">
+        <option value="" selected="selected">Default</option>
+        <option value="fsa-label--neutral">Neutral</option>
+        <option value="fsa-label--general">General</option>
+        <option value="fsa-label--alert">Alert</option>
+        <option value="fsa-label--warning">Warning</option>
+        <option value="fsa-label--success">Success</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-label--large fsa-label--extra-large">
+        <option value="" selected="selected">Small</option>
+        <option value="fsa-label--large">Large</option>
+        <option value="fsa-label--extra-large">Extra Large</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDismissable">Dismissable</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-icon" data-icon-target="combinatorIconSampleRight">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled" data-behavior="combinator-toggle-attr" value="disabled">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <!-- fsa-label--dismissable -->
+    <span class="fsa-label" id="combinatorTarget">
+      <span id="combinatorTextLabel">Label</span>
+      <button hidden class="fsa-label__remove" aria-label="Remove" title="Remove"></button>
+    </span>
+  </div>
+</div>
+
+
 ## Variants
 
 Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.

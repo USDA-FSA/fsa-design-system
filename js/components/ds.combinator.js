@@ -135,5 +135,4 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
     ;
   }
 
-
 })

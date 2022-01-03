@@ -15,14 +15,50 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 Often referred to as a "drop down" or "pull down" menu, its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
-<div class="ds-preview">
-  <select class="fsa-select" name="Options">
-    <option value="Option A" selected="selected">Option A</option>
-    <option value="Option B">Option B</option>
-    <option value="Option C">Option C</option>
-    <option value="Option D">Option D</option>
-    <option value="Option E">Option E</option>
-  </select>
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-select--small fsa-select--large">
+        <option value="fsa-select--small">Small</option>
+        <option value="" selected="selected">Medium</option>
+        <option value="fsa-select--large">Large</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-select--block">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorError">Error</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorError" name="combinatorError" data-behavior="combinator-toggle-class" value="fsa-select--error">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
+      <label class="fsa-switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled" data-behavior="combinator-toggle-attr" value="disabled">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <select class="fsa-select" name="Options" id="combinatorTarget">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+
+  </div>
 </div>
 
 ## Variants

@@ -38,16 +38,6 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       </select>
     </div>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorType">Type</label>
-      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType" data-behavior="combinator-select" data-remove="fsa-btn--primary fsa-btn--secondary fsa-btn--tertiary fsa-btn--flat fsa-btn--plain">
-        <option value="fsa-btn--primary" selected="selected">Primary</option>
-        <option value="fsa-btn--secondary">Secondary</option>
-        <option value="fsa-btn--tertiary">Tertiary</option>
-        <option value="fsa-btn--flat">Flat</option>
-        <option value="fsa-btn--plain">Plain</option>
-      </select>
-    </div>
-    <div class="fsa-field ds-combinator__item">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
       <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-btn--small fsa-btn--large">
         <option value="fsa-btn--small">Small</option>

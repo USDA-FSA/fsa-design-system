@@ -568,7 +568,6 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
     ;
   }
 
-
 })
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
