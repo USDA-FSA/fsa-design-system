@@ -11,14 +11,48 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-<div class="ds-preview">
-  <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-    <button class="fsa-btn-group__item" type="button">Label</button>
-  </span>
+<div class="fsa-alert fsa-text-size--5" style="border:10px solid red;">
+  <code>fsa-btn-group<strong>--fill</strong></code> doesn't fill when its parent is <code>display: flex</code> <br>
+  Test other <code>--fill</code> variants of other components. May need to explicit set <code>width: 100%</code>
 </div>
+
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-btn-group--small fsa-btn-group--large">
+        <option value="fsa-btn-group--small">Small</option>
+        <option value="" selected="selected">Medium</option>
+        <option value="fsa-btn-group--large">Large</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-btn-group--fill">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <span class="fsa-btn-group" role="group" aria-label="Label describing this group" id="combinatorTarget">
+      <button class="fsa-btn-group__item" type="button">Label</button>
+      <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
+      <button class="fsa-btn-group__item" type="button">Label</button>
+      <button class="fsa-btn-group__item" type="button">Label</button>
+    </span>
+  </div>
+</div>
+```html
+<span class="fsa-btn-group" role="group" aria-label="Label describing this group">
+  <button class="fsa-btn-group__item" type="button">Label</button>
+  <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
+  <button class="fsa-btn-group__item" type="button">Label</button>
+  <button class="fsa-btn-group__item" type="button">Label</button>
+</span>
+```
 
 ## Variants and Examples
 
