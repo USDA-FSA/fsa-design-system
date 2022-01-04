@@ -11,17 +11,6 @@ relatedItems:
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-<div class="ds-preview">
-  <div class="fsa-level">
-    <span class="fsa-label">Default Label</span>
-    <span class="fsa-label fsa-label--neutral">General Label</span>
-    <span class="fsa-label fsa-label--general">General Label</span>
-    <span class="fsa-label fsa-label--alert">Alert Label</span>
-    <span class="fsa-label fsa-label--warning">Warning Label</span>
-    <span class="fsa-label fsa-label--success">Success Label</span>
-  </div>
-</div>
-
 <div class="ds-combinator">
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
@@ -50,14 +39,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDismissable">Dismissable</label>
-      <label class="fsa-switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-icon" data-icon-target="combinatorIconSampleRight">
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-class" value="fsa-label--dismissable">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
-      <label class="fsa-switch">
+      <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled" data-behavior="combinator-toggle-attr" value="disabled">
         <span class="fsa-switch__track"></span>
       </label>

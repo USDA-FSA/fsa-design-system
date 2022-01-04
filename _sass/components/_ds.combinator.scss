@@ -10,7 +10,10 @@
 
   & {
 
-    display: flex;
+    @include breakpoint(XL) {
+      display: flex;
+    }
+
     margin: $size-default 0 0;
     border: $component-bw solid $color-fsa-tertiary-100;
 
@@ -22,11 +25,18 @@
 
   &__props {
     display: none;
-    @include breakpoint(XL) {
-      display: block;
+    border-bottom: $component-bw solid $color-fsa-tertiary-100;
+    @include breakpoint(L) {
+      display: flex;
+      gap: $size-default;
     }
-    border-right: $component-bw solid $color-fsa-tertiary-100;
-    flex-basis: 220px;
+    @include breakpoint(XL) {
+      flex-direction: column;
+      border-right: $component-bw solid $color-fsa-tertiary-100;
+      border-bottom: 0;
+      gap: 0;
+    }
+    flex-basis: 188px;
     background-color: $color-fsa-white;
     padding: $size-medium;
   }
@@ -51,23 +61,34 @@
   }
 
   &__item {
+    & {
+      @include breakpoint(XL, down) {
+        margin-bottom: 0;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
     &--inline {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      :not(.ds-combinator__item--inline) + & {
-        // pixel-pushing magic numbers, sue me
-        margin-top: $size-default + ($size-base / 2);
+      @include breakpoint(XL) {
+        gap: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        :not(.ds-combinator__item--inline) + & {
+          // pixel-pushing magic numbers, sue me
+          margin-top: $size-base;
+        }
       }
     }
   }
 
   &__label {
     margin: 0;
+  }
+
+  &__switch {
+    margin-top: $size-base;
   }
 
 }

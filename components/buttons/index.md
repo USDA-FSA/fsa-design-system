@@ -47,35 +47,35 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
-      <label class="fsa-switch">
+      <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-btn--block">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconOnly">Icon Only</label>
-      <label class="fsa-switch">
+      <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconOnly" name="combinatorIconOnly" data-behavior="combinator-toggle-icon-only" data-label-target="combinatorTextLabel">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconLeft">Icon Left</label>
-      <label class="fsa-switch">
+      <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconLeft" name="combinatorIconLeft" data-behavior="combinator-toggle-icon" data-icon-target="combinatorIconSampleLeft">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconRight">Icon Right</label>
-      <label class="fsa-switch">
+      <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconRight" name="combinatorIconRight" data-behavior="combinator-toggle-icon" data-icon-target="combinatorIconSampleRight">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
-      <label class="fsa-switch">
+      <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled" data-behavior="combinator-toggle-attr" value="disabled">
         <span class="fsa-switch__track"></span>
       </label>
