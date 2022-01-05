@@ -2,14 +2,31 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
+function combinatorIconAdjust() {
+
+  const $target = $('.ds-combinator__preview');
+  const $iconTargets = $target.find('.combinatorIconSample');
+
+  $iconTargets.removeClass('fsa-icon--size-1 fsa-icon--size-2')
+
+  if ($iconTargets) {
+    $target
+      .find('.fsa-btn--small .combinatorIconSample, .fsa-btn-group--small .combinatorIconSample')
+      .addClass('fsa-icon--size-1')
+    ;
+    $target
+      .find('.fsa-btn--large .combinatorIconSample, .fsa-btn-group--large .combinatorIconSample')
+      .addClass('fsa-icon--size-2')
+    ;
+  }
+
+}
+
 $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(event) {
 
   const $self = $(this);
   const $target = $('#combinatorTextLabel');
-
   const $newLabel = this.value;
-
-  console.log($newLabel);
 
   $target.html($newLabel);
 
@@ -20,24 +37,13 @@ $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
   const $self = $(this);
   const $target = $('#combinatorTarget');
   const $removals = $self.attr('data-remove');
-  const $iconTarget = $target.find('.fsa-icon');
 
   $target
     .removeClass($removals)
     .addClass($self.val())
   ;
 
-  if ($target.hasClass('fsa-btn--small')) {
-    $iconTarget
-      .removeClass('fsa-icon--size-2')
-      .addClass('fsa-icon--size-1')
-    ;
-  } else {
-    $iconTarget
-      .removeClass('fsa-icon--size-1')
-      .addClass('fsa-icon--size-2')
-    ;
-  }
+  combinatorIconAdjust();
 
 })
 
@@ -46,6 +52,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-slots"]', function(ev
   const $self = $(this);
   const $target = $('#combinatorSlots');
   const $newSlot = $('[data-id="' + $self.val() + '"]');
+
   $newSlot
     .prop('hidden', false)
     .siblings()
@@ -100,17 +107,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-item"]', function(eve
     $iconTarget.attr('hidden', true);
   }
 
-  // if ($target.hasClass('fsa-btn--small')) {
-  //   $iconTarget
-  //     .removeClass('fsa-icon--size-2')
-  //     .addClass('fsa-icon--size-1')
-  //   ;
-  // } else {
-  //   $iconTarget
-  //     .removeClass('fsa-icon--size-1')
-  //     .addClass('fsa-icon--size-2')
-  //   ;
-  // }
+  combinatorIconAdjust();
 
 })
 
@@ -157,4 +154,8 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
     ;
   }
 
+  combinatorIconAdjust()
+
 })
+
+
