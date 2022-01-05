@@ -27,24 +27,45 @@ Create application forms with appropriate instructional and validation features.
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
-      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
-      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-btn-group--small fsa-btn-group--large">
-        <option value="fsa-btn-group--small">Small</option>
-        <option value="" selected="selected">Medium</option>
-        <option value="fsa-btn-group--large">Large</option>
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSlot">Slot Component</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSlot" name="combinatorSlot" data-behavior="combinator-toggle-slots">
+        <option value="combinator_TextInput" selected="selected">Text Input</option>
+        <option value="combinator_Textarea">Textarea</option>
+        <option value="combinator_CheckboxList">Checkbox List</option>
+        <option value="combinator_RadioList">Radio List</option>
+        <option value="combinator_Select">Select</option>
+        <option value="combinator_SelectMulti">Select Multi</option>
+        <option value="combinator_DatePicker">Date Picker</option>
+        <option value="combinator_UploadFile">Upload File</option>
+        <option value="combinator_Slider">Slider</option>
+        <option value="combinator_Spinbox">Spinbox</option>
       </select>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-btn-group--fill">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-field--fill">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
-      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorLabelDescription">Label Description</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelDescription" name="combinatorFill" checked>
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorHelpMessage">Help Message</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorHelpMessage" name="combinatorLabelDescription" checked>
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorError">Error</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorError" name="combinatorLabelDescription">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
@@ -52,9 +73,121 @@ Create application forms with appropriate instructional and validation features.
   <div class="ds-combinator__preview">
     <h3 class="fsa-sr-only">Props Demo</h3>
     <div class="fsa-field" id="combinatorTarget">
-      <label class="fsa-field__label" for="lorem-1234">Email address <span class="fsa-field__label-desc">Required</span></label>
-      <input class="fsa-input fsa-field__item" id="lorem-1234" name="lorem-1234" aria-describedby="lorem-1234-help-1" aria-required="true" type="email" value="">
-      <span class="fsa-field__help" id="lorem-1234-help-1">This is how people can contact you</span>
+      <label class="fsa-field__label" for="combinatorFieldExample">Label <span class="fsa-field__label-desc">Required</span></label>
+      <div id="combinatorSlots">
+        <input data-id="combinator_TextInput" class="fsa-input fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1" value="">
+        <textarea hidden data-id="combinator_Textarea" class="fsa-textarea fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1"></textarea>
+        <ul hidden data-id="combinator_CheckboxList" class="fsa-form-list" aria-labelledby="combinatorFieldExample" id="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
+          <li>
+            <span>
+              <input class="fsa-checkbox" id="combinatorApple" name="combinatorApple" type="checkbox" checked="">
+              <label for="combinatorApple">Apple</label>
+            </span>
+          </li>
+          <li>
+            <span>
+              <input class="fsa-checkbox" id="combinatorKeyLime" name="combinatorKeyLime" type="checkbox">
+              <label for="combinatorKeyLime">Key Lime</label>
+            </span>
+          </li>
+          <li>
+            <span>
+              <input class="fsa-checkbox" id="combinatorPumpkin" id="combinatorPumpkin" type="checkbox">
+              <label for="combinatorPumpkin">Pumpkin</label>
+            </span>
+          </li>
+        </ul>
+        <ul hidden data-id="combinator_RadioList" class="fsa-form-list" aria-labelledby="combinatorFieldExample" id="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
+          <li>
+            <span>
+              <input class="fsa-radio" id="combinatorAppleRadio" type="radio" name="combinatorPieRadio">
+              <label for="combinatorAppleRadio">Apple</label>
+            </span>
+          </li>
+          <li>
+            <span>
+              <input class="fsa-radio" id="combinatorKeyLimeRadio" type="radio" name="combinatorPieRadio">
+              <label for="combinatorKeyLimeRadio">Key Lime</label>
+            </span>
+          </li>
+          <li>
+            <span>
+              <input class="fsa-radio" id="combinatorPumpkinRadio" type="radio" name="combinatorPieRadio">
+              <label for="combinatorPumpkinRadio">Pumpkin</label>
+            </span>
+          </li>
+          <li>
+            <span>
+              <input class="fsa-radio" id="combinatorNoneRadio" type="radio" name="combinatorPieRadio" checked>
+              <label for="combinatorNoneRadio">None of the above</label>
+            </span>
+          </li>
+        </ul>
+        <select hidden data-id="combinator_Select" class="fsa-select fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
+          <option value="Option A" selected="selected">Option A</option>
+          <option value="Option B">Option B</option>
+          <option value="Option C">Option C</option>
+          <option value="Option D">Option D</option>
+          <option value="Option E">Option E</option>
+        </select>
+        <ul hidden data-id="combinator_SelectMulti" class="fsa-select-multi__list" aria-labelledby="combinatorFieldExample" id="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_one" type="checkbox" name="combinatorSelectMulti_one" value="One" checked="" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_one">One</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_two" type="checkbox" name="combinatorSelectMulti_two" value="Two" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_two">Two</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_three" type="checkbox" name="combinatorSelectMulti_three" value="Three" checked="" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_three">Three</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_four" type="checkbox" name="combinatorSelectMulti_four" value="Four" checked="" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_four">Four</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_five" type="checkbox" name="combinatorSelectMulti_five" value="Five" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_five">Five</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_six" type="checkbox" name="combinatorSelectMulti_six" value="Six" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_six">Six</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_seven" type="checkbox" name="combinatorSelectMulti_seven" value="Seven" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_seven">Seven</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_eight" type="checkbox" name="combinatorSelectMulti_eight" value="Eight" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_eight">Eight</label>
+          </li>
+          <li class="fsa-select-multi__item">
+            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_nine" type="checkbox" name="combinatorSelectMulti_nine" value="Nine" />
+            <label class="fsa-select-multi__label" for="combinatorSelectMulti_nine">Nine</label>
+          </li>
+        </ul>
+        <input hidden data-id="combinator_UploadFile" placeholder="Choosie choose choose something" accept="image/png, image/jpeg, image/gif" multiple class="fsa-input fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1" type="file" value="">
+        <div hidden data-id="combinator_Slider" class="fsa-level">
+          <span class="fsa-level__item--grow-auto">
+            <input class="fsa-slider fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1" type="range" min="0" max="100" value="90" step="1">
+          </span>
+          <span><output id="combinatorFieldOutputExample" name="combinatorFieldOutputExample" for="combinatorFieldExample">90</output></span>
+        </div>
+        <div hidden data-id="combinator_Spinbox" class="fsa-spinbox fsa-field__item">
+          <div class="fsa-spinbox__number">
+            <input class="fsa-input fsa-spinbox__input" type="number" value="10" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
+          </div>
+          <div class="fsa-spinbox__actions" aria-hidden="true">
+            <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+            <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+          </div>
+        </div>
+        <!-- combinator_DatePicker -->
+      </div>
+      <span class="fsa-field__help" id="combinatorFieldExample_help-1">Help Message</span>
+      <span class="fsa-field__message" id="combinatorFieldExample_message-1" role="alert">Helpful error message</span>
     </div>
   </div>
 </div>

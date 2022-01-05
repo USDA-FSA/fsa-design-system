@@ -476,6 +476,19 @@ $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
 
 })
 
+$('body').on('change', '[data-behavior~="combinator-toggle-slots"]', function(event) {
+
+  const $self = $(this);
+  const $target = $('#combinatorSlots');
+  const $newSlot = $('[data-id="' + $self.val() + '"]');
+  $newSlot
+    .prop('hidden', false)
+    .siblings()
+    .prop('hidden', true)
+  ;
+
+})
+
 $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(event) {
 
   const $self = $(this);

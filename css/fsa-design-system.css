@@ -22260,22 +22260,8 @@ html body.x-ray .fsa-modal {
 .ds-combinator__preview {
   -ms-flex: 1;
       flex: 1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  border-radius: 0.4rem;
   padding: 24px;
   padding: 2.4rem;
-}
-
-@media (min-width: 54em) {
-  .ds-combinator__preview {
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
 }
 
 html body.x-ray .ds-combinator__preview {
