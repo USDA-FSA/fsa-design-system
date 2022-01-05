@@ -521,11 +521,11 @@ $('body').on('change', '[data-behavior~="combinator-toggle-disabled"]', function
 
 })
 
-$('body').on('change', '[data-behavior~="combinator-toggle-icon"]', function(event) {
+$('body').on('change', '[data-behavior~="combinator-toggle-item"]', function(event) {
 
   const $self = $(this);
   const $target = $('#combinatorTarget');
-  const $iconTarget = $('#' + $self.attr('data-icon-target'));
+  const $iconTarget = $($self.attr('data-toggle-target'));
 
   if($iconTarget.attr('hidden')) {
     $iconTarget.removeAttr('hidden');
@@ -533,17 +533,17 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon"]', function(eve
     $iconTarget.attr('hidden', true);
   }
 
-  if ($target.hasClass('fsa-btn--small')) {
-    $iconTarget
-      .removeClass('fsa-icon--size-2')
-      .addClass('fsa-icon--size-1')
-    ;
-  } else {
-    $iconTarget
-      .removeClass('fsa-icon--size-1')
-      .addClass('fsa-icon--size-2')
-    ;
-  }
+  // if ($target.hasClass('fsa-btn--small')) {
+  //   $iconTarget
+  //     .removeClass('fsa-icon--size-2')
+  //     .addClass('fsa-icon--size-1')
+  //   ;
+  // } else {
+  //   $iconTarget
+  //     .removeClass('fsa-icon--size-1')
+  //     .addClass('fsa-icon--size-2')
+  //   ;
+  // }
 
 })
 

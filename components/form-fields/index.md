@@ -51,14 +51,14 @@ Create application forms with appropriate instructional and validation features.
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorLabelDescription">Label Description</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelDescription" name="combinatorFill" checked>
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelDescription" name="combinatorFill" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorFieldExample_desc" checked>
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorHelpMessage">Help Message</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorHelpMessage" name="combinatorLabelDescription" checked>
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorHelpMessage" name="combinatorLabelDescription" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorFieldExample_help-1" checked>
         <span class="fsa-switch__track"></span>
       </label>
     </div>
@@ -73,7 +73,7 @@ Create application forms with appropriate instructional and validation features.
   <div class="ds-combinator__preview">
     <h3 class="fsa-sr-only">Props Demo</h3>
     <div class="fsa-field" id="combinatorTarget">
-      <label class="fsa-field__label" for="combinatorFieldExample">Label <span class="fsa-field__label-desc">Required</span></label>
+      <label class="fsa-field__label" for="combinatorFieldExample">Label <span class="fsa-field__label-desc" id="combinatorFieldExample_desc">Required</span></label>
       <div id="combinatorSlots">
         <input data-id="combinator_TextInput" class="fsa-input fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1" value="">
         <textarea hidden data-id="combinator_Textarea" class="fsa-textarea fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1"></textarea>
