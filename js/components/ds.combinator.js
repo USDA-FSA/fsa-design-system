@@ -88,9 +88,9 @@ $('body').on('change', '[data-behavior~="combinator-toggle-disabled"]', function
   const $target = $('#combinatorTarget');
 
   if($target.attr('disabled')) {
-    $target.prop('disabled', false);
+    $target.attr('disabled', false);
   } else {
-    $target.prop('disabled', true);
+    $target.attr('disabled', true);
   }
 
 })

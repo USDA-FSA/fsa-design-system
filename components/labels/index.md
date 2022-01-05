@@ -40,7 +40,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDismissable">Dismissable</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-class" value="fsa-label--dismissable">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-class combinator-toggle-item" data-toggle-target="#combinatorDismissableButton" value="fsa-label--dismissable">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
@@ -54,10 +54,9 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   </div>
   <div class="ds-combinator__preview">
     <h3 class="fsa-sr-only">Props Demo</h3>
-    <!-- fsa-label--dismissable -->
     <span class="fsa-label" id="combinatorTarget">
       <span id="combinatorTextLabel">Label</span>
-      <button hidden class="fsa-label__remove" aria-label="Remove" title="Remove"></button>
+      <button hidden id="combinatorDismissableButton" class="fsa-label__remove" aria-label="Remove" title="Remove"></button>
     </span>
   </div>
 </div>
