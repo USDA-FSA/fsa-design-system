@@ -498,16 +498,15 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
 
 })
 
-$('body').on('change', '[data-behavior~="combinator-toggle-attr"]', function(event) {
+$('body').on('change', '[data-behavior~="combinator-toggle-disabled"]', function(event) {
 
   const $self = $(this);
   const $target = $('#combinatorTarget');
-  const $attr = $self.val();
 
-  if($target.attr($attr)) {
-    $target.removeAttr($attr);
+  if($target.attr('disabled')) {
+    $target.prop('disabled', false);
   } else {
-    $target.attr($attr, true);
+    $target.prop('disabled', true);
   }
 
 })
