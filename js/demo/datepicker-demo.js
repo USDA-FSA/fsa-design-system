@@ -3698,6 +3698,10 @@ datePickerController.createDatePicker({
 });
 
 datePickerController.createDatePicker({
+	formElements: { "combinatorDatePicker": "%m/%d/%Y" },
+});
+
+datePickerController.createDatePicker({
 	formElements: { "date-picker-block": "%m/%d/%Y" },
 });
 
@@ -3720,17 +3724,17 @@ datePickerController.setRangeHigh("date-picker-upper-lower", new Date());  // di
 datePickerController.createDatePicker({
 	formElements: { "date-picker-static-display": "%m/%d/%Y" },
   disabledDays:[0,0,0,0,0,1,1],
-  staticPos: true  
+  staticPos: true
 });
 
 datePickerController.createDatePicker({
 	formElements: { "date-picker-static-display-disabled": "%m/%d/%Y" },
-  staticPos: true  
+  staticPos: true
 });
 
 datePickerController.createDatePicker({
 	formElements: { "date-picker-status": "%m/%d/%Y" },
-  statusFormat:"%l, %d%S %F %Y"  
+  statusFormat:"%l, %d%S %F %Y"
 });
 
 

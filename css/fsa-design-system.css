@@ -22231,8 +22231,8 @@ html body.x-ray .fsa-modal {
 
 .ds-combinator__props {
   display: none;
-  border-bottom: 4px solid #f0f0f0;
-  border-bottom: 0.4rem solid #f0f0f0;
+  border-top: 4px solid #f0f0f0;
+  border-top: 0.4rem solid #f0f0f0;
   background-color: #fff;
   padding: 24px;
   padding: 2.4rem;
@@ -22251,8 +22251,8 @@ html body.x-ray .fsa-modal {
     width: 20.8rem;
     -ms-flex-direction: column;
         flex-direction: column;
-    border-right: 0.4rem solid #f0f0f0;
-    border-bottom: 0;
+    border-left: 0.4rem solid #f0f0f0;
+    border-top: 0;
     gap: 0;
   }
 }
