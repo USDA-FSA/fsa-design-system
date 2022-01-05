@@ -11,11 +11,6 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-<div class="fsa-alert fsa-text-size--5" style="border:10px solid red;">
-  <code>fsa-btn-group<strong>--fill</strong></code> doesn't fill when its parent is <code>display: flex</code> <br>
-  Test other <code>--fill</code> variants of other components. May need to explicit set <code>width: 100%</code>
-</div>
-
 <div class="ds-combinator">
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
@@ -31,6 +26,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
       <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-btn-group--fill">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
