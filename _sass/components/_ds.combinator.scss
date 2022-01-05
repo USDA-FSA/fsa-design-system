@@ -12,6 +12,7 @@
 
     @include breakpoint(XL) {
       display: flex;
+      flex-direction: row-reverse;
     }
 
     margin: $size-default 0 0;
@@ -25,7 +26,7 @@
 
   &__props {
     display: none;
-    border-top: $component-bw solid $color-fsa-tertiary-100;
+    border-bottom: $component-bw solid $color-fsa-tertiary-100;
     @include breakpoint(L) {
       display: flex;
       gap: $size-default;
@@ -34,7 +35,7 @@
       width: 20.8rem;
       flex-direction: column;
       border-left: $component-bw solid $color-fsa-tertiary-100;
-      border-top: 0;
+      border-bottom: 0;
       gap: 0;
     }
     background-color: $color-fsa-white;

@@ -16,17 +16,6 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 Often referred to as a "drop down" or "pull down" menu, its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-combinator">
-  <div class="ds-combinator__preview">
-    <h3 class="fsa-sr-only">Props Demo</h3>
-    <select class="fsa-select" name="Options" id="combinatorTarget">
-      <option value="Option A" selected="selected">Option A</option>
-      <option value="Option B">Option B</option>
-      <option value="Option C">Option C</option>
-      <option value="Option D">Option D</option>
-      <option value="Option E">Option E</option>
-    </select>
-
-  </div>
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
@@ -58,6 +47,17 @@ Often referred to as a "drop down" or "pull down" menu, its most common usage is
         <span class="fsa-switch__track"></span>
       </label>
     </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <select class="fsa-select" name="Options" id="combinatorTarget">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+
   </div>
 </div>
 

@@ -12,15 +12,6 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
 <div class="ds-combinator">
-  <div class="ds-combinator__preview">
-    <h3 class="fsa-sr-only">Props Demo</h3>
-    <span class="fsa-btn-group" role="group" aria-label="Label describing this group" id="combinatorTarget">
-      <button class="fsa-btn-group__item" type="button">Label</button>
-      <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-      <button class="fsa-btn-group__item" type="button">Label</button>
-      <button class="fsa-btn-group__item" type="button">Label</button>
-    </span>
-  </div>
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
@@ -45,6 +36,15 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
         <span class="fsa-switch__track"></span>
       </label>
     </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <span class="fsa-btn-group" role="group" aria-label="Label describing this group" id="combinatorTarget">
+      <button class="fsa-btn-group__item" type="button">Label</button>
+      <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
+      <button class="fsa-btn-group__item" type="button">Label</button>
+      <button class="fsa-btn-group__item" type="button">Label</button>
+    </span>
   </div>
 </div>
 ```html
