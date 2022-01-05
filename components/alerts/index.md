@@ -9,11 +9,48 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js", "inline-alert.js"]
 ---
 
-<div class="ds-preview">
-  <div class="fsa-alert fsa-alert--success" role="alert">
-    <div class="fsa-alert__body">
-      <h3 class="fsa-alert__heading">Optional success title</h3>
-      <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorType">Type</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorType" name="combinatorType" data-behavior="combinator-select" data-remove="fsa-alert--success fsa-alert--warning fsa-alert--error fsa-alert--info">
+        <option value="fsa-alert--success" selected="selected">Success</option>
+        <option value="fsa-alert--warning">Warning</option>
+        <option value="fsa-alert--error">Error</option>
+        <option value="fsa-alert--info">Info</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon" data-behavior="combinator-toggle-class" value="fsa-alert--no-icon" checked>
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorTitle">Title</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorTitle" name="combinatorTitle" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorAlertTitle" checked>
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDismissable">Dismissable</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorAlertDismiss">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <div class="fsa-alert fsa-alert--success" role="alert" id="combinatorTarget">
+      <button hidden id="combinatorAlertDismiss" class="fsa-alert__close" data-behavior="alert-dismiss" type="button" title="Dismiss this message" aria-label="Dismiss this message"></button>
+      <div class="fsa-alert__body">
+        <h3 class="fsa-alert__heading" id="combinatorAlertTitle">Optional success title</h3>
+        <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
+      </div>
     </div>
   </div>
 </div>

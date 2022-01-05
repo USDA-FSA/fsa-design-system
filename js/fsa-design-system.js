@@ -561,6 +561,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
     $target.removeAttr('aria-label');
     $target.removeAttr('title');
     $targetLabel.removeAttr('hidden');
+
     $('#combinatorIconLeft')
       .prop('checked', false)
       .prop('disabled', false)
@@ -569,6 +570,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
       .prop('checked', false)
       .prop('disabled', false)
     ;
+
   } else {
 
     $iconLeft.removeAttr('hidden');
@@ -577,6 +579,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
     $target.attr('aria-label', $textLabel);
     $target.attr('title', $textLabel);
     $targetLabel.attr('hidden', true);
+
     $('#combinatorIconLeft')
       .prop('checked', true)
       .prop('disabled', true)
@@ -585,6 +588,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
       .prop('checked', false)
       .prop('disabled', true)
     ;
+
   }
 
   combinatorIconAdjust()

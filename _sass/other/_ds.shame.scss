@@ -2,3 +2,10 @@
 .OUTLINE {
   outline: 1px solid red;
 }
+
+.fsa-alert__close {
+  background-image: url(../img/material-design-icons/ic_close_24px.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
