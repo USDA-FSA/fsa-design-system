@@ -23,11 +23,39 @@ title_label: 'JavaScript Demo Included'
 
 Create application forms with appropriate instructional and validation features.
 
-<div class="ds-preview">
-  <div class="fsa-field">
-    <label class="fsa-field__label" for="lorem-1234">Email address <span class="fsa-field__label-desc">Required</span></label>
-    <input class="fsa-input fsa-field__item" id="lorem-1234" name="lorem-1234" aria-describedby="lorem-1234-help-1" aria-required="true" type="email" value="">
-    <span class="fsa-field__help" id="lorem-1234-help-1">This is how people can contact you</span>
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-btn-group--small fsa-btn-group--large">
+        <option value="fsa-btn-group--small">Small</option>
+        <option value="" selected="selected">Medium</option>
+        <option value="fsa-btn-group--large">Large</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-btn-group--fill">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <div class="fsa-field" id="combinatorTarget">
+      <label class="fsa-field__label" for="lorem-1234">Email address <span class="fsa-field__label-desc">Required</span></label>
+      <input class="fsa-input fsa-field__item" id="lorem-1234" name="lorem-1234" aria-describedby="lorem-1234-help-1" aria-required="true" type="email" value="">
+      <span class="fsa-field__help" id="lorem-1234-help-1">This is how people can contact you</span>
+    </div>
   </div>
 </div>
 

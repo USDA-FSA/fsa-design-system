@@ -31,21 +31,25 @@
       gap: $size-default;
     }
     @include breakpoint(XL) {
+      width: 20.8rem;
       flex-direction: column;
       border-right: $component-bw solid $color-fsa-tertiary-100;
       border-bottom: 0;
       gap: 0;
     }
-    flex-basis: 188px;
     background-color: $color-fsa-white;
     padding: $size-medium;
   }
 
   &__preview {
-    flex: 1;
-    display: flex;
-    border-radius: $size-base;
-    padding: $size-medium;
+    & {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border-radius: $size-base;
+      padding: $size-medium;
+    }
+
     @include breakpoint(L) {
       align-items: center;
       justify-content: center;
