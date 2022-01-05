@@ -65,7 +65,7 @@ Create application forms with appropriate instructional and validation features.
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorError">Error</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorError" name="combinatorLabelDescription">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorError" name="combinatorLabelDescription" data-behavior="combinator-toggle-class combinator-toggle-form-error" value="fsa-field--error">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
@@ -130,44 +130,46 @@ Create application forms with appropriate instructional and validation features.
           <option value="Option D">Option D</option>
           <option value="Option E">Option E</option>
         </select>
-        <ul hidden data-id="combinator_SelectMulti" class="fsa-select-multi__list" aria-labelledby="combinatorFieldExample" id="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_one" type="checkbox" name="combinatorSelectMulti_one" value="One" checked="" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_one">One</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_two" type="checkbox" name="combinatorSelectMulti_two" value="Two" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_two">Two</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_three" type="checkbox" name="combinatorSelectMulti_three" value="Three" checked="" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_three">Three</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_four" type="checkbox" name="combinatorSelectMulti_four" value="Four" checked="" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_four">Four</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_five" type="checkbox" name="combinatorSelectMulti_five" value="Five" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_five">Five</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_six" type="checkbox" name="combinatorSelectMulti_six" value="Six" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_six">Six</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_seven" type="checkbox" name="combinatorSelectMulti_seven" value="Seven" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_seven">Seven</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_eight" type="checkbox" name="combinatorSelectMulti_eight" value="Eight" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_eight">Eight</label>
-          </li>
-          <li class="fsa-select-multi__item">
-            <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_nine" type="checkbox" name="combinatorSelectMulti_nine" value="Nine" />
-            <label class="fsa-select-multi__label" for="combinatorSelectMulti_nine">Nine</label>
-          </li>
-        </ul>
+        <div hidden data-id="combinator_SelectMulti" class="fsa-select-multi fsa-field__item" aria-labelledby="combinatorFieldExample" id="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1">
+          <ul class="fsa-select-multi__list">
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_one" type="checkbox" name="combinatorSelectMulti_one" value="One" checked="" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_one">One</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_two" type="checkbox" name="combinatorSelectMulti_two" value="Two" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_two">Two</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_three" type="checkbox" name="combinatorSelectMulti_three" value="Three" checked="" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_three">Three</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_four" type="checkbox" name="combinatorSelectMulti_four" value="Four" checked="" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_four">Four</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_five" type="checkbox" name="combinatorSelectMulti_five" value="Five" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_five">Five</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_six" type="checkbox" name="combinatorSelectMulti_six" value="Six" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_six">Six</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_seven" type="checkbox" name="combinatorSelectMulti_seven" value="Seven" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_seven">Seven</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_eight" type="checkbox" name="combinatorSelectMulti_eight" value="Eight" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_eight">Eight</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="combinatorSelectMulti_nine" type="checkbox" name="combinatorSelectMulti_nine" value="Nine" />
+              <label class="fsa-select-multi__label" for="combinatorSelectMulti_nine">Nine</label>
+            </li>
+          </ul>
+        </div>
         <input hidden data-id="combinator_UploadFile" placeholder="Choosie choose choose something" accept="image/png, image/jpeg, image/gif" multiple class="fsa-input fsa-field__item" id="combinatorFieldExample" name="combinatorFieldExample" aria-describedby="combinatorFieldExample_help-1 combinatorFieldExample_message-1" type="file" value="">
         <div hidden data-id="combinator_Slider" class="fsa-level">
           <span class="fsa-level__item--grow-auto">

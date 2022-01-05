@@ -455,8 +455,6 @@ $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
   const $removals = $self.attr('data-remove');
   const $iconTarget = $target.find('.fsa-icon');
 
-  console.log('Need to account for icon sizes. IOW, there were will nested instances that need to be toggled, inserted, etc.');
-
   $target
     .removeClass($removals)
     .addClass($self.val())
@@ -495,6 +493,18 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
   const $target = $('#combinatorTarget');
 
   $target.toggleClass($self.val());
+
+})
+
+$('body').on('change', '[data-behavior~="combinator-toggle-form-error"]', function(event) {
+
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+
+  $target.find('.fsa-input').toggleClass('fsa-input--error');
+  $target.find('.fsa-textarea').toggleClass('fsa-textarea--error');
+  $target.find('.fsa-select').toggleClass('fsa-select--error');
+  $target.find('.fsa-select-multi').toggleClass('fsa-select-multi--error');
 
 })
 
