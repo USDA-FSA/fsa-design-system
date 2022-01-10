@@ -60,6 +60,61 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 {% include preview-and-snippet.html %}
 
+### Prefix: Text
+
+{% capture snippet %}
+<span class="fsa-affix">
+  <label for="affix-example__00" class="fsa-affix__prefix" aria-hidden="true" title="Dollars">$</label>
+  <input id="affix-example__00" class="fsa-input fsa-affix__item" type="text" name="some_name" value="">
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix: Icon
+
+{% capture snippet %}
+<span class="fsa-affix">
+  <label for="affix-example__06" class="fsa-affix__prefix" aria-hidden="true"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg></label>
+  <input id="affix-example__06" class="fsa-input fsa-affix__item" type="text" name="some_name" value="">
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Suffix: Text
+
+{% capture snippet %}
+<span class="fsa-affix">
+  <input id="affix-example__12" class="fsa-input fsa-affix__item" type="text" name="some_name" value="25">
+  <label for="affix-example__12" class="fsa-affix__suffix" aria-hidden="true" title="Percent">%</label>
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix/Suffix: Disabled
+
+{% capture snippet %}
+<span class="fsa-affix fsa-affix--disabled">
+  <input id="affix-example__13" class="fsa-input fsa-affix__item" disabled="" type="text" name="some_name" value="120">
+  <label for="affix-example__13" class="fsa-affix__suffix" aria-hidden="true" title="Pounds">lbs</label>
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix/Suffix: Readonly
+
+{% capture snippet %}
+<span class="fsa-affix fsa-affix--readonly">
+  <input id="affix-example__14" class="fsa-input fsa-affix__item" readonly="" type="text" name="some_name" value="10028">
+  <label for="affix-example__14" class="fsa-affix__suffix" aria-hidden="true">acres</label>
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ### Within a [Field]({{ site.baseurl }}components/form-fields/)
 
 {% capture snippet %}
