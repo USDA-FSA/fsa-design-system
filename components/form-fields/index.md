@@ -106,6 +106,57 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
+### Text, Fill
+
+{% capture snippet %}
+<div class="fsa-field fsa-field--fill">
+  <label class="fsa-field__label" for="TheItem5">Label <span class="fsa-field__label-desc">Required</span></label>
+  <input class="fsa-input fsa-field__item" id="TheItem5" aria-describedby="lorem-1234-help-5" aria-required="true" name="TheItem5" type="text" value="">
+  <span class="fsa-field__help" id="lorem-1234-help-5">Instructional message here</span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Text, Prefix
+
+{% capture snippet %}
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-778affixs459">Wheat <span class="fsa-field__label-desc">Required</span></label>
+  <span class="fsa-affix fsa-affix--fill">
+    <label for="lorem-778affixs459" class="fsa-affix__prefix" aria-hidden="true" title="Dollars">$</label>
+    <input class="fsa-input fsa-field__item fsa-affix__item" id="lorem-778affixs459" name="lorem-778affixs459" type="text" value="" aria-required="true" aria-describedby="lorem-778affixs459_help">
+  </span>
+  <span class="fsa-field__help" id="lorem-778affixs459_help">Price of Wheat per bushel</span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Text, Prefix Icon
+
+{% capture snippet %}
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-778affixicons459">Credit Card Number <span class="fsa-field__label-desc">Required</span></label>
+  <span class="fsa-affix fsa-affix--fill">
+    <label for="lorem-778affixicons459" class="fsa-affix__prefix" aria-hidden="true"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg></label>
+    <input class="fsa-input fsa-field__item fsa-affix__item" id="lorem-778affixicons459" name="lorem-778affixicons459" type="text" value="" aria-required="true" aria-describedby="lorem-778affixicons459_help">
+  </span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Text, Suffix
+
+{% capture snippet %}
+<div class="fsa-field">
+  <label class="fsa-field__label" for="lorem-778suffixs459">Lot Size <span class="fsa-field__label-desc">Required</span></label>
+  <span class="fsa-affix fsa-affix--fill">
+    <input class="fsa-input fsa-field__item fsa-affix__item" id="lorem-778suffixs459" name="lorem-778suffixs459" type="text" value="" aria-required="true" aria-describedby="lorem-778suffixs459_help">
+    <label for="lorem-778suffixs459" class="fsa-affix__suffix" aria-hidden="true" title="Dollars">acres</label>
+  </span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
 ### Multi-part
 
 {% capture snippet %}
@@ -126,17 +177,6 @@ Using [Text Input]({{ site.baseurl }}components/text-input/) as core component.
     </div>
   </div>
   <span class="fsa-field__help" id="lorem-dob__help">Example: 05 14 1981</span>
-</div>
-{% endcapture %}
-{% include preview-and-snippet.html %}
-
-### Text, Fill Variant
-
-{% capture snippet %}
-<div class="fsa-field fsa-field--fill">
-  <label class="fsa-field__label" for="TheItem5">Label <span class="fsa-field__label-desc">Required</span></label>
-  <input class="fsa-input fsa-field__item" id="TheItem5" aria-describedby="lorem-1234-help-5" aria-required="true" name="TheItem5" type="text" value="">
-  <span class="fsa-field__help" id="lorem-1234-help-5">Instructional message here</span>
 </div>
 {% endcapture %}
 {% include preview-and-snippet.html %}
