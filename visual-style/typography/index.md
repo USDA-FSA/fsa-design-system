@@ -156,16 +156,22 @@ Most elements and components have a deliberate size assigned to them, Utilities 
 
 ### Customizing Font Size
 
-### With CSS Selectors
+#### With CSS Utilities
 
-Most elements and components have a deliberate size assigned to them, Utilities are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
+Most elements and components have a deliberate size assigned to them, [CSS Utilities]({{ site.baseurl }}utilities/) are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
 
-### With a CSS Preprocessor (Sass)
+#### With a CSS Preprocessor (Sass)
 
 With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
 
 ```scss
 .your-custom-selector { @include font-size([size]); }
+```
+
+Of to solely adjust the `font-size` property while *retaining* a block's initial `line-height` property you may use Sass variables (tokens) to override with `font-size: $font-size-[size]` - where `[size]` is one of `0-7`.
+
+```scss
+.your-custom-selector { font-size: $font-size-[size] }
 ```
 
 ## Related Resources
