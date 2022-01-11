@@ -5125,6 +5125,7 @@ img {
 .fsa-affix--fill, .fsa-affix--block {
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .fsa-affix--disabled {
@@ -8538,7 +8539,7 @@ a.fsa-badge:active {
   margin: 0;
   padding: 0;
   border-width: 0;
-  background: transparent;
+  background-color: transparent;
   font: inherit;
   line-height: inherit;
   cursor: pointer;
@@ -8679,7 +8680,7 @@ a.fsa-badge:active {
   margin: 0;
   padding: 0;
   border-width: 0;
-  background: transparent;
+  background-color: transparent;
   font: inherit;
   line-height: inherit;
   cursor: pointer;
@@ -8748,6 +8749,7 @@ a.fsa-badge:active {
 .fsa-btn-group {
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: auto;
   white-space: nowrap;
   vertical-align: middle;
 }
@@ -8755,21 +8757,25 @@ a.fsa-badge:active {
 .fsa-btn-group--fill, .fsa-btn-group--block {
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .fsa-btn-group--inline {
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: auto;
 }
 
 @media (min-width: 30.0625em) {
   .fsa-btn-group--fill\@s, .fsa-btn-group--block\@s {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .fsa-btn-group--inline\@s {
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: auto;
   }
 }
 
@@ -8777,10 +8783,12 @@ a.fsa-badge:active {
   .fsa-btn-group--fill\@m, .fsa-btn-group--block\@m {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .fsa-btn-group--inline\@m {
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: auto;
   }
 }
 
@@ -8788,10 +8796,12 @@ a.fsa-badge:active {
   .fsa-btn-group--fill\@l, .fsa-btn-group--block\@l {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .fsa-btn-group--inline\@l {
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: auto;
   }
 }
 
@@ -8799,10 +8809,12 @@ a.fsa-badge:active {
   .fsa-btn-group--fill\@xl, .fsa-btn-group--block\@xl {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .fsa-btn-group--inline\@xl {
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: auto;
   }
 }
 
@@ -9287,7 +9299,7 @@ a.fsa-badge:active {
   margin: 0;
   padding: 0;
   border-width: 0;
-  background: transparent;
+  background-color: transparent;
   font: inherit;
   line-height: inherit;
   cursor: pointer;
@@ -9628,6 +9640,7 @@ h1 + .fsa-field {
 @media (min-width: 37.5em) {
   .fsa-field--fill, .fsa-field--block {
     max-width: none;
+    width: 100%;
   }
 }
 
@@ -10570,6 +10583,12 @@ h1 + .fsa-field {
 .fsa-select-multi--disabled .fsa-select-multi__list {
   background-color: #f0f0f0;
   color: #82807f;
+}
+
+.fsa-select-multi--error .fsa-select-multi__list {
+  border-color: #cd2026;
+  box-shadow: 0 0 0 1px #cd2026;
+  background-color: #f9e4e5;
 }
 
 .fsa-select-multi__list-sub {
@@ -14732,14 +14751,17 @@ span.fsa-spinbox {
 
 .fsa-link--inline {
   display: inline !important;
+  width: auto !important;
 }
 
 .fsa-link--inline-block {
   display: inline-block !important;
+  width: auto !important;
 }
 
 .fsa-link--fill, .fsa-link--block {
   display: block !important;
+  width: 100%;
 }
 
 .fsa-link--underline {
@@ -15133,12 +15155,15 @@ span.fsa-spinbox {
 @media (min-width: 30.0625em) {
   .fsa-link--inline\@s {
     display: inline !important;
+    width: auto !important;
   }
   .fsa-link--inline-block\@s {
     display: inline-block !important;
+    width: auto !important;
   }
   .fsa-link--fill\@s, .fsa-link--block\@s {
     display: block !important;
+    width: 100% !important;
   }
   .fsa-link--underline\@s {
     text-decoration: underline !important;
@@ -15436,12 +15461,15 @@ span.fsa-spinbox {
 @media (min-width: 37.5em) {
   .fsa-link--inline\@m {
     display: inline !important;
+    width: auto !important;
   }
   .fsa-link--inline-block\@m {
     display: inline-block !important;
+    width: auto !important;
   }
   .fsa-link--fill\@m, .fsa-link--block\@m {
     display: block !important;
+    width: 100% !important;
   }
   .fsa-link--underline\@m {
     text-decoration: underline !important;
@@ -15739,12 +15767,15 @@ span.fsa-spinbox {
 @media (min-width: 54em) {
   .fsa-link--inline\@l {
     display: inline !important;
+    width: auto !important;
   }
   .fsa-link--inline-block\@l {
     display: inline-block !important;
+    width: auto !important;
   }
   .fsa-link--fill\@l, .fsa-link--block\@l {
     display: block !important;
+    width: 100% !important;
   }
   .fsa-link--underline\@l {
     text-decoration: underline !important;
@@ -16042,12 +16073,15 @@ span.fsa-spinbox {
 @media (min-width: 78.75em) {
   .fsa-link--inline\@xl {
     display: inline !important;
+    width: auto !important;
   }
   .fsa-link--inline-block\@xl {
     display: inline-block !important;
+    width: auto !important;
   }
   .fsa-link--fill\@xl, .fsa-link--block\@xl {
     display: block !important;
+    width: 100% !important;
   }
   .fsa-link--underline\@xl {
     text-decoration: underline !important;
