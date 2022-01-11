@@ -17,12 +17,12 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       <div class="fsa-stepped-tabs__bd">
         <ol class="fsa-stepped-tabs__list">
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Shipping Information</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html" aria-current="step">
               <span class="fsa-stepped-tabs__text">Billing Information</span>
             </a>
           </li>
@@ -47,7 +47,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 Each Step can be one of three possible states.
 
 ```html
-<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--[STATE]" href="link.html">
+<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--[STATE]" href="/link.html">
   <span class="fsa-stepped-tabs__text">Label</span>
 </a>
 ```
@@ -74,12 +74,12 @@ Each Step can be one of three possible states.
     <div class="fsa-stepped-tabs__bd">
       <ol class="fsa-stepped-tabs__list">
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
             <span class="fsa-stepped-tabs__text">Lor</span>
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html" aria-current="step">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </a>
         </li>
@@ -181,22 +181,22 @@ Use when user should be **prevented** from using Stepped Tabs as a means of navi
     <div class="fsa-stepped-tabs__bd">
       <ol class="fsa-stepped-tabs__list">
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
             <span class="fsa-stepped-tabs__text">Lor</span>
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html" aria-current="step">
             <span class="fsa-stepped-tabs__text">Em ipsum</span>
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete" href="link.html">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete" href="/link.html">
             <span class="fsa-stepped-tabs__text">Dol</span>
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete" href="link.html">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete" href="/link.html">
             <span class="fsa-stepped-tabs__text">Or Sit Amet</span>
           </a>
         </li>
@@ -268,7 +268,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
     <div class="fsa-stepped-tabs__bd">
       <ol class="fsa-stepped-tabs__list">
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
             <span class="fsa-stepped-tabs__text">
               <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
               Shipping
@@ -276,7 +276,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
           </a>
         </li>
         <li class="fsa-stepped-tabs__item">
-          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html" aria-current="step">
+          <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html" aria-current="step">
             <span class="fsa-stepped-tabs__text">
               <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 17H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V7h12v2zM3 22l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20z"/></svg>
               Billing
@@ -314,7 +314,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
       <div class="fsa-stepped-tabs__bd">
         <ol class="fsa-stepped-tabs__list">
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html">
               <span class="fsa-stepped-tabs__text">Discovery</span>
             </a>
           </li>
@@ -342,12 +342,12 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
       <div class="fsa-stepped-tabs__bd">
         <ol class="fsa-stepped-tabs__list">
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Discovery</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html">
               <span class="fsa-stepped-tabs__text">Adjustments</span>
             </a>
           </li>
@@ -370,17 +370,17 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
       <div class="fsa-stepped-tabs__bd">
         <ol class="fsa-stepped-tabs__list">
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Discovery</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Adjustments</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html">
               <span class="fsa-stepped-tabs__text">Review</span>
             </a>
           </li>
@@ -398,22 +398,22 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
       <div class="fsa-stepped-tabs__bd">
         <ol class="fsa-stepped-tabs__list">
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Discovery</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Adjustments</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete" href="/link.html">
               <span class="fsa-stepped-tabs__text">Review</span>
             </a>
           </li>
           <li class="fsa-stepped-tabs__item">
-            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="link.html">
+            <a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" href="/link.html">
               <span class="fsa-stepped-tabs__text">Publish</span>
             </a>
           </li>

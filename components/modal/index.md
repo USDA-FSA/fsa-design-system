@@ -80,8 +80,8 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variant]]"`.
       <h1 class="fsa-modal__title">[default title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
     </div>
@@ -103,8 +103,8 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variant]]"`.
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consequatur minus aspernatur necessitatibus ipsum dignissimos quis pariatur ea ex, numquam! Sapiente, maiores quas esse nemo similique facere fugit vitae vero.</p>
     </div>
@@ -125,8 +125,8 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variant]]"`.
       <h1 class="fsa-modal__title">[large title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
     </div>
@@ -147,8 +147,8 @@ Modals are styled with `class="fsa-modal [fsa-modal--[variant]]"`.
       <h1 class="fsa-modal__title">[fullscreen title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi. Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Ad, mollitia reiciendis maiores saepe vero repellat unde esse, tempora illo deserunt necessitatibus dignissimos perspiciatis et reprehenderit expedita eos eaque sint ab. Velit harum consequatur quam ratione voluptatem officia, necessitatibus quasi facere nulla sint, eius nihil id accusantium minus pariatur corporis. Perferendis, non, consectetur. </p>
     </div>
@@ -172,8 +172,8 @@ Can be appended to Default, Small, and Large variants; e.g. `class="fsa-modal fs
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
       <p>Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
@@ -238,8 +238,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
       <h1 class="fsa-modal__title">[default title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
     </div>
@@ -253,8 +253,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
       <p>Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
@@ -270,8 +270,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
        <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-         <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+         <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consequatur minus aspernatur necessitatibus ipsum dignissimos quis pariatur ea ex, numquam! Sapiente, maiores quas esse nemo similique facere fugit vitae vero.</p>
     </div>
@@ -284,8 +284,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
       <h1 class="fsa-modal__title">[large title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla? Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis! Amet tempore, sint mollitia facere, dolore velit, similique dolorem est ducimus dolorum molestiae totam molestias eveniet delectus accusamus saepe! Odio, libero quasi.</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Quis aspernatur assumenda fugiat voluptatibus suscipit quos autem doloremque, amet deleniti facilis, aperiam ex magnam pariatur odit expedita eos voluptatem minus labore!</p>
     </div>
@@ -304,8 +304,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__modal.html
         Exercitationem unde, animi quaerat, ut eligendi natus maxime tempora quas obcaecati, asperiores architecto dolorem velit nisi autem est! Ab, minus, doloremque? Ex?
       </p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>
         Ad, mollitia reiciendis maiores saepe vero repellat unde esse, tempora illo deserunt necessitatibus dignissimos perspiciatis et reprehenderit expedita eos eaque sint ab.

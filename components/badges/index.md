@@ -33,7 +33,7 @@ Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
 ```html
 <span class="fsa-badge">1</span>
 <button class="fsa-badge" type="button">1</button>
-<a class="fsa-badge" href="link.html">1</a>
+<a class="fsa-badge" href="/link.html">1</a>
 ```
 
 ### Default
@@ -120,7 +120,7 @@ Badge styles can be applied to nearly any HTML element, defaulting to non-action
 
 {% capture snippet %}
 <div class="fsa-level">
-  <a class="fsa-badge" href="link.html">A</a> Anchor
+  <a class="fsa-badge" href="/link.html">A</a> Anchor
   <button class="fsa-badge" type="button">B</button> Button
   <button class="fsa-badge" type="button" disabled="disabled">Z</button> Disabled
 </div>

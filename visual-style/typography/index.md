@@ -111,7 +111,7 @@ Most elements and components have a deliberate size assigned to them, Utilities 
 ## Text Elements
 
 {% capture snippet %}
-<p>The <a href="#link-to-nowhere">a element</a> and <a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external a element</a></p>
+<p>The <a href="/link.html">a element</a> and <a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external a element</a></p>
 <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
 <p>The <b>b element</b> example, though you probably want to use <strong>strong</strong></p>
 <p>The <cite>cite element</cite> example</p>

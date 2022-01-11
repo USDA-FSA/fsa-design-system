@@ -317,8 +317,8 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__progress.html
       <h1 class="fsa-modal__title">[default title]</h1>
       <p>Eos reiciendis expedita esse, maiores nesciunt ratione dolore libero porro quas. Rerum atque fugiat esse, tenetur debitis reiciendis commodi et ut nulla?</p>
       <ul>
-        <li><a href="">Fake Link</a></li>
-        <li><a href="">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
+        <li><a href="/link.html">Fake Link</a></li>
       </ul>
       <p>Odio aspernatur quo voluptatum dolorem obcaecati? Ipsum aliquid quae perspiciatis repudiandae nam magnam commodi cumque omnis!</p>
     </div>

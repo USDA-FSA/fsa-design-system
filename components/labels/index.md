@@ -33,7 +33,7 @@ Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
 ```html
 <span class="fsa-label fsa-label--[variant]">Label</span>
 <button class="fsa-label fsa-label--[variant]" type="button">Label</button>
-<a class="fsa-label fsa-label--[variant]" href="link.html">Label</a>
+<a class="fsa-label fsa-label--[variant]" href="/link.html">Label</a>
 ```
 
 ### Default
@@ -123,7 +123,7 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 
 {% capture snippet %}
 <div class="fsa-level">
-  <a class="fsa-label" href="link.html">Anchor</a>
+  <a class="fsa-label" href="/link.html">Anchor</a>
   <button class="fsa-label" type="button">Button</button>
   <button class="fsa-label" type="button" disabled="disabled">Disabled Button</button>
 </div>

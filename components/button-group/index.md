@@ -95,10 +95,10 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 
 {% capture snippet %}
 <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-  <a class="fsa-btn-group__item" href="link.html">Label one</a>
-  <a class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" href="link.html">Label active</a>
-  <a class="fsa-btn-group__item" href="link.html">Label three</a>
-  <a class="fsa-btn-group__item" href="link.html">Label fo</a>
+  <a class="fsa-btn-group__item" href="/link.html">Label one</a>
+  <a class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" href="/link.html">Label active</a>
+  <a class="fsa-btn-group__item" href="/link.html">Label three</a>
+  <a class="fsa-btn-group__item" href="/link.html">Label fo</a>
 </span>
 {% endcapture %}
 
