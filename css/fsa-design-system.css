@@ -1181,7 +1181,7 @@ kbd {
   color: #494440;
   border: 1px solid #dbdad9;
   box-shadow: 0 1px 0 #dbdad9;
-  border-radius: 0.4rem=0.1 rem;
+  border-radius: 0.4rem;
   font-weight: 700;
   display: inline-block;
   white-space: nowrap;
