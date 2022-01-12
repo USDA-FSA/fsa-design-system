@@ -213,14 +213,16 @@ Below are the complete set of CSS Utilities for overriding or extending an eleme
 
 Selectively apply Border Width at any Media Query breakpoint.
 
-<p>
-  <code>class="fsa-border--<strong>[variant]@[breakpoint]</strong>"</code>
-  <code>breakpoint</code> is one of
-  <code title="small">s</code>,
-  <code title="medium">m</code>,
-  <code title="large">l</code>, or
-  <code title="extra large">xl</code>
-</p>
+```html
+<element class="fsa-border--[VARIANT]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -272,14 +274,15 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
 
 Selectively apply rounded corners at any Media Query breakpoint.
 
-<p>
-  <code>class="fsa-border-radius--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
-  <code>breakpoint</code> is one of
-  <code title="small">s</code>,
-  <code title="medium">m</code>,
-  <code title="large">l</code>, or
-  <code title="extra large">xl</code>
-</p>
+```html
+<element class="fsa-border-radius--[SIZE]@[BREAKPOINT]">...</element>
+```
+
+<code>BREAKPOINT</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -428,14 +431,16 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-radius.html
 
 Selectively apply at any Media Query breakpoint.
 
-<p>
-  <code>class="fsa-border-between-[ORIENTATION]--<strong>[SIZE]@[BREAKPOINT]</strong>"</code>
-  <code>breakpoint</code> is one of
-  <code title="small">s</code>,
-  <code title="medium">m</code>,
-  <code title="large">l</code>, or
-  <code title="extra large">xl</code>
-</p>
+```html
+<element class="fsa-border-between-[ORIENTATION]--[SIZE]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -448,7 +453,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
 
 <p class="fsa-text--lead">Selectively add or adjust border colors.</p>
 
-### Options
+```html
+<element class="fsa-border--[COLOR]">...</element>
+```
+
+### Variants
 
 <div class="fsa-level">
   <label class="fsa-switch">
@@ -585,8 +594,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between.html
 
 Selectively apply Border Colors at any Media Query breakpoint.
 
-<code>class="fsa-border--<strong>[color]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-border--[COLOR]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -603,7 +616,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
 
 <p class="fsa-text--lead">Selectively add or adjust border colors <strong>between</strong> blocks of content.</p>
 
-### Options
+### Variants
 
 <div class="fsa-level">
   <label class="fsa-switch">
@@ -810,8 +823,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-color.html
 
 Selectively apply Border Between Color at any Media Query breakpoint.
 
-<code>class="fsa-border-between-<strong>[ORIENTATION]--[color]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-border-between-[ORIENTATION]--[COLOR]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -828,7 +845,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
 
 <p class="fsa-text--lead">Selectively add or adjust background colors</p>
 
-### Options
+```html
+<element class="fsa-bg--[COLOR]">...</element>
+```
+
+### Variants
 
 <div class="fsa-level">
   <label class="fsa-switch">
@@ -1019,8 +1040,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
 
 Selectively apply Background Colors at any Media Query breakpoint.
 
-<code>class="fsa-bg[:hover]--<strong>[color]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-bg[:hover]--[COLOR]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -1037,7 +1062,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
 
 <p class="fsa-text--lead">Selectively add or adjust foreground (text) colors</p>
 
-### Options
+```html
+<element class="fsa-color--[COLOR]">...</element>
+```
+
+### Variants
 
 <div class="fsa-level">
   <label class="fsa-switch">
@@ -1114,8 +1143,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-between-color.html
 
 Selectively apply Text Colors at any Media Query breakpoint.
 
-<code>class="fsa-color--<strong>[color]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-color--[COLOR]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -1132,7 +1165,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__text-color.html
 
 <p class="fsa-text--lead">Selectively add or adjust text link colors</p>
 
-### Options
+```html
+<a href="/link.html" class="fsa-link--[COLOR]">Text link</a>
+```
+
+### Variants
 
 <div class="fsa-level">
   <label class="fsa-switch">
@@ -1269,8 +1306,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__text-color.html
 
 Selectively apply Link Colors at any Media Query breakpoint.
 
-<code>class="fsa-link<strong>[:hover]--[color]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-link[:hover]--[COLOR]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -1310,14 +1351,16 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-color.html
 
 Set overflow of block-level elements to Ellipsis at select media query breakpoints.
 
-<p>
-  <code>fsa-ellipsis<strong>[--none]@[breakpoint]</strong></code>, where
-  <code>breakpoint</code> is one of
-  <code title="small">s</code>,
-  <code title="medium">m</code>,
-  <code title="large">l</code>, or
-  <code title="extra large">xl</code>
-</p>
+```html
+<element fsa-ellipsis[--none]@[BREAKPOINT]>...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
+<code title="small">s</code>,
+<code title="medium">m</code>,
+<code title="large">l</code>, or
+<code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -1333,10 +1376,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__ellipsis.html
 ### Variants
 
 ```html
-<el class="fsa-float--[direction]">...</el>
+<el class="fsa-float--[DIRECTION]">...</el>
 ```
 
-`[direction]` is one of `left`, `right`, `none`.
+Where `[DIRECTION]` is one of `left`, `right`, `none`.
 
 #### Left
 
@@ -1410,12 +1453,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__float.html
 <p class="fsa-text--lead">Selectively apply Typeface and Weight to text.</p>
 
 ```html
-<el class="fsa-font--[VARIATION]">...</el>
+<el class="fsa-font--[VARIANT]">...</el>
 ```
 
-Where `variant` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`, or `fsa-font--mono`.
-
-### Variants
+Where `VARIANT` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`, or `fsa-font--mono`.
 
 ### Sans
 
@@ -1457,7 +1498,11 @@ Where `variant` is one of `sans` (default), `sans-light`, `fsa-font--sans-bold`,
 
 Selectively apply Font at any Media Query breakpoint.
 
-`class="fsa-font--[variant]@[breakpoint]"` where `breakpoint` is one of `s`, `m`, `l`, or `xl`
+```html
+<element class="fsa-font--[VARIANT]@[BREAKPOINT]">...</element>
+```
+
+Where `BREAKPOINT` is one of `s`, `m`, `l`, or `xl`
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -1486,7 +1531,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__font.html
 
 <p class="fsa-text--lead">Selectively adjust display property of links.</p>
 
-### Options
+```html
+<a class="fsa-link--[VARIANT]" href="/link.html">Text link</a>
+```
+
+### Variants
 
 <div class="docs__color-utilities" id="demo-background-target-link-display">
   <div class="fsa-grid">
@@ -1513,8 +1562,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__font.html
 
 Selectively apply Link display properties at any Media Query breakpoint.
 
-<code>class="fsa-link--<strong>[variant]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-link--[VARIANT]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -1531,7 +1584,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-display.html
 
 <p class="fsa-text--lead">Selectively add or remove underlines for Text Links.</p>
 
-### Options
+```html
+<a class="fsa-link--[VARIANT]" href="/link.html">Text link</a>
+```
+
+### Variants
 
 <div class="docs__color-utilities" id="demo-background-target-link-underline">
   <div class="fsa-grid">
@@ -1568,8 +1625,12 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-display.html
 
 Selectively apply Link underlines at any Media Query breakpoint
 
-<code>class="fsa-link<strong>[:hover]--[variant]@[breakpoint]</strong>"</code>
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-link[:hover]--[VARIANT]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -1589,10 +1650,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__link-underline.html
 Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ site.baseurl }}visual-style/size-and-space/).
 
 ```html
-<element class="fsa-m-[side]--[size]">...</element>
+<element class="fsa-m-[SIDE]--[SIZE]">...</element>
 ```
-* `[side]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
-* `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
+
+Where
+`[SIDE]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides); and `[SIZE]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
 ### Variants
 
@@ -1737,10 +1799,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__margins.html
 Spacing values pointedly subscribe to the Design System's [Sizes and Spaces]({{ site.baseurl }}visual-style/size-and-space/).
 
 ```html
-<element class="fsa-p-[side]--[size]">...</element>
+<element class="fsa-p-[SIDE]--[SIZE]">...</element>
 ```
-* `[side]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides).
-* `[size]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
+
+Where
+`[SIDE]` is one of `t` (top), `r` (right), `b` (bottom), `l` (left), or omitted (all 4 sides); and `[SIZE]` is one of `none`, `xxs`, `xs`, `s`, `m`, `l`, or `xl`.
 
 ### Variants
 
@@ -1883,10 +1946,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__padding.html
 This component must not be used to hide interactive content; for that, defer to [Visibility Utility classes](#visibility).
 
 ```html
-<element class="fsa-sr-only@[size]">...</element>
+<element class="fsa-sr-only@[SIZE]">...</element>
 ```
 
-Visibly hide when viewport is *within* a specific range, where `[size]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
+Visibly hide when viewport is *within* a specific range, where `[SIZE]` is one of `xs-only`, `s-only`, `m-only`, `l-only`, or `xl-only`.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -1902,7 +1965,7 @@ Selectively apply [Shadows]({{ site.baseurl }}visual-style/shadows/) to containi
 ### Variants
 
 ```html
-<el class="fsa-shadow--[VARIATION]">...</el>
+<el class="fsa-shadow--[VARIANT]">...</el>
 ```
 
 Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
@@ -1934,7 +1997,7 @@ Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 ### Hover
 
 ```html
-<el class="fsa-shadow--:hover--[VARIATION]">...</el>
+<el class="fsa-shadow--:hover--[VARIANT]">...</el>
 ```
 
 Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
@@ -1967,8 +2030,12 @@ Where `VARIATION` is one of `popout`, `overlay`, `raised`, or `none`.
 
 Selectively apply at any Media Query breakpoint.
 
-<code>class="fsa-shadow--<strong>[variant]@[breakpoint]</strong>"</code> where
-<code>breakpoint</code> is one of
+```html
+<element class="fsa-shadow--[VARIANT]@[BREAKPOINT]">...</element>
+```
+
+Where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -1986,10 +2053,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__shadows.html
 <p class="fsa-text--lead">Selectively align blocks of content.</p>
 
 ```html
-<el class="fsa-text-size--[direction]">...</el>
+<el class="fsa-text-size--[DIRECTION]">...</el>
 ```
 
-Where `direction` is one of `left`, `center`, or `right`
+Where `DIRECTION` is one of `left`, `center`, or `right`
 
 ### Variants
 
@@ -2045,7 +2112,11 @@ Text Size utility classes follow's the system's **vertical rythym** &ndash; [Typ
   </div>
 </aside>
 
-Where `size` is one of `0` - `7`. For reference, the **base** font size is equal to `3`.
+```html
+<element class="fsa-text-size--[SIZE]">...</element>
+```
+
+Where `SIZE` is one of `0` - `7`. For reference, the **base** font size is equal to `3`.
 
 ### Variants
 
@@ -2062,7 +2133,11 @@ Where `size` is one of `0` - `7`. For reference, the **base** font size is equal
 
 Text size can be adjusted per media query breakpoint.
 
-<p><code>class="fsa-text-size<strong>--[size]@[breakpoint]</strong>"</code>, where <code>size</code> is one of <code>0</code> - <code>7</code>, and <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code></p>
+```html
+<element class="fsa-text-size--[SIZE]@[BREAKPOINT]">...</element>
+```
+
+Where <code>SIZE</code> is one of <code>0</code> - <code>7</code>, and <code>BREAKPOINT</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -2078,10 +2153,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__text-size.html
 While `h1` – `h6` elements have a hierarchical style assigned, sometimes the heading level may vary depending on its context. These CSS Utilities below enable you to maintain the visual hierarchy independent from the structural, semantic HTML heading level.
 
 ```html
-<hN class="fsa-text--[size]">...</hN>
+<hN class="fsa-text--[SIZE]">...</hN>
 ```
 
-Where `size` is one of `h1`, `h2`, `h3`, `h4`, `h5`, or `h6`.
+Where `SIZE` is one of `h1`, `h2`, `h3`, `h4`, `h5`, or `h6`.
 
 ### Variants
 
@@ -2142,7 +2217,11 @@ http://usda-fsa.github.io/fsa-style/demo/rwd__text-headers.html
 
 ### Show at minimum screen size
 
-<code>class="fsa-show@<strong>[size]</strong>"</code>. Show when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+```html
+<element class="fsa-show@[SIZE]">...</element>
+```
+
+Show when <em>at least</em> <code>[SIZE]</code>, where <code>[SIZE]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -2153,7 +2232,11 @@ http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--show-min-screen-size.h
 
 ### Show at only specific screen size
 
-<code>class="fsa-show@<strong>[size]-only</strong>"</code>. Show <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+```html
+<element class="fsa-show@[SIZE]-only">...</element>
+```
+
+Show <em>only</em> at <code>[SIZE]</code>, where <code>[SIZE]</code> is one of <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -2164,7 +2247,11 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__visibility--min-screen-size.html
 
 ### Hide at minimum screen size
 
-<code>class="fsa-hide@<strong>[size]</strong>"</code>. Hide when <em>at least</em> <code>[size]</code>, where <code>[size]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>.
+```html
+<element class="fsa-hide@[SIZE]">...</element>
+```
+
+Hide when <em>at least</em> <code>[SIZE]</code>, where <code>[SIZE]</code> is one of <code>s</code>, <code>m</code>, or <code>l</code>.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
@@ -2175,7 +2262,11 @@ http://usda-fsa.github.io/fsa-style/demo/rwd__visibility--hide-min-screen-size.h
 
 ### Hide at specific screen size
 
-<code>class="fsa-hide@<strong>[size]-only</strong>"</code>. Hide <em>only</em> at <code>[size]</code>, where <code>[size]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
+```html
+<element class="fsa-hide@[SIZE]-only">...</element>
+```
+
+Hide <em>only</em> at <code>[SIZE]</code>, where <code>[SIZE]</code> is one of <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, or <code>xl</code>.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}
