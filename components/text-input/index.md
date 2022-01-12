@@ -194,13 +194,13 @@ Readonly fields do not have a `class="fsa-input--[VARIANT]"`, instead using the 
 
 Selectively override several style properties at each Media Query breakpoint
 
-<code>fsa-select--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
-<code>PROPERTY</code> is one of
+<code>fsa-select--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
 <code>fill</code>, or
-<code>inline</code>; and <code>BREAKPOINT</code> is one of
+<code>inline</code>; and <code>BREAKPOINT</code> is one or more of of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

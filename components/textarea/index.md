@@ -114,11 +114,11 @@ Readonly fields do not have a `class="fsa-textarea--[VARIANT]"`, instead using t
 
 Selectively override several style properties at each Media Query breakpoint.
 
-<code>fsa-textarea--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
-<code>PROPERTY</code> is one of
+<code>fsa-textarea--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>, or
-<code>large</code>, and <code>BREAKPOINT</code> is one of
+<code>large</code>, and <code>BREAKPOINT</code> is one or more of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

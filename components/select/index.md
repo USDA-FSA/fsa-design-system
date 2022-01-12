@@ -198,8 +198,8 @@ Disabled select components do not have a `class="fsa-select--[VARIANT]"`, instea
 
 Selectively override several style properties at each Media Query breakpoint.
 
-<code>fsa-select--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
-<code>PROPERTY</code> is one of
+<code>fsa-select--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,

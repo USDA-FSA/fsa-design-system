@@ -222,8 +222,8 @@ There may be acceptable uses where a label may be visually hidden (i.e. using a 
 
 Selectively override several style properties at each Media Query breakpoint.
 
-<code>fsa-btn-group--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
-<code>PROPERTY</code> is one of
+<code>fsa-btn-group--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,

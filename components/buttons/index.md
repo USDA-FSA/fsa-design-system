@@ -254,8 +254,8 @@ Combine the `fsa-btn--plain` variant with **Utilities** such as [Text Color]({{ 
 
 Several of a button's style properties can be selectively modified across each Media Query breakpoint.
 
-<code>fsa-btn--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
-<code>PROPERTY</code> is one of
+<code>fsa-btn--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
