@@ -162,16 +162,16 @@ Most elements and components have a deliberate size assigned to them, [CSS Utili
 
 #### With a CSS Preprocessor (Sass)
 
-With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
+With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([SIZE]);` - where `[SIZE]` is one of `0-7`.
 
 ```scss
-.your-custom-selector { @include font-size([size]); }
+.your-custom-selector { @include font-size([SIZE]); }
 ```
 
-Of to solely adjust the `font-size` property while *retaining* a block's initial `line-height` property you may use Sass variables (tokens) to override with `font-size: $font-size-[size]` - where `[size]` is one of `0-7`.
+Of to solely adjust the `font-size` property while *retaining* a block's initial `line-height` property you may use Sass variables (tokens) to override with `font-size: $font-size-[SIZE]` - where `[SIZE]` is one of `0-7`.
 
 ```scss
-.your-custom-selector { font-size: $font-size-[size] }
+.your-custom-selector { font-size: $font-size-[SIZE] }
 ```
 
 ## Related Resources

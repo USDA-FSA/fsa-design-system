@@ -50,12 +50,12 @@ Tables are great for displaying tabular data. Minimal visual styling helps surfa
 
 ## Variants and Examples
 
-Styled `<table>` components use `class="fsa-table"`, with several modifications available with `fsa-table--[variant]`.
+Styled `<table>` components use `class="fsa-table"`, with several modifications available with `fsa-table--[VARIANT]`.
 
 Multiple modifying options are demonstrated for table rows (`tr`), table header cells (`th`), and table body cells (`td`) &ndash; along with sample use of other Design System components.
 
 ```html
-<table class="fsa-table fsa-table--[variant]">
+<table class="fsa-table fsa-table--[VARIANT]">
   ...
 </table>
 ```

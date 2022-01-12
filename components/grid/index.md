@@ -122,7 +122,7 @@ Easily distribute and align content and components with a simple series of conta
 
 ### 2. Add two evenly-sized columns
 
-Each grid column's proportional width is assigned via `fsa-grid__[width]`. For example: `class="fsa-grid__1/2"` is 50% proportion.
+Each grid column's proportional width is assigned via `fsa-grid__[WIDTH]`. For example: `class="fsa-grid__1/2"` is 50% proportion.
 
 ```html
 <div class="fsa-grid">
@@ -260,7 +260,7 @@ Available column proportions are identified via the <code>fsa-grid__<strong>[pro
 
 Responsive Web Design, originally defined by <a href="http://alistapart.com/article/responsive-web-design/">Ethan Marcotte in A List Apart</a>, **responds to the needs of the users and the devices they're using**. Layout can change based on the size and capabilities of the device. For example, a phone may render content in a single column view, while screens wider than a tablet could then distribute the same content into multiple columns.
 
-Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via <code>fsa-grid__<strong>[proportion]</strong>@<strong>[breakpoint]</strong></code> where `[proportion]` is [one of the values documented above](#grid-column-sizes) and `[breakpoint]` is one of `s`, `m`, `l`, or `xl`.
+Each grid column's proportional width can be adjusted across a range of viewport sizes (aka "breakpoints") via <code>fsa-grid__<strong>[proportion]</strong>@<strong>[BREAKPOINT]</strong></code> where `[proportion]` is [one of the values documented above](#grid-column-sizes) and `[BREAKPOINT]` is one of `s`, `m`, `l`, or `xl`.
 
 In the below example, each column begins as full-width (<code>fsa-grid__<strong>1/1</strong></code>) by default, and adjusts to 50% (<code>fsa-grid__<strong>1/2</strong>@<strong>m</strong></code>) when the viewport is wider than the `m` breakpoint.
 

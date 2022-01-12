@@ -22,7 +22,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Variants and Examples
 
-Button groups are wrapped in a `<span>` tag and always start with `class="fsa-btn-group"`, modifiable with one or multiple `fsa-btn-group--[variant]`.
+Button groups are wrapped in a `<span>` tag and always start with `class="fsa-btn-group"`, modifiable with one or multiple `fsa-btn-group--[VARIANT]`.
 
 ### Default
 
@@ -222,13 +222,13 @@ There may be acceptable uses where a label may be visually hidden (i.e. using a 
 
 Selectively override several style properties at each Media Query breakpoint.
 
-<code>fsa-btn-group--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
+<code>fsa-btn-group--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
+<code>PROPERTY</code> is one of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
 <code>fill</code>, or
-<code>inline</code>; and <code>breakpoint</code> is one of
+<code>inline</code>; and <code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

@@ -15,7 +15,7 @@ relatedItems:
   - "item"
 ---
 
-<code>class="fsa-icon--<strong>[size]</strong>"</code>, where `[size]` is one of `0`, `1`, `2`, `3`, `4`, or `5`.
+<code>class="fsa-icon--<strong>[SIZE]</strong>"</code>, where `[SIZE]` is one of `0`, `1`, `2`, `3`, `4`, or `5`.
 
 {% capture snippet %}
 <div class="fsa-level fsa-level--align-baseline">
@@ -206,8 +206,8 @@ relatedItems:
 
 Selectively override icon size at each Media Query breakpoint.
 
-<code>fsa-icon--<strong>[size]]@[breakpoint]</strong></code>, where
-<code>breakpoint</code> is one of
+<code>fsa-icon--<strong>[SIZE]]@[BREAKPOINT]</strong></code>, where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

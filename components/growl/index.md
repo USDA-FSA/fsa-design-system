@@ -180,7 +180,7 @@ Refer to [JavaScript Guidance](#javascript-guidance) for behaviorial details.
 
 ## Variants
 
-Growl Notifications are styled with `class="fsa-growl fsa-growl--[variant]"`.
+Growl Notifications are styled with `class="fsa-growl fsa-growl--[VARIANT]"`.
 
 ### Default
 

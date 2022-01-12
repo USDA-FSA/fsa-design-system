@@ -20,10 +20,10 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 ## Variants
 
-The style for `<textarea>` components always start with `class="fsa-textarea"`, modifiable with one or multiple `fsa-textarea--[variant]`.
+The style for `<textarea>` components always start with `class="fsa-textarea"`, modifiable with one or multiple `fsa-textarea--[VARIANT]`.
 
 ```html
-<textarea class="fsa-textarea fsa-textarea--[variant]" name="Name" placeholder="Placeholder"></textarea>
+<textarea class="fsa-textarea fsa-textarea--[VARIANT]" name="Name" placeholder="Placeholder"></textarea>
 ```
 
 ### Default
@@ -92,7 +92,7 @@ The style for `<textarea>` components always start with `class="fsa-textarea"`, 
 
 ### Disabled
 
-Disabled fields do not have a `class="fsa-textarea--[variant]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-textarea--[VARIANT]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <textarea class="fsa-textarea" disabled="disabled" name="iephg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
@@ -102,7 +102,7 @@ Disabled fields do not have a `class="fsa-textarea--[variant]"`, instead using t
 
 ### Readonly
 
-Readonly fields do not have a `class="fsa-textarea--[variant]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-textarea--[VARIANT]"`, instead using the `readonly` attribute.
 
 {% capture snippet %}
 <textarea class="fsa-textarea" readonly="readonly" name="ilozuphg" placeholder="Placeholder">Lorem ipsum dolor sit amet</textarea>
@@ -114,11 +114,11 @@ Readonly fields do not have a `class="fsa-textarea--[variant]"`, instead using t
 
 Selectively override several style properties at each Media Query breakpoint.
 
-<code>fsa-textarea--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
+<code>fsa-textarea--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
+<code>PROPERTY</code> is one of
 <code>small</code>,
 <code>medium</code>, or
-<code>large</code>, and <code>breakpoint</code> is one of
+<code>large</code>, and <code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

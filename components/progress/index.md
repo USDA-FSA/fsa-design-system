@@ -30,7 +30,7 @@ A Progress indicator, or "Progress Bar" as it is often called, is an essential c
 
 ## Variants and Examples
 
-Progress indicators are styled with `class="fsa-progress [fsa-progress--[variant]"`.
+Progress indicators are styled with `class="fsa-progress [fsa-progress--[VARIANT]"`.
 
 ### Indeterminate, with label
 

@@ -65,7 +65,7 @@ Refer to [JavaScript Guidance](#javascript-guidance) for additional behaviorial.
 
 ## Variants
 
-Modals are styled with `class="fsa-modal [fsa-modal--[variant]]"`.
+Modals are styled with `class="fsa-modal [fsa-modal--[VARIANT]]"`.
 
 ### Default
 

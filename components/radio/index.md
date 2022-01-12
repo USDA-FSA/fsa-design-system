@@ -47,7 +47,7 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 ## Variants
 
-`class="fsa-radio fsa-radio--[variant]"`
+`class="fsa-radio fsa-radio--[VARIANT]"`
 
 ### Default
 

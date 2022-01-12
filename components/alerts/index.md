@@ -20,7 +20,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "inline-alert.js"]
 
 ## Variants
 
-Variants are styled with `class="fsa-alert fsa-alert--[type]"`.
+Variants are styled with `class="fsa-alert fsa-alert--[TYPE]"`.
 
 ### Success
 

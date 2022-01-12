@@ -48,7 +48,7 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 ## Variants
 
-`class="fsa-checkbox fsa-checkbox--[variant]"`
+`class="fsa-checkbox fsa-checkbox--[VARIANT]"`
 
 ### Default
 

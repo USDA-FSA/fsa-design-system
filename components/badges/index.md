@@ -24,7 +24,7 @@ relatedItems:
 
 ## Variants
 
-Badges are styled with `class="fsa-badge fsa-badge--[type] fsa-badge--[size]"`.
+Badges are styled with `class="fsa-badge fsa-badge--[VARIANT] fsa-badge--[SIZE]"`.
 
 * **Read-only**: use a `<span>` element.
 * **Invoke an action**: use a `<button>` element.

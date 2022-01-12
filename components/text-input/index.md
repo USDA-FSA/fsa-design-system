@@ -22,10 +22,10 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 ## Variants
 
-The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variant]`.
+The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[VARIANT]`.
 
 ```html
-<input class="fsa-input fsa-input--[variant]" type="text" name="some_name" value="">
+<input class="fsa-input fsa-input--[VARIANT]" type="text" name="some_name" value="">
 ```
 
 ### Default
@@ -172,7 +172,7 @@ Though it should be **rarely** necessary, the width of `.fsa-input` can be overr
 
 ### Disabled
 
-Disabled fields do not have a `class="fsa-input--[variant]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-input--[VARIANT]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
@@ -182,7 +182,7 @@ Disabled fields do not have a `class="fsa-input--[variant]"`, instead using the 
 
 ### Readonly
 
-Readonly fields do not have a `class="fsa-input--[variant]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-input--[VARIANT]"`, instead using the `readonly` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
@@ -194,13 +194,13 @@ Readonly fields do not have a `class="fsa-input--[variant]"`, instead using the 
 
 Selectively override several style properties at each Media Query breakpoint
 
-<code>fsa-select--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
+<code>fsa-select--<strong>[PROPERTY]@[BREAKPOINT]</strong></code>, where
+<code>PROPERTY</code> is one of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
 <code>fill</code>, or
-<code>inline</code>; and <code>breakpoint</code> is one of
+<code>inline</code>; and <code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

@@ -40,7 +40,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Variants and Examples
 
-Pagination Components can be styled using the `fsa-pagination__label--[variant]` class on Unordered Lists.
+Pagination Components can be styled using the `fsa-pagination__label--[VARIANT]` class on Unordered Lists.
 
 ### Default
 
