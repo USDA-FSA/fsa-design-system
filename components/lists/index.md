@@ -154,7 +154,7 @@ Effectively a CSS Utility, acting as an override.
 
 ## Type
 
-Where `type` attribute is one of <code title="lowercase letters">a</code>, <code title="uppercase letters">A</code>, <code title="lowercase Roman numerals">i</code>, <code title="uppercase Roman numerals">I</code>, or <code title="numbers (default)">1</code> (default).
+Where `TYPE` attribute is one of <code title="lowercase letters">a</code>, <code title="uppercase letters">A</code>, <code title="lowercase Roman numerals">i</code>, <code title="uppercase Roman numerals">I</code>, or <code title="numbers (default)">1</code> (default).
 
 {% capture snippet %}
 <div class="fsa-grid">
