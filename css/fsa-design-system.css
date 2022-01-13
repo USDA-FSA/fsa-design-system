@@ -22382,12 +22382,16 @@ html body.x-ray .fsa-modal {
   font-size: 2rem;
   line-height: 36px;
   line-height: 3.6rem;
+  line-height: 28px;
+  line-height: 2.8rem;
   color: #0068ad;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: baseline;
-      align-items: baseline;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 4px;
+  gap: 0.4rem;
 }
 
 .ds-related-card__item:focus-visible .ds-related-card__title {
@@ -22397,13 +22401,6 @@ html body.x-ray .fsa-modal {
 
 .ds-related-card__item:hover .ds-related-card__title {
   text-decoration: underline;
-}
-
-.ds-related-card__arr {
-  width: 12px;
-  width: 1.2rem;
-  margin-left: 8px;
-  margin-left: 0.8rem;
 }
 
 h2[id] + .ds-anatomy {
