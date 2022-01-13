@@ -14,16 +14,16 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ul class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a href="#" class="fsa-breadcrumb__link">Home</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Home</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="#" class="fsa-breadcrumb__link">Level 1</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Level 1</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="#" class="fsa-breadcrumb__link">Level 2</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Level 2</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="#" class="fsa-breadcrumb__link">Level 3</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Level 3</a>
       </li>
     </ul>
   </nav>
@@ -43,7 +43,7 @@ Breadcrumbs are typically paired with the `<h1>` page title. The following examp
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a href="/" class="fsa-breadcrumb__link">Home</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Home</a>
       </li>
     </ol>
   </nav>
@@ -61,7 +61,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a href="link/to/level-0/" class="fsa-breadcrumb__link">
+        <a href="/link.html" class="fsa-breadcrumb__link">
           <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
           </svg>
@@ -69,7 +69,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
         </a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link/to/level-0/level-1/" class="fsa-breadcrumb__link">
+        <a href="/link.html" class="fsa-breadcrumb__link">
           <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
           </svg>
@@ -77,7 +77,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
         </a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link/to/level-0/level-1/level-2/" class="fsa-breadcrumb__link">
+        <a href="/link.html" class="fsa-breadcrumb__link">
           <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
           </svg>
@@ -85,7 +85,7 @@ Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or c
         </a>
       </li>
       <li class="fsa-breadcrumb__item" aria-current="page">
-        <a href="link/to/level-0/level-1/level-2/level-3/" class="fsa-breadcrumb__link">
+        <a href="/link.html" class="fsa-breadcrumb__link">
           <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z"></path>
           </svg>
@@ -110,16 +110,16 @@ In this example, the last crumb is indeed the current page - though with an alte
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a href="/" class="fsa-breadcrumb__link">Home</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Home</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link.html" class="fsa-breadcrumb__link">Farm Micro Authority</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Farm Micro Authority</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link.html" class="fsa-breadcrumb__link">Inspections</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Inspections</a>
       </li>
       <li class="fsa-breadcrumb__item" aria-current="step">
-        <a href="link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Inspection Detail</a>
       </li>
     </ol>
   </nav>
@@ -140,19 +140,19 @@ In this example the immediate parent, *American League*, acts as the last crumb 
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a href="/" class="fsa-breadcrumb__link">Home</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Home</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link.html" class="fsa-breadcrumb__link">Sports</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Sports</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link.html" class="fsa-breadcrumb__link">Baseball</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">Baseball</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link.html" class="fsa-breadcrumb__link">MLB</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">MLB</a>
       </li>
       <li class="fsa-breadcrumb__item">
-        <a href="link.html" class="fsa-breadcrumb__link">American League</a>
+        <a href="/link.html" class="fsa-breadcrumb__link">American League</a>
       </li>
     </ol>
   </nav>

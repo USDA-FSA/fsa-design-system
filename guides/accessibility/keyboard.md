@@ -36,14 +36,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "keyboard-trap.js"]
 
 
 ```html
-<p><a href="#">Link to nowhere 1.</a></p>
-<p><a href="#">Link to nowhere 2.</a></p>
+<p><a href="/link.html">Link to nowhere 1.</a></p>
+<p><a href="/link.html">Link to nowhere 2.</a></p>
 <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content.</a></p>
 <div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 ```
 <div class="ds-preview">
-  <p><a href="#">Link to nowhere 1.</a></p>
-  <p><a href="#">Link to nowhere 2.</a></p>
+  <p><a href="/link.html">Link to nowhere 1.</a></p>
+  <p><a href="/link.html">Link to nowhere 2.</a></p>
   <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content.</a></p>
   <div id="hiddenContent" style="display:none;" tabindex='-1'>This div was hidden, now it's not!</div>
 </div>
@@ -53,16 +53,16 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "keyboard-trap.js"]
 
 ### Keyboard trap
 
-<a class="sr-only moveFocus" href="#">Hidden.</a>
+<a class="sr-only moveFocus" href="/link.html">Hidden.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
+<a class="keyboardTrap" href="/link.html">Select to disable keyboard trap.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
+<a class="keyboardTrap" href="/link.html">Select to disable keyboard trap.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
+<a class="keyboardTrap" href="/link.html">Select to disable keyboard trap.</a>
 
-<a class="keyboardTrap" href="#">Select to disable keyboard trap.</a>
+<a class="keyboardTrap" href="/link.html">Select to disable keyboard trap.</a>
 
-<a class="sr-only moveFocus" href="#">Hidden.</a>
+<a class="sr-only moveFocus" href="/link.html">Hidden.</a>
 
 > This is an example of a keyboard trap. Focus moves in a loop making the rest of the page inaccessible. A quick test is to tab through the page quickly and ensure you can get focus back to the address bar.

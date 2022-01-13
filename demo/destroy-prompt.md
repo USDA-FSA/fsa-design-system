@@ -11,7 +11,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       <h2 class="fsa-growl__title">Inspection #1234 Deleted</h2>
     </div>
     <div class="fsa-growl__bd">
-      <p>Message goes here if you like or something, <a href="link.html">with a link</a> if necessary.</p>
+      <p>Message goes here if you like or something, <a href="/link.html">with a link</a> if necessary.</p>
       <p>And another line here for kicks.</p>
       <p class="fsa-level">
         <button data-behavior="growl-dismiss" class="fsa-btn fsa-btn--small fsa-btn--secondary" type="button">Button</button>

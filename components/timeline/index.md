@@ -36,13 +36,13 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
       </svg>
     </div>
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Jane Doe</a></strong> <span class="fsa-label">Approved</span> request on
+      <strong><a href="/link.html">Jane Doe</a></strong> <span class="fsa-label">Approved</span> request on
       <time datetime="2015-05-28T09:02:10.517-05:00">Wednesday, 04/05/2015 5:08 PM</time>
     </div>
   </div>
   <div class="fsa-timeline__item fsa-timeline__item--user">
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Jane Doe</a></strong> commented on
+      <strong><a href="/link.html">Jane Doe</a></strong> commented on
       <time datetime="2015-05-28T09:02:10.517-05:00">Wednesday, 04/05/2015 5:10 PM</time>
       <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('See **.fsa-timeline__item--editing** example.')">Edit</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Likely use a **Prompt** Notification variant.')">Delete</button> </span>
     </div>
@@ -52,14 +52,14 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
   </div>
   <div class="fsa-timeline__item fsa-timeline__item--system">
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Jane Doe</a></strong>
-      <span class="fsa-label fsa-label--general">Assigned</span> to <a href="link.html">Todd Stanley</a> on
+      <strong><a href="/link.html">Jane Doe</a></strong>
+      <span class="fsa-label fsa-label--general">Assigned</span> to <a href="/link.html">Todd Stanley</a> on
       <time datetime="2015-05-28T09:02:10.517-05:00">Thursday, 04/06/2015 12:28 PM</time>
     </div>
   </div>
   <div class="fsa-timeline__item fsa-timeline__item--user">
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Todd Stanley</a></strong> commented on
+      <strong><a href="/link.html">Todd Stanley</a></strong> commented on
       <time datetime="2015-05-28T09:02:10.517-05:00">Thursday, 05/28/2015 7:02 AM</time>
       <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('See **.fsa-timeline__item--editing** example.')">Edit</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button" onclick="alert('Likely use a **Prompt** Notification variant.')">Delete</button> </span>
     </div>
@@ -74,7 +74,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
       </svg>
     </div>
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Todd Stanley</a></strong> changed the status to
+      <strong><a href="/link.html">Todd Stanley</a></strong> changed the status to
       <span class="fsa-label fsa-label--warning">In Progress</span> on
       <time datetime="2015-05-28T09:02:10.517-05:00">Thursday, 05/28/2015 8:30 AM</time>
     </div>
@@ -96,14 +96,14 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
       </svg>
     </div>
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Jane Doe</a></strong> changed the Due Date to
+      <strong><a href="/link.html">Jane Doe</a></strong> changed the Due Date to
       <time datetime="2015-05-28T09:02:10.517-05:00">06/13/2015</time> on
       <time datetime="2015-05-28T09:02:10.517-05:00">Tuesday, 05/28/2015 8:58 AM</time>
     </div>
   </div>
   <div class="fsa-timeline__item fsa-timeline__item--user">
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Jane Doe</a></strong> commented on
+      <strong><a href="/link.html">Jane Doe</a></strong> commented on
       <time datetime="2015-05-28T09:02:10.517-05:00">Tuesday, 05/28/2015 9:02 AM</time>
     </div>
     <div class="fsa-timeline__bd">
@@ -117,7 +117,7 @@ The `fsa-timeline` component's structure enables flexible usage of other Design 
       </svg>
     </div>
     <div class="fsa-timeline__hd">
-      <strong><a href="link.html">Jane Doe</a></strong> <span class="fsa-label fsa-label--alert">Rejected</span> this Inspection Request on
+      <strong><a href="/link.html">Jane Doe</a></strong> <span class="fsa-label fsa-label--alert">Rejected</span> this Inspection Request on
       <time datetime="2015-05-28T09:02:10.517-05:00">Friday, 06/08/2015 5:58 PM</time>
     </div>
   </div>
@@ -163,7 +163,7 @@ User nodes are styled with `class="fsa-timeline__item--user"`
 {% capture snippet %}
 <div class="fsa-timeline__item fsa-timeline__item--user">
   <div class="fsa-timeline__hd">
-    <strong><a href="link.html">Jane Doe</a></strong> commented on
+    <strong><a href="/link.html">Jane Doe</a></strong> commented on
     <time datetime="2015-05-28T09:02:10.517-05:00">Wednesday, 04/05/2015 5:10 PM</time>
     <span class="fsa-timeline__action"> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">[Action]</button> <button class="fsa-btn fsa-btn--small fsa-btn--flat" type="button">[Action]</button> </span>
   </div>

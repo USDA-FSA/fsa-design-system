@@ -108,6 +108,68 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 {% include preview-and-snippet.html %}
 
+### Prefix
+
+{% capture snippet %}
+<div class="fsa-spinbox">
+  <div class="fsa-spinbox__number">
+    <span class="fsa-affix fsa-affix--fill">
+      <label for="affix-example-block__24" class="fsa-affix__prefix" aria-hidden="true" title="Dollars">$</label>
+      <input class="fsa-input fsa-spinbox__input fsa-affix__item" name="some_name" id="affix-example-block__24" type="number" value="10">
+    </span>
+  </div>
+  <div class="fsa-spinbox__actions" aria-hidden="true">
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+  </div>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Suffix
+
+{% capture snippet %}
+<div class="fsa-spinbox">
+  <div class="fsa-spinbox__number">
+    <span class="fsa-affix fsa-affix--fill">
+      <input class="fsa-input fsa-spinbox__input fsa-affix__item" name="some_name" id="affix-example-block__25" type="number" value="0.65" step="0.01">
+      <label for="affix-example-block__25" class="fsa-affix__suffix" aria-hidden="true" title="kilograms">kg</label>
+    </span>
+  </div>
+  <div class="fsa-spinbox__actions" aria-hidden="true">
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+  </div>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix and Suffix
+
+{% capture snippet %}
+<div class="fsa-spinbox">
+  <div class="fsa-spinbox__number">
+    <span class="fsa-affix fsa-affix--fill">
+      <label for="affix-example-block__26" class="fsa-affix__prefix" aria-hidden="true" title="Left Border">
+        <svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 21h2v-2h-2v2zm0-4h2v-2h-2v2zm0-12h2V3h-2v2zm0 4h2V7h-2v2zm0 4h2v-2h-2v2zm-4 8h2v-2H7v2zM7 5h2V3H7v2zm0 8h2v-2H7v2zm-4 8h2V3H3v18zM19 9h2V7h-2v2zm-4 12h2v-2h-2v2zm4-4h2v-2h-2v2zm0-14v2h2V3h-2zm0 10h2v-2h-2v2zm0 8h2v-2h-2v2zm-4-8h2v-2h-2v2zm0-8h2V3h-2v2z"></path></svg>
+      </label>
+      <input class="fsa-input fsa-spinbox__input fsa-affix__item" name="some_name" id="affix-example-block__26" type="number" value="8" step="1">
+      <label for="affix-example-block__26" class="fsa-affix__suffix" aria-hidden="true" title="Pixels">
+        px
+      </label>
+    </span>
+  </div>
+  <div class="fsa-spinbox__actions" aria-hidden="true">
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--increment" type="button" data-behavior="spinbox-spin" title="Increase"></button>
+    <button tabindex="-1" class="fsa-spinbox__btn fsa-spinbox__btn--decrement" type="button" data-behavior="spinbox-spin" title="Decrease"></button>
+  </div>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ### Step Value (`step="5"`)
 
 The Spinbox Component allows for incrementing of data by utilizing the `step=""` attribute of the `input` element.

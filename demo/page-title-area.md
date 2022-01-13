@@ -7,10 +7,10 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
     <ol class="fsa-breadcrumb__list">
       <li class="fsa-breadcrumb__item">
-        <a class="fsa-breadcrumb__link" href="link.html">Inspections</a>
+        <a class="fsa-breadcrumb__link" href="/link.html">Inspections</a>
       </li>
       <li class="fsa-breadcrumb__item" aria-current="page">
-        <a class="fsa-breadcrumb__link" href="link.html">Inspection Detail</a>
+        <a class="fsa-breadcrumb__link" href="/link.html">Inspection Detail</a>
       </li>
     </ol>
   </nav>

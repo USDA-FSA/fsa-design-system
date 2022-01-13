@@ -14,10 +14,11 @@ relatedItems:
   - "Stepped Control"
 ---
 
-## Types
+## Variants
 
 <div class="ds-preview">
-  <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--popout">
+  <h3 class="fsa-m--none">Popout</h3>
+  <div class="fsa-p--m fsa-bg--white fsa-m--l fsa-shadow--popout">
     <div class="fsa-grid">
       <div class="fsa-grid__1 fsa-grid__4/12@xl"><strong>Sass</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">$shadow-size-popout</code></div>
       <div class="fsa-grid__1 fsa-grid__8/12@xl"><strong>CSS</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">
@@ -29,7 +30,8 @@ relatedItems:
         </code></div>
     </div>
   </div>
-  <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--overlay">
+  <h3 class="fsa-m--none">Overlay</h3>
+  <div class="fsa-p--m fsa-bg--white fsa-m--l fsa-shadow--overlay">
     <div class="fsa-grid">
       <div class="fsa-grid__1 fsa-grid__4/12@xl"><strong>Sass</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">$shadow-size-overlay</code></div>
       <div class="fsa-grid__1 fsa-grid__8/12@xl"><strong>CSS</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">
@@ -41,7 +43,8 @@ relatedItems:
         </code></div>
     </div>
   </div>
-  <div class="fsa-p--m fsa-bg--white fsa-m--xl fsa-shadow--raised">
+  <h3 class="fsa-m--none">Raised</h3>
+  <div class="fsa-p--m fsa-bg--white fsa-m--l fsa-shadow--raised">
     <div class="fsa-grid">
       <div class="fsa-grid__1 fsa-grid__4/12@xl"><strong>Sass</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">$shadow-size-raised</code></div>
       <div class="fsa-grid__1 fsa-grid__8/12@xl"><strong>CSS</strong><br><code class="fsa-bg--transparent fsa-text-size--0 fsa-text-size--2@l">
@@ -56,7 +59,6 @@ relatedItems:
 </div>
 
 ## Elevation
-
 
 <div class="ds-preview">
   <figure class="fsa-text-align--center">
@@ -89,8 +91,6 @@ relatedItems:
 
 Refer to [CSS Utilities / Shadows]({{ site.baseurl }}utilities/#shadows) to selectively apply shadows to content blocks.
 
-#### Example
-
 ```html
 <div class="fsa-shadow--raised">Raised</div>
 ```
@@ -104,7 +104,6 @@ Refer to [CSS Utilities / Shadows]({{ site.baseurl }}utilities/#shadows) to sele
 
 ```scss
 // fsa-style/src/stylesheets/core/_fsa.variables.scss
-
 $shadow-size-popout
 $shadow-size-overlay
 $shadow-size-raised
@@ -113,9 +112,8 @@ $shadow-size-none
 
 ```scss
 // Applying with SCSS
-
 .custom-component {
-  box-shadow: $shadow-size-[TYPE];
+  box-shadow: $shadow-size-[VARIANT];
 }
 ```
 

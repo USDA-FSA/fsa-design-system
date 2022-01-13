@@ -50,12 +50,11 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 {% include anatomy.html %}
 
 ```html
-<el class="fsa-level[@BP] [fsa-level[--modifiers[@BP]]]"> <!-- Container -->
-  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
-  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
+<el class="fsa-level[@BP] [fsa-level[--MODIFIERS[@BP]]]"> <!-- Container -->
+  <el [class="fsa-level__item[--MODIFIERS[@BP]]"]>item</el> <!-- Item -->
+  <el [class="fsa-level__item[--MODIFIERS[@BP]]"]>item</el> <!-- Item -->
 </el>
 ```
-
 
 ## Level Container
 
@@ -798,13 +797,13 @@ text
 Responsive modifiers are available for both Level **Containers** and Level **Items** to be selectively applied per media query breakpoint.
 
 ```html
-<el class="fsa-level[@BP] [fsa-level[--modifiers[@BP]]]"> <!-- Container -->
-  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
-  <el [class="fsa-level__item[--modifiers[@BP]]"]>item</el> <!-- Item -->
+<el class="fsa-level[@BP] [fsa-level[--MODIFIERS[@BREAKPOINT]]]"> <!-- Container -->
+  <el [class="fsa-level__item[--MODIFIERS[@BREAKPOINT]]"]>item</el> <!-- Item -->
+  <el [class="fsa-level__item[--MODIFIERS[@BREAKPOINT]]"]>item</el> <!-- Item -->
 </el>
 ```
 
-Where `BP` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>; and `modifiers` can be one or more of variants documented above in [Level Container](#level-container) and [Level Items](#level-items).
+Where `BREAKPOINT` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>; and `modifiers` can be one or more of variants documented above in [Level Container](#level-container) and [Level Items](#level-items).
 
 {% assign rwdSize = "phone-big" %}
 {% capture rwdURL %}

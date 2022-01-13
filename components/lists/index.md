@@ -154,7 +154,7 @@ Effectively a CSS Utility, acting as an override.
 
 ## Type
 
-Where `type` attribute is one of <code title="lowercase letters">a</code>, <code title="uppercase letters">A</code>, <code title="lowercase Roman numerals">i</code>, <code title="uppercase Roman numerals">I</code>, or <code title="numbers (default)">1</code> (default).
+Where `TYPE` attribute is one of <code title="lowercase letters">a</code>, <code title="uppercase letters">A</code>, <code title="lowercase Roman numerals">i</code>, <code title="uppercase Roman numerals">I</code>, or <code title="numbers (default)">1</code> (default).
 
 {% capture snippet %}
 <div class="fsa-grid">
@@ -215,7 +215,7 @@ Where `type` attribute is one of <code title="lowercase letters">a</code>, <code
 
 Selectively apply List styles at any Media Query breakpoint.
 
-<code>class="fsa-list--<strong>[variant]@[breakpoint]</strong>"</code> where `variant` is one of `bullet`, `number`, `inline`, or `unstyled`, and `breakpoint` is one of `s`, `m`, `l`, or `xl`.
+<code>class="fsa-list--<strong>[VARIANT]@[BREAKPOINT]</strong>"</code> where `VARIANT` is one of `bullet`, `number`, `inline`, or `unstyled`, and `BREAKPOINT` is one of `s`, `m`, `l`, or `xl`.
 
 {% assign rwdSize = "phone" %}
 {% capture rwdURL %}

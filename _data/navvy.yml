@@ -134,7 +134,7 @@
         - subtitle: "Spinbox"
           subhref: "components/spinbox"
           img: "img/subcategories/spinbox.png"
-          keyword: "Input,Number,Stepper"
+          keyword: "Input,Number,Stepper,Prefix,Suffix,Affix"
 
         - subtitle: "Stepped Control"
           subhref: "components/stepped-control"
@@ -149,7 +149,7 @@
         - subtitle: "Text Input"
           subhref: "components/text-input"
           img: "img/subcategories/text-input.png"
-          keyword: "Textbox,Input"
+          keyword: "Textbox,Input,Prefix,Suffix,Affix"
 
         - subtitle: "Textarea"
           subhref: "components/textarea"

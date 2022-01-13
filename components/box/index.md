@@ -80,10 +80,10 @@ While these modifiers are specific to `.fsa-box`, other CSS Utilities and Helper
 
 ## Responsive
 
-Selectively apply the Box style to an element at each Media Query breakpoint, where `breakpoint` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>.
+Selectively apply the Box style to an element at each Media Query breakpoint, where `BREAKPOINT` is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>.
 
 ```html
-<element class="fsa-box@[breakpoint]">...</element>
+<element class="fsa-box@[BREAKPOINT]">...</element>
 ```
 
 {% assign rwdSize = "phone" %}
@@ -93,10 +93,10 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__box.html
 
 {% include rwd-viewer.html %}
 
-Selectively override several style properties of `.fsa-box` at each Media Query breakpoint, where `property` is one of <code title="background-color">bg</code>, <code title="border-width">bw</code>, or <code title="border-radius">br</code>, and where <code>breakpoint</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>
+Selectively override several style properties of `.fsa-box` at each Media Query breakpoint, where `PROPERTY` is one of <code title="background-color">bg</code>, <code title="border-width">bw</code>, or <code title="border-radius">br</code>, and where <code>BREAKPOINT</code> is one of <code title="small">s</code>, <code title="medium">m</code>, <code title="large">l</code>, or <code title="extra large">xl</code>
 
 ```html
-<element class="fsa-box fsa-box[property]@[breakpoint]">...</element>
+<element class="fsa-box fsa-box[PROPERTY]@[BREAKPOINT]">...</element>
 ```
 
 {% assign rwdSize = "phone" %}
