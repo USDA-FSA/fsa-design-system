@@ -1181,7 +1181,7 @@ kbd {
   color: #494440;
   border: 1px solid #dbdad9;
   box-shadow: 0 1px 0 #dbdad9;
-  border-radius: 0.4rem=0.1 rem;
+  border-radius: 0.4rem;
   font-weight: 700;
   display: inline-block;
   white-space: nowrap;
@@ -3999,7 +3999,7 @@ img {
   border-color: transparent;
 }
 
-.fsa-input[SIZE] {
+.fsa-input[size] {
   width: auto;
 }
 
@@ -5421,10 +5421,7 @@ th[aria-sort] {
   overflow-x: auto;
   overflow-y: hidden;
   background-image: linear-gradient(to right, #f7f7f7, #f7f7f7), linear-gradient(to right, #f7f7f7, #f7f7f7), linear-gradient(to right, rgba(73, 68, 64, 0.15), transparent), linear-gradient(to left, rgba(73, 68, 64, 0.15), transparent);
-  background-position: left center,
- right center,
- left center,
- right center;
+  background-position: left center, right center, left center, right center;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
   background-size: 3.6rem 100%, 3.6rem 100%, 1.8rem 100%, 1.8rem 100%;
@@ -6897,7 +6894,7 @@ a.fsa-badge:active {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .fsa-search__submit {
     padding-bottom: 1px;
-  }[SIZE]
+  }
 }
 
 .fsa-search__input, .fsa-search__input[size] {
@@ -8141,10 +8138,7 @@ a.fsa-badge:active {
   overflow-x: auto;
   overflow-y: hidden;
   background-image: linear-gradient(to right, #f7f7f7, #f7f7f7), linear-gradient(to right, #f7f7f7, #f7f7f7), linear-gradient(to right, rgba(73, 68, 64, 0.15), transparent), linear-gradient(to left, rgba(73, 68, 64, 0.15), transparent);
-  background-position: left center,
- right center,
- left center,
- right center;
+  background-position: left center, right center, left center, right center;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
   background-size: 3.6rem 100%, 3.6rem 100%, 1.8rem 100%, 1.8rem 100%;
@@ -8191,10 +8185,7 @@ a.fsa-badge:active {
   overflow-x: auto;
   overflow-y: hidden;
   background-image: linear-gradient(to right, #ffffff, #ffffff), linear-gradient(to right, #ffffff, #ffffff), linear-gradient(to right, #f0f0f0, transparent), linear-gradient(to left, #f0f0f0, transparent);
-  background-position: left center,
- right center,
- left center,
- right center;
+  background-position: left center, right center, left center, right center;
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: 3.6rem 100%, 3.6rem 100%, 1.8rem 100%, 1.8rem 100%;
@@ -8207,10 +8198,7 @@ a.fsa-badge:active {
   overflow-x: auto;
   overflow-y: hidden;
   background-image: linear-gradient(to right, #f0f0f0, #f0f0f0), linear-gradient(to right, #f0f0f0, #f0f0f0), linear-gradient(to right, rgba(73, 68, 64, 0.15), transparent), linear-gradient(to left, rgba(73, 68, 64, 0.15), transparent);
-  background-position: left center,
- right center,
- left center,
- right center;
+  background-position: left center, right center, left center, right center;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   background-size: 3.6rem 100%, 3.6rem 100%, 1.8rem 100%, 1.8rem 100%;
@@ -9633,7 +9621,7 @@ h1 + .fsa-field {
   display: block;
   width: 100%;
 }
-[SIZE]
+
 .fsa-field__item--short {
   max-width: 60px;
   max-width: 6rem;
@@ -11423,7 +11411,7 @@ button:not([disabled]).fsa-stepped-tabs__label:active {
 }
 
 .fsa-spinbox__number:focus-within {
-  position: relative;[SIZE]
+  position: relative;
   z-index: 1;
 }
 
