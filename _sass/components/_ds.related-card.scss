@@ -45,10 +45,12 @@
   &__title {
 
     @include font-size(4);
+    line-height: $line-height-medium;
     color: $color-fsa-link;
     font-weight: $font-bold;
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    gap: $size-base;
 
     .ds-related-card__item:focus-visible & {
       outline: 3px solid $form-focus-color;
@@ -60,12 +62,5 @@
     }
 
   }
-
-  &__arr {
-    width: $size-default;
-    margin-left: $size-small;
-  }
-
-  &__description {}
 
 }
