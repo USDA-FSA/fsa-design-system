@@ -497,7 +497,11 @@ $('body').on('change', '[data-behavior~="combinator-toggle-slots"]', function(ev
 $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(event) {
 
   const $self = $(this);
-  const $target = $('#combinatorTarget');
+  if ($self.attr('data-toggle-class-target')) {
+    var $target = $('#' + $self.attr('data-toggle-class-target'));
+  } else {
+    var $target = $('#combinatorTarget');
+  }
 
   $target.toggleClass($self.val());
 
@@ -581,7 +585,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
     $targetLabel.attr('hidden', true);
 
     $('#combinatorIconLeft')
-      .prop('checked', true)
+      .prop('checked', false)
       .prop('disabled', true)
     ;
     $('#combinatorIconRight')

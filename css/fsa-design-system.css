@@ -22300,6 +22300,15 @@ html body.x-ray .fsa-modal {
   padding: 2.4rem;
 }
 
+@media (min-width: 54em) {
+  .ds-combinator__preview {
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+}
+
 html body.x-ray .ds-combinator__preview {
   background-color: rgba(0, 0, 0, 0.1);
   overflow: auto;

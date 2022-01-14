@@ -53,13 +53,6 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
-      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconOnly">Icon Only</label>
-      <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconOnly" name="combinatorIconOnly" data-behavior="combinator-toggle-icon-only" data-label-target="combinatorTextLabel">
-        <span class="fsa-switch__track"></span>
-      </label>
-    </div>
-    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconLeft">Icon Left</label>
       <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconLeft" name="combinatorIconLeft" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorIconSampleLeft">
@@ -70,6 +63,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconRight">Icon Right</label>
       <label class="fsa-switch ds-combinator__switch">
         <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconRight" name="combinatorIconRight" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorIconSampleRight">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconOnly">Icon Only</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconOnly" name="combinatorIconOnly" data-behavior="combinator-toggle-icon-only" data-label-target="combinatorTextLabel">
         <span class="fsa-switch__track"></span>
       </label>
     </div>

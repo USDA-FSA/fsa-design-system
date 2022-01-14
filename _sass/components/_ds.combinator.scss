@@ -47,6 +47,11 @@
     & {
       flex: 1;
       padding: $size-medium;
+      @include breakpoint(L) {
+        display: flex;
+        place-content: center;
+        place-items: center;
+      }
     }
 
     html body.x-ray & {
