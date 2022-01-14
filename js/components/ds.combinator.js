@@ -74,6 +74,54 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
 
 })
 
+$('body').on('click', '[data-behavior~="combinator-check"]', function(event) {
+
+  // USAGE: <button class="fsa-btn" data-behavior="combinator-check" data-check-target="#combinatorIcon" type="button">Check $target</button>
+
+  const $self = $(this);
+  const $target = $($self.attr('data-check-target'));
+
+  if(!$target.is(':checked')) {
+    $target.click();
+  }
+
+})
+
+$('body').on('click', '[data-behavior~="combinator-uncheck"]', function(event) {
+
+  // USAGE: <button class="fsa-btn fsa-bg--black" data-behavior="combinator-uncheck" data-uncheck-target="#combinatorIcon" type="button">Uncheck $target</button>
+
+  const $self = $(this);
+  const $target = $($self.attr('data-uncheck-target'));
+
+  if($target.is(':checked')) {
+    $target.click();
+  }
+
+})
+
+$('body').on('click', '[data-behavior~="combinator-disable"]', function(event) {
+
+  // ENABLE: <button class="fsa-btn fsa-bg--black" data-behavior="combinator-disable" data-disable-target="#combinatorIcon" type="button">Disable $target</button>
+
+  const $self = $(this);
+  const $target = $($self.attr('data-disable-target'));
+
+  $target.prop('disabled', true)
+
+})
+
+$('body').on('click', '[data-behavior~="combinator-enable"]', function(event) {
+
+  // USAGE: <button class="fsa-btn fsa-bg--black" data-behavior="combinator-enable" data-enable-target="#combinatorIcon" type="button">Enable $target</button>
+
+  const $self = $(this);
+  const $target = $($self.attr('data-enable-target'));
+
+  $target.prop('disabled', false)
+
+})
+
 $('body').on('change', '[data-behavior~="combinator-toggle-form-error"]', function(event) {
 
   const $self = $(this);
