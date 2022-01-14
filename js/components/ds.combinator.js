@@ -65,7 +65,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
 
   const $self = $(this);
   if ($self.attr('data-toggle-class-target')) {
-    var $target = $('#' + $self.attr('data-toggle-class-target'));
+    var $target = $($self.attr('data-toggle-class-target'));
   } else {
     var $target = $('#combinatorTarget');
   }
@@ -119,7 +119,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
 
   const $self = $(this);
   const $target = $('#combinatorTarget');
-  const $targetLabel = $('#' + $self.attr('data-label-target'));
+  const $targetLabel = $($self.attr('data-label-target'));
   const $iconLeft = $('#combinatorIconSampleLeft');
   const $iconRight = $('#combinatorIconSampleRight');
   const $textLabel = $('#combinatorTextLabel').text();
