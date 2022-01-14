@@ -47,6 +47,7 @@
     & {
       flex: 1;
       padding: $size-medium;
+      overflow: hidden;
       @include breakpoint(L) {
         display: flex;
         place-content: center;

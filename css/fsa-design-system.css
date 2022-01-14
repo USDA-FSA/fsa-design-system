@@ -22298,6 +22298,7 @@ html body.x-ray .fsa-modal {
       flex: 1;
   padding: 24px;
   padding: 2.4rem;
+  overflow: hidden;
 }
 
 @media (min-width: 54em) {
