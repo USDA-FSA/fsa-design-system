@@ -57,7 +57,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "inline-alert.js"]
 
 ## Variants
 
-Variants are styled with `class="fsa-alert fsa-alert--[type]"`.
+Variants are styled with `class="fsa-alert fsa-alert--[VARIANT]"`.
 
 ### Success
 
@@ -116,7 +116,7 @@ Variants are styled with `class="fsa-alert fsa-alert--[type]"`.
 {% capture snippet %}
 <div class="fsa-alert fsa-alert--success fsa-alert--no-icon" role="alert">
   <div class="fsa-alert__body">
-    <h3 class="fsa-alert__heading">Optional [type] title</h3>
+    <h3 class="fsa-alert__heading">Optional title</h3>
     <p class="fsa-alert__text">Lorem ipsum <strong>bold text</strong>, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>

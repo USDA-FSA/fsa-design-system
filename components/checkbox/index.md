@@ -48,7 +48,7 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 ## Variants
 
-`class="fsa-checkbox fsa-checkbox--[variant]"`
+`class="fsa-checkbox fsa-checkbox--[VARIANT]"`
 
 ### Default
 
@@ -252,7 +252,7 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
       <td aria-label="State">Kansas</td>
       <td aria-label="County">Cowley</td>
       <td aria-label="Farm Number">3510</td>
-      <td aria-label="Assigned to"><a href="link.html">Norm Peterson</a></td>
+      <td aria-label="Assigned to"><a href="/link.html">Norm Peterson</a></td>
       <td aria-label="Due Date">
         <time datetime="2018-12-11">12/11/2018</time>
       </td>
@@ -275,7 +275,7 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
       <td aria-label="State">Kansas</td>
       <td aria-label="County">Johnson</td>
       <td aria-label="Farm Number">8787</td>
-      <td aria-label="Assigned to"><a href="link.html">Carla Tortelli</a></td>
+      <td aria-label="Assigned to"><a href="/link.html">Carla Tortelli</a></td>
       <td aria-label="Due Date">
         <time datetime="2018-08-05">08/05/2018</time>
       </td>
@@ -298,7 +298,7 @@ There is no `indeterminate` attribute, and it cannot be conveyed via HTML; rathe
       <td aria-label="State">Missouri</td>
       <td aria-label="County">Jackson</td>
       <td aria-label="Farm Number">8080</td>
-      <td aria-label="Assigned to"><a href="link.html">Ernie Pantusso</a></td>
+      <td aria-label="Assigned to"><a href="/link.html">Ernie Pantusso</a></td>
       <td aria-label="Due Date">
         <time datetime="2018-10-01">10/01/2018</time>
       </td>

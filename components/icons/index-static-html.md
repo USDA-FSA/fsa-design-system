@@ -15,7 +15,7 @@ relatedItems:
   - "item"
 ---
 
-<code>class="fsa-icon--<strong>[size]</strong>"</code>, where `[size]` is one of `0`, `1`, `2`, `3`, `4`, or `5`.
+<code>class="fsa-icon--<strong>[SIZE]</strong>"</code>, where `[SIZE]` is one of `0`, `1`, `2`, `3`, `4`, or `5`.
 
 {% capture snippet %}
 <div class="fsa-level fsa-level--align-baseline">
@@ -48,7 +48,7 @@ relatedItems:
       </div>
     </div>
   </h3>
-  
+
   <div id="ds-icon-find__icon-list-desc" class="fsa-color--tertiary-300">Click an icon to copy its code snippet</div>
 </div>
 
@@ -206,8 +206,8 @@ relatedItems:
 
 Selectively override icon size at each Media Query breakpoint.
 
-<code>fsa-icon--<strong>[size]]@[breakpoint]</strong></code>, where
-<code>breakpoint</code> is one of
+<code>fsa-icon--<strong>[SIZE]]@[BREAKPOINT]</strong></code>, where
+<code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -259,7 +259,7 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 **Place icons *inside* links.** If icons accompany a text link, place the icon inside the link to prevent the screen reader from announcing the link twice.
 
 {% capture snippet %}
-<a href="">
+<a href="/link.html">
   <div class="fsa-level">
     <svg class="fsa-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
     <span>Profile</span>
@@ -272,7 +272,7 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 **Provide descriptive text if a standalone icon has semantic meaning.** If you need to expose an icon to screen readers, provide an `aria-labelledby` attribute mapped to accompanying `id` value of a `<title>` element available within the `svg`.
 
 {% capture snippet %}
-<a href="link.html">
+<a href="/link.html">
   <svg class="fsa-icon" aria-labelledby="profile-title" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
     <title id="profile-title">Profile</title>
     <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>

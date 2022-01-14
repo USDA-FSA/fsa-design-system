@@ -64,16 +64,16 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Variants
 
-Labels are styled with `class="fsa-label fsa-label--[type] fsa-label--[size]"`.
+Labels are styled with `class="fsa-label fsa-label--[VARIANT] fsa-label--[SIZE]"`.
 
 * **Read-only**: use a `<span>` element.
 * **Invoke an action**: use a `<button>` element.
 * **Navigate somewhere**: use an `<a>` elment.
 
 ```html
-<span class="fsa-label fsa-label--[variant]">Label</span>
-<button class="fsa-label fsa-label--[variant]" type="button">Label</button>
-<a class="fsa-label fsa-label--[variant]" href="link.html">Label</a>
+<span class="fsa-label">Label</span>
+<button class="fsa-label" type="button">Label</button>
+<a class="fsa-label" href="/link.html">Label</a>
 ```
 
 ### Default
@@ -163,7 +163,7 @@ Label styles can be applied to nearly any HTML element, defaulting to non-action
 
 {% capture snippet %}
 <div class="fsa-level">
-  <a class="fsa-label" href="link.html">Anchor</a>
+  <a class="fsa-label" href="/link.html">Anchor</a>
   <button class="fsa-label" type="button">Button</button>
   <button class="fsa-label" type="button" disabled="disabled">Disabled Button</button>
 </div>

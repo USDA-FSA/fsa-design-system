@@ -98,11 +98,11 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Variants
 
-Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[variant]`.
+Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-btn--[VARIANT]`.
 
 ```html
-<button class="fsa-btn fsa-btn--[variant]" type="button">Label</button>
-<a class="fsa-btn fsa-btn--[variant]" href="link.html">Label</a>
+<button class="fsa-btn fsa-btn--[VARIANT]" type="button">Label</button>
+<a class="fsa-btn fsa-btn--[VARIANT]" href="/link.html">Label</a>
 ```
 
 ### Primary
@@ -150,7 +150,7 @@ Buttons are styled with `class="fsa-btn"`, modifiable with one or multiple `fsa-
 Each button variant can be modified with one or multiple states:
 
 {% capture snippet %}
-<button class="fsa-btn fsa-btn--[variant] fsa-btn--[state]" type="button">Label</button>
+<button class="fsa-btn fsa-btn--[VARIANT] fsa-btn--[STATE]" type="button">Label</button>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -165,7 +165,7 @@ Each button variant can be modified with one or multiple states:
 
 ### Disabled
 
-Disabled buttons do not have a `class="fsa-btn--[state]"`, instead using the `disabled` attribute.
+Disabled buttons do not have a `class="fsa-btn--[STATE]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <div class="fsa-level">
@@ -318,13 +318,13 @@ Combine the `fsa-btn--plain` variant with **Utilities** such as [Text Color]({{ 
 
 Several of a button's style properties can be selectively modified across each Media Query breakpoint.
 
-<code>fsa-btn--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
+<code>fsa-btn--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
 <code>fill</code>, or
-<code>inline</code>; and <code>breakpoint</code> is one of
+<code>inline</code>; and <code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
@@ -412,7 +412,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__buttons.html
 ## General Guidance
 
 * For multi-stepped user flows (e.g. Wizard) refer to [Stepped Control]({{ site.baseurl }}fsa-design-system/components/stepped-control/) component for usage of buttons within that use case.
-* Button styles can be applied to nearly any HTML element, e.g. `<foo class="fsa-btn fsa-btn--[variant]">Label</foo>`. 99% of the time it will be a `<button>` or `<a>`.
+* Button styles can be applied to nearly any HTML element, e.g. `<foo class="fsa-btn fsa-btn--[VARIANT]">Label</foo>`. 99% of the time it will be a `<button>` or `<a>`.
 * For `<button>` elements, `type` attribute is required, and will most likely be `type="button"`. Use `type="submit"` to submit a `<form>`. Omitting `type` attribute will default to `type="submit"`.
 * Generally, use primary buttons for actions that go to the next step and use secondary buttons for actions that happen on the current page.
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.

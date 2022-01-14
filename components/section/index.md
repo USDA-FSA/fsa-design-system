@@ -10,7 +10,7 @@ suppress_code_toggle: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-Other than background-color variants, they are not strictly visible in the user interface itself. Most page templates likely will use just one `fsa-section--[variant]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
+Other than background-color variants, they are not strictly visible in the user interface itself. Most page templates likely will use just one `fsa-section--[VARIANT]`, though multiple Section rows may be stacked to distinguish horizontal groups of content.
 
 <aside>
   <div class="fsa-alert fsa-alert--info fsa-alert--no-icon">

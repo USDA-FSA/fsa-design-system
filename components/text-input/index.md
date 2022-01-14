@@ -22,10 +22,10 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 
 ## Variants
 
-The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[variant]`.
+The style for `<input>` text components always start with `class="fsa-input"`, modifiable with one or multiple `fsa-input--[VARIANT]`.
 
 ```html
-<input class="fsa-input fsa-input--[variant]" type="text" name="some_name" value="">
+<input class="fsa-input fsa-input--[VARIANT]" type="text" name="some_name" value="">
 ```
 
 ### Default
@@ -56,6 +56,61 @@ The style for `<input>` text components always start with `class="fsa-input"`, m
 
 {% capture snippet %}
 <input class="fsa-input fsa-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder">
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix: Text
+
+{% capture snippet %}
+<span class="fsa-affix">
+  <label for="affix-example__00" class="fsa-affix__prefix" aria-hidden="true" title="Dollars">$</label>
+  <input id="affix-example__00" class="fsa-input fsa-affix__item" type="text" name="some_name" value="">
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix: Icon
+
+{% capture snippet %}
+<span class="fsa-affix">
+  <label for="affix-example__06" class="fsa-affix__prefix" aria-hidden="true"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg></label>
+  <input id="affix-example__06" class="fsa-input fsa-affix__item" type="text" name="some_name" value="">
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Suffix: Text
+
+{% capture snippet %}
+<span class="fsa-affix">
+  <input id="affix-example__12" class="fsa-input fsa-affix__item" type="text" name="some_name" value="25">
+  <label for="affix-example__12" class="fsa-affix__suffix" aria-hidden="true" title="Percent">%</label>
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix/Suffix: Disabled
+
+{% capture snippet %}
+<span class="fsa-affix fsa-affix--disabled">
+  <input id="affix-example__13" class="fsa-input fsa-affix__item" disabled="" type="text" name="some_name" value="120">
+  <label for="affix-example__13" class="fsa-affix__suffix" aria-hidden="true" title="Pounds">lbs</label>
+</span>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Prefix/Suffix: Readonly
+
+{% capture snippet %}
+<span class="fsa-affix fsa-affix--readonly">
+  <input id="affix-example__14" class="fsa-input fsa-affix__item" readonly="" type="text" name="some_name" value="10028">
+  <label for="affix-example__14" class="fsa-affix__suffix" aria-hidden="true">acres</label>
+</span>
 {% endcapture %}
 
 {% include preview-and-snippet.html %}
@@ -117,7 +172,7 @@ Though it should be **rarely** necessary, the width of `.fsa-input` can be overr
 
 ### Disabled
 
-Disabled fields do not have a `class="fsa-input--[variant]"`, instead using the `disabled` attribute.
+Disabled fields do not have a `class="fsa-input--[VARIANT]"`, instead using the `disabled` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" disabled="disabled" type="text" name="1224hd9f" value="Text">
@@ -127,7 +182,7 @@ Disabled fields do not have a `class="fsa-input--[variant]"`, instead using the 
 
 ### Readonly
 
-Readonly fields do not have a `class="fsa-input--[variant]"`, instead using the `readonly` attribute.
+Readonly fields do not have a `class="fsa-input--[VARIANT]"`, instead using the `readonly` attribute.
 
 {% capture snippet %}
 <input class="fsa-input" readonly="readonly" type="text" name="4f" value="Text">
@@ -139,13 +194,13 @@ Readonly fields do not have a `class="fsa-input--[variant]"`, instead using the 
 
 Selectively override several style properties at each Media Query breakpoint
 
-<code>fsa-select--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
+<code>fsa-select--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
 <code>fill</code>, or
-<code>inline</code>; and <code>breakpoint</code> is one of
+<code>inline</code>; and <code>BREAKPOINT</code> is one or more of of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or

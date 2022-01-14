@@ -111,7 +111,7 @@ Most elements and components have a deliberate size assigned to them, Utilities 
 ## Text Elements
 
 {% capture snippet %}
-<p>The <a href="#link-to-nowhere">a element</a> and <a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external a element</a></p>
+<p>The <a href="/link.html">a element</a> and <a class="usa-external_link" href="http://www.kansascity.com" target="_blank">external a element</a></p>
 <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
 <p>The <b>b element</b> example, though you probably want to use <strong>strong</strong></p>
 <p>The <cite>cite element</cite> example</p>
@@ -156,16 +156,22 @@ Most elements and components have a deliberate size assigned to them, Utilities 
 
 ### Customizing Font Size
 
-### With CSS Selectors
+#### With CSS Utilities
 
-Most elements and components have a deliberate size assigned to them, Utilities are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
+Most elements and components have a deliberate size assigned to them, [CSS Utilities]({{ site.baseurl }}utilities/) are available to apply [custom text size]({{ site.baseurl }}utilities/#text-size) where appropriate.
 
-### With a CSS Preprocessor (Sass)
+#### With a CSS Preprocessor (Sass)
 
-With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([size]);` - where `[size]` is one of `0-7`.
+With a <a href="http://sass-lang.com/">Sass</a> mixin, `@include font-size([SIZE]);` - where `[SIZE]` is one of `0-7`.
 
 ```scss
-.your-custom-selector { @include font-size([size]); }
+.your-custom-selector { @include font-size([SIZE]); }
+```
+
+Of to solely adjust the `font-size` property while *retaining* a block's initial `line-height` property you may use Sass variables (tokens) to override with `font-size: $font-size-[SIZE]` - where `[SIZE]` is one of `0-7`.
+
+```scss
+.your-custom-selector { font-size: $font-size-[SIZE] }
 ```
 
 ## Related Resources

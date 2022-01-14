@@ -70,7 +70,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 ## Variants and Examples
 
-Button groups are wrapped in a `<span>` tag and always start with `class="fsa-btn-group"`, modifiable with one or multiple `fsa-btn-group--[variant]`.
+Button groups are wrapped in a `<span>` tag and always start with `class="fsa-btn-group"`, modifiable with one or multiple `fsa-btn-group--[VARIANT]`.
 
 ### Default
 
@@ -143,10 +143,10 @@ Each item, `fsa-btn-group__item`, will typically be a `<button>` element, though
 
 {% capture snippet %}
 <span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-  <a class="fsa-btn-group__item" href="link.html">Label one</a>
-  <a class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" href="link.html">Label active</a>
-  <a class="fsa-btn-group__item" href="link.html">Label three</a>
-  <a class="fsa-btn-group__item" href="link.html">Label fo</a>
+  <a class="fsa-btn-group__item" href="/link.html">Label one</a>
+  <a class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" href="/link.html">Label active</a>
+  <a class="fsa-btn-group__item" href="/link.html">Label three</a>
+  <a class="fsa-btn-group__item" href="/link.html">Label fo</a>
 </span>
 {% endcapture %}
 
@@ -270,13 +270,13 @@ There may be acceptable uses where a label may be visually hidden (i.e. using a 
 
 Selectively override several style properties at each Media Query breakpoint.
 
-<code>fsa-btn-group--<strong>[property]@[breakpoint]</strong></code>, where
-<code>property</code> is one of
+<code>fsa-btn-group--<strong>[VARIANTS]@[BREAKPOINT]</strong></code>, where
+<code>VARIANTS</code> is one or more of
 <code>small</code>,
 <code>medium</code>,
 <code>large</code>,
 <code>fill</code>, or
-<code>inline</code>; and <code>breakpoint</code> is one of
+<code>inline</code>; and <code>BREAKPOINT</code> is one of
 <code title="small">s</code>,
 <code title="medium">m</code>,
 <code title="large">l</code>, or
