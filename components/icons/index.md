@@ -42,7 +42,10 @@ relatedItems:
 <div class="fsa-level fsa-level--justify-between">
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-find">Find an Icon</label>
-    <input class="fsa-input fsa-field__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
+    <span class="fsa-affix">
+      <label for="ds-icon-find" class="fsa-affix__prefix" aria-hidden="true"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></label>
+      <input class="fsa-input fsa-field__item fsa-affix__item" id="ds-icon-find" name="ds-icon-find" type="text" value="" placeholder="Type to filter icons" aria-describedby="ds-icon-find__help-1 ds-icon-find__help-2">
+    </span>
   </div>
   <div class="fsa-field">
     <label class="fsa-field__label fsa-sr-only" for="ds-icon-filter">Filter Icons</label>
