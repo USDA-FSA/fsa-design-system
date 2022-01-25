@@ -9,28 +9,57 @@ jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-{% capture snippet %}
-<div class="fsa-breadcrumb">
-  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
-    <ul class="fsa-breadcrumb__list">
-      <li class="fsa-breadcrumb__item">
-        <a href="/link.html" class="fsa-breadcrumb__link">Home</a>
-      </li>
-      <li class="fsa-breadcrumb__item">
-        <a href="/link.html" class="fsa-breadcrumb__link">Level 1</a>
-      </li>
-      <li class="fsa-breadcrumb__item">
-        <a href="/link.html" class="fsa-breadcrumb__link">Level 2</a>
-      </li>
-      <li class="fsa-breadcrumb__item">
-        <a href="/link.html" class="fsa-breadcrumb__link">Level 3</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-{% endcapture %}
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorTarget .combinatorIconSample">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" id="combinatorLevelsLabel">Levels</label>
+      <span class="fsa-btn-group fsa-btn-group--small" role="group" aria-describedby="combinatorLevelsLabel">
+        <button class="fsa-btn-group__item" data-behavior="combinator-level" data-level-target=".fsa-breadcrumb__list" data-level-direction="down" type="button" aria-label="Remove" title="Remove">
+          <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"></path></svg>
+        </button>
+        <button class="fsa-btn-group__item" data-behavior="combinator-level" data-level-target=".fsa-breadcrumb__list" data-level-direction="up" type="button" aria-label="Add" title="Add">
+          <svg class="fsa-icon fsa-icon--size-1" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+        </button>
+      </span>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <div class="fsa-breadcrumb" id="combinatorTarget">
+      <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+        <ol class="fsa-breadcrumb__list">
+          <li class="fsa-breadcrumb__item">
+            <a href="/link.html" class="fsa-breadcrumb__link">
+              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path> </svg>
+              Level
+            </a>
+          </li>
+          <li class="fsa-breadcrumb__item">
+            <a href="/link.html" class="fsa-breadcrumb__link">
+              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path> </svg>
+              Level
+            </a>
+          </li>
+          <li class="fsa-breadcrumb__item" aria-current="page">
+            <a href="/link.html" class="fsa-breadcrumb__link">
+              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path> </svg>
+              Level
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
 
-{% include preview-and-snippet.html %}
+  </div>
+</div>
 
 ## Examples
 

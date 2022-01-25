@@ -5,6 +5,7 @@
 
 // TODO: log issues to make default "display:block|flex" components full-width
 .ds-combinator {
+  .fsa-breadcrumb,
   .fsa-alert,
   .fsa-content-tabs {
     width: 100%;
@@ -55,7 +56,7 @@
     & {
       flex: 1;
       padding: $size-medium;
-      overflow: hidden;
+      overflow: auto;
       @include breakpoint(L) {
         display: flex;
         place-content: center;

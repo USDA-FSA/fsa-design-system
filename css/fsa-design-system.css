@@ -22245,6 +22245,7 @@ html body.x-ray .fsa-modal {
   }
 }
 
+.ds-combinator .fsa-breadcrumb,
 .ds-combinator .fsa-alert,
 .ds-combinator .fsa-content-tabs {
   width: 100%;
@@ -22303,7 +22304,7 @@ html body.x-ray .fsa-modal {
       flex: 1;
   padding: 24px;
   padding: 2.4rem;
-  overflow: hidden;
+  overflow: auto;
 }
 
 @media (min-width: 54em) {

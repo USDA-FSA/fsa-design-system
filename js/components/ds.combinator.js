@@ -11,7 +11,7 @@ function combinatorIconAdjust() {
 
   if ($iconTargets) {
     $target
-      .find('.fsa-btn--small .combinatorIconSample, .fsa-btn-group--small .combinatorIconSample, .fsa-content-tabs__label--small .combinatorIconSample')
+      .find('.fsa-btn--small .combinatorIconSample, .fsa-btn-group--small .combinatorIconSample, .fsa-content-tabs__label--small .combinatorIconSample, .fsa-breadcrumb .combinatorIconSample')
       .addClass('fsa-icon--size-1')
     ;
     $target
@@ -232,7 +232,6 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
 $('body').on('click', '[data-behavior~="combinator-btn-group"]', function(event) {
 
   const $self = $(this);
-  const $target = $('#combinatorTarget');
 
   $self
     .addClass('fsa-btn-group__item--active')
@@ -241,6 +240,23 @@ $('body').on('click', '[data-behavior~="combinator-btn-group"]', function(event)
     .removeClass('fsa-btn-group__item--active')
     .removeAttr('aria-selected')
   ;
+
+})
+
+$('body').on('click', '[data-behavior~="combinator-level"]', function(event) {
+
+  const $self = $(this);
+  const $direction = $self.attr('data-level-direction');
+  const $target = $('#combinatorTarget ' + $self.attr("data-level-target") + ' > :last-child');
+
+  if ($direction === 'up') {
+    $target.clone().appendTo($target.parent());
+  }
+  else {
+    if (!$target.is(':only-child')) {
+      $target.remove();
+    }
+  }
 
 })
 
