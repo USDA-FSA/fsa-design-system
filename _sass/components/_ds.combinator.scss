@@ -3,6 +3,13 @@
 // https://edisondesignsystem.com/table?tab=2
 // https://baseweb.design/components/select/
 
+// TODO: log issues to make default "display:block|flex" components full-width
+.ds-combinator {
+  .fsa-content-tabs {
+    width: 100%;
+  }
+}
+
 .ds-combinator {
 
   $component-bgc: transparent;

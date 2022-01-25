@@ -11,11 +11,11 @@ function combinatorIconAdjust() {
 
   if ($iconTargets) {
     $target
-      .find('.fsa-btn--small .combinatorIconSample, .fsa-btn-group--small .combinatorIconSample')
+      .find('.fsa-btn--small .combinatorIconSample, .fsa-btn-group--small .combinatorIconSample, .fsa-content-tabs__label--small .combinatorIconSample')
       .addClass('fsa-icon--size-1')
     ;
     $target
-      .find('.fsa-btn--large .combinatorIconSample, .fsa-btn-group--large .combinatorIconSample')
+      .find('.fsa-btn--large .combinatorIconSample, .fsa-btn-group--large .combinatorIconSample, .fsa-content-tabs__label--large .combinatorIconSample')
       .addClass('fsa-icon--size-2')
     ;
   }
@@ -36,6 +36,21 @@ $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
 
   const $self = $(this);
   const $target = $('#combinatorTarget');
+  const $removals = $self.attr('data-remove');
+
+  $target
+    .removeClass($removals)
+    .addClass($self.val())
+  ;
+
+  combinatorIconAdjust();
+
+})
+
+$('body').on('change', '[data-behavior~="combinator-select-many"]', function(event) {
+
+  const $self = $(this);
+  const $target = $($self.attr('data-select-targets'));
   const $removals = $self.attr('data-remove');
 
   $target
