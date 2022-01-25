@@ -662,6 +662,21 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
 
 })
 
+$('body').on('click', '[data-behavior~="combinator-btn-group"]', function(event) {
+
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+
+  $self
+    .addClass('fsa-btn-group__item--active')
+    .attr('aria-selected', 'true')
+    .siblings()
+    .removeClass('fsa-btn-group__item--active')
+    .removeAttr('aria-selected')
+  ;
+
+})
+
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})

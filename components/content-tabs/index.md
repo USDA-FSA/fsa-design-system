@@ -13,6 +13,13 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorElement" id="combinatorElementLabel">Element</label>
+      <span class="fsa-btn-group fsa-btn-group--fill fsa-btn-group--small" role="group" id="combinatorElement" aria-describedby="combinatorElementLabel">
+        <button data-behavior="combinator-btn-group" data-element-type="a" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Link</button>
+        <button data-behavior="combinator-btn-group" data-element-type="button" class="fsa-btn-group__item" type="button">Button</button>
+      </span>
+    </div>
+    <div class="fsa-field ds-combinator__item">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
       <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select-many" data-select-targets="#combinatorTarget .fsa-content-tabs__label-text" data-remove="fsa-content-tabs__label--small fsa-content-tabs__label--medium fsa-content-tabs__label--large">
         <option value="fsa-content-tabs__label--small">Small</option>

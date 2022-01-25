@@ -22245,6 +22245,7 @@ html body.x-ray .fsa-modal {
   }
 }
 
+.ds-combinator .fsa-alert,
 .ds-combinator .fsa-content-tabs {
   width: 100%;
 }
