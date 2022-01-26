@@ -200,7 +200,8 @@ Create application forms with appropriate instructional and validation features.
     </div>
   </div>
 </div>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="combinatorCodeSnippet">&lt;foo&gt;...&lt;/foo&gt;</code></pre></div></div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="combinatorCodeSnippet"></code></pre></div></div>
+<div id="combinatorHolder" aria-hidden="true" hidden></div>
 
 ## Anatomy
 

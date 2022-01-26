@@ -23,9 +23,62 @@ function combinatorIconAdjust() {
 }
 
 function combinatorClone() {
+
   $target = $('#combinatorCodeSnippet');
   $source = $('#combinatorTarget').prop('outerHTML');
-  $target.text($source);
+  $holder = $('#combinatorHolder');
+
+  $holder.html($source);
+
+  $holder
+    .find('[hidden]')
+    .remove()
+    .closest('#combinatorTarget')
+    .removeAttr('id')
+  ;
+  $holder
+    .find('#combinatorTarget')
+    .removeAttr('id')
+  ;
+  $holder
+    .find('#combinatorTextLabel')
+    .removeAttr('id')
+  ;
+  $holder
+    .find('#combinatorIconSampleLeft')
+    .removeAttr('id')
+  ;
+  $holder
+    .find('#combinatorIconSampleRight')
+    .removeAttr('id')
+  ;
+  $holder
+    .find('#combinatorSlots')
+    .removeAttr('id')
+  ;
+  $holder
+    .find('.combinatorIconSample')
+    .removeClass('combinatorIconSample')
+  ;
+  $holder
+    .find('[data-id]')
+    .removeAttr('data-id')
+  ;
+
+  $sourceScrubbed = $holder.html().replace(/^\s*[\r\n]/gm, '');;
+  $target.text($sourceScrubbed);
+
+  // TODO
+  // [ ] refactor $holder.find...
+  // [X] remove empty lines (regex)
+  // [x] remove id="combinatorTarget"
+  // [x] remove id="combinatorTextLabel"
+  // [x] remove id="combinatorIconSampleLeft"
+  // [x] remove id="combinatorIconSampleRight"
+  // [x] remove class="combinatorIconSample"
+  // [x] remove id="combinatorSlots"
+  // [x] remove data-id="attribute" (and any other data attributes)
+
 }
 
 $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(event) {
@@ -291,3 +344,7 @@ $('body').on('click', '[data-behavior~="combinator-level"]', function(event) {
   combinatorClone();
 
 })
+
+if ($('.ds-combinator')) {
+  combinatorClone();
+}
