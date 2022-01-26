@@ -2,8 +2,6 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
-// TODO
-
 // Adjust size variant of icons in specific contexts (this is lazy, and probably can be done better)
 function combinatorIconAdjust() {
 
@@ -124,7 +122,6 @@ $('body').on('change', '[data-behavior~="combinator-select-many"]', function(eve
 $('body').on('change', '[data-behavior~="combinator-toggle-slots"]', function(event) {
 
   const $self = $(this);
-  const $target = $('#combinatorSlots');
   const $newSlot = $('[data-id="' + $self.val() + '"]');
 
   $newSlot
@@ -157,7 +154,6 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
 // Use Switch to *toggle* a target's `checked` state
 $('body').on('change', '[data-behavior~="combinator-toggle-disabled"]', function(event) {
 
-  const $self = $(this);
   const $target = $('#combinatorTarget');
 
   if($target.attr('disabled')) {
@@ -233,7 +229,6 @@ $('body').on('click', '[data-behavior~="combinator-enable"]', function(event) {
 // Use Switch to add --error variant to multiple targets. This is *specific* to fsa-field component.
 $('body').on('change', '[data-behavior~="combinator-toggle-form-error"]', function(event) {
 
-  const $self = $(this);
   const $target = $('#combinatorTarget');
 
   $target.find('.fsa-input').toggleClass('fsa-input--error');
