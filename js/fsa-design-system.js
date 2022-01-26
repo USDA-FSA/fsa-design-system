@@ -455,6 +455,12 @@ function combinatorIconAdjust() {
 
 }
 
+function combinatorClone() {
+  $target = $('#combinatorCodeSnippet');
+  $source = $('#combinatorTarget').prop('outerHTML');
+  $target.text($source);
+}
+
 $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(event) {
 
   const $self = $(this);
@@ -462,6 +468,8 @@ $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(even
   const $newLabel = this.value;
 
   $target.html($newLabel);
+
+  combinatorClone()
 
 })
 
@@ -477,6 +485,7 @@ $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
   ;
 
   combinatorIconAdjust();
+  combinatorClone();
 
 })
 
@@ -492,6 +501,7 @@ $('body').on('change', '[data-behavior~="combinator-select-many"]', function(eve
   ;
 
   combinatorIconAdjust();
+  combinatorClone();
 
 })
 
@@ -507,6 +517,8 @@ $('body').on('change', '[data-behavior~="combinator-toggle-slots"]', function(ev
     .prop('hidden', true)
   ;
 
+  combinatorClone();
+
 })
 
 $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(event) {
@@ -519,6 +531,8 @@ $('body').on('change', '[data-behavior~="combinator-toggle-class"]', function(ev
   }
 
   $target.toggleClass($self.val());
+
+  combinatorClone();
 
 })
 
@@ -533,6 +547,8 @@ $('body').on('click', '[data-behavior~="combinator-check"]', function(event) {
     $target.click();
   }
 
+  combinatorClone();
+
 })
 
 $('body').on('click', '[data-behavior~="combinator-uncheck"]', function(event) {
@@ -546,6 +562,8 @@ $('body').on('click', '[data-behavior~="combinator-uncheck"]', function(event) {
     $target.click();
   }
 
+  combinatorClone();
+
 })
 
 $('body').on('click', '[data-behavior~="combinator-disable"]', function(event) {
@@ -557,6 +575,8 @@ $('body').on('click', '[data-behavior~="combinator-disable"]', function(event) {
 
   $target.prop('disabled', true)
 
+  combinatorClone();
+
 })
 
 $('body').on('click', '[data-behavior~="combinator-enable"]', function(event) {
@@ -567,6 +587,8 @@ $('body').on('click', '[data-behavior~="combinator-enable"]', function(event) {
   const $target = $($self.attr('data-enable-target'));
 
   $target.prop('disabled', false)
+
+  combinatorClone();
 
 })
 
@@ -580,6 +602,8 @@ $('body').on('change', '[data-behavior~="combinator-toggle-form-error"]', functi
   $target.find('.fsa-select').toggleClass('fsa-select--error');
   $target.find('.fsa-select-multi').toggleClass('fsa-select-multi--error');
 
+  combinatorClone();
+
 })
 
 $('body').on('change', '[data-behavior~="combinator-toggle-disabled"]', function(event) {
@@ -592,6 +616,8 @@ $('body').on('change', '[data-behavior~="combinator-toggle-disabled"]', function
   } else {
     $target.attr('disabled', true);
   }
+
+  combinatorClone();
 
 })
 
@@ -608,6 +634,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-item"]', function(eve
   }
 
   combinatorIconAdjust();
+  combinatorClone();
 
 })
 
@@ -659,6 +686,7 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
   }
 
   combinatorIconAdjust()
+  combinatorClone();
 
 })
 
@@ -673,6 +701,8 @@ $('body').on('click', '[data-behavior~="combinator-btn-group"]', function(event)
     .removeClass('fsa-btn-group__item--active')
     .removeAttr('aria-selected')
   ;
+
+  combinatorClone();
 
 })
 
@@ -691,9 +721,9 @@ $('body').on('click', '[data-behavior~="combinator-level"]', function(event) {
     }
   }
 
+  combinatorClone();
+
 })
-
-
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"jquery":24}],12:[function(require,module,exports){

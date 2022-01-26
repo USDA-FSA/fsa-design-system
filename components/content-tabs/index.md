@@ -105,6 +105,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     </div>
   </div>
 </div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="combinatorCodeSnippet">&lt;foo&gt;...&lt;/foo&gt;</code></pre></div></div>
 
 ## Variants
 

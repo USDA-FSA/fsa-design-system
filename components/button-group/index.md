@@ -73,14 +73,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     </span>
   </div>
 </div>
-```html
-<span class="fsa-btn-group" role="group" aria-label="Label describing this group">
-  <button class="fsa-btn-group__item" type="button">Label</button>
-  <button class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Active Label</button>
-  <button class="fsa-btn-group__item" type="button">Label</button>
-  <button class="fsa-btn-group__item" type="button">Label</button>
-</span>
-```
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="combinatorCodeSnippet">&lt;foo&gt;...&lt;/foo&gt;</code></pre></div></div>
 
 ## Variants and Examples
 
