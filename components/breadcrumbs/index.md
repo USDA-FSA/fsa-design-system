@@ -38,19 +38,19 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
         <ol class="fsa-breadcrumb__list">
           <li class="fsa-breadcrumb__item">
             <a href="/link.html" class="fsa-breadcrumb__link">
-              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path> </svg>
+              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
               Level
             </a>
           </li>
           <li class="fsa-breadcrumb__item">
             <a href="/link.html" class="fsa-breadcrumb__link">
-              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path> </svg>
+              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
               Level
             </a>
           </li>
           <li class="fsa-breadcrumb__item" aria-current="page">
             <a href="/link.html" class="fsa-breadcrumb__link">
-              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path> </svg>
+              <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
               Level
             </a>
           </li>
