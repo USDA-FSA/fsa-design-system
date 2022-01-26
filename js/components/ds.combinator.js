@@ -37,36 +37,17 @@ function combinatorClone() {
     .removeAttr('id')
   ;
   $holder
-    .find('#combinatorTarget')
+    .find('#combinatorTarget, #combinatorTextLabel, #combinatorIconSampleLeft, #combinatorIconSampleRight, #combinatorSlots, [data-id]')
     .removeAttr('id')
-  ;
-  $holder
-    .find('#combinatorTextLabel')
-    .removeAttr('id')
-  ;
-  $holder
-    .find('#combinatorIconSampleLeft')
-    .removeAttr('id')
-  ;
-  $holder
-    .find('#combinatorIconSampleRight')
-    .removeAttr('id')
-  ;
-  $holder
-    .find('#combinatorSlots')
-    .removeAttr('id')
+    .removeAttr('data-id')
   ;
   $holder
     .find('.combinatorIconSample')
     .removeClass('combinatorIconSample')
   ;
-  $holder
-    .find('[data-id]')
-    .removeAttr('data-id')
-  ;
 
   $sourceScrubbed = $holder.html().replace(/^\s*[\r\n]/gm, '');;
-  $target.text($sourceScrubbed);
+  $target.text('    ' + $sourceScrubbed);
 
   // TODO
   // [ ] refactor $holder.find...
