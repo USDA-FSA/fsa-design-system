@@ -39,14 +39,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorIconSampleLeft,#combinatorTarget .combinatorIconSample">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorIconSampleLeft,#combinatorTarget .combinatorIconSample">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIconOnly">Icon only</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconOnly" name="combinatorIconOnly" data-behavior="combinator-toggle-item combinator-check" data-toggle-target="#combinatorTextLabel_1,#combinatorTextLabel_2,#combinatorTextLabel_3,#combinatorTextLabel_4" data-check-target="#combinatorIcon">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIconOnly" name="combinatorIconOnly" data-behavior="combinator-toggle-hidden combinator-check" data-toggle-hidden-target="#combinatorTextLabel_1,#combinatorTextLabel_2,#combinatorTextLabel_3,#combinatorTextLabel_4" data-check-target="#combinatorIcon">
         <span class="fsa-switch__track"></span>
       </label>
     </div>

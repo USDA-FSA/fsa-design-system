@@ -38,7 +38,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorIcon">Icon</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorTarget .combinatorIconSample">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorIcon" name="combinatorIcon" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorTarget .combinatorIconSample">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
@@ -52,7 +52,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorLabelAside">Aside</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelAside" name="combinatorLabelAside" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorTabsAside">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelAside" name="combinatorLabelAside" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorTabsAside">
         <span class="fsa-switch__track"></span>
       </label>
     </div>

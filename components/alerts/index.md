@@ -31,14 +31,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js", "inline-alert.js"]
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorTitle">Title</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorTitle" name="combinatorTitle" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorAlertTitle" checked>
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorTitle" name="combinatorTitle" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorAlertTitle" checked>
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDismissable">Dismissable</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorAlertDismiss">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDismissable" name="combinatorDismissable" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorAlertDismiss">
         <span class="fsa-switch__track"></span>
       </label>
     </div>

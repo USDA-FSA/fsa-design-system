@@ -58,14 +58,14 @@ Create application forms with appropriate instructional and validation features.
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorLabelDescription">Label Description</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelDescription" name="combinatorFill" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorFieldExample_desc" checked>
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorLabelDescription" name="combinatorFill" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorFieldExample_desc" checked>
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorHelpMessage">Help Message</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorHelpMessage" name="combinatorLabelDescription" data-behavior="combinator-toggle-item" data-toggle-target="#combinatorFieldExample_help-1" checked>
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorHelpMessage" name="combinatorLabelDescription" data-behavior="combinator-toggle-hidden" data-toggle-hidden-target="#combinatorFieldExample_help-1" checked>
         <span class="fsa-switch__track"></span>
       </label>
     </div>
