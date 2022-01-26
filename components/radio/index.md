@@ -8,6 +8,7 @@ intro: "Choose a single option from a set of available values."
 relatedItems:
   - "Action Bar with Table"
   - "Form Fields"
+  - "Select Multi"
 jump_menu: true
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---

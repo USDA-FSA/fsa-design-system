@@ -7,7 +7,9 @@ shortName: "component__select-multi"
 intro: "Make one or more selections from structured scrollable list of otpions."
 jump_menu: true
 relatedItems:
+  - "Checkbox"
   - "Form Fields"
+  - "Radio"
 title_label: 'May require JavaScript'
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
@@ -103,6 +105,53 @@ The style for Select Multi components always start with `class="fsa-select-multi
     <li class="fsa-select-multi__item">
       <input class="fsa-checkbox fsa-select-multi__check" id="default_nine" type="checkbox" name="default_nine" value="Nine">
       <label class="fsa-select-multi__label" for="default_nine">Nine</label>
+    </li>
+  </ul>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Radio
+
+{% capture snippet %}
+<div class="fsa-select-multi">
+  <ul class="fsa-select-multi__list">
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_one" type="radio" name="select_radio_example" value="One">
+      <label class="fsa-select-multi__label" for="radio_default_one">One</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_two" type="radio" name="select_radio_example" value="Two" checked="">
+      <label class="fsa-select-multi__label" for="radio_default_two">Two</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_three" type="radio" name="select_radio_example" value="Three">
+      <label class="fsa-select-multi__label" for="radio_default_three">Three</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_four" type="radio" name="select_radio_example" value="Four">
+      <label class="fsa-select-multi__label" for="radio_default_four">Four</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_five" type="radio" name="select_radio_example" value="Five">
+      <label class="fsa-select-multi__label" for="radio_default_five">Five</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_six" type="radio" name="select_radio_example" value="Six">
+      <label class="fsa-select-multi__label" for="radio_default_six">Six</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_seven" type="radio" name="select_radio_example" value="Seven">
+      <label class="fsa-select-multi__label" for="radio_default_seven">Seven</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_eight" type="radio" name="select_radio_example" value="Eight">
+      <label class="fsa-select-multi__label" for="radio_default_eight">Eight</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-radio fsa-select-multi__check" id="radio_default_nine" type="radio" name="select_radio_example" value="Nine">
+      <label class="fsa-select-multi__label" for="radio_default_nine">Nine</label>
     </li>
   </ul>
 </div>
