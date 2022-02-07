@@ -5107,6 +5107,12 @@ img {
   background-color: #fff;
 }
 
+.fsa-spinbox--error .fsa-affix {
+  border-color: #cd2026;
+  box-shadow: 0 0 0 1px #cd2026 inset;
+  background-color: #f9e4e5;
+}
+
 .fsa-affix:focus-within {
   outline: 3px solid #009afa;
 }
@@ -7298,6 +7304,7 @@ a.fsa-badge:active {
 }
 
 .fsa-tophat {
+  width: 100%;
   background-color: #1a4b24;
   color: #fff;
 }
@@ -7438,6 +7445,7 @@ a.fsa-badge:active {
 }
 
 .fsa-header-app {
+  width: 100%;
   background-color: #236430;
   padding-top: 8px;
   padding-top: 0.8rem;
@@ -7761,6 +7769,10 @@ a.fsa-badge:active {
 
 .fsa-header-app__home-link:hover .fsa-header-app__app-full {
   border-bottom: 1px solid #fff;
+}
+
+.fsa-nav-global {
+  width: 100%;
 }
 
 @media print {
@@ -8153,6 +8165,7 @@ a.fsa-badge:active {
   -ms-flex-align: center;
       align-items: center;
   box-shadow: 0 -1px 0 0 #dbdad9 inset;
+  width: 100%;
 }
 
 @media (min-width: 75em) {
@@ -8610,6 +8623,7 @@ a.fsa-badge:active {
 }
 
 .fsa-alert {
+  width: 100%;
   padding: 12px;
   padding: 1.2rem;
   margin-top: 24px;
@@ -9371,6 +9385,7 @@ a.fsa-badge:active {
 .fsa-breadcrumb {
   margin: 24px 0 0;
   margin: 2.4rem 0 0;
+  width: 100%;
 }
 
 .fsa-breadcrumb__list {
@@ -10268,6 +10283,7 @@ h1 + .fsa-field {
 }
 
 .fsa-footer {
+  width: 100%;
   padding-left: 12px;
   padding-left: 1.2rem;
   padding-right: 12px;
@@ -10429,6 +10445,7 @@ h1 + .fsa-field {
 }
 
 .fsa-screen-id {
+  width: 100%;
   padding-left: 12px;
   padding-left: 1.2rem;
   padding-right: 12px;
@@ -10565,16 +10582,19 @@ h1 + .fsa-field {
   z-index: 1002;
 }
 
+.fsa-select-multi {
+  position: relative;
+}
+
 .fsa-select-multi__list {
   display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  resize: vertical;
   overflow: auto;
   scroll-behavior: smooth;
-  max-height: 190px;
-  padding: 4px 0;
-  padding: 0.4rem 0;
+  height: 190px;
   border: 1px solid #c8c7c6;
   border-radius: 0;
   background-color: #fff;
@@ -10612,16 +10632,31 @@ h1 + .fsa-field {
   padding: 0 0.8rem;
 }
 
-.fsa-select-multi__item:hover {
-  background-color: #f4f4f4;
+.fsa-select-multi__item:first-child:not(.fsa-select-multi__item--group) {
+  margin-top: 4px;
+  margin-top: 0.4rem;
 }
 
-.fsa-select-multi--disabled .fsa-select-multi__item:hover {
+.fsa-select-multi__item--group {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  padding-top: 4px;
+  padding-top: 0.4rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
   background-color: #f0f0f0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.fsa-select-multi__item:active {
-  background-color: white;
+.fsa-select-multi--error .fsa-select-multi__item--group {
+  background-color: #efdbdc;
 }
 
 .fsa-select-multi__label {
@@ -10643,6 +10678,7 @@ h1 + .fsa-field {
 
 @media (min-width: 20em) {
   .fsa-stepped-tabs {
+    width: 100%;
     margin: 2.4rem 0;
     display: block;
     overflow: auto;
@@ -10904,6 +10940,7 @@ button:not([disabled]).fsa-stepped-tabs__label:active {
   padding: 12px;
   padding: 1.2rem;
   transition: all .23s ease-in-out;
+  width: 100%;
 }
 
 @media (min-width: 54em) {
@@ -11133,6 +11170,7 @@ button:not([disabled]).fsa-stepped-tabs__label:active {
   line-height: 2.4rem;
   margin: 36px auto;
   margin: 3.6rem auto;
+  width: 100%;
   position: relative;
 }
 
@@ -11374,10 +11412,16 @@ button:not([disabled]).fsa-stepped-tabs__label:active {
   line-height: 2.8rem;
   display: block;
   vertical-align: middle;
+  background-color: #fff;
   position: relative;
   min-width: 82px;
   min-width: 8.2rem;
   min-width: 10ch;
+}
+
+.fsa-spinbox--error {
+  box-shadow: 0 0 0 2px #cd2026 inset;
+  background-color: #f9e4e5;
 }
 
 .fsa-spinbox--small {
@@ -11427,8 +11471,14 @@ button:not([disabled]).fsa-stepped-tabs__label:active {
   display: block;
   width: 100%;
   -webkit-appearance: initial;
+     -moz-appearance: initial;
           appearance: initial;
+  background: transparent;
   -moz-appearance: textfield;
+}
+
+.fsa-spinbox--error .fsa-spinbox__input.fsa-input--error {
+  box-shadow: none;
 }
 
 .fsa-spinbox__input::-webkit-inner-spin-button, .fsa-spinbox__input::-webkit-outer-spin-button {
@@ -11830,6 +11880,7 @@ span.fsa-spinbox {
   margin: 24px 0;
   margin: 2.4rem 0;
   position: relative;
+  width: 100%;
 }
 
 .fsa-timeline:before {
