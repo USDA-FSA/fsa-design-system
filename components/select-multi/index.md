@@ -14,48 +14,89 @@ title_label: 'May require JavaScript'
 custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 ---
 
-The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All.
+The Select Multi component provides an easy way to have a scrollable list of options to select from, while also having the option to Select All. It can be viewed as an alternate to using the [Select component]({{ site.baseurl }}components/select/).
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
 <div class="ds-preview">
   <div class="fsa-select-multi">
     <ul class="fsa-select-multi__list">
-      <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_one" type="checkbox" name="1default_one" value="One" checked="">
-        <label class="fsa-select-multi__label" for="1default_one">One</label>
+      <li class="fsa-select-multi__item fsa-select-multi__item--group" role="heading" aria-level="4">
+        First Group
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_two" type="checkbox" name="1default_two" value="Two">
-        <label class="fsa-select-multi__label" for="1default_two">Two</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-base_one" type="checkbox" name="opt-group-example-base_one" value="One" checked="">
+        <label class="fsa-select-multi__label" for="opt-group-example-base_one">One</label>
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_three" type="checkbox" name="1default_three" value="Three" checked="">
-        <label class="fsa-select-multi__label" for="1default_three">Three</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-base_two" type="checkbox" name="opt-group-example-base_two" value="Two">
+        <label class="fsa-select-multi__label" for="opt-group-example-base_two">Two</label>
+      </li>
+      <li class="fsa-select-multi__item fsa-select-multi__item--group" role="heading" aria-level="4">
+        Second Group
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_four" type="checkbox" name="1default_four" value="Four" checked="">
-        <label class="fsa-select-multi__label" for="1default_four">Four</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basehree" type="checkbox" name="opt-group-example-basehree" value="Three" checked="">
+        <label class="fsa-select-multi__label" for="opt-group-example-basehree">Three</label>
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_five" type="checkbox" name="1default_five" value="Five">
-        <label class="fsa-select-multi__label" for="1default_five">Five</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basefour" type="checkbox" name="opt-group-example-basefour" value="Four" checked="">
+        <label class="fsa-select-multi__label" for="opt-group-example-basefour">Four</label>
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_six" type="checkbox" name="1default_six" value="Six">
-        <label class="fsa-select-multi__label" for="1default_six">Six</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basefive" type="checkbox" name="opt-group-example-basefive" value="Five">
+        <label class="fsa-select-multi__label" for="opt-group-example-basefive">Five</label>
+      </li>
+      <li class="fsa-select-multi__item fsa-select-multi__item--group" role="heading" aria-level="4">
+        Third Group
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_seven" type="checkbox" name="1default_seven" value="Seven">
-        <label class="fsa-select-multi__label" for="1default_seven">Seven</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-base_six" type="checkbox" name="opt-group-example-base_six" value="Six">
+        <label class="fsa-select-multi__label" for="opt-group-example-base_six">Six</label>
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_eight" type="checkbox" name="1default_eight" value="Eight">
-        <label class="fsa-select-multi__label" for="1default_eight">Eight</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-baseeven" type="checkbox" name="opt-group-example-baseeven" value="Seven">
+        <label class="fsa-select-multi__label" for="opt-group-example-baseeven">Seven</label>
       </li>
       <li class="fsa-select-multi__item">
-        <input class="fsa-checkbox fsa-select-multi__check" id="1default_nine" type="checkbox" name="1default_nine" value="Nine">
-        <label class="fsa-select-multi__label" for="1default_nine">Nine</label>
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-baseight" type="checkbox" name="opt-group-example-baseight" value="Eight">
+        <label class="fsa-select-multi__label" for="opt-group-example-baseight">Eight</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basenine" type="checkbox" name="opt-group-example-basenine" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-basenine">Nine</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-baseten" type="checkbox" name="opt-group-example-baseten" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-baseten">Ten</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-baseeleven" type="checkbox" name="opt-group-example-baseeleven" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-baseeleven">Eleven</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basetwelve" type="checkbox" name="opt-group-example-basetwelve" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-basetwelve">Twelve</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basethirteen" type="checkbox" name="opt-group-example-basethirteen" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-basethirteen">Thirteen</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basefourteen" type="checkbox" name="opt-group-example-basefourteen" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-basefourteen">Fourteen</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basefifteen" type="checkbox" name="opt-group-example-basefifteen" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-basefifteen">Fifteen</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-basesixteen" type="checkbox" name="opt-group-example-basesixteen" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-basesixteen">Sixteen</label>
+      </li>
+      <li class="fsa-select-multi__item">
+        <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example-baseseventeen" type="checkbox" name="opt-group-example-baseseventeen" value="Nine">
+        <label class="fsa-select-multi__label" for="opt-group-example-baseseventeen">Seventeen</label>
       </li>
     </ul>
   </div>
@@ -64,8 +105,6 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
 ## Variants
 
 ### Default
-
-The style for Select Multi components always start with `class="fsa-select-multi"`.
 
 {% capture snippet %}
 <div class="fsa-select-multi">
@@ -152,6 +191,96 @@ The style for Select Multi components always start with `class="fsa-select-multi
     <li class="fsa-select-multi__item">
       <input class="fsa-radio fsa-select-multi__check" id="radio_default_nine" type="radio" name="select_radio_example" value="Nine">
       <label class="fsa-select-multi__label" for="radio_default_nine">Nine</label>
+    </li>
+  </ul>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
+### Grouped
+
+As this component can be an alternate to using the [Select component]({{ site.baseurl }}components/select/), this variant effectively emulates the `<optgroup>` element of a `<select>`.
+
+{% capture snippet %}
+<div class="fsa-select-multi">
+  <ul class="fsa-select-multi__list">
+    <li class="fsa-select-multi__item fsa-select-multi__item--group" role="heading" aria-level="4">
+      First Group
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example_one" type="checkbox" name="opt-group-example_one" value="One" checked="">
+      <label class="fsa-select-multi__label" for="opt-group-example_one">One</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example_two" type="checkbox" name="opt-group-example_two" value="Two">
+      <label class="fsa-select-multi__label" for="opt-group-example_two">Two</label>
+    </li>
+    <li class="fsa-select-multi__item fsa-select-multi__item--group" role="heading" aria-level="4">
+      Second Group
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplehree" type="checkbox" name="opt-group-examplehree" value="Three" checked="">
+      <label class="fsa-select-multi__label" for="opt-group-examplehree">Three</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplefour" type="checkbox" name="opt-group-examplefour" value="Four" checked="">
+      <label class="fsa-select-multi__label" for="opt-group-examplefour">Four</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplefive" type="checkbox" name="opt-group-examplefive" value="Five">
+      <label class="fsa-select-multi__label" for="opt-group-examplefive">Five</label>
+    </li>
+    <li class="fsa-select-multi__item fsa-select-multi__item--group" role="heading" aria-level="4">
+      Third Group
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-example_six" type="checkbox" name="opt-group-example_six" value="Six">
+      <label class="fsa-select-multi__label" for="opt-group-example_six">Six</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-exampleeven" type="checkbox" name="opt-group-exampleeven" value="Seven">
+      <label class="fsa-select-multi__label" for="opt-group-exampleeven">Seven</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-exampleight" type="checkbox" name="opt-group-exampleight" value="Eight">
+      <label class="fsa-select-multi__label" for="opt-group-exampleight">Eight</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplenine" type="checkbox" name="opt-group-examplenine" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-examplenine">Nine</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-exampleten" type="checkbox" name="opt-group-exampleten" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-exampleten">Ten</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-exampleeleven" type="checkbox" name="opt-group-exampleeleven" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-exampleeleven">Eleven</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-exampletwelve" type="checkbox" name="opt-group-exampletwelve" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-exampletwelve">Twelve</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplethirteen" type="checkbox" name="opt-group-examplethirteen" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-examplethirteen">Thirteen</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplefourteen" type="checkbox" name="opt-group-examplefourteen" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-examplefourteen">Fourteen</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplefifteen" type="checkbox" name="opt-group-examplefifteen" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-examplefifteen">Fifteen</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-examplesixteen" type="checkbox" name="opt-group-examplesixteen" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-examplesixteen">Sixteen</label>
+    </li>
+    <li class="fsa-select-multi__item">
+      <input class="fsa-checkbox fsa-select-multi__check" id="opt-group-exampleseventeen" type="checkbox" name="opt-group-exampleseventeen" value="Nine">
+      <label class="fsa-select-multi__label" for="opt-group-exampleseventeen">Seventeen</label>
     </li>
   </ul>
 </div>
