@@ -373,6 +373,20 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
 
 })
 
+// Use Switch to Toggle Prefix/Suffix
+$('body').on('change', '[data-behavior~="combinator-toggle-affix"]', function(event) {
+
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+  const $affixDir = $self.attr('data-affix-direction');
+  const $affixType = $self.attr('data-affix-type');
+
+  console.log('Direction: ' + $affixDir + '\nType: ' + $affixType);
+
+  combinatorClone();
+
+})
+
 // Add or Remove nodes from the DOM.
 $('body').on('click', '[data-behavior~="combinator-level"]', function(event) {
 

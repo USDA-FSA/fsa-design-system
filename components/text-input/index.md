@@ -51,28 +51,28 @@ Its most common usage is as a nested component of the [Form Fields]({{ site.base
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorPrefixText">Prefix Text</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorPrefixText" name="combinatorPrefixText">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorPrefixText" name="combinatorPrefixText" data-behavior="combinator-toggle-affix combinator-uncheck" data-affix-direction="prefix" data-affix-type="text" data-uncheck-target="#combinatorPrefixIcon">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorPrefixIcon">Prefix Icon</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorPrefixIcon" name="combinatorPrefixIcon">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorPrefixIcon" name="combinatorPrefixIcon" data-behavior="combinator-toggle-affix combinator-uncheck" data-affix-direction="prefix" data-affix-type="icon" data-uncheck-target="#combinatorPrefixText">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSuffixText">Suffix Text</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorSuffixText" name="combinatorSuffixText">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorSuffixText" name="combinatorSuffixText" data-behavior="combinator-toggle-affix combinator-uncheck" data-affix-direction="suffix" data-affix-type="text" data-uncheck-target="#combinatorSuffixIcon">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSuffixIcon">Suffix Icon</label>
       <label class="fsa-switch ds-combinator__switch">
-        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorSuffixIcon" name="combinatorSuffixIcon">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorSuffixIcon" name="combinatorSuffixIcon" data-behavior="combinator-toggle-affix combinator-uncheck" data-affix-direction="suffix" data-affix-type="icon" data-uncheck-target="#combinatorSuffixText">
         <span class="fsa-switch__track"></span>
       </label>
     </div>
