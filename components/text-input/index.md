@@ -16,9 +16,74 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
 
 Its most common usage is as a nested component of the [Form Fields]({{ site.baseurl }}components/form-fields//) component.
 
-<div class="ds-preview">
-  <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text">
+<div class="ds-combinator">
+  <div class="ds-combinator__props">
+    <h3 class="fsa-sr-only">Props</h3>
+    <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSize">Size</label>
+      <select class="fsa-select fsa-select--small fsa-field__item" id="combinatorSize" name="combinatorSize" data-behavior="combinator-select" data-remove="fsa-input--small fsa-input--large">
+        <option value="fsa-input--small">Small</option>
+        <option value="" selected="selected">Medium</option>
+        <option value="fsa-input--large">Large</option>
+      </select>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorFill">Fill</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorFill" name="combinatorFill" data-behavior="combinator-toggle-class" value="fsa-input--fill">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorError">Error</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorError" name="combinatorError" data-behavior="combinator-toggle-class" value="fsa-input--error">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorDisabled">Disabled</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorDisabled" name="combinatorDisabled" data-behavior="combinator-toggle-disabled">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorPrefixText">Prefix Text</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorPrefixText" name="combinatorPrefixText">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorPrefixIcon">Prefix Icon</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorPrefixIcon" name="combinatorPrefixIcon">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSuffixText">Suffix Text</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorSuffixText" name="combinatorSuffixText">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+    <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorSuffixIcon">Suffix Icon</label>
+      <label class="fsa-switch ds-combinator__switch">
+        <input type="checkbox" class="fsa-switch__checkbox" id="combinatorSuffixIcon" name="combinatorSuffixIcon">
+        <span class="fsa-switch__track"></span>
+      </label>
+    </div>
+  </div>
+  <div class="ds-combinator__preview">
+    <h3 class="fsa-sr-only">Props Demo</h3>
+    <input class="fsa-input" type="text" name="some_name2" placeholder="Placeholder" value="Text" id="combinatorTarget">
+  </div>
 </div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code id="combinatorCodeSnippet"></code></pre></div></div>
+<div id="combinatorHolder" aria-hidden="true" hidden></div>
 
 ## Variants
 
