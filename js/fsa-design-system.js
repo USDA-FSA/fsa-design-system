@@ -579,9 +579,12 @@ $('body').on('click', '[data-behavior~="combinator-change-element"]', function(e
   if (elementType === 'button') {
     $target.removeAttr('href');
     $target.attr('type', 'button');
-  } else {
+  } else if (elementType === 'a') {
     $target.removeAttr('type');
     $target.attr('href', '/link.html');
+  } else if (elementType === 'span') {
+    $target.removeAttr('href');
+    $target.removeAttr('type');
   }
 
   $target.replaceWith('<' + elementType + ' id="combinatorTarget">' + targetHTML + '</' + elementType + '>');

@@ -15,6 +15,14 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
   <div class="ds-combinator__props">
     <h3 class="fsa-sr-only">Props</h3>
     <div class="fsa-field ds-combinator__item">
+      <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorElement" id="combinatorElementLabel">Element</label>
+      <span class="fsa-btn-group fsa-btn-group--fill fsa-btn-group--small" role="group" id="combinatorElement" aria-describedby="combinatorElementLabel">
+        <button data-behavior="combinator-btn-group" data-element-type="span" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" aria-selected="true">Span</button>
+        <button data-behavior="combinator-btn-group" data-element-type="button" class="fsa-btn-group__item" type="button">Button</button>
+        <button data-behavior="combinator-btn-group" data-element-type="a" class="fsa-btn-group__item" type="button">Link</button>
+      </span>
+    </div>
+    <div class="fsa-field ds-combinator__item">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorText">Text</label>
       <input class="fsa-input fsa-input--small fsa-field__item" id="TheItem2" id="combinatorText" name="combinatorText" value="Label" data-behavior="combinator-custom-text">
     </div>
