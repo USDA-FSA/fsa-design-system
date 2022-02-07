@@ -435,6 +435,37 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
+// TODO; combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+// combinator-change-element
+
+
 // Adjust size variant of icons in specific contexts (this is lazy, and probably can be done better)
 function combinatorIconAdjust() {
 
