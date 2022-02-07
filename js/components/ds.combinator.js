@@ -139,9 +139,23 @@ $('body').on('click', '[data-behavior~="combinator-change-element"]', function(e
 
   const $self = $(this);
   const $target = $('#combinatorTarget');
-  const $elementType = $self.data('element-type');
+  const targetHTML = $target.html();
+  const elementType = $self.data('element-type');
+  const attributes = $target.prop('attributes');
 
-  alert($target.html());
+  if (elementType === 'button') {
+    $target.removeAttr('href');
+    $target.attr('type', 'button');
+  } else {
+    $target.removeAttr('type');
+    $target.attr('href', '/link.html');
+  }
+
+  $target.replaceWith('<' + elementType + ' id="combinatorTarget">' + targetHTML + '</' + elementType + '>');
+
+  $.each(attributes, function() {
+    $('#combinatorTarget').attr(this.name, this.value);
+  });
 
   combinatorClone();
 
