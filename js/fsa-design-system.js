@@ -517,6 +517,38 @@ $('body').on('keyup', '[data-behavior~="combinator-custom-text"]', function(even
 
 })
 
+// Use Button Group to cycle through its selected states. This is an alternate to using <select> and currently specific to toggling between Button/Anchor HTML elements.
+// INCOMPLETE
+// TODO: Add ability to reform an <a> to <button> or vice versa.
+$('body').on('click', '[data-behavior~="combinator-btn-group"]', function(event) {
+
+  const $self = $(this);
+
+  $self
+    .addClass('fsa-btn-group__item--active')
+    .attr('aria-selected', 'true')
+    .siblings()
+    .removeClass('fsa-btn-group__item--active')
+    .removeAttr('aria-selected')
+  ;
+
+  combinatorClone();
+
+})
+
+// Use Button Group to toggle between anchor or button HTML elements.
+$('body').on('click', '[data-behavior~="combinator-change-element"]', function(event) {
+
+  const $self = $(this);
+  const $target = $('#combinatorTarget');
+  const $elementType = $self.data('element-type');
+
+  alert($target.html());
+
+  combinatorClone();
+
+})
+
 // Use <select> to cycle through variants on a *single* target, e.g. --small, --large, etc.
 $('body').on('change', '[data-behavior~="combinator-select"]', function(event) {
 
@@ -739,25 +771,6 @@ $('body').on('change', '[data-behavior~="combinator-toggle-icon-only"]', functio
   }
 
   combinatorIconAdjust()
-  combinatorClone();
-
-})
-
-// Use Button Group to cycle through its selected states. This is an alternate to using <select> and currently specific to toggling between Button/Anchor HTML elements.
-// INCOMPLETE
-// TODO: Add ability to reform an <a> to <button> or vice versa.
-$('body').on('click', '[data-behavior~="combinator-btn-group"]', function(event) {
-
-  const $self = $(this);
-
-  $self
-    .addClass('fsa-btn-group__item--active')
-    .attr('aria-selected', 'true')
-    .siblings()
-    .removeClass('fsa-btn-group__item--active')
-    .removeAttr('aria-selected')
-  ;
-
   combinatorClone();
 
 })
