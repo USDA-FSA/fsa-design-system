@@ -2,8 +2,6 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
-// TODO; combinator-change-element
-
 // Adjust size variant of icons in specific contexts (this is lazy, and probably can be done better)
 function combinatorIconAdjust() {
 
@@ -74,8 +72,31 @@ function combinatorClone() {
 
 }
 
+// Use right/left or up/down arrow keys to cycle through Button Group items (emulates Radio Group)
+// 39 = right arrow; 37 = left arrow; 38 = up arrow; 40 = down arrow
+$('[data-behavior~="combinator-btn-group"]').on('keydown', function(e) {
+  if (e.keyCode === 39 || e.keyCode === 40) {
+    e.preventDefault();
+    const $nextItem = $(this).next();
+    if ($(this).is(':last-child')) {
+      $(this).siblings(':first-child').focus().click();
+    } else {
+      $nextItem.focus().click();
+    }
+  }
+  if (e.keyCode === 37 || e.keyCode === 38) {
+    e.preventDefault();
+    const $prevItem = $(this).prev();
+    if ($(this).is(':first-child')) {
+      $(this).siblings(':last-child').focus().click();
+    } else {
+      $prevItem.focus().click();
+    }
+  }
+});
+
 // Immediately clone the default combinator code snippet
-if ($('.ds-combinator')) {
+if ($('.ds-combinator'.length)) {
   combinatorClone();
 }
 
