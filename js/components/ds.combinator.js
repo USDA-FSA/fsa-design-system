@@ -3,35 +3,6 @@ var $ = global.jQuery;
 window.$ = $;
 
 // TODO; combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-// combinator-change-element
-
 
 // Adjust size variant of icons in specific contexts (this is lazy, and probably can be done better)
 function combinatorIconAdjust() {
@@ -86,6 +57,12 @@ function combinatorClone() {
     .find('.combinatorIconSample')
     .removeClass('combinatorIconSample')
   ;
+  $holder
+    .find('.combinatorElement')
+    .removeClass('combinatorElement')
+    .find('[id]')
+    .removeAttr('id')
+  ;
 
   /////////////////////////////////////////////////////////////////////////////
   // 3. Trim empty lines
@@ -139,26 +116,57 @@ $('body').on('click', '[data-behavior~="combinator-change-element"]', function(e
 
   const $self = $(this);
   const $target = $('#combinatorTarget');
+  const $targetElements = $target.find('.combinatorElement');
   const targetHTML = $target.html();
   const elementType = $self.data('element-type');
   const attributes = $target.prop('attributes');
 
-  if (elementType === 'button') {
-    $target.removeAttr('href');
-    $target.attr('type', 'button');
-  } else if (elementType === 'a') {
-    $target.removeAttr('type');
-    $target.attr('href', '/link.html');
-  } else if (elementType === 'span') {
-    $target.removeAttr('href');
-    $target.removeAttr('type');
+  if ($targetElements.length) {
+
+    if (elementType === 'button') {
+      $targetElements.removeAttr('href');
+      $targetElements.attr('type', 'button');
+    } else if (elementType === 'a') {
+      $targetElements.removeAttr('type');
+      $targetElements.attr('href', '/link.html');
+    } else if (elementType === 'span') {
+      $targetElements.removeAttr('href');
+      $targetElements.removeAttr('type');
+    }
+
+    // for each $targetElements, change the HTML to the new element type, and retain its attribute/value
+    $targetElements.each(function(index, element) {
+
+      var attributes = $(element).prop('attributes');
+
+      $(element).replaceWith('<' + elementType + ' class="combinatorElement">' + $(element).html() + '</' + elementType + '>');
+
+      $.each(attributes, function() {
+        $('.combinatorElement').attr(this.name, this.value);
+      });
+
+    });
+
+  } else {
+
+    if (elementType === 'button') {
+      $target.removeAttr('href');
+      $target.attr('type', 'button');
+    } else if (elementType === 'a') {
+      $target.removeAttr('type');
+      $target.attr('href', '/link.html');
+    } else if (elementType === 'span') {
+      $target.removeAttr('href');
+      $target.removeAttr('type');
+    }
+
+    $target.replaceWith('<' + elementType + ' id="combinatorTarget">' + targetHTML + '</' + elementType + '>');
+
+    $.each(attributes, function() {
+      $('#combinatorTarget').attr(this.name, this.value);
+    });
+
   }
-
-  $target.replaceWith('<' + elementType + ' id="combinatorTarget">' + targetHTML + '</' + elementType + '>');
-
-  $.each(attributes, function() {
-    $('#combinatorTarget').attr(this.name, this.value);
-  });
 
   combinatorClone();
 
