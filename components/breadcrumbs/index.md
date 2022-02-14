@@ -15,8 +15,8 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
     <div class="fsa-field ds-combinator__item">
       <label class="fsa-field__label fsa-text--h6 ds-combinator__label" for="combinatorElement" id="combinatorElementLabel">Element</label>
       <span class="fsa-btn-group fsa-btn-group--fill fsa-btn-group--small" role="group" id="combinatorElement" aria-describedby="combinatorElementLabel">
-        <button data-behavior="combinator-btn-group" data-element-type="button" class="fsa-btn-group__item fsa-btn-group__item--active" type="button" aria-selected="true">Buttons</button>
-        <button data-behavior="combinator-btn-group" data-element-type="a" class="fsa-btn-group__item" type="button">Links</button>
+        <button data-behavior="combinator-btn-group combinator-change-element" data-element-type="button" class="fsa-btn-group__item" type="button">Buttons</button>
+        <button data-behavior="combinator-btn-group combinator-change-element" data-element-type="a" class="fsa-btn-group__item fsa-btn-group__item--active" aria-selected="true" type="button">Links</button>
       </span>
     </div>
     <div class="fsa-field ds-combinator__item ds-combinator__item--inline">
@@ -44,19 +44,19 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
       <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
         <ol class="fsa-breadcrumb__list">
           <li class="fsa-breadcrumb__item">
-            <a href="/link.html" class="fsa-breadcrumb__link">
+            <a href="/link.html" class="combinatorElement fsa-breadcrumb__link">
               <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
               Level
             </a>
           </li>
           <li class="fsa-breadcrumb__item">
-            <a href="/link.html" class="fsa-breadcrumb__link">
+            <a href="/link.html" class="combinatorElement fsa-breadcrumb__link">
               <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
               Level
             </a>
           </li>
           <li class="fsa-breadcrumb__item" aria-current="page">
-            <a href="/link.html" class="fsa-breadcrumb__link">
+            <a href="/link.html" class="combinatorElement fsa-breadcrumb__link">
               <svg hidden class="fsa-icon fsa-icon--size-1 combinatorIconSample" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
               Level
             </a>
