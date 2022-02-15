@@ -238,7 +238,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
 ### Variants
 
 ```html
-<element class="fsa-border-radius--[SIZE]">...</element>
+<element class="fsa-radius--[SIZE]">...</element>
 ```
 
 <div class="fsa-grid fsa-m-b--s">
@@ -275,7 +275,7 @@ https://usda-fsa.github.io/fsa-style/demo/rwd__border-width.html
 Selectively apply rounded corners at any Media Query breakpoint.
 
 ```html
-<element class="fsa-border-radius--[SIZE]@[BREAKPOINT]">...</element>
+<element class="fsa-radius--[SIZE]@[BREAKPOINT]">...</element>
 ```
 
 <code>BREAKPOINT</code> is one of
