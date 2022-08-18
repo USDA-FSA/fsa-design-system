@@ -43,7 +43,7 @@ custom_js: ["ga/ga-tracker.js", "ga/generic.js"]
                   {% if subpage.subhref contains 'guides/' %}
                     {% assign guide = subpage.subhref | replace:'guides/','guide_' %}
                     <ul class="ds-sitemap__list">
-                    {% for article in site.data.[guide] %}
+                    {% for article in site.data[guide] %}
                       <li class="ds-sitemap__list-item">
                         <a class="ds-sitemap__link js-quick-find--tier3" href="{{ article.href | prepend: site.baseurl }}" data-keywords="{{ article.keyword }}">
                           <span class="ds-sitemap__text">{{ article.title }}</span>
