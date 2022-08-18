@@ -52,6 +52,39 @@ Breadcrumbs are typically paired with the `<h1>` page title. The following examp
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
+### As Buttons
+
+Each link, <code>class="fsa-breadcrumb__link"</code>, may occasionally be a <code>&lt;button&gt;</code> element.
+
+{% capture snippet %}
+<div class="fsa-breadcrumb">
+  <nav class="fsa-breadcrumb__nav" aria-label="Breadcrumbs">
+    <ol class="fsa-breadcrumb__list">
+      <li class="fsa-breadcrumb__item">
+        <button class="fsa-breadcrumb__link" type="button">Home</button>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <button class="fsa-breadcrumb__link" type="button">
+          <span class="">Level 1</span>
+        </button>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <button class="fsa-breadcrumb__link" type="button">
+          <span class="">Level 2</span>
+        </button>
+      </li>
+      <li class="fsa-breadcrumb__item">
+        <button class="fsa-breadcrumb__link" type="button">
+          <span class="">Level 3</span>
+        </button>
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endcapture %}
+
+{% include preview-and-snippet.html %}
+
 ### Icons
 
 Use any variety of [Icons]({{ site.baseurl }}components/icons/) to heighten or clarify each Breadcrumb item.
