@@ -861,10 +861,10 @@ Using the responsive [Grid System]({{ site.baseurl }}layout/grid/), the form bel
 
 All variants above have error states available by the addition of `fsa-field--error`, and will likely be paired with an `fsa-field__message` to provide clarity to the field's requirements.
 
-Additionally, each **core nested component** may have additional selectors to denote an error state, e.g. `fsa-textarea--error`.
+Additionally, each **core nested component** may have additional selectors to denote an error state, e.g. `fsa-input--error`, `fsa-textarea--error`, and `fsa-affix--error`.
 
 ### Error
-
+Classes added: `fsa-field--error` and `fsa-input--error`
 {% capture snippet %}
 <div class="fsa-field fsa-field--error">
   <label class="fsa-field__label" for="TheItem6">Label <span class="fsa-field__label-desc">Required</span></label>
@@ -875,7 +875,49 @@ Additionally, each **core nested component** may have additional selectors to de
 {% endcapture %}
 {% include preview-and-snippet.html %}
 
+### Error, prefix
+Classes added: `fsa-field--error` and `fsa-affix--error`
+{% capture snippet %}
+<div class="fsa-field fsa-field--error">
+  <label class="fsa-field__label" for="lorem-778affixicons459">Credit Card Number <span class="fsa-field__label-desc">Required</span></label>
+  <span class="fsa-affix fsa-affix--fill fsa-affix--error">
+    <label for="lorem-778affixicons459" class="fsa-affix__prefix" aria-hidden="true"><svg class="fsa-icon fsa-icon--size-2" aria-hidden="true" focusable="false" role="img" fill="#494440" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg></label>
+    <input class="fsa-input fsa-field__item fsa-affix__item" id="lorem-778affixicons459" name="lorem-778affixicons459" type="text" value="" aria-required="true" aria-describedby="lorem-778affixicons459_help">
+  </span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Error, suffix
+Classes added: `fsa-field--error` and `fsa-affix--error`
+{% capture snippet %}
+<div class="fsa-field fsa-field--error">
+  <label class="fsa-field__label" for="lorem-778suffixs459">Lot Size <span class="fsa-field__label-desc">Required</span></label>
+  <span class="fsa-affix fsa-affix--fill fsa-affix--error">
+    <input class="fsa-input fsa-field__item fsa-affix__item" id="lorem-778suffixs459" name="lorem-778suffixs459" type="text" value="" aria-required="true" aria-describedby="lorem-778suffixs459_help">
+    <label for="lorem-778suffixs459" class="fsa-affix__suffix" aria-hidden="true" title="Dollars">acres</label>
+  </span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
+### Error, textarea
+Classes added: `fsa-field--error` and `fsa-textarea--error`
+{% capture snippet %}
+<div class="fsa-field fsa-field--error">
+  <label class="fsa-field__label" for="UNIQUE-ID-88s8SUGg">Label <span class="fsa-field__label-desc">Required</span></label>
+  <textarea class="fsa-textarea fsa-field__item fsa-textarea--error" placeholder="Placeholder" id="UNIQUE-ID-88s8SUGg" aria-describedby="lorem-88s8SUGg-help-4" aria-required="true" name="UNIQUE-ID-88s8SUGg"></textarea>
+  <span class="fsa-field__help" id="lorem-88s8SUGg-help-4">Instructional message here</span>
+</div>
+{% endcapture %}
+{% include preview-and-snippet.html %}
+
 ### Error, specific column
+
+{% capture snippet %}
+
+{% endcapture %}
+{% include preview-and-snippet.html %}
 
 {% capture snippet %}
 <div class="fsa-field fsa-field--columns fsa-field--error">
