@@ -133,7 +133,7 @@ If nothing else, the Design System is your reference to skin (or theme) your pro
 
 With the nature of application development, and the need to maintain legacy systems, the question often comes up about when to use the FPAC Design System. The answer is always "it depends", and more information is needed to accurately provide the correct answer.
 
-Ideally, all products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to accelerate the development of your product.
+Ideally, all internal-facing products would be switched over to the FPAC Design System as it provides an efficient and optimized starting point to accelerate the development of your product. If your application is external-facing or has an external-facing component, then that application should utilize the <a href="https://confluence.fpac.usda.gov/display/SPAR/Single+Page+Application+Reference"><abbr title="United States Web Design System">United States Web Design System (USWDS)</a>. 
 
 Depending on your product, it can be used as intended and provide a complete Front-end design solution or it can be used as a design reference.
 
