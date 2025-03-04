@@ -1,4 +1,14 @@
-# fsa-design-system
-Design System site for USDA Farm Production and Conservation products
+# DEPRECATION NOTICE
+FSA Design System will no longer be updated on this repo. Both [FSA Style](https://github.com/USDA-FSA/fsa-style) and [FSA Design System](https://github.com/USDA-FSA/fsa-design-system) have been deprecated and are no longer supported. FDS Style and FPAC Design System have superseded the FSA Design System. You can find those repositories and their associated documentation below.
 
-This digital resouce is made available across the Department and to other Federal agencies. It supports the requirements of OMB Memorandum M-16-21, “Federal Source Code Policy: Achieving Efficiency, Transparency, and Innovation through Reusable and Open Source Software". This policy requires agencies to develop plans to release at least 20 percent of new custom-developed source code as Open Source Software (OSS) when commissioning new custom software.
+## FDS Style
+
+Codebase: https://github.com/USDA-FPAC/fds-style
+
+Documentation: https://usda-fpac.github.io/fds-style/
+
+## FPAC Design System
+
+Codebase: https://github.com/USDA-FPAC/fpac-design-system
+
+Documentation: https://usda-fpac.github.io/fpac-design-system/
