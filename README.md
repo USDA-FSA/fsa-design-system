@@ -1,5 +1,5 @@
 # DEPRECATION NOTICE
-FSA Design System will no longer be updated on this repo. Both [FSA Style](https://github.com/USDA-FSA/fsa-style) and [FSA Design System](https://github.com/USDA-FSA/fsa-design-system) have been deprecated and are no longer supported. FDS Style and FPAC Design System have superseded the FSA Design System. You can find those repositories and their associated documentation below.
+FSA Design System will no longer be updated on this repo. Both [FSA Style](https://github.com/USDA-FSA/fsa-style) and [FSA Design System](https://github.com/USDA-FSA/fsa-design-system) have been deprecated and are no longer supported. They have been superseded by FDS Style and FPAC Design System. You can find those repositories and their associated documentation below.
 
 ## FDS Style
 
