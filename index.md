@@ -10,6 +10,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
 
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__8/12@l fsa-grid__9/12@xl">
+       <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting the bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
       <div class="fsa-alert fsa-alert--warning" role="alert">
         <div class="fsa-alert__body">
           <h3 class="fsa-alert__heading">Deprecation Notice</h3>
@@ -20,10 +21,9 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
               <p><strong>FPAC Design System</strong></p>
                 <p>Codebase: https://github.com/USDA-FPAC/fpac-design-system<br></p>
                 <p>Documentation: https://usda-fpac.github.io/fpac-design-system</p>
-        </p>
-          </div>
+          </p>
         </div>
-       <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting the bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
+      </div>
       <div class="ds-quick-find">
         <div class="ds-quick-find__field">
           <span class="fsa-affix fsa-affix--fill">
