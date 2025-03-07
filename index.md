@@ -47,6 +47,8 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
             <span><span class="fsa-show@l">Explore with</span> CodePen</span>
           </a>
         </div>
+      </div>
+    </div>
   </div>
   <div class="fsa-alert fsa-alert--warning" role="alert">
     <div class="fsa-alert__body">
