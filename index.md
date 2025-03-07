@@ -56,7 +56,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
       <h3 class="fsa-alert__heading">Deprecation Notice</h3>
         <p class="fsa-alert__text">FSA Style will no longer be updated on this repo. Both <strong>FSA Style</strong> and <strong>FSA Design System</strong> have been deprecated and are no longer supported. They have been superseded by FDS Style and FPAC Design System. You can find those repositories and their associated documentation below.</p>
         <p><strong>FDS Style</strong></p>
-          <p>Codebase: <a href="https://github.com/USDA-FPAC/fds-style">https://github.com/USDA-FPAC/fds-style</a></p>
+          <p>Codebase: </p><a href="https://github.com/USDA-FPAC/fds-style">https://github.com/USDA-FPAC/fds-style</a>
           <p>Documentation: https://usda-fpac.github.io/fds-style</p>
           <p><strong>FPAC Design System</strong></p>
           <p>Codebase: https://github.com/USDA-FPAC/fpac-design-system<br></p>
