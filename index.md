@@ -63,6 +63,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
           <p>Documentation: https://usda-fpac.github.io/fpac-design-system</p>
         </p>
       </div>
+  </div>
   <div class="fsa-grid ds-home-features">
     <div class="fsa-grid__1 fsa-grid__1/2@s fsa-grid__1/3@m ds-home-features__item">
       <a class="ds-home-features__link" href="{{ site.baseurl }}visual-style/">
