@@ -21,7 +21,6 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
               <p><strong>FPAC Design System</strong></p>
                 <p>Codebase: https://github.com/USDA-FPAC/fpac-design-system<br></p>
                 <p>Documentation: https://usda-fpac.github.io/fpac-design-system</p>
-          </p>
         </div>
       </div>
       <div class="ds-quick-find">
