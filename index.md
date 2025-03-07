@@ -5,9 +5,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
 ---
 
 <div class="ds-article">
-
   <h1 class="fsa-sr-only">Welcome to FPAC's Design System</h1>
-
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__8/12@l fsa-grid__9/12@xl">
       <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting the bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
