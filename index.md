@@ -10,6 +10,25 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
 
   <div class="fsa-grid">
     <div class="fsa-grid__1 fsa-grid__8/12@l fsa-grid__9/12@xl">
+      
+              <div class="fsa-alert fsa-alert--warning" role="alert">
+          <div class="fsa-alert__body">
+            <h3 class="fsa-alert__heading">Deprecation Notice</h3>
+            <p class="fsa-alert__text">FSA Style will no longer be updated on this repo. Both <strong>FSA Style</strong> and <strong>FSA Design System</strong> have been deprecated and are no longer supported. They have been superseded by FDS Style and FPAC Design System. You can find those repositories and their associated documentation below.
+
+              <strong>FDS Style</strong>
+              
+              Codebase: https://github.com/USDA-FPAC/fds-style<br>
+              Documentation: https://usda-fpac.github.io/fds-style/
+
+              <strong>FPAC Design System</strong>
+              
+              Codebase: https://github.com/USDA-FPAC/fpac-design-system<br>
+              Documentation: https://usda-fpac.github.io/fpac-design-system/</p>
+          </div>
+        </div>
+      
+      
       <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting the bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
       <div class="ds-quick-find">
         <div class="ds-quick-find__field">
