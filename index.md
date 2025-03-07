@@ -18,8 +18,9 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
                 <p>Codebase: https://github.com/USDA-FPAC/fds-style<br></p>
                 <p>Documentation: https://usda-fpac.github.io/fds-style</p>
               <p><strong>FPAC Design System</strong></p>
-              <p>Codebase: https://github.com/USDA-FPAC/fpac-design-system<br></p>
-              <p>Documentation: https://usda-fpac.github.io/fpac-design-system</p>
+                <p>Codebase: https://github.com/USDA-FPAC/fpac-design-system<br></p>
+                <p>Documentation: https://usda-fpac.github.io/fpac-design-system</p>
+        </p>
           </div>
         </div>
        <p class="fsa-text--lead fsa-m-t--none"><strong><abbr title="Farm Production and Conservation">FPAC</abbr></strong>'s Open Source <strong>design resource</strong>, <strong>documentation</strong>, and <strong>guidelines</strong> - setting the bar for cohesive user experiences across USDA Farm Production and Conservation.</p>
