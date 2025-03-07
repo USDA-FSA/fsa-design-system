@@ -24,6 +24,7 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
         <div class="fsa-sr-only" id="quick-find-instructions">When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.</div>
         <div id="quick-find-results-count-id" aria-live="polite" class="fsa-sr-only">0 results</div>
       </div>
+      </div>
         <div class="fsa-alert fsa-alert--warning" role="alert">
         <div class="fsa-alert__body">
           <h3 class="fsa-alert__heading">Deprecation Notice</h3>
@@ -36,7 +37,6 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
                 <p>Documentation: https://usda-fpac.github.io/fpac-design-system</p>
           </p>
         </div>
-      </div>
     </div>
     <div class="fsa-grid__1 fsa-grid__4/12@l fsa-grid__3/12@xl">
       <div class="fsa-level@s fsa-level--inline@s fsa-level--none@l fsa-m-t--xs@l fsa-m-b--s">
