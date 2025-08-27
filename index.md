@@ -86,5 +86,3 @@ custom_js: ["ga/ga-tracker.js", "ds-quick-find.js", "ga/quick-find.js", "ga/home
       </a>
     </div>
   </div>
-
-</div>
